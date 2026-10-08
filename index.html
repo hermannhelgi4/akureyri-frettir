@@ -21,5 +21,5 @@ NEWS.filter(n=>cur==="Allt"||n.category===cur).forEach(n=>{const a=el("a","item"
 const im=el("div","img");if(n.image){const i=document.createElement("img");i.src=n.image;i.loading="lazy";i.referrerPolicy="no-referrer";i.onerror=()=>{i.remove();im.textContent=n.source};im.appendChild(i)}else im.textContent=n.source;
 const b=el("div","body");const m=el("div","meta");m.appendChild(el("span","src",n.source));m.appendChild(document.createTextNode(" · "+ago(n.date)));
 b.append(m,el("h2","",n.title));if(n.summary&&n.summary.length>3)b.append(el("p","",n.summary));a.append(im,b);l.appendChild(a)})}
-document.getElementById("upd").textContent="Uppfært 08.10.2026 23:11";render();
+document.getElementById("upd").textContent="Uppfært 08.10.2026 23:44";render();
 </script></body></html>
