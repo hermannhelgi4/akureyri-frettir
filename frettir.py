@@ -172,23 +172,27 @@ a.item{display:flex;gap:12px;background:var(--card);border:1px solid var(--bd);b
 h2{font-size:16px;margin:0 0 4px;line-height:1.3}p{margin:0;font-size:13px;color:var(--mu);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 </style></head><body><header><h1>Akureyri í fréttum</h1><div class="sub" id="upd"></div></header><div class="chips" id="chips"></div><main id="list"></main>
 <script>
-const NEWS=__DATA__;let cur="Allt";NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar"});const ORDER=["Fréttamiðlar","Bærinn","Menntun","Menning","Íþróttir","Fyrirtæki & félög"];
+const NEWS=__DATA__;const API="__API__";let TOP=[];let cur="Allt";NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar"});const ORDER=["Fréttamiðlar","Bærinn","Menntun","Menning","Íþróttir","Fyrirtæki & félög"];
 function ago(d){if(!d)return"";const m=(Date.now()-new Date(d))/6e4;if(m<60)return"fyrir "+Math.max(1,Math.round(m))+" mín.";if(m<1440)return"fyrir "+Math.round(m/60)+" klst.";return"fyrir "+Math.round(m/1440)+" d."}
 function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e}
-function render(){const names=["Allt",...ORDER.filter(c=>NEWS.some(n=>n.category===c))];const ch=document.getElementById("chips");ch.innerHTML="";
+function render(){const names=["Allt","Mest lesið",...ORDER.filter(c=>NEWS.some(n=>n.category===c))];const ch=document.getElementById("chips");ch.innerHTML="";
 names.forEach(n=>{const b=el("button","chip"+(n===cur?" on":""),n);b.onclick=()=>{cur=n;render()};ch.appendChild(b)});
 const l=document.getElementById("list");l.innerHTML="";
-NEWS.filter(n=>cur==="Allt"||n.category===cur).forEach(n=>{const a=el("a","item");a.href=n.link;a.target="_blank";a.rel="noopener";
+let LIST=NEWS.filter(n=>cur==="Allt"||n.category===cur);if(cur==="Mest lesið"){LIST=TOP.map(k=>NEWS.find(n=>n.link===k)).filter(Boolean);if(!LIST.length){LIST=NEWS.slice(0,10);l.appendChild(el("div","sub","Enn er ekki nóg af smellum – hér eru nýjustu fréttir á meðan."))}}
+LIST.forEach(n=>{const a=el("a","item");a.href=n.link;a.target="_blank";a.rel="noopener";a.onclick=()=>{if(!API)return;try{const k="c:"+n.link;if(!localStorage.getItem(k)){localStorage.setItem(k,"1");fetch(API+"/click",{method:"POST",body:n.link,keepalive:true})}}catch(e){}};
 const im=el("div","img");if(n.image){const i=document.createElement("img");i.src=n.image;i.loading="lazy";i.referrerPolicy="no-referrer";i.onerror=()=>{i.remove();im.textContent=n.source};im.appendChild(i)}else im.textContent=n.source;
 const b=el("div","body");const m=el("div","meta");m.appendChild(el("span","src",n.source));m.appendChild(document.createTextNode(" · "+ago(n.date)));
 b.append(m,el("h2","",n.title));if(n.summary&&n.summary.length>3)b.append(el("p","",n.summary));a.append(im,b);l.appendChild(a)})}
-document.getElementById("upd").textContent="Uppfært __TIME__";render();
+document.getElementById("upd").textContent="Uppfært __TIME__";render();if(API)fetch(API+"/top").then(r=>r.json()).then(t=>{TOP=t;if(cur==="Mest lesið")render()}).catch(()=>{});
 </script></body></html>"""
+
+
+COUNTER_URL = "https://akureyri-smellir.hermannh2000.workers.dev"  # slóð á Cloudflare Worker (fyllt út þegar hann er tilbúinn)
 
 
 def write_html(items):
     data = json.dumps(items, ensure_ascii=False).replace("</", "<\\/")
-    page = HTML.replace("__DATA__", data).replace("__TIME__", datetime.now().strftime("%d.%m.%Y %H:%M"))
+    page = HTML.replace("__DATA__", data).replace("__API__", COUNTER_URL).replace("__TIME__", datetime.now().strftime("%d.%m.%Y %H:%M"))
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(page)
 
@@ -234,6 +238,8 @@ def deep_check(url):
     page = re.sub(r"<(nav|aside|footer|header|script|style|noscript)\b.*?</\1>", " ", page, flags=re.S | re.I)
     paras = [clean(p) for p in re.findall(r"<p[^>]*>(.*?)</p>", page, re.S | re.I)]
     paras = [p for p in paras if len(p) > 40]
+    if not paras:
+        return "ólesanleg"  # engar málsgreinar í HTML (t.d. síða teiknuð með JavaScript)
     lead = " ".join(paras[:3]).lower()
     body = " ".join(paras).lower()
     if any(k in lead for k in DEEP_KEYWORDS):
@@ -258,6 +264,7 @@ def main():
     except Exception:
         checked = {}
     budget = DEEP_BUDGET
+    unreadable = 0
 
     for feed in FEEDS:
         try:
@@ -278,6 +285,9 @@ def main():
             if ok is None and budget > 0 and allowed(i["link"]):
                 budget -= 1
                 ok = deep_check(i["link"])
+                if ok == "ólesanleg":
+                    unreadable += 1
+                    ok = False
                 if ok is not None:
                     checked[i["link"]] = ok
                 time.sleep(0.3)
@@ -301,7 +311,8 @@ def main():
 
     with open("athugad.json", "w", encoding="utf-8") as f:
         json.dump(dict(list(checked.items())[-4000:]), f, ensure_ascii=False)
-    print("Dýpri leit: %d síður athugaðar núna, %d í minni." % (DEEP_BUDGET - budget, len(checked)))
+    print("Dýpri leit: %d síður athugaðar núna, %d í minni. Þar af gátu %d ekki lesist (engin málsgrein í HTML)." % (
+        DEEP_BUDGET - budget, len(checked), unreadable))
 
     merged, per_source = [], {}
     for i in sorted(by_link.values(), key=lambda i: i["date"] or "", reverse=True):
