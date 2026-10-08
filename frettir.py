@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Sækir fréttir úr RSS-veitum, síar landsmiðla eftir Akureyri og býr til news.json."""
-import json, re, html, urllib.request
+import json, re, html, time, urllib.request, urllib.robotparser, urllib.error
+from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone
@@ -24,7 +25,6 @@ FEEDS = [
     {"name": "RÚV", "url": "https://www.ruv.is/rss/innlent", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
     {"name": "RÚV", "url": "https://www.ruv.is/rss/ithrottir", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
     {"name": "RÚV", "url": "https://www.ruv.is/rss/menning-og-daegurmal", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
-    {"name": "Vísir", "url": "https://www.visir.is/rss/innlent", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
     # Bærinn
     {"name": "Akureyrarbær", "url": "https://www.akureyri.is/feed.xml", "local": True, "cat": "Bærinn"},
     {"name": "Norðurorka", "url": "https://www.no.is/is/feed", "local": True, "cat": "Bærinn"},
@@ -57,7 +57,7 @@ MAX_BY_SOURCE = {f["name"]: f.get("max", 30) for f in FEEDS}
 KEYWORDS = [
     "akureyr", "eyjafj", "eyjafirð", "hlíðarfj", "vaðlaheið", "dalvík", "hrísey",
     "grímsey", "grenivík", "hörgársveit", "fjallabyggð", "siglufj", "ólafsfj",
-    "þór/ka", "norðurorka", "samherj", "kjarnaskóg",
+    "þór/ka", "ka/þór", "norðurorka", "samherj", "kjarnaskóg",
 ]
 
 class Redirect308(urllib.request.HTTPRedirectHandler):
@@ -193,6 +193,54 @@ def write_html(items):
         f.write(page)
 
 
+DEEP_UA = {"User-Agent": "AkureyriFrettir/0.1 (+https://github.com/hermannhelgi4/akureyri-frettir)"}
+DEEP_KEYWORDS = [k for k in KEYWORDS if k != "samherj"]  # Samherji kemur oft fyrir í fréttum sem eru ekki um Akureyri
+DEEP_BUDGET = 120  # mest svo margar fréttasíður sóttar í hverri keyrslu
+_robots = {}
+
+
+def allowed(url):
+    """Virðir robots.txt: sækir aðeins síður sem vefurinn leyfir sjálfvirkan aðgang að."""
+    u = urlparse(url)
+    base = "%s://%s" % (u.scheme, u.netloc)
+    rp = _robots.get(base)
+    if rp is None:
+        rp = urllib.robotparser.RobotFileParser()
+        try:
+            req = urllib.request.Request(base + "/robots.txt", headers=DEEP_UA)
+            with OPENER.open(req, timeout=10) as r:
+                rp.parse(r.read().decode("utf-8", "ignore").splitlines())
+            rp.modified()
+        except urllib.error.HTTPError as e:
+            if e.code in (401, 403):
+                rp.disallow_all = True
+            else:
+                rp.allow_all = True
+        except Exception:
+            rp.disallow_all = True
+        _robots[base] = rp
+    return rp.can_fetch("AkureyriFrettir", url)
+
+
+def deep_check(url):
+    """Les málsgreinar fréttarinnar og athugar hvort hún fjallar um Akureyri. Texti er ekki vistaður.
+    True/False = niðurstaða, None = tókst ekki (reynt aftur næst)."""
+    try:
+        req = urllib.request.Request(url, headers=DEEP_UA)
+        with OPENER.open(req, timeout=15) as r:
+            page = r.read(400000).decode("utf-8", "ignore")
+    except Exception:
+        return None
+    page = re.sub(r"<(nav|aside|footer|header|script|style|noscript)\b.*?</\1>", " ", page, flags=re.S | re.I)
+    paras = [clean(p) for p in re.findall(r"<p[^>]*>(.*?)</p>", page, re.S | re.I)]
+    paras = [p for p in paras if len(p) > 40]
+    lead = " ".join(paras[:3]).lower()
+    body = " ".join(paras).lower()
+    if any(k in lead for k in DEEP_KEYWORDS):
+        return True
+    return sum(body.count(k) for k in DEEP_KEYWORDS) >= 2
+
+
 def main():
     try:  # fyrri fréttir eru geymdar svo landsmiðlafréttir um Akureyri hverfi ekki
         with open("news.json", encoding="utf-8") as f:
@@ -204,6 +252,12 @@ def main():
     known = {o["link"]: o.get("image") for o in old}
     by_link = {o["link"]: o for o in old}
     new_count = 0
+    try:
+        with open("athugad.json", encoding="utf-8") as f:
+            checked = json.load(f)
+    except Exception:
+        checked = {}
+    budget = DEEP_BUDGET
 
     for feed in FEEDS:
         try:
@@ -213,8 +267,25 @@ def main():
         except Exception as e:
             print("X  %s: tókst ekki að sækja (%s)" % (feed["name"], e))
             continue
-        kept = [i for i in items if i["link"] and i["title"] and (feed["local"] or about_akureyri(i))]
-        print("OK %s: %d fréttir sóttar, %d teknar með" % (feed["name"], len(items), len(kept)))
+        kept, rescued = [], 0
+        for i in items:
+            if not (i["link"] and i["title"]):
+                continue
+            if feed["local"] or about_akureyri(i):
+                kept.append(i)
+                continue
+            ok = checked.get(i["link"])
+            if ok is None and budget > 0 and allowed(i["link"]):
+                budget -= 1
+                ok = deep_check(i["link"])
+                if ok is not None:
+                    checked[i["link"]] = ok
+                time.sleep(0.3)
+            if ok:
+                kept.append(i)
+                rescued += 1
+        print("OK %s: %d fréttir sóttar, %d teknar með%s" % (
+            feed["name"], len(items), len(kept), (" (þar af %d fundnar með dýpri leit)" % rescued) if rescued else ""))
         for i in kept:
             if not i["image"]:
                 i["image"] = known.get(i["link"]) or og_image(i["link"])
@@ -227,6 +298,10 @@ def main():
         if not feed["local"]:
             for i in items[:2]:
                 print("   dæmi: %s" % i["title"][:80])
+
+    with open("athugad.json", "w", encoding="utf-8") as f:
+        json.dump(dict(list(checked.items())[-4000:]), f, ensure_ascii=False)
+    print("Dýpri leit: %d síður athugaðar núna, %d í minni." % (DEEP_BUDGET - budget, len(checked)))
 
     merged, per_source = [], {}
     for i in sorted(by_link.values(), key=lambda i: i["date"] or "", reverse=True):
