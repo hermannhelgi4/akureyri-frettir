@@ -15,6 +15,16 @@ FEEDS = [
     {"name": "mbl.is", "url": "https://www.mbl.is/feeds/innlent/", "local": False, "cat": "Fréttamiðlar"},
     {"name": "RÚV", "url": "https://www.ruv.is/rss/frettir", "local": False, "cat": "Fréttamiðlar"},
     {"name": "Vísir", "url": "https://www.visir.is/rss/allt", "local": False, "cat": "Fréttamiðlar"},
+    # Fleiri veitur hjá landsmiðlum til að auka líkurnar á að Akureyri-fréttir náist.
+    # Slóðirnar merktar (óstaðfest) eru giskaðar eftir sniði hinna; ef þær bila er þeim bara sleppt.
+    {"name": "mbl.is", "url": "https://www.mbl.is/feeds/nyjast/", "local": False, "cat": "Fréttamiðlar"},
+    {"name": "mbl.is", "url": "https://www.mbl.is/feeds/200milur/", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
+    {"name": "mbl.is", "url": "https://www.mbl.is/feeds/sport/", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
+    {"name": "mbl.is", "url": "https://www.mbl.is/feeds/menning/", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
+    {"name": "RÚV", "url": "https://www.ruv.is/rss/innlent", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
+    {"name": "RÚV", "url": "https://www.ruv.is/rss/ithrottir", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
+    {"name": "RÚV", "url": "https://www.ruv.is/rss/menning-og-daegurmal", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
+    {"name": "Vísir", "url": "https://www.visir.is/rss/innlent", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
     # Bærinn
     {"name": "Akureyrarbær", "url": "https://www.akureyri.is/feed.xml", "local": True, "cat": "Bærinn"},
     {"name": "Norðurorka", "url": "https://www.no.is/is/feed", "local": True, "cat": "Bærinn"},
@@ -38,9 +48,10 @@ FEEDS = [
     {"name": "Kjarnafæði Norðlenska", "url": "https://www.kn.is/feed/rss2", "local": True, "cat": "Fyrirtæki & félög"},
     {"name": "Norlandair", "url": "https://www.norlandair.is/is/feed", "local": True, "cat": "Fyrirtæki & félög"},
     {"name": "Glerártorg", "url": "https://www.glerartorg.is/is/feed", "local": True, "cat": "Fyrirtæki & félög"},
-    {"name": "Eining-Iðja", "url": "https://www.ein.is/is/feed", "local": True, "cat": "Fyrirtæki & félög"},
+    {"name": "Eining-Iðja", "url": "https://www.ein.is/is/feed", "local": True, "cat": "Fyrirtæki & félög", "max": 5},
 ]
 CAT_BY_SOURCE = {f["name"]: f["cat"] for f in FEEDS}
+MAX_BY_SOURCE = {f["name"]: f.get("max", 30) for f in FEEDS}
 
 # Stofnar orða (án beygingarendinga) sem sýna að frétt tengist Akureyri.
 KEYWORDS = [
@@ -67,6 +78,11 @@ def clean(text):
     text = html.unescape(re.sub(r"<[^>]+>", " ", text or ""))
     text = text.replace("\u00ad", "").replace("\u200b", "")  # falin bandstrik (Vísir)
     return re.sub(r"\s+", " ", text).strip()
+
+
+def short(text):
+    t = clean(text)[:300]
+    return t if len(t) > 3 else ""  # sleppir útdrætti sem er bara strik
 
 
 def parse_date(s):
@@ -121,7 +137,7 @@ def parse_feed(root):
         items.append({
             "title": clean(it.findtext("title")),
             "link": (it.findtext("link") or "").strip(),
-            "summary": clean(it.findtext("description"))[:300],
+            "summary": short(it.findtext("description")),
             "date": parse_date(it.findtext("pubDate")),
             "image": find_image(it, raw),
         })
@@ -131,7 +147,7 @@ def parse_feed(root):
         items.append({
             "title": clean(en.findtext("atom:title", namespaces=NS)),
             "link": link_el.get("href") if link_el is not None else "",
-            "summary": clean(en.findtext("atom:summary", namespaces=NS))[:300],
+            "summary": short(en.findtext("atom:summary", namespaces=NS)),
             "date": parse_date(en.findtext("atom:updated", namespaces=NS) or en.findtext("atom:published", namespaces=NS)),
             "image": find_image(en, raw),
         })
@@ -165,7 +181,7 @@ const l=document.getElementById("list");l.innerHTML="";
 NEWS.filter(n=>cur==="Allt"||n.category===cur).forEach(n=>{const a=el("a","item");a.href=n.link;a.target="_blank";a.rel="noopener";
 const im=el("div","img");if(n.image){const i=document.createElement("img");i.src=n.image;i.loading="lazy";i.referrerPolicy="no-referrer";i.onerror=()=>{i.remove();im.textContent=n.source};im.appendChild(i)}else im.textContent=n.source;
 const b=el("div","body");const m=el("div","meta");m.appendChild(el("span","src",n.source));m.appendChild(document.createTextNode(" · "+ago(n.date)));
-b.append(m,el("h2","",n.title),el("p","",n.summary));a.append(im,b);l.appendChild(a)})}
+b.append(m,el("h2","",n.title));if(n.summary&&n.summary.length>3)b.append(el("p","",n.summary));a.append(im,b);l.appendChild(a)})}
 document.getElementById("upd").textContent="Uppfært __TIME__";render();
 </script></body></html>"""
 
@@ -215,7 +231,7 @@ def main():
     merged, per_source = [], {}
     for i in sorted(by_link.values(), key=lambda i: i["date"] or "", reverse=True):
         per_source[i["source"]] = per_source.get(i["source"], 0) + 1
-        if per_source[i["source"]] <= 30:
+        if per_source[i["source"]] <= MAX_BY_SOURCE.get(i["source"], 30):
             merged.append(i)
     with open("news.json", "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)
