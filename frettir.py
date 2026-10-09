@@ -184,7 +184,7 @@ a.item{display:flex;gap:12px;background:var(--card);border:1px solid var(--bd);b
 h2{font-size:16px;margin:0 0 4px;line-height:1.3}p{margin:0;font-size:13px;color:var(--mu);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 </style></head><body><header><h1>Akureyri í fréttum</h1><div class="sub" id="upd"></div></header><nav class="tabbar"><button data-v="news" class="on" onclick="setView('news')">Fréttir</button><button data-v="ev" onclick="setView('ev')">Viðburðir</button></nav><div id="viewNews"><div class="chips" id="chips"></div><div class="strip" id="strip"></div><div class="wrap"><main id="list"></main><aside><div class="top" id="top"></div></aside></div></div><div id="viewEv" hidden><div class="chips" id="evchips"></div><div class="evwrap"><div id="evlist"></div></div></div>
 <script>
-const NEWS=__DATA__;const EVENTS=__EVENTS__;let evSrc="Allt";const API="__API__";let TOP=[];let cur="Allt";NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar"});const ORDER=["Fréttamiðlar","Nærsveitir","Bærinn","Menntun","Menning","Íþróttir","Fyrirtæki & félög"];
+const NEWS=__DATA__;const EVENTS=__EVENTS__;let evSrc="Allt",evSport="",evGen="";const API="__API__";let TOP=[];let cur="Allt";NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar"});const ORDER=["Fréttamiðlar","Nærsveitir","Bærinn","Menntun","Menning","Íþróttir","Fyrirtæki & félög"];
 function ago(d){if(!d)return"";const m=(Date.now()-new Date(d))/6e4;if(m<60)return"fyrir "+Math.max(1,Math.round(m))+" mín.";if(m<1440)return"fyrir "+Math.round(m/60)+" klst.";return"fyrir "+Math.round(m/1440)+" d."}
 function track(n){if(!API)return;try{const k="c:"+n.link;if(!localStorage.getItem(k)){localStorage.setItem(k,"1");fetch(API+"/click",{method:"POST",body:n.link,keepalive:true})}}catch(e){}}
 function strip(){const t=document.getElementById("strip");t.innerHTML="";if(cur==="Mest lesið")return;let L=TOP.map(k=>NEWS.find(n=>n.link===k)).filter(Boolean).slice(0,5);const real=L.length>0;if(!real)L=NEWS.slice(0,5);t.appendChild(el("h3","",real?"Mest lesið":"Mest lesið (nýjustu í bili)"));const r=el("div","row");L.forEach((n,i)=>{const a=el("a","");a.href=n.link;a.target="_blank";a.rel="noopener";a.onclick=()=>track(n);const x=el("div","t");x.appendChild(el("b","",String(i+1)));x.appendChild(document.createTextNode(n.title));a.appendChild(x);a.appendChild(el("small","",n.source));r.appendChild(a)});t.appendChild(r)}
@@ -203,16 +203,19 @@ const DAYS=["sun","mán","þri","mið","fim","fös","lau"],MON=["jan","feb","mar
 function fd(d){return d.getDate()+". "+MON[d.getMonth()]}
 function setView(v){document.getElementById("viewNews").hidden=(v!=="news");document.getElementById("viewEv").hidden=(v!=="ev");document.querySelectorAll(".tabbar button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));if(v==="ev")renderEv();window.scrollTo(0,0)}
 function renderEv(){const n0=new Date(),t=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("evlist"),ch=document.getElementById("evchips");
-const all=EVENTS.filter(e=>pd(e.end)>=t);const srcs=["Allt",...new Set(all.map(e=>e.source))];ch.innerHTML="";
+const all=EVENTS.filter(e=>e.res||pd(e.end)>=t);const srcs=["Allt",...new Set(all.map(e=>e.source))];ch.innerHTML="";
 srcs.forEach(s=>{const b=el("button","chip"+(s===evSrc?" on":""),s);b.onclick=()=>{evSrc=s;renderEv()};ch.appendChild(b)});
-box.innerHTML="";const L=all.filter(e=>evSrc==="Allt"||e.source===evSrc).sort((a,b)=>a.start<b.start?-1:a.start>b.start?1:((a.time||"")<(b.time||"")?-1:1));
+let c2=document.getElementById("evchips2");if(!c2){c2=el("div","chips");c2.id="evchips2";ch.after(c2)}c2.innerHTML="";c2.hidden=(evSrc!=="Íþróttir");
+if(evSrc==="Íþróttir"){[...new Set(all.filter(e=>e.sport).map(e=>e.sport))].forEach(s=>{const b=el("button","chip"+(s===evSport?" on":""),s);b.onclick=()=>{evSport=(evSport===s?"":s);renderEv()};c2.appendChild(b)});
+["Karlar","Konur"].forEach(s=>{const b=el("button","chip"+(s===evGen?" on":""),s);b.onclick=()=>{evGen=(evGen===s?"":s);renderEv()};c2.appendChild(b)})}
+box.innerHTML="";const L=all.filter(e=>(evSrc==="Allt"||e.source===evSrc)&&(evSrc!=="Íþróttir"||((!evSport||e.sport===evSport)&&(!evGen||e.gender===evGen)))).sort((a,b)=>a.start<b.start?-1:a.start>b.start?1:((a.time||"")<(b.time||"")?-1:1));
 if(!L.length){box.appendChild(el("div","sub","Engir viðburðir fundust."));return}
-let last="";L.forEach(e=>{const s=pd(e.start),ongoing=s<t,key=ongoing?"gangi":e.start;
-if(key!==last){last=key;let h="Í gangi";if(!ongoing){const diff=Math.round((s-t)/864e5);h=(diff===0?"Í dag · ":diff===1?"Á morgun · ":"")+DAYS[s.getDay()]+". "+fd(s)+(s.getFullYear()!==t.getFullYear()?" "+s.getFullYear():"")}box.appendChild(el("h3","evh",h))}
+let last="";L.forEach(e=>{const s=pd(e.start),ongoing=s<t&&!e.res,key=e.res?"urslit":ongoing?"gangi":e.start;
+if(key!==last){last=key;let h=e.res?"Úrslit nýlegra leikja":"Í gangi";if(!ongoing&&!e.res){const diff=Math.round((s-t)/864e5);h=(diff===0?"Í dag · ":diff===1?"Á morgun · ":"")+DAYS[s.getDay()]+". "+fd(s)+(s.getFullYear()!==t.getFullYear()?" "+s.getFullYear():"")}box.appendChild(el("h3","evh",h))}
 const a=el("a","item");a.href=e.link;a.target="_blank";a.rel="noopener";
 const im=el("div","img");if(e.image){const i=document.createElement("img");i.src=e.image;i.loading="lazy";i.referrerPolicy="no-referrer";i.onerror=()=>{i.remove();im.textContent=fd(s)};im.appendChild(i)}else im.textContent=fd(s);
-const b=el("div","body"),m=el("div","meta");m.appendChild(el("span","src",e.source));let when=e.time?"kl. "+e.time:"";if(e.end!==e.start)when+=(when?" · ":"")+fd(s)+" – "+fd(pd(e.end));if(when)m.appendChild(document.createTextNode(" · "+when));
-b.append(m,el("h2","",e.title));if(e.note){const tg=el("div","tags");e.note.split(" · ").forEach(x=>tg.appendChild(el("span","tag"+(x==="Ókeypis"?" free":""),x)));b.appendChild(tg)}
+const b=el("div","body"),m=el("div","meta");m.appendChild(el("span","src",e.sport||e.source));let when=e.time?"kl. "+e.time:"";if(e.end!==e.start)when+=(when?" · ":"")+fd(s)+" – "+fd(pd(e.end));if(when)m.appendChild(document.createTextNode(" · "+when));
+b.append(m,el("h2","",e.title));if(e.res)b.appendChild(el("p","","Úrslit: "+e.res));if(e.last)b.appendChild(el("p","sub","Síðast: "+e.last));if(e.note){const tg=el("div","tags");e.note.split(" · ").forEach(x=>tg.appendChild(el("span","tag"+(x==="Ókeypis"?" free":""),x)));b.appendChild(tg)}
 a.append(im,b);box.appendChild(a)})}
 document.getElementById("upd").textContent="Uppfært __TIME__";render();side();strip();if(API)fetch(API+"/top").then(r=>r.json()).then(t=>{TOP=t;side();strip();if(cur==="Mest lesið")render()}).catch(()=>{});
 </script></body></html>"""
@@ -617,6 +620,137 @@ def _load(path, default):
         return default
 
 
+# ---------- Íþróttaleikir ----------
+# Félögin á Akureyri sem við fylgjumst með (nöfn eins og sambandið skrifar þau)
+SPORT_TEAMS = {"KA", "Þór", "KA/Þór"}
+SPORT_RESULT_DAYS = 3  # úrslit leiks sjást svona marga daga eftir leik
+
+# HSÍ (handbolti): (mót-númer, kyn). Nafn mótsins kemur úr gögnunum sjálfum.
+HSI_TOURNAMENTS = [(9142, "Karlar"), (9141, "Konur"), (9140, "Karlar"), (9143, "Konur"), (9295, "Karlar"), (9303, "Konur")]
+
+
+def fetch_json(url):
+    if not allowed(url):
+        raise RuntimeError("robots.txt bannar aðgang að " + url)
+    req = urllib.request.Request(url, headers=DEEP_UA)
+    with OPENER.open(req, timeout=20) as r:
+        return json.loads(r.read(5000000).decode("utf-8", "ignore"))
+
+
+def read_hsi(today):
+    """Handbolti: HSÍ býður upp á opið JSON með öllum leikjum móts."""
+    out = []
+    for tid, gender in HSI_TOURNAMENTS:
+        try:
+            data = fetch_json("https://www.hsi.is/api/hsi/tournaments/%d/matches" % tid).get("data", [])
+        except Exception as e:
+            print("X  HSÍ mót %d: tókst ekki (%s)" % (tid, e))
+            continue
+        statuses, n = set(), 0
+        for g in data:
+            home, away = (g.get("HomeTeamName") or "").strip(), (g.get("AwayTeamName") or "").strip()
+            statuses.add(g.get("Status", ""))
+            if home not in SPORT_TEAMS and away not in SPORT_TEAMS:
+                continue
+            dt = g.get("GameDayTime") or ""
+            if len(dt) < 10:
+                continue
+            tm = dt[11:16] if len(dt) >= 16 and dt[11:16] != "00:00" else ""
+            n += 1
+            out.append({"sport": "Handbolti", "gender": gender, "comp": (g.get("TournamentName") or "").strip(),
+                        "date": dt[:10], "time": tm, "home": home, "away": away,
+                        "rh": (g.get("ResultHomeTeam") or "").strip(), "ra": (g.get("ResultAwayTeam") or "").strip(),
+                        "venue": (g.get("StadiumName") or "").strip(),
+                        "link": "https://www.hsi.is/tournament/%d" % tid})
+        nm = data[0].get("TournamentName") if data else "?"
+        print("   HSÍ %s: %d leikir alls, %d hjá Akureyrarliðum, stöður %s" % (nm, len(data), n, sorted(statuses)))
+    return out
+
+
+SPORT_SOURCES = [("Handbolti", read_hsi)]
+
+
+def collect_sports(old, today):
+    matches = []
+    for name, reader in SPORT_SOURCES:
+        try:
+            got = reader(today)
+        except Exception as e:
+            print("X  Íþróttir %s: tókst ekki (%s)" % (name, e))
+            got = []
+        if not got:
+            print("VIÐVÖRUN Íþróttir %s: engir leikir, held í fyrri lista" % name)
+            keep = [e for e in old if e.get("sport") == name]
+            matches_old = keep
+            matches.append(("old", matches_old))
+            continue
+        matches.append(("new", got))
+    t0 = today.isoformat()
+    cutoff = (today - timedelta(days=SPORT_RESULT_DAYS)).isoformat()
+    events, fresh = [], []
+    for kind, lst in matches:
+        if kind == "old":
+            events += [e for e in lst if e.get("end", "") >= cutoff]
+        else:
+            fresh += lst
+
+    def played(m):
+        return bool(m["rh"] and m["ra"]) and m["date"] <= t0
+
+    def mine(m):
+        return m["home"] if m["home"] in SPORT_TEAMS else m["away"]
+
+    groups = {}
+    for m in fresh:
+        groups.setdefault((m["sport"], m["gender"], mine(m)), []).append(m)
+    for key, lst in groups.items():
+        lst.sort(key=lambda m: (m["date"], m["time"]))
+        done = [m for m in lst if played(m)]
+        last = ""
+        if done:
+            m = done[-1]
+            try:
+                a, b = int(m["rh"]), int(m["ra"])
+                mine_home = m["home"] == key[2]
+                diff = (a - b) if mine_home else (b - a)
+                word = "sigur" if diff > 0 else ("tap" if diff < 0 else "jafntefli")
+            except ValueError:
+                word = "úrslit"
+            last = "%s, %s %s–%s %s" % (word, m["home"], m["rh"], m["ra"], m["away"])
+        first_up = True
+        for m in lst:
+            home_game = m["home"] in SPORT_TEAMS
+            tags = ["Heimaleikur" if home_game else "Útileikur"]
+            if m["comp"]:
+                tags.append(m["comp"])
+            if m["venue"]:
+                tags.append(m["venue"])
+            e = {"title": "%s – %s" % (m["home"], m["away"]), "source": "Íþróttir", "sport": m["sport"],
+                 "gender": m["gender"], "link": m["link"], "start": m["date"], "end": m["date"],
+                 "time": m["time"], "image": None, "note": " · ".join(tags)}
+            if played(m):
+                if m["date"] < cutoff:
+                    continue
+                e["res"] = "%s–%s" % (m["rh"], m["ra"])
+            else:
+                if m["date"] < t0:
+                    continue  # leikur liðinn en engin úrslit komin
+                if first_up and last:
+                    e["last"] = last
+                first_up = False
+            events.append(e)
+    # sami leikur tveggja Akureyrarliða kemur úr báðum hópum – fjarlægi tvítekningar
+    seen, uniq = set(), []
+    for e in events:
+        k = (e["sport"], e["gender"], e["title"], e["start"])
+        if k in seen:
+            continue
+        seen.add(k)
+        uniq.append(e)
+    print("OK Íþróttir: %d spjöld (leikir framundan og nýleg úrslit)" % len(uniq))
+    return uniq
+
+
 def collect_events():
     today = datetime.now(timezone.utc).date()
     old = _load("events.json", [])
@@ -687,6 +821,11 @@ def collect_events():
         seen.add(key)
         uniq.append(e)
     result = uniq
+    try:
+        result += collect_sports(old, today)
+    except Exception as e:
+        print("X  Íþróttir: óvænt villa (%s)" % e)
+        result += [x for x in old if x.get("sport")]
     result.sort(key=lambda e: (e["start"], e.get("time") or ""))
     with open("events.json", "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
