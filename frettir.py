@@ -715,7 +715,63 @@ def read_ihi(today):
     return out
 
 
-SPORT_SOURCES = [("Handbolti", read_hsi), ("Íshokkí", read_ihi)]
+# Blak: Blaksamband Íslands (bli-web.dataproject.com). Hver leikur er með auðkennd svæði í HTML.
+BLI_BASE = "https://bli-web.dataproject.com/"
+# (mót-númer, kyn, nafn, fasa-númer eða None = finn fasana á forsíðu mótsins)
+BLI_COMPETITIONS = [(142, "Karlar", "Unbrokendeild karla", 209), (143, "Konur", "Unbrokendeild kvenna", 211),
+                    (151, "Karlar", "Bikarkeppni karla", None), (144, "Konur", "Kjörísbikar kvenna", None)]
+BLI_DATE = re.compile(r"(\d{1,2})\.(\d{1,2})\.(\d{4})\s*-\s*(\d{1,2}):(\d{2})")
+
+
+def _bli_span(chunk, suffix):
+    m = re.search(r'id="[^"]*_%s"[^>]*>([^<]*)<' % suffix, chunk)
+    return html.unescape(m.group(1)).strip() if m else ""
+
+
+def bli_parse(page, gender, comp, link):
+    starts = [m.start() for m in re.finditer(r'id="[^"]*_LB_DataOra"', page)]
+    out = []
+    for i, s in enumerate(starts):
+        chunk = page[s: starts[i + 1] if i + 1 < len(starts) else s + 6000]
+        d = BLI_DATE.search(_bli_span(chunk, "LB_DataOra"))
+        home, away = _bli_span(chunk, "LBL_HomeTeamName"), _bli_span(chunk, "LBL_GuestTeamName")
+        if not d or not home or not away:
+            continue
+        hh, mm = int(d.group(4)), d.group(5)
+        out.append({"sport": "Blak", "gender": gender, "comp": comp,
+                    "date": "%s-%02d-%02d" % (d.group(3), int(d.group(2)), int(d.group(1))),
+                    "time": "" if (hh == 0 and mm == "00") else "%02d:%s" % (hh, mm),
+                    "home": home, "away": away,
+                    "rh": _bli_span(chunk, "LB_SetCasa"), "ra": _bli_span(chunk, "LB_SetOspiti"),
+                    "venue": _bli_span(chunk, "LB_Palasport"), "link": link})
+    return out
+
+
+def read_bli(today):
+    out = []
+    for cid, gender, comp, pid in BLI_COMPETITIONS:
+        try:
+            pids = [pid] if pid else sorted({int(x) for x in re.findall(
+                r"CompetitionMatches\.aspx\?ID=%d(?:&amp;|&)PID=(\d+)" % cid,
+                fetch_page(BLI_BASE + "CompetitionHome.aspx?ID=%d" % cid))})
+        except Exception as e:
+            print("X  Blak %s: tókst ekki að finna fasa (%s)" % (comp, e))
+            continue
+        rows = []
+        for p in pids:
+            url = BLI_BASE + "CompetitionMatches.aspx?ID=%d&PID=%d" % (cid, p)
+            try:
+                rows += bli_parse(fetch_page(url), gender, comp, url)
+            except Exception as e:
+                print("X  Blak %s (fasi %d): tókst ekki (%s)" % (comp, p, e))
+            time.sleep(1)
+        mine = [r for r in rows if r["home"] in SPORT_TEAMS or r["away"] in SPORT_TEAMS]
+        print("   Blak %s: fasar %s, %d leikir alls, %d hjá KA" % (comp, pids, len(rows), len(mine)))
+        out += mine
+    return out
+
+
+SPORT_SOURCES = [("Handbolti", read_hsi), ("Íshokkí", read_ihi), ("Blak", read_bli)]
 
 
 def collect_sports(old, today):
