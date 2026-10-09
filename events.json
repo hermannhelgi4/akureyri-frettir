@@ -36,6 +36,19 @@
     "res": "30–25"
   },
   {
+    "title": "Fjölnir – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2026-10-09",
+    "end": "2026-10-09",
+    "time": "19:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild karla",
+    "res": "4–5"
+  },
+  {
     "title": "Maideniced",
     "source": "Græni hatturinn",
     "link": "https://www.graenihatturinn.is/is/maideniced-09-oct-2026/eid/265",
@@ -64,6 +77,19 @@
     "time": "15:00",
     "image": "https://www.mak.is/static/calendar/images/1200x1700-vidburdadagatal-mak-a4639.jpg?v=1791581756",
     "note": "Ókeypis"
+  },
+  {
+    "title": "SR – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Konur",
+    "link": "https://stats.iihf.com/ihi/100/index.html",
+    "start": "2026-10-10",
+    "end": "2026-10-10",
+    "time": "17:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild kvenna",
+    "last": "sigur, SA 12–1 Fjölnir"
   },
   {
     "title": "Helgi Björns & Reiðmenn vindanna",
@@ -164,6 +190,19 @@
     "note": "Útileikur · Powerade bikar karla 2027 · Íþróttamiðstöð Vestmannaeyja"
   },
   {
+    "title": "SA – SR",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2026-10-17",
+    "end": "2026-10-17",
+    "time": "16:45",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild karla",
+    "last": "sigur, Fjölnir 4–5 SA"
+  },
+  {
     "title": "KA/Þór – Stjarnan",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -241,6 +280,18 @@
     "note": "Frá 5.990 kr."
   },
   {
+    "title": "SR – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2026-10-23",
+    "end": "2026-10-23",
+    "time": "19:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild karla"
+  },
+  {
     "title": "Fasteignamartröðin",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/fasteignamartrodin",
@@ -269,6 +320,30 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782999805.jpg?v=1791581756",
     "note": "Frá 9.900 kr."
+  },
+  {
+    "title": "Fjölnir – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2026-10-24",
+    "end": "2026-10-24",
+    "time": "16:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild karla"
+  },
+  {
+    "title": "SR – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Konur",
+    "link": "https://stats.iihf.com/ihi/100/index.html",
+    "start": "2026-10-24",
+    "end": "2026-10-24",
+    "time": "19:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild kvenna"
   },
   {
     "title": "Fasteignamartröðin",
@@ -453,6 +528,18 @@
     "note": "Útileikur · Olís deild kvenna · Set höllin"
   },
   {
+    "title": "SA – Fjölnir",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Konur",
+    "link": "https://stats.iihf.com/ihi/100/index.html",
+    "start": "2026-11-07",
+    "end": "2026-11-07",
+    "time": "16:45",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild kvenna"
+  },
+  {
     "title": "Fasteignamartröðin",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/fasteignamartrodin",
@@ -549,6 +636,18 @@
     "note": "Frá 7.900 kr."
   },
   {
+    "title": "SA – Fjölnir",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2026-11-14",
+    "end": "2026-11-14",
+    "time": "16:45",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild karla"
+  },
+  {
     "title": "Fasteignamartröðin",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/fasteignamartrodin",
@@ -623,6 +722,18 @@
     "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
   },
   {
+    "title": "SA – SR",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Konur",
+    "link": "https://stats.iihf.com/ihi/100/index.html",
+    "start": "2026-11-21",
+    "end": "2026-11-21",
+    "time": "16:45",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild kvenna"
+  },
+  {
     "title": "Skálmöld",
     "source": "Græni hatturinn",
     "link": "https://www.graenihatturinn.is/is/skalmold-21-nov-2026/eid/289",
@@ -679,6 +790,18 @@
     "note": "7.900 kr."
   },
   {
+    "title": "Fjölnir – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Konur",
+    "link": "https://stats.iihf.com/ihi/100/index.html",
+    "start": "2026-11-27",
+    "end": "2026-11-27",
+    "time": "19:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild kvenna"
+  },
+  {
     "title": "Jólaglögg",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/jolaglogg-1",
@@ -707,6 +830,18 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/v5FSlygO8Tq2R4W0dCc589bbKeFZY0-metaU2vDrW3DsyAyNiBJSUlJLmpwZw==-.webp",
     "note": "Frá 8.500 kr."
+  },
+  {
+    "title": "Fjölnir – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Konur",
+    "link": "https://stats.iihf.com/ihi/100/index.html",
+    "start": "2026-11-28",
+    "end": "2026-11-28",
+    "time": "16:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild kvenna"
   },
   {
     "title": "Jólaglögg",
@@ -967,6 +1102,18 @@
     "note": "Frá 13.999 kr."
   },
   {
+    "title": "SA – SR",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2026-12-12",
+    "end": "2026-12-12",
+    "time": "16:45",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild karla"
+  },
+  {
     "title": "Vitringarnir 3 - 2026",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/vitringarnir-3-2026",
@@ -975,6 +1122,18 @@
     "time": "19:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791581756",
     "note": "Frá 13.999 kr."
+  },
+  {
+    "title": "SA – SR",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Konur",
+    "link": "https://stats.iihf.com/ihi/100/index.html",
+    "start": "2026-12-12",
+    "end": "2026-12-12",
+    "time": "19:30",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild kvenna"
   },
   {
     "title": "Laddi og Hljómsveit mannanna - Jóla hvað?",
@@ -1095,6 +1254,30 @@
     "note": "Frá 7.900 kr."
   },
   {
+    "title": "U20 – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2027-01-02",
+    "end": "2027-01-02",
+    "time": "16:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild karla"
+  },
+  {
+    "title": "SA – U20",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2027-01-03",
+    "end": "2027-01-03",
+    "time": "16:45",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild karla"
+  },
+  {
     "title": "Valur – KA/Þór",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -1107,6 +1290,18 @@
     "note": "Útileikur · Olís deild kvenna · N1 höllin"
   },
   {
+    "title": "SA – SR",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2027-01-09",
+    "end": "2027-01-09",
+    "time": "16:45",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild karla"
+  },
+  {
     "title": "Í tunglsljósi á ís",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/i-tunglsljosi-a-is",
@@ -1115,6 +1310,18 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/tunglsljos_120017004592.jpg?v=1791581756",
     "note": "Frá 5.900 kr."
+  },
+  {
+    "title": "Fjölnir – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2027-01-10",
+    "end": "2027-01-10",
+    "time": "19:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild karla"
   },
   {
     "title": "KA/Þór – Grótta",
@@ -1147,6 +1354,18 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791581756",
     "note": "7.900 kr."
+  },
+  {
+    "title": "SA – Fjölnir",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Konur",
+    "link": "https://stats.iihf.com/ihi/100/index.html",
+    "start": "2027-01-23",
+    "end": "2027-01-23",
+    "time": "19:45",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild kvenna"
   },
   {
     "title": "120 ára afmæli Samkomuhússins",
@@ -1213,6 +1432,18 @@
     "note": "4.000 kr."
   },
   {
+    "title": "SA – Fjölnir",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2027-01-31",
+    "end": "2027-01-31",
+    "time": "16:45",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild karla"
+  },
+  {
     "title": "ÍBV – KA",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -1247,6 +1478,30 @@
     "time": "16:00",
     "image": null,
     "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
+  },
+  {
+    "title": "SR – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Konur",
+    "link": "https://stats.iihf.com/ihi/100/index.html",
+    "start": "2027-02-06",
+    "end": "2027-02-06",
+    "time": "17:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild kvenna"
+  },
+  {
+    "title": "SR – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2027-02-06",
+    "end": "2027-02-06",
+    "time": "19:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild karla"
   },
   {
     "title": "120 ára afmæli Samkomuhússins",
@@ -1305,6 +1560,18 @@
     "note": "Útileikur · Olís deild kvenna · Lambhagahöllin"
   },
   {
+    "title": "SA – Fjölnir",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2027-02-13",
+    "end": "2027-02-13",
+    "time": "16:45",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild karla"
+  },
+  {
     "title": "A Country Night in Nashville",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/a-country-night-in-nashville",
@@ -1349,6 +1616,18 @@
     "note": "Útileikur · Olís deild karla · Myntkaup höllin"
   },
   {
+    "title": "SA – SR",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2027-02-19",
+    "end": "2027-02-19",
+    "time": "16:45",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild karla"
+  },
+  {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
@@ -1379,6 +1658,18 @@
     "note": "Frá 6.900 kr."
   },
   {
+    "title": "SA – Fjölnir",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2027-02-21",
+    "end": "2027-02-21",
+    "time": "16:45",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild karla"
+  },
+  {
     "title": "Þór – Afturelding",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -1401,6 +1692,18 @@
     "time": "19:15",
     "image": null,
     "note": "Heimaleikur · Olís deild karla · KA heimilið"
+  },
+  {
+    "title": "SR – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2027-02-26",
+    "end": "2027-02-26",
+    "time": "19:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild karla"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -1457,6 +1760,18 @@
     "note": "Útileikur · Olís deild karla · Kuehne+Nagel höllin"
   },
   {
+    "title": "SR – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Konur",
+    "link": "https://stats.iihf.com/ihi/100/index.html",
+    "start": "2027-03-06",
+    "end": "2027-03-06",
+    "time": "17:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild kvenna"
+  },
+  {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
@@ -1465,6 +1780,18 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
     "note": "6.900 kr."
+  },
+  {
+    "title": "Fjölnir – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Konur",
+    "link": "https://stats.iihf.com/ihi/100/index.html",
+    "start": "2027-03-07",
+    "end": "2027-03-07",
+    "time": "16:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild kvenna"
   },
   {
     "title": "Aríur örlaganna",
@@ -1509,6 +1836,18 @@
     "time": "19:30",
     "image": null,
     "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
+  },
+  {
+    "title": "SA – SR",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Konur",
+    "link": "https://stats.iihf.com/ihi/100/index.html",
+    "start": "2027-03-20",
+    "end": "2027-03-20",
+    "time": "16:45",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild kvenna"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -1585,6 +1924,18 @@
     "note": "6.900 kr."
   },
   {
+    "title": "Fjölnir – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Konur",
+    "link": "https://stats.iihf.com/ihi/100/index.html",
+    "start": "2027-04-03",
+    "end": "2027-04-03",
+    "time": "16:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild kvenna"
+  },
+  {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
@@ -1593,6 +1944,18 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
     "note": "6.900 kr."
+  },
+  {
+    "title": "SA – Fjölnir",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Konur",
+    "link": "https://stats.iihf.com/ihi/100/index.html",
+    "start": "2027-04-10",
+    "end": "2027-04-10",
+    "time": "16:45",
+    "image": null,
+    "note": "Heimaleikur · Toppdeild kvenna"
   },
   {
     "title": "Urta söguljóð",
