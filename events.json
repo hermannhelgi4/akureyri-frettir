@@ -866,8 +866,8 @@
     "start": "2027-02-21",
     "end": "2027-02-21",
     "time": "16:00",
-    "image": null,
-    "note": ""
+    "image": "https://www.mak.is/static/calendar/images/brahms1217004594.jpg?v=1791581756",
+    "note": "Frá 6.900 kr."
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -916,7 +916,7 @@
     "start": "2027-03-11",
     "end": "2027-03-11",
     "time": "17:00",
-    "image": null,
+    "image": "https://www.mak.is/static/calendar/images/submit_1782207313.png?v=1791581756",
     "note": ""
   },
   {
@@ -946,8 +946,8 @@
     "start": "2027-03-25",
     "end": "2027-03-25",
     "time": "16:00",
-    "image": null,
-    "note": ""
+    "image": "https://www.mak.is/static/calendar/images/urheimi_120017004597.jpg?v=1791581756",
+    "note": "Frá 4.900 kr."
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -966,7 +966,7 @@
     "start": "2027-04-01",
     "end": "2027-04-01",
     "time": "20:00",
-    "image": null,
+    "image": "https://www.mak.is/static/calendar/images/submit_1782206629.png?v=1791581756",
     "note": ""
   },
   {
@@ -996,7 +996,7 @@
     "start": "2027-04-18",
     "end": "2027-04-18",
     "time": "16:00",
-    "image": null,
+    "image": "https://www.mak.is/static/calendar/images/submit_1782207254.png?v=1791581756",
     "note": ""
   },
   {
@@ -1004,10 +1004,20 @@
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/gaedablod",
     "start": "2027-04-29",
+    "end": "2027-04-29",
+    "time": "20:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782745946.jpg?v=1791581756",
+    "note": "6.900 kr."
+  },
+  {
+    "title": "Gæðablóð",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/gaedablod",
+    "start": "2027-04-30",
     "end": "2027-04-30",
     "time": "20:00",
-    "image": null,
-    "note": ""
+    "image": "https://www.mak.is/static/calendar/images/submit_1782745946.jpg?v=1791581756",
+    "note": "6.900 kr."
   },
   {
     "title": "Teiknimyndalögin okkar",
@@ -1016,7 +1026,7 @@
     "start": "2027-05-09",
     "end": "2027-05-09",
     "time": "16:00",
-    "image": null,
+    "image": "https://www.mak.is/static/calendar/images/submit_1782206981.png?v=1791581756",
     "note": ""
   },
   {
@@ -1026,8 +1036,8 @@
     "start": "2027-05-09",
     "end": "2027-05-09",
     "time": "16:00",
-    "image": null,
-    "note": ""
+    "image": "https://www.mak.is/static/calendar/images/submit_1782744648.png?v=1791581756",
+    "note": "5.900 kr."
   },
   {
     "title": "Stand up Comedy in broken English • Victor Patrascan in Akureyri",
@@ -1036,8 +1046,8 @@
     "start": "2027-05-22",
     "end": "2027-05-22",
     "time": "20:00",
-    "image": null,
-    "note": ""
+    "image": "https://www.mak.is/static/calendar/images/submit_1772030128.jpg?v=1791581756",
+    "note": "Frá 3.750 kr."
   },
   {
     "title": "Sólrún Svava og rómantíska fiðlan",
@@ -1046,7 +1056,7 @@
     "start": "2027-06-13",
     "end": "2027-06-13",
     "time": "16:00",
-    "image": null,
-    "note": ""
+    "image": "https://www.mak.is/static/calendar/images/34624.png?v=1791581756",
+    "note": "3.000 kr."
   }
 ]
