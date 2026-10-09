@@ -25,6 +25,23 @@ FEEDS = [
     {"name": "RÚV", "url": "https://www.ruv.is/rss/innlent", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
     {"name": "RÚV", "url": "https://www.ruv.is/rss/ithrottir", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
     {"name": "RÚV", "url": "https://www.ruv.is/rss/menning-og-daegurmal", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
+    # Nýir fréttavefir og SBA (veituslóðir giskaðar, ef þær bila er þeim sleppt)
+    {"name": "Trölli.is", "url": "https://trolli.is/feed", "local": True, "cat": "Fréttamiðlar"},  # (óstaðfest)
+    {"name": "Dal.is", "url": "https://dal.is/feed", "local": True, "cat": "Fréttamiðlar"},  # (óstaðfest)
+    {"name": "SBA-Norðurleið", "url": "https://www.sba.is/feed", "local": True, "cat": "Fyrirtæki & félög"},  # (óstaðfest)
+    # Nærsveitarfélög (tvær giskaðar slóðir á hvert; max 10 svo fundargerðir kaffæri ekki öðru)
+    {"name": "Dalvíkurbyggð", "url": "https://www.dalvikurbyggd.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
+    {"name": "Dalvíkurbyggð", "url": "https://www.dalvikurbyggd.is/is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
+    {"name": "Fjallabyggð", "url": "https://www.fjallabyggd.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
+    {"name": "Fjallabyggð", "url": "https://www.fjallabyggd.is/is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
+    {"name": "Eyjafjarðarsveit", "url": "https://www.esveit.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
+    {"name": "Eyjafjarðarsveit", "url": "https://www.esveit.is/is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
+    {"name": "Hörgársveit", "url": "https://www.horgarsveit.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
+    {"name": "Hörgársveit", "url": "https://www.horgarsveit.is/is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
+    {"name": "Grýtubakkahreppur", "url": "https://www.grenivik.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
+    {"name": "Grýtubakkahreppur", "url": "https://www.grenivik.is/is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
+    {"name": "Svalbarðsstrandarhreppur", "url": "https://www.svalbardsstrond.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
+    {"name": "Svalbarðsstrandarhreppur", "url": "https://www.svalbardsstrond.is/is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
     # Bærinn
     {"name": "Akureyrarbær", "url": "https://www.akureyri.is/feed.xml", "local": True, "cat": "Bærinn"},
     {"name": "Norðurorka", "url": "https://www.no.is/is/feed", "local": True, "cat": "Bærinn"},
@@ -174,7 +191,7 @@ a.item{display:flex;gap:12px;background:var(--card);border:1px solid var(--bd);b
 h2{font-size:16px;margin:0 0 4px;line-height:1.3}p{margin:0;font-size:13px;color:var(--mu);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 </style></head><body><header><h1>Akureyri í fréttum</h1><div class="sub" id="upd"></div></header><div class="chips" id="chips"></div><div class="strip" id="strip"></div><div class="wrap"><main id="list"></main><aside><div class="top" id="top"></div></aside></div>
 <script>
-const NEWS=__DATA__;const API="__API__";let TOP=[];let cur="Allt";NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar"});const ORDER=["Fréttamiðlar","Bærinn","Menntun","Menning","Íþróttir","Fyrirtæki & félög"];
+const NEWS=__DATA__;const API="__API__";let TOP=[];let cur="Allt";NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar"});const ORDER=["Fréttamiðlar","Nærsveitir","Bærinn","Menntun","Menning","Íþróttir","Fyrirtæki & félög"];
 function ago(d){if(!d)return"";const m=(Date.now()-new Date(d))/6e4;if(m<60)return"fyrir "+Math.max(1,Math.round(m))+" mín.";if(m<1440)return"fyrir "+Math.round(m/60)+" klst.";return"fyrir "+Math.round(m/1440)+" d."}
 function track(n){if(!API)return;try{const k="c:"+n.link;if(!localStorage.getItem(k)){localStorage.setItem(k,"1");fetch(API+"/click",{method:"POST",body:n.link,keepalive:true})}}catch(e){}}
 function strip(){const t=document.getElementById("strip");t.innerHTML="";if(cur==="Mest lesið")return;let L=TOP.map(k=>NEWS.find(n=>n.link===k)).filter(Boolean).slice(0,5);const real=L.length>0;if(!real)L=NEWS.slice(0,5);t.appendChild(el("h3","",real?"Mest lesið":"Mest lesið (nýjustu í bili)"));const r=el("div","row");L.forEach((n,i)=>{const a=el("a","");a.href=n.link;a.target="_blank";a.rel="noopener";a.onclick=()=>track(n);const x=el("div","t");x.appendChild(el("b","",String(i+1)));x.appendChild(document.createTextNode(n.title));a.appendChild(x);a.appendChild(el("small","",n.source));r.appendChild(a)});t.appendChild(r)}
