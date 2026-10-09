@@ -424,10 +424,10 @@
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/baggalutur-2",
     "start": "2026-11-27",
-    "end": "2026-11-28",
+    "end": "2026-11-27",
     "time": "21:00",
-    "image": null,
-    "note": ""
+    "image": "https://www.mak.is/static/calendar/images/uppf._baggalutur_120017004642.jpg?v=1791581756",
+    "note": "13.990 kr."
   },
   {
     "title": "Skítamórall",
@@ -454,10 +454,10 @@
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/a-raudu-ljosi",
     "start": "2026-11-28",
-    "end": "2026-12-06",
+    "end": "2026-11-28",
     "time": "20:00",
-    "image": null,
-    "note": ""
+    "image": "https://www.mak.is/static/calendar/images/submit_1782745812.png?v=1791581756",
+    "note": "6.900 kr."
   },
   {
     "title": "Jólaglögg",
@@ -470,14 +470,34 @@
     "note": "7.900 kr."
   },
   {
+    "title": "Baggalútur",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/baggalutur-2",
+    "start": "2026-11-28",
+    "end": "2026-11-28",
+    "time": "21:00",
+    "image": "https://www.mak.is/static/calendar/images/uppf._baggalutur_120017004642.jpg?v=1791581756",
+    "note": "13.990 kr."
+  },
+  {
+    "title": "Á rauðu ljósi",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/a-raudu-ljosi",
+    "start": "2026-11-29",
+    "end": "2026-11-29",
+    "time": "20:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782745812.png?v=1791581756",
+    "note": "6.900 kr."
+  },
+  {
     "title": "Jólapartý Skoppu og Skrítlu",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/jolaparty-skoppu-og-skritlu",
     "start": "2026-12-04",
-    "end": "2026-12-05",
-    "time": "",
-    "image": null,
-    "note": ""
+    "end": "2026-12-04",
+    "time": "17:00",
+    "image": "https://www.mak.is/static/calendar/images/jolaparty-hof-uppfaerd-dags-707x1000-014640.png?v=1791581756",
+    "note": "7.500 kr."
   },
   {
     "title": "Jólaglögg",
@@ -510,14 +530,54 @@
     "note": "Nýtt · Frá 6.900 kr."
   },
   {
+    "title": "Jólapartý Skoppu og Skrítlu",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/jolaparty-skoppu-og-skritlu",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "time": "11:00",
+    "image": "https://www.mak.is/static/calendar/images/jolaparty-hof-uppfaerd-dags-707x1000-014640.png?v=1791581756",
+    "note": "7.500 kr."
+  },
+  {
+    "title": "Jólapartý Skoppu og Skrítlu",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/jolaparty-skoppu-og-skritlu",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "time": "13:00",
+    "image": "https://www.mak.is/static/calendar/images/jolaparty-hof-uppfaerd-dags-707x1000-014640.png?v=1791581756",
+    "note": "7.500 kr."
+  },
+  {
+    "title": "Jólapartý Skoppu og Skrítlu",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/jolaparty-skoppu-og-skritlu",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "time": "15:00",
+    "image": "https://www.mak.is/static/calendar/images/jolaparty-hof-uppfaerd-dags-707x1000-014640.png?v=1791581756",
+    "note": "7.500 kr."
+  },
+  {
+    "title": "Á rauðu ljósi",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/a-raudu-ljosi",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "time": "20:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782745812.png?v=1791581756",
+    "note": "6.900 kr."
+  },
+  {
     "title": "Bubbi - Þorláksmessutónleikar",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/bubbi-thorlaksmessutonleikar-2",
     "start": "2026-12-05",
     "end": "2026-12-05",
     "time": "20:30",
-    "image": null,
-    "note": ""
+    "image": "https://www.mak.is/static/calendar/images/submit_1788189721.png?v=1791581756",
+    "note": "Frá 9.500 kr."
   },
   {
     "title": "Jóla-Súlur",
@@ -528,6 +588,16 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/65xmvcUUihVzsCxqKsyPRUdYCN6L4B-metaSsOzbGFzw7psdXIgMjYgSUkuanBn-.webp",
     "note": "Nýtt · Frá 4.900 kr."
+  },
+  {
+    "title": "Á rauðu ljósi",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/a-raudu-ljosi",
+    "start": "2026-12-06",
+    "end": "2026-12-06",
+    "time": "20:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782745812.png?v=1791581756",
+    "note": "6.900 kr."
   },
   {
     "title": "Jól með Brother Grass",
@@ -544,10 +614,10 @@
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/vitringarnir-3-2026",
     "start": "2026-12-11",
-    "end": "2026-12-13",
-    "time": "",
-    "image": null,
-    "note": ""
+    "end": "2026-12-11",
+    "time": "19:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791581756",
+    "note": "Frá 13.999 kr."
   },
   {
     "title": "Brother Grass",
@@ -560,6 +630,36 @@
     "note": "Frá 6.900 kr."
   },
   {
+    "title": "Vitringarnir 3 - 2026",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/vitringarnir-3-2026",
+    "start": "2026-12-11",
+    "end": "2026-12-11",
+    "time": "22:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791581756",
+    "note": "Frá 13.999 kr."
+  },
+  {
+    "title": "Vitringarnir 3 - 2026",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/vitringarnir-3-2026",
+    "start": "2026-12-12",
+    "end": "2026-12-12",
+    "time": "16:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791581756",
+    "note": "Frá 13.999 kr."
+  },
+  {
+    "title": "Vitringarnir 3 - 2026",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/vitringarnir-3-2026",
+    "start": "2026-12-12",
+    "end": "2026-12-12",
+    "time": "19:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791581756",
+    "note": "Frá 13.999 kr."
+  },
+  {
     "title": "Laddi og Hljómsveit mannanna - Jóla hvað?",
     "source": "Græni hatturinn",
     "link": "https://www.graenihatturinn.is/is/laddi-og-hljomsveit-mannanna-jola-hvad-12-dec-2026/eid/283",
@@ -568,6 +668,26 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/LtCalN6ewik4zUeLiQWp712Me87flq-metaNVdGcUtZS3cuanBn-.webp",
     "note": "Frá 8.900 kr."
+  },
+  {
+    "title": "Vitringarnir 3 - 2026",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/vitringarnir-3-2026",
+    "start": "2026-12-12",
+    "end": "2026-12-12",
+    "time": "22:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791581756",
+    "note": "Frá 13.999 kr."
+  },
+  {
+    "title": "Vitringarnir 3 - 2026",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/vitringarnir-3-2026",
+    "start": "2026-12-13",
+    "end": "2026-12-13",
+    "time": "19:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791581756",
+    "note": "Frá 13.999 kr."
   },
   {
     "title": "Krissmas Spesjal",
@@ -585,9 +705,19 @@
     "link": "https://www.mak.is/is/vidburdir/ari-eldjarn-1",
     "start": "2026-12-19",
     "end": "2026-12-19",
-    "time": "",
-    "image": null,
-    "note": ""
+    "time": "18:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1787225556.jpg?v=1791581756",
+    "note": "9.990 kr."
+  },
+  {
+    "title": "Ari Eldjárn: Áramótaskop 2026",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/ari-eldjarn-1",
+    "start": "2026-12-19",
+    "end": "2026-12-19",
+    "time": "21:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1787225556.jpg?v=1791581756",
+    "note": "9.990 kr."
   },
   {
     "title": "Krissmas Spesjal",
@@ -606,18 +736,58 @@
     "start": "2027-01-10",
     "end": "2027-01-10",
     "time": "16:00",
-    "image": null,
-    "note": ""
+    "image": "https://www.mak.is/static/calendar/images/tunglsljos_120017004592.jpg?v=1791581756",
+    "note": "Frá 5.900 kr."
   },
   {
     "title": "120 ára afmæli Samkomuhússins",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/120-ara-afmaeli-samkomuhussins",
     "start": "2027-01-20",
-    "end": "2027-02-06",
+    "end": "2027-01-20",
     "time": "20:00",
-    "image": null,
-    "note": ""
+    "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791581756",
+    "note": "7.900 kr."
+  },
+  {
+    "title": "120 ára afmæli Samkomuhússins",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/120-ara-afmaeli-samkomuhussins",
+    "start": "2027-01-22",
+    "end": "2027-01-22",
+    "time": "20:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791581756",
+    "note": "7.900 kr."
+  },
+  {
+    "title": "120 ára afmæli Samkomuhússins",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/120-ara-afmaeli-samkomuhussins",
+    "start": "2027-01-23",
+    "end": "2027-01-23",
+    "time": "20:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791581756",
+    "note": "7.900 kr."
+  },
+  {
+    "title": "120 ára afmæli Samkomuhússins",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/120-ara-afmaeli-samkomuhussins",
+    "start": "2027-01-29",
+    "end": "2027-01-29",
+    "time": "20:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791581756",
+    "note": "7.900 kr."
+  },
+  {
+    "title": "120 ára afmæli Samkomuhússins",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/120-ara-afmaeli-samkomuhussins",
+    "start": "2027-01-30",
+    "end": "2027-01-30",
+    "time": "20:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791581756",
+    "note": "7.900 kr."
   },
   {
     "title": "Pernille Haaland - Nordic AF",
@@ -626,18 +796,28 @@
     "start": "2027-01-30",
     "end": "2027-01-30",
     "time": "20:00",
-    "image": null,
-    "note": ""
+    "image": "https://www.mak.is/static/calendar/images/submit_1781103353.png?v=1791581756",
+    "note": "4.000 kr."
+  },
+  {
+    "title": "120 ára afmæli Samkomuhússins",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/120-ara-afmaeli-samkomuhussins",
+    "start": "2027-02-06",
+    "end": "2027-02-06",
+    "time": "20:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791581756",
+    "note": "7.900 kr."
   },
   {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
     "start": "2027-02-13",
-    "end": "2027-04-04",
+    "end": "2027-02-13",
     "time": "13:00",
-    "image": null,
-    "note": ""
+    "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
+    "note": "6.900 kr."
   },
   {
     "title": "A Country Night in Nashville",
@@ -646,8 +826,38 @@
     "start": "2027-02-13",
     "end": "2027-02-13",
     "time": "20:00",
-    "image": null,
-    "note": ""
+    "image": "https://www.mak.is/static/calendar/images/submit_1787924382.jpg?v=1791581756",
+    "note": "Frá 9.990 kr."
+  },
+  {
+    "title": "Skilaboðaskjóðan",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
+    "start": "2027-02-14",
+    "end": "2027-02-14",
+    "time": "13:00",
+    "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
+    "note": "6.900 kr."
+  },
+  {
+    "title": "Skilaboðaskjóðan",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
+    "start": "2027-02-20",
+    "end": "2027-02-20",
+    "time": "13:00",
+    "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
+    "note": "6.900 kr."
+  },
+  {
+    "title": "Skilaboðaskjóðan",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
+    "start": "2027-02-21",
+    "end": "2027-02-21",
+    "time": "13:00",
+    "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
+    "note": "6.900 kr."
   },
   {
     "title": "Daníel Bjarnason stjórnar Brahms",
@@ -660,6 +870,46 @@
     "note": ""
   },
   {
+    "title": "Skilaboðaskjóðan",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
+    "start": "2027-02-27",
+    "end": "2027-02-27",
+    "time": "13:00",
+    "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
+    "note": "6.900 kr."
+  },
+  {
+    "title": "Skilaboðaskjóðan",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
+    "start": "2027-02-28",
+    "end": "2027-02-28",
+    "time": "13:00",
+    "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
+    "note": "6.900 kr."
+  },
+  {
+    "title": "Skilaboðaskjóðan",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
+    "start": "2027-03-06",
+    "end": "2027-03-06",
+    "time": "13:00",
+    "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
+    "note": "6.900 kr."
+  },
+  {
+    "title": "Skilaboðaskjóðan",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
+    "start": "2027-03-07",
+    "end": "2027-03-07",
+    "time": "13:00",
+    "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
+    "note": "6.900 kr."
+  },
+  {
     "title": "Aríur örlaganna",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/ariur-orlaganna",
@@ -668,6 +918,26 @@
     "time": "17:00",
     "image": null,
     "note": ""
+  },
+  {
+    "title": "Skilaboðaskjóðan",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
+    "start": "2027-03-14",
+    "end": "2027-03-14",
+    "time": "13:00",
+    "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
+    "note": "6.900 kr."
+  },
+  {
+    "title": "Skilaboðaskjóðan",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
+    "start": "2027-03-21",
+    "end": "2027-03-21",
+    "time": "13:00",
+    "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
+    "note": "6.900 kr."
   },
   {
     "title": "Úr heimi í heim",
@@ -680,6 +950,16 @@
     "note": ""
   },
   {
+    "title": "Skilaboðaskjóðan",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
+    "start": "2027-03-27",
+    "end": "2027-03-27",
+    "time": "13:00",
+    "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
+    "note": "6.900 kr."
+  },
+  {
     "title": "Draumahliðið",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/draumahlidid",
@@ -688,6 +968,26 @@
     "time": "20:00",
     "image": null,
     "note": ""
+  },
+  {
+    "title": "Skilaboðaskjóðan",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
+    "start": "2027-04-03",
+    "end": "2027-04-03",
+    "time": "13:00",
+    "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
+    "note": "6.900 kr."
+  },
+  {
+    "title": "Skilaboðaskjóðan",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
+    "start": "2027-04-04",
+    "end": "2027-04-04",
+    "time": "13:00",
+    "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
+    "note": "6.900 kr."
   },
   {
     "title": "Urta söguljóð",
