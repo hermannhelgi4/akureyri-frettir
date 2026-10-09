@@ -622,7 +622,7 @@ def _load(path, default):
 
 # ---------- Íþróttaleikir ----------
 # Félögin á Akureyri sem við fylgjumst með (nöfn eins og sambandið skrifar þau)
-SPORT_TEAMS = {"KA", "Þór", "KA/Þór", "SA", "Þór Ak."}
+SPORT_TEAMS = {"KA", "Þór", "KA/Þór", "SA", "Þór Ak.", "Þór/KA"}
 SPORT_RESULT_DAYS = 0  # úrslit leiks sjást aðeins sama dag og hann er spilaður
 
 # HSÍ (handbolti): (mót-númer, kyn). Nafn mótsins kemur úr gögnunum sjálfum.
@@ -637,7 +637,12 @@ def fetch_json(url):
         try:
             req = urllib.request.Request(url, headers=DEEP_UA)
             with OPENER.open(req, timeout=20) as r:
-                return json.loads(r.read(5000000).decode("utf-8", "ignore"))
+                body = r.read(5000000).decode("utf-8", "ignore")
+                status = r.status
+            try:
+                return json.loads(body)
+            except ValueError:
+                raise RuntimeError("svar er ekki JSON (staða %s, %d stafir, byrjar á: %r)" % (status, len(body), body[:120]))
         except Exception as e:
             last = e
             time.sleep(3)
@@ -853,7 +858,98 @@ def read_kki(today):
     return out
 
 
-SPORT_SOURCES = [("Handbolti", read_hsi), ("Íshokkí", read_ihi), ("Blak", read_bli), ("Körfubolti", read_kki)]
+# Fótbolti: KSÍ. Hvert mót hefur síðu með leikjum sem eftir eru og aðra með úrslitum (bæði birt í HTML).
+KSI_BASE = "https://www.ksi.is"
+KSI_SEARCH = ["besta", "mj%C3%B3lkurbikar", "lengjudeild", "lengjubikar"]  # Besta, Mjólkurbikar, Lengjudeild, Lengjubikar
+KSI_MONTHS = {"janúar": 1, "febrúar": 2, "mars": 3, "apríl": 4, "maí": 5, "júní": 6, "júlí": 7, "ágúst": 8,
+              "september": 9, "október": 10, "nóvember": 11, "desember": 12}
+KSI_DATE = re.compile(r"(?:Mán|Þri|Mið|Fim|Fös|Lau|Sun)\s+(\d{1,2})\.\s+([a-zæðöáéíóúýþ]+)\s+(\d{2}):(\d{2})")
+KSI_SCORE = re.compile(r"^(\d+)\s*-\s*(\d+)$")
+
+
+def ksi_date(day, month, today):
+    """Dagsetningar á KSÍ hafa ekki ártal – vel það ár sem gerir dagsetninguna næsta deginum í dag."""
+    best = None
+    for y in (today.year - 1, today.year, today.year + 1):
+        try:
+            d = date(y, month, day)
+        except ValueError:
+            continue
+        if best is None or abs((d - today).days) < abs((best - today).days):
+            best = d
+    return best
+
+
+def ksi_parse(page, today, cid):
+    marks = [m for m in re.finditer(r"<span[^>]*>\s*((?:Mán|Þri|Mið|Fim|Fös|Lau|Sun)\s+\d{1,2}\.\s+[^<\s]+\s+\d{2}:\d{2})\s*</span>", page)]
+    out = []
+    for i, mk in enumerate(marks):
+        chunk = page[mk.start(): marks[i + 1].start() if i + 1 < len(marks) else mk.start() + 5000]
+        dm = KSI_DATE.search(mk.group(1))
+        mon = KSI_MONTHS.get(dm.group(2)) if dm else None
+        if not mon:
+            continue
+        txt = re.sub(r"(?is)<(svg|script|style)\b[^>]*/>", " ", chunk)
+        txt = re.sub(r"(?is)<(svg|script|style)\b.*?</\1>", " ", txt)
+        toks = [html.unescape(t).strip() for t in re.sub(r"<[^>]+>", "\n", txt).split("\n")]
+        toks = [re.sub(r"\s+", " ", t) for t in toks if t.strip()]
+        j = next((k for k in range(1, min(len(toks), 12)) if KSI_SCORE.match(toks[k]) or toks[k] in ("-", "–")), None)
+        if j is None or j < 3 or j + 1 >= len(toks):
+            continue
+        sc = KSI_SCORE.match(toks[j])
+        d = ksi_date(int(dm.group(1)), mon, today)
+        gid = re.search(r"leikur\?id=(\d+)", chunk)
+        out.append({"date": d.isoformat(), "time": "" if dm.group(3) + dm.group(4) == "0000" else "%s:%s" % (dm.group(3), dm.group(4)),
+                    "venue": toks[1] if j - 2 > 1 else "", "comp": toks[j - 2], "home": toks[j - 1], "away": toks[j + 1],
+                    "rh": sc.group(1) if sc else "", "ra": sc.group(2) if sc else "",
+                    "link": "%s/leikir-og-urslit/felagslid/leikur?id=%s" % (KSI_BASE, gid.group(1)) if gid
+                    else "%s/oll-mot/mot/?id=%s&banner-tab=matches-and-results" % (KSI_BASE, cid)})
+    return out
+
+
+def ksi_competitions(today):
+    seasons = [today.year] + ([today.year + 1] if today.month >= 10 else [])
+    found = {}
+    for s in seasons:
+        for name in KSI_SEARCH:
+            try:
+                page = fetch_page("%s/oll-mot/?tab=leit&name=%s&season=%d&pageSize=50" % (KSI_BASE, name, s))
+            except Exception as e:
+                print("X  KSÍ leit %s %d: tókst ekki (%s)" % (name, s, e))
+                continue
+            for m in re.finditer(r'href="[^"]*/oll-mot/mot/?\?id=(\d+)[^"]*"[^>]*>(.*?)</a>', page, re.S):
+                label = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", m.group(2)))).strip()
+                # aðeins deildin sjálf, efri/neðri hluti og úrslitakeppnir – ekki riðlar Lengjubikarsins
+                if label and not re.search(r"Rið(i)?ll|deild (A|B|C)\b", label) and "Umspil" not in label:
+                    found[m.group(1)] = label
+            time.sleep(0.5)
+    return found
+
+
+def read_ksi(today):
+    comps = ksi_competitions(today)
+    out, seen_teams = [], set()
+    for cid, label in comps.items():
+        rows = []
+        for suffix in ("", "&toggle=results"):
+            try:
+                rows += ksi_parse(fetch_page("%s/oll-mot/mot/?id=%s&banner-tab=matches-and-results%s" % (KSI_BASE, cid, suffix)), today, cid)
+            except Exception as e:
+                print("X  KSÍ %s: tókst ekki (%s)" % (label, e))
+            time.sleep(0.5)
+        mine = [r for r in rows if r["home"] in SPORT_TEAMS or r["away"] in SPORT_TEAMS]
+        if mine:
+            print("   KSÍ %s: %d leikir alls, %d hjá KA/Þór/Þór/KA" % (label, len(rows), len(mine)))
+        for r in mine:
+            low = (r["comp"] or label).lower()
+            out.append({"sport": "Fótbolti", "gender": "Konur" if "kvenna" in low else "Karlar",
+                        "comp": re.sub(r"\s*\b20\d\d\b", "", r["comp"] or label), "date": r["date"], "time": r["time"],
+                        "home": r["home"], "away": r["away"], "rh": r["rh"], "ra": r["ra"], "venue": r["venue"], "link": r["link"]})
+    print("   KSÍ: %d mót skoðuð" % len(comps))
+    return out
+
+
+SPORT_SOURCES = [("Handbolti", read_hsi), ("Íshokkí", read_ihi), ("Blak", read_bli), ("Körfubolti", read_kki), ("Fótbolti", read_ksi)]
 
 
 def collect_sports(old, today):
