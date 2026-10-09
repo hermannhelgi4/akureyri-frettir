@@ -211,7 +211,7 @@ if(evSrc==="Íþróttir"){[...new Set(all.filter(e=>e.sport).map(e=>e.sport))].f
 box.innerHTML="";const L=all.filter(e=>(evSrc==="Allt"||e.source===evSrc)&&(evSrc!=="Íþróttir"||((!evSport||e.sport===evSport)&&(!evGen||e.gender===evGen)))).sort((a,b)=>a.start<b.start?-1:a.start>b.start?1:((a.time||"")<(b.time||"")?-1:1));
 if(!L.length){box.appendChild(el("div","sub","Engir viðburðir fundust."));return}
 let last="";L.forEach(e=>{const s=pd(e.start),ongoing=s<t&&!e.res,key=e.res?"urslit":ongoing?"gangi":e.start;
-if(key!==last){last=key;let h=e.res?"Úrslit nýlegra leikja":"Í gangi";if(!ongoing&&!e.res){const diff=Math.round((s-t)/864e5);h=(diff===0?"Í dag · ":diff===1?"Á morgun · ":"")+DAYS[s.getDay()]+". "+fd(s)+(s.getFullYear()!==t.getFullYear()?" "+s.getFullYear():"")}box.appendChild(el("h3","evh",h))}
+if(key!==last){last=key;let h=e.res?"Úrslit dagsins":"Í gangi";if(!ongoing&&!e.res){const diff=Math.round((s-t)/864e5);h=(diff===0?"Í dag · ":diff===1?"Á morgun · ":"")+DAYS[s.getDay()]+". "+fd(s)+(s.getFullYear()!==t.getFullYear()?" "+s.getFullYear():"")}box.appendChild(el("h3","evh",h))}
 const a=el("a","item");a.href=e.link;a.target="_blank";a.rel="noopener";
 const im=el("div","img");if(e.image){const i=document.createElement("img");i.src=e.image;i.loading="lazy";i.referrerPolicy="no-referrer";i.onerror=()=>{i.remove();im.textContent=fd(s)};im.appendChild(i)}else im.textContent=fd(s);
 const b=el("div","body"),m=el("div","meta");m.appendChild(el("span","src",e.sport||e.source));let when=e.time?"kl. "+e.time:"";if(e.end!==e.start)when+=(when?" · ":"")+fd(s)+" – "+fd(pd(e.end));if(when)m.appendChild(document.createTextNode(" · "+when));
@@ -622,8 +622,8 @@ def _load(path, default):
 
 # ---------- Íþróttaleikir ----------
 # Félögin á Akureyri sem við fylgjumst með (nöfn eins og sambandið skrifar þau)
-SPORT_TEAMS = {"KA", "Þór", "KA/Þór"}
-SPORT_RESULT_DAYS = 3  # úrslit leiks sjást svona marga daga eftir leik
+SPORT_TEAMS = {"KA", "Þór", "KA/Þór", "SA"}
+SPORT_RESULT_DAYS = 0  # úrslit leiks sjást aðeins sama dag og hann er spilaður
 
 # HSÍ (handbolti): (mót-númer, kyn). Nafn mótsins kemur úr gögnunum sjálfum.
 HSI_TOURNAMENTS = [(9142, "Karlar"), (9141, "Konur"), (9140, "Karlar"), (9143, "Konur"), (9295, "Karlar"), (9303, "Konur")]
@@ -667,7 +667,55 @@ def read_hsi(today):
     return out
 
 
-SPORT_SOURCES = [("Handbolti", read_hsi)]
+# Íshokkí: Íshokkísamband Íslands birtir leiki sem töflu á stats.iihf.com (mót 99 = karlar, 100 = konur)
+IHI_TOURNAMENTS = [(99, "Karlar", "Toppdeild karla"), (100, "Konur", "Toppdeild kvenna")]
+IHI_NAMES = {"SA": "SA", "SR": "SR", "FJO": "Fjölnir"}  # önnur skammstöfun birtist óbreytt
+IHI_ROW = re.compile(r"(\d{2})\.(\d{2})\.(\d{4})\s+(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+(\d{2}:\d{2})")
+IHI_TEAMS = re.compile(r"\b([A-Z][A-Z0-9]{1,3})\s+-\s+([A-Z][A-Z0-9]{1,3})\b")
+IHI_SCORE = re.compile(r"\b(\d{1,2})\s+-\s+(\d{1,2})\b")
+
+
+def ihi_parse(page, tid, gender, comp, link):
+    """Les leikjatöfluna úr HTML síðunni (texti án merkja, hver leikur byrjar á dagsetningu og tíma)."""
+    text = re.sub(r"(?is)<(script|style).*?</\1>", " ", page)
+    text = html.unescape(re.sub(r"<[^>]+>", " ", text))
+    text = re.sub(r"\s+", " ", text)
+    marks = list(IHI_ROW.finditer(text))
+    out = []
+    for i, mk in enumerate(marks):
+        seg = text[mk.end(): marks[i + 1].start() if i + 1 < len(marks) else mk.end() + 300]
+        tm = IHI_TEAMS.search(seg)
+        if not tm:
+            continue
+        h, a = IHI_NAMES.get(tm.group(1), tm.group(1)), IHI_NAMES.get(tm.group(2), tm.group(2))
+        rh = ra = ""
+        if "completed" in seg.lower():
+            sc = IHI_SCORE.search(seg[tm.end():])
+            if sc:
+                rh, ra = sc.group(1), sc.group(2)
+        out.append({"sport": "Íshokkí", "gender": gender, "comp": comp,
+                    "date": "%s-%s-%s" % (mk.group(3), mk.group(2), mk.group(1)), "time": mk.group(4),
+                    "home": h, "away": a, "rh": rh, "ra": ra, "venue": "", "link": link})
+    return out
+
+
+def read_ihi(today):
+    out = []
+    for tid, gender, comp in IHI_TOURNAMENTS:
+        url = "https://stats.iihf.com/ihi/%d/index.html" % tid
+        try:
+            rows = ihi_parse(fetch_page(url), tid, gender, comp, url)
+        except Exception as e:
+            print("X  Íshokkí mót %d: tókst ekki (%s)" % (tid, e))
+            continue
+        mine = [r for r in rows if r["home"] in SPORT_TEAMS or r["away"] in SPORT_TEAMS]
+        print("   Íshokkí %s: %d leikir alls, %d hjá SA, lið: %s" % (
+            comp, len(rows), len(mine), sorted({r["home"] for r in rows} | {r["away"] for r in rows})))
+        out += mine
+    return out
+
+
+SPORT_SOURCES = [("Handbolti", read_hsi), ("Íshokkí", read_ihi)]
 
 
 def collect_sports(old, today):
