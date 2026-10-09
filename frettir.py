@@ -426,10 +426,19 @@ def fetch_page(url):
         return r.read(2000000).decode("utf-8", "ignore")
 
 
+READ_MORE_RE = re.compile(r"^(?:lesa\s+meira|lesa\s+nánar|meira|nánar)\b[\s:.\-–—]*|[\s:.\-–—]*\b(?:lesa\s+meira|lesa\s+nánar)\s*$", re.I)
+
+
+def clean_title(t):
+    t = READ_MORE_RE.sub("", t or "")
+    t = READ_MORE_RE.sub("", t)
+    return t.strip(" -–—·|,.:")
+
+
 def _first_part(text):
     """Fyrsti hluti texta (aðskilinn með |) sem er ekki bara dagsetning eða tími."""
     for part in text.split("|"):
-        p = strip_dates(part)
+        p = clean_title(strip_dates(part))
         if len(p) >= 3:
             return p
     return ""
@@ -549,6 +558,14 @@ def collect_events():
             print("   dæmi: %s – %s %s" % (e["start"], e["title"][:60], e["time"]))
         result += found
     result = [e for e in result if e["end"] >= today.isoformat()]
+    seen, uniq = set(), []
+    for e in result:
+        key = (e["source"], re.sub(r"\W+", "", e["title"].lower()), e["start"], e["end"])
+        if key in seen:
+            continue
+        seen.add(key)
+        uniq.append(e)
+    result = uniq
     result.sort(key=lambda e: (e["start"], e.get("time") or ""))
     with open("events.json", "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
