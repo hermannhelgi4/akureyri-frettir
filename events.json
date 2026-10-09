@@ -23,19 +23,6 @@
     "res": "35–28"
   },
   {
-    "title": "Grótta – KA/Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/tournament/9141",
-    "start": "2026-10-09",
-    "end": "2026-10-09",
-    "time": "19:30",
-    "image": null,
-    "note": "Útileikur · Olís deild kvenna · Hertz höllin",
-    "res": "30–25"
-  },
-  {
     "title": "Fjölnir – SA",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -203,19 +190,6 @@
     "last": "sigur, Fjölnir 4–5 SA"
   },
   {
-    "title": "KA/Þór – Stjarnan",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/tournament/9141",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "17:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið",
-    "last": "tap, Grótta 30–25 KA/Þór"
-  },
-  {
     "title": "Fasteignamartröðin",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/fasteignamartrodin",
@@ -234,6 +208,18 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/HxJs034Q6OlieOYv6F7V3r3Q6rm4Qy-metaaGrDoWxtYXIgMjUuanBn-.webp",
     "note": "Frá 7.900 kr."
+  },
+  {
+    "title": "KA – HK Ýmir",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2026-10-18",
+    "end": "2026-10-18",
+    "time": "14:00",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið"
   },
   {
     "title": "Undir sömu stjörnu",
@@ -312,6 +298,18 @@
     "note": "Frá 7.900 kr."
   },
   {
+    "title": "Vestri – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2026-10-24",
+    "end": "2026-10-24",
+    "time": "13:00",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild karla · Íþróttahúsið Torfnesi"
+  },
+  {
     "title": "Lífið er konsert",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/lifid-er-konsert",
@@ -388,18 +386,6 @@
     "time": "18:30",
     "image": null,
     "note": "Útileikur · Olís deild karla · Kaplakriki"
-  },
-  {
-    "title": "HK – KA/Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/tournament/9141",
-    "start": "2026-10-30",
-    "end": "2026-10-30",
-    "time": "19:00",
-    "image": null,
-    "note": "Útileikur · Olís deild kvenna · Kórinn"
   },
   {
     "title": "Fasteignamartröðin",
@@ -516,18 +502,6 @@
     "note": "Frá 6.900 kr."
   },
   {
-    "title": "Selfoss – KA/Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/tournament/9141",
-    "start": "2026-11-07",
-    "end": "2026-11-07",
-    "time": "15:30",
-    "image": null,
-    "note": "Útileikur · Olís deild kvenna · Set höllin"
-  },
-  {
     "title": "SA – Fjölnir",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -590,18 +564,6 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1788449333.png?v=1791581756",
     "note": "3.500 kr."
-  },
-  {
-    "title": "KA/Þór – Fram",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/tournament/9141",
-    "start": "2026-11-13",
-    "end": "2026-11-13",
-    "time": "19:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
   },
   {
     "title": "Fasteignamartröðin",
@@ -710,16 +672,28 @@
     "note": "Fáir miðar · Frá 8.900 kr."
   },
   {
-    "title": "KA/Þór – ÍBV",
+    "title": "Afturelding – KA",
     "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/tournament/9141",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
     "start": "2026-11-21",
     "end": "2026-11-21",
-    "time": "16:00",
+    "time": "13:30",
     "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
+    "note": "Útileikur · Unbrokendeild karla · Myntkauphöllin (Varmá)"
+  },
+  {
+    "title": "Afturelding – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2026-11-21",
+    "end": "2026-11-21",
+    "time": "15:30",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild kvenna · Myntkauphöllin (Varmá)"
   },
   {
     "title": "SA – SR",
@@ -1092,6 +1066,18 @@
     "note": "Frá 13.999 kr."
   },
   {
+    "title": "KA – Þróttur Fjarðabyggð",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2026-12-12",
+    "end": "2026-12-12",
+    "time": "15:00",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið"
+  },
+  {
     "title": "Vitringarnir 3 - 2026",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/vitringarnir-3-2026",
@@ -1156,18 +1142,6 @@
     "note": "Frá 13.999 kr."
   },
   {
-    "title": "Haukar – KA/Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/tournament/9141",
-    "start": "2026-12-13",
-    "end": "2026-12-13",
-    "time": "14:00",
-    "image": null,
-    "note": "Útileikur · Olís deild kvenna · Kuehne+Nagel höllin"
-  },
-  {
     "title": "Þór – Víkingur",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -1200,18 +1174,6 @@
     "time": "19:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791581756",
     "note": "Frá 13.999 kr."
-  },
-  {
-    "title": "KA/Þór – ÍR",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/tournament/9141",
-    "start": "2026-12-17",
-    "end": "2026-12-17",
-    "time": "19:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
   },
   {
     "title": "Krissmas Spesjal",
@@ -1278,16 +1240,16 @@
     "note": "Heimaleikur · Toppdeild karla"
   },
   {
-    "title": "Valur – KA/Þór",
+    "title": "KA – Þróttur Reykjavík/Blakfélag Hafnafjarðar",
     "source": "Íþróttir",
-    "sport": "Handbolti",
+    "sport": "Blak",
     "gender": "Konur",
-    "link": "https://www.hsi.is/tournament/9141",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
     "start": "2027-01-09",
     "end": "2027-01-09",
-    "time": "15:00",
+    "time": "15:30",
     "image": null,
-    "note": "Útileikur · Olís deild kvenna · N1 höllin"
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið"
   },
   {
     "title": "SA – SR",
@@ -1300,6 +1262,30 @@
     "time": "16:45",
     "image": null,
     "note": "Heimaleikur · Toppdeild karla"
+  },
+  {
+    "title": "KA – Þróttur Reykjavík",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2027-01-10",
+    "end": "2027-01-10",
+    "time": "13:00",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið"
+  },
+  {
+    "title": "KA – Þróttur Reykjavík/Blakfélag Hafnafjarðar",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2027-01-10",
+    "end": "2027-01-10",
+    "time": "15:30",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið"
   },
   {
     "title": "Í tunglsljósi á ís",
@@ -1324,16 +1310,16 @@
     "note": "Útileikur · Toppdeild karla"
   },
   {
-    "title": "KA/Þór – Grótta",
+    "title": "KA – Völsungur",
     "source": "Íþróttir",
-    "sport": "Handbolti",
+    "sport": "Blak",
     "gender": "Konur",
-    "link": "https://www.hsi.is/tournament/9141",
-    "start": "2027-01-15",
-    "end": "2027-01-15",
-    "time": "19:00",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2027-01-20",
+    "end": "2027-01-20",
+    "time": "",
     "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið"
   },
   {
     "title": "120 ára afmæli Samkomuhússins",
@@ -1376,30 +1362,6 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791581756",
     "note": "7.900 kr."
-  },
-  {
-    "title": "Stjarnan – KA/Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/tournament/9141",
-    "start": "2027-01-24",
-    "end": "2027-01-24",
-    "time": "15:00",
-    "image": null,
-    "note": "Útileikur · Olís deild kvenna · Heklu Höllin"
-  },
-  {
-    "title": "KA/Þór – HK",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/tournament/9141",
-    "start": "2027-01-28",
-    "end": "2027-01-28",
-    "time": "18:30",
-    "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
   },
   {
     "title": "120 ára afmæli Samkomuhússins",
@@ -1466,18 +1428,6 @@
     "time": "18:30",
     "image": null,
     "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
-  },
-  {
-    "title": "KA/Þór – Selfoss",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/tournament/9141",
-    "start": "2027-02-06",
-    "end": "2027-02-06",
-    "time": "16:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
   },
   {
     "title": "SR – SA",
@@ -1548,18 +1498,6 @@
     "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
   },
   {
-    "title": "Fram – KA/Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/tournament/9141",
-    "start": "2027-02-13",
-    "end": "2027-02-13",
-    "time": "15:30",
-    "image": null,
-    "note": "Útileikur · Olís deild kvenna · Lambhagahöllin"
-  },
-  {
     "title": "SA – Fjölnir",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -1590,6 +1528,30 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
     "note": "6.900 kr."
+  },
+  {
+    "title": "HK – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2027-02-14",
+    "end": "2027-02-14",
+    "time": "15:00",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild karla · Digranes"
+  },
+  {
+    "title": "HK – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2027-02-14",
+    "end": "2027-02-14",
+    "time": "17:15",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild kvenna · Digranes"
   },
   {
     "title": "Stjarnan – Þór",
@@ -1726,6 +1688,30 @@
     "note": "6.900 kr."
   },
   {
+    "title": "Þróttur Fjarðabyggð – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2027-02-28",
+    "end": "2027-02-28",
+    "time": "13:00",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild karla · Íþróttahúsið í Neskaupstað"
+  },
+  {
+    "title": "Þróttur Fjarðabyggð – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2027-02-28",
+    "end": "2027-02-28",
+    "time": "15:30",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild kvenna · Íþróttahúsið í Neskaupstað"
+  },
+  {
     "title": "FH – Þór",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -1746,6 +1732,18 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
     "note": "6.900 kr."
+  },
+  {
+    "title": "KA – Afturelding",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2027-03-06",
+    "end": "2027-03-06",
+    "time": "15:30",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið"
   },
   {
     "title": "Haukar – KA",
@@ -1780,6 +1778,30 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
     "note": "6.900 kr."
+  },
+  {
+    "title": "KA – Afturelding",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2027-03-07",
+    "end": "2027-03-07",
+    "time": "13:00",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið"
+  },
+  {
+    "title": "KA – Afturelding",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2027-03-07",
+    "end": "2027-03-07",
+    "time": "15:30",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið"
   },
   {
     "title": "Fjölnir – SA",
