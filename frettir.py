@@ -622,7 +622,7 @@ def _load(path, default):
 
 # ---------- Íþróttaleikir ----------
 # Félögin á Akureyri sem við fylgjumst með (nöfn eins og sambandið skrifar þau)
-SPORT_TEAMS = {"KA", "Þór", "KA/Þór", "SA"}
+SPORT_TEAMS = {"KA", "Þór", "KA/Þór", "SA", "Þór Ak."}
 SPORT_RESULT_DAYS = 0  # úrslit leiks sjást aðeins sama dag og hann er spilaður
 
 # HSÍ (handbolti): (mót-númer, kyn). Nafn mótsins kemur úr gögnunum sjálfum.
@@ -632,9 +632,16 @@ HSI_TOURNAMENTS = [(9142, "Karlar"), (9141, "Konur"), (9140, "Karlar"), (9143, "
 def fetch_json(url):
     if not allowed(url):
         raise RuntimeError("robots.txt bannar aðgang að " + url)
-    req = urllib.request.Request(url, headers=DEEP_UA)
-    with OPENER.open(req, timeout=20) as r:
-        return json.loads(r.read(5000000).decode("utf-8", "ignore"))
+    last = None
+    for attempt in range(3):  # tómt eða bilað svar kemur stundum – reyni aftur
+        try:
+            req = urllib.request.Request(url, headers=DEEP_UA)
+            with OPENER.open(req, timeout=20) as r:
+                return json.loads(r.read(5000000).decode("utf-8", "ignore"))
+        except Exception as e:
+            last = e
+            time.sleep(3)
+    raise last
 
 
 def read_hsi(today):
@@ -771,7 +778,82 @@ def read_bli(today):
     return out
 
 
-SPORT_SOURCES = [("Handbolti", read_hsi), ("Íshokkí", read_ihi), ("Blak", read_bli)]
+# Körfubolti: mótayfirlit KKÍ sækir leiki úr þjónustu (baskethotel.com). Við biðjum um sömu síðu og KKÍ sjálft gerir.
+KKI_API = "a0d07178160bf749eb6e5e761fc623fe42e2bb57"
+KKI_STATE = "zJ9uKouyG33qaF8IIQPsd7FgE2CH/uG9vnVV9mJJEDJhOjEyOntzOjE5OiJsZWFndWVfbGlua192aXNpYmxlIjtzOjE6IjEiO3M6MTc6InRlYW1fbGlua192aXNpYmxlIjtzOjE6IjEiO3M6MTc6ImdhbWVfbGlua192aXNpYmxlIjtzOjE6IjEiO3M6MTk6InBsYXllcl9saW5rX3Zpc2libGUiO3M6MToiMSI7czoxNDoiZ2FtZV9saW5rX3R5cGUiO3M6MToiMyI7czoxNzoiZ2FtZV9saW5rX2hhbmRsZXIiO3M6MTI6Im5hdmlnYXRlR2FtZSI7czoxNDoidGVhbV9saW5rX3R5cGUiO3M6MToiMyI7czoxNzoidGVhbV9saW5rX2hhbmRsZXIiO3M6MTI6Im5hdmlnYXRlVGVhbSI7czoxOToiZGF0ZV9yYW5nZV9zZWxlY3RvciI7czoxOiIxIjtzOjIwOiJzdGFnZV9sZXZlbHNfdmlzaWJsZSI7czoxOiIyIjtzOjE3OiJzaG93X2NoYW5uZWxfbG9nbyI7czoxOiIxIjtzOjE3OiJjaGFubmVsX2xvZ29fc2l6ZSI7czo1OiI0MHg0MCI7fQ=="
+KKI_CLUB = 1567  # Þór Akureyri
+KKI_LEAGUES = [191, 231, 190, 189, 205, 208]  # 1. deild karla/kvenna, Bónus deild karla/kvenna, VÍS bikar karla/kvenna
+KKI_LINK = "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/"
+KKI_DATE = re.compile(r"(\d{2})-(\d{2})-(\d{4}) (\d{2}):(\d{2})")
+
+
+def kki_url(league, page, d_from, d_to):
+    return ("https://widgets.baskethotel.com/widget-service/show?&api=%s&lang=is&nnav=1&nav_object=0&hide_full_birth_date=0"
+            "&flash=0&request[0][container]=6-510-container&request[0][widget]=510&request[0][part]=schedule_and_results"
+            "&request[0][state]=%s&request[0][param][season_id]=&request[0][param][filter][club]=%d"
+            "&request[0][param][filter][league]=%d&request[0][param][filter][dateRangeFrom]=%s"
+            "&request[0][param][filter][dateRangeTo]=%s&request[0][param][page]=%d"
+            % (KKI_API, KKI_STATE, KKI_CLUB, league, d_from, d_to, page))
+
+
+def kki_parse(raw):
+    """Svarið er JavaScript með HTML-töflu innan í streng. Hver leikur er ein röð (tr)."""
+    s = re.sub(r"\\[nrt]", " ", raw)
+    s = re.sub(r"\\(.)", r"\1", s)
+    out = []
+    for row in re.split(r"<tr class=", s)[1:]:
+        d = KKI_DATE.search(row)
+        teams = [html.unescape(x).strip() for x in re.findall(r"team_id=\"\d+\"[^>]*>([^<]*)</a>", row)]
+        texts = [html.unescape(x).strip() for x in re.findall(r"<td>([^<]*)</td>", row)]
+        if not d or len(teams) < 2 or not texts:
+            continue
+        sc = re.search(r"(\d+)<span></span>:<span></span>(\d+)", row)
+        out.append({"date": "%s-%s-%s" % (d.group(3), d.group(2), d.group(1)),
+                    "time": "%s:%s" % (d.group(4), d.group(5)) if d.group(4) + d.group(5) != "0000" else "",
+                    "league": texts[0], "venue": texts[1] if len(texts) > 1 else "",
+                    "home": teams[0], "away": teams[1],
+                    "rh": sc.group(1) if sc else "", "ra": sc.group(2) if sc else ""})
+    return out
+
+
+def kki_fetch(url):
+    if not allowed(url):
+        raise RuntimeError("robots.txt bannar aðgang að widgets.baskethotel.com")
+    req = urllib.request.Request(url, headers=dict(DEEP_UA, Referer="https://www.kki.is/"))
+    with OPENER.open(req, timeout=25) as r:
+        cs = r.headers.get_content_charset() or "latin-1"
+        return r.read(3000000).decode(cs, "replace")
+
+
+def read_kki(today):
+    start_year = today.year if today.month >= 8 else today.year - 1
+    d_from, d_to = "%d-08-01" % start_year, "%d-07-31" % (start_year + 1)
+    out = []
+    for lg in KKI_LEAGUES:
+        rows = []
+        for page in range(1, 6):
+            try:
+                got = kki_parse(kki_fetch(kki_url(lg, page, d_from, d_to)))
+            except Exception as e:
+                print("X  Körfubolti deild %d síða %d: tókst ekki (%s)" % (lg, page, e))
+                break
+            rows += got
+            if len(got) < 20:
+                break
+            time.sleep(1)
+        mine = [r for r in rows if r["home"] in SPORT_TEAMS or r["away"] in SPORT_TEAMS]
+        if rows:
+            print("   Körfubolti deild %d (%s): %d leikir, %d hjá Þór Ak." % (lg, rows[0]["league"], len(rows), len(mine)))
+        for r in mine:
+            low = r["league"].lower()
+            out.append({"sport": "Körfubolti", "gender": "Konur" if ("kvenna" in low or "konur" in low) else "Karlar",
+                        "comp": r["league"], "date": r["date"], "time": r["time"], "home": r["home"], "away": r["away"],
+                        "rh": r["rh"], "ra": r["ra"], "venue": r["venue"], "link": KKI_LINK})
+        time.sleep(1)
+    return out
+
+
+SPORT_SOURCES = [("Handbolti", read_hsi), ("Íshokkí", read_ihi), ("Blak", read_bli), ("Körfubolti", read_kki)]
 
 
 def collect_sports(old, today):
@@ -842,6 +924,11 @@ def collect_sports(old, today):
                 if first_up and last:
                     e["last"] = last
                 first_up = False
+            events.append(e)
+    # ef heilt mót (íþrótt + kyn) skilaði engu núna (t.d. tímabundin villa) held ég í síðustu þekktu leiki þess
+    fresh_groups = {(m["sport"], m["gender"]) for m in fresh}
+    for e in old:
+        if e.get("sport") and (e["sport"], e.get("gender")) not in fresh_groups and e.get("end", "") >= cutoff:
             events.append(e)
     # sami leikur tveggja Akureyrarliða kemur úr báðum hópum – fjarlægi tvítekningar
     seen, uniq = set(), []
