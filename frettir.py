@@ -175,7 +175,7 @@ HTML = """<!DOCTYPE html><html lang="is"><head><meta charset="utf-8"><meta name=
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,sans-serif}
 header,main,.chips{max-width:720px;margin:0 auto;padding:0 16px}header{padding-top:20px}h1{margin:0;font-size:24px}.sub{color:var(--mu);font-size:14px}
 .chips{display:flex;gap:8px;overflow-x:auto;padding:12px 16px}.chip{border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:7px 14px;border-radius:999px;font-size:14px;white-space:nowrap;cursor:pointer}.chip.on{background:var(--ac);color:#fff;border-color:var(--ac)}
-[hidden]{display:none!important}body{padding-bottom:64px}main{display:grid;gap:10px;padding-bottom:40px}.tabbar{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;background:var(--card);border-top:1px solid var(--bd);padding-bottom:env(safe-area-inset-bottom,0px)}.tabbar button{flex:1;padding:13px 8px;border:0;background:none;color:var(--mu);font-size:14px;cursor:pointer}.tabbar button.on{color:var(--ac);font-weight:700;box-shadow:inset 0 2px 0 var(--ac)}.evwrap{max-width:720px;margin:0 auto;padding:0 16px 40px}#evlist{display:grid;gap:10px}.evh{margin:14px 0 0;font-size:14px;color:var(--mu);font-weight:600}.tags{margin-top:6px;display:flex;gap:6px;flex-wrap:wrap}.tag{font-size:11px;padding:2px 8px;border-radius:6px;border:1px solid var(--bd);color:var(--mu)}.wrap{max-width:720px;margin:0 auto}.wrap main{max-width:none;margin:0;padding:0 16px 40px}aside{display:none}.strip{max-width:720px;margin:0 auto;padding:0 16px 6px}.strip h3{margin:0 0 6px;font-size:13px;color:var(--mu);font-weight:600}.strip .row{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}.strip a{flex:0 0 140px;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:8px 10px;text-decoration:none;color:inherit;font-size:12px;line-height:1.3}.strip b{color:var(--ac);margin-right:4px}.strip small{display:block;color:var(--mu);font-size:11px;margin-top:4px}.strip .t{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+[hidden]{display:none!important}body{padding-bottom:64px}main{display:grid;gap:10px;padding-bottom:40px}.tabbar{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;background:var(--card);border-top:1px solid var(--bd);padding-bottom:env(safe-area-inset-bottom,0px)}.tabbar button{flex:1;padding:13px 8px;border:0;background:none;color:var(--mu);font-size:14px;cursor:pointer}.tabbar button.on{color:var(--ac);font-weight:700;box-shadow:inset 0 2px 0 var(--ac)}.evwrap{max-width:720px;margin:0 auto;padding:0 16px 40px}#evlist{display:grid;gap:10px}.evh{margin:14px 0 0;font-size:14px;color:var(--mu);font-weight:600}.tags{margin-top:6px;display:flex;gap:6px;flex-wrap:wrap}.tag.free{border-color:var(--ac);color:var(--ac);font-weight:600}.tag{font-size:11px;padding:2px 8px;border-radius:6px;border:1px solid var(--bd);color:var(--mu)}.wrap{max-width:720px;margin:0 auto}.wrap main{max-width:none;margin:0;padding:0 16px 40px}aside{display:none}.strip{max-width:720px;margin:0 auto;padding:0 16px 6px}.strip h3{margin:0 0 6px;font-size:13px;color:var(--mu);font-weight:600}.strip .row{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}.strip a{flex:0 0 140px;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:8px 10px;text-decoration:none;color:inherit;font-size:12px;line-height:1.3}.strip b{color:var(--ac);margin-right:4px}.strip small{display:block;color:var(--mu);font-size:11px;margin-top:4px}.strip .t{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .top{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:12px 14px;position:sticky;top:12px}.top h3{margin:0 0 8px;font-size:15px}.top ol{margin:0;padding:0;list-style:none;counter-reset:n}.top li{counter-increment:n;border-top:1px solid var(--bd)}.top li:first-child{border-top:0}.top a{display:flex;gap:8px;padding:8px 0;text-decoration:none;color:inherit;font-size:13px;line-height:1.3}.top a:before{content:counter(n);color:var(--ac);font-weight:700;min-width:14px}.top a:hover{color:var(--ac)}.top small{display:block;color:var(--mu);font-size:11px;margin-top:2px}.top .none{color:var(--mu);font-size:12px;margin:0 0 6px}
 @media(min-width:900px){body{padding-bottom:0}.evwrap{max-width:1040px}#evlist{max-width:720px}.tabbar{position:static;max-width:1040px;margin:8px auto 0;padding:0 16px;background:none;border:0}.tabbar button{flex:none;padding:10px 18px;border-bottom:2px solid transparent;box-shadow:none}.tabbar button.on{border-bottom-color:var(--ac);box-shadow:none}header,.chips,.wrap{max-width:1040px}.wrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px;padding:0 16px}.wrap main{padding:0 0 40px}aside{display:block}.chip.mest{display:none}.strip{display:none}}
 a.item{display:flex;gap:12px;background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:10px;text-decoration:none;color:inherit}a.item:hover{border-color:var(--ac)}
@@ -212,7 +212,7 @@ if(key!==last){last=key;let h="Í gangi";if(!ongoing){const diff=Math.round((s-t
 const a=el("a","item");a.href=e.link;a.target="_blank";a.rel="noopener";
 const im=el("div","img");if(e.image){const i=document.createElement("img");i.src=e.image;i.loading="lazy";i.referrerPolicy="no-referrer";i.onerror=()=>{i.remove();im.textContent=fd(s)};im.appendChild(i)}else im.textContent=fd(s);
 const b=el("div","body"),m=el("div","meta");m.appendChild(el("span","src",e.source));let when=e.time?"kl. "+e.time:"";if(e.end!==e.start)when+=(when?" · ":"")+fd(s)+" – "+fd(pd(e.end));if(when)m.appendChild(document.createTextNode(" · "+when));
-b.append(m,el("h2","",e.title));if(e.note){const tg=el("div","tags");e.note.split(" · ").forEach(x=>tg.appendChild(el("span","tag",x)));b.appendChild(tg)}
+b.append(m,el("h2","",e.title));if(e.note){const tg=el("div","tags");e.note.split(" · ").forEach(x=>tg.appendChild(el("span","tag"+(x==="Ókeypis"?" free":""),x)));b.appendChild(tg)}
 a.append(im,b);box.appendChild(a)})}
 document.getElementById("upd").textContent="Uppfært __TIME__";render();side();strip();if(API)fetch(API+"/top").then(r=>r.json()).then(t=>{TOP=t;side();strip();if(cur==="Mest lesið")render()}).catch(()=>{});
 </script></body></html>"""
@@ -522,6 +522,7 @@ def read_graeni(today):
 SHOW_RE = re.compile(r"\b(\d{1,2})\s*\.?\s*(jan|feb|mar|apr|maí|mai|jún|jun|júl|jul|ágú|agu|sep|okt|nóv|nov|des)\b\.?"
                      r"(?:\s+([01]?\d|2[0-3]):([0-5]\d))?", re.I)
 DETAIL_TTL = 2 * 24 * 3600  # síða hvers viðburðar er sótt aftur í fyrsta lagi á 2ja daga fresti
+DETAIL_VER = 2  # hækkað þegar lesarinn bætir við upplýsingum, svo gömul gögn séu sótt aftur
 
 
 def page_text(page):
@@ -570,14 +571,35 @@ def _og(page):
     return ""
 
 
+FREE_RE = re.compile(r"enginn\s+aðgangseyrir|ókeypis|frítt|frír\s+aðgangur|aðgangur\s+frír", re.I)
+NUM = r"(\d{1,3}(?:\.\d{3})*)"
+PRICE_RE = re.compile(NUM + r"(?:\s*[-–]\s*" + NUM + r")?\s*(?:kr|isk)\b", re.I)
+
+
+def parse_price(text):
+    """Finnur verð í texta síðu: 'Verð: 7.900 kr.', 'Verð frá - 6.900 kr.' eða 'Verð: Enginn aðgangseyrir'."""
+    for m in re.finditer(r"\bVerð\b(\s*frá)?\s*[-–:]*\s*(.{0,45})", text, re.I):
+        seg, fra = m.group(2), bool(m.group(1))
+        if FREE_RE.search(seg):
+            return "Ókeypis"
+        pm = PRICE_RE.search(seg)
+        if pm:
+            lo, hi = pm.group(1), pm.group(2)
+            if hi:
+                return "%s–%s kr." % (lo, hi)
+            return ("Frá %s kr." if fra else "%s kr.") % lo
+    return ""
+
+
 def mak_detail(page, e, today):
     sh = showings_to_dates(mak_showings(page), date.fromisoformat(e["start"]))
-    return {"showings": [[d.isoformat(), tm] for d, tm in sh], "image": _og(page)}
+    return {"showings": [[d.isoformat(), tm] for d, tm in sh], "image": _og(page), "price": parse_price(page_text(page))}
 
 
 def graeni_detail(page, e, today):
     m = re.search(r"\b\d{2}\.\d{2}\.20\d\d\s+([01]?\d|2[0-3]):([0-5]\d)\b", page_text(page))
-    return {"time": ("%02d:%s" % (int(m.group(1)), m.group(2))) if m else "", "image": _og(page)}
+    return {"time": ("%02d:%s" % (int(m.group(1)), m.group(2))) if m else "", "image": _og(page),
+            "price": parse_price(page_text(page))}
 
 
 # (nafn, lesari á lista, lesari á síðu viðburðar, bið í sek. milli beiðna, mest margar síður í hverri keyrslu)
@@ -613,8 +635,12 @@ def collect_events():
             continue
         # Sæki síðu hvers viðburðar (sýningar, tímar, mynd) – fáar í hverri keyrslu, elstu upplýsingar fyrst
         now = time.time()
-        todo = [e for e in found if now - det.get(e["link"], {}).get("ts", 0) > DETAIL_TTL]
-        todo.sort(key=lambda e: (det.get(e["link"], {}).get("ts", 0), e["start"]))
+        def _age(e):
+            d = det.get(e["link"], {})
+            return d.get("ts", 0) if d.get("v") == DETAIL_VER else 0
+
+        todo = [e for e in found if now - _age(e) > DETAIL_TTL]
+        todo.sort(key=lambda e: (_age(e), e["start"]))
         fetched = 0
         for e in todo[:cap]:
             try:
@@ -622,6 +648,7 @@ def collect_events():
                     continue
                 d = detail(fetch_page(e["link"]), e, today)
                 d["ts"] = now
+                d["v"] = DETAIL_VER
                 det[e["link"]] = d
                 fetched += 1
             except Exception as ex:
@@ -640,6 +667,11 @@ def collect_events():
                 e["time"] = d["time"]
             expanded.append(e)
         for e in expanded:
+            parts = [x for x in (e.get("note") or "").split(" · ") if x]
+            badges = [x for x in parts if "kr" not in x.lower() and x != "Ókeypis"]
+            listprice = [x for x in parts if "kr" in x.lower()]
+            price = det.get(e["link"], {}).get("price") or (listprice[0] if listprice else "")
+            e["note"] = " · ".join(badges + ([price] if price else []))
             e["image"] = e.get("image") or det.get(e["link"], {}).get("image") or imgs.get(e["link"]) or None
         print("OK Viðburðir %s: %d viðburðir á lista, %d skiptast í sýningar, %d síður sóttar núna (%d spjöld)" % (
             name, len(found), split, fetched, len(expanded)))
