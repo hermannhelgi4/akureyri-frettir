@@ -26,22 +26,15 @@ FEEDS = [
     {"name": "RÚV", "url": "https://www.ruv.is/rss/ithrottir", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
     {"name": "RÚV", "url": "https://www.ruv.is/rss/menning-og-daegurmal", "local": False, "cat": "Fréttamiðlar"},  # (óstaðfest)
     # Nýir fréttavefir og SBA (veituslóðir giskaðar, ef þær bila er þeim sleppt)
-    {"name": "Trölli.is", "url": "https://trolli.is/feed", "local": True, "cat": "Fréttamiðlar"},  # (óstaðfest)
-    {"name": "Dal.is", "url": "https://dal.is/feed", "local": True, "cat": "Fréttamiðlar"},  # (óstaðfest)
-    {"name": "SBA-Norðurleið", "url": "https://www.sba.is/feed", "local": True, "cat": "Fyrirtæki & félög"},  # (óstaðfest)
-    # Nærsveitarfélög (tvær giskaðar slóðir á hvert; max 10 svo fundargerðir kaffæri ekki öðru)
-    {"name": "Dalvíkurbyggð", "url": "https://www.dalvikurbyggd.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
-    {"name": "Dalvíkurbyggð", "url": "https://www.dalvikurbyggd.is/is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
-    {"name": "Fjallabyggð", "url": "https://www.fjallabyggd.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
-    {"name": "Fjallabyggð", "url": "https://www.fjallabyggd.is/is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
-    {"name": "Eyjafjarðarsveit", "url": "https://www.esveit.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
-    {"name": "Eyjafjarðarsveit", "url": "https://www.esveit.is/is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
-    {"name": "Hörgársveit", "url": "https://www.horgarsveit.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
-    {"name": "Hörgársveit", "url": "https://www.horgarsveit.is/is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
-    {"name": "Grýtubakkahreppur", "url": "https://www.grenivik.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
-    {"name": "Grýtubakkahreppur", "url": "https://www.grenivik.is/is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
-    {"name": "Svalbarðsstrandarhreppur", "url": "https://www.svalbardsstrond.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
-    {"name": "Svalbarðsstrandarhreppur", "url": "https://www.svalbardsstrond.is/is/feed", "local": True, "cat": "Nærsveitir", "max": 10},  # (óstaðfest)
+    {"name": "Trölli.is", "url": "https://trolli.is/feed", "local": True, "cat": "Fréttamiðlar"},
+    {"name": "Dal.is", "url": "https://dal.is/feed", "local": True, "cat": "Fréttamiðlar"},
+    {"name": "SBA-Norðurleið", "url": "https://www.sba.is/feed", "local": True, "cat": "Fyrirtæki & félög"},
+    # Nærsveitarfélög (max 10 svo fundargerðir kaffæri ekki öðru). Dalvíkurbyggð er ekki með veitu; Dal.is fjallar um Dalvík.
+    {"name": "Fjallabyggð", "url": "https://www.fjallabyggd.is/is/moya/feed", "local": True, "cat": "Nærsveitir", "max": 10},
+    {"name": "Eyjafjarðarsveit", "url": "https://www.esveit.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},
+    {"name": "Hörgársveit", "url": "https://www.horgarsveit.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},
+    {"name": "Grýtubakkahreppur", "url": "https://www.grenivik.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},
+    {"name": "Svalbarðsstrandarhreppur", "url": "https://www.svalbardsstrond.is/feed", "local": True, "cat": "Nærsveitir", "max": 10},
     # Bærinn
     {"name": "Akureyrarbær", "url": "https://www.akureyri.is/feed.xml", "local": True, "cat": "Bærinn"},
     {"name": "Norðurorka", "url": "https://www.no.is/is/feed", "local": True, "cat": "Bærinn"},
