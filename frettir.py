@@ -284,7 +284,7 @@ def deep_check(url):
 # Hver vefur fær sinn lesara. Ef lesari finnur ekkert helst fyrri listi og viðvörun birtist í loggnum.
 # ---------------------------------------------------------------------------
 from html.parser import HTMLParser
-from datetime import date
+from datetime import date, timedelta
 from urllib.parse import urljoin
 
 MONTHS_IS = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "maí": 5, "mai": 5, "jún": 6, "jun": 6, "júl": 7, "jul": 7,
@@ -518,23 +518,90 @@ def read_graeni(today):
     return events
 
 
-EVENT_SOURCES = [("MAK / Hof", read_mak, 5), ("Græni hatturinn", read_graeni, 0.5)]  # (nafn, lesari, bið milli mynda í sek.)
+# --- Upplýsingar af síðu hvers viðburðar (sýningar og tímar) ---
+SHOW_RE = re.compile(r"\b(\d{1,2})\s*\.?\s*(jan|feb|mar|apr|maí|mai|jún|jun|júl|jul|ágú|agu|sep|okt|nóv|nov|des)\b\.?"
+                     r"(?:\s+([01]?\d|2[0-3]):([0-5]\d))?", re.I)
+DETAIL_TTL = 2 * 24 * 3600  # síða hvers viðburðar er sótt aftur í fyrsta lagi á 2ja daga fresti
+
+
+def page_text(page):
+    p = _Flat()
+    p.feed(page)
+    t = " ".join(x[1] for x in p.t if x[0] == "t")
+    return re.sub(r"\s+", " ", re.sub(r"\|", " ", t)).strip()
+
+
+def mak_showings(page):
+    """MAK-síður eru með lista 'Dags Tími' með hverri sýningu, t.d. '09 .okt 20:00 11 .okt 20:00'."""
+    t = page_text(page)
+    for m in re.finditer(r"\bDags\b(.{0,1800}?)(?:\bVerð\b|Kaupa miða)", t):
+        found = [(int(d), MONTHS_IS[mo.lower()], ("%02d:%s" % (int(h), mi)) if h else "")
+                 for d, mo, h, mi in SHOW_RE.findall(m.group(1))]
+        if found:
+            return found
+    return []
+
+
+def showings_to_dates(showings, base):
+    """Ártalið er ekki á síðunni: byrjar á ári upphafsdags og hækkar þegar mánuðir hefjast aftur."""
+    out, y, prev = [], base.year, None
+    for d, mo, tm in showings:
+        try:
+            dt = date(y, mo, d)
+            if prev and dt < prev:
+                y += 1
+                dt = date(y, mo, d)
+            elif not prev and dt < base - timedelta(days=200):
+                y += 1
+                dt = date(y, mo, d)
+        except ValueError:
+            continue
+        prev = dt
+        out.append((dt, tm))
+    return out
+
+
+def _og(page):
+    for pat in (r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)',
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']'):
+        m = re.search(pat, page, re.I)
+        if m:
+            return html.unescape(m.group(1))
+    return ""
+
+
+def mak_detail(page, e, today):
+    sh = showings_to_dates(mak_showings(page), date.fromisoformat(e["start"]))
+    return {"showings": [[d.isoformat(), tm] for d, tm in sh], "image": _og(page)}
+
+
+def graeni_detail(page, e, today):
+    m = re.search(r"\b\d{2}\.\d{2}\.20\d\d\s+([01]?\d|2[0-3]):([0-5]\d)\b", page_text(page))
+    return {"time": ("%02d:%s" % (int(m.group(1)), m.group(2))) if m else "", "image": _og(page)}
+
+
+# (nafn, lesari á lista, lesari á síðu viðburðar, bið í sek. milli beiðna, mest margar síður í hverri keyrslu)
+EVENT_SOURCES = [
+    ("MAK / Hof", read_mak, mak_detail, 5, 15),  # MAK biður um 5 sek. bil (Crawl-delay)
+    ("Græni hatturinn", read_graeni, graeni_detail, 1, 25),
+]
+
+
+def _load(path, default):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return default
 
 
 def collect_events():
     today = datetime.now(timezone.utc).date()
-    try:
-        with open("events.json", encoding="utf-8") as f:
-            old = json.load(f)
-    except Exception:
-        old = []
-    try:
-        with open("events_img.json", encoding="utf-8") as f:
-            imgs = json.load(f)
-    except Exception:
-        imgs = {}
+    old = _load("events.json", [])
+    imgs = _load("events_img.json", {})
+    det = _load("events_detail.json", {})
     result = []
-    for name, reader, wait in EVENT_SOURCES:
+    for name, reader, detail, wait, cap in EVENT_SOURCES:
         try:
             found = reader(today)
         except Exception as e:
@@ -544,23 +611,45 @@ def collect_events():
             print("VIÐVÖRUN Viðburðir %s: engir viðburðir fundust, held í fyrri lista" % name)
             result += [e for e in old if e.get("source") == name]
             continue
-        budget = 3 if wait >= 5 else 8  # fáar myndasíður í hverri keyrslu (MAK biður um 5 sek. bil)
+        # Sæki síðu hvers viðburðar (sýningar, tímar, mynd) – fáar í hverri keyrslu, elstu upplýsingar fyrst
+        now = time.time()
+        todo = [e for e in found if now - det.get(e["link"], {}).get("ts", 0) > DETAIL_TTL]
+        todo.sort(key=lambda e: (det.get(e["link"], {}).get("ts", 0), e["start"]))
+        fetched = 0
+        for e in todo[:cap]:
+            try:
+                if not allowed(e["link"]):
+                    continue
+                d = detail(fetch_page(e["link"]), e, today)
+                d["ts"] = now
+                det[e["link"]] = d
+                fetched += 1
+            except Exception as ex:
+                print("   Tókst ekki að sækja %s (%s)" % (e["link"], ex))
+            time.sleep(wait)
+        expanded, split = [], 0
         for e in found:
-            if not e.get("image"):
-                e["image"] = imgs.get(e["link"]) or None
-            if not e.get("image") and e["link"] not in imgs and budget > 0 and allowed(e["link"]):
-                budget -= 1
-                imgs[e["link"]] = og_image(e["link"]) or ""
-                e["image"] = imgs[e["link"]] or None
-                time.sleep(wait)
-        print("OK Viðburðir %s: %d viðburðir" % (name, len(found)))
-        for e in found[:3]:
+            d = det.get(e["link"], {})
+            fut = [s for s in d.get("showings", []) if s[0] >= today.isoformat()]
+            if fut:
+                split += 1
+                for iso, tm in fut:
+                    expanded.append(dict(e, start=iso, end=iso, time=tm or e.get("time", "")))
+                continue
+            if d.get("time") and not e.get("time"):
+                e["time"] = d["time"]
+            expanded.append(e)
+        for e in expanded:
+            e["image"] = e.get("image") or det.get(e["link"], {}).get("image") or imgs.get(e["link"]) or None
+        print("OK Viðburðir %s: %d viðburðir á lista, %d skiptast í sýningar, %d síður sóttar núna (%d spjöld)" % (
+            name, len(found), split, fetched, len(expanded)))
+        for e in expanded[:3]:
             print("   dæmi: %s – %s %s" % (e["start"], e["title"][:60], e["time"]))
-        result += found
+        result += expanded
     result = [e for e in result if e["end"] >= today.isoformat()]
     seen, uniq = set(), []
     for e in result:
-        key = (e["source"], re.sub(r"\W+", "", e["title"].lower()), e["start"], e["end"])
+        key = (e["source"], re.sub(r"\W+", "", e["title"].lower()), e["start"], e["end"], e.get("time", ""))
         if key in seen:
             continue
         seen.add(key)
@@ -571,6 +660,8 @@ def collect_events():
         json.dump(result, f, ensure_ascii=False, indent=2)
     with open("events_img.json", "w", encoding="utf-8") as f:
         json.dump(dict(list(imgs.items())[-1500:]), f, ensure_ascii=False)
+    with open("events_detail.json", "w", encoding="utf-8") as f:
+        json.dump(dict(list(det.items())[-1500:]), f, ensure_ascii=False)
     return result
 
 
