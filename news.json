@@ -1,7 +1,43 @@
 [
   {
+    "title": "Ný lýðheilsustefna samþykkt í bæjarstjórn Akureyrar",
+    "link": "https://kaffid.is/ny-lydheilsustefna-samthykkt-i-baejarstjorn-akureyrar/",
+    "summary": "Bæjarstjórn Akureyrar samþykkti á þriðjudag nýja lýðheilsustefnu sveitarfélagsins. Stefnan miðar að því að íbúar njóti góðrar heilsu og vellíðunar á […]",
+    "date": "2026-10-09T11:33:00+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/04/julia-taubitz-F0JfUcvqLaI-unsplash-1-scaled.jpg",
+    "source": "Kaffið",
+    "category": "Fréttamiðlar"
+  },
+  {
+    "title": "Þrjú ný fyrirtæki hljóta stuðning frá Drift EA",
+    "link": "https://www.akureyri.net/is/moya/news/thrju-ny-fyrirtaeki-hljota-studning-fra-drift-ea",
+    "summary": "Drift EA hefur valið fyrirtækin Haflind, Terramar og Vaxandi byggð til áframhaldandi stuðnings í Hlunninum. Drift EA hefur nú fjárfest í níu norðlenskum nýsköpunarfyrirtækjum síðan félagið var stofnað árið 2024, auk þess sem sex önnur verkefni hafa f...",
+    "date": "2026-10-09T11:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/drift-9-10-26.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar"
+  },
+  {
+    "title": "Ný lýðheilsustefna samþykkt í bæjarstjórn",
+    "link": "https://www.akureyri.is/ny-lydheilsustefna-samthykkt-i-baejarstjorn",
+    "summary": "Bæjarstjórn Akureyrar samþykkti á þriðjudag nýja lýðheilsustefnu sveitarfélagsins.",
+    "date": "2026-10-09T11:00:00+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/ishokki-er-vinsael-ithrottagrein-a-akureyri-2000x1333.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn"
+  },
+  {
     "title": "Uppbyggingartímabilið í Norðurgötunni",
     "link": "https://www.akureyri.net/is/moya/news/uppbyggingartimabilid-i-nordurgotunni",
+    "summary": "akureyri.net",
+    "date": "2026-10-09T10:45:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/hus-dagsins-nordurgata-26.png",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar"
+  },
+  {
+    "title": "Uppbyggingin mikla í Norðurgötunni 1926",
+    "link": "https://www.akureyri.net/is/moya/news/uppbyggingin-mikla-i-nordurgotunni-1926",
     "summary": "akureyri.net",
     "date": "2026-10-09T10:45:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/hus-dagsins-nordurgata-26.png",
@@ -1796,15 +1832,6 @@
     "summary": "Vegagerðin hefur jafnframt gert breytingar á vetraráætlun Sæfara og verður ferðum fækkað um eina yfir vetrartímann.",
     "date": "2026-09-07T10:57:46+00:00",
     "image": "https://akureyri.payload.is/api/media/file/ferry-arriving-in-grimsey-harbour-photo-maria-h-tryggvadottir-2000x1333.jpg",
-    "source": "Akureyrarbær",
-    "category": "Bærinn"
-  },
-  {
-    "title": "Göngum í skólann hefst á Akureyri",
-    "link": "https://www.akureyri.is/gongum-i-skolann-hefst-a-akureyri",
-    "summary": "Allir grunnskólar á Akureyri taka þátt í átakinu, sem nú er haldið í tuttugasta sinn.",
-    "date": "2026-09-07T10:27:54+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/gongum-i-skolann-2000x1125.jpg",
     "source": "Akureyrarbær",
     "category": "Bærinn"
   },
