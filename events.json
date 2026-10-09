@@ -23,6 +23,19 @@
     "res": "35–28"
   },
   {
+    "title": "Hamar – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-10-09",
+    "end": "2026-10-09",
+    "time": "19:15",
+    "image": null,
+    "note": "Útileikur · 1. deild karla · Hveragerði",
+    "res": "101–100"
+  },
+  {
     "title": "Fjölnir – SA",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -99,6 +112,19 @@
     "note": "Frá 7.900 kr."
   },
   {
+    "title": "Skallagrímur – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-10-11",
+    "end": "2026-10-11",
+    "time": "16:00",
+    "image": null,
+    "note": "Útileikur · 1. deild kvenna · Borgarnes",
+    "last": "tap, Þór Ak. 80–82 Þór Þ."
+  },
+  {
     "title": "Fasteignamartröðin",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/fasteignamartrodin",
@@ -107,6 +133,19 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791581756",
     "note": "7.900 kr."
+  },
+  {
+    "title": "Þór Ak. – Breiðablik",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-10-15",
+    "end": "2026-10-15",
+    "time": "19:15",
+    "image": null,
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "last": "tap, Hamar 101–100 Þór Ak."
   },
   {
     "title": "Angurværð",
@@ -163,6 +202,18 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/vneLkA40FV2AOQxM6DXTCY5qtqyBXh-metaYmVaZFpKQUEuanBn-.webp",
     "note": "Uppselt · Frá 7.900 kr."
+  },
+  {
+    "title": "Þór Ak. – Sindri",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-10-17",
+    "end": "2026-10-17",
+    "time": "16:00",
+    "image": null,
+    "note": "Heimaleikur · VÍS bikar karla · Höllin Ak"
   },
   {
     "title": "ÍBV 2 – Þór",
@@ -222,6 +273,18 @@
     "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið"
   },
   {
+    "title": "Þór Ak. – KV",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-10-18",
+    "end": "2026-10-18",
+    "time": "15:00",
+    "image": null,
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+  },
+  {
     "title": "Undir sömu stjörnu",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/undir-somu-stjornu",
@@ -264,6 +327,18 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/mdJJ5xR2R5YIuFQUY8rqSX0Gv9P3xP-metaZ3VkcmlkLmpwZw==-.webp",
     "note": "Frá 5.990 kr."
+  },
+  {
+    "title": "Fjölnir – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-10-23",
+    "end": "2026-10-23",
+    "time": "19:15",
+    "image": null,
+    "note": "Útileikur · 1. deild karla · Dalhús"
   },
   {
     "title": "SR – SA",
@@ -332,6 +407,18 @@
     "note": "Útileikur · Toppdeild karla"
   },
   {
+    "title": "ÍR – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-10-24",
+    "end": "2026-10-24",
+    "time": "18:00",
+    "image": null,
+    "note": "Útileikur · 1. deild kvenna · Skógarsel"
+  },
+  {
     "title": "SR – SA",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -386,6 +473,18 @@
     "time": "18:30",
     "image": null,
     "note": "Útileikur · Olís deild karla · Kaplakriki"
+  },
+  {
+    "title": "Þór Ak. – Haukar",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-10-29",
+    "end": "2026-10-29",
+    "time": "19:15",
+    "image": null,
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
   },
   {
     "title": "Fasteignamartröðin",
@@ -502,6 +601,18 @@
     "note": "Frá 6.900 kr."
   },
   {
+    "title": "Njardvik b – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-11-07",
+    "end": "2026-11-07",
+    "time": "16:00",
+    "image": null,
+    "note": "Útileikur · 1. deild kvenna · IceMar-höllin"
+  },
+  {
     "title": "SA – Fjölnir",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -544,6 +655,18 @@
     "note": "3.500 kr."
   },
   {
+    "title": "Þór Ak. – KFG",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-11-08",
+    "end": "2026-11-08",
+    "time": "16:00",
+    "image": null,
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+  },
+  {
     "title": "Haukar – Þór",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -564,6 +687,18 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1788449333.png?v=1791581756",
     "note": "3.500 kr."
+  },
+  {
+    "title": "KV – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-11-13",
+    "end": "2026-11-13",
+    "time": "19:15",
+    "image": null,
+    "note": "Útileikur · 1. deild karla · Meistaravellir"
   },
   {
     "title": "Fasteignamartröðin",
@@ -640,6 +775,18 @@
     "note": "Frá 7.900 kr."
   },
   {
+    "title": "Þór Ak. – Keflavík b",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-11-15",
+    "end": "2026-11-15",
+    "time": "18:00",
+    "image": null,
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+  },
+  {
     "title": "Fjölnir – KA/Þór",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -696,6 +843,18 @@
     "note": "Útileikur · Unbrokendeild kvenna · Myntkauphöllin (Varmá)"
   },
   {
+    "title": "Þór Ak. – ÍA",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-11-21",
+    "end": "2026-11-21",
+    "time": "15:30",
+    "image": null,
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+  },
+  {
     "title": "SA – SR",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -706,6 +865,18 @@
     "time": "16:45",
     "image": null,
     "note": "Heimaleikur · Toppdeild kvenna"
+  },
+  {
+    "title": "Þór Ak. – Selfoss",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-11-21",
+    "end": "2026-11-21",
+    "time": "18:00",
+    "image": null,
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
   },
   {
     "title": "Skálmöld",
@@ -764,6 +935,18 @@
     "note": "7.900 kr."
   },
   {
+    "title": "Þór Ak. – Selfoss",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-11-27",
+    "end": "2026-11-27",
+    "time": "19:15",
+    "image": null,
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+  },
+  {
     "title": "Fjölnir – SA",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -804,6 +987,18 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/v5FSlygO8Tq2R4W0dCc589bbKeFZY0-metaU2vDrW3DsyAyNiBJSUlJLmpwZw==-.webp",
     "note": "Frá 8.500 kr."
+  },
+  {
+    "title": "Haukar u – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-11-28",
+    "end": "2026-11-28",
+    "time": "16:00",
+    "image": null,
+    "note": "Útileikur · 1. deild kvenna · Ásvellir"
   },
   {
     "title": "Fjölnir – SA",
@@ -878,6 +1073,18 @@
     "time": "19:00",
     "image": null,
     "note": "Heimaleikur · Olís deild karla · KA heimilið"
+  },
+  {
+    "title": "Þór Ak. – Skallagrímur",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-12-03",
+    "end": "2026-12-03",
+    "time": "19:15",
+    "image": null,
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
   },
   {
     "title": "Jólapartý Skoppu og Skrítlu",
@@ -962,6 +1169,18 @@
     "note": "7.500 kr."
   },
   {
+    "title": "Þór Ak. – Aþena",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "time": "18:00",
+    "image": null,
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+  },
+  {
     "title": "Á rauðu ljósi",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/a-raudu-ljosi",
@@ -1044,6 +1263,18 @@
     "time": "19:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791581756",
     "note": "Frá 13.999 kr."
+  },
+  {
+    "title": "Snæfell – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-12-11",
+    "end": "2026-12-11",
+    "time": "19:15",
+    "image": null,
+    "note": "Útileikur · 1. deild karla · Stykkishólmur"
   },
   {
     "title": "Brother Grass",
@@ -1176,6 +1407,18 @@
     "note": "Frá 13.999 kr."
   },
   {
+    "title": "Þór Þ. – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-12-18",
+    "end": "2026-12-18",
+    "time": "19:15",
+    "image": null,
+    "note": "Útileikur · 1. deild karla · Icelandic Glacial höllin"
+  },
+  {
     "title": "Krissmas Spesjal",
     "source": "Græni hatturinn",
     "link": "https://www.graenihatturinn.is/is/krissmas-spesjal-18-dec-2026/eid/280",
@@ -1216,6 +1459,18 @@
     "note": "Frá 7.900 kr."
   },
   {
+    "title": "Breiðablik – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-12-20",
+    "end": "2026-12-20",
+    "time": "17:15",
+    "image": null,
+    "note": "Útileikur · 1. deild kvenna · Smárinn"
+  },
+  {
     "title": "U20 – SA",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -1238,6 +1493,30 @@
     "time": "16:45",
     "image": null,
     "note": "Heimaleikur · Toppdeild karla"
+  },
+  {
+    "title": "Þór Þ. – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-01-06",
+    "end": "2027-01-06",
+    "time": "19:15",
+    "image": null,
+    "note": "Útileikur · 1. deild kvenna · Icelandic Glacial höllin"
+  },
+  {
+    "title": "Þór Ak. – Hamar",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-01-08",
+    "end": "2027-01-08",
+    "time": "19:15",
+    "image": null,
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
   },
   {
     "title": "KA – Þróttur Reykjavík/Blakfélag Hafnafjarðar",
@@ -1310,6 +1589,30 @@
     "note": "Útileikur · Toppdeild karla"
   },
   {
+    "title": "Breiðablik – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-01-15",
+    "end": "2027-01-15",
+    "time": "19:15",
+    "image": null,
+    "note": "Útileikur · 1. deild karla · Smárinn"
+  },
+  {
+    "title": "Þór Ak. – Skallagrímur",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-01-17",
+    "end": "2027-01-17",
+    "time": "16:00",
+    "image": null,
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+  },
+  {
     "title": "KA – Völsungur",
     "source": "Íþróttir",
     "sport": "Blak",
@@ -1332,6 +1635,18 @@
     "note": "7.900 kr."
   },
   {
+    "title": "Þór Ak. – Fjölnir",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-01-21",
+    "end": "2027-01-21",
+    "time": "19:15",
+    "image": null,
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+  },
+  {
     "title": "120 ára afmæli Samkomuhússins",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/120-ara-afmaeli-samkomuhussins",
@@ -1340,6 +1655,18 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791581756",
     "note": "7.900 kr."
+  },
+  {
+    "title": "KV – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-01-23",
+    "end": "2027-01-23",
+    "time": "18:00",
+    "image": null,
+    "note": "Útileikur · 1. deild kvenna · Meistaravellir"
   },
   {
     "title": "SA – Fjölnir",
@@ -1364,6 +1691,18 @@
     "note": "7.900 kr."
   },
   {
+    "title": "Haukar – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-01-29",
+    "end": "2027-01-29",
+    "time": "19:15",
+    "image": null,
+    "note": "Útileikur · 1. deild karla · Ásvellir"
+  },
+  {
     "title": "120 ára afmæli Samkomuhússins",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/120-ara-afmaeli-samkomuhussins",
@@ -1372,6 +1711,18 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791581756",
     "note": "7.900 kr."
+  },
+  {
+    "title": "Þór Ak. – ÍR",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-01-30",
+    "end": "2027-01-30",
+    "time": "18:00",
+    "image": null,
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
   },
   {
     "title": "120 ára afmæli Samkomuhússins",
@@ -1510,6 +1861,18 @@
     "note": "Heimaleikur · Toppdeild karla"
   },
   {
+    "title": "KFG – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-02-13",
+    "end": "2027-02-13",
+    "time": "17:30",
+    "image": null,
+    "note": "Útileikur · 1. deild karla · ÞG Verk höllin"
+  },
+  {
     "title": "A Country Night in Nashville",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/a-country-night-in-nashville",
@@ -1554,6 +1917,18 @@
     "note": "Útileikur · Unbrokendeild kvenna · Digranes"
   },
   {
+    "title": "Þór Ak. – Njardvik b",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-02-17",
+    "end": "2027-02-17",
+    "time": "19:15",
+    "image": null,
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+  },
+  {
     "title": "Stjarnan – Þór",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -1576,6 +1951,18 @@
     "time": "19:00",
     "image": null,
     "note": "Útileikur · Olís deild karla · Myntkaup höllin"
+  },
+  {
+    "title": "Þór Ak. – KV",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-02-18",
+    "end": "2027-02-18",
+    "time": "19:15",
+    "image": null,
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
   },
   {
     "title": "SA – SR",
@@ -1656,6 +2043,18 @@
     "note": "Heimaleikur · Olís deild karla · KA heimilið"
   },
   {
+    "title": "ÍA – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "time": "19:15",
+    "image": null,
+    "note": "Útileikur · 1. deild karla · AvAir höllin"
+  },
+  {
     "title": "SR – SA",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -1676,6 +2075,18 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
     "note": "6.900 kr."
+  },
+  {
+    "title": "Keflavík b – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-02-27",
+    "end": "2027-02-27",
+    "time": "16:00",
+    "image": null,
+    "note": "Útileikur · 1. deild kvenna · Blue-höllin"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -1710,6 +2121,18 @@
     "time": "15:30",
     "image": null,
     "note": "Útileikur · Unbrokendeild kvenna · Íþróttahúsið í Neskaupstað"
+  },
+  {
+    "title": "Selfoss – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-03-05",
+    "end": "2027-03-05",
+    "time": "19:15",
+    "image": null,
+    "note": "Útileikur · 1. deild karla · Vallaskóli"
   },
   {
     "title": "FH – Þór",
@@ -1770,6 +2193,18 @@
     "note": "Útileikur · Toppdeild kvenna"
   },
   {
+    "title": "Selfoss – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-03-06",
+    "end": "2027-03-06",
+    "time": "18:00",
+    "image": null,
+    "note": "Útileikur · 1. deild kvenna · Vallaskóli"
+  },
+  {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
@@ -1826,6 +2261,30 @@
     "note": ""
   },
   {
+    "title": "Skallagrímur – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-03-12",
+    "end": "2027-03-12",
+    "time": "19:15",
+    "image": null,
+    "note": "Útileikur · 1. deild karla · Borgarnes"
+  },
+  {
+    "title": "Þór Ak. – Haukar u",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-03-13",
+    "end": "2027-03-13",
+    "time": "18:00",
+    "image": null,
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+  },
+  {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
@@ -1858,6 +2317,30 @@
     "time": "19:30",
     "image": null,
     "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
+  },
+  {
+    "title": "Þór Ak. – Snæfell",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-03-19",
+    "end": "2027-03-19",
+    "time": "19:15",
+    "image": null,
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+  },
+  {
+    "title": "Aþena – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-03-20",
+    "end": "2027-03-20",
+    "time": "16:00",
+    "image": null,
+    "note": "Útileikur · 1. deild kvenna · Unbroken Höllin"
   },
   {
     "title": "SA – SR",
@@ -1924,6 +2407,18 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
     "note": "6.900 kr."
+  },
+  {
+    "title": "Þór Ak. – Breiðablik",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2027-03-30",
+    "end": "2027-03-30",
+    "time": "19:15",
+    "image": null,
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
   },
   {
     "title": "Draumahliðið",
