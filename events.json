@@ -82,6 +82,32 @@
     "note": "Ókeypis"
   },
   {
+    "title": "Stjarnan – KA",
+    "source": "Íþróttir",
+    "sport": "Fótbolti",
+    "gender": "Karlar",
+    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100289",
+    "start": "2026-10-10",
+    "end": "2026-10-10",
+    "time": "14:00",
+    "image": null,
+    "note": "Útileikur · Besta deild karla - Neðri hluti · Samsungvöllurinn",
+    "last": "sigur, KA 3–0 Þór"
+  },
+  {
+    "title": "Þór – ÍBV",
+    "source": "Íþróttir",
+    "sport": "Fótbolti",
+    "gender": "Karlar",
+    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100291",
+    "start": "2026-10-10",
+    "end": "2026-10-10",
+    "time": "14:00",
+    "image": null,
+    "note": "Heimaleikur · Besta deild karla - Neðri hluti · VÍS völlurinn",
+    "last": "tap, Valur 4–1 Þór"
+  },
+  {
     "title": "A! Gjörningahátíð - Yubusha",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/a-gjorningahatid-yubusha",
@@ -215,6 +241,30 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/vneLkA40FV2AOQxM6DXTCY5qtqyBXh-metaYmVaZFpKQUEuanBn-.webp",
     "note": "Uppselt · Frá 7.900 kr."
+  },
+  {
+    "title": "Valur – KA",
+    "source": "Íþróttir",
+    "sport": "Fótbolti",
+    "gender": "Karlar",
+    "link": "https://www.ksi.is/oll-mot/mot/?id=7025532&banner-tab=matches-and-results",
+    "start": "2026-10-17",
+    "end": "2026-10-17",
+    "time": "14:00",
+    "image": null,
+    "note": "Útileikur · Besta deild karla - Neðri hluti · N1-völlurinn Hlíðarenda"
+  },
+  {
+    "title": "Þór – Stjarnan",
+    "source": "Íþróttir",
+    "sport": "Fótbolti",
+    "gender": "Karlar",
+    "link": "https://www.ksi.is/oll-mot/mot/?id=7025532&banner-tab=matches-and-results",
+    "start": "2026-10-17",
+    "end": "2026-10-17",
+    "time": "14:00",
+    "image": null,
+    "note": "Heimaleikur · Besta deild karla - Neðri hluti · VÍS völlurinn"
   },
   {
     "title": "Þór Ak. – Sindri",
@@ -409,6 +459,30 @@
     "time": "13:00",
     "image": null,
     "note": "Útileikur · Unbrokendeild karla · Íþróttahúsið Torfnesi"
+  },
+  {
+    "title": "KA – ÍBV",
+    "source": "Íþróttir",
+    "sport": "Fótbolti",
+    "gender": "Karlar",
+    "link": "https://www.ksi.is/oll-mot/mot/?id=7025532&banner-tab=matches-and-results",
+    "start": "2026-10-24",
+    "end": "2026-10-24",
+    "time": "14:00",
+    "image": null,
+    "note": "Heimaleikur · Besta deild karla - Neðri hluti · Greifavöllurinn"
+  },
+  {
+    "title": "FH – Þór",
+    "source": "Íþróttir",
+    "sport": "Fótbolti",
+    "gender": "Karlar",
+    "link": "https://www.ksi.is/oll-mot/mot/?id=7025532&banner-tab=matches-and-results",
+    "start": "2026-10-24",
+    "end": "2026-10-24",
+    "time": "14:00",
+    "image": null,
+    "note": "Útileikur · Besta deild karla - Neðri hluti · Kaplakrikavöllur"
   },
   {
     "title": "Lífið er konsert",
@@ -2463,6 +2537,18 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
     "note": "6.900 kr."
+  },
+  {
+    "title": "Þór – Fylkir",
+    "source": "Íþróttir",
+    "sport": "Fótbolti",
+    "gender": "Karlar",
+    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=6961961",
+    "start": "2027-03-17",
+    "end": "2027-03-17",
+    "time": "18:00",
+    "image": null,
+    "note": "Heimaleikur · Lengjubikar karla - A deild Úrslit · Greifavöllurinn"
   },
   {
     "title": "KA – Selfoss",
