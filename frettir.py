@@ -175,16 +175,16 @@ HTML = """<!DOCTYPE html><html lang="is"><head><meta charset="utf-8"><meta name=
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,sans-serif}
 header,main,.chips{max-width:720px;margin:0 auto;padding:0 16px}header{padding-top:20px}h1{margin:0;font-size:24px}.sub{color:var(--mu);font-size:14px}
 .chips{display:flex;gap:8px;overflow-x:auto;padding:12px 16px}.chip{border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:7px 14px;border-radius:999px;font-size:14px;white-space:nowrap;cursor:pointer}.chip.on{background:var(--ac);color:#fff;border-color:var(--ac)}
-main{display:grid;gap:10px;padding-bottom:40px}.wrap{max-width:720px;margin:0 auto}.wrap main{max-width:none;margin:0;padding:0 16px 40px}aside{display:none}.strip{max-width:720px;margin:0 auto;padding:0 16px 6px}.strip h3{margin:0 0 6px;font-size:13px;color:var(--mu);font-weight:600}.strip .row{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}.strip a{flex:0 0 140px;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:8px 10px;text-decoration:none;color:inherit;font-size:12px;line-height:1.3}.strip b{color:var(--ac);margin-right:4px}.strip small{display:block;color:var(--mu);font-size:11px;margin-top:4px}.strip .t{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+[hidden]{display:none!important}body{padding-bottom:64px}main{display:grid;gap:10px;padding-bottom:40px}.tabbar{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;background:var(--card);border-top:1px solid var(--bd);padding-bottom:env(safe-area-inset-bottom,0px)}.tabbar button{flex:1;padding:13px 8px;border:0;background:none;color:var(--mu);font-size:14px;cursor:pointer}.tabbar button.on{color:var(--ac);font-weight:700;box-shadow:inset 0 2px 0 var(--ac)}.evwrap{max-width:720px;margin:0 auto;padding:0 16px 40px}#evlist{display:grid;gap:10px}.evh{margin:14px 0 0;font-size:14px;color:var(--mu);font-weight:600}.tags{margin-top:6px;display:flex;gap:6px;flex-wrap:wrap}.tag{font-size:11px;padding:2px 8px;border-radius:6px;border:1px solid var(--bd);color:var(--mu)}.wrap{max-width:720px;margin:0 auto}.wrap main{max-width:none;margin:0;padding:0 16px 40px}aside{display:none}.strip{max-width:720px;margin:0 auto;padding:0 16px 6px}.strip h3{margin:0 0 6px;font-size:13px;color:var(--mu);font-weight:600}.strip .row{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}.strip a{flex:0 0 140px;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:8px 10px;text-decoration:none;color:inherit;font-size:12px;line-height:1.3}.strip b{color:var(--ac);margin-right:4px}.strip small{display:block;color:var(--mu);font-size:11px;margin-top:4px}.strip .t{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .top{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:12px 14px;position:sticky;top:12px}.top h3{margin:0 0 8px;font-size:15px}.top ol{margin:0;padding:0;list-style:none;counter-reset:n}.top li{counter-increment:n;border-top:1px solid var(--bd)}.top li:first-child{border-top:0}.top a{display:flex;gap:8px;padding:8px 0;text-decoration:none;color:inherit;font-size:13px;line-height:1.3}.top a:before{content:counter(n);color:var(--ac);font-weight:700;min-width:14px}.top a:hover{color:var(--ac)}.top small{display:block;color:var(--mu);font-size:11px;margin-top:2px}.top .none{color:var(--mu);font-size:12px;margin:0 0 6px}
-@media(min-width:900px){header,.chips,.wrap{max-width:1040px}.wrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px;padding:0 16px}.wrap main{padding:0 0 40px}aside{display:block}.chip.mest{display:none}.strip{display:none}}
+@media(min-width:900px){body{padding-bottom:0}.evwrap{max-width:1040px}#evlist{max-width:720px}.tabbar{position:static;max-width:1040px;margin:8px auto 0;padding:0 16px;background:none;border:0}.tabbar button{flex:none;padding:10px 18px;border-bottom:2px solid transparent;box-shadow:none}.tabbar button.on{border-bottom-color:var(--ac);box-shadow:none}header,.chips,.wrap{max-width:1040px}.wrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px;padding:0 16px}.wrap main{padding:0 0 40px}aside{display:block}.chip.mest{display:none}.strip{display:none}}
 a.item{display:flex;gap:12px;background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:10px;text-decoration:none;color:inherit}a.item:hover{border-color:var(--ac)}
 .img{flex:0 0 96px;height:96px;border-radius:10px;background:var(--ac);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;overflow:hidden;text-align:center}.img img{width:100%;height:100%;object-fit:cover}
 .body{min-width:0;flex:1}.meta{font-size:12px;color:var(--mu);margin-bottom:4px}.src{color:var(--ac);font-weight:700}
 h2{font-size:16px;margin:0 0 4px;line-height:1.3}p{margin:0;font-size:13px;color:var(--mu);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-</style></head><body><header><h1>Akureyri í fréttum</h1><div class="sub" id="upd"></div></header><div class="chips" id="chips"></div><div class="strip" id="strip"></div><div class="wrap"><main id="list"></main><aside><div class="top" id="top"></div></aside></div>
+</style></head><body><header><h1>Akureyri í fréttum</h1><div class="sub" id="upd"></div></header><nav class="tabbar"><button data-v="news" class="on" onclick="setView('news')">Fréttir</button><button data-v="ev" onclick="setView('ev')">Viðburðir</button></nav><div id="viewNews"><div class="chips" id="chips"></div><div class="strip" id="strip"></div><div class="wrap"><main id="list"></main><aside><div class="top" id="top"></div></aside></div></div><div id="viewEv" hidden><div class="chips" id="evchips"></div><div class="evwrap"><div id="evlist"></div></div></div>
 <script>
-const NEWS=__DATA__;const API="__API__";let TOP=[];let cur="Allt";NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar"});const ORDER=["Fréttamiðlar","Nærsveitir","Bærinn","Menntun","Menning","Íþróttir","Fyrirtæki & félög"];
+const NEWS=__DATA__;const EVENTS=__EVENTS__;let evSrc="Allt";const API="__API__";let TOP=[];let cur="Allt";NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar"});const ORDER=["Fréttamiðlar","Nærsveitir","Bærinn","Menntun","Menning","Íþróttir","Fyrirtæki & félög"];
 function ago(d){if(!d)return"";const m=(Date.now()-new Date(d))/6e4;if(m<60)return"fyrir "+Math.max(1,Math.round(m))+" mín.";if(m<1440)return"fyrir "+Math.round(m/60)+" klst.";return"fyrir "+Math.round(m/1440)+" d."}
 function track(n){if(!API)return;try{const k="c:"+n.link;if(!localStorage.getItem(k)){localStorage.setItem(k,"1");fetch(API+"/click",{method:"POST",body:n.link,keepalive:true})}}catch(e){}}
 function strip(){const t=document.getElementById("strip");t.innerHTML="";if(cur==="Mest lesið")return;let L=TOP.map(k=>NEWS.find(n=>n.link===k)).filter(Boolean).slice(0,5);const real=L.length>0;if(!real)L=NEWS.slice(0,5);t.appendChild(el("h3","",real?"Mest lesið":"Mest lesið (nýjustu í bili)"));const r=el("div","row");L.forEach((n,i)=>{const a=el("a","");a.href=n.link;a.target="_blank";a.rel="noopener";a.onclick=()=>track(n);const x=el("div","t");x.appendChild(el("b","",String(i+1)));x.appendChild(document.createTextNode(n.title));a.appendChild(x);a.appendChild(el("small","",n.source));r.appendChild(a)});t.appendChild(r)}
@@ -198,6 +198,22 @@ LIST.forEach(n=>{const a=el("a","item");a.href=n.link;a.target="_blank";a.rel="n
 const im=el("div","img");if(n.image){const i=document.createElement("img");i.src=n.image;i.loading="lazy";i.referrerPolicy="no-referrer";i.onerror=()=>{i.remove();im.textContent=n.source};im.appendChild(i)}else im.textContent=n.source;
 const b=el("div","body");const m=el("div","meta");m.appendChild(el("span","src",n.source));m.appendChild(document.createTextNode(" · "+ago(n.date)));
 b.append(m,el("h2","",n.title));if(n.summary&&n.summary.length>3)b.append(el("p","",n.summary));a.append(im,b);l.appendChild(a)})}
+function pd(s){const p=s.split("-");return new Date(+p[0],+p[1]-1,+p[2])}
+const DAYS=["sun","mán","þri","mið","fim","fös","lau"],MON=["jan","feb","mar","apr","maí","jún","júl","ágú","sep","okt","nóv","des"];
+function fd(d){return d.getDate()+". "+MON[d.getMonth()]}
+function setView(v){document.getElementById("viewNews").hidden=(v!=="news");document.getElementById("viewEv").hidden=(v!=="ev");document.querySelectorAll(".tabbar button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));if(v==="ev")renderEv();window.scrollTo(0,0)}
+function renderEv(){const n0=new Date(),t=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("evlist"),ch=document.getElementById("evchips");
+const all=EVENTS.filter(e=>pd(e.end)>=t);const srcs=["Allt",...new Set(all.map(e=>e.source))];ch.innerHTML="";
+srcs.forEach(s=>{const b=el("button","chip"+(s===evSrc?" on":""),s);b.onclick=()=>{evSrc=s;renderEv()};ch.appendChild(b)});
+box.innerHTML="";const L=all.filter(e=>evSrc==="Allt"||e.source===evSrc).sort((a,b)=>a.start<b.start?-1:a.start>b.start?1:((a.time||"")<(b.time||"")?-1:1));
+if(!L.length){box.appendChild(el("div","sub","Engir viðburðir fundust."));return}
+let last="";L.forEach(e=>{const s=pd(e.start),ongoing=s<t,key=ongoing?"gangi":e.start;
+if(key!==last){last=key;let h="Í gangi";if(!ongoing){const diff=Math.round((s-t)/864e5);h=(diff===0?"Í dag · ":diff===1?"Á morgun · ":"")+DAYS[s.getDay()]+". "+fd(s)+(s.getFullYear()!==t.getFullYear()?" "+s.getFullYear():"")}box.appendChild(el("h3","evh",h))}
+const a=el("a","item");a.href=e.link;a.target="_blank";a.rel="noopener";
+const im=el("div","img");if(e.image){const i=document.createElement("img");i.src=e.image;i.loading="lazy";i.referrerPolicy="no-referrer";i.onerror=()=>{i.remove();im.textContent=fd(s)};im.appendChild(i)}else im.textContent=fd(s);
+const b=el("div","body"),m=el("div","meta");m.appendChild(el("span","src",e.source));let when=e.time?"kl. "+e.time:"";if(e.end!==e.start)when+=(when?" · ":"")+fd(s)+" – "+fd(pd(e.end));if(when)m.appendChild(document.createTextNode(" · "+when));
+b.append(m,el("h2","",e.title));if(e.note){const tg=el("div","tags");e.note.split(" · ").forEach(x=>tg.appendChild(el("span","tag",x)));b.appendChild(tg)}
+a.append(im,b);box.appendChild(a)})}
 document.getElementById("upd").textContent="Uppfært __TIME__";render();side();strip();if(API)fetch(API+"/top").then(r=>r.json()).then(t=>{TOP=t;side();strip();if(cur==="Mest lesið")render()}).catch(()=>{});
 </script></body></html>"""
 
@@ -205,9 +221,10 @@ document.getElementById("upd").textContent="Uppfært __TIME__";render();side();s
 COUNTER_URL = "https://akureyri-smellir.hermannh2000.workers.dev"  # slóð á Cloudflare Worker (fyllt út þegar hann er tilbúinn)
 
 
-def write_html(items):
+def write_html(items, events=None):
     data = json.dumps(items, ensure_ascii=False).replace("</", "<\\/")
-    page = HTML.replace("__DATA__", data).replace("__API__", COUNTER_URL).replace("__TIME__", datetime.now().strftime("%d.%m.%Y %H:%M"))
+    evdata = json.dumps(events or [], ensure_ascii=False).replace("</", "<\\/")
+    page = HTML.replace("__EVENTS__", evdata).replace("__DATA__", data).replace("__API__", COUNTER_URL).replace("__TIME__", datetime.now().strftime("%d.%m.%Y %H:%M"))
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(page)
 
@@ -260,6 +277,284 @@ def deep_check(url):
     if any(k in lead for k in DEEP_KEYWORDS):
         return True
     return sum(body.count(k) for k in DEEP_KEYWORDS) >= 2
+
+
+# ---------------------------------------------------------------------------
+# Viðburðir: lesnir beint úr HTML á vefjum sem bjóða ekki upp á veitu.
+# Hver vefur fær sinn lesara. Ef lesari finnur ekkert helst fyrri listi og viðvörun birtist í loggnum.
+# ---------------------------------------------------------------------------
+from html.parser import HTMLParser
+from datetime import date
+from urllib.parse import urljoin
+
+MONTHS_IS = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "maí": 5, "mai": 5, "jún": 6, "jun": 6, "júl": 7, "jul": 7,
+             "ágú": 8, "agu": 8, "sep": 9, "okt": 10, "nóv": 11, "nov": 11, "des": 12}
+MONTHS_EN = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6, "jul": 7, "aug": 8,
+             "sep": 9, "oct": 10, "nov": 11, "dec": 12}
+_MON = r"(jan|feb|mar|apr|maí|mai|jún|jun|júl|jul|ágú|agu|sep|okt|nóv|nov|des)[a-záéíóúýþæö]*\.?"
+RANGE_RE = re.compile(r"(\d{1,2})\.?\s*(?:" + _MON + r")?\s*[-–—]\s*(\d{1,2})\.?\s*" + _MON + r"(?:\s+(20\d\d))?", re.I)
+SINGLE_RE = re.compile(r"(\d{1,2})\.\s*" + _MON + r"(?:\s+(20\d\d))?", re.I)
+TIME_RE = re.compile(r"\b([01]?\d|2[0-3]):([0-5]\d)\b")
+BLOCK_TAGS = {"p", "div", "li", "br", "h1", "h2", "h3", "h4", "h5", "tr", "td", "section", "article", "time"}
+
+
+def _on_or_after(day, mon, today, year=None):
+    if year:
+        return date(year, mon, day)
+    for y in (today.year, today.year + 1):
+        try:
+            d = date(y, mon, day)
+        except ValueError:
+            continue
+        if d >= today:
+            return d
+    return None
+
+
+def parse_dates(text, today):
+    """Finnur dagsetningu eða tímabil í texta eins og '9. okt', '9.-10. okt' eða '27. nóv - 4. des'.
+    Skilar (upphaf, endir) eða None. Ártal er valið þannig að endirinn sé í dag eða síðar."""
+    try:
+        m = RANGE_RE.search(text)
+        if m:
+            d1, mo1, d2, mo2, yr = m.group(1), m.group(2), m.group(3), m.group(4), m.group(5)
+            m2 = MONTHS_IS[mo2.lower()]
+            m1 = MONTHS_IS[mo1.lower()] if mo1 else m2
+            end = _on_or_after(int(d2), m2, today, int(yr) if yr else None)
+            if end is None:
+                return None
+            start = date(end.year, m1, int(d1))
+            if start > end:
+                start = date(end.year - 1, m1, int(d1))
+            return start, end
+        m = SINGLE_RE.search(text)
+        if m:
+            d = _on_or_after(int(m.group(1)), MONTHS_IS[m.group(2).lower()], today, int(m.group(3)) if m.group(3) else None)
+            return (d, d) if d else None
+    except (ValueError, KeyError):
+        return None
+    return None
+
+
+def strip_dates(text):
+    text = RANGE_RE.sub(" ", text)
+    text = SINGLE_RE.sub(" ", text)
+    text = TIME_RE.sub(" ", text)
+    text = re.sub(r"\b(kl|klukkan)\.?\b", " ", text, flags=re.I)
+    return re.sub(r"\s+", " ", text).strip(" -–—·|,.:")
+
+
+class _Flat(HTMLParser):
+    """Flatar HTML í runu af (texti | tengill | mynd) til að auðvelt sé að finna tengla og textann í kringum þá."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.t, self.skip = [], 0
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if tag in ("script", "style", "noscript"):
+            self.skip += 1
+        elif tag == "a":
+            self.t.append(("a", a.get("href") or ""))
+        elif tag == "img":
+            self.t.append(("img", a.get("src") or a.get("data-src") or "", a.get("alt") or ""))
+        if tag in BLOCK_TAGS:
+            self.t.append(("t", " | "))
+
+    def handle_endtag(self, tag):
+        if tag in ("script", "style", "noscript"):
+            self.skip = max(0, self.skip - 1)
+        elif tag == "a":
+            self.t.append(("/a",))
+        if tag in BLOCK_TAGS:
+            self.t.append(("t", " | "))
+
+    def handle_data(self, data):
+        if not self.skip and data.strip():
+            self.t.append(("t", data))
+
+
+def _txt(tokens):
+    return clean(" ".join(x[1] for x in tokens if x[0] == "t")).strip(" |")
+
+
+def link_groups(page, href_re):
+    """Skilar lista yfir tengla sem passa við mynstur: {href, text, imgs, before, after}.
+    Sömu tenglar sem koma tvisvar (mynd + titill) eru sameinaðir."""
+    p = _Flat()
+    p.feed(page)
+    toks, found = p.t, []
+    i = 0
+    while i < len(toks):
+        if toks[i][0] == "a" and href_re.search(toks[i][1]):
+            j, inside = i + 1, []
+            while j < len(toks) and toks[j][0] not in ("/a", "a"):
+                inside.append(toks[j])
+                j += 1
+            found.append({"href": toks[i][1], "i": i, "j": j, "inside": inside})
+            i = j
+        else:
+            i += 1
+    groups = []
+    for f in found:
+        if groups and groups[-1]["href"] == f["href"]:
+            g = groups[-1]
+            g["inside"] += f["inside"]
+            g["j"] = f["j"]
+        else:
+            groups.append({"href": f["href"], "i": f["i"], "j": f["j"], "inside": list(f["inside"])})
+    out = []
+    for k, g in enumerate(groups):
+        lo = groups[k - 1]["j"] if k else max(0, g["i"] - 40)
+        hi = groups[k + 1]["i"] if k + 1 < len(groups) else min(len(toks), g["j"] + 40)
+        out.append({
+            "href": g["href"],
+            "text": _txt(g["inside"]),
+            "imgs": [x for x in g["inside"] if x[0] == "img"],
+            "before": _txt(toks[max(lo, g["i"] - 40):g["i"]])[-160:],
+            "after": _txt(toks[g["j"]:min(hi, g["j"] + 40)])[:160],
+        })
+    return out
+
+
+def fetch_page(url):
+    if not allowed(url):
+        raise RuntimeError("robots.txt bannar aðgang að " + url)
+    req = urllib.request.Request(url, headers=DEEP_UA)
+    with OPENER.open(req, timeout=20) as r:
+        return r.read(2000000).decode("utf-8", "ignore")
+
+
+def _first_part(text):
+    """Fyrsti hluti texta (aðskilinn með |) sem er ekki bara dagsetning eða tími."""
+    for part in text.split("|"):
+        p = strip_dates(part)
+        if len(p) >= 3:
+            return p
+    return ""
+
+
+def _slug_title(slug):
+    return slug.replace("-", " ").strip().capitalize()
+
+
+def read_mak(today):
+    """Menningarfélag Akureyrar (Hof, Samkomuhúsið o.fl.). Dagsetning án ártals; ártal ályktað."""
+    base = "https://www.mak.is/is/vidburdir"
+    page = fetch_page(base)
+    pat = re.compile(r"/is/vidburdir/[^/?#]+/?$")
+    events, nodate = [], 0
+    for g in link_groups(page, pat):
+        link = urljoin(base, g["href"])
+        slug = link.rstrip("/").rsplit("/", 1)[-1]
+        d, src = None, ""
+        for chunk in (g["text"], g["after"], g["before"]):
+            d = parse_dates(chunk, today)
+            if d:
+                src = chunk
+                break
+        if not d:
+            nodate += 1
+            continue
+        title = _first_part(g["text"])
+        if len(title) < 3 and g["imgs"]:
+            title = clean(g["imgs"][0][2])
+        if len(title) < 3:
+            title = _first_part(g["after"]) or _slug_title(slug)
+        tm = TIME_RE.search(src) or TIME_RE.search(g["text"] + " " + g["after"])
+        img = urljoin(base, g["imgs"][0][1]) if g["imgs"] and g["imgs"][0][1] else None
+        events.append({"title": title[:140], "source": "MAK / Hof", "link": link, "start": d[0].isoformat(),
+                       "end": d[1].isoformat(), "time": ("%02d:%s" % (int(tm.group(1)), tm.group(2))) if tm else "",
+                       "image": img, "note": ""})
+    if nodate:
+        print("   VIÐVÖRUN MAK: %d tenglar án dagsetningar voru sleppt" % nodate)
+    return events
+
+
+def read_graeni(today):
+    """Græni hatturinn. Dagsetning með ártali er í slóð hvers viðburðar."""
+    base = "https://www.graenihatturinn.is/is"
+    page = fetch_page(base)
+    pat = re.compile(r"/is/[^/?#]+-(\d{2})-([a-z]{3})-(\d{4})/eid/(\d+)", re.I)
+    badges = [("SOLD OUT", "Uppselt"), ("FÁIR MIÐAR", "Fáir miðar"), ("NEW EVENT", "Nýtt")]
+    events = []
+    for g in link_groups(page, pat):
+        m = pat.search(g["href"])
+        try:
+            d = date(int(m.group(3)), MONTHS_EN[m.group(2).lower()], int(m.group(1)))
+        except (ValueError, KeyError):
+            continue
+        link = urljoin(base, g["href"])
+        text = g["text"].replace("|", " ")
+        notes = []
+        for raw, label in badges:
+            if raw.lower() in text.lower():
+                notes.append(label)
+                text = re.sub(re.escape(raw), " ", text, flags=re.I)
+        price = re.search(r"(\d{1,3}(?:\.\d{3})*)\s*kr", text, re.I)
+        if price:
+            notes.append(price.group(1) + " kr.")
+        title = re.split(r"Græni hatturinn|Hafnarstræti", text)[0]
+        title = re.sub(r"\d{1,2}\s+[A-Za-z]+\s+20\d\d.*$", "", title)
+        title = clean(title).strip(" -–—·|,.:")
+        if len(title) < 2 and g["imgs"]:
+            title = clean(g["imgs"][0][2])
+        if len(title) < 2:
+            slug = g["href"].rstrip("/").split("/")[-3] if "/eid/" in g["href"] else g["href"]
+            title = _slug_title(re.sub(r"-\d{2}-[a-z]{3}-\d{4}$", "", slug))
+        img = urljoin(base, g["imgs"][0][1]) if g["imgs"] and g["imgs"][0][1] else None
+        events.append({"title": title[:140], "source": "Græni hatturinn", "link": link, "start": d.isoformat(),
+                       "end": d.isoformat(), "time": "", "image": img, "note": " · ".join(notes)})
+    return events
+
+
+EVENT_SOURCES = [("MAK / Hof", read_mak, 5), ("Græni hatturinn", read_graeni, 0.5)]  # (nafn, lesari, bið milli mynda í sek.)
+
+
+def collect_events():
+    today = datetime.now(timezone.utc).date()
+    try:
+        with open("events.json", encoding="utf-8") as f:
+            old = json.load(f)
+    except Exception:
+        old = []
+    try:
+        with open("events_img.json", encoding="utf-8") as f:
+            imgs = json.load(f)
+    except Exception:
+        imgs = {}
+    result = []
+    for name, reader, wait in EVENT_SOURCES:
+        try:
+            found = reader(today)
+        except Exception as e:
+            print("X  Viðburðir %s: tókst ekki að sækja (%s)" % (name, e))
+            found = []
+        if not found:
+            print("VIÐVÖRUN Viðburðir %s: engir viðburðir fundust, held í fyrri lista" % name)
+            result += [e for e in old if e.get("source") == name]
+            continue
+        budget = 3 if wait >= 5 else 8  # fáar myndasíður í hverri keyrslu (MAK biður um 5 sek. bil)
+        for e in found:
+            if not e.get("image"):
+                e["image"] = imgs.get(e["link"]) or None
+            if not e.get("image") and e["link"] not in imgs and budget > 0 and allowed(e["link"]):
+                budget -= 1
+                imgs[e["link"]] = og_image(e["link"]) or ""
+                e["image"] = imgs[e["link"]] or None
+                time.sleep(wait)
+        print("OK Viðburðir %s: %d viðburðir" % (name, len(found)))
+        for e in found[:3]:
+            print("   dæmi: %s – %s %s" % (e["start"], e["title"][:60], e["time"]))
+        result += found
+    result = [e for e in result if e["end"] >= today.isoformat()]
+    result.sort(key=lambda e: (e["start"], e.get("time") or ""))
+    with open("events.json", "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+    with open("events_img.json", "w", encoding="utf-8") as f:
+        json.dump(dict(list(imgs.items())[-1500:]), f, ensure_ascii=False)
+    return result
 
 
 def main():
@@ -336,7 +631,16 @@ def main():
             merged.append(i)
     with open("news.json", "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)
-    write_html(merged)
+    try:
+        events = collect_events()
+    except Exception as e:
+        print("X  Viðburðir: óvænt villa (%s)" % e)
+        try:
+            with open("events.json", encoding="utf-8") as f:
+                events = json.load(f)
+        except Exception:
+            events = []
+    write_html(merged, events)
     print("Búið. %d fréttir í news.json (%d nýjar). Opnaðu index.html til að sjá þær." % (len(merged), new_count))
 
 
