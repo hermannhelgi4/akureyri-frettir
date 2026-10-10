@@ -39,6 +39,19 @@
     "res": "82–121"
   },
   {
+    "title": "Víkingur – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/tournament/9295",
+    "start": "2026-10-09",
+    "end": "2026-10-09",
+    "time": "19:00",
+    "image": null,
+    "note": "Útileikur · Powerade bikar karla 2027 · Virkið",
+    "res": "35–28"
+  },
+  {
     "title": "Hamar – Þór Ak.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -203,32 +216,6 @@
     "note": "Frá 4.900 kr."
   },
   {
-    "title": "ÍBV – Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-10-16",
-    "end": "2026-10-16",
-    "time": "18:00",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Íþróttamiðstöð Vestmannaeyja",
-    "last": "tap, Valur 40–35 Þór"
-  },
-  {
-    "title": "Stjarnan – KA",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-10-16",
-    "end": "2026-10-16",
-    "time": "18:30",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Heklu Höllin",
-    "last": "sigur, KA 31–25 ÍBV"
-  },
-  {
     "title": "Fasteignamartröðin",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/fasteignamartrodin",
@@ -285,6 +272,18 @@
     "time": "16:00",
     "image": null,
     "note": "Heimaleikur · VÍS bikar karla · Höllin Ak"
+  },
+  {
+    "title": "ÍBV 2 – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/tournament/9295",
+    "start": "2026-10-17",
+    "end": "2026-10-17",
+    "time": "16:30",
+    "image": null,
+    "note": "Útileikur · Powerade bikar karla 2027 · Íþróttamiðstöð Vestmannaeyja"
   },
   {
     "title": "SA – SR",
@@ -365,30 +364,6 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/poster_tix_1_707x10004632.jpg?v=1791581756",
     "note": "Frá 6.900 kr."
-  },
-  {
-    "title": "Þór – Stjarnan",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-10-21",
-    "end": "2026-10-21",
-    "time": "19:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
-  },
-  {
-    "title": "KA – Afturelding",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-10-22",
-    "end": "2026-10-22",
-    "time": "19:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
   },
   {
     "title": "Guðríð Hansdóttir",
@@ -537,18 +512,6 @@
     "note": "7.900 kr."
   },
   {
-    "title": "Afturelding – Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-10-27",
-    "end": "2026-10-27",
-    "time": "18:30",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Myntkaup höllin"
-  },
-  {
     "title": "Hrekkjavökutónleikar",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/hrekkjavokutonleikar-1",
@@ -557,18 +520,6 @@
     "time": "18:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1790849002.png?v=1791581756",
     "note": ""
-  },
-  {
-    "title": "FH – KA",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-10-28",
-    "end": "2026-10-28",
-    "time": "18:30",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Kaplakriki"
   },
   {
     "title": "Þór Ak. – Haukar",
@@ -605,18 +556,6 @@
     "note": "7.900 kr."
   },
   {
-    "title": "KA – Haukar",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-10-31",
-    "end": "2026-10-31",
-    "time": "18:30",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
-  },
-  {
     "title": "Fasteignamartröðin",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/fasteignamartrodin",
@@ -645,18 +584,6 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/8s4V2TO8KXzL6OOATeAQSqAJZjmn1G-metaRHJ5a2tpciBpbm5ieXJnw7Bpcy5qcGc=-.webp",
     "note": "Frá 5.900 kr."
-  },
-  {
-    "title": "Þór – FH",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-11-01",
-    "end": "2026-11-01",
-    "time": "15:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
   },
   {
     "title": "Ingimar Eydal 90 ára",
@@ -787,18 +714,6 @@
     "note": "Heimaleikur · 1. deild karla · Höllin Ak"
   },
   {
-    "title": "Haukar – Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-11-12",
-    "end": "2026-11-12",
-    "time": "18:30",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Kuehne+Nagel höllin"
-  },
-  {
     "title": "Afnám Tilviljunar - Abolishing Chance",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/afnam-tilviljunar-abolishing-chance",
@@ -841,18 +756,6 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791581756",
     "note": "7.900 kr."
-  },
-  {
-    "title": "Selfoss – KA",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-11-13",
-    "end": "2026-11-13",
-    "time": "20:15",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Set höllin"
   },
   {
     "title": "Sex Pistols Expose",
@@ -917,6 +820,18 @@
     "time": "18:00",
     "image": null,
     "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+  },
+  {
+    "title": "Fjölnir – KA/Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Konur",
+    "link": "https://www.hsi.is/tournament/9303",
+    "start": "2026-11-18",
+    "end": "2026-11-18",
+    "time": "",
+    "image": null,
+    "note": "Útileikur · Powerade bikar kvenna 2027 · Fjölnishöll"
   },
   {
     "title": "Celebrating George Michael",
@@ -1019,42 +934,6 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/b3CTzkvZ56UTJWaO2IfgGRh5yJgMkO-metac2vDoWxtw7ZsZCBiYWxkdXIuanBn-.webp",
     "note": "Uppselt · Frá 8.900 kr."
-  },
-  {
-    "title": "Þór – KA",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-11-22",
-    "end": "2026-11-22",
-    "time": "18:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
-  },
-  {
-    "title": "Þór – Fram",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-11-26",
-    "end": "2026-11-26",
-    "time": "19:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
-  },
-  {
-    "title": "KA – HK",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-11-26",
-    "end": "2026-11-26",
-    "time": "19:30",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
   },
   {
     "title": "Jólaglögg",
@@ -1195,18 +1074,6 @@
     "note": "6.900 kr."
   },
   {
-    "title": "KA – Víkingur",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-12-03",
-    "end": "2026-12-03",
-    "time": "19:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
-  },
-  {
     "title": "Þór Ak. – Skallagrímur",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -1237,18 +1104,6 @@
     "time": "18:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788789002.jpg?v=1791581756",
     "note": "7.900 kr."
-  },
-  {
-    "title": "HK – Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-12-04",
-    "end": "2026-12-04",
-    "time": "18:30",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Kórinn"
   },
   {
     "title": "Jólaglögg",
@@ -1351,30 +1206,6 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745812.png?v=1791581756",
     "note": "6.900 kr."
-  },
-  {
-    "title": "KA – Fram",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-12-08",
-    "end": "2026-12-08",
-    "time": "19:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
-  },
-  {
-    "title": "Þór – Selfoss",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-12-09",
-    "end": "2026-12-09",
-    "time": "19:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
   },
   {
     "title": "Jól með Brother Grass",
@@ -1515,30 +1346,6 @@
     "time": "14:00",
     "image": null,
     "note": "Útileikur · Olís deild kvenna · Kuehne+Nagel höllin"
-  },
-  {
-    "title": "Þór – Víkingur",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-12-13",
-    "end": "2026-12-13",
-    "time": "15:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
-  },
-  {
-    "title": "KA – Valur",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2026-12-13",
-    "end": "2026-12-13",
-    "time": "15:30",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
   },
   {
     "title": "Vitringarnir 3 - 2026",
@@ -1961,30 +1768,6 @@
     "note": "Heimaleikur · Toppdeild karla"
   },
   {
-    "title": "ÍBV – KA",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2027-02-04",
-    "end": "2027-02-04",
-    "time": "18:00",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Íþróttamiðstöð Vestmannaeyja"
-  },
-  {
-    "title": "Þór – Valur",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2027-02-05",
-    "end": "2027-02-05",
-    "time": "18:30",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
-  },
-  {
     "title": "KA/Þór – Selfoss",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -2031,18 +1814,6 @@
     "note": "7.900 kr."
   },
   {
-    "title": "KA – Stjarnan",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2027-02-11",
-    "end": "2027-02-11",
-    "time": "19:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
-  },
-  {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
@@ -2051,18 +1822,6 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
     "note": "6.900 kr."
-  },
-  {
-    "title": "Þór – ÍBV",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2027-02-13",
-    "end": "2027-02-13",
-    "time": "15:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
   },
   {
     "title": "Fram – KA/Þór",
@@ -2157,30 +1916,6 @@
     "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
   },
   {
-    "title": "Stjarnan – Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2027-02-18",
-    "end": "2027-02-18",
-    "time": "18:30",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Heklu Höllin"
-  },
-  {
-    "title": "Afturelding – KA",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2027-02-18",
-    "end": "2027-02-18",
-    "time": "19:00",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Myntkaup höllin"
-  },
-  {
     "title": "Þór Ak. – KV",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -2245,30 +1980,6 @@
     "time": "16:45",
     "image": null,
     "note": "Heimaleikur · Toppdeild karla"
-  },
-  {
-    "title": "Þór – Afturelding",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2027-02-25",
-    "end": "2027-02-25",
-    "time": "19:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
-  },
-  {
-    "title": "KA – FH",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2027-02-25",
-    "end": "2027-02-25",
-    "time": "19:15",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
   },
   {
     "title": "ÍA – Þór Ak.",
@@ -2363,18 +2074,6 @@
     "note": "Útileikur · 1. deild karla · Vallaskóli"
   },
   {
-    "title": "FH – Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2027-03-05",
-    "end": "2027-03-05",
-    "time": "19:45",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Kaplakriki"
-  },
-  {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
@@ -2395,18 +2094,6 @@
     "time": "15:30",
     "image": null,
     "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið"
-  },
-  {
-    "title": "Haukar – KA",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2027-03-06",
-    "end": "2027-03-06",
-    "time": "17:30",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Kuehne+Nagel höllin"
   },
   {
     "title": "SR – SA",
@@ -2535,30 +2222,6 @@
     "note": "Heimaleikur · Lengjubikar karla - A deild Úrslit · Greifavöllurinn"
   },
   {
-    "title": "KA – Selfoss",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2027-03-17",
-    "end": "2027-03-17",
-    "time": "19:30",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
-  },
-  {
-    "title": "Þór – Haukar",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2027-03-17",
-    "end": "2027-03-17",
-    "time": "19:30",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
-  },
-  {
     "title": "Þór Ak. – Snæfell",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -2603,30 +2266,6 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791581756",
     "note": "6.900 kr."
-  },
-  {
-    "title": "Fram – KA",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2027-03-24",
-    "end": "2027-03-24",
-    "time": "19:30",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Lambhagahöllin"
-  },
-  {
-    "title": "Selfoss – Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/tournament/9142",
-    "start": "2027-03-24",
-    "end": "2027-03-24",
-    "time": "19:30",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Set höllin"
   },
   {
     "title": "Úr heimi í heim",
