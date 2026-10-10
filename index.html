@@ -126,5 +126,5 @@ mid.appendChild(el("div","sm",[e.sport,e.gender].filter(Boolean).join(" · ")+(p
 if(!spRes&&e.last)mid.appendChild(el("div","lastl","Síðast: "+e.last));a.appendChild(mid);
 if(e.res)a.appendChild(el("div","sc",e.res));else if(parts[0]==="Heimaleikur"||parts[0]==="Útileikur")a.appendChild(el("span","hu"+(home?" h":""),home?"Heima":"Úti"));else a.appendChild(el("span"));
 box.appendChild(a)})}
-document.getElementById("upd").textContent="Uppfært 10.10.2026 22:44";render();side();strip();if(API)fetch(API+"/top").then(r=>r.json()).then(t=>{TOP=t;side();strip();if(cur==="Mest lesið")render()}).catch(()=>{});
+document.getElementById("upd").textContent="Uppfært 10.10.2026 23:09";render();side();strip();if(API)fetch(API+"/top").then(r=>r.json()).then(t=>{TOP=t;side();strip();if(cur==="Mest lesið")render()}).catch(()=>{});
 </script></body></html>
