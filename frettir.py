@@ -182,9 +182,22 @@ a.item{display:flex;gap:12px;background:var(--card);border:1px solid var(--bd);b
 .img{flex:0 0 96px;height:96px;border-radius:10px;background:var(--ac);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;overflow:hidden;text-align:center}.img img{width:100%;height:100%;object-fit:cover}
 .body{min-width:0;flex:1}.meta{font-size:12px;color:var(--mu);margin-bottom:4px}.src{color:var(--ac);font-weight:700}
 h2{font-size:16px;margin:0 0 4px;line-height:1.3}p{margin:0;font-size:13px;color:var(--mu);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-</style></head><body><header><h1>Akureyri í fréttum</h1><div class="sub" id="upd"></div></header><nav class="tabbar"><button data-v="news" class="on" onclick="setView('news')">Fréttir</button><button data-v="ev" onclick="setView('ev')">Viðburðir</button></nav><div id="viewNews"><div class="chips" id="chips"></div><div class="strip" id="strip"></div><div class="wrap"><main id="list"></main><aside><div class="top" id="top"></div></aside></div></div><div id="viewEv" hidden><div class="chips" id="evchips"></div><div class="evwrap"><div id="evlist"></div></div></div>
+.ofwrap{max-width:1040px;margin:0 auto;padding:0 16px 40px}#oflist{display:grid;gap:14px;grid-template-columns:1fr}@media(min-width:600px){#oflist{grid-template-columns:1fr 1fr}}@media(min-width:900px){#oflist{grid-template-columns:repeat(3,1fr)}}
+.oc{display:block;background:var(--card);border:1px solid var(--bd);border-radius:16px;overflow:hidden;cursor:pointer;text-align:left;padding:0;color:inherit;font:inherit;width:100%}.oc:hover{border-color:var(--ac)}
+.oart{position:relative;height:150px;display:flex;align-items:center;justify-content:center;font-size:56px;overflow:hidden;color:#fff}.oart img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover}
+.ocat{position:absolute;left:10px;top:10px;z-index:1;background:rgba(0,0,0,.55);color:#fff;font-size:11px;padding:3px 9px;border-radius:999px;font-weight:600}
+.obody{padding:12px 14px 14px}.obiz{font-size:12px;color:var(--ac);font-weight:700}.otxt{font-size:18px;font-weight:700;line-height:1.25;margin:3px 0 8px}
+.opill{display:inline-block;font-size:11px;padding:3px 9px;border-radius:999px;border:1px solid var(--bd);color:var(--mu)}.opill.ok{background:#16a34a;border-color:#16a34a;color:#fff;font-weight:600}
+.omodal{position:fixed;left:0;top:0;right:0;bottom:0;z-index:20;background:rgba(10,15,22,.72);display:flex;align-items:flex-end;justify-content:center}
+@media(min-width:600px){.omodal{align-items:center;padding:20px}}
+.ocard{background:var(--card);width:100%;max-width:420px;border-radius:22px 22px 0 0;overflow-y:auto;max-height:92vh;position:relative}@media(min-width:600px){.ocard{border-radius:22px}}
+.ocard .oart{height:210px;font-size:80px}.ox{position:absolute;right:12px;top:12px;z-index:2;width:36px;height:36px;border-radius:50%;border:0;background:rgba(0,0,0,.55);color:#fff;font-size:20px;cursor:pointer}
+.ocb{padding:18px 20px 22px}.ocb .obiz{font-size:14px}.ocb .otxt{font-size:26px;margin:4px 0 12px}
+.ostat{border-radius:12px;padding:12px 14px;font-weight:700;font-size:15px;margin-bottom:12px;background:var(--bg);color:var(--mu)}.ostat.ok{background:#16a34a;color:#fff}
+.odet{font-size:14px;line-height:1.45;margin:0 0 10px}.orow{font-size:13px;color:var(--mu);margin:4px 0}.oclock{font-size:12px;color:var(--mu);text-align:center;margin-top:14px;border-top:1px dashed var(--bd);padding-top:10px}
+</style></head><body><header><h1>Akureyri í fréttum</h1><div class="sub" id="upd"></div></header><nav class="tabbar"><button data-v="news" class="on" onclick="setView('news')">Fréttir</button><button data-v="ev" onclick="setView('ev')">Viðburðir</button><button data-v="of" onclick="setView('of')">Tilboð</button></nav><div id="viewNews"><div class="chips" id="chips"></div><div class="strip" id="strip"></div><div class="wrap"><main id="list"></main><aside><div class="top" id="top"></div></aside></div></div><div id="viewEv" hidden><div class="chips" id="evchips"></div><div class="evwrap"><div id="evlist"></div></div></div><div id="viewOf" hidden><div class="chips" id="ofchips"></div><div class="ofwrap"><div id="oflist"></div></div></div>
 <script>
-const NEWS=__DATA__;const EVENTS=__EVENTS__;let evSrc="Allt",evSport="",evGen="",evRes=false;const API="__API__";let TOP=[];let cur="Allt";NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar"});const ORDER=["Fréttamiðlar","Nærsveitir","Bærinn","Menntun","Menning","Íþróttir","Fyrirtæki & félög"];
+const NEWS=__DATA__;const EVENTS=__EVENTS__;const OFFERS=__OFFERS__;let ofCat="Allt",ofTimer=null;let evSrc="Allt",evSport="",evGen="",evRes=false;const API="__API__";let TOP=[];let cur="Allt";NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar"});const ORDER=["Fréttamiðlar","Nærsveitir","Bærinn","Menntun","Menning","Íþróttir","Fyrirtæki & félög"];
 function ago(d){if(!d)return"";const m=(Date.now()-new Date(d))/6e4;if(m<60)return"fyrir "+Math.max(1,Math.round(m))+" mín.";if(m<1440)return"fyrir "+Math.round(m/60)+" klst.";return"fyrir "+Math.round(m/1440)+" d."}
 function track(n){if(!API)return;try{const k="c:"+n.link;if(!localStorage.getItem(k)){localStorage.setItem(k,"1");fetch(API+"/click",{method:"POST",body:n.link,keepalive:true})}}catch(e){}}
 function strip(){const t=document.getElementById("strip");t.innerHTML="";if(cur==="Mest lesið")return;let L=TOP.map(k=>NEWS.find(n=>n.link===k)).filter(Boolean).slice(0,5);const real=L.length>0;if(!real)L=NEWS.slice(0,5);t.appendChild(el("h3","",real?"Mest lesið":"Mest lesið (nýjustu í bili)"));const r=el("div","row");L.forEach((n,i)=>{const a=el("a","");a.href=n.link;a.target="_blank";a.rel="noopener";a.onclick=()=>track(n);const x=el("div","t");x.appendChild(el("b","",String(i+1)));x.appendChild(document.createTextNode(n.title));a.appendChild(x);a.appendChild(el("small","",n.source));r.appendChild(a)});t.appendChild(r)}
@@ -201,7 +214,29 @@ b.append(m,el("h2","",n.title));if(n.summary&&n.summary.length>3)b.append(el("p"
 function pd(s){const p=s.split("-");return new Date(+p[0],+p[1]-1,+p[2])}
 const DAYS=["sun","mán","þri","mið","fim","fös","lau"],MON=["jan","feb","mar","apr","maí","jún","júl","ágú","sep","okt","nóv","des"];
 function fd(d){return d.getDate()+". "+MON[d.getMonth()]}
-function setView(v){document.getElementById("viewNews").hidden=(v!=="news");document.getElementById("viewEv").hidden=(v!=="ev");document.querySelectorAll(".tabbar button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));if(v==="ev")renderEv();window.scrollTo(0,0)}
+function setView(v){closeCard();document.getElementById("viewNews").hidden=(v!=="news");document.getElementById("viewEv").hidden=(v!=="ev");document.getElementById("viewOf").hidden=(v!=="of");document.querySelectorAll(".tabbar button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));if(v==="ev")renderEv();if(v==="of")renderOf();window.scrollTo(0,0)}
+const CATS={"Kaffi":["#7a4b2a","#d9a066","☕"],"Matur":["#b4452f","#f0a35c","🍽️"],"Afþreying":["#4b3fa8","#8f7bf0","🎟️"],"Þjónusta":["#0f766e","#5eead4","✂️"],"Verslun":["#be185d","#f9a8d4","🛍️"],"Heilsa":["#166534","#86efac","💪"]};
+const LONGD=["sunnudagur","mánudagur","þriðjudagur","miðvikudagur","fimmtudagur","föstudagur","laugardagur"],LONG={"sun":"sunnudaga","mán":"mánudaga","þri":"þriðjudaga","mið":"miðvikudaga","fim":"fimmtudaga","fös":"föstudaga","lau":"laugardaga"};
+function art(o,cls){const c=CATS[o.category]||["#0b6e99","#5cc0e8","⭐"],d=el("div",cls);d.style.background="linear-gradient(135deg,"+c[0]+","+c[1]+")";d.appendChild(document.createTextNode(c[2]));if(o.image){const i=document.createElement("img");i.src=o.image;i.alt=o.business;i.loading="lazy";i.referrerPolicy="no-referrer";i.onerror=()=>i.remove();d.appendChild(i)}return d}
+function ofState(o,t){const iso=t.getFullYear()+"-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0");if(o.until&&o.until<iso)return"expired";if(o.from&&o.from>iso)return"later";if(o.days&&o.days.length&&!o.days.includes(DAYS[t.getDay()]))return"notday";return"ok"}
+function daysText(o){return(o.days&&o.days.length)?"Gildir "+o.days.map(d=>LONG[d]||d).join(", "):"Gildir alla daga"}
+function today0(){const n=new Date();return new Date(n.getFullYear(),n.getMonth(),n.getDate())}
+function renderOf(){const t=today0(),box=document.getElementById("oflist"),ch=document.getElementById("ofchips");const all=OFFERS.filter(o=>ofState(o,t)!=="expired");
+const cats=["Allt",...new Set(all.map(o=>o.category||"Annað"))];ch.innerHTML="";cats.forEach(c=>{const b=el("button","chip"+(c===ofCat?" on":""),c);b.onclick=()=>{ofCat=c;renderOf()};ch.appendChild(b)});
+box.innerHTML="";const rank=o=>ofState(o,t)==="ok"?0:1;const L=all.filter(o=>ofCat==="Allt"||(o.category||"Annað")===ofCat).sort((a,b)=>rank(a)-rank(b)||a.business.localeCompare(b.business,"is"));
+if(!L.length){box.appendChild(el("div","sub","Engin tilboð í þessum flokki."));return}
+L.forEach(o=>{const st=ofState(o,t),c=el("button","oc");c.onclick=()=>openCard(o);const a=art(o,"oart");a.appendChild(el("span","ocat",o.category||"Annað"));
+const b=el("div","obody");b.appendChild(el("div","obiz",o.business));b.appendChild(el("div","otxt",o.offer));
+b.appendChild(el("span","opill"+(st==="ok"?" ok":""),st==="ok"?"Gildir í dag":st==="later"?"Hefst "+fd(pd(o.from)):daysText(o)));c.append(a,b);box.appendChild(c)})}
+function closeCard(){const m=document.getElementById("ofmodal");if(m)m.remove();if(ofTimer){clearInterval(ofTimer);ofTimer=null}document.body.style.overflow=""}
+function openCard(o){closeCard();const t=today0(),st=ofState(o,t);const m=el("div","omodal");m.id="ofmodal";m.onclick=e=>{if(e.target===m)closeCard()};
+const c=el("div","ocard"),a=art(o,"oart"),x=el("button","ox","×");x.onclick=closeCard;x.setAttribute("aria-label","Loka");a.appendChild(x);
+const b=el("div","ocb");b.appendChild(el("div","obiz",o.business));b.appendChild(el("div","otxt",o.offer));
+b.appendChild(el("div","ostat"+(st==="ok"?" ok":""),st==="ok"?"✔ Gildir í dag":st==="later"?"Hefst "+fd(pd(o.from)):"Gildir ekki í dag – "+daysText(o).toLowerCase()));
+if(o.details)b.appendChild(el("div","odet",o.details));b.appendChild(el("div","orow",daysText(o)));if(o.until)b.appendChild(el("div","orow","Gildir til og með "+fd(pd(o.until))));if(o.address)b.appendChild(el("div","orow","📍 "+o.address));
+const ck=el("div","oclock");b.appendChild(ck);const tick=()=>{const n=new Date(),p=v=>String(v).padStart(2,"0");ck.textContent="Sýndu starfsmanni þetta kort · "+LONGD[n.getDay()]+" "+fd(n)+" kl. "+p(n.getHours())+":"+p(n.getMinutes())+":"+p(n.getSeconds())};tick();ofTimer=setInterval(tick,1000);
+c.append(a,b);m.appendChild(c);document.body.appendChild(m);document.body.style.overflow="hidden"}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeCard()});
 function renderEv(){const n0=new Date(),t=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("evlist"),ch=document.getElementById("evchips");
 const all=EVENTS.filter(e=>e.res||pd(e.end)>=t);const srcs=["Allt",...new Set(all.map(e=>e.source))];ch.innerHTML="";
 srcs.forEach(s=>{const b=el("button","chip"+(s===evSrc?" on":""),s);b.onclick=()=>{evSrc=s;renderEv()};ch.appendChild(b)});
@@ -227,10 +262,11 @@ document.getElementById("upd").textContent="Uppfært __TIME__";render();side();s
 COUNTER_URL = "https://akureyri-smellir.hermannh2000.workers.dev"  # slóð á Cloudflare Worker (fyllt út þegar hann er tilbúinn)
 
 
-def write_html(items, events=None):
+def write_html(items, events=None, offers=None):
+    ofdata = json.dumps(offers or [], ensure_ascii=False).replace("</", "<\\/")
     data = json.dumps(items, ensure_ascii=False).replace("</", "<\\/")
     evdata = json.dumps(events or [], ensure_ascii=False).replace("</", "<\\/")
-    page = HTML.replace("__EVENTS__", evdata).replace("__DATA__", data).replace("__API__", COUNTER_URL).replace("__TIME__", datetime.now().strftime("%d.%m.%Y %H:%M"))
+    page = HTML.replace("__OFFERS__", ofdata).replace("__EVENTS__", evdata).replace("__DATA__", data).replace("__API__", COUNTER_URL).replace("__TIME__", datetime.now().strftime("%d.%m.%Y %H:%M"))
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(page)
 
@@ -621,6 +657,43 @@ def _load(path, default):
             return json.load(f)
     except Exception:
         return default
+
+
+# ---------- Tilboð ----------
+def demo_offers(today):
+    u = (today + timedelta(days=90)).isoformat()
+    soon = (today + timedelta(days=5)).isoformat()
+    return [
+        {"business": "Kaffihúsið Bylgjan (dæmi)", "category": "Kaffi", "offer": "2 fyrir 1 af kaffi", "details": "Kaupðu einn kaffibolla og fáðu annan frítt. Gildir með öllum heitum drykkjum.", "days": [], "from": "", "until": u, "image": "", "address": "Hafnarstræti 1, Akureyri"},
+        {"business": "Pizzastaðurinn Eldur (dæmi)", "category": "Matur", "offer": "2 fyrir 1 af pizzum", "details": "Gildir á þriðjudögum, borðað á staðnum.", "days": ["þri"], "from": "", "until": u, "image": "", "address": "Strandgata 5, Akureyri"},
+        {"business": "Bókabúðin Blaða (dæmi)", "category": "Verslun", "offer": "10% afsláttur", "details": "10% afsláttur af öllum bókum gegn framvísun kortsins.", "days": [], "from": "", "until": u, "image": "", "address": "Skipagata 3, Akureyri"},
+        {"business": "Bakaríið Brauðið (dæmi)", "category": "Matur", "offer": "Frítt kaffi með bakkelsi", "details": "Frítt kaffi þegar keypt er bakkelsi. Virka daga.", "days": ["mán", "þri", "mið", "fim", "fös"], "from": "", "until": u, "image": "", "address": "Kaupvangsstræti 7, Akureyri"},
+        {"business": "Keilusalurinn Kúlan (dæmi)", "category": "Afþreying", "offer": "Önnur brautin á hálfvirði", "details": "Gildir um helgar.", "days": ["lau", "sun"], "from": "", "until": u, "image": "", "address": "Glerárgata 20, Akureyri"},
+        {"business": "Hárstofan Lokkur (dæmi)", "category": "Þjónusta", "offer": "15% afsláttur af klippingu", "details": "Gildir mið–fim. Pantaðu tíma fyrirfram.", "days": ["mið", "fim"], "from": "", "until": soon, "image": "", "address": "Gránufélagsgata 9, Akureyri"},
+        {"business": "Líkamsræktin Kraftur (dæmi)", "category": "Heilsa", "offer": "Frítt prufukort í 3 daga", "details": "Fyrir nýja viðskiptavini. Eitt kort á mann.", "days": [], "from": "", "until": u, "image": "", "address": "Austurbyggð 2, Akureyri"},
+        {"business": "Ísbúðin Frostið (dæmi)", "category": "Matur", "offer": "2 fyrir 1 af ís í brauðformi", "details": "Gildir sunnudaga.", "days": ["sun"], "from": "", "until": u, "image": "", "address": "Glerártorg, Akureyri"},
+    ]
+
+
+def load_offers(today):
+    raw = _load("tilbod.json", None)
+    if not isinstance(raw, list):
+        raw = demo_offers(today)
+        print("OK Tilboð: tilbod.json fannst ekki, nota dæmi")
+    out = []
+    for o in raw:
+        if not isinstance(o, dict) or not o.get("business") or not o.get("offer"):
+            continue
+        c = {"business": str(o["business"]), "offer": str(o["offer"]),
+             "category": o.get("category") or "Verslun", "details": o.get("details") or "",
+             "days": o.get("days") if isinstance(o.get("days"), list) else [],
+             "from": o.get("from") or "", "until": o.get("until") or "",
+             "image": o.get("image") or "", "address": o.get("address") or ""}
+        if c["until"] and c["until"] < today.isoformat():
+            continue
+        out.append(c)
+    print("OK Tilboð: %d" % len(out))
+    return out
 
 
 # ---------- Íþróttaleikir ----------
@@ -1209,7 +1282,12 @@ def main():
                 events = json.load(f)
         except Exception:
             events = []
-    write_html(merged, events)
+    try:
+        offers = load_offers(datetime.now().date())
+    except Exception as e:
+        print("X  Tilboð: villa (%s)" % e)
+        offers = []
+    write_html(merged, events, offers)
     print("Búið. %d fréttir í news.json (%d nýjar). Opnaðu index.html til að sjá þær." % (len(merged), new_count))
 
 
