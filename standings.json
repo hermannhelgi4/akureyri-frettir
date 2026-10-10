@@ -1,0 +1,748 @@
+[
+ {
+  "sport": "Handbolti",
+  "gender": "Karlar",
+  "comp": "Olís deild karla",
+  "link": "https://www.hsi.is/tournament/9142",
+  "rows": [
+   {
+    "n": 1,
+    "t": "Haukar",
+    "p": 5,
+    "w": 5,
+    "d": 0,
+    "l": 0,
+    "g": "180-153",
+    "pts": 10,
+    "me": false
+   },
+   {
+    "n": 2,
+    "t": "KA",
+    "p": 5,
+    "w": 4,
+    "d": 0,
+    "l": 1,
+    "g": "164-146",
+    "pts": 8,
+    "me": true
+   },
+   {
+    "n": 3,
+    "t": "Afturelding",
+    "p": 5,
+    "w": 3,
+    "d": 1,
+    "l": 1,
+    "g": "182-152",
+    "pts": 7,
+    "me": false
+   },
+   {
+    "n": 4,
+    "t": "FH",
+    "p": 5,
+    "w": 3,
+    "d": 1,
+    "l": 1,
+    "g": "181-164",
+    "pts": 7,
+    "me": false
+   },
+   {
+    "n": 5,
+    "t": "Valur",
+    "p": 5,
+    "w": 3,
+    "d": 0,
+    "l": 2,
+    "g": "185-180",
+    "pts": 6,
+    "me": false
+   },
+   {
+    "n": 6,
+    "t": "ÍBV",
+    "p": 5,
+    "w": 2,
+    "d": 0,
+    "l": 3,
+    "g": "151-161",
+    "pts": 4,
+    "me": false
+   },
+   {
+    "n": 7,
+    "t": "Þór",
+    "p": 5,
+    "w": 2,
+    "d": 0,
+    "l": 3,
+    "g": "171-176",
+    "pts": 4,
+    "me": true
+   },
+   {
+    "n": 8,
+    "t": "Fram",
+    "p": 5,
+    "w": 2,
+    "d": 0,
+    "l": 3,
+    "g": "168-186",
+    "pts": 4,
+    "me": false
+   },
+   {
+    "n": 9,
+    "t": "HK",
+    "p": 5,
+    "w": 2,
+    "d": 0,
+    "l": 3,
+    "g": "158-176",
+    "pts": 4,
+    "me": false
+   },
+   {
+    "n": 10,
+    "t": "Stjarnan",
+    "p": 5,
+    "w": 1,
+    "d": 1,
+    "l": 3,
+    "g": "164-173",
+    "pts": 3,
+    "me": false
+   },
+   {
+    "n": 11,
+    "t": "Víkingur",
+    "p": 5,
+    "w": 1,
+    "d": 0,
+    "l": 4,
+    "g": "153-170",
+    "pts": 2,
+    "me": false
+   },
+   {
+    "n": 12,
+    "t": "Selfoss",
+    "p": 5,
+    "w": 0,
+    "d": 1,
+    "l": 4,
+    "g": "156-176",
+    "pts": 1,
+    "me": false
+   }
+  ]
+ },
+ {
+  "sport": "Handbolti",
+  "gender": "Konur",
+  "comp": "Olís deild kvenna",
+  "link": "https://www.hsi.is/tournament/9141",
+  "rows": [
+   {
+    "n": 1,
+    "t": "Haukar",
+    "p": 5,
+    "w": 5,
+    "d": 0,
+    "l": 0,
+    "g": "156-124",
+    "pts": 10,
+    "me": false
+   },
+   {
+    "n": 2,
+    "t": "ÍBV",
+    "p": 5,
+    "w": 4,
+    "d": 0,
+    "l": 1,
+    "g": "154-143",
+    "pts": 8,
+    "me": false
+   },
+   {
+    "n": 3,
+    "t": "Fram",
+    "p": 5,
+    "w": 4,
+    "d": 0,
+    "l": 1,
+    "g": "137-122",
+    "pts": 8,
+    "me": false
+   },
+   {
+    "n": 4,
+    "t": "ÍR",
+    "p": 5,
+    "w": 4,
+    "d": 0,
+    "l": 1,
+    "g": "123-114",
+    "pts": 8,
+    "me": false
+   },
+   {
+    "n": 5,
+    "t": "Valur",
+    "p": 5,
+    "w": 3,
+    "d": 0,
+    "l": 2,
+    "g": "141-132",
+    "pts": 6,
+    "me": false
+   },
+   {
+    "n": 6,
+    "t": "Grótta",
+    "p": 5,
+    "w": 2,
+    "d": 0,
+    "l": 3,
+    "g": "137-143",
+    "pts": 4,
+    "me": false
+   },
+   {
+    "n": 7,
+    "t": "Stjarnan",
+    "p": 4,
+    "w": 1,
+    "d": 0,
+    "l": 3,
+    "g": "108-117",
+    "pts": 2,
+    "me": false
+   },
+   {
+    "n": 8,
+    "t": "Selfoss",
+    "p": 5,
+    "w": 1,
+    "d": 0,
+    "l": 4,
+    "g": "127-139",
+    "pts": 2,
+    "me": false
+   },
+   {
+    "n": 9,
+    "t": "HK",
+    "p": 4,
+    "w": 0,
+    "d": 0,
+    "l": 4,
+    "g": "85-103",
+    "pts": 0,
+    "me": false
+   },
+   {
+    "n": 10,
+    "t": "KA/Þór",
+    "p": 5,
+    "w": 0,
+    "d": 0,
+    "l": 5,
+    "g": "122-153",
+    "pts": 0,
+    "me": true
+   }
+  ]
+ },
+ {
+  "sport": "Íshokkí",
+  "gender": "Karlar",
+  "comp": "Toppdeild karla",
+  "link": "https://stats.iihf.com/ihi/99/index.html",
+  "rows": [
+   {
+    "n": 1,
+    "t": "SR",
+    "p": 4,
+    "w": 4,
+    "d": 0,
+    "l": 0,
+    "g": "33-5",
+    "pts": 11,
+    "me": false
+   },
+   {
+    "n": 2,
+    "t": "SA",
+    "p": 5,
+    "w": 3,
+    "d": 0,
+    "l": 2,
+    "g": "25-14",
+    "pts": 9,
+    "me": true
+   },
+   {
+    "n": 3,
+    "t": "Fjölnir",
+    "p": 3,
+    "w": 1,
+    "d": 0,
+    "l": 2,
+    "g": "9-12",
+    "pts": 4,
+    "me": false
+   },
+   {
+    "n": 4,
+    "t": "U20",
+    "p": 4,
+    "w": 0,
+    "d": 0,
+    "l": 4,
+    "g": "5-41",
+    "pts": 0,
+    "me": false
+   }
+  ]
+ },
+ {
+  "sport": "Íshokkí",
+  "gender": "Konur",
+  "comp": "Toppdeild kvenna",
+  "link": "https://stats.iihf.com/ihi/100/index.html",
+  "rows": [
+   {
+    "n": 1,
+    "t": "SA",
+    "p": 2,
+    "w": 2,
+    "d": 0,
+    "l": 0,
+    "g": "14-1",
+    "pts": 6,
+    "me": true
+   },
+   {
+    "n": 2,
+    "t": "SR",
+    "p": 1,
+    "w": 0,
+    "d": 0,
+    "l": 1,
+    "g": "0-2",
+    "pts": 0,
+    "me": false
+   },
+   {
+    "n": 3,
+    "t": "Fjölnir",
+    "p": 1,
+    "w": 0,
+    "d": 0,
+    "l": 1,
+    "g": "1-12",
+    "pts": 0,
+    "me": false
+   }
+  ]
+ },
+ {
+  "sport": "Körfubolti",
+  "gender": "Karlar",
+  "comp": "1. deild karla",
+  "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+  "rows": [
+   {
+    "n": 1,
+    "t": "ÍA",
+    "p": 2,
+    "w": 2,
+    "d": 0,
+    "l": 0,
+    "g": "",
+    "pts": 4,
+    "me": false
+   },
+   {
+    "n": 2,
+    "t": "Þór Þ.",
+    "p": 2,
+    "w": 2,
+    "d": 0,
+    "l": 0,
+    "g": "",
+    "pts": 4,
+    "me": false
+   },
+   {
+    "n": 3,
+    "t": "Haukar",
+    "p": 2,
+    "w": 2,
+    "d": 0,
+    "l": 0,
+    "g": "",
+    "pts": 4,
+    "me": false
+   },
+   {
+    "n": 4,
+    "t": "Breiðablik",
+    "p": 2,
+    "w": 1,
+    "d": 0,
+    "l": 1,
+    "g": "",
+    "pts": 2,
+    "me": false
+   },
+   {
+    "n": 5,
+    "t": "Fjölnir",
+    "p": 2,
+    "w": 1,
+    "d": 0,
+    "l": 1,
+    "g": "",
+    "pts": 2,
+    "me": false
+   },
+   {
+    "n": 6,
+    "t": "KFG",
+    "p": 2,
+    "w": 1,
+    "d": 0,
+    "l": 1,
+    "g": "",
+    "pts": 2,
+    "me": false
+   },
+   {
+    "n": 7,
+    "t": "KV",
+    "p": 1,
+    "w": 1,
+    "d": 0,
+    "l": 0,
+    "g": "",
+    "pts": 2,
+    "me": false
+   },
+   {
+    "n": 8,
+    "t": "Hamar",
+    "p": 2,
+    "w": 1,
+    "d": 0,
+    "l": 1,
+    "g": "",
+    "pts": 2,
+    "me": false
+   },
+   {
+    "n": 9,
+    "t": "Snæfell",
+    "p": 1,
+    "w": 0,
+    "d": 0,
+    "l": 1,
+    "g": "",
+    "pts": 0,
+    "me": false
+   },
+   {
+    "n": 10,
+    "t": "Selfoss",
+    "p": 2,
+    "w": 0,
+    "d": 0,
+    "l": 2,
+    "g": "",
+    "pts": 0,
+    "me": false
+   },
+   {
+    "n": 11,
+    "t": "Skallagrímur",
+    "p": 2,
+    "w": 0,
+    "d": 0,
+    "l": 2,
+    "g": "",
+    "pts": 0,
+    "me": false
+   },
+   {
+    "n": 12,
+    "t": "Þór Ak.",
+    "p": 2,
+    "w": 0,
+    "d": 0,
+    "l": 2,
+    "g": "",
+    "pts": 0,
+    "me": true
+   }
+  ]
+ },
+ {
+  "sport": "Körfubolti",
+  "gender": "Konur",
+  "comp": "1. deild kvenna",
+  "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+  "rows": [
+   {
+    "n": 1,
+    "t": "Keflavík b",
+    "p": 2,
+    "w": 2,
+    "d": 0,
+    "l": 0,
+    "g": "",
+    "pts": 4,
+    "me": false
+   },
+   {
+    "n": 2,
+    "t": "Breiðablik",
+    "p": 1,
+    "w": 1,
+    "d": 0,
+    "l": 0,
+    "g": "",
+    "pts": 2,
+    "me": false
+   },
+   {
+    "n": 3,
+    "t": "Selfoss",
+    "p": 2,
+    "w": 1,
+    "d": 0,
+    "l": 1,
+    "g": "",
+    "pts": 2,
+    "me": false
+   },
+   {
+    "n": 4,
+    "t": "Njardvik b",
+    "p": 1,
+    "w": 1,
+    "d": 0,
+    "l": 0,
+    "g": "",
+    "pts": 2,
+    "me": false
+   },
+   {
+    "n": 5,
+    "t": "Haukar u",
+    "p": 1,
+    "w": 1,
+    "d": 0,
+    "l": 0,
+    "g": "",
+    "pts": 2,
+    "me": false
+   },
+   {
+    "n": 6,
+    "t": "Þór Þ.",
+    "p": 2,
+    "w": 1,
+    "d": 0,
+    "l": 1,
+    "g": "",
+    "pts": 2,
+    "me": false
+   },
+   {
+    "n": 7,
+    "t": "KV",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "g": "",
+    "pts": 0,
+    "me": false
+   },
+   {
+    "n": 8,
+    "t": "Þór Ak.",
+    "p": 1,
+    "w": 0,
+    "d": 0,
+    "l": 1,
+    "g": "",
+    "pts": 0,
+    "me": true
+   },
+   {
+    "n": 9,
+    "t": "ÍR",
+    "p": 1,
+    "w": 0,
+    "d": 0,
+    "l": 1,
+    "g": "",
+    "pts": 0,
+    "me": false
+   },
+   {
+    "n": 10,
+    "t": "Skallagrímur",
+    "p": 1,
+    "w": 0,
+    "d": 0,
+    "l": 1,
+    "g": "",
+    "pts": 0,
+    "me": false
+   },
+   {
+    "n": 11,
+    "t": "Aþena",
+    "p": 2,
+    "w": 0,
+    "d": 0,
+    "l": 2,
+    "g": "",
+    "pts": 0,
+    "me": false
+   }
+  ]
+ },
+ {
+  "sport": "Fótbolti",
+  "gender": "Karlar",
+  "comp": "Besta deild karla - Neðri hluti",
+  "link": "https://www.ksi.is/oll-mot/mot/?id=7025532&banner-tab=overview",
+  "rows": [
+   {
+    "n": 1,
+    "t": "Valur",
+    "p": 25,
+    "w": 9,
+    "d": 4,
+    "l": 12,
+    "g": "47-52",
+    "pts": 31,
+    "me": false
+   },
+   {
+    "n": 2,
+    "t": "Stjarnan",
+    "p": 25,
+    "w": 9,
+    "d": 4,
+    "l": 12,
+    "g": "46-58",
+    "pts": 31,
+    "me": false
+   },
+   {
+    "n": 3,
+    "t": "FH",
+    "p": 25,
+    "w": 7,
+    "d": 9,
+    "l": 9,
+    "g": "40-44",
+    "pts": 30,
+    "me": false
+   },
+   {
+    "n": 4,
+    "t": "KA",
+    "p": 25,
+    "w": 7,
+    "d": 5,
+    "l": 13,
+    "g": "41-51",
+    "pts": 26,
+    "me": true
+   },
+   {
+    "n": 5,
+    "t": "Þór",
+    "p": 25,
+    "w": 7,
+    "d": 3,
+    "l": 15,
+    "g": "24-57",
+    "pts": 24,
+    "me": true
+   },
+   {
+    "n": 6,
+    "t": "ÍBV",
+    "p": 25,
+    "w": 4,
+    "d": 7,
+    "l": 14,
+    "g": "33-49",
+    "pts": 19,
+    "me": false
+   }
+  ]
+ },
+ {
+  "sport": "Fótbolti",
+  "gender": "Konur",
+  "comp": "Besta deild kvenna - Neðri hluti",
+  "link": "https://www.ksi.is/oll-mot/mot/?id=7025661&banner-tab=overview",
+  "rows": [
+   {
+    "n": 1,
+    "t": "Fram",
+    "p": 21,
+    "w": 8,
+    "d": 2,
+    "l": 11,
+    "g": "33-48",
+    "pts": 26,
+    "me": false
+   },
+   {
+    "n": 2,
+    "t": "Þór/KA",
+    "p": 21,
+    "w": 7,
+    "d": 4,
+    "l": 10,
+    "g": "28-30",
+    "pts": 25,
+    "me": true
+   },
+   {
+    "n": 3,
+    "t": "Valur",
+    "p": 21,
+    "w": 6,
+    "d": 6,
+    "l": 9,
+    "g": "25-34",
+    "pts": 24,
+    "me": false
+   },
+   {
+    "n": 4,
+    "t": "Víkingur R.",
+    "p": 21,
+    "w": 6,
+    "d": 4,
+    "l": 11,
+    "g": "30-43",
+    "pts": 22,
+    "me": false
+   }
+  ]
+ }
+]
