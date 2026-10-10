@@ -206,9 +206,19 @@ h2{font-size:16px;margin:0 0 4px;line-height:1.3}p{margin:0;font-size:13px;color
 .sprow .hu{font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;background:var(--bd);color:var(--mu)}
 .sprow .hu.h{background:var(--ac);color:#fff}
 .sprow .lastl{font-size:12px;color:var(--mu);margin-top:3px;font-style:italic}
+.sptb{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--bd);border-radius:12px;overflow:hidden;font-size:14px;margin-top:8px}
+.sptb th{font-size:11px;color:var(--mu);font-weight:700;text-align:right;padding:8px 6px;border-bottom:1px solid var(--bd)}
+.sptb td{padding:9px 6px;text-align:right;border-bottom:1px solid var(--bd);white-space:nowrap}
+.sptb tr:last-child td{border-bottom:0}
+.sptb th:nth-child(2),.sptb td:nth-child(2){text-align:left;width:100%;white-space:normal}
+.sptb th:first-child,.sptb td:first-child{text-align:center;color:var(--mu);width:28px}
+.sptb tr.me td{background:color-mix(in srgb,var(--ac) 14%,transparent);font-weight:700}
+.sptb td.pt{font-weight:800}
+.sph{display:flex;justify-content:space-between;align-items:baseline;margin-top:18px;gap:8px}
+.sph a{font-size:12px;color:var(--ac);text-decoration:none;white-space:nowrap}
 </style></head><body><header><h1>Akureyri í fréttum</h1><div class="sub" id="upd"></div></header><nav class="tabbar"><button data-v="news" class="on" onclick="setView('news')">Fréttir</button><button data-v="ev" onclick="setView('ev')">Viðburðir</button><button data-v="sp" onclick="setView('sp')">Íþróttir</button><button data-v="of" onclick="setView('of')">Tilboð</button></nav><div id="viewNews"><div class="chips" id="chips"></div><div class="strip" id="strip"></div><div class="wrap"><main id="list"></main><aside><div class="top" id="top"></div></aside></div></div><div id="viewEv" hidden><div class="chips" id="evchips"></div><div class="evwrap"><div id="evlist"></div></div></div><div id="viewSp" hidden><div class="chips" id="spchips"></div><div class="chips" id="spchips2"></div><div class="spwrap"><div id="splist"></div></div></div><div id="viewOf" hidden><div class="chips" id="ofchips"></div><div class="ofwrap"><div id="oflist"></div></div></div>
 <script>
-const NEWS=__DATA__;const EVENTS=__EVENTS__;const OFFERS=__OFFERS__;let ofCat="Allt",ofTimer=null;let spSport="",spGen="",spRes=false;let evSrc="Allt",evSport="",evGen="",evRes=false;const API="__API__";let TOP=[];let cur="Allt";NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar"});const ORDER=["Fréttamiðlar","Nærsveitir","Bærinn","Menntun","Menning","Íþróttir","Fyrirtæki & félög"];
+const NEWS=__DATA__;const EVENTS=__EVENTS__;const OFFERS=__OFFERS__;const STAND=__STAND__;let ofCat="Allt",ofTimer=null;let spSport="",spGen="",spMode="fix";let evSrc="Allt",evSport="",evGen="",evRes=false;const API="__API__";let TOP=[];let cur="Allt";NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar"});const ORDER=["Fréttamiðlar","Nærsveitir","Bærinn","Menntun","Menning","Íþróttir","Fyrirtæki & félög"];
 function ago(d){if(!d)return"";const m=(Date.now()-new Date(d))/6e4;if(m<60)return"fyrir "+Math.max(1,Math.round(m))+" mín.";if(m<1440)return"fyrir "+Math.round(m/60)+" klst.";return"fyrir "+Math.round(m/1440)+" d."}
 function track(n){if(!API)return;try{const k="c:"+n.link;if(!localStorage.getItem(k)){localStorage.setItem(k,"1");fetch(API+"/click",{method:"POST",body:n.link,keepalive:true})}}catch(e){}}
 function strip(){const t=document.getElementById("strip");t.innerHTML="";if(cur==="Mest lesið")return;let L=TOP.map(k=>NEWS.find(n=>n.link===k)).filter(Boolean).slice(0,5);const real=L.length>0;if(!real)L=NEWS.slice(0,5);t.appendChild(el("h3","",real?"Mest lesið":"Mest lesið (nýjustu í bili)"));const r=el("div","row");L.forEach((n,i)=>{const a=el("a","");a.href=n.link;a.target="_blank";a.rel="noopener";a.onclick=()=>track(n);const x=el("div","t");x.appendChild(el("b","",String(i+1)));x.appendChild(document.createTextNode(n.title));a.appendChild(x);a.appendChild(el("small","",n.source));r.appendChild(a)});t.appendChild(r)}
@@ -262,14 +272,22 @@ const im=el("div","img");if(e.image){const i=document.createElement("img");i.src
 const b=el("div","body"),m=el("div","meta");m.appendChild(el("span","src",e.sport||e.source));let when=e.time?"kl. "+e.time:"";if(e.end!==e.start)when+=(when?" · ":"")+fd(s)+" – "+fd(pd(e.end));if(when)m.appendChild(document.createTextNode(" · "+when));
 b.append(m,el("h2","",e.title));if(e.res)b.appendChild(el("p","","Úrslit: "+e.res));if(e.last)b.appendChild(el("p","sub","Síðast: "+e.last));if(e.note){const tg=el("div","tags");e.note.split(" · ").forEach(x=>tg.appendChild(el("span","tag"+(x==="Ókeypis"?" free":""),x)));b.appendChild(tg)}
 a.append(im,b);box.appendChild(a)})}
+function renderTab(box){const G=STAND.filter(g=>(!spSport||g.sport===spSport)&&(!spGen||g.gender===spGen));
+if(!G.length){box.appendChild(el("div","sub","Engar töflur fundust."));return}
+const SO=["Handbolti","Fótbolti","Körfubolti","Blak","Íshokkí"];G.sort((a,b)=>SO.indexOf(a.sport)-SO.indexOf(b.sport)||(a.gender<b.gender?-1:a.gender>b.gender?1:0));
+G.forEach(g=>{const h=el("div","sph"),t=el("h3","evh",g.sport+" · "+g.gender+" · "+g.comp);t.style.margin="0";const a=el("a","","Nánar ›");a.href=g.link;a.target="_blank";a.rel="noopener";h.append(t,a);box.appendChild(h);
+const anyD=g.rows.some(r=>r.d>0),anyG=g.rows.some(r=>r.g),cols=["#","Lið","L","U"].concat(anyD?["J"]:[]).concat(["T"]).concat(anyG?["Mörk"]:[]).concat(["Stig"]);
+const tb=el("table","sptb"),hr=el("tr");cols.forEach(c=>hr.appendChild(el("th","",c)));tb.appendChild(hr);
+g.rows.forEach(r=>{const tr=el("tr",r.me?"me":"");const v=[r.n,r.t,r.p,r.w].concat(anyD?[r.d]:[]).concat([r.l]).concat(anyG?[r.g]:[]).concat([r.pts]);v.forEach((x,i)=>{const td=el("td",i===v.length-1?"pt":"",String(x));tr.appendChild(td)});tb.appendChild(tr)});box.appendChild(tb)})}
 function renderSp(){const n0=new Date(),t=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("splist"),c1=document.getElementById("spchips"),c2=document.getElementById("spchips2");
 const all=EVENTS.filter(e=>e.source==="Íþróttir");c1.innerHTML="";c2.innerHTML="";
 const sp=["Allt",...new Set(all.map(e=>e.sport))];sp.forEach(x=>{const b=el("button","chip"+((x==="Allt"?!spSport:x===spSport)?" on":""),x);b.onclick=()=>{spSport=(x==="Allt"?"":x);renderSp()};c1.appendChild(b)});
-[["Næstu leikir",false],["Úrslit",true]].forEach(a=>{const b=el("button","chip"+(spRes===a[1]?" on":""),a[0]);b.onclick=()=>{spRes=a[1];renderSp()};c2.appendChild(b)});
+[["Næstu leikir","fix"],["Úrslit","res"],["Tafla","tab"]].forEach(a=>{const b=el("button","chip"+(spMode===a[1]?" on":""),a[0]);b.onclick=()=>{spMode=a[1];renderSp()};c2.appendChild(b)});
 ["Karlar","Konur"].forEach(x=>{const b=el("button","chip"+(x===spGen?" on":""),x);b.onclick=()=>{spGen=(spGen===x?"":x);renderSp()};c2.appendChild(b)});
 const cmp=(a,b)=>a.start<b.start?-1:a.start>b.start?1:((a.time||"")<(b.time||"")?-1:1);
+const spRes=(spMode==="res");box.innerHTML="";if(spMode==="tab"){renderTab(box);return}
 const L=all.filter(e=>(!spSport||e.sport===spSport)&&(!spGen||e.gender===spGen)&&(spRes?!!e.res:!(e.res&&pd(e.start)<t))).sort(spRes?(a,b)=>cmp(b,a):cmp);
-box.innerHTML="";if(!L.length){box.appendChild(el("div","sub",spRes?"Engin úrslit síðustu daga.":"Engir leikir fundust."));return}
+if(!L.length){box.appendChild(el("div","sub",spRes?"Engin úrslit síðustu daga.":"Engir leikir fundust."));return}
 let last="";L.forEach(e=>{const s=pd(e.start);
 if(e.start!==last){last=e.start;const diff=Math.round((s-t)/864e5);box.appendChild(el("h3","evh",(diff===0?"Í dag · ":diff===1?"Á morgun · ":diff===-1?"Í gær · ":"")+DAYS[s.getDay()]+". "+fd(s)+(s.getFullYear()!==t.getFullYear()?" "+s.getFullYear():"")))}
 const a=el("a","sprow");a.href=e.link;a.target="_blank";a.rel="noopener";
@@ -286,11 +304,12 @@ document.getElementById("upd").textContent="Uppfært __TIME__";render();side();s
 COUNTER_URL = "https://akureyri-smellir.hermannh2000.workers.dev"  # slóð á Cloudflare Worker (fyllt út þegar hann er tilbúinn)
 
 
-def write_html(items, events=None, offers=None):
+def write_html(items, events=None, offers=None, stand=None):
+    stdata = json.dumps(stand or [], ensure_ascii=False).replace("</", "<\\/")
     ofdata = json.dumps(offers or [], ensure_ascii=False).replace("</", "<\\/")
     data = json.dumps(items, ensure_ascii=False).replace("</", "<\\/")
     evdata = json.dumps(events or [], ensure_ascii=False).replace("</", "<\\/")
-    page = HTML.replace("__OFFERS__", ofdata).replace("__EVENTS__", evdata).replace("__DATA__", data).replace("__API__", COUNTER_URL).replace("__TIME__", datetime.now().strftime("%d.%m.%Y %H:%M"))
+    page = HTML.replace("__STAND__", stdata).replace("__OFFERS__", ofdata).replace("__EVENTS__", evdata).replace("__DATA__", data).replace("__API__", COUNTER_URL).replace("__TIME__", datetime.now().strftime("%d.%m.%Y %H:%M"))
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(page)
 
@@ -1138,6 +1157,256 @@ def collect_sports(old, today):
     return uniq
 
 
+# ---------- Stöðutöflur ----------
+# Hver tafla: {sport, gender, comp, link, rows:[{n, t, p, w, d, l, g, pts, me}]}  (p=leikir, w=unnir, d=jafntefli, l=töp, g="mörk fyrir-gegn")
+def srow(n, team, p, w, d, l, g, pts):
+    def num(x):
+        try:
+            return int(str(x).strip())
+        except ValueError:
+            return 0
+    return {"n": n, "t": team, "p": num(p), "w": num(w), "d": num(d), "l": num(l), "g": g or "", "pts": num(pts),
+            "me": team in SPORT_TEAMS}
+
+
+def has_mine(rows):
+    return any(r["me"] for r in rows)
+
+
+def stand_hsi(today):
+    out = []
+    for tid, gender in HSI_TOURNAMENTS:
+        try:
+            data = fetch_json("https://www.hsi.is/api/hsi/tournaments/%d/standings" % tid).get("data", {})
+            teams = (data.get("STANDINGS") or {}).get("TEAM") or []
+            if data.get("Stodutafla_Display") not in ("1", 1, None) or not teams:
+                continue
+            rows = [srow(i + 1, t.get("TEAM_SHORT_NAME", "").strip(), t.get("MATCHES"), t.get("HOME"), t.get("TIE"),
+                         t.get("LOSE"), "%s-%s" % (t.get("GOALS", 0), t.get("GOALS_RECIEVED", 0)), t.get("POINTS"))
+                    for i, t in enumerate(teams)]
+            if not has_mine(rows):
+                continue
+            try:
+                comp = (fetch_json("https://www.hsi.is/api/hsi/tournaments/%d/matches" % tid).get("data") or [{}])[0].get("TournamentName") or "Handbolti"
+            except Exception:
+                comp = "Handbolti"
+            out.append({"sport": "Handbolti", "gender": gender, "comp": comp.strip(),
+                        "link": "https://www.hsi.is/tournament/%d" % tid, "rows": rows})
+        except Exception as e:
+            print("X  Tafla HSÍ %d: tókst ekki (%s)" % (tid, e))
+    return out
+
+
+def ihi_table(page):
+    """Reiknar töflu úr leikjum deildarkeppninnar: 3 stig fyrir sigur, 2/1 eftir framlengingu (fleiri en 3 lotur)."""
+    text = re.sub(r"(?is)<(script|style).*?</\1>", " ", page)
+    text = html.unescape(re.sub(r"<[^>]+>", " ", text))
+    text = re.sub(r"\s+", " ", text)
+    marks = list(IHI_ROW.finditer(text))
+    t = {}
+    for i, mk in enumerate(marks):
+        seg = text[mk.end(): marks[i + 1].start() if i + 1 < len(marks) else mk.end() + 300]
+        if "completed" not in seg.lower() or "Round Robin" not in seg:
+            continue
+        tm = IHI_TEAMS.search(seg)
+        if not tm:
+            continue
+        sc = IHI_SCORE.search(seg[tm.end():])
+        if not sc:
+            continue
+        a, b = int(sc.group(1)), int(sc.group(2))
+        paren = re.search(r"\(([^)]*)\)", seg[tm.end():])
+        periods = len(re.findall(r"\d+\s*-\s*\d+", paren.group(1))) if paren else 3
+        ot = periods > 3
+        h, g = IHI_NAMES.get(tm.group(1), tm.group(1)), IHI_NAMES.get(tm.group(2), tm.group(2))
+        for name in (h, g):
+            t.setdefault(name, {"p": 0, "w": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0})
+        for name, f, ag, win in ((h, a, b, a > b), (g, b, a, b > a)):
+            r = t[name]
+            r["p"] += 1
+            r["gf"] += f
+            r["ga"] += ag
+            if win:
+                r["w"] += 1
+                r["pts"] += 2 if ot else 3
+            else:
+                r["l"] += 1
+                r["pts"] += 1 if ot else 0
+    order = sorted(t.items(), key=lambda kv: (-kv[1]["pts"], -(kv[1]["gf"] - kv[1]["ga"]), -kv[1]["gf"], kv[0]))
+    return [srow(i + 1, n, r["p"], r["w"], 0, r["l"], "%d-%d" % (r["gf"], r["ga"]), r["pts"]) for i, (n, r) in enumerate(order)]
+
+
+def stand_ihi(today):
+    out = []
+    for tid, gender, comp in IHI_TOURNAMENTS:
+        url = "https://stats.iihf.com/ihi/%d/index.html" % tid
+        try:
+            rows = ihi_table(fetch_page(url))
+            if rows and has_mine(rows):
+                out.append({"sport": "Íshokkí", "gender": gender, "comp": comp, "link": url, "rows": rows})
+        except Exception as e:
+            print("X  Tafla íshokkí %d: tókst ekki (%s)" % (tid, e))
+    return out
+
+
+def bli_table(page):
+    rows = []
+    parts = page.split('id="TeamName"')[1:]
+    for part in parts:
+        m = re.match(r">([^<]*)", part)
+        if not m:
+            continue
+        name = html.unescape(m.group(1)).strip()
+        body = re.sub(r"(?is)<(script|style).*?</\1>", " ", part[m.end(): m.end() + 2500])
+        body = body.split("TeamName")[0]
+        toks = html.unescape(re.sub(r"<[^>]+>", " ", body)).split()
+        nums = []
+        for tk in toks:
+            if re.fullmatch(r"\d+", tk):
+                nums.append(int(tk))
+            else:
+                break
+        if len(nums) < 6:
+            continue
+        pts, played, won, lost, sw, sl = nums[:6]
+        rows.append(srow(len(rows) + 1, name, played, won, 0, lost, "%d-%d" % (sw, sl), pts))
+    return rows
+
+
+def stand_bli(today):
+    out = []
+    for cid, gender, comp, pid in BLI_COMPETITIONS:
+        if not pid:
+            continue
+        url = BLI_BASE + "CompetitionStandings.aspx?ID=%d&PID=%d" % (cid, pid)
+        try:
+            rows = bli_table(fetch_page(url))
+            if rows and has_mine(rows):
+                out.append({"sport": "Blak", "gender": gender, "comp": comp, "link": url, "rows": rows})
+        except Exception as e:
+            print("X  Tafla blak %s: tókst ekki (%s)" % (comp, e))
+        time.sleep(1)
+    return out
+
+
+KKI_STAND = {190: ("Karlar", "Bónus deild karla"), 189: ("Konur", "Bónus deild kvenna"),
+             191: ("Karlar", "1. deild karla"), 231: ("Konur", "1. deild kvenna")}
+
+
+def kki_unesc(raw):
+    s = re.sub(r"\\[nrt]", " ", raw)
+    return re.sub(r"\\(.)", r"\1", s)
+
+
+def kki_stand_url(**kw):
+    base = "https://widgets.baskethotel.com/widget-service/show?&api=%s&lang=is&nnav=1&nav_object=0&hide_full_birth_date=0&flash=0" % KKI_API
+    return base + "".join("&request[0][%s]=%s" % (k.replace("__", "]["), urllib.parse.quote(str(v), safe="")) for k, v in kw.items())
+
+
+def kki_table(raw):
+    s = kki_unesc(raw)
+    rows = []
+    for tr in re.split(r"<tr class=\"row\d\"", s)[1:]:
+        m = re.search(r"team_name[^\"]*\">\s*([^<]*?)\s*</td>", tr)
+        w = re.search(r"(\d+)<span></span>/<span></span>(\d+)</td>\s*<td>(\d+)</td>", tr)
+        if not m or not w:
+            continue
+        won, lost = int(w.group(1)), int(w.group(2))
+        rows.append(srow(len(rows) + 1, html.unescape(m.group(1)).strip(), won + lost, won, 0, lost, "", w.group(3)))
+    return rows
+
+
+def stand_kki(today):
+    out = []
+    for lg, (gender, comp) in KKI_STAND.items():
+        try:
+            first = kki_unesc(kki_fetch(kki_stand_url(container="view90", widget=300, param__league_id=lg)))
+            season = re.search(r"season_id\s*=\s*'(\d+)'", first)
+            state = re.search(r"state:\s*'([^']+)'", first)
+            group = re.search(r"<option value=\"(\d+)\"", first)
+            if not (season and state and group):
+                print("X  Tafla KKÍ deild %d: fann ekki tímabil/state í svari" % lg)
+                continue
+            raw = kki_fetch(kki_stand_url(container="6-300-standings-container", widget=300, part="table", state=state.group(1),
+                                          param__season_id=season.group(1), param__group_filter=group.group(1),
+                                          param__showTeamLogo="", param__teamLogoSize="20x20"))
+            rows = kki_table(raw)
+            if rows and has_mine(rows):
+                out.append({"sport": "Körfubolti", "gender": gender, "comp": comp, "link": KKI_LINK, "rows": rows})
+        except Exception as e:
+            print("X  Tafla KKÍ deild %d: tókst ekki (%s)" % (lg, e))
+        time.sleep(1)
+    return out
+
+
+def ksi_table(page):
+    for tb in re.findall(r"(?is)<table\b.*?</table>", page):
+        ths = [re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", x))).strip().lower() for x in re.findall(r"(?is)<th\b.*?</th>", tb)]
+        if not ths or ths[0] != "lið" or len(ths) < 8:
+            continue
+        rows = []
+        for tr in re.findall(r"(?is)<tr\b.*?</tr>", tb):
+            cells = re.findall(r"(?is)<td\b[^>]*>(.*?)</td>", tr)
+            if len(cells) < 8:
+                continue
+            spans = [html.unescape(x).strip() for x in re.findall(r"<span[^>]*>([^<]*)</span>", cells[0])]
+            spans = [x for x in spans if x]
+            if len(spans) < 2:
+                continue
+            cl = [html.unescape(re.sub(r"<[^>]+>", "", c)).strip() for c in cells[1:]]
+            rows.append(srow(len(rows) + 1, spans[-1], cl[0], cl[1], cl[2], cl[3], cl[4], cl[6]))
+        if rows:
+            return rows
+    return []
+
+
+def stand_ksi(today):
+    comps = ksi_competitions(today)
+    out = []
+    for cid, label in comps.items():
+        try:
+            rows = ksi_table(fetch_page("%s/oll-mot/mot/?id=%s&banner-tab=overview" % (KSI_BASE, cid)))
+        except Exception as e:
+            print("X  Tafla KSÍ %s: tókst ekki (%s)" % (label, e))
+            continue
+        time.sleep(0.5)
+        if rows and has_mine(rows):
+            comp = re.sub(r"\s*\b20\d\d\b", "", label).strip()
+            out.append({"sport": "Fótbolti", "gender": "Konur" if "kvenna" in label.lower() else "Karlar",
+                        "comp": comp, "link": "%s/oll-mot/mot/?id=%s&banner-tab=overview" % (KSI_BASE, cid), "rows": rows})
+    # þegar deildin hefur skipst í efri/neðri hluta sýnum við bara hlutann (ekki fyrri heildartöfluna)
+    names = [g["comp"] for g in out]
+    return [g for g in out if not any(n.startswith(g["comp"] + " - ") for n in names)]
+
+
+STAND_SOURCES = [("Handbolti", stand_hsi), ("Íshokkí", stand_ihi), ("Blak", stand_bli), ("Körfubolti", stand_kki), ("Fótbolti", stand_ksi)]
+
+
+def collect_standings(today):
+    old = _load("standings.json", [])
+    if not isinstance(old, list):
+        old = []
+    res = []
+    for name, fn in STAND_SOURCES:
+        try:
+            got = fn(today)
+        except Exception as e:
+            print("X  Töflur %s: tókst ekki (%s)" % (name, e))
+            got = []
+        if not got:
+            got = [g for g in old if g.get("sport") == name]
+            print("   Töflur %s: engar nýjar, held í fyrri (%d)" % (name, len(got)))
+        else:
+            print("OK Töflur %s: %d" % (name, len(got)))
+        res += got
+    try:
+        with open("standings.json", "w", encoding="utf-8") as f:
+            json.dump(res, f, ensure_ascii=False, indent=1)
+    except Exception as e:
+        print("X  Töflur: gat ekki vistað (%s)" % e)
+    return res
+
+
 def collect_events():
     today = datetime.now(timezone.utc).date()
     old = _load("events.json", [])
@@ -1311,7 +1580,12 @@ def main():
     except Exception as e:
         print("X  Tilboð: villa (%s)" % e)
         offers = []
-    write_html(merged, events, offers)
+    try:
+        stand = collect_standings(datetime.now().date())
+    except Exception as e:
+        print("X  Töflur: óvænt villa (%s)" % e)
+        stand = _load("standings.json", [])
+    write_html(merged, events, offers, stand)
     print("Búið. %d fréttir í news.json (%d nýjar). Opnaðu index.html til að sjá þær." % (len(merged), new_count))
 
 
