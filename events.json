@@ -1,13 +1,42 @@
 [
   {
-    "title": "A! Gjörningahátíð",
-    "source": "MAK / Hof",
-    "link": "https://www.mak.is/is/vidburdir/a-gjorningahatid-4",
-    "start": "2026-10-09",
-    "end": "2026-10-09",
-    "time": "",
-    "image": "https://www.mak.is/static/calendar/images/submit_1790849494.jpg?v=1791581756",
-    "note": "Ókeypis"
+    "title": "SR – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2026-10-03",
+    "end": "2026-10-03",
+    "time": "17:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild karla",
+    "res": "3–2"
+  },
+  {
+    "title": "Þór Ak. – Þór Þ.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-10-04",
+    "end": "2026-10-04",
+    "time": "15:30",
+    "image": null,
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "res": "80–82"
+  },
+  {
+    "title": "Þór Ak. – Þór Þ.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/",
+    "start": "2026-10-04",
+    "end": "2026-10-04",
+    "time": "18:00",
+    "image": null,
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "res": "82–121"
   },
   {
     "title": "Víkingur – KA",
@@ -60,16 +89,6 @@
     "image": null,
     "note": "Útileikur · Toppdeild karla",
     "res": "4–5"
-  },
-  {
-    "title": "Maideniced",
-    "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/maideniced-09-oct-2026/eid/265",
-    "start": "2026-10-09",
-    "end": "2026-10-09",
-    "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/OHOkNsNYzqexeErt8Po8nHoHRywggJ-metabWFpZGVuIDI2IElJLmpwZw==-.webp",
-    "note": "Frá 6.900 kr."
   },
   {
     "title": "A! Gjörningahátíð",
