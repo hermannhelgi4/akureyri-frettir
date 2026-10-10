@@ -1,0 +1,106 @@
+[
+  {
+    "business": "Kaffihúsið Bylgjan (dæmi)",
+    "category": "Kaffi",
+    "offer": "2 fyrir 1 af kaffi",
+    "details": "Kaupðu einn kaffibolla og fáðu annan frítt. Gildir með öllum heitum drykkjum.",
+    "days": [],
+    "from": "",
+    "until": "2027-01-31",
+    "image": "",
+    "address": "Hafnarstræti 1, Akureyri"
+  },
+  {
+    "business": "Pizzastaðurinn Eldur (dæmi)",
+    "category": "Matur",
+    "offer": "2 fyrir 1 af pizzum",
+    "details": "Gildir á þriðjudögum, borðað á staðnum.",
+    "days": [
+      "þri"
+    ],
+    "from": "",
+    "until": "2027-01-31",
+    "image": "",
+    "address": "Strandgata 5, Akureyri"
+  },
+  {
+    "business": "Bókabúðin Blaða (dæmi)",
+    "category": "Verslun",
+    "offer": "10% afsláttur",
+    "details": "10% afsláttur af öllum bókum gegn framvísun kortsins.",
+    "days": [],
+    "from": "",
+    "until": "2027-01-31",
+    "image": "",
+    "address": "Skipagata 3, Akureyri"
+  },
+  {
+    "business": "Bakaríið Brauðið (dæmi)",
+    "category": "Matur",
+    "offer": "Frítt kaffi með bakkelsi",
+    "details": "Frítt kaffi þegar keypt er bakkelsi. Virka daga.",
+    "days": [
+      "mán",
+      "þri",
+      "mið",
+      "fim",
+      "fös"
+    ],
+    "from": "",
+    "until": "2027-01-31",
+    "image": "",
+    "address": "Kaupvangsstræti 7, Akureyri"
+  },
+  {
+    "business": "Keilusalurinn Kúlan (dæmi)",
+    "category": "Afþreying",
+    "offer": "Önnur brautin á hálfvirði",
+    "details": "Gildir um helgar.",
+    "days": [
+      "lau",
+      "sun"
+    ],
+    "from": "",
+    "until": "2027-01-31",
+    "image": "",
+    "address": "Glerárgata 20, Akureyri"
+  },
+  {
+    "business": "Hárstofan Lokkur (dæmi)",
+    "category": "Þjónusta",
+    "offer": "15% afsláttur af klippingu",
+    "details": "Gildir mið–fim. Pantaðu tíma fyrirfram.",
+    "days": [
+      "mið",
+      "fim"
+    ],
+    "from": "",
+    "until": "2027-01-31",
+    "image": "",
+    "address": "Gránufélagsgata 9, Akureyri"
+  },
+  {
+    "business": "Líkamsræktin Kraftur (dæmi)",
+    "category": "Heilsa",
+    "offer": "Frítt prufukort í 3 daga",
+    "details": "Fyrir nýja viðskiptavini. Eitt kort á mann.",
+    "days": [],
+    "from": "",
+    "until": "2027-01-31",
+    "image": "",
+    "address": "Austurbyggð 2, Akureyri"
+  },
+  {
+    "business": "Ísbúðin Frostið (dæmi)",
+    "category": "Matur",
+    "offer": "2 fyrir 1 af ís í brauðformi",
+    "details": "Gildir sunnudaga.",
+    "days": [
+      "sun"
+    ],
+    "from": "",
+    "until": "2027-01-31",
+    "image": "",
+    "address": "Glerártorg, Akureyri"
+  }
+]
