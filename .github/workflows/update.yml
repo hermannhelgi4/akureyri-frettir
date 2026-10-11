@@ -1,4 +1,3 @@
-
 name: Uppfæra fréttir
 
 on:
@@ -9,9 +8,15 @@ on:
 permissions:
   contents: write
 
+# Aðeins ein keyrsla í einu: ný keyrsla bíður þar til sú fyrri er búin
+concurrency:
+  group: uppfaera-frettir
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -24,6 +29,15 @@ jobs:
           git config user.name "frettir-bot"
           git config user.email "actions@users.noreply.github.com"
           git add -A
-          git diff --cached --quiet || git commit -m "Uppfæra fréttir"
-          git pull --rebase
-          git push
+          git diff --cached --quiet && exit 0
+          git commit -m "Uppfæra fréttir"
+          # Ef einhver annar vistaði á meðan: sæki nýjasta, og nýju skrárnar frá okkur vinna ef þær rekast á
+          for i in 1 2 3; do
+            if git pull --rebase -X theirs && git push; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          echo "Tókst ekki að vista eftir 3 tilraunir"
+          exit 1
