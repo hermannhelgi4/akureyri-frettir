@@ -1,0 +1,53 @@
+[
+  {
+    "to": "Manchester",
+    "operator": "easyJet",
+    "type": "Áætlunarflug",
+    "days": [
+      "fös",
+      "mán"
+    ],
+    "from": "",
+    "until": "2027-01-31",
+    "when": "Veturinn 2026–27, frá nóvember til loka janúar",
+    "times": "",
+    "price": "",
+    "note": "Brottfarartímar og nákvæm tímabil: sjá easyjet.com.",
+    "link": "https://www.easyjet.com/en/cheap-flights/akureyri-airport/manchester",
+    "linkText": "Skoða flug á easyjet.com ›",
+    "confirmed": false
+  },
+  {
+    "to": "London Gatwick",
+    "operator": "easyJet",
+    "type": "Áætlunarflug",
+    "days": [
+      "þri",
+      "lau"
+    ],
+    "from": "",
+    "until": "2027-04-30",
+    "when": "Veturinn 2026–27",
+    "times": "",
+    "price": "",
+    "note": "Brottfarartímar og nákvæm tímabil: sjá easyjet.com.",
+    "link": "https://www.easyjet.com/en/cheap-flights/akureyri-airport/london-gatwick",
+    "linkText": "Skoða flug á easyjet.com ›",
+    "confirmed": false
+  },
+  {
+    "to": "Valencia",
+    "operator": "Atlantic Airways (Verdi Travel)",
+    "type": "Leiguflug",
+    "days": [],
+    "from": "",
+    "until": "2026-11-02",
+    "when": "30. okt – 2. nóv 2026",
+    "times": "Út kl. 13:00–18:30 · heim kl. 09:35–13:05",
+    "price": "Frá 95.500 kr. (með tösku og sköttum)",
+    "note": "Stök flugsæti. Örfá sæti laus.",
+    "link": "https://www.verditravel.is/is/ferdir/valencia-akureyri",
+    "linkText": "Bóka hjá Verdi Travel ›",
+    "confirmed": true
+  }
+]
