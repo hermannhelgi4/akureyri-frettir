@@ -287,8 +287,8 @@ let last="";L.forEach(e=>{const s=pd(e.start),ongoing=s<t&&!e.res,key=ongoing?"g
 if(key!==last){last=key;let h="Í gangi";if(!ongoing){const diff=Math.round((s-t)/864e5);h=(diff===0?"Í dag · ":diff===1?"Á morgun · ":diff===-1?"Í gær · ":"")+DAYS[s.getDay()]+". "+fd(s)+(s.getFullYear()!==t.getFullYear()?" "+s.getFullYear():"")}box.appendChild(el("h3","evh",h))}
 const a=el("a","item");a.href=e.link;a.target="_blank";a.rel="noopener";
 const im=el("div","img");if(e.image){const i=document.createElement("img");i.src=e.image;i.loading="lazy";i.referrerPolicy="no-referrer";i.onerror=()=>{i.remove();im.textContent=fd(s)};im.appendChild(i)}else im.textContent=fd(s);
-const b=el("div","body"),m=el("div","meta");m.appendChild(el("span","src",e.sport||e.source));let when=e.time?"kl. "+e.time:"";if(e.end!==e.start)when+=(when?" · ":"")+fd(s)+" – "+fd(pd(e.end));if(when)m.appendChild(document.createTextNode(" · "+when));
-b.append(m,el("h2","",e.title));if(e.res)b.appendChild(el("p","","Úrslit: "+e.res));if(e.last)b.appendChild(el("p","sub","Síðast: "+e.last));if(e.note){const tg=el("div","tags");e.note.split(" · ").forEach(x=>tg.appendChild(el("span","tag"+(x==="Ókeypis"?" free":""),x)));b.appendChild(tg)}
+const b=el("div","body"),m=el("div","meta");m.appendChild(el("span","src",e.venue||e.sport||e.source));let when=e.time?"kl. "+e.time:"";if(e.end!==e.start)when+=(when?" · ":"")+fd(s)+" – "+fd(pd(e.end));if(when)m.appendChild(document.createTextNode(" · "+when));
+b.append(m,el("h2","",e.title));if(e.res)b.appendChild(el("p","","Úrslit: "+e.res));if(e.note){const tg=el("div","tags");e.note.split(" · ").forEach(x=>tg.appendChild(el("span","tag"+(x==="Ókeypis"?" free":""),x)));b.appendChild(tg)}
 a.append(im,b);box.appendChild(a)})}
 function renderTab(box){const G=STAND.filter(g=>(!spSport||g.sport===spSport)&&(!spGen||g.gender===spGen));
 if(!G.length){box.appendChild(el("div","sub","Engar töflur fundust."));return}
@@ -328,7 +328,7 @@ const a=el("a","sprow");a.href=e.link;a.target="_blank";a.rel="noopener";
 a.appendChild(el("div","st",e.res?"Lokið":(e.time||"–")));
 const mid=el("div","");mid.appendChild(el("div","tt",e.title));const parts=(e.note||"").split(" · "),home=parts[0]==="Heimaleikur";
 mid.appendChild(el("div","sm",[e.sport,e.gender].filter(Boolean).join(" · ")+(parts.length>1?" · "+parts.slice(1).join(" · "):"")));
-if(!spRes&&e.last)mid.appendChild(el("div","lastl","Síðast: "+e.last));a.appendChild(mid);
+a.appendChild(mid);
 if(e.res)a.appendChild(el("div","sc",e.res));else if(parts[0]==="Heimaleikur"||parts[0]==="Útileikur")a.appendChild(el("span","hu"+(home?" h":""),home?"Heima":"Úti"));else a.appendChild(el("span"));
 box.appendChild(a)})}
 document.getElementById("upd").textContent="Uppfært __TIME__";render();side();strip();if(API)fetch(API+"/top").then(r=>r.json()).then(t=>{TOP=t;side();strip();if(cur==="Mest lesið")render()}).catch(()=>{});
@@ -642,7 +642,7 @@ def read_graeni(today):
 SHOW_RE = re.compile(r"\b(\d{1,2})\s*\.?\s*(jan|feb|mar|apr|maí|mai|jún|jun|júl|jul|ágú|agu|sep|okt|nóv|nov|des)\b\.?"
                      r"(?:\s+([01]?\d|2[0-3]):([0-5]\d))?", re.I)
 DETAIL_TTL = 2 * 24 * 3600  # síða hvers viðburðar er sótt aftur í fyrsta lagi á 2ja daga fresti
-DETAIL_VER = 2  # hækkað þegar lesarinn bætir við upplýsingum, svo gömul gögn séu sótt aftur
+DETAIL_VER = 3  # hækkað þegar lesarinn bætir við upplýsingum, svo gömul gögn séu sótt aftur
 
 
 def page_text(page):
@@ -711,9 +711,25 @@ def parse_price(text):
     return ""
 
 
+HOF_HALLS = {"hamraborg", "hamrar", "naust", "nausti", "kaldi", "setberg", "black box"}
+
+
+def mak_venue(page):
+    """Staður viðburðar eins og MAK skrifar hann (t.d. Hamraborg, Hamrar, Samkomuhúsið).
+    Salir í Hofi fá „, Hof“ aftan við svo fólk viti hvar salurinn er."""
+    m = re.search(r'<div class="location">\s*([^<]+?)\s*</div>', page)
+    if not m:
+        return ""
+    raw = html.unescape(m.group(1)).strip()
+    if raw.lower() in HOF_HALLS:
+        return raw + ", Hof"
+    return raw
+
+
 def mak_detail(page, e, today):
     sh = showings_to_dates(mak_showings(page), date.fromisoformat(e["start"]))
-    return {"showings": [[d.isoformat(), tm] for d, tm in sh], "image": _og(page), "price": parse_price(page_text(page))}
+    return {"showings": [[d.isoformat(), tm] for d, tm in sh], "image": _og(page), "price": parse_price(page_text(page)),
+            "venue": mak_venue(page)}
 
 
 def graeni_detail(page, e, today):
@@ -1171,8 +1187,6 @@ def collect_sports(old, today):
             else:
                 if m["date"] < t0:
                     continue  # leikur liðinn en engin úrslit komin
-                if first_up and last:
-                    e["last"] = last
                 first_up = False
             events.append(e)
     # ef heilt mót (íþrótt + kyn) skilaði engu núna (t.d. tímabundin villa) held ég í síðustu þekktu leiki þess
@@ -1562,6 +1576,9 @@ def collect_events():
             price = det.get(e["link"], {}).get("price") or (listprice[0] if listprice else "")
             e["note"] = " · ".join(badges + ([price] if price else []))
             e["image"] = e.get("image") or det.get(e["link"], {}).get("image") or imgs.get(e["link"]) or None
+            v = det.get(e["link"], {}).get("venue")
+            if v:
+                e["venue"] = v
         print("OK Viðburðir %s: %d viðburðir á lista, %d skiptast í sýningar, %d síður sóttar núna (%d spjöld)" % (
             name, len(found), split, fetched, len(expanded)))
         for e in expanded[:3]:
