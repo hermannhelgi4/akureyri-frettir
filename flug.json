@@ -7,15 +7,16 @@
       "fös",
       "mán"
     ],
-    "from": "",
-    "until": "2027-01-31",
-    "when": "Veturinn 2026–27, frá nóvember til loka janúar",
+    "from": "2026-11-13",
+    "until": "2027-03-22",
+    "when": "13. nóv 2026 – 22. mars 2027",
     "times": "",
     "price": "",
-    "note": "Brottfarartímar og nákvæm tímabil: sjá easyjet.com.",
+    "note": "Brottfarartímar: sjá easyjet.com. Pakkaferðir með þessu flugi: Aventura og Verdi Travel.",
+    "flag": "🇬🇧",
     "link": "https://www.easyjet.com/en/cheap-flights/akureyri-airport/manchester",
-    "linkText": "Skoða flug á easyjet.com ›",
-    "confirmed": false
+    "linkText": "Skoða á easyjet.com ›",
+    "confirmed": true
   },
   {
     "to": "London Gatwick",
@@ -25,15 +26,32 @@
       "þri",
       "lau"
     ],
-    "from": "",
-    "until": "2027-04-30",
-    "when": "Veturinn 2026–27",
+    "from": "2026-10-03",
+    "until": "2027-04-20",
+    "when": "3. okt 2026 – 20. apríl 2027",
     "times": "",
     "price": "",
-    "note": "Brottfarartímar og nákvæm tímabil: sjá easyjet.com.",
+    "note": "Brottfarartímar: sjá easyjet.com. Pakkaferðir með þessu flugi: Aventura og Verdi Travel.",
+    "flag": "🇬🇧",
     "link": "https://www.easyjet.com/en/cheap-flights/akureyri-airport/london-gatwick",
-    "linkText": "Skoða flug á easyjet.com ›",
-    "confirmed": false
+    "linkText": "Skoða á easyjet.com ›",
+    "confirmed": true
+  },
+  {
+    "to": "Vilníus",
+    "operator": "Smartwings (Kompaníferðir)",
+    "type": "Leiguflug",
+    "days": [],
+    "from": "",
+    "until": "2026-10-18",
+    "when": "14.–18. okt 2026",
+    "times": "Út kl. 18:15 · heim kl. 17:00",
+    "price": "Pakkaferð frá 165.990 kr. (flug, 4 nætur og morgunverður)",
+    "note": "Beint flug. Athugaðu hvort sæti séu laus.",
+    "flag": "🇱🇹",
+    "link": "https://kompaniferdir.is/einstaklingsferdir/vilnius-fra-akureyri",
+    "linkText": "Skoða hjá Kompaníferðum ›",
+    "confirmed": true
   },
   {
     "to": "Valencia",
@@ -46,8 +64,98 @@
     "times": "Út kl. 13:00–18:30 · heim kl. 09:35–13:05",
     "price": "Frá 95.500 kr. (með tösku og sköttum)",
     "note": "Stök flugsæti. Örfá sæti laus.",
+    "flag": "🇪🇸",
     "link": "https://www.verditravel.is/is/ferdir/valencia-akureyri",
     "linkText": "Bóka hjá Verdi Travel ›",
+    "confirmed": true
+  },
+  {
+    "to": "Gdańsk",
+    "operator": "Tripical",
+    "type": "Leiguflug",
+    "days": [],
+    "from": "",
+    "until": "2026-11-23",
+    "when": "20.–23. nóv 2026",
+    "times": "",
+    "price": "Aðventuferð frá 149.990 kr.",
+    "note": "Pakkaferð með flugi frá Akureyri. Flugtímar: sjá tripical.is.",
+    "flag": "🇵🇱",
+    "link": "https://tripical.is/?post_type=product&p=21331",
+    "linkText": "Skoða hjá Tripical ›",
+    "confirmed": true
+  },
+  {
+    "to": "Amsterdam",
+    "operator": "Voigt Travel (Verdi Travel)",
+    "type": "Leiguflug",
+    "days": [
+      "lau"
+    ],
+    "from": "",
+    "until": "2027-03-31",
+    "bar": false,
+    "when": "Janúar–mars 2027",
+    "times": "",
+    "price": "",
+    "note": "Nákvæmar dagsetningar og verð: sjá Verdi Travel.",
+    "flag": "🇳🇱",
+    "link": "https://www.verditravel.is/is/ferdir",
+    "linkText": "Skoða hjá Verdi Travel ›",
+    "confirmed": false
+  },
+  {
+    "to": "Zürich",
+    "operator": "Kontiki (Verdi Travel)",
+    "type": "Leiguflug",
+    "days": [
+      "sun"
+    ],
+    "from": "",
+    "until": "2027-03-31",
+    "bar": false,
+    "when": "Febrúar–mars 2027",
+    "times": "",
+    "price": "",
+    "note": "Nákvæmar dagsetningar og verð: sjá Verdi Travel.",
+    "flag": "🇨🇭",
+    "link": "https://www.verditravel.is/is/ferdir",
+    "linkText": "Skoða hjá Verdi Travel ›",
+    "confirmed": false
+  },
+  {
+    "to": "Zürich",
+    "operator": "Edelweiss",
+    "type": "Áætlunarflug",
+    "days": [
+      "fös"
+    ],
+    "from": "",
+    "until": "2027-08-31",
+    "bar": false,
+    "when": "Sumarið 2027 (júní–ágúst)",
+    "times": "",
+    "price": "",
+    "note": "Bókað hjá Edelweiss eða SWISS. Nákvæmar dagsetningar ekki komnar.",
+    "flag": "🇨🇭",
+    "link": "https://www.flyedelweiss.com/us/en/fly/flight-information/timetable.html?destination=AEY",
+    "linkText": "Skoða hjá Edelweiss ›",
+    "confirmed": false
+  },
+  {
+    "to": "Porto",
+    "operator": "Aventura",
+    "type": "Leiguflug",
+    "days": [],
+    "from": "",
+    "until": "2027-11-01",
+    "when": "30. sept – 4. okt 2027 og 28. okt – 1. nóv 2027",
+    "times": "",
+    "price": "",
+    "note": "Beint flug með íslenskri fararstjórn. Ferðirnar haustið 2026 eru uppseldar.",
+    "flag": "🇵🇹",
+    "link": "https://aventura.is/is/portoaey",
+    "linkText": "Skoða hjá Aventura ›",
     "confirmed": true
   }
 ]

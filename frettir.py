@@ -218,15 +218,19 @@ h2{font-size:16px;margin:0 0 4px;line-height:1.3}p{margin:0;font-size:13px;color
 .sph a{font-size:12px;color:var(--ac);text-decoration:none;white-space:nowrap}
 .flwrap{max-width:720px;margin:0 auto;padding:0 16px 40px}
 #fllist{display:grid;gap:12px;margin-top:8px}
-.fc{background:var(--card);border:1px solid var(--bd);border-radius:16px;overflow:hidden}
-.fh{display:flex;align-items:center;gap:12px;padding:14px 16px;background:linear-gradient(135deg,#0b6e99,#3aa7d6);color:#fff}
-.fh .fe{font-size:28px}.fh .fr{font-size:19px;font-weight:800;line-height:1.2}.fh .fo{font-size:13px;opacity:.9;margin-top:2px}
-.fb{padding:12px 16px 14px;display:grid;gap:6px}
-.fb .fd{font-weight:700;font-size:15px}.fb .fs{font-size:14px;color:var(--mu)}
-.fb .fpr{font-weight:700;color:var(--tx)}
-.fpill{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--bd);color:var(--mu);margin-right:6px}
+.fc{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:14px 16px}
+.ftop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.ftop .fr{font-size:20px;font-weight:800;line-height:1.2}.ftop .fo{font-size:13px;color:var(--mu);margin-top:2px}.ftop .fe{font-size:30px;line-height:1}
+.fwk{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin:12px 0 8px}
+.fwk span{text-align:center;padding:8px 0;border-radius:9px;background:var(--bg);font-size:12px;font-weight:700;color:var(--mu);opacity:.7}
+.fwk span.on{background:var(--ac);color:#fff;opacity:1}
+.fbar{height:8px;border-radius:99px;background:var(--bd);position:relative;margin:4px 0}.fbar i{position:absolute;top:0;bottom:0;border-radius:99px;background:linear-gradient(90deg,#0b6e99,#3aa7d6)}
+.fmo{display:flex;justify-content:space-between;font-size:10px;color:var(--mu)}
+.fwhen{margin:10px 0 2px;font-weight:700;font-size:15px}.fs{font-size:13px;color:var(--mu);margin-top:4px}
+.ffoot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px}
+.fpill{display:inline-block;white-space:nowrap;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--bd);color:var(--mu)}
 .fpill.w{background:#fde7c4;color:#7a4a00}
-.fbtn{display:inline-block;margin-top:6px;padding:9px 14px;border-radius:10px;background:var(--ac);color:#fff;text-decoration:none;font-weight:700;font-size:14px;justify-self:start}
+.fbtn{display:inline-block;padding:9px 16px;border-radius:10px;background:var(--ac);color:#fff;text-decoration:none;font-weight:700;font-size:14px;white-space:nowrap}
 </style></head><body><header><h1>Akureyri í fréttum</h1><div class="sub" id="upd"></div></header><nav class="tabbar"><button data-v="news" class="on" onclick="setView('news')">Fréttir</button><button data-v="ev" onclick="setView('ev')">Viðburðir</button><button data-v="sp" onclick="setView('sp')">Íþróttir</button><button data-v="fl" onclick="setView('fl')">Flug</button><button data-v="of" onclick="setView('of')">Tilboð</button></nav><div id="viewNews"><div class="chips" id="chips"></div><div class="strip" id="strip"></div><div class="wrap"><main id="list"></main><aside><div class="top" id="top"></div></aside></div></div><div id="viewEv" hidden><div class="chips" id="evchips"></div><div class="evwrap"><div id="evlist"></div></div></div><div id="viewSp" hidden><div class="chips" id="spchips"></div><div class="chips" id="spchips2"></div><div class="spwrap"><div id="splist"></div></div></div><div id="viewFl" hidden><div class="chips" id="flchips"></div><div class="flwrap"><div id="fllist"></div></div></div><div id="viewOf" hidden><div class="chips" id="ofchips"></div><div class="ofwrap"><div id="oflist"></div></div></div>
 <script>
 const NEWS=__DATA__;const EVENTS=__EVENTS__;const OFFERS=__OFFERS__;const STAND=__STAND__;const FLIGHTS=__FLIGHTS__;let flCat="Allt";let ofCat="Allt",ofTimer=null;let spSport="",spGen="",spMode="fix";let evSrc="Allt",evSport="",evGen="",evRes=false;const API="__API__";let TOP=[];let cur="Allt";NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar"});const ORDER=["Fréttamiðlar","Nærsveitir","Bærinn","Menntun","Menning","Íþróttir","Fyrirtæki & félög"];
@@ -296,13 +300,16 @@ function renderFl(){const t=new Date(),t0=new Date(t.getFullYear(),t.getMonth(),
 ["Allt","Áætlunarflug","Leiguflug"].forEach(c=>{const b=el("button","chip"+(c===flCat?" on":""),c);b.onclick=()=>{flCat=c;renderFl()};ch.appendChild(b)});
 const L=FLIGHTS.filter(f=>(flCat==="Allt"||f.type===flCat)&&(!f.until||pd(f.until)>=t0)).sort((a,b)=>{const ra=a.type==="Áætlunarflug"?0:1,rb=b.type==="Áætlunarflug"?0:1;if(ra!==rb)return ra-rb;const ua=a.until||"9",ub=b.until||"9";return ua<ub?-1:ua>ub?1:0});
 if(!L.length){box.appendChild(el("div","sub","Engin flug skráð."));return}
-L.forEach(f=>{const c=el("div","fc"),h=el("div","fh");h.appendChild(el("div","fe","✈️"));const hh=el("div","");hh.appendChild(el("div","fr","Akureyri → "+f.to));hh.appendChild(el("div","fo",f.operator+" · "+f.type));h.appendChild(hh);
-const b=el("div","fb");const pl=el("div","");pl.appendChild(el("span","fpill",f.type));if(!f.confirmed)pl.appendChild(el("span","fpill w","Staðfestu dagsetningar"));b.appendChild(pl);
-const dd=flDays(f.days);if(dd)b.appendChild(el("div","fd",dd));
-let w=f.when||"";if(!w&&(f.from||f.until))w=(f.from?"Frá "+fd(pd(f.from)):"")+(f.until?(f.from?" til ":"Til ")+fd(pd(f.until)):"");if(w)b.appendChild(el("div","fs",w));
-if(f.times)b.appendChild(el("div","fs","🕐 "+f.times));if(f.price)b.appendChild(el("div","fpr",f.price));if(f.note)b.appendChild(el("div","fs",f.note));
-if(f.link){const a=el("a","fbtn",f.linkText||"Skoða og bóka ›");a.href=f.link;a.target="_blank";a.rel="noopener";b.appendChild(a)}
-c.append(h,b);box.appendChild(c)})}
+const y0=(t0.getMonth()>=7?t0.getFullYear():t0.getFullYear()-1),W0=new Date(y0,9,1),W1=new Date(y0+1,3,30),pc=d=>Math.max(0,Math.min(100,(d-W0)/(W1-W0)*100));
+L.forEach(f=>{const c=el("div","fc"),top=el("div","ftop"),tt=el("div","");tt.appendChild(el("div","fr",f.to));tt.appendChild(el("div","fo",f.operator+" · "+f.type));top.append(tt,el("div","fe",f.flag||"✈️"));c.appendChild(top);
+if(f.days&&f.days.length){const wk=el("div","fwk");FLO.forEach(x=>wk.appendChild(el("span",f.days.includes(x)?"on":"",x)));c.appendChild(wk);
+if(f.bar!==false){const l=f.from?pc(pd(f.from)):0,r=f.until?pc(pd(f.until)):100,bar=el("div","fbar"),fi=el("i","");fi.style.left=l+"%";fi.style.right=(100-r)+"%";bar.appendChild(fi);c.appendChild(bar);
+const mo=el("div","fmo");["okt","nóv","des","jan","feb","mar","apr"].forEach(m=>mo.appendChild(el("span","",m)));c.appendChild(mo)}}
+let w=f.when||"";if(!w&&(f.from||f.until))w=(f.from?"Frá "+fd(pd(f.from)):"")+(f.until?(f.from?" til ":"Til ")+fd(pd(f.until)):"");
+if(w&&!(f.days&&f.days.length))c.appendChild(el("div","fwhen",w));else if(w)c.appendChild(el("div","fs",w));
+if(f.times)c.appendChild(el("div","fs","🕐 "+f.times));if(f.price)c.appendChild(el("div","fwhen",f.price));if(f.note)c.appendChild(el("div","fs",f.note));
+const ft=el("div","ffoot");ft.appendChild(f.confirmed?el("span","fs",""):el("span","fpill w","Óstaðfestar dagsetningar"));
+if(f.link){const a=el("a","fbtn",f.linkText||"Bóka ›");a.href=f.link;a.target="_blank";a.rel="noopener";ft.appendChild(a)}c.appendChild(ft);box.appendChild(c)})}
 function renderSp(){const n0=new Date(),t=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("splist"),c1=document.getElementById("spchips"),c2=document.getElementById("spchips2");
 const all=EVENTS.filter(e=>e.source==="Íþróttir");c1.innerHTML="";c2.innerHTML="";
 const sp=["Allt",...new Set(all.map(e=>e.sport))];sp.forEach(x=>{const b=el("button","chip"+((x==="Allt"?!spSport:x===spSport)?" on":""),x);b.onclick=()=>{spSport=(x==="Allt"?"":x);renderSp()};c1.appendChild(b)});
@@ -1187,18 +1194,42 @@ def collect_sports(old, today):
 def demo_flights(today):
     ej = "https://www.easyjet.com/en/cheap-flights/akureyri-airport/%s"
     return [
-        {"to": "Manchester", "operator": "easyJet", "type": "Áætlunarflug", "days": ["fös", "mán"], "from": "", "until": "2027-01-31",
-         "when": "Veturinn 2026–27, frá nóvember til loka janúar", "times": "", "price": "",
-         "note": "Brottfarartímar og nákvæm tímabil: sjá easyjet.com.",
-         "link": ej % "manchester", "linkText": "Skoða flug á easyjet.com ›", "confirmed": False},
-        {"to": "London Gatwick", "operator": "easyJet", "type": "Áætlunarflug", "days": ["þri", "lau"], "from": "", "until": "2027-04-30",
-         "when": "Veturinn 2026–27", "times": "", "price": "",
-         "note": "Brottfarartímar og nákvæm tímabil: sjá easyjet.com.",
-         "link": ej % "london-gatwick", "linkText": "Skoða flug á easyjet.com ›", "confirmed": False},
+        {"to": "Manchester", "operator": "easyJet", "type": "Áætlunarflug", "days": ["fös", "mán"], "from": "2026-11-13", "until": "2027-03-22",
+         "when": "13. nóv 2026 – 22. mars 2027", "times": "", "price": "",
+         "note": "Brottfarartímar: sjá easyjet.com. Pakkaferðir með þessu flugi: Aventura og Verdi Travel.",
+         "flag": "🇬🇧", "link": ej % "manchester", "linkText": "Skoða á easyjet.com ›", "confirmed": True},
+        {"to": "London Gatwick", "operator": "easyJet", "type": "Áætlunarflug", "days": ["þri", "lau"], "from": "2026-10-03", "until": "2027-04-20",
+         "when": "3. okt 2026 – 20. apríl 2027", "times": "", "price": "",
+         "note": "Brottfarartímar: sjá easyjet.com. Pakkaferðir með þessu flugi: Aventura og Verdi Travel.",
+         "flag": "🇬🇧", "link": ej % "london-gatwick", "linkText": "Skoða á easyjet.com ›", "confirmed": True},
+        {"to": "Vilníus", "operator": "Smartwings (Kompaníferðir)", "type": "Leiguflug", "days": [], "from": "", "until": "2026-10-18",
+         "when": "14.–18. okt 2026", "times": "Út kl. 18:15 · heim kl. 17:00", "price": "Pakkaferð frá 165.990 kr. (flug, 4 nætur og morgunverður)",
+         "note": "Beint flug. Athugaðu hvort sæti séu laus.", "flag": "🇱🇹",
+         "link": "https://kompaniferdir.is/einstaklingsferdir/vilnius-fra-akureyri", "linkText": "Skoða hjá Kompaníferðum ›", "confirmed": True},
         {"to": "Valencia", "operator": "Atlantic Airways (Verdi Travel)", "type": "Leiguflug", "days": [], "from": "", "until": "2026-11-02",
          "when": "30. okt – 2. nóv 2026", "times": "Út kl. 13:00–18:30 · heim kl. 09:35–13:05", "price": "Frá 95.500 kr. (með tösku og sköttum)",
-         "note": "Stök flugsæti. Örfá sæti laus.", "link": "https://www.verditravel.is/is/ferdir/valencia-akureyri",
+         "note": "Stök flugsæti. Örfá sæti laus.", "flag": "🇪🇸", "link": "https://www.verditravel.is/is/ferdir/valencia-akureyri",
          "linkText": "Bóka hjá Verdi Travel ›", "confirmed": True},
+        {"to": "Gdańsk", "operator": "Tripical", "type": "Leiguflug", "days": [], "from": "", "until": "2026-11-23",
+         "when": "20.–23. nóv 2026", "times": "", "price": "Aðventuferð frá 149.990 kr.",
+         "note": "Pakkaferð með flugi frá Akureyri. Flugtímar: sjá tripical.is.", "flag": "🇵🇱",
+         "link": "https://tripical.is/?post_type=product&p=21331", "linkText": "Skoða hjá Tripical ›", "confirmed": True},
+        {"to": "Amsterdam", "operator": "Voigt Travel (Verdi Travel)", "type": "Leiguflug", "days": ["lau"], "from": "", "until": "2027-03-31", "bar": False,
+         "when": "Janúar–mars 2027", "times": "", "price": "",
+         "note": "Nákvæmar dagsetningar og verð: sjá Verdi Travel.", "flag": "🇳🇱",
+         "link": "https://www.verditravel.is/is/ferdir", "linkText": "Skoða hjá Verdi Travel ›", "confirmed": False},
+        {"to": "Zürich", "operator": "Kontiki (Verdi Travel)", "type": "Leiguflug", "days": ["sun"], "from": "", "until": "2027-03-31", "bar": False,
+         "when": "Febrúar–mars 2027", "times": "", "price": "",
+         "note": "Nákvæmar dagsetningar og verð: sjá Verdi Travel.", "flag": "🇨🇭",
+         "link": "https://www.verditravel.is/is/ferdir", "linkText": "Skoða hjá Verdi Travel ›", "confirmed": False},
+        {"to": "Zürich", "operator": "Edelweiss", "type": "Áætlunarflug", "days": ["fös"], "from": "", "until": "2027-08-31", "bar": False,
+         "when": "Sumarið 2027 (júní–ágúst)", "times": "", "price": "",
+         "note": "Bókað hjá Edelweiss eða SWISS. Nákvæmar dagsetningar ekki komnar.", "flag": "🇨🇭",
+         "link": "https://www.flyedelweiss.com/us/en/fly/flight-information/timetable.html?destination=AEY", "linkText": "Skoða hjá Edelweiss ›", "confirmed": False},
+        {"to": "Porto", "operator": "Aventura", "type": "Leiguflug", "days": [], "from": "", "until": "2027-11-01",
+         "when": "30. sept – 4. okt 2027 og 28. okt – 1. nóv 2027", "times": "", "price": "",
+         "note": "Beint flug með íslenskri fararstjórn. Ferðirnar haustið 2026 eru uppseldar.", "flag": "🇵🇹",
+         "link": "https://aventura.is/is/portoaey", "linkText": "Skoða hjá Aventura ›", "confirmed": True},
     ]
 
 
@@ -1214,7 +1245,7 @@ def load_flights(today):
         c = {"to": str(f["to"]), "operator": str(f["operator"]), "type": f.get("type") or "Leiguflug",
              "days": f.get("days") if isinstance(f.get("days"), list) else [], "from": f.get("from") or "", "until": f.get("until") or "",
              "when": f.get("when") or "", "times": f.get("times") or "", "price": f.get("price") or "", "note": f.get("note") or "",
-             "link": f.get("link") or "", "linkText": f.get("linkText") or "", "confirmed": bool(f.get("confirmed"))}
+             "link": f.get("link") or "", "linkText": f.get("linkText") or "", "confirmed": bool(f.get("confirmed")), "flag": f.get("flag") or "", "bar": f.get("bar") is not False}
         if c["until"] and c["until"] < today.isoformat():
             continue
         out.append(c)
