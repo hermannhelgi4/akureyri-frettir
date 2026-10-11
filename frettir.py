@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Sækir fréttir úr RSS-veitum, síar landsmiðla eftir Akureyri og býr til news.json."""
-import json, re, html, time, urllib.request, urllib.robotparser, urllib.error
+import json, re, html, time, urllib.parse, urllib.request, urllib.robotparser, urllib.error
 from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
@@ -1621,28 +1621,47 @@ def team_mentions(text):
 _OTHER_CLUBS = re.compile(
     r"Breiðablik|Víking|Valur|Vals|FH\b|KR\b|Stjörn|Fram\b|ÍBV|ÍA\b|Skagamenn|Afturelding|Vestri|Fylki|HK\b|"
     r"Keflavík|Grindavík|Þrótt|Selfoss|Tindastól|Haukar|Hauka|Grótt|Njarðvík|Leikn|ÍR\b|Fjölni|Höttur|Hattar|"
-    r"Aftureldingu|Víði|Völsung|Kormák|Dalvík|Magna|Húsavík|Ægi|Þrótti")
+    r"Aftureldingu|Víði|Völsung|Kormák|Magna|Húsavík|Ægi|Þrótti|Eyjam|Eyjak|Skagam|Garðbæ|Blik|Valsm|Fylkism|Keflvík|Grindvík|Njarðvík")
+
+
+def _lead_order(lead):
+    """Hvort kemur fyrst í inngangi: Akureyrarliðið eða annað lið? (til að sía viðtöl við andstæðinga)"""
+    other = _OTHER_CLUBS.search(lead)
+    if not other:
+        return "ak"
+    words = lead.split(" ")
+    pos = 0
+    for w in words:
+        pos += len(w) + 1
+        if ak_count(lead[:pos]):
+            return "ak" if pos - len(w) - 1 <= other.start() else "other"
+    return "other"
 
 
 def judge_article(title, lead, paras, gated):
-    """Strangt mat: fjallar greinin um Þór/KA/KA? Skilar (já/nei, ástæða)."""
-    t = team_mentions(title)
-    l = team_mentions(lead)
-    b = team_mentions(" ".join(paras))
-    first = team_mentions(" ".join(paras[:2]))
-    if t:
+    """Strangt mat: fjallar greinin um Þór, KA eða Þór/KA (eða Akureyri)? Skilar (já/nei, ástæða).
+    Viðtöl bera oft nafn viðmælanda í fyrirsögn, svo liðið er oft aðeins nefnt í inngangi."""
+    if ak_count(title):
         return True, "í fyrirsögn"
+    l = ak_count(lead)
+    b = ak_count(" ".join(paras))
     if gated or not paras:  # áskriftargrein: aðeins útdrátturinn sést
         return (True, "í útdrætti (áskriftargrein)") if l else (False, "ekki í fyrirsögn né útdrætti")
+    first = ak_count(" ".join(paras[:2]))
     n = l + b
-    others = len(_OTHER_CLUBS.findall(lead + " " + " ".join(paras)))
     if n == 0:
-        return False, "Þór/KA/KA ekki nefnt sem lið"
+        return False, "Þór/KA/KA/Akureyri ekki nefnt"
+    others = len(_OTHER_CLUBS.findall(lead + " " + " ".join(paras)))
     if others > 2 * n:  # samantekt um margar viðureignir, ekki grein um liðið
         return False, "samantekt um mörg lið (%d nefningar á móti %d)" % (others, n)
-    if (l or first) and n >= 3:
+    opponent = l >= 1 and _lead_order(lead) == "other"  # inngangur snýst um annað lið (t.d. viðtal við andstæðing)
+    if l >= 1 and n >= 2 and len(paras) <= 8:
+        if opponent:
+            return False, "inngangur fjallar um annað lið en Þór/KA/KA (andstæðingur)"
+        return True, "í inngangi stuttrar greinar/viðtals (%d nefningar)" % n
+    if (l or first) and n >= 3 and not opponent:
         return True, "í upphafi og %d sinnum í texta" % n
-    if n >= 6:
+    if n >= 6 and not opponent:
         return True, "%d sinnum í texta" % n
     return False, "nefnt %d sinnum, ekki aðalefni" % n
 
@@ -1669,10 +1688,12 @@ def fotbolti_article(url):
     a = (data.get("pageData") or {}).get("article")
     if not a:
         return None
-    paras = [clean(b.get("text") or "") for b in (a.get("body") or []) if isinstance(b, dict)]
+    raw = [b.get("text") or "" for b in (a.get("body") or []) if isinstance(b, dict)]
+    if not raw and a.get("bodyHtml"):
+        raw = re.findall(r"<p[^>]*>(.*?)</p>", a["bodyHtml"], re.S)
+    # ein „málsgrein“ hjá þeim getur innihaldið margar (aðskildar með línuskilum)
+    paras = [clean(x) for r in raw for x in re.split(r"[\r\n]+", r)]
     paras = [p for p in paras if p]
-    if not paras and a.get("bodyHtml"):
-        paras = [clean(p) for p in re.findall(r"<p[^>]*>(.*?)</p>", a["bodyHtml"], re.S)]
     img = (a.get("heroImage") or {}).get("src") or ""
     if img.startswith("/"):
         img = "https://fotbolti.net" + img
@@ -1686,61 +1707,84 @@ def fotbolti_article(url):
     }
 
 
-def collect_fotbolti(checked, known, by_link, budget=60):
-    """Sækir forsíðu fotbolti.net, les hverja nýja grein og heldur aðeins þeim
-    sem fjalla um Þór, KA eða Þór/KA. Ákvörðun er geymd svo grein sé lesin einu sinni."""
-    if not allowed(FOTBOLTI_HOME):
-        print("X  Fótbolti.net: robots.txt leyfir ekki")
-        return 0
-    try:
-        req = urllib.request.Request(FOTBOLTI_HOME, headers=UA)
-        with OPENER.open(req, timeout=20) as r:
-            home = r.read(3000000).decode("utf-8", "ignore")
-    except Exception as e:
-        print("X  Fótbolti.net: tókst ekki að sækja forsíðu (%s)" % e)
-        return 0
-    links = []
-    for m in re.finditer(r'href="((?:https://(?:www\.)?fotbolti\.net)?/news/\d\d-\d\d-\d{4}/[^"#?]+)"', home):
+FOTBOLTI_SEARCHES = ["Akureyri", "Þór", "KA", "Þór/KA"]
+FOTBOLTI_DAYS = 10  # eldri greinar eru ekki teknar með
+
+
+def _fotbolti_links(page):
+    out = []
+    for m in re.finditer(r'href="((?:https://(?:www\.)?fotbolti\.net)?/news/(\d\d)-(\d\d)-(\d{4})/[^"#?]+)"', page):
         u = m.group(1)
         if u.startswith("/"):
             u = "https://fotbolti.net" + u
         u = u.replace("://www.", "://")
-        if u not in links:
-            links.append(u)
-    added = read_n = 0
-    print("OK Fótbolti.net: %d greinar á forsíðu" % len(links))
-    for u in links:
-        key = "fotbolti:" + u
-        if u in by_link:
+        try:
+            d = date(int(m.group(4)), int(m.group(3)), int(m.group(2)))
+        except ValueError:
             continue
-        ok = checked.get(key)
-        if ok is None:
-            if budget <= 0 or not allowed(u):
-                continue
-            budget -= 1
-            read_n += 1
-            try:
-                art = fotbolti_article(u)
-            except Exception as e:
-                print("   X  gat ekki lesið %s (%s)" % (u, e))
-                time.sleep(0.3)
-                continue
-            time.sleep(0.1)
-            if not art:
-                print("   X  ólesanleg grein: %s" % u)
-                continue
-            ok, why = judge_article(art["title"], art["lead"], art["paras"], art["gated"])
-            checked[key] = bool(ok)
-            print("   %s  %s  [%s]" % ("TEKIN  " if ok else "hafnað ", art["title"][:70], why))
-            if ok:
-                by_link[u] = {
-                    "title": art["title"], "link": u, "summary": short(art["lead"]),
-                    "date": art["date"].isoformat() if art["date"] else None,
-                    "image": art["image"] or known.get(u) or og_image(u),
-                    "source": FOTBOLTI_NAME, "category": "Íþróttir",
-                }
-                added += 1
-    print("   Fótbolti.net: %d greinar lesnar núna, %d nýjar teknar með" % (read_n, added))
+        if (datetime.now().date() - d).days > FOTBOLTI_DAYS:
+            continue
+        if u not in out:
+            out.append(u)
+    return out
+
+
+def collect_fotbolti(checked, known, by_link, budget=120):
+    """Finnur greinar á fotbolti.net (forsíða og leit að Akureyri, Þór, KA og Þór/KA), les hverja nýja
+    grein og heldur aðeins þeim sem fjalla um liðin. Ákvörðun er geymd svo grein sé lesin einu sinni."""
+    if not allowed(FOTBOLTI_HOME):
+        print("X  Fótbolti.net: robots.txt leyfir ekki")
+        return 0
+    pages = [FOTBOLTI_HOME] + ["https://fotbolti.net/leita?search=" + urllib.parse.quote(q, safe="") for q in FOTBOLTI_SEARCHES]
+
+    def get(u):
+        try:
+            req = urllib.request.Request(u, headers=UA)
+            with OPENER.open(req, timeout=20) as r:
+                return r.read(3000000).decode("utf-8", "ignore")
+        except Exception as e:
+            print("X  Fótbolti.net: tókst ekki að sækja %s (%s)" % (u, e))
+            return ""
+
+    links = []
+    got = pmap(get, [u for u in pages if allowed(u)], workers=5)
+    for page in got:
+        for u in _fotbolti_links(page):
+            if u not in links:
+                links.append(u)
+    key = lambda u: "fotbolti3:" + u
+    todo = [u for u in links if key(u) not in checked and allowed(u)][:budget]
+    print("OK Fótbolti.net: %d greinar fundnar (forsíða og leit), %d nýjar til yfirlestrar" % (len(links), len(todo)))
+
+    def read(u):
+        try:
+            return fotbolti_article(u)
+        except Exception as e:
+            print("   X  gat ekki lesið %s (%s)" % (u, e))
+            return "villa"
+
+    arts = pmap(read, todo, workers=5)
+    added = 0
+    for u, art in zip(todo, arts):
+        if art == "villa":
+            continue
+        if not art:
+            print("   X  ólesanleg grein: %s" % u)
+            continue
+        ok, why = judge_article(art["title"], art["lead"], art["paras"], art["gated"])
+        checked[key(u)] = bool(ok)
+        print("   %s  %s  [%s]" % ("TEKIN  " if ok else "hafnað ", art["title"][:70], why))
+        if not ok and by_link.pop(u, None) is not None:
+            print("      (tekin af síðunni)")
+        if ok and u not in by_link:
+            by_link[u] = {
+                "title": art["title"], "link": u, "summary": short(art["lead"]),
+                "date": art["date"].isoformat() if art["date"] else None,
+                "image": art["image"] or known.get(u) or og_image(u),
+                "source": FOTBOLTI_NAME, "category": "Íþróttir",
+            }
+            added += 1
+    print("   Fótbolti.net: %d greinar lesnar núna, %d teknar með" % (len(todo), added))
     return added
 
 
