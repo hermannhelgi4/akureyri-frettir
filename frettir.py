@@ -64,6 +64,7 @@ FEEDS = [
 CAT_BY_SOURCE = {f["name"]: f["cat"] for f in FEEDS}
 MAX_BY_SOURCE = {f["name"]: f.get("max", 30) for f in FEEDS}
 MAX_BY_SOURCE["Fótbolti.net"] = 15
+MAX_AGE_DAYS = 90  # fréttir eldri en þetta (í dögum) eru ekki sýndar
 CAT_BY_SOURCE["Fótbolti.net"] = "Íþróttir"
 
 # Stofnar orða (án beygingarendinga) sem sýna að frétt tengist Akureyri.
@@ -1986,7 +1987,10 @@ def main():
     print("Yfirlestur: %d síður lesnar núna, %d niðurstöður í minni." % (DEEP_BUDGET - budget, len(checked)))
 
     merged, per_source = [], {}
+    age_cut = (date.today() - timedelta(days=MAX_AGE_DAYS)).isoformat()
     for i in sorted(by_link.values(), key=lambda i: i["date"] or "", reverse=True):
+        if i["date"] and i["date"][:10] < age_cut:
+            continue
         per_source[i["source"]] = per_source.get(i["source"], 0) + 1
         if per_source[i["source"]] <= MAX_BY_SOURCE.get(i["source"], 30):
             merged.append(i)
