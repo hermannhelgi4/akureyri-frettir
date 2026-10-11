@@ -3,6 +3,7 @@
 import json, re, html, time, urllib.request, urllib.robotparser, urllib.error
 from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone
 
@@ -929,7 +930,7 @@ def read_bli(today):
                 rows += bli_parse(fetch_page(url), gender, comp, url)
             except Exception as e:
                 print("X  Blak %s (fasi %d): tókst ekki (%s)" % (comp, p, e))
-            time.sleep(1)
+            time.sleep(0.3)
         mine = [r for r in rows if r["home"] in SPORT_TEAMS or r["away"] in SPORT_TEAMS]
         print("   Blak %s: fasar %s, %d leikir alls, %d hjá KA" % (comp, pids, len(rows), len(mine)))
         out += mine
@@ -998,7 +999,7 @@ def read_kki(today):
             rows += got
             if len(got) < 20:
                 break
-            time.sleep(1)
+            time.sleep(0.3)
         mine = [r for r in rows if r["home"] in SPORT_TEAMS or r["away"] in SPORT_TEAMS]
         if rows:
             print("   Körfubolti deild %d (%s): %d leikir, %d hjá Þór Ak." % (lg, rows[0]["league"], len(rows), len(mine)))
@@ -1007,7 +1008,7 @@ def read_kki(today):
             out.append({"sport": "Körfubolti", "gender": "Konur" if ("kvenna" in low or "konur" in low) else "Karlar",
                         "comp": r["league"], "date": r["date"], "time": r["time"], "home": r["home"], "away": r["away"],
                         "rh": r["rh"], "ra": r["ra"], "venue": r["venue"], "link": KKI_LINK})
-        time.sleep(1)
+        time.sleep(0.3)
     return out
 
 
@@ -1075,7 +1076,7 @@ def ksi_competitions(today):
                 # aðeins deildin sjálf, efri/neðri hluti og úrslitakeppnir – ekki riðlar Lengjubikarsins
                 if label and not re.search(r"Rið(i)?ll|deild (A|B|C)\b", label) and "Umspil" not in label:
                     found[m.group(1)] = label
-            time.sleep(0.5)
+            time.sleep(0.2)
     return found
 
 
@@ -1089,7 +1090,7 @@ def read_ksi(today):
                 rows += ksi_parse(fetch_page("%s/oll-mot/mot/?id=%s&banner-tab=matches-and-results%s" % (KSI_BASE, cid, suffix)), today, cid)
             except Exception as e:
                 print("X  KSÍ %s: tókst ekki (%s)" % (label, e))
-            time.sleep(0.5)
+            time.sleep(0.2)
         mine = [r for r in rows if r["home"] in SPORT_TEAMS or r["away"] in SPORT_TEAMS]
         if mine:
             print("   KSÍ %s: %d leikir alls, %d hjá KA/Þór/Þór/KA" % (label, len(rows), len(mine)))
@@ -1383,7 +1384,7 @@ def stand_bli(today):
                 out.append({"sport": "Blak", "gender": gender, "comp": comp, "link": url, "rows": rows})
         except Exception as e:
             print("X  Tafla blak %s: tókst ekki (%s)" % (comp, e))
-        time.sleep(1)
+        time.sleep(0.3)
     return out
 
 
@@ -1433,7 +1434,7 @@ def stand_kki(today):
                 out.append({"sport": "Körfubolti", "gender": gender, "comp": comp, "link": KKI_LINK, "rows": rows})
         except Exception as e:
             print("X  Tafla KKÍ deild %d: tókst ekki (%s)" % (lg, e))
-        time.sleep(1)
+        time.sleep(0.3)
     return out
 
 
@@ -1467,7 +1468,7 @@ def stand_ksi(today):
         except Exception as e:
             print("X  Tafla KSÍ %s: tókst ekki (%s)" % (label, e))
             continue
-        time.sleep(0.5)
+        time.sleep(0.2)
         if rows and has_mine(rows):
             comp = re.sub(r"\s*\b20\d\d\b", "", label).strip()
             out.append({"sport": "Fótbolti", "gender": "Konur" if "kvenna" in label.lower() else "Karlar",
@@ -1724,7 +1725,7 @@ def collect_fotbolti(checked, known, by_link, budget=60):
                 print("   X  gat ekki lesið %s (%s)" % (u, e))
                 time.sleep(0.3)
                 continue
-            time.sleep(0.3)
+            time.sleep(0.1)
             if not art:
                 print("   X  ólesanleg grein: %s" % u)
                 continue
@@ -1789,7 +1790,17 @@ def judge_regional(title, paras):
     return False, "nefnt %d sinnum í %d af %d málsgreinum, önnur staðarheiti %d" % (body, hit_par, len(paras), others)
 
 
+def pmap(fn, items, workers=6):
+    """Keyrir fn á öllum hlutum samtímis (til að spara tíma við netbeiðnir)."""
+    items = list(items)
+    if not items:
+        return []
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        return list(ex.map(fn, items))
+
+
 def main():
+    t_start = time.time()
     try:  # fyrri fréttir eru geymdar svo landsmiðlafréttir um Akureyri hverfi ekki
         with open("news.json", encoding="utf-8") as f:
             old = json.load(f)
@@ -1811,47 +1822,22 @@ def main():
     nonlocal_sources = {f["name"] for f in FEEDS if not f["local"]}
     V = "v2:"  # ný og strangari sía; gamlar niðurstöður (án V) eru ekki notaðar
 
-    def judge_link(link, title):
-        """Les fréttina og metur hana. Skilar True/False, eða None ef ekki náðist í síðuna / enginn tími."""
-        nonlocal budget
-        key = V + link
-        if key in checked:
-            return checked[key]
-        if budget <= 0 or not allowed(link):
-            return None
-        budget -= 1
-        paras = read_article_paras(link)
-        time.sleep(0.3)
-        if paras is None:
-            return None
-        ok, why = judge_regional(title, paras)
-        checked[key] = bool(ok)
-        print("   %s  %s  [%s]" % ("TEKIN  " if ok else "hafnað ", title[:70], why))
-        return bool(ok)
-
-    # 1) Fréttir landsmiðla sem eru þegar á síðunni eru lesnar aftur með nýju síunni.
-    purged = 0
-    for l, o in list(by_link.items()):
-        if o.get("source") in nonlocal_sources and V + l not in checked:
-            r = judge_link(l, o.get("title", ""))
-            if r is False:
-                del by_link[l]
-                purged += 1
-        elif o.get("source") in nonlocal_sources and checked.get(V + l) is False:
-            del by_link[l]
-            purged += 1
-    if purged:
-        print("Strangari sía: %d eldri fréttir landsmiðla teknar af síðunni" % purged)
-
-    # 2) Staðbundnir miðlar koma allir inn; landsmiðlar fara í biðröð til yfirlesturs.
-    cands = {}
-    for feed in FEEDS:
+    def get_feed(feed):
         try:
             req = urllib.request.Request(feed["url"], headers=UA)
-            with OPENER.open(req, timeout=20) as r:
-                items = parse_feed(ET.fromstring(r.read()))
+            with OPENER.open(req, timeout=15) as r:
+                return parse_feed(ET.fromstring(r.read())), None
         except Exception as e:
-            print("X  %s: tókst ekki að sækja (%s)" % (feed["name"], e))
+            return None, e
+
+    results = pmap(get_feed, FEEDS, workers=8)
+    print("Tími: veitur sóttar á %.0f sek." % (time.time() - t_start))
+
+    # Staðbundnir miðlar koma allir inn; landsmiðlar fara í biðröð til yfirlesturs.
+    cands = {}
+    for feed, (items, err) in zip(FEEDS, results):
+        if items is None:
+            print("X  %s: tókst ekki að sækja (%s)" % (feed["name"], err))
             continue
         kept = []
         for i in items:
@@ -1863,8 +1849,7 @@ def main():
                 cands[i["link"]] = (i, feed)
         print("OK %s: %d fréttir sóttar%s" % (feed["name"], len(items), "" if feed["local"] else " (bíða yfirlesturs)"))
         for i in kept:
-            if not i["image"]:
-                i["image"] = known.get(i["link"]) or og_image(i["link"])
+            i["image"] = i["image"] or known.get(i["link"])
             i["source"] = feed["name"]
             i["category"] = feed["cat"]
             i["date"] = i["date"].isoformat() if i["date"] else None
@@ -1872,16 +1857,45 @@ def main():
                 new_count += 1
             by_link[i["link"]] = i
 
-    # Fréttir með staðarheiti í fyrirsögn/útdrætti eru lesnar fyrst (tíminn er takmarkaður).
+    # Hvað þarf að lesa: fyrst eldri landsmiðlafréttir á síðunni, svo nýjar (með staðarheiti í fyrirsögn/útdrætti fyrst).
+    old_nl = [l for l, o in by_link.items() if o.get("source") in nonlocal_sources and V + l not in checked]
     order = sorted(cands.values(), key=lambda c: 0 if about_akureyri(c[0]) else 1)
+    todo = []
+    for l in old_nl + [c[0]["link"] for c in order if c[0]["link"] not in by_link and V + c[0]["link"] not in checked]:
+        if l not in todo:
+            todo.append(l)
+    todo = [l for l in todo if allowed(l)][:budget]
+    budget -= len(todo)
+    t_read = time.time()
+    pre = dict(zip(todo, pmap(read_article_paras, todo, workers=6)))
+    print("Tími: %d fréttir lesnar á %.0f sek." % (len(todo), time.time() - t_read))
+
+    def judge_link(link, title):
+        key = V + link
+        if key in checked:
+            return checked[key]
+        paras = pre.get(link)
+        if paras is None:  # ekki sótt (tókst ekki eða enginn tími) – reynt aftur næst
+            return None
+        ok, why = judge_regional(title, paras)
+        checked[key] = bool(ok)
+        print("   %s  %s  [%s]" % ("TEKIN  " if ok else "hafnað ", title[:70], why))
+        return bool(ok)
+
+    purged = 0
+    for l, o in list(by_link.items()):
+        if o.get("source") in nonlocal_sources and judge_link(l, o.get("title", "")) is False:
+            del by_link[l]
+            purged += 1
+    if purged:
+        print("Strangari sía: %d eldri fréttir landsmiðla teknar af síðunni" % purged)
+
     accepted = {}
     for i, feed in order:
         if i["link"] in by_link:
             continue
-        r = judge_link(i["link"], i["title"])
-        if r:
-            if not i["image"]:
-                i["image"] = known.get(i["link"]) or og_image(i["link"])
+        if judge_link(i["link"], i["title"]):
+            i["image"] = i["image"] or known.get(i["link"])
             i["source"] = feed["name"]
             i["category"] = feed["cat"]
             i["date"] = i["date"].isoformat() if i["date"] else None
@@ -1889,6 +1903,12 @@ def main():
             new_count += 1
             accepted[feed["name"]] = accepted.get(feed["name"], 0) + 1
     print("Landsmiðlar: %s teknir með í þessari keyrslu" % (accepted or "engin ný frétt"))
+
+    # Myndir sem vantar eru sóttar samtímis
+    noimg = [l for l, o in by_link.items() if not o.get("image")]
+    for l, im in zip(noimg, pmap(og_image, noimg, workers=6)):
+        by_link[l]["image"] = im
+    print("Tími: fréttir tilbúnar á %.0f sek." % (time.time() - t_start))
 
     try:
         new_count += collect_fotbolti(checked, known, by_link)
@@ -1906,31 +1926,39 @@ def main():
             merged.append(i)
     with open("news.json", "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)
-    try:
-        events = collect_events()
-    except Exception as e:
-        print("X  Viðburðir: óvænt villa (%s)" % e)
+    def timed(name, fn):
+        t0 = time.time()
         try:
-            with open("events.json", encoding="utf-8") as f:
-                events = json.load(f)
-        except Exception:
-            events = []
+            return fn(), None
+        except Exception as e:
+            return None, e
+        finally:
+            print("Tími: %s tók %.0f sek." % (name, time.time() - t0))
+
+    # Viðburðir og töflur eru óháð hvort öðru og keyra samtímis
+    with ThreadPoolExecutor(max_workers=2) as ex:
+        f_ev = ex.submit(timed, "viðburðir", collect_events)
+        f_st = ex.submit(timed, "töflur", lambda: collect_standings(datetime.now().date()))
+        events, err = f_ev.result()
+        if err is not None:
+            print("X  Viðburðir: óvænt villa (%s)" % err)
+            events = _load("events.json", [])
+        stand, err = f_st.result()
+        if err is not None:
+            print("X  Töflur: óvænt villa (%s)" % err)
+            stand = _load("standings.json", [])
     try:
         offers = load_offers(datetime.now().date())
     except Exception as e:
         print("X  Tilboð: villa (%s)" % e)
         offers = []
     try:
-        stand = collect_standings(datetime.now().date())
-    except Exception as e:
-        print("X  Töflur: óvænt villa (%s)" % e)
-        stand = _load("standings.json", [])
-    try:
         flights = load_flights(datetime.now().date())
     except Exception as e:
         print("X  Flug: villa (%s)" % e)
         flights = []
     write_html(merged, events, offers, stand, flights)
+    print("Tími alls: %.0f sek." % (time.time() - t_start))
     print("Búið. %d fréttir í news.json (%d nýjar). Opnaðu index.html til að sjá þær." % (len(merged), new_count))
 
 
