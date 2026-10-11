@@ -350,7 +350,7 @@ def write_html(items, events=None, offers=None, stand=None, flights=None):
 
 DEEP_UA = {"User-Agent": "AkureyriFrettir/0.1 (+https://github.com/hermannhelgi4/akureyri-frettir)"}
 DEEP_KEYWORDS = [k for k in KEYWORDS if k != "samherj"]  # Samherji kemur oft fyrir í fréttum sem eru ekki um Akureyri
-DEEP_BUDGET = 120  # mest svo margar fréttasíður sóttar í hverri keyrslu
+DEEP_BUDGET = 200  # mest svo margar fréttasíður sóttar í hverri keyrslu
 _robots = {}
 
 
@@ -1743,6 +1743,52 @@ def collect_fotbolti(checked, known, by_link, budget=60):
     return added
 
 
+_AK_RE = re.compile(
+    r"(?<!\w)(?:akureyr|eyjafj|eyjafirð|hlíðarfj|vaðlaheið|dalvík|hrísey|grímsey|grenivík|hörgársveit|"
+    r"fjallabyggð|siglufj|ólafsfj|kjarnaskóg|norðurorka)\w*", re.I)
+_OTHER_PLACES = re.compile(
+    r"(?<!\w)(?:reykjav|kópavog|hafnarfj|garðab|keflavík|reykjanes|selfoss|ísafj|egilsst|vestmannaey|"
+    r"borgarnes|akranes|grindavík|suðurnes|mosfellsb|seltjarnarn|höfuðborgarsv|húsavík|reyðarfj|neskaupst|"
+    r"sauðárkr|blönduós|patreksfj|bolungarv|hveragerð|árborg)\w*", re.I)
+
+
+def ak_count(text):
+    """Staðarheiti á Akureyri/Eyjafirði, auk Þór, KA og Þór/KA sem lið."""
+    return len(_AK_RE.findall(text)) + team_mentions(text)
+
+
+def read_article_paras(url):
+    """Sækir síðu og skilar málsgreinum (>40 stafir). None = tókst ekki, [] = enginn texti."""
+    try:
+        req = urllib.request.Request(url, headers=DEEP_UA)
+        with OPENER.open(req, timeout=15) as r:
+            page = r.read(600000).decode("utf-8", "ignore")
+    except Exception:
+        return None
+    page = re.sub(r"<(nav|aside|footer|header|script|style|noscript)\b.*?</\1>", " ", page, flags=re.S | re.I)
+    paras = [clean(p) for p in re.findall(r"<p[^>]*>(.*?)</p>", page, re.S | re.I)]
+    return [p for p in paras if len(p) > 40]
+
+
+def judge_regional(title, paras):
+    """Fjallar frétt landsmiðils um Akureyri og nágrenni? Ekki nóg að það sé nefnt.
+    Skilar (já/nei, ástæða)."""
+    if ak_count(title):
+        return True, "í fyrirsögn"
+    if not paras:
+        return False, "ólesanleg og ekki í fyrirsögn"
+    lead = ak_count(" ".join(paras[:2]))
+    body = ak_count(" ".join(paras))
+    others = len(_OTHER_PLACES.findall(" ".join(paras)))
+    hit_par = sum(1 for p in paras if ak_count(p))
+    share = hit_par / len(paras)
+    if ak_count(paras[0]) >= 1 and others == 0 and len(paras) <= 5:
+        return True, "stutt frétt sem gerist á Akureyri"
+    if lead >= 1 and body >= 3 and share >= 0.4 and body >= others:
+        return True, "%d nefningar í %d af %d málsgreinum" % (body, hit_par, len(paras))
+    return False, "nefnt %d sinnum í %d af %d málsgreinum, önnur staðarheiti %d" % (body, hit_par, len(paras), others)
+
+
 def main():
     try:  # fyrri fréttir eru geymdar svo landsmiðlafréttir um Akureyri hverfi ekki
         with open("news.json", encoding="utf-8") as f:
@@ -1762,6 +1808,43 @@ def main():
     budget = DEEP_BUDGET
     unreadable = 0
 
+    nonlocal_sources = {f["name"] for f in FEEDS if not f["local"]}
+    V = "v2:"  # ný og strangari sía; gamlar niðurstöður (án V) eru ekki notaðar
+
+    def judge_link(link, title):
+        """Les fréttina og metur hana. Skilar True/False, eða None ef ekki náðist í síðuna / enginn tími."""
+        nonlocal budget
+        key = V + link
+        if key in checked:
+            return checked[key]
+        if budget <= 0 or not allowed(link):
+            return None
+        budget -= 1
+        paras = read_article_paras(link)
+        time.sleep(0.3)
+        if paras is None:
+            return None
+        ok, why = judge_regional(title, paras)
+        checked[key] = bool(ok)
+        print("   %s  %s  [%s]" % ("TEKIN  " if ok else "hafnað ", title[:70], why))
+        return bool(ok)
+
+    # 1) Fréttir landsmiðla sem eru þegar á síðunni eru lesnar aftur með nýju síunni.
+    purged = 0
+    for l, o in list(by_link.items()):
+        if o.get("source") in nonlocal_sources and V + l not in checked:
+            r = judge_link(l, o.get("title", ""))
+            if r is False:
+                del by_link[l]
+                purged += 1
+        elif o.get("source") in nonlocal_sources and checked.get(V + l) is False:
+            del by_link[l]
+            purged += 1
+    if purged:
+        print("Strangari sía: %d eldri fréttir landsmiðla teknar af síðunni" % purged)
+
+    # 2) Staðbundnir miðlar koma allir inn; landsmiðlar fara í biðröð til yfirlesturs.
+    cands = {}
     for feed in FEEDS:
         try:
             req = urllib.request.Request(feed["url"], headers=UA)
@@ -1770,28 +1853,15 @@ def main():
         except Exception as e:
             print("X  %s: tókst ekki að sækja (%s)" % (feed["name"], e))
             continue
-        kept, rescued = [], 0
+        kept = []
         for i in items:
             if not (i["link"] and i["title"]):
                 continue
-            if feed["local"] or about_akureyri(i):
+            if feed["local"]:
                 kept.append(i)
-                continue
-            ok = checked.get(i["link"])
-            if ok is None and budget > 0 and allowed(i["link"]):
-                budget -= 1
-                ok = deep_check(i["link"])
-                if ok == "ólesanleg":
-                    unreadable += 1
-                    ok = False
-                if ok is not None:
-                    checked[i["link"]] = ok
-                time.sleep(0.3)
-            if ok:
-                kept.append(i)
-                rescued += 1
-        print("OK %s: %d fréttir sóttar, %d teknar með%s" % (
-            feed["name"], len(items), len(kept), (" (þar af %d fundnar með dýpri leit)" % rescued) if rescued else ""))
+            elif i["link"] not in cands:
+                cands[i["link"]] = (i, feed)
+        print("OK %s: %d fréttir sóttar%s" % (feed["name"], len(items), "" if feed["local"] else " (bíða yfirlesturs)"))
         for i in kept:
             if not i["image"]:
                 i["image"] = known.get(i["link"]) or og_image(i["link"])
@@ -1801,9 +1871,24 @@ def main():
             if i["link"] not in by_link:
                 new_count += 1
             by_link[i["link"]] = i
-        if not feed["local"]:
-            for i in items[:2]:
-                print("   dæmi: %s" % i["title"][:80])
+
+    # Fréttir með staðarheiti í fyrirsögn/útdrætti eru lesnar fyrst (tíminn er takmarkaður).
+    order = sorted(cands.values(), key=lambda c: 0 if about_akureyri(c[0]) else 1)
+    accepted = {}
+    for i, feed in order:
+        if i["link"] in by_link:
+            continue
+        r = judge_link(i["link"], i["title"])
+        if r:
+            if not i["image"]:
+                i["image"] = known.get(i["link"]) or og_image(i["link"])
+            i["source"] = feed["name"]
+            i["category"] = feed["cat"]
+            i["date"] = i["date"].isoformat() if i["date"] else None
+            by_link[i["link"]] = i
+            new_count += 1
+            accepted[feed["name"]] = accepted.get(feed["name"], 0) + 1
+    print("Landsmiðlar: %s teknir með í þessari keyrslu" % (accepted or "engin ný frétt"))
 
     try:
         new_count += collect_fotbolti(checked, known, by_link)
@@ -1812,8 +1897,7 @@ def main():
 
     with open("athugad.json", "w", encoding="utf-8") as f:
         json.dump(dict(list(checked.items())[-4000:]), f, ensure_ascii=False)
-    print("Dýpri leit: %d síður athugaðar núna, %d í minni. Þar af gátu %d ekki lesist (engin málsgrein í HTML)." % (
-        DEEP_BUDGET - budget, len(checked), unreadable))
+    print("Yfirlestur: %d síður lesnar núna, %d niðurstöður í minni." % (DEEP_BUDGET - budget, len(checked)))
 
     merged, per_source = [], {}
     for i in sorted(by_link.values(), key=lambda i: i["date"] or "", reverse=True):
