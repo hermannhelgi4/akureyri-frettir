@@ -739,10 +739,265 @@ def graeni_detail(page, e, today):
             "price": parse_price(page_text(page))}
 
 
+# --- Miðasölur: Tix, Midix og Stubb (viðburðir á Akureyri) ---
+# Staðir á Akureyri (hluti af nafni staðar eða titli). Bættu við hér ef staður vantar.
+AK_PLACE = re.compile(
+    r"akureyri|akureyrar|leyni bar|sjallinn|glerárkirkja|ketilkaffi|hlíðarfjall|ka-heimil|ka heimil|boginn\b|múlaberg|"
+    r"pósthúsbar|kaffi ilmur|greifinn|skjaldborg|verkmenntaskól", re.I)
+# Þessir viðburðir eru þegar inni frá opinberu síðunum (MAK/Hof, Samkomuhúsið) eða Græna hattinum – ekki tekið aftur
+AK_SKIP = re.compile(
+    r"\bhof\b|hamraborg|samkomuhús|menningarhúsið|menningarfélag|\bmak\b|\bhamrar\b|\bnaust(?:i)?\b|\bkaldi\b|setberg|black box|"
+    r"græni hatturinn|graeni", re.I)
+SPORT_WORDS = re.compile(r"körfubolti|handbolti|fótbolti|blak\b|íshokkí|\bdeild\b|\bbikar|\bEHF\b|úrvalsdeild|mjólkurbikar|"
+                         r"\bsports\b|íþróttir", re.I)
+MIDASALA = "Miðasala"
+MID_DATE = re.compile(r"(\d{1,2})\.?\s+(janúar|febrúar|mars|apríl|maí|júní|júlí|ágúst|september|október|nóvember|desember)\s+(20\d\d)", re.I)
+MID_SLUG = re.compile(r"-(\d{1,2})-([a-z]{3})[a-z]*-(20\d\d)(?:-\d+)?/eid/(\d+)", re.I)
+
+
+def _is_ak(place, title=""):
+    """Á Akureyri (eftir stað/titli) og ekki þegar inni frá MAK/Hof eða Græna hattinum."""
+    hay = (place or "") + " | " + (title or "")
+    if AK_SKIP.search(place or ""):
+        return False
+    return bool(AK_PLACE.search(hay))
+
+
+def _mid_norm(title):
+    return re.sub(r"\W+", "", (title or "").lower())
+
+
+def read_midix(today):
+    base = "https://www.midix.is/is"
+    page = fetch_page(base)
+    pat = re.compile(r"/eid/\d+")
+    out, total = [], 0
+    for g in link_groups(page, pat):
+        total += 1
+        text = g["text"]
+        d = None
+        ms = MID_SLUG.search(g["href"])
+        if ms:
+            try:
+                d = date(int(ms.group(3)), MONTHS_EN[ms.group(2).lower()], int(ms.group(1)))
+            except (ValueError, KeyError):
+                d = None
+        md = MID_DATE.search(text)
+        if not d and md:
+            try:
+                d = date(int(md.group(3)), MONTHS_IS[md.group(2)[:3].lower()], int(md.group(1)))
+            except (ValueError, KeyError):
+                d = None
+        if not d:
+            continue
+        if md:
+            before, after = text[:md.start()], text[md.end():]
+        else:
+            before, after = text, ""
+        price = PRICE_RE.search(after)
+        venue = after[:price.start()] if price else after
+        venue = clean(venue).strip(" |-–—·,.:")
+        notes = []
+        for raw, label in (("UPPSELT", "Uppselt"), ("FÁIR MIÐAR", "Fáir miðar"), ("NÝTT", "Nýtt")):
+            if re.search(raw, before + " " + after, re.I) and label not in notes:
+                notes.append(label)
+        title = clean(re.sub(r"UPPSELT!?|FÁIR MIÐAR|NÝTT|Kaupa miða", " ", before, flags=re.I)).strip(" |-–—·,.:")
+        if len(title) < 2 and g["imgs"]:
+            title = clean(g["imgs"][0][2])
+        if len(title) < 2:
+            continue
+        venue = re.sub(r"UPPSELT!?|FÁIR MIÐAR|NÝTT|Kaupa miða", " ", venue, flags=re.I)
+        venue = clean(venue).strip(" |-–—·,.:")
+        if not _is_ak(venue, title):
+            continue
+        if price:
+            notes.append(re.sub(r"\s*kr\.?$", " kr.", price.group(0).strip(), flags=re.I))
+        img = urljoin(base, g["imgs"][0][1]) if g["imgs"] and g["imgs"][0][1] else None
+        out.append({"title": title[:140], "source": MIDASALA, "site": "Midix", "link": urljoin(base, g["href"]),
+                    "start": d.isoformat(), "end": d.isoformat(), "time": "", "image": img,
+                    "note": " · ".join(notes), "venue": venue})
+    print("   Midix: %d tenglar á forsíðu, %d á Akureyri" % (total, len(out)))
+    return out
+
+
+_DET = {}  # sameiginlegt minni (events_detail.json) – fyllt út í collect_events
+TIX_PAGES = ["https://tix.is/", "https://tix.is/collection/nytt", "https://tix.is/collection/popular",
+             "https://tix.is/collection/spennandi-hatidir-a-naestunni"]
+TIX_EVENT = re.compile(r"/event/(\d+)(?:/([a-z0-9\-]+))?", re.I)
+
+
+def _tix_one(args):
+    eid, slug, today, det = args
+    key = "tix:" + eid
+    d = det.get(key)
+    if d and d.get("v") == DETAIL_VER and time.time() - d.get("ts", 0) < 12 * 3600:
+        return d["ev"], False
+    try:
+        data = fetch_json("https://tix.is/api/proxy?id=" + eid)
+    except Exception as e:
+        print("   Tix %s: %s" % (eid, str(e)[:100]))
+        return (d or {}).get("ev", []), False
+    ev = []
+    for g in data if isinstance(data, list) else [data]:
+        name = clean(g.get("Name") or "")
+        link = "https://tix.is/event/%s%s" % (eid, ("/" + slug) if slug else "")
+        for x in g.get("Dates") or []:
+            venue = x.get("Venue") or x.get("Hall") or ""
+            if not _is_ak(venue + " " + (x.get("Hall") or ""), name):
+                continue
+            sd = x.get("StartDate") or ""
+            if len(sd) < 10:
+                continue
+            notes = []
+            if x.get("SoldOut"):
+                notes.append("Uppselt")
+            lo, hi = x.get("MinPrice"), x.get("MaxPrice")
+            if lo:
+                fmt = lambda n: "{:,}".format(int(n)).replace(",", ".")
+                notes.append((fmt(lo) + (" – " + fmt(hi) if hi and hi != lo else "")) + " kr.")
+            img = g.get("EventImagePath") if g.get("HasEventImage") else (g.get("PosterImagePath") if g.get("HasPosterImage") else None)
+            ev.append({"title": name[:140], "source": MIDASALA, "site": "Tix", "link": link, "start": sd[:10], "end": sd[:10],
+                       "time": sd[11:16] if len(sd) >= 16 and sd[11:16] != "00:00" else "", "image": img,
+                       "note": " · ".join(notes), "venue": venue})
+    det[key] = {"ts": time.time(), "v": DETAIL_VER, "ev": ev}
+    return ev, True
+
+
+def read_tix(today):
+    ids = {}
+    for url in TIX_PAGES:
+        try:
+            page = fetch_page(url)
+        except Exception as e:
+            print("   Tix %s: %s" % (url, str(e)[:100]))
+            continue
+        for m in TIX_EVENT.finditer(page):
+            ids.setdefault(m.group(1), m.group(2))
+    det = _DET
+    res = pmap(_tix_one, [(i, s, today, det) for i, s in ids.items()], workers=6)
+    out = [e for ev, _ in res for e in ev]
+    fetched = sum(1 for _, f in res if f)
+    print("   Tix: %d viðburðir fundust á forsíðum, %d sóttir núna, %d sýningar á Akureyri" % (len(ids), fetched, len(out)))
+    return out
+
+
+STUBB_PAGES = ["https://stubb.is/events?category=concerts", "https://stubb.is/events", "https://stubb.is/"]
+STUBB_DATE = re.compile(r"^(\d{1,2})\s+(jan|feb|mar|apr|maí|jún|júl|ágú|sep|okt|nóv|des)\b", re.I)
+STUBB_NAME_KEYS = ("name", "title", "eventName")
+STUBB_DATE_KEYS = ("startDate", "start", "date", "eventDate", "startTime", "dateTime", "startsAt")
+
+
+def _walk(x, found):
+    if isinstance(x, dict):
+        if any(isinstance(x.get(k), str) for k in STUBB_NAME_KEYS) and any(isinstance(x.get(k), str) and re.match(r"20\d\d-\d\d-\d\d", x.get(k)) for k in STUBB_DATE_KEYS):
+            found.append(x)
+        for v in x.values():
+            _walk(v, found)
+    elif isinstance(x, list):
+        for v in x:
+            _walk(v, found)
+
+
+def read_stubb(today):
+    out, seen, pages = [], set(), 0
+    for url in STUBB_PAGES:
+        try:
+            page = fetch_page(url)
+        except Exception as e:
+            print("   Stubb %s: %s" % (url, str(e)[:100]))
+            continue
+        pages += 1
+        # 1) gögn sem fylgja síðunni (__NEXT_DATA__)
+        m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', page, re.S)
+        if m:
+            try:
+                found = []
+                _walk(json.loads(m.group(1)), found)
+                if found:
+                    print("   Stubb: %d hlutir í __NEXT_DATA__ (lyklar fyrsta: %s)" % (len(found), sorted(found[0].keys())[:20]))
+                for x in found:
+                    title = clean(next(x[k] for k in STUBB_NAME_KEYS if isinstance(x.get(k), str)))
+                    ds = next(x[k] for k in STUBB_DATE_KEYS if isinstance(x.get(k), str) and re.match(r"20\d\d-\d\d-\d\d", x[k]))
+                    ven = x.get("venue") or x.get("location") or x.get("venueName") or ""
+                    if isinstance(ven, dict):
+                        ven = ven.get("name") or ven.get("title") or ""
+                    ven = clean(str(ven))
+                    cat = " ".join(str(x.get(k) or "") for k in ("category", "categoryName", "type", "sport"))
+                    if SPORT_WORDS.search(cat + " " + title) or not _is_ak(ven, title):
+                        continue
+                    code = x.get("slug") or x.get("id") or x.get("code") or ""
+                    link = "https://stubb.is/events/%s" % code if code else "https://stubb.is/"
+                    key = (link, ds[:10])
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    out.append({"title": title[:140], "source": MIDASALA, "site": "Stubb", "link": link, "start": ds[:10],
+                                "end": ds[:10], "time": ds[11:16] if len(ds) >= 16 and ds[11:16] != "00:00" else "",
+                                "image": x.get("image") if isinstance(x.get("image"), str) else None, "note": "", "venue": ven})
+            except Exception as e:
+                print("   Stubb: __NEXT_DATA__ las ekki (%s)" % e)
+        # 2) spjöld með tengla á /events/<kóði> í HTML
+        for g in link_groups(page, re.compile(r"^/events/[A-Za-z0-9]+$")):
+            parts = [p.strip() for p in g["text"].split("|") if p.strip()]
+            if len(parts) < 3:
+                continue
+            dm = None
+            for i, p in enumerate(parts):
+                dm = STUBB_DATE.match(p)
+                if dm:
+                    parts = parts[i + 1:]
+                    break
+            if not dm:
+                continue
+            parts = [p for p in parts if not re.fullmatch(r"UPPSELT!?|FÁIR MIÐAR( EFTIR)?|Frá.*|\+\d+ dagsetning\w*", p, re.I)]
+            if len(parts) < 2:
+                continue
+            title, ven = parts[0], parts[-1]
+            if SPORT_WORDS.search(" ".join(parts)) or not _is_ak(ven, title):
+                continue
+            d = _on_or_after(int(dm.group(1)), MONTHS_IS[dm.group(2).lower()], today)
+            if not d:
+                continue
+            link = urljoin("https://stubb.is", g["href"])
+            key = (link, d.isoformat())
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append({"title": title[:140], "source": MIDASALA, "site": "Stubb", "link": link, "start": d.isoformat(),
+                        "end": d.isoformat(), "time": "", "image": None, "note": "", "venue": ven})
+    print("   Stubb: %d síður lesnar, %d viðburðir á Akureyri" % (pages, len(out)))
+    return out
+
+
+def read_midasala(today):
+    """Tix, Midix og Stubb saman. Ef ein síða bilar helst það sem hún átti fyrir í fyrri lista."""
+    old = _load("events.json", [])
+    res, seen = [], set()
+    for site, fn in (("Tix", read_tix), ("Midix", read_midix), ("Stubb", read_stubb)):
+        try:
+            found = fn(today)
+        except Exception as e:
+            print("X  Miðasala %s: tókst ekki (%s)" % (site, e))
+            found = []
+        if not found:
+            held = [e for e in old if e.get("source") == MIDASALA and e.get("site") == site]
+            if held:
+                print("   %s: ekkert nýtt fannst, held %d eldri viðburðum" % (site, len(held)))
+            found = held
+        for e in found:
+            key = (_mid_norm(e["title"]), e["start"])
+            if key in seen:
+                continue
+            seen.add(key)
+            res.append(e)
+    return res
+
+
 # (nafn, lesari á lista, lesari á síðu viðburðar, bið í sek. milli beiðna, mest margar síður í hverri keyrslu)
 EVENT_SOURCES = [
     ("MAK / Hof", read_mak, mak_detail, 5, 15),  # MAK biður um 5 sek. bil (Crawl-delay)
     ("Græni hatturinn", read_graeni, graeni_detail, 1, 25),
+    (MIDASALA, read_midasala, None, 0, 0),  # Tix, Midix og Stubb
 ]
 
 
@@ -1530,7 +1785,8 @@ def collect_events():
     today = datetime.now(timezone.utc).date()
     old = _load("events.json", [])
     imgs = _load("events_img.json", {})
-    det = _load("events_detail.json", {})
+    det = _DET
+    det.update(_load("events_detail.json", {}))
     result = []
     for name, reader, detail, wait, cap in EVENT_SOURCES:
         try:
@@ -1548,7 +1804,7 @@ def collect_events():
             d = det.get(e["link"], {})
             return d.get("ts", 0) if d.get("v") == DETAIL_VER else 0
 
-        todo = [e for e in found if now - _age(e) > DETAIL_TTL]
+        todo = [] if detail is None else [e for e in found if now - _age(e) > DETAIL_TTL]
         todo.sort(key=lambda e: (_age(e), e["start"]))
         fetched = 0
         for e in todo[:cap]:
