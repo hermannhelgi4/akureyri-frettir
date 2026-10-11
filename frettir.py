@@ -843,7 +843,7 @@ def read_hsi(today):
                         "date": dt[:10], "time": tm, "home": home, "away": away,
                         "rh": (g.get("ResultHomeTeam") or "").strip(), "ra": (g.get("ResultAwayTeam") or "").strip(),
                         "venue": (g.get("StadiumName") or "").strip(),
-                        "link": "https://www.hsi.is/tournament/%d" % tid})
+                        "link": ("https://www.hsi.is/match/%s" % g["GameId"]) if g.get("GameId") else "https://www.hsi.is/tournament/%d" % tid})
         nm = data[0].get("TournamentName") if data else "?"
         print("   HSÍ %s: %d leikir alls, %d hjá Akureyrarliðum, stöður %s" % (nm, len(data), n, sorted(statuses)))
     return out
@@ -983,7 +983,12 @@ def kki_parse(raw):
         if not d or len(teams) < 2 or not texts:
             continue
         sc = re.search(r"(\d+)<span></span>:<span></span>(\d+)", row)
-        out.append({"date": "%s-%s-%s" % (d.group(3), d.group(2), d.group(1)),
+        gid, sid, lid = (re.search(k + r'="(\d+)"', row) for k in ("game_id", "season_id", "league_id"))
+        link = ""
+        if gid and sid:  # beinn tengill á leikinn sjálfan (tölfræði leiks) á kki.is
+            link = "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=%s&season_id=%s&game_id=%s" % (
+                lid.group(1) if lid else "", sid.group(1), gid.group(1))
+        out.append({"link": link, "date": "%s-%s-%s" % (d.group(3), d.group(2), d.group(1)),
                     "time": "%s:%s" % (d.group(4), d.group(5)) if d.group(4) + d.group(5) != "0000" else "",
                     "league": texts[0], "venue": texts[1] if len(texts) > 1 else "",
                     "home": teams[0], "away": teams[1],
@@ -1023,7 +1028,7 @@ def read_kki(today):
             low = r["league"].lower()
             out.append({"sport": "Körfubolti", "gender": "Konur" if ("kvenna" in low or "konur" in low) else "Karlar",
                         "comp": r["league"], "date": r["date"], "time": r["time"], "home": r["home"], "away": r["away"],
-                        "rh": r["rh"], "ra": r["ra"], "venue": r["venue"], "link": KKI_LINK})
+                        "rh": r["rh"], "ra": r["ra"], "venue": r["venue"], "link": r.get("link") or KKI_LINK})
         time.sleep(0.3)
     return out
 
