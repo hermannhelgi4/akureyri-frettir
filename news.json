@@ -1,5 +1,32 @@
 [
   {
+    "title": "Níu Akureyringar heiðraðir á Skíðaþingi",
+    "link": "https://www.akureyri.net/is/moya/news/niu-akureyringar-heidradir-a-skidathingi",
+    "summary": "Nokkrir af máttarstólpum skíðaíþróttarinnar á Akureyri voru heiðraðir á 77. Skíðaþingi Skíðasambands Íslands um liðna helgi fyrir ómetanlegt starf og mikilvægt framlag til íþróttarinnar. Þau sem voru heiðruð voru: Arna Ívarsdóttir, Erlingur Gu...",
+    "date": "2026-10-12T17:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/vidurkenningar-til-ska-arsthing-ski.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar"
+  },
+  {
+    "title": "Fram undan: Fjölbreytt úrval íþróttakappleikja",
+    "link": "https://www.akureyri.net/is/moya/news/fram-undan-fjolbreytt-urval-ithrottakappleikja",
+    "summary": "Framboðið að íþróttakappleikjum næstu daga er mikið, sjö heimaleikir og fimm útileikir hjá Akureyrarliðum. Evrópuleikur í fótbolta, deildar- og bikarleikir í handtolba, botnbaráttuleikir í fótbolta, fyrstu heimaleikir KA-kvenna í blaki, heimaleikir í...",
+    "date": "2026-10-12T17:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/ithrottavikan-12.10..jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar"
+  },
+  {
+    "title": "Djúp lægð stefnir á landið á miðvikudag",
+    "link": "https://www.vikubladid.is/is/moya/news/djup-laegd-stefnir-a-landid-a-midvikudag-1",
+    "summary": "Óli Þór Árnason veðurfræðingur á Veðurstofu Íslands segir mjög djúpa lægð vera á leið til landsins. Gera spár ráð fyrir að loftþrýstingur í lægðinni verði kominn niður í 937 millibör þegar hún nálgast landið á miðvikudagsmorgun. Útlit er fyrir að lægðin gangi á land skammt austan Mýrdalsjökuls og ha",
+    "date": "2026-10-12T16:32:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/vindakort.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar"
+  },
+  {
     "title": "Ný vinátta og mikil sviðsvinna að baki Mean Girls",
     "link": "https://www.vikubladid.is/is/moya/news/ny-vinatta-og-mikil-svidsvinna-ad-baki-mean-girls",
     "summary": "Það er í mörg horn að líta þegar stór sýning er sett á svið samhliða skólagöngu. Hjá leikfélaginu Píramus & Þispu hefur undirbúningur að uppsetningu Mean Girls þó líka orðið tilefni til nýrra kynna og vináttu. Hrefna Ósk Davíðsdóttir, sem fer með hlutverk Reginu George, segir hópinn hafa þést jafnt ",
@@ -855,15 +882,6 @@
     "category": "Fréttamiðlar"
   },
   {
-    "title": "Hús dagsins: Norðurgata 26",
-    "link": "https://www.akureyri.net/is/moya/news/hus-dagsins-nordurgata-26",
-    "summary": "Arnór Bliki Hallmundsson",
-    "date": "2026-10-09T10:45:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/1791453033_1788470322_arnor-bliki-haus.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
-  },
-  {
     "title": "Tvær þjóðir í sama landi?",
     "link": "https://www.vikubladid.is/is/moya/news/tvaer-thjodir-i-sama-landi",
     "summary": "Nýafstaðin þjóðaratkvæðagreiðsla staðfesti nokkuð mun stærra en hver afstaða þjóðarinnar sé til ESB. Hún afhjúpaði efnahagslega og samfélagslega gjá sem hefur smám saman myndast milli höfuðborgarinnar og annarra landshluta. Niðurstaða kosninganna eftir kjördæmum leiddi þetta bersýnilega í ljós.",
@@ -916,15 +934,6 @@
     "image": "https://www.vma.is/static/news/sm/836221671_1672089607803210_4138726047253338545_n.jpg",
     "source": "VMA",
     "category": "Menntun"
-  },
-  {
-    "title": "Gamla myndin: veistu hvar þetta er?",
-    "link": "https://www.akureyri.net/is/moya/news/gamla-myndin-veistu-hvar-thetta-er-277",
-    "summary": "Vikulega birtist gömul ljósmynd á akureyri.net í samstarfi við Minjasafnið á Akureyri. Þetta er 309. gamla myndin frá safninu sem birtist hér, ekki er ofsagt að þær njóti gríðarlegra vinsælda á meðal lesenda víða um land; nýjustu tölur frá Minjasafni...",
-    "date": "2026-10-09T06:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/gamla-m-stae1-17924.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
   },
   {
     "title": "Þrenn silfurverðlaun hjá KA á Haustmóti JSÍ",
@@ -1483,15 +1492,6 @@
     "image": "https://www.thorsport.is/static/news/sm/sigurlaug-eva-pjo_3142.jpg?v=1",
     "source": "Þór",
     "category": "Íþróttir"
-  },
-  {
-    "title": "Gjaldskrá, vistunartími og gjaldfrjálsir tímar til skoðunar",
-    "link": "https://www.vikubladid.is/is/moya/news/gjaldskra-vistunartimi-og-gjaldfrjalsir-timar-til-skodunar",
-    "summary": "Heildarendurskoðun fram undan í leikskólaþjónustu Norðurþings",
-    "date": "2026-10-05T21:00:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/graenuvellir-samsett.png",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar"
   },
   {
     "title": "Pollamót Þórs og Skógarbaðanna – Langstærsta mótið frá upphafi",
