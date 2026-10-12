@@ -179,7 +179,7 @@ HTML = """<!DOCTYPE html><html lang="is"><head><meta charset="utf-8"><meta name=
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,sans-serif}
 header,main,.chips{max-width:720px;margin:0 auto;padding:0 16px}header{padding-top:20px}h1{margin:0;font-size:24px}.sub{color:var(--mu);font-size:14px}
 .chips{display:flex;gap:8px;overflow-x:auto;padding:12px 16px}.chip{border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:7px 14px;border-radius:999px;font-size:14px;white-space:nowrap;cursor:pointer}.chip.on{background:var(--ac);color:#fff;border-color:var(--ac)}
-.wx{max-width:720px;margin:0 auto;padding:10px 16px 0}.wxh{font-size:13px;color:var(--mu);font-weight:600;margin:0 0 6px}.wxg{display:grid;grid-template-columns:1.15fr 1fr 1fr 1fr;gap:6px}.wxc{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:8px 4px;text-align:center;font-size:12px;line-height:1.35;min-width:0}.wxc.now{border-color:var(--ac)}.wxd{color:var(--mu);font-size:11px}.wxd b{display:block;color:var(--tx);font-size:12px}.wxi{font-size:26px;margin:2px 0}.wxt{font-size:15px;font-weight:700}.wxt.big{font-size:24px}.hot{color:#d93025}.cold{color:#1a73e8}.wxw,.wxr{color:var(--mu);font-size:11px}.wxa{display:inline-block;color:var(--ac)}.wxs{color:var(--mu);font-size:11px;margin-top:4px}@media(min-width:900px){.wx{max-width:1040px}}
+.hd{display:flex;justify-content:space-between;align-items:flex-start;gap:8px 12px;flex-wrap:wrap}.wx{display:flex;gap:4px;margin-left:auto}.wxc{display:block;text-decoration:none;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:3px 5px;text-align:center;font-size:11px;line-height:1.25;min-width:50px}.wxc.now{border-color:var(--ac)}.wxd{color:var(--mu);font-size:10px;font-weight:600}.wxt{font-size:13px;font-weight:700;white-space:nowrap}.hot{color:#d93025}.cold{color:#1a73e8}.wxw{color:var(--mu);font-size:10px;white-space:nowrap}.wxa{display:inline-block;color:var(--ac)}
 [hidden]{display:none!important}body{padding-bottom:64px}main{display:grid;gap:10px;padding-bottom:40px}.tabbar{position:fixed;bottom:0;left:0;right:0;z-index:5;display:flex;background:var(--card);border-top:1px solid var(--bd);padding-bottom:env(safe-area-inset-bottom,0px)}.tabbar button{flex:1;padding:13px 8px;border:0;background:none;color:var(--mu);font-size:14px;cursor:pointer}.tabbar button.on{color:var(--ac);font-weight:700;box-shadow:inset 0 2px 0 var(--ac)}.evwrap{max-width:720px;margin:0 auto;padding:0 16px 40px}#evlist{display:grid;gap:10px}.evh{margin:14px 0 0;font-size:14px;color:var(--mu);font-weight:600}.tags{margin-top:6px;display:flex;gap:6px;flex-wrap:wrap}.tag.free{border-color:var(--ac);color:var(--ac);font-weight:600}.tag{font-size:11px;padding:2px 8px;border-radius:6px;border:1px solid var(--bd);color:var(--mu)}.wrap{max-width:720px;margin:0 auto}.wrap main{max-width:none;margin:0;padding:0 16px 40px}aside{display:none}.strip{max-width:720px;margin:0 auto;padding:0 16px 6px}.strip h3{margin:0 0 6px;font-size:13px;color:var(--mu);font-weight:600}.strip .row{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}.strip a{flex:0 0 140px;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:8px 10px;text-decoration:none;color:inherit;font-size:12px;line-height:1.3}.strip b{color:var(--ac);margin-right:4px}.strip small{display:block;color:var(--mu);font-size:11px;margin-top:4px}.strip .t{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .top{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:12px 14px;position:sticky;top:12px}.top h3{margin:0 0 8px;font-size:15px}.top ol{margin:0;padding:0;list-style:none;counter-reset:n}.top li{counter-increment:n;border-top:1px solid var(--bd)}.top li:first-child{border-top:0}.top a{display:flex;gap:8px;padding:8px 0;text-decoration:none;color:inherit;font-size:13px;line-height:1.3}.top a:before{content:counter(n);color:var(--ac);font-weight:700;min-width:14px}.top a:hover{color:var(--ac)}.top small{display:block;color:var(--mu);font-size:11px;margin-top:2px}.top .none{color:var(--mu);font-size:12px;margin:0 0 6px}
 @media(min-width:900px){body{padding-bottom:0}.evwrap{max-width:1040px}#evlist{max-width:720px}.tabbar{position:static;max-width:1040px;margin:8px auto 0;padding:0 16px;background:none;border:0}.tabbar button{flex:none;padding:10px 18px;border-bottom:2px solid transparent;box-shadow:none}.tabbar button.on{border-bottom-color:var(--ac);box-shadow:none}header,.chips,.wrap{max-width:1040px}.wrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px;padding:0 16px}.wrap main{padding:0 0 40px}aside{display:block}.chip.mest{display:none}.strip{display:none}}
@@ -236,17 +236,18 @@ h2{font-size:16px;margin:0 0 4px;line-height:1.3}p{margin:0;font-size:13px;color
 .fpill{display:inline-block;white-space:nowrap;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--bd);color:var(--mu)}
 .fpill.w{background:#fde7c4;color:#7a4a00}
 .fbtn{display:inline-block;padding:9px 16px;border-radius:10px;background:var(--ac);color:#fff;text-decoration:none;font-weight:700;font-size:14px;white-space:nowrap}
-</style></head><body><header><h1>Akureyri í fréttum</h1><div class="sub" id="upd"></div></header><nav class="tabbar"><button data-v="news" class="on" onclick="setView('news')">Fréttir</button><button data-v="ev" onclick="setView('ev')">Viðburðir</button><button data-v="sp" onclick="setView('sp')">Íþróttir</button><button data-v="fl" onclick="setView('fl')">Flug</button><button data-v="of" onclick="setView('of')">Tilboð</button></nav><div id="viewNews"><div class="wx" id="wx"></div><div class="chips" id="chips"></div><div class="strip" id="strip"></div><div class="wrap"><main id="list"></main><aside><div class="top" id="top"></div></aside></div></div><div id="viewEv" hidden><div class="chips" id="evchips"></div><div class="evwrap"><div id="evlist"></div></div></div><div id="viewSp" hidden><div class="chips" id="spchips"></div><div class="chips" id="spchips2"></div><div class="spwrap"><div id="splist"></div></div></div><div id="viewFl" hidden><div class="chips" id="flchips"></div><div class="flwrap"><div id="fllist"></div></div></div><div id="viewOf" hidden><div class="chips" id="ofchips"></div><div class="ofwrap"><div id="oflist"></div></div></div>
+</style></head><body><header class="hd"><div><h1>Akureyri í fréttum</h1><div class="sub" id="upd"></div></div><div class="wx" id="wx"></div></header><nav class="tabbar"><button data-v="news" class="on" onclick="setView('news')">Fréttir</button><button data-v="ev" onclick="setView('ev')">Viðburðir</button><button data-v="sp" onclick="setView('sp')">Íþróttir</button><button data-v="fl" onclick="setView('fl')">Flug</button><button data-v="of" onclick="setView('of')">Tilboð</button></nav><div id="viewNews"><div class="chips" id="chips"></div><div class="strip" id="strip"></div><div class="wrap"><main id="list"></main><aside><div class="top" id="top"></div></aside></div></div><div id="viewEv" hidden><div class="chips" id="evchips"></div><div class="evwrap"><div id="evlist"></div></div></div><div id="viewSp" hidden><div class="chips" id="spchips"></div><div class="chips" id="spchips2"></div><div class="spwrap"><div id="splist"></div></div></div><div id="viewFl" hidden><div class="chips" id="flchips"></div><div class="flwrap"><div id="fllist"></div></div></div><div id="viewOf" hidden><div class="chips" id="ofchips"></div><div class="ofwrap"><div id="oflist"></div></div></div>
 <script>
 const WEATHER=__WEATHER__;
-function wxIcon(t){t=(t||"").toLowerCase();const h=s=>t.indexOf(s)>=0;if(h("þrum"))return"⛈️";if(h("slydd"))return"🌨️";if(h("snjó")||h("él"))return"❄️";if(h("skúr")||h("rign"))return"🌧️";if(h("súld"))return"🌦️";if(h("þok"))return"🌫️";if(h("heiðskír"))return"☀️";if(h("léttskýj"))return"🌤️";if(h("hálfskýj")||h("skýjað með"))return"⛅";if(h("skýj"))return"☁️";return"🌡️"}
+function wxIcon(t,night){t=(t||"").toLowerCase();const h=s=>t.indexOf(s)>=0;if(h("þrum"))return"⛈️";if(h("slydd"))return"🌨️";if(h("snjó")||h("él"))return"❄️";if(h("skúr")||h("rign"))return"🌧️";if(h("súld"))return"🌦️";if(h("þok"))return"🌫️";if(h("heiðskír"))return night?"🌙":"☀️";if(h("léttskýj"))return night?"🌙":"🌤️";if(h("hálfskýj")||h("skýjað með"))return night?"☁️":"⛅";if(h("skýj"))return"☁️";return night?"🌙":"🌡️"}
 const WXD={N:0,NNA:22,NA:45,ANA:67,A:90,ASA:112,SA:135,SSA:157,S:180,SSV:202,SV:225,VSV:247,V:270,VNV:292,NV:315,NNV:337};
-function wxWind(f,d){if(f===null||f===undefined)return"";const g=WXD[(d||"").toUpperCase()];const a=g===undefined?"":'<span class="wxa" style="transform:rotate('+(g+180)+'deg)">↑</span> ';return a+Math.round(f)+" m/s"}
+function wxWind(f,d){if(f===null||f===undefined)return"";const g=WXD[(d||"").toUpperCase()];const a=g===undefined?"":'<span class="wxa" style="transform:rotate('+(g+180)+'deg)">↑</span>';return a+Math.round(f)+" m/s"}
 function wxT(v){return'<span class="'+(v>=0?"hot":"cold")+'">'+Math.round(v)+"°</span>"}
+function wxLink(d){return"https://www.vedur.is/vedur/spar/stadaspar/nordurland_eystra/#group=15&station=3471"}
 function renderWx(){const b=document.getElementById("wx");if(!WEATHER||!WEATHER.now){b.hidden=true;return}const n=WEATHER.now,DN=["Sun","Mán","Þri","Mið","Fim","Fös","Lau"];
-let h='<div class="wxh">Veðrið á Akureyri</div><div class="wxg"><div class="wxc now"><div class="wxd"><b>Núna</b></div><div class="wxi">'+wxIcon(n.W)+'</div><div class="wxt big">'+(n.T===null?"–":wxT(n.T))+'</div><div class="wxw">'+wxWind(n.F,n.D)+'</div><div class="wxs">'+(n.W||"")+'</div></div>';
-WEATHER.days.forEach(d=>{const dt=new Date(d.date+"T12:00:00Z"),dd=dt.getUTCDate()+"."+(dt.getUTCMonth()+1);h+='<div class="wxc"><div class="wxd"><b>'+DN[dt.getUTCDay()]+"</b>"+dd+'</div><div class="wxi">'+wxIcon(d.W)+'</div><div class="wxt">'+wxT(d.tmax)+' <span class="wxw">/</span> '+wxT(d.tmin)+'</div><div class="wxw">'+wxWind(d.F,d.D)+'</div><div class="wxr">'+(d.R===null?"":d.R+" mm")+"</div></div>"});
-b.innerHTML=h+'</div>'}
+let h='<a class="wxc now" target="_blank" rel="noopener" href="'+wxLink("")+'" title="Veðrið núna á Akureyri (uppfært '+WEATHER.upd+')"><div class="wxd">Núna</div><div class="wxt">'+wxIcon(n.W,n.night)+" "+(n.T===null?"–":wxT(n.T))+'</div><div class="wxw">'+wxWind(n.F,n.D)+"</div></a>";
+WEATHER.days.forEach(d=>{const dt=new Date(d.date+"T12:00:00Z");h+='<a class="wxc" target="_blank" rel="noopener" href="'+wxLink(d.date)+'" title="Spá kl. 12:00"><div class="wxd">'+DN[dt.getUTCDay()]+" "+dt.getUTCDate()+"."+(dt.getUTCMonth()+1)+'</div><div class="wxt">'+wxIcon(d.W,false)+" "+wxT(d.T)+'</div><div class="wxw">'+wxWind(d.F,d.D)+"</div></a>"});
+b.innerHTML=h}
 const NEWS=__DATA__;const EVENTS=__EVENTS__;const OFFERS=__OFFERS__;const STAND=__STAND__;const FLIGHTS=__FLIGHTS__;let flCat="Allt";let ofCat="Allt",ofTimer=null;let spSport="",spGen="",spMode="fix";let evSrc="Allt",evSport="",evGen="",evRes=false;const API="__API__";let TOP=[];let cur="Allt";const CM={"Fréttamiðlar":"Fréttir","Nærsveitir":"Nærsveitir","Íþróttir":"Íþróttir"};NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar";n.cats=n.cats||[CM[n.category]||"Bærinn"]});const ORDER=["Fréttir","Bærinn","Nærsveitir","Íþróttir"];
 function ago(d){if(!d)return"";const m=(Date.now()-new Date(d))/6e4;if(m<60)return"fyrir "+Math.max(1,Math.round(m))+" mín.";if(m<1440)return"fyrir "+Math.round(m/60)+" klst.";return"fyrir "+Math.round(m/1440)+" d."}
 function track(n){if(!API)return;try{const k="c:"+n.link;if(!localStorage.getItem(k)){localStorage.setItem(k,"1");fetch(API+"/click",{method:"POST",body:n.link,keepalive:true})}}catch(e){}}
@@ -405,18 +406,29 @@ def read_weather():
             days.setdefault(x["t"][:10], []).append(x)
     out = []
     for d in sorted(days)[:3]:
-        ps = days[d]
-        temps = [x["T"] for x in ps if x["T"] is not None]
-        if not temps:
+        mid = min(days[d], key=lambda x: abs(int(x["t"][11:13]) - 12))  # spáin kl. 12:00
+        if mid["T"] is None:
             continue
-        mid = min(ps, key=lambda x: abs(int(x["t"][11:13]) - 13))
-        winds = [x["F"] for x in ps if x["F"] is not None]
-        rain = [x["R"] for x in ps if x["R"] is not None]
-        out.append({"date": d, "tmax": max(temps), "tmin": min(temps), "F": max(winds) if winds else None,
-                    "D": mid["D"], "W": mid["W"], "R": round(sum(rain), 1) if rain else None})
+        out.append({"date": d, "T": mid["T"], "F": mid["F"], "D": mid["D"], "W": mid["W"]})
     if not out:
         raise ValueError("engin dagagögn")
-    return {"upd": now_utc.strftime("%d.%m %H:%M"), "now": {"T": cur["T"], "F": cur["F"], "D": cur["D"], "W": cur["W"]}, "days": out}
+    return {"upd": now_utc.strftime("%d.%m %H:%M"), "now": {"T": cur["T"], "F": cur["F"], "D": cur["D"], "W": cur["W"], "night": _wx_night(now_utc)}, "days": out}
+
+
+def _wx_night(t):
+    """Nálgun á hvort er nótt á Akureyri (sólarris/sólsetur reiknað úr degi ársins)."""
+    import math
+    n = t.timetuple().tm_yday
+    decl = math.radians(23.44) * math.sin(2 * math.pi * (284 + n) / 365)
+    c = -math.tan(math.radians(65.68)) * math.tan(decl)
+    if c >= 1:
+        return True
+    if c <= -1:
+        return False
+    half = math.degrees(math.acos(c)) / 15.0
+    noon = 12 + 18.1 / 15.0
+    h = t.hour + t.minute / 60.0
+    return abs(h - noon) > half
 
 
 def load_weather():
