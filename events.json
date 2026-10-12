@@ -2124,18 +2124,6 @@
     "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
   },
   {
-    "title": "ÍA – Þór Ak.",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Karlar",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=191&season_id=132571&game_id=6154038",
-    "start": "2027-02-25",
-    "end": "2027-02-25",
-    "time": "19:15",
-    "image": null,
-    "note": "Útileikur · 1. deild karla · AvAir höllin"
-  },
-  {
     "title": "KA – FH",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -2146,6 +2134,18 @@
     "time": "19:15",
     "image": null,
     "note": "Heimaleikur · Olís deild karla · KA heimilið"
+  },
+  {
+    "title": "ÍA – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=191&season_id=132571&game_id=6154038",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "time": "19:15",
+    "image": null,
+    "note": "Útileikur · 1. deild karla · AvAir höllin"
   },
   {
     "title": "SR – SA",
