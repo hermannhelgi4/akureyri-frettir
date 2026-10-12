@@ -237,16 +237,16 @@ h2{font-size:16px;margin:0 0 4px;line-height:1.3}p{margin:0;font-size:13px;color
 .fbtn{display:inline-block;padding:9px 16px;border-radius:10px;background:var(--ac);color:#fff;text-decoration:none;font-weight:700;font-size:14px;white-space:nowrap}
 </style></head><body><header><h1>Akureyri í fréttum</h1><div class="sub" id="upd"></div></header><nav class="tabbar"><button data-v="news" class="on" onclick="setView('news')">Fréttir</button><button data-v="ev" onclick="setView('ev')">Viðburðir</button><button data-v="sp" onclick="setView('sp')">Íþróttir</button><button data-v="fl" onclick="setView('fl')">Flug</button><button data-v="of" onclick="setView('of')">Tilboð</button></nav><div id="viewNews"><div class="chips" id="chips"></div><div class="strip" id="strip"></div><div class="wrap"><main id="list"></main><aside><div class="top" id="top"></div></aside></div></div><div id="viewEv" hidden><div class="chips" id="evchips"></div><div class="evwrap"><div id="evlist"></div></div></div><div id="viewSp" hidden><div class="chips" id="spchips"></div><div class="chips" id="spchips2"></div><div class="spwrap"><div id="splist"></div></div></div><div id="viewFl" hidden><div class="chips" id="flchips"></div><div class="flwrap"><div id="fllist"></div></div></div><div id="viewOf" hidden><div class="chips" id="ofchips"></div><div class="ofwrap"><div id="oflist"></div></div></div>
 <script>
-const NEWS=__DATA__;const EVENTS=__EVENTS__;const OFFERS=__OFFERS__;const STAND=__STAND__;const FLIGHTS=__FLIGHTS__;let flCat="Allt";let ofCat="Allt",ofTimer=null;let spSport="",spGen="",spMode="fix";let evSrc="Allt",evSport="",evGen="",evRes=false;const API="__API__";let TOP=[];let cur="Allt";NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar"});const ORDER=["Fréttamiðlar","Nærsveitir","Bærinn","Menntun","Menning","Íþróttir","Fyrirtæki & félög"];
+const NEWS=__DATA__;const EVENTS=__EVENTS__;const OFFERS=__OFFERS__;const STAND=__STAND__;const FLIGHTS=__FLIGHTS__;let flCat="Allt";let ofCat="Allt",ofTimer=null;let spSport="",spGen="",spMode="fix";let evSrc="Allt",evSport="",evGen="",evRes=false;const API="__API__";let TOP=[];let cur="Allt";const CM={"Fréttamiðlar":"Fréttir","Nærsveitir":"Nærsveitir","Íþróttir":"Íþróttir"};NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar";n.cats=n.cats||[CM[n.category]||"Bærinn"]});const ORDER=["Fréttir","Bærinn","Nærsveitir","Íþróttir"];
 function ago(d){if(!d)return"";const m=(Date.now()-new Date(d))/6e4;if(m<60)return"fyrir "+Math.max(1,Math.round(m))+" mín.";if(m<1440)return"fyrir "+Math.round(m/60)+" klst.";return"fyrir "+Math.round(m/1440)+" d."}
 function track(n){if(!API)return;try{const k="c:"+n.link;if(!localStorage.getItem(k)){localStorage.setItem(k,"1");fetch(API+"/click",{method:"POST",body:n.link,keepalive:true})}}catch(e){}}
 function strip(){const t=document.getElementById("strip");t.innerHTML="";if(cur==="Mest lesið")return;let L=TOP.map(k=>NEWS.find(n=>n.link===k)).filter(Boolean).slice(0,5);const real=L.length>0;if(!real)L=NEWS.slice(0,5);t.appendChild(el("h3","",real?"Mest lesið":"Mest lesið (nýjustu í bili)"));const r=el("div","row");L.forEach((n,i)=>{const a=el("a","");a.href=n.link;a.target="_blank";a.rel="noopener";a.onclick=()=>track(n);const x=el("div","t");x.appendChild(el("b","",String(i+1)));x.appendChild(document.createTextNode(n.title));a.appendChild(x);a.appendChild(el("small","",n.source));r.appendChild(a)});t.appendChild(r)}
 function side(){const t=document.getElementById("top");t.innerHTML="";t.appendChild(el("h3","","Mest lesið"));let L=TOP.map(k=>NEWS.find(n=>n.link===k)).filter(Boolean).slice(0,5);if(!L.length){L=NEWS.slice(0,5);t.appendChild(el("div","none","Enn fáir smellir – nýjustu fréttir í bili."))}const o=document.createElement("ol");L.forEach(n=>{const li=document.createElement("li");const a=el("a","");a.href=n.link;a.target="_blank";a.rel="noopener";a.onclick=()=>track(n);const d=document.createElement("div");d.appendChild(document.createTextNode(n.title));d.appendChild(el("small","",n.source));a.appendChild(d);li.appendChild(a);o.appendChild(li)});t.appendChild(o)}
 function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e}
-function render(){const names=["Allt","Mest lesið",...ORDER.filter(c=>NEWS.some(n=>n.category===c))];const ch=document.getElementById("chips");ch.innerHTML="";
+function render(){const names=["Allt","Mest lesið",...ORDER.filter(c=>NEWS.some(n=>n.cats.includes(c)))];const ch=document.getElementById("chips");ch.innerHTML="";
 strip();names.forEach(n=>{const b=el("button","chip"+(n===cur?" on":"")+(n==="Mest lesið"?" mest":""),n);b.onclick=()=>{cur=n;render()};ch.appendChild(b)});
 const l=document.getElementById("list");l.innerHTML="";
-let LIST=NEWS.filter(n=>cur==="Allt"||n.category===cur);if(cur==="Mest lesið"){LIST=TOP.map(k=>NEWS.find(n=>n.link===k)).filter(Boolean);if(!LIST.length){LIST=NEWS.slice(0,10);l.appendChild(el("div","sub","Enn er ekki nóg af smellum – hér eru nýjustu fréttir á meðan."))}}
+let LIST=NEWS.filter(n=>cur==="Allt"||n.cats.includes(cur));if(cur==="Mest lesið"){LIST=TOP.map(k=>NEWS.find(n=>n.link===k)).filter(Boolean);if(!LIST.length){LIST=NEWS.slice(0,10);l.appendChild(el("div","sub","Enn er ekki nóg af smellum – hér eru nýjustu fréttir á meðan."))}}
 LIST.forEach(n=>{const a=el("a","item");a.href=n.link;a.target="_blank";a.rel="noopener";a.onclick=()=>track(n);
 const im=el("div","img");if(n.image){const i=document.createElement("img");i.src=n.image;i.loading="lazy";i.referrerPolicy="no-referrer";i.onerror=()=>{i.remove();im.textContent=n.source};im.appendChild(i)}else im.textContent=n.source;
 const b=el("div","body");const m=el("div","meta");m.appendChild(el("span","src",n.source));m.appendChild(document.createTextNode(" · "+ago(n.date)));
@@ -278,11 +278,11 @@ const ck=el("div","oclock");b.appendChild(ck);const tick=()=>{const n=new Date()
 c.append(a,b);m.appendChild(c);document.body.appendChild(m);document.body.style.overflow="hidden"}
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeCard()});
 function renderEv(){const n0=new Date(),t=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("evlist"),ch=document.getElementById("evchips");
-const all=EVENTS.filter(e=>e.source!=="Íþróttir"&&(e.res||pd(e.end)>=t));const srcs=["Allt",...new Set(all.map(e=>e.source))];ch.innerHTML="";
+const KO=["Tónlist","Leiklist","Uppistand","Fjölskylda","Fræðsla","Íþróttir","Annað"];const all=EVENTS.filter(e=>e.source!=="Íþróttir"&&(e.res||pd(e.end)>=t));const srcs=["Allt",...KO.filter(k=>all.some(e=>(e.kind||"Annað")===k))];ch.innerHTML="";
 srcs.forEach(s=>{const b=el("button","chip"+(s===evSrc?" on":""),s);b.onclick=()=>{evSrc=s;renderEv()};ch.appendChild(b)});
 const resMode=false;
 box.innerHTML="";const cmp=(a,b)=>a.start<b.start?-1:a.start>b.start?1:((a.time||"")<(b.time||"")?-1:1);
-const L=all.filter(e=>(evSrc==="Allt"||e.source===evSrc)&&(evSrc!=="Íþróttir"||((!evSport||e.sport===evSport)&&(!evGen||e.gender===evGen)))&&(resMode?!!e.res:!(e.res&&pd(e.start)<t))).sort(resMode?(a,b)=>cmp(b,a):cmp);
+const L=all.filter(e=>(evSrc==="Allt"||(e.kind||"Annað")===evSrc)&&(resMode?!!e.res:!(e.res&&pd(e.start)<t))).sort(resMode?(a,b)=>cmp(b,a):cmp);
 if(!L.length){box.appendChild(el("div","sub",resMode?"Engin úrslit síðustu daga.":"Engir viðburðir fundust."));return}
 let last="";L.forEach(e=>{const s=pd(e.start),ongoing=s<t&&!e.res,key=ongoing?"gangi":e.start;
 if(key!==last){last=key;let h="Í gangi";if(!ongoing){const diff=Math.round((s-t)/864e5);h=(diff===0?"Í dag · ":diff===1?"Á morgun · ":diff===-1?"Í gær · ":"")+DAYS[s.getDay()]+". "+fd(s)+(s.getFullYear()!==t.getFullYear()?" "+s.getFullYear():"")}box.appendChild(el("h3","evh",h))}
@@ -883,7 +883,7 @@ def tix_events(eid, slug, data):
             img = g.get("EventImagePath") if g.get("HasEventImage") else (g.get("PosterImagePath") if g.get("HasPosterImage") else None)
             ev.append({"title": name[:140], "source": MIDASALA, "site": "Tix", "link": link, "start": sd[:10], "end": sd[:10],
                        "time": sd[11:16] if len(sd) >= 16 and sd[11:16] != "00:00" else "", "image": img,
-                       "note": " · ".join(notes), "venue": venue})
+                       "note": " · ".join(notes), "venue": venue, "cat0": x.get("Categories") or ""})
     return ev
 
 
@@ -1933,6 +1933,8 @@ def collect_events():
     except Exception as e:
         print("X  Íþróttir: óvænt villa (%s)" % e)
         result += [x for x in old if x.get("sport")]
+    for e in result:
+        e["kind"] = event_kind(e)
     result.sort(key=lambda e: (e["start"], e.get("time") or ""))
     with open("events.json", "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
@@ -2195,6 +2197,56 @@ def pmap(fn, items, workers=6):
         return list(ex.map(fn, items))
 
 
+# --- Flokkar: fréttir geta verið í fleiri en einum flokki; viðburðir fá eina tegund ---
+NEWS_CAT_MAP = {"Fréttamiðlar": ["Fréttir"], "Nærsveitir": ["Nærsveitir"], "Íþróttir": ["Íþróttir"]}  # annað fer í Bæinn
+SPORT_NEWS = re.compile(
+    r"handbolt|fótbolt|knattspyrn|körfubolt|körfuknattleik|blak\b|blaki|íshokkí|skautahlaup|íþrótt|skíðagang|skíðamót|golfmót|"
+    r"íslandsmeist|bikarmeist|bikarkeppni|landsliðs|landsliðið|úrvalsdeild|olís|bónus deild|lengjudeild|besta deild|mjólkurbikar|"
+    r"powerade|sundmót|sundmeist|götuhlaup|maraþon|akureyrarhlaup|crossfit|karate|júdó|þjálfari|þjálfarinn|íþróttafélag|"
+    r"íþróttamaður|íþróttakona|deildarmeist|úrslitakeppni|marki\b|mörk\b|markmann", re.I)
+
+
+def news_cats(item):
+    base = NEWS_CAT_MAP.get(item.get("category"), ["Bærinn"])[:]
+    if base == ["Fréttir"]:
+        text = (item.get("title") or "") + " " + (item.get("summary") or "")
+        if SPORT_NEWS.search(text) or team_mentions(text) > 0:
+            base.append("Íþróttir")
+    return base
+
+
+KIND_RULES = [
+    ("Uppistand", re.compile(r"uppistand|stand-?up|grínist|grínsýning|comedy|ari eldjárn|spaug", re.I)),
+    ("Fjölskylda", re.compile(r"barna|fjölskyld|krakka|ævintýr|brúðu|jólasvein|skoppa|karíus|kardemomm|lína langsokk|skilaboðaskjóð|sirkus", re.I)),
+    ("Fræðsla", re.compile(r"námskeið|fyrirlestur|ráðstefn|vinnustofa|málþing|kynning á|fræðsla|workshop", re.I)),
+    ("Leiklist", re.compile(r"leikrit|leiksýning|söngleik|leikhús|leikfélag|leikari|einleik|revía|dansverk|ballett|ópera|óperu|improv", re.I)),
+    ("Tónlist", re.compile(r"tónleik|tónlist|kór\b|kórinn|hljómsveit|hljómleik|jazz|blús|\bdj\b|útgáfu|tribute|heiðurs|konsert|kvartett|tríó|band\b|sinfón|trúbador|ball\b|dansleik|söngur|syngj", re.I)),
+]
+TIX_KIND = {"tónleikar": "Tónlist", "tónlist": "Tónlist", "leikhús": "Leiklist", "uppistand": "Uppistand", "fjölskyldan": "Fjölskylda",
+            "námskeið": "Fræðsla", "íþróttir": "Íþróttir"}
+
+
+def event_kind(e):
+    if e.get("source") == "Íþróttir" or e.get("sport"):
+        return "Íþróttir"
+    c = (e.get("cat0") or "").strip().lower()
+    for k, v in TIX_KIND.items():
+        if c.startswith(k):
+            return v
+    text = " ".join([e.get("title") or "", e.get("note") or ""])
+    for kind, rx in KIND_RULES:
+        if rx.search(text):
+            return kind
+    venue = (e.get("venue") or "").lower()
+    if e.get("source") == "Græni hatturinn" or "græni hatturinn" in venue or "leyni bar" in venue or "sjallinn" in venue:
+        return "Tónlist"
+    if "samkomuhús" in venue:
+        return "Leiklist"
+    if re.search(r"hamraborg|hamrar", venue):
+        return "Tónlist"
+    return "Annað"
+
+
 def main():
     t_start = time.time()
     try:  # fyrri fréttir eru geymdar svo landsmiðlafréttir um Akureyri hverfi ekki
@@ -2323,6 +2375,8 @@ def main():
         per_source[i["source"]] = per_source.get(i["source"], 0) + 1
         if per_source[i["source"]] <= MAX_BY_SOURCE.get(i["source"], 30):
             merged.append(i)
+    for i in merged:
+        i["cats"] = news_cats(i)
     with open("news.json", "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)
     def timed(name, fn):
