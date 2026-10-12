@@ -170,8 +170,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Papar - 40 ára afmælistónleikar",
@@ -271,8 +272,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Hjálmar",
@@ -320,8 +322,9 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/poster_tix_1_707x10004632.jpg?v=1791842302",
     "note": "Frá 6.900 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Þór – Stjarnan",
@@ -395,8 +398,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Sólstafir",
@@ -457,6 +461,7 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782999805.jpg?v=1791842302",
     "note": "Frá 9.900 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
     "kind": "Tónlist"
   },
@@ -508,8 +513,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Vandræðaskáld kynna: Aðför - ofsóknir og önnur áhugamál þjóðar",
@@ -522,7 +528,7 @@
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22415.jpg",
     "note": "4.990 kr.",
     "venue": "Múlaberg, Akureyri",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Afturelding – Þór",
@@ -546,6 +552,7 @@
     "time": "18:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1790849002.png?v=1791842302",
     "note": "",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
     "kind": "Tónlist"
   },
@@ -597,8 +604,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "KA – Haukar",
@@ -622,8 +630,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Nýdönsk - Fullkomið farartæki",
@@ -634,8 +643,9 @@
     "time": "21:00",
     "image": "https://www.mak.is/static/calendar/images/ako_1200x1700-24547.png?v=1791842302",
     "note": "Frá 11.990 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Drykkir innbyrðis",
@@ -670,8 +680,9 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1780492600.png?v=1791842302",
     "note": "Frá 8.990 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Ingimar Eydal 90 ára",
@@ -682,8 +693,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1780492600.png?v=1791842302",
     "note": "Frá 8.990 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "ChatGPT námskeið á Akureyri með Stefáni Atla",
@@ -707,7 +719,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/ES1VtCKnSBSH9WbnajinLLoGmrUkQo-metac2lndXJkw61zIElJSS5qcGc=-.webp",
     "note": "Frá 5.900 kr.",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Fasteignamartröðin",
@@ -718,8 +730,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Mjög fín bara - Snjólaug Lúðvíksdóttir uppistand - Akureyri",
@@ -793,8 +806,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "DIMMA",
@@ -816,8 +830,9 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1790936458.png?v=1791842302",
     "note": "3.500 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamrar, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Þór Ak. – KFG",
@@ -854,8 +869,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1788449333.png?v=1791842302",
     "note": "3.500 kr.",
+    "cat0": "Tónleikar",
     "venue": "Black box, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "KA/Þór – Fram",
@@ -892,8 +908,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Selfoss – KA",
@@ -941,8 +958,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Todmobile",
@@ -953,8 +971,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782818454.png?v=1791842302",
     "note": "Frá 11.990 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Oasis - Heiðurstónleikar",
@@ -978,7 +997,7 @@
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22368.jpg",
     "note": "7.900 kr.",
     "venue": "Verkstæðið, Akureyri",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Þór Ak. – Keflavík b",
@@ -1015,8 +1034,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1777386904.jpg?v=1791842302",
     "note": "Frá 9.990 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Skálmöld",
@@ -1166,8 +1186,9 @@
     "time": "18:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788789002.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Hamrar, Hof",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Þór Ak. – Selfoss",
@@ -1204,8 +1225,9 @@
     "time": "20:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788789002.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Hamrar, Hof",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Baggalútur",
@@ -1216,8 +1238,9 @@
     "time": "21:00",
     "image": "https://www.mak.is/static/calendar/images/uppf._baggalutur_120017004642.jpg?v=1791842302",
     "note": "13.990 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Skítamórall",
@@ -1265,8 +1288,9 @@
     "time": "18:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788789002.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Hamrar, Hof",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Á rauðu ljósi",
@@ -1277,8 +1301,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745812.png?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Jólaglögg",
@@ -1289,8 +1314,9 @@
     "time": "20:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788789002.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Hamrar, Hof",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Baggalútur",
@@ -1301,8 +1327,9 @@
     "time": "21:00",
     "image": "https://www.mak.is/static/calendar/images/uppf._baggalutur_120017004642.jpg?v=1791842302",
     "note": "13.990 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Breiðablik – Þór Ak.",
@@ -1326,8 +1353,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745812.png?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "KA – Víkingur",
@@ -1364,8 +1392,9 @@
     "time": "17:00",
     "image": "https://www.mak.is/static/calendar/images/jolaparty-hof-uppfaerd-dags-707x1000-014640.png?v=1791842302",
     "note": "7.500 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Jólaglögg",
@@ -1376,8 +1405,9 @@
     "time": "18:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788789002.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Hamrar, Hof",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "HK – Þór",
@@ -1401,8 +1431,9 @@
     "time": "20:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788789002.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Hamrar, Hof",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Lón",
@@ -1424,8 +1455,9 @@
     "time": "11:00",
     "image": "https://www.mak.is/static/calendar/images/jolaparty-hof-uppfaerd-dags-707x1000-014640.png?v=1791842302",
     "note": "7.500 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Jólapartý Skoppu og Skrítlu",
@@ -1436,8 +1468,9 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/jolaparty-hof-uppfaerd-dags-707x1000-014640.png?v=1791842302",
     "note": "7.500 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Jólapartý Skoppu og Skrítlu",
@@ -1448,8 +1481,9 @@
     "time": "15:00",
     "image": "https://www.mak.is/static/calendar/images/jolaparty-hof-uppfaerd-dags-707x1000-014640.png?v=1791842302",
     "note": "7.500 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Þór Ak. – Aþena",
@@ -1473,8 +1507,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745812.png?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Bubbi - Þorláksmessutónleikar",
@@ -1485,6 +1520,7 @@
     "time": "20:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788189721.png?v=1791842302",
     "note": "Frá 9.500 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
     "kind": "Tónlist"
   },
@@ -1497,7 +1533,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/65xmvcUUihVzsCxqKsyPRUdYCN6L4B-metaSsOzbGFzw7psdXIgMjYgSUkuanBn-.webp",
     "note": "Nýtt · Frá 4.900 kr.",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Á rauðu ljósi",
@@ -1508,8 +1544,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745812.png?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "KA – Fram",
@@ -1546,7 +1583,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/7IrMe5Ujq6xYaVJaNfzzYKxQFdgokg-metaQnJvdGhlciBncmFzcy5qcGc=-.webp",
     "note": "Fáir miðar · Frá 6.900 kr.",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Vitringarnir 3 - 2026",
@@ -1557,8 +1594,9 @@
     "time": "19:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791842302",
     "note": "Frá 13.999 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Snæfell – Þór Ak.",
@@ -1582,7 +1620,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/ILJkuYVKbhzWteKlJBdWUluBWPOhNj-metaQnJvdGhlciBncmFzcy5qcGc=-.webp",
     "note": "Frá 6.900 kr.",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Vitringarnir 3 - 2026",
@@ -1593,8 +1631,9 @@
     "time": "22:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791842302",
     "note": "Frá 13.999 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "KA – Þróttur Fjarðabyggð",
@@ -1618,8 +1657,9 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791842302",
     "note": "Frá 13.999 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "SA – SR",
@@ -1643,8 +1683,9 @@
     "time": "19:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791842302",
     "note": "Frá 13.999 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "SA – SR",
@@ -1679,8 +1720,9 @@
     "time": "22:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791842302",
     "note": "Frá 13.999 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Haukar – KA/Þór",
@@ -1730,8 +1772,9 @@
     "time": "19:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791842302",
     "note": "Frá 13.999 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "KA/Þór – ÍR",
@@ -1768,7 +1811,7 @@
     "time": "20:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/PsRdyVRag0xrOvkjp8GO2oRnpZlbl5-metaS3Jpc3NtYXNzMTAwMHgxMDAwLnBuZw==-.webp",
     "note": "Frá 7.900 kr.",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Ari Eldjárn: Áramótaskop 2026",
@@ -1779,8 +1822,9 @@
     "time": "18:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1787225556.jpg?v=1791842302",
     "note": "9.990 kr.",
+    "cat0": "Uppistand",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Uppistand"
   },
   {
     "title": "KK, Mugison & Jón Jónsson",
@@ -1793,7 +1837,7 @@
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22175.jpg",
     "note": "Uppselt · 9.500 kr.",
     "venue": "Glerárkirkja",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Hátíðartónar",
@@ -1806,7 +1850,7 @@
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22461.jpg",
     "note": "7.990 kr.",
     "venue": "Akureyrarkirkja",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Ari Eldjárn: Áramótaskop 2026",
@@ -1817,8 +1861,9 @@
     "time": "21:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1787225556.jpg?v=1791842302",
     "note": "9.990 kr.",
+    "cat0": "Uppistand",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Uppistand"
   },
   {
     "title": "Krissmas Spesjal",
@@ -1829,7 +1874,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/219mmrQXoGXaT8wOa22rBYyvAympt4-metaS3Jpc3NtYXNzMTAwMHgxMDAwLnBuZw==-.webp",
     "note": "Frá 7.900 kr.",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Killer Queen",
@@ -1981,8 +2026,9 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/tunglsljos_120017004592.jpg?v=1791842302",
     "note": "Frá 5.900 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Fjölnir – SA",
@@ -2058,8 +2104,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Þór Ak. – Fjölnir",
@@ -2083,8 +2130,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "KV – Þór Ak.",
@@ -2121,8 +2169,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Stjarnan – KA/Þór",
@@ -2172,8 +2221,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Þór Ak. – ÍR",
@@ -2197,8 +2247,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Pernille Haaland - Nordic AF",
@@ -2209,8 +2260,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1781103353.png?v=1791842302",
     "note": "4.000 kr.",
+    "cat0": "Uppistand",
     "venue": "Hamrar, Hof",
-    "kind": null
+    "kind": "Uppistand"
   },
   {
     "title": "SA – Fjölnir",
@@ -2299,8 +2351,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791842302",
     "note": "7.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "KA – Stjarnan",
@@ -2324,8 +2377,9 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "",
     "venue": "Samkomuhúsið",
-    "kind": "Fjölskylda"
+    "kind": "Leiklist"
   },
   {
     "title": "Þór – ÍBV",
@@ -2388,8 +2442,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1787924382.jpg?v=1791842302",
     "note": "Frá 9.990 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2400,8 +2455,9 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "",
     "venue": "Samkomuhúsið",
-    "kind": "Fjölskylda"
+    "kind": "Leiklist"
   },
   {
     "title": "HK – KA",
@@ -2503,8 +2559,9 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "",
     "venue": "Samkomuhúsið",
-    "kind": "Fjölskylda"
+    "kind": "Leiklist"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2515,8 +2572,9 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "",
     "venue": "Samkomuhúsið",
-    "kind": "Fjölskylda"
+    "kind": "Leiklist"
   },
   {
     "title": "Daníel Bjarnason stjórnar Brahms",
@@ -2527,8 +2585,9 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/brahms1217004594.jpg?v=1791842302",
     "note": "Frá 6.900 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "SA – Fjölnir",
@@ -2604,8 +2663,9 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "",
     "venue": "Samkomuhúsið",
-    "kind": "Fjölskylda"
+    "kind": "Leiklist"
   },
   {
     "title": "Keflavík b – Þór Ak.",
@@ -2629,8 +2689,9 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "",
     "venue": "Samkomuhúsið",
-    "kind": "Fjölskylda"
+    "kind": "Leiklist"
   },
   {
     "title": "Þróttur Fjarðabyggð – KA",
@@ -2693,8 +2754,9 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "",
     "venue": "Samkomuhúsið",
-    "kind": "Fjölskylda"
+    "kind": "Leiklist"
   },
   {
     "title": "KA – Afturelding",
@@ -2757,8 +2819,9 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "",
     "venue": "Samkomuhúsið",
-    "kind": "Fjölskylda"
+    "kind": "Leiklist"
   },
   {
     "title": "KA – Afturelding",
@@ -2808,8 +2871,9 @@
     "time": "17:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782207313.png?v=1791842302",
     "note": "",
+    "cat0": "Tónleikar",
     "venue": "Hamrar, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Skallagrímur – Þór Ak.",
@@ -2846,8 +2910,9 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "",
     "venue": "Samkomuhúsið",
-    "kind": "Fjölskylda"
+    "kind": "Leiklist"
   },
   {
     "title": "Þór – Fylkir",
@@ -2936,8 +3001,9 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "",
     "venue": "Samkomuhúsið",
-    "kind": "Fjölskylda"
+    "kind": "Leiklist"
   },
   {
     "title": "Fram – KA",
@@ -2974,8 +3040,9 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/urheimi_120017004597.jpg?v=1791842302",
     "note": "Frá 4.900 kr.",
+    "cat0": "",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2986,8 +3053,9 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "",
     "venue": "Samkomuhúsið",
-    "kind": "Fjölskylda"
+    "kind": "Leiklist"
   },
   {
     "title": "Þór Ak. – Breiðablik",
@@ -3011,8 +3079,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782206629.png?v=1791755372",
     "note": "",
+    "cat0": "",
     "venue": "Black box, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -3023,8 +3092,9 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "",
     "venue": "Samkomuhúsið",
-    "kind": "Fjölskylda"
+    "kind": "Leiklist"
   },
   {
     "title": "Fjölnir – SA",
@@ -3048,8 +3118,9 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791842302",
     "note": "6.900 kr.",
+    "cat0": "",
     "venue": "Samkomuhúsið",
-    "kind": "Fjölskylda"
+    "kind": "Leiklist"
   },
   {
     "title": "SA – Fjölnir",
@@ -3073,8 +3144,9 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782207254.png?v=1791755372",
     "note": "",
+    "cat0": "Tónleikar",
     "venue": "Hamrar, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "Gæðablóð",
@@ -3085,8 +3157,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745946.jpg?v=1791755372",
     "note": "6.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Gæðablóð",
@@ -3097,8 +3170,9 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745946.jpg?v=1791755372",
     "note": "6.900 kr.",
+    "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
-    "kind": null
+    "kind": "Leiklist"
   },
   {
     "title": "Teiknimyndalögin okkar",
@@ -3109,8 +3183,9 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782206981.png?v=1791755372",
     "note": "",
+    "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
-    "kind": null
+    "kind": "Tónlist"
   },
   {
     "title": "BaKaBa - Kvartettfjör að vori",
@@ -3121,6 +3196,7 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782744648.png?v=1791755372",
     "note": "5.900 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamrar, Hof",
     "kind": "Tónlist"
   },
@@ -3133,6 +3209,7 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1772030128.jpg?v=1791755372",
     "note": "Frá 3.750 kr.",
+    "cat0": "Uppistand",
     "venue": "Hamrar, Hof",
     "kind": "Uppistand"
   },
@@ -3145,7 +3222,8 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/34624.png?v=1791755372",
     "note": "3.000 kr.",
+    "cat0": "Tónleikar",
     "venue": "Hamrar, Hof",
-    "kind": null
+    "kind": "Tónlist"
   }
 ]
