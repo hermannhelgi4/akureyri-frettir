@@ -1,18 +1,5 @@
 [
   {
-    "title": "Víkingur – KA",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/113406",
-    "start": "2026-10-09",
-    "end": "2026-10-09",
-    "time": "19:00",
-    "image": null,
-    "note": "Útileikur · Powerade bikar karla 2027 · Virkið",
-    "res": "35–28"
-  },
-  {
     "title": "Hamar – Þór Ak.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -205,18 +192,6 @@
     "time": "16:00",
     "image": null,
     "note": "Heimaleikur · VÍS bikar karla · Höllin Ak"
-  },
-  {
-    "title": "ÍBV 2 – Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/113418",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "16:30",
-    "image": null,
-    "note": "Útileikur · Powerade bikar karla 2027 · Íþróttamiðstöð Vestmannaeyja"
   },
   {
     "title": "SA – SR",
@@ -867,18 +842,6 @@
     "note": "Frá 7.900 kr."
   },
   {
-    "title": "XXX Rottweiler á Verkstæðinu",
-    "source": "Miðasala",
-    "site": "Tix",
-    "link": "https://tix.is/event/22368/xxx-rottweiler-a-verkstaedinu",
-    "start": "2026-11-14",
-    "end": "2026-11-14",
-    "time": "22:00",
-    "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22368.jpg",
-    "note": "7.900 kr.",
-    "venue": "Verkstæðið, Akureyri"
-  },
-  {
     "title": "Þór Ak. – Keflavík b",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -889,18 +852,6 @@
     "time": "18:00",
     "image": null,
     "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
-  },
-  {
-    "title": "Fjölnir – KA/Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/match/113399",
-    "start": "2026-11-18",
-    "end": "2026-11-18",
-    "time": "",
-    "image": null,
-    "note": "Útileikur · Powerade bikar kvenna 2027 · Fjölnishöll"
   },
   {
     "title": "Celebrating George Michael",
@@ -1614,6 +1565,18 @@
     "image": "https://www.mak.is/static/calendar/images/submit_1787225556.jpg?v=1791755372",
     "note": "9.990 kr.",
     "venue": "Hamraborg, Hof"
+  },
+  {
+    "title": "KK, Mugison & Jón Jónsson",
+    "source": "Miðasala",
+    "site": "Tix",
+    "link": "https://tix.is/event/22175/kk-mugison-jon-jonsson",
+    "start": "2026-12-19",
+    "end": "2026-12-19",
+    "time": "19:30",
+    "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22175.jpg",
+    "note": "Uppselt · 9.500 kr.",
+    "venue": "Glerárkirkja"
   },
   {
     "title": "Ari Eldjárn: Áramótaskop 2026",
