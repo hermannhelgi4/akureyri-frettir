@@ -2265,8 +2265,14 @@ SPORT_NEWS = re.compile(
     r"íþróttamaður|íþróttakona|deildarmeist|úrslitakeppni|marki\b|mörk\b|markmann", re.I)
 
 
+NEWS_EXTRA = {"Trölli.is": ["Nærsveitir"], "Dal.is": ["Nærsveitir"]}  # svæðismiðlar utan Akureyrar: bæði Fréttir og Nærsveitir
+
+
 def news_cats(item):
     base = NEWS_CAT_MAP.get(item.get("category"), ["Bærinn"])[:]
+    for c in NEWS_EXTRA.get(item.get("source"), []):
+        if c not in base:
+            base.append(c)
     if base == ["Fréttir"]:
         text = (item.get("title") or "") + " " + (item.get("summary") or "")
         if SPORT_NEWS.search(text) or team_mentions(text) > 0:
