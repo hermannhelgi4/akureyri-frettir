@@ -826,20 +826,45 @@ TIX_PAGES = ["https://tix.is/", "https://tix.is/collection/nytt", "https://tix.i
 TIX_EVENT = re.compile(r"/event/(\d+)(?:/([a-z0-9\-]+))?", re.I)
 
 
-def _tix_one(args):
-    eid, slug, today, det = args
-    key = "tix:" + eid
-    d = det.get(key)
-    if d and d.get("v") == DETAIL_VER and time.time() - d.get("ts", 0) < 12 * 3600:
-        return d["ev"], False
+TIX_CACHE = "tix_cache.json"
+TIX_LOW = 20000        # elstu auðkenni sem eru skoðuð (eldri viðburðir eru liðnir eða langtímaviðburðir á forsíðu)
+TIX_BUDGET = 800       # mest svo mörg auðkenni sótt í hverri keyrslu (restin kemur í næstu keyrslum)
+TIX_AHEAD = 60         # leita svona langt fyrir ofan hæsta þekkta auðkenni (nýir viðburðir)
+
+
+def tix_fetch(eid):
+    """Sækir gögn eins viðburðar frá Tix. Skilar None ef viðburðurinn er ekki til; kastar villu ef netið bilar."""
+    url = "https://tix.is/api/proxy?id=" + eid
+    req = urllib.request.Request(url, headers=DEEP_UA)
     try:
-        data = fetch_json("https://tix.is/api/proxy?id=" + eid)
-    except Exception as e:
-        print("   Tix %s: %s" % (eid, str(e)[:100]))
-        return (d or {}).get("ev", []), False
+        with OPENER.open(req, timeout=20) as r:
+            body = r.read(3000000).decode("utf-8", "ignore")
+    except urllib.error.HTTPError as e:
+        if e.code in (400, 404, 410, 500):
+            return None
+        raise
+    if not body.strip():
+        return None
+    try:
+        data = json.loads(body)
+    except ValueError:
+        return None
+    return data if data else None
+
+
+def tix_slug(name):
+    t = name.lower().translate(str.maketrans({"á": "a", "ð": "d", "é": "e", "í": "i", "ó": "o", "ú": "u", "ý": "y", "ö": "o", "æ": "ae"}))
+    t = t.replace("þ", "th")
+    return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+
+
+def tix_events(eid, slug, data):
     ev = []
     for g in data if isinstance(data, list) else [data]:
+        if not isinstance(g, dict):
+            continue
         name = clean(g.get("Name") or "")
+        slug = slug or tix_slug(name)
         link = "https://tix.is/event/%s%s" % (eid, ("/" + slug) if slug else "")
         for x in g.get("Dates") or []:
             venue = x.get("Venue") or x.get("Hall") or ""
@@ -859,12 +884,14 @@ def _tix_one(args):
             ev.append({"title": name[:140], "source": MIDASALA, "site": "Tix", "link": link, "start": sd[:10], "end": sd[:10],
                        "time": sd[11:16] if len(sd) >= 16 and sd[11:16] != "00:00" else "", "image": img,
                        "note": " · ".join(notes), "venue": venue})
-    det[key] = {"ts": time.time(), "v": DETAIL_VER, "ev": ev}
-    return ev, True
+    return ev
 
 
 def read_tix(today):
-    ids = {}
+    """Tix er ekki með lista yfir alla viðburði, svo ég fer yfir auðkennin (númerin) sjálf.
+    Niðurstaða hvers númers er geymd í tix_cache.json svo aðeins ný númer og Akureyrarviðburðir eru sótt aftur."""
+    cache = _load(TIX_CACHE, {})
+    slugs = {}
     for url in TIX_PAGES:
         try:
             page = fetch_page(url)
@@ -872,12 +899,58 @@ def read_tix(today):
             print("   Tix %s: %s" % (url, str(e)[:100]))
             continue
         for m in TIX_EVENT.finditer(page):
-            ids.setdefault(m.group(1), m.group(2))
-    det = _DET
-    res = pmap(_tix_one, [(i, s, today, det) for i, s in ids.items()], workers=6)
-    out = [e for ev, _ in res for e in ev]
-    fetched = sum(1 for _, f in res if f)
-    print("   Tix: %d viðburðir fundust á forsíðum, %d sóttir núna, %d sýningar á Akureyri" % (len(ids), fetched, len(out)))
+            if m.group(2):
+                slugs[m.group(1)] = m.group(2)
+            else:
+                slugs.setdefault(m.group(1), None)
+    known = [int(i) for i in list(slugs) + [k for k, v in cache.items() if not v.get("miss")] if i.isdigit()]
+    hi = (max(known) if known else TIX_LOW) + TIX_AHEAD
+    now = time.time()
+
+    def stale(i):
+        c = cache.get(str(i))
+        if not c:
+            return True
+        age = now - c.get("ts", 0)
+        if c.get("ev"):
+            return age > 12 * 3600                 # Akureyrarviðburður: sótt aftur tvisvar á dag
+        if c.get("miss"):
+            return age > (2 * 86400 if i > hi - 150 else 30 * 86400)  # ný númer gætu orðið til síðar
+        return age > 7 * 86400                     # viðburður ekki á Akureyri: skoðaður aftur á viku fresti
+
+    todo = [i for i in range(hi, TIX_LOW - 1, -1) if stale(i)][:TIX_BUDGET]
+    allowed_ok = allowed("https://tix.is/api/proxy?id=1")
+    if not allowed_ok:
+        print("VIÐVÖRUN Tix: robots.txt bannar aðgang að gagnaslóðinni")
+        todo = []
+
+    def one(i):
+        eid = str(i)
+        try:
+            data = tix_fetch(eid)
+        except Exception:
+            return eid, "err"
+        if data is None:
+            return eid, {"ts": now, "miss": 1, "ev": []}
+        return eid, {"ts": now, "ev": tix_events(eid, slugs.get(eid), data)}
+
+    res = pmap(one, todo, workers=6)
+    errs = 0
+    for eid, c in res:
+        if c == "err":
+            errs += 1
+        else:
+            cache[eid] = c
+    out = []
+    for eid, c in cache.items():
+        for e in c.get("ev", []):
+            out.append(e)
+    # geymi aðeins það sem er nýlegt
+    keep = {k: v for k, v in cache.items() if now - v.get("ts", 0) < 60 * 86400}
+    with open(TIX_CACHE, "w", encoding="utf-8") as f:
+        json.dump(keep, f, ensure_ascii=False)
+    print("   Tix: %d númer skoðuð núna (%d villur), %d í minni, %d sýningar á Akureyri (hæsta númer %d)" % (
+        len(todo), errs, len(keep), len(out), hi - TIX_AHEAD))
     return out
 
 
