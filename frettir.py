@@ -278,11 +278,11 @@ const ck=el("div","oclock");b.appendChild(ck);const tick=()=>{const n=new Date()
 c.append(a,b);m.appendChild(c);document.body.appendChild(m);document.body.style.overflow="hidden"}
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeCard()});
 function renderEv(){const n0=new Date(),t=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("evlist"),ch=document.getElementById("evchips");
-const KO=["Tónlist","Leiklist","Uppistand","Fjölskylda","Fræðsla","Íþróttir","Annað"];const all=EVENTS.filter(e=>e.source!=="Íþróttir"&&(e.res||pd(e.end)>=t));const srcs=["Allt",...KO.filter(k=>all.some(e=>(e.kind||"Annað")===k))];ch.innerHTML="";
+const KO=["Tónlist","Leiklist","Uppistand","Sýningar","Fjölskylda","Fræðsla","Íþróttir"];const all=EVENTS.filter(e=>e.source!=="Íþróttir"&&(e.res||pd(e.end)>=t));const srcs=["Allt",...KO.filter(k=>all.some(e=>e.kind===k))];ch.innerHTML="";
 srcs.forEach(s=>{const b=el("button","chip"+(s===evSrc?" on":""),s);b.onclick=()=>{evSrc=s;renderEv()};ch.appendChild(b)});
 const resMode=false;
 box.innerHTML="";const cmp=(a,b)=>a.start<b.start?-1:a.start>b.start?1:((a.time||"")<(b.time||"")?-1:1);
-const L=all.filter(e=>(evSrc==="Allt"||(e.kind||"Annað")===evSrc)&&(resMode?!!e.res:!(e.res&&pd(e.start)<t))).sort(resMode?(a,b)=>cmp(b,a):cmp);
+const L=all.filter(e=>(evSrc==="Allt"||e.kind===evSrc)&&(resMode?!!e.res:!(e.res&&pd(e.start)<t))).sort(resMode?(a,b)=>cmp(b,a):cmp);
 if(!L.length){box.appendChild(el("div","sub",resMode?"Engin úrslit síðustu daga.":"Engir viðburðir fundust."));return}
 let last="";L.forEach(e=>{const s=pd(e.start),ongoing=s<t&&!e.res,key=ongoing?"gangi":e.start;
 if(key!==last){last=key;let h="Í gangi";if(!ongoing){const diff=Math.round((s-t)/864e5);h=(diff===0?"Í dag · ":diff===1?"Á morgun · ":diff===-1?"Í gær · ":"")+DAYS[s.getDay()]+". "+fd(s)+(s.getFullYear()!==t.getFullYear()?" "+s.getFullYear():"")}box.appendChild(el("h3","evh",h))}
@@ -643,7 +643,7 @@ def read_graeni(today):
 SHOW_RE = re.compile(r"\b(\d{1,2})\s*\.?\s*(jan|feb|mar|apr|maí|mai|jún|jun|júl|jul|ágú|agu|sep|okt|nóv|nov|des)\b\.?"
                      r"(?:\s+([01]?\d|2[0-3]):([0-5]\d))?", re.I)
 DETAIL_TTL = 2 * 24 * 3600  # síða hvers viðburðar er sótt aftur í fyrsta lagi á 2ja daga fresti
-DETAIL_VER = 3  # hækkað þegar lesarinn bætir við upplýsingum, svo gömul gögn séu sótt aftur
+DETAIL_VER = 4  # hækkað þegar lesarinn bætir við upplýsingum, svo gömul gögn séu sótt aftur
 
 
 def page_text(page):
@@ -730,13 +730,26 @@ def mak_venue(page):
 def mak_detail(page, e, today):
     sh = showings_to_dates(mak_showings(page), date.fromisoformat(e["start"]))
     return {"showings": [[d.isoformat(), tm] for d, tm in sh], "image": _og(page), "price": parse_price(page_text(page)),
-            "venue": mak_venue(page)}
+            "venue": mak_venue(page), "txt": page_text(page)[:500]}
 
 
 def graeni_detail(page, e, today):
     m = re.search(r"\b\d{2}\.\d{2}\.20\d\d\s+([01]?\d|2[0-3]):([0-5]\d)\b", page_text(page))
+    txt = ""
+    for pat in (r'<meta[^>]+property=["\']og:description["\'][^>]+content=["\']([^"\']+)',
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:description["\']'):
+        md = re.search(pat, page, re.I)
+        if md:
+            txt = clean(html.unescape(md.group(1)))[:500]
+            break
+    if len(txt) < 40:  # annars lýsingin sjálf á síðunni (textinn á eftir „Kaupa miða“)
+        mm = re.search(r"<main.*?</main>", page, re.S | re.I)
+        full = page_text(mm.group(0) if mm else page)  # aðeins aðalefni síðunnar, ekki valmynd og fótur
+        i = full.find("Kaupa miða")
+        if i >= 0:
+            txt = full[i + 10:i + 510]
     return {"time": ("%02d:%s" % (int(m.group(1)), m.group(2))) if m else "", "image": _og(page),
-            "price": parse_price(page_text(page))}
+            "price": parse_price(page_text(page)), "txt": txt}
 
 
 # --- Miðasölur: Tix, Midix og Stubb (viðburðir á Akureyri) ---
@@ -883,7 +896,8 @@ def tix_events(eid, slug, data):
             img = g.get("EventImagePath") if g.get("HasEventImage") else (g.get("PosterImagePath") if g.get("HasPosterImage") else None)
             ev.append({"title": name[:140], "source": MIDASALA, "site": "Tix", "link": link, "start": sd[:10], "end": sd[:10],
                        "time": sd[11:16] if len(sd) >= 16 and sd[11:16] != "00:00" else "", "image": img,
-                       "note": " · ".join(notes), "venue": venue, "cat0": x.get("Categories") or ""})
+                       "note": " · ".join(notes), "venue": venue, "cat0": x.get("Categories") or "",
+                       "txt": clean(re.sub(r"<[^>]+>", " ", g.get("Description") or ""))[:400]})
     return ev
 
 
@@ -1914,6 +1928,8 @@ def collect_events():
             v = det.get(e["link"], {}).get("venue")
             if v:
                 e["venue"] = v
+            if det.get(e["link"], {}).get("txt"):
+                e["txt"] = det[e["link"]]["txt"]
         print("OK Viðburðir %s: %d viðburðir á lista, %d skiptast í sýningar, %d síður sóttar núna (%d spjöld)" % (
             name, len(found), split, fetched, len(expanded)))
         for e in expanded[:3]:
@@ -1933,8 +1949,14 @@ def collect_events():
     except Exception as e:
         print("X  Íþróttir: óvænt villa (%s)" % e)
         result += [x for x in old if x.get("sport")]
+    unk = set()
     for e in result:
         e["kind"] = event_kind(e)
+        if not e["kind"]:
+            unk.add(e["title"][:60])
+        e.pop("txt", None)
+    if unk:
+        print("Viðburðir án flokks (sjást bara undir Allt): %d – t.d. %s" % (len(unk), "; ".join(sorted(unk)[:12])))
     result.sort(key=lambda e: (e["start"], e.get("time") or ""))
     with open("events.json", "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
@@ -2216,35 +2238,37 @@ def news_cats(item):
 
 
 KIND_RULES = [
-    ("Uppistand", re.compile(r"uppistand|stand-?up|grínist|grínsýning|comedy|ari eldjárn|spaug", re.I)),
-    ("Fjölskylda", re.compile(r"barna|fjölskyld|krakka|ævintýr|brúðu|jólasvein|skoppa|karíus|kardemomm|lína langsokk|skilaboðaskjóð|sirkus", re.I)),
-    ("Fræðsla", re.compile(r"námskeið|fyrirlestur|ráðstefn|vinnustofa|málþing|kynning á|fræðsla|workshop", re.I)),
-    ("Leiklist", re.compile(r"leikrit|leiksýning|söngleik|leikhús|leikfélag|leikari|einleik|revía|dansverk|ballett|ópera|óperu|improv", re.I)),
-    ("Tónlist", re.compile(r"tónleik|tónlist|kór\b|kórinn|hljómsveit|hljómleik|jazz|blús|\bdj\b|útgáfu|tribute|heiðurs|konsert|kvartett|tríó|band\b|sinfón|trúbador|ball\b|dansleik|söngur|syngj", re.I)),
+    ("Uppistand", re.compile(r"uppistand|stand-?up|grínsýning|comedy", re.I)),
+    ("Fjölskylda", re.compile(r"barnasýning|barnaleik|barnatónleik|fjölskyldu|krakka|jólasvein|brúðuleik|skoppa|karíus|lína langsokkur|skilaboðaskjóðan", re.I)),
+    ("Fræðsla", re.compile(r"námskeið|fyrirlestur|ráðstefn|vinnustofa|málþing|workshop", re.I)),
+    ("Leiklist", re.compile(r"leikrit|leiksýning|söngleik|leikhús|leikfélag|einleik|ballett|óperu|ópera|improv|dansverk", re.I)),
+    ("Sýningar", re.compile(r"myndlistarsýning|ljósmyndasýning|málverkasýning|listsýning|opnun sýningar|sýningaropnun", re.I)),
+    ("Tónlist", re.compile(r"tónleik|hljómleik|hljómsveit|kvartett|sinfón|konsert|jazz|blús|\bdj\b|trúbador", re.I)),
 ]
 TIX_KIND = {"tónleikar": "Tónlist", "tónlist": "Tónlist", "leikhús": "Leiklist", "uppistand": "Uppistand", "fjölskyldan": "Fjölskylda",
             "námskeið": "Fræðsla", "íþróttir": "Íþróttir"}
 
 
+def _kinds(text):
+    return {kind for kind, rx in KIND_RULES if rx.search(text or "")}
+
+
 def event_kind(e):
+    """Tegund viðburðar – aðeins ef hún er alveg örugg (flokkur frá Tix, eða eitt skýrt orð í titli eða lýsingu).
+    Annars er skilað None og viðburðurinn sést bara undir „Allt“."""
     if e.get("source") == "Íþróttir" or e.get("sport"):
         return "Íþróttir"
     c = (e.get("cat0") or "").strip().lower()
     for k, v in TIX_KIND.items():
         if c.startswith(k):
             return v
-    text = " ".join([e.get("title") or "", e.get("note") or ""])
-    for kind, rx in KIND_RULES:
-        if rx.search(text):
-            return kind
-    venue = (e.get("venue") or "").lower()
-    if e.get("source") == "Græni hatturinn" or "græni hatturinn" in venue or "leyni bar" in venue or "sjallinn" in venue:
-        return "Tónlist"
-    if "samkomuhús" in venue:
-        return "Leiklist"
-    if re.search(r"hamraborg|hamrar", venue):
-        return "Tónlist"
-    return "Annað"
+    for text in (e.get("title") or "", e.get("txt") or ""):
+        ks = _kinds(text)
+        if len(ks) == 1:
+            return next(iter(ks))
+        if len(ks) > 1:
+            return None  # fleiri en ein tegund koma til greina – ekki giskað
+    return None
 
 
 def main():
