@@ -1,38 +1,33 @@
 {
- "upd": "12.10 23:45",
+ "upd": "12.10 23:54",
  "now": {
   "T": 7.3,
   "F": 3.0,
   "D": "SSA",
-  "W": "Léttskýjað"
+  "W": "Léttskýjað",
+  "night": true
  },
  "days": [
   {
    "date": "2026-10-13",
-   "tmax": 7.0,
-   "tmin": 4.0,
-   "F": 4.0,
-   "D": "S",
-   "W": "Alskýjað",
-   "R": null
+   "T": 7.0,
+   "F": 1.0,
+   "D": "SSV",
+   "W": "Alskýjað"
   },
   {
    "date": "2026-10-14",
-   "tmax": 6.0,
-   "tmin": 3.0,
-   "F": 13.0,
-   "D": "NV",
-   "W": "Rigning",
-   "R": null
+   "T": 4.0,
+   "F": 7.0,
+   "D": "VNV",
+   "W": "Rigning"
   },
   {
    "date": "2026-10-15",
-   "tmax": 4.0,
-   "tmin": 1.0,
-   "F": 14.0,
-   "D": "NV",
-   "W": "Alskýjað",
-   "R": null
+   "T": 3.0,
+   "F": 4.0,
+   "D": "NNV",
+   "W": "Alskýjað"
   }
  ]
 }
