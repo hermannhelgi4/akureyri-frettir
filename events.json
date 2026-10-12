@@ -10,7 +10,8 @@
     "time": "19:00",
     "image": null,
     "note": "Útileikur · Powerade bikar karla 2027 · Virkið",
-    "res": "35–28"
+    "res": "35–28",
+    "kind": "Íþróttir"
   },
   {
     "title": "Hamar – Þór Ak.",
@@ -23,7 +24,8 @@
     "time": "19:15",
     "image": null,
     "note": "Útileikur · 1. deild karla · Hveragerði",
-    "res": "101–100"
+    "res": "101–100",
+    "kind": "Íþróttir"
   },
   {
     "title": "Grótta – KA/Þór",
@@ -36,7 +38,8 @@
     "time": "19:30",
     "image": null,
     "note": "Útileikur · Olís deild kvenna · Hertz höllin",
-    "res": "30–25"
+    "res": "30–25",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fjölnir – SA",
@@ -49,7 +52,8 @@
     "time": "19:45",
     "image": null,
     "note": "Útileikur · Toppdeild karla",
-    "res": "4–5"
+    "res": "4–5",
+    "kind": "Íþróttir"
   },
   {
     "title": "Stjarnan – KA",
@@ -62,7 +66,8 @@
     "time": "14:00",
     "image": null,
     "note": "Útileikur · Besta deild karla - Neðri hluti · Samsungvöllurinn",
-    "res": "0–3"
+    "res": "0–3",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór – ÍBV",
@@ -75,7 +80,8 @@
     "time": "14:00",
     "image": null,
     "note": "Heimaleikur · Besta deild karla - Neðri hluti · VÍS völlurinn",
-    "res": "1–0"
+    "res": "1–0",
+    "kind": "Íþróttir"
   },
   {
     "title": "SR – SA",
@@ -88,7 +94,8 @@
     "time": "17:45",
     "image": null,
     "note": "Útileikur · Toppdeild kvenna",
-    "res": "1–0"
+    "res": "1–0",
+    "kind": "Íþróttir"
   },
   {
     "title": "Skallagrímur – Þór Ak.",
@@ -101,7 +108,8 @@
     "time": "16:00",
     "image": null,
     "note": "Útileikur · 1. deild kvenna · Borgarnes",
-    "res": "56–108"
+    "res": "56–108",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – Breiðablik",
@@ -113,7 +121,8 @@
     "end": "2026-10-15",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "Angurværð",
@@ -123,7 +132,8 @@
     "end": "2026-10-15",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/cNlM78cEy39wDl4kkURpl85WV8ynZQ-metaYW5ndXJ2w6Zyw7AgSS5qcGc=-.webp",
-    "note": "Frá 4.900 kr."
+    "note": "Frá 4.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "ÍBV – Þór",
@@ -135,7 +145,8 @@
     "end": "2026-10-16",
     "time": "18:00",
     "image": null,
-    "note": "Útileikur · Olís deild karla · Íþróttamiðstöð Vestmannaeyja"
+    "note": "Útileikur · Olís deild karla · Íþróttamiðstöð Vestmannaeyja",
+    "kind": "Íþróttir"
   },
   {
     "title": "Stjarnan – KA",
@@ -147,7 +158,8 @@
     "end": "2026-10-16",
     "time": "18:30",
     "image": null,
-    "note": "Útileikur · Olís deild karla · Heklu Höllin"
+    "note": "Útileikur · Olís deild karla · Heklu Höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fasteignamartröðin",
@@ -158,7 +170,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Papar - 40 ára afmælistónleikar",
@@ -168,7 +181,8 @@
     "end": "2026-10-16",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/vneLkA40FV2AOQxM6DXTCY5qtqyBXh-metaYmVaZFpKQUEuanBn-.webp",
-    "note": "Uppselt · Frá 7.900 kr."
+    "note": "Uppselt · Frá 7.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Valur – KA",
@@ -180,7 +194,8 @@
     "end": "2026-10-17",
     "time": "14:00",
     "image": null,
-    "note": "Útileikur · Besta deild karla - Neðri hluti · N1-völlurinn Hlíðarenda"
+    "note": "Útileikur · Besta deild karla - Neðri hluti · N1-völlurinn Hlíðarenda",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór – Stjarnan",
@@ -192,7 +207,8 @@
     "end": "2026-10-17",
     "time": "14:00",
     "image": null,
-    "note": "Heimaleikur · Besta deild karla - Neðri hluti · VÍS völlurinn"
+    "note": "Heimaleikur · Besta deild karla - Neðri hluti · VÍS völlurinn",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – Sindri",
@@ -204,7 +220,8 @@
     "end": "2026-10-17",
     "time": "16:00",
     "image": null,
-    "note": "Heimaleikur · VÍS bikar karla · Höllin Ak"
+    "note": "Heimaleikur · VÍS bikar karla · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "ÍBV 2 – Þór",
@@ -216,7 +233,8 @@
     "end": "2026-10-17",
     "time": "16:30",
     "image": null,
-    "note": "Útileikur · Powerade bikar karla 2027 · Íþróttamiðstöð Vestmannaeyja"
+    "note": "Útileikur · Powerade bikar karla 2027 · Íþróttamiðstöð Vestmannaeyja",
+    "kind": "Íþróttir"
   },
   {
     "title": "SA – SR",
@@ -228,7 +246,8 @@
     "end": "2026-10-17",
     "time": "16:45",
     "image": null,
-    "note": "Heimaleikur · Toppdeild karla"
+    "note": "Heimaleikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA/Þór – Stjarnan",
@@ -240,7 +259,8 @@
     "end": "2026-10-17",
     "time": "17:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
+    "note": "Heimaleikur · Olís deild kvenna · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fasteignamartröðin",
@@ -251,7 +271,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Hjálmar",
@@ -261,7 +282,8 @@
     "end": "2026-10-17",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/HxJs034Q6OlieOYv6F7V3r3Q6rm4Qy-metaaGrDoWxtYXIgMjUuanBn-.webp",
-    "note": "Frá 7.900 kr."
+    "note": "Frá 7.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "KA – HK Ýmir",
@@ -273,7 +295,8 @@
     "end": "2026-10-18",
     "time": "14:00",
     "image": null,
-    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið"
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – KV",
@@ -285,7 +308,8 @@
     "end": "2026-10-18",
     "time": "15:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "Undir sömu stjörnu",
@@ -296,7 +320,8 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/poster_tix_1_707x10004632.jpg?v=1791755372",
     "note": "Frá 6.900 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Þór – Stjarnan",
@@ -308,7 +333,8 @@
     "end": "2026-10-21",
     "time": "19:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA – Afturelding",
@@ -320,7 +346,8 @@
     "end": "2026-10-22",
     "time": "19:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Guðríð Hansdóttir",
@@ -330,7 +357,8 @@
     "end": "2026-10-22",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/mdJJ5xR2R5YIuFQUY8rqSX0Gv9P3xP-metaZ3VkcmlkLmpwZw==-.webp",
-    "note": "Frá 5.990 kr."
+    "note": "Frá 5.990 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Fjölnir – Þór Ak.",
@@ -342,7 +370,8 @@
     "end": "2026-10-23",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Dalhús"
+    "note": "Útileikur · 1. deild karla · Dalhús",
+    "kind": "Íþróttir"
   },
   {
     "title": "SR – SA",
@@ -354,7 +383,8 @@
     "end": "2026-10-23",
     "time": "19:45",
     "image": null,
-    "note": "Útileikur · Toppdeild karla"
+    "note": "Útileikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fasteignamartröðin",
@@ -365,7 +395,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Sólstafir",
@@ -375,7 +406,8 @@
     "end": "2026-10-23",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/WsrRklMyKRTeNwgHjJqTixX3t755y6-metac8OzbHN0YWZpciAyNS5qcGc=-.webp",
-    "note": "Frá 7.900 kr."
+    "note": "Frá 7.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Vestri – KA",
@@ -387,7 +419,8 @@
     "end": "2026-10-24",
     "time": "13:00",
     "image": null,
-    "note": "Útileikur · Unbrokendeild karla · Íþróttahúsið Torfnesi"
+    "note": "Útileikur · Unbrokendeild karla · Íþróttahúsið Torfnesi",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA – ÍBV",
@@ -399,7 +432,8 @@
     "end": "2026-10-24",
     "time": "14:00",
     "image": null,
-    "note": "Heimaleikur · Besta deild karla - Neðri hluti · Greifavöllurinn"
+    "note": "Heimaleikur · Besta deild karla - Neðri hluti · Greifavöllurinn",
+    "kind": "Íþróttir"
   },
   {
     "title": "FH – Þór",
@@ -411,7 +445,8 @@
     "end": "2026-10-24",
     "time": "14:00",
     "image": null,
-    "note": "Útileikur · Besta deild karla - Neðri hluti · Kaplakrikavöllur"
+    "note": "Útileikur · Besta deild karla - Neðri hluti · Kaplakrikavöllur",
+    "kind": "Íþróttir"
   },
   {
     "title": "Lífið er konsert",
@@ -422,7 +457,8 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782999805.jpg?v=1791755372",
     "note": "Frá 9.900 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Fjölnir – SA",
@@ -434,7 +470,8 @@
     "end": "2026-10-24",
     "time": "16:45",
     "image": null,
-    "note": "Útileikur · Toppdeild karla"
+    "note": "Útileikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "ÍR – Þór Ak.",
@@ -446,7 +483,8 @@
     "end": "2026-10-24",
     "time": "18:00",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Skógarsel"
+    "note": "Útileikur · 1. deild kvenna · Skógarsel",
+    "kind": "Íþróttir"
   },
   {
     "title": "SR – SA",
@@ -458,7 +496,8 @@
     "end": "2026-10-24",
     "time": "19:45",
     "image": null,
-    "note": "Útileikur · Toppdeild kvenna"
+    "note": "Útileikur · Toppdeild kvenna",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fasteignamartröðin",
@@ -469,7 +508,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Vandræðaskáld kynna: Aðför - ofsóknir og önnur áhugamál þjóðar",
@@ -481,7 +521,8 @@
     "time": "21:00",
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22415.jpg",
     "note": "4.990 kr.",
-    "venue": "Múlaberg, Akureyri"
+    "venue": "Múlaberg, Akureyri",
+    "kind": "Annað"
   },
   {
     "title": "Afturelding – Þór",
@@ -493,7 +534,8 @@
     "end": "2026-10-27",
     "time": "18:30",
     "image": null,
-    "note": "Útileikur · Olís deild karla · Myntkaup höllin"
+    "note": "Útileikur · Olís deild karla · Myntkaup höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Hrekkjavökutónleikar",
@@ -504,7 +546,8 @@
     "time": "18:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1790849002.png?v=1791755372",
     "note": "",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "FH – KA",
@@ -516,7 +559,8 @@
     "end": "2026-10-28",
     "time": "18:30",
     "image": null,
-    "note": "Útileikur · Olís deild karla · Kaplakriki"
+    "note": "Útileikur · Olís deild karla · Kaplakriki",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – Haukar",
@@ -528,7 +572,8 @@
     "end": "2026-10-29",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "HK – KA/Þór",
@@ -540,7 +585,8 @@
     "end": "2026-10-30",
     "time": "19:00",
     "image": null,
-    "note": "Útileikur · Olís deild kvenna · Kórinn"
+    "note": "Útileikur · Olís deild kvenna · Kórinn",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fasteignamartröðin",
@@ -551,7 +597,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "KA – Haukar",
@@ -563,7 +610,8 @@
     "end": "2026-10-31",
     "time": "18:30",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fasteignamartröðin",
@@ -574,7 +622,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Nýdönsk - Fullkomið farartæki",
@@ -585,7 +634,8 @@
     "time": "21:00",
     "image": "https://www.mak.is/static/calendar/images/ako_1200x1700-24547.png?v=1791755372",
     "note": "Frá 11.990 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Drykkir innbyrðis",
@@ -595,7 +645,8 @@
     "end": "2026-10-31",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/8s4V2TO8KXzL6OOATeAQSqAJZjmn1G-metaRHJ5a2tpciBpbm5ieXJnw7Bpcy5qcGc=-.webp",
-    "note": "Frá 5.900 kr."
+    "note": "Frá 5.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Þór – FH",
@@ -607,7 +658,8 @@
     "end": "2026-11-01",
     "time": "15:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "Ingimar Eydal 90 ára",
@@ -618,7 +670,8 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1780492600.png?v=1791755372",
     "note": "Frá 8.990 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Ingimar Eydal 90 ára",
@@ -629,7 +682,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1780492600.png?v=1791755372",
     "note": "Frá 8.990 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "ChatGPT námskeið á Akureyri með Stefáni Atla",
@@ -641,7 +695,8 @@
     "time": "18:00",
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22495.jpg",
     "note": "16.900 kr.",
-    "venue": "Múlaberg, Akureyri"
+    "venue": "Múlaberg, Akureyri",
+    "kind": "Fræðsla"
   },
   {
     "title": "Sigurdís Tryggvadóttir",
@@ -651,7 +706,8 @@
     "end": "2026-11-05",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/ES1VtCKnSBSH9WbnajinLLoGmrUkQo-metac2lndXJkw61zIElJSS5qcGc=-.webp",
-    "note": "Frá 5.900 kr."
+    "note": "Frá 5.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Fasteignamartröðin",
@@ -662,7 +718,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Mjög fín bara - Snjólaug Lúðvíksdóttir uppistand - Akureyri",
@@ -674,7 +731,8 @@
     "time": "20:30",
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22327.jpg",
     "note": "6.990 kr.",
-    "venue": "Múlaberg, Hafnarstræti 89, 600 Akureyri"
+    "venue": "Múlaberg, Hafnarstræti 89, 600 Akureyri",
+    "kind": "Uppistand"
   },
   {
     "title": "Jimi Hendrix - Heiðurstónleikar",
@@ -684,7 +742,8 @@
     "end": "2026-11-06",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/vb2zS9FmoHdchbEcNGtm8ttDUjKIV9-metaaGVuZHJpeC5wbmc=-.webp",
-    "note": "Frá 6.900 kr."
+    "note": "Frá 6.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Selfoss – KA/Þór",
@@ -696,7 +755,8 @@
     "end": "2026-11-07",
     "time": "15:30",
     "image": null,
-    "note": "Útileikur · Olís deild kvenna · Set höllin"
+    "note": "Útileikur · Olís deild kvenna · Set höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Njardvik b – Þór Ak.",
@@ -708,7 +768,8 @@
     "end": "2026-11-07",
     "time": "16:00",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · IceMar-höllin"
+    "note": "Útileikur · 1. deild kvenna · IceMar-höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "SA – Fjölnir",
@@ -720,7 +781,8 @@
     "end": "2026-11-07",
     "time": "16:45",
     "image": null,
-    "note": "Heimaleikur · Toppdeild kvenna"
+    "note": "Heimaleikur · Toppdeild kvenna",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fasteignamartröðin",
@@ -731,7 +793,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "DIMMA",
@@ -741,7 +804,8 @@
     "end": "2026-11-07",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/jmPO4aCQUmmTnK0zuA76Ii9k8DzoGs-metaRGltbWEgMjAyNiBuw70gc3TDs3IuanBn-.webp",
-    "note": "Frá 7.900 kr."
+    "note": "Frá 7.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Ferund",
@@ -752,7 +816,8 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1790936458.png?v=1791755372",
     "note": "3.500 kr.",
-    "venue": "Hamrar, Hof"
+    "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Þór Ak. – KFG",
@@ -764,7 +829,8 @@
     "end": "2026-11-08",
     "time": "16:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "Haukar – Þór",
@@ -776,7 +842,8 @@
     "end": "2026-11-12",
     "time": "18:30",
     "image": null,
-    "note": "Útileikur · Olís deild karla · Kuehne+Nagel höllin"
+    "note": "Útileikur · Olís deild karla · Kuehne+Nagel höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Afnám Tilviljunar - Abolishing Chance",
@@ -787,7 +854,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1788449333.png?v=1791755372",
     "note": "3.500 kr.",
-    "venue": "Black box, Hof"
+    "venue": "Black box, Hof",
+    "kind": "Annað"
   },
   {
     "title": "KA/Þór – Fram",
@@ -799,7 +867,8 @@
     "end": "2026-11-13",
     "time": "19:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
+    "note": "Heimaleikur · Olís deild kvenna · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "KV – Þór Ak.",
@@ -811,7 +880,8 @@
     "end": "2026-11-13",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Meistaravellir"
+    "note": "Útileikur · 1. deild karla · Meistaravellir",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fasteignamartröðin",
@@ -822,7 +892,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Selfoss – KA",
@@ -834,7 +905,8 @@
     "end": "2026-11-13",
     "time": "20:15",
     "image": null,
-    "note": "Útileikur · Olís deild karla · Set höllin"
+    "note": "Útileikur · Olís deild karla · Set höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Sex Pistols Expose",
@@ -844,7 +916,8 @@
     "end": "2026-11-13",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/GSaCZzSYI6c23R2VPBJZY3psZbZMmN-metac2V4IHBpc3QgSUkuanBn-.webp",
-    "note": "Frá 7.900 kr."
+    "note": "Frá 7.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "SA – Fjölnir",
@@ -856,7 +929,8 @@
     "end": "2026-11-14",
     "time": "16:45",
     "image": null,
-    "note": "Heimaleikur · Toppdeild karla"
+    "note": "Heimaleikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fasteignamartröðin",
@@ -867,7 +941,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Todmobile",
@@ -878,7 +953,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782818454.png?v=1791755372",
     "note": "Frá 11.990 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Oasis - Heiðurstónleikar",
@@ -888,7 +964,8 @@
     "end": "2026-11-14",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/GwdvF1ol93aLUp4niWcdVbkXxJ5g4k-metaZ3LDpm5pIGNvcHkuanBn-.webp",
-    "note": "Frá 7.900 kr."
+    "note": "Frá 7.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "XXX Rottweiler á Verkstæðinu",
@@ -900,7 +977,8 @@
     "time": "22:00",
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22368.jpg",
     "note": "7.900 kr.",
-    "venue": "Verkstæðið, Akureyri"
+    "venue": "Verkstæðið, Akureyri",
+    "kind": "Annað"
   },
   {
     "title": "Þór Ak. – Keflavík b",
@@ -912,7 +990,8 @@
     "end": "2026-11-15",
     "time": "18:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fjölnir – KA/Þór",
@@ -924,7 +1003,8 @@
     "end": "2026-11-18",
     "time": "",
     "image": null,
-    "note": "Útileikur · Powerade bikar kvenna 2027 · Fjölnishöll"
+    "note": "Útileikur · Powerade bikar kvenna 2027 · Fjölnishöll",
+    "kind": "Íþróttir"
   },
   {
     "title": "Celebrating George Michael",
@@ -935,7 +1015,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1777386904.jpg?v=1791755372",
     "note": "Frá 9.990 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Skálmöld",
@@ -945,7 +1026,8 @@
     "end": "2026-11-20",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/NRbC45vdyt1InuUIm3cARqJAtc6WAQ-metac2vDoWxtw7ZsZCBiYWxkdXIuanBn-.webp",
-    "note": "Uppselt · Frá 8.900 kr."
+    "note": "Uppselt · Frá 8.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Afturelding – KA",
@@ -957,7 +1039,8 @@
     "end": "2026-11-21",
     "time": "13:30",
     "image": null,
-    "note": "Útileikur · Unbrokendeild karla · Myntkauphöllin (Varmá)"
+    "note": "Útileikur · Unbrokendeild karla · Myntkauphöllin (Varmá)",
+    "kind": "Íþróttir"
   },
   {
     "title": "Afturelding – KA",
@@ -969,7 +1052,8 @@
     "end": "2026-11-21",
     "time": "15:30",
     "image": null,
-    "note": "Útileikur · Unbrokendeild kvenna · Myntkauphöllin (Varmá)"
+    "note": "Útileikur · Unbrokendeild kvenna · Myntkauphöllin (Varmá)",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – ÍA",
@@ -981,7 +1065,8 @@
     "end": "2026-11-21",
     "time": "15:30",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA/Þór – ÍBV",
@@ -993,7 +1078,8 @@
     "end": "2026-11-21",
     "time": "16:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
+    "note": "Heimaleikur · Olís deild kvenna · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "SA – SR",
@@ -1005,7 +1091,8 @@
     "end": "2026-11-21",
     "time": "16:45",
     "image": null,
-    "note": "Heimaleikur · Toppdeild kvenna"
+    "note": "Heimaleikur · Toppdeild kvenna",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – Selfoss",
@@ -1017,7 +1104,8 @@
     "end": "2026-11-21",
     "time": "18:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "Skálmöld",
@@ -1027,7 +1115,8 @@
     "end": "2026-11-21",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/b3CTzkvZ56UTJWaO2IfgGRh5yJgMkO-metac2vDoWxtw7ZsZCBiYWxkdXIuanBn-.webp",
-    "note": "Uppselt · Frá 8.900 kr."
+    "note": "Uppselt · Frá 8.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Þór – KA",
@@ -1039,7 +1128,8 @@
     "end": "2026-11-22",
     "time": "18:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór – Fram",
@@ -1051,7 +1141,8 @@
     "end": "2026-11-26",
     "time": "19:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA – HK",
@@ -1063,7 +1154,8 @@
     "end": "2026-11-26",
     "time": "19:30",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Jólaglögg",
@@ -1074,7 +1166,8 @@
     "time": "18:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788789002.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Hamrar, Hof"
+    "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Þór Ak. – Selfoss",
@@ -1086,7 +1179,8 @@
     "end": "2026-11-27",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fjölnir – SA",
@@ -1098,7 +1192,8 @@
     "end": "2026-11-27",
     "time": "19:45",
     "image": null,
-    "note": "Útileikur · Toppdeild kvenna"
+    "note": "Útileikur · Toppdeild kvenna",
+    "kind": "Íþróttir"
   },
   {
     "title": "Jólaglögg",
@@ -1109,7 +1204,8 @@
     "time": "20:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788789002.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Hamrar, Hof"
+    "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Baggalútur",
@@ -1120,7 +1216,8 @@
     "time": "21:00",
     "image": "https://www.mak.is/static/calendar/images/uppf._baggalutur_120017004642.jpg?v=1791755372",
     "note": "13.990 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Skítamórall",
@@ -1130,7 +1227,8 @@
     "end": "2026-11-27",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/v5FSlygO8Tq2R4W0dCc589bbKeFZY0-metaU2vDrW3DsyAyNiBJSUlJLmpwZw==-.webp",
-    "note": "Frá 8.500 kr."
+    "note": "Frá 8.500 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Haukar u – Þór Ak.",
@@ -1142,7 +1240,8 @@
     "end": "2026-11-28",
     "time": "16:00",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Ásvellir"
+    "note": "Útileikur · 1. deild kvenna · Ásvellir",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fjölnir – SA",
@@ -1154,7 +1253,8 @@
     "end": "2026-11-28",
     "time": "16:45",
     "image": null,
-    "note": "Útileikur · Toppdeild kvenna"
+    "note": "Útileikur · Toppdeild kvenna",
+    "kind": "Íþróttir"
   },
   {
     "title": "Jólaglögg",
@@ -1165,7 +1265,8 @@
     "time": "18:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788789002.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Hamrar, Hof"
+    "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Á rauðu ljósi",
@@ -1176,7 +1277,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745812.png?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Jólaglögg",
@@ -1187,7 +1289,8 @@
     "time": "20:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788789002.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Hamrar, Hof"
+    "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Baggalútur",
@@ -1198,7 +1301,8 @@
     "time": "21:00",
     "image": "https://www.mak.is/static/calendar/images/uppf._baggalutur_120017004642.jpg?v=1791755372",
     "note": "13.990 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Breiðablik – Þór Ak.",
@@ -1210,7 +1314,8 @@
     "end": "2026-11-29",
     "time": "16:30",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Smárinn"
+    "note": "Útileikur · 1. deild kvenna · Smárinn",
+    "kind": "Íþróttir"
   },
   {
     "title": "Á rauðu ljósi",
@@ -1221,7 +1326,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745812.png?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "KA – Víkingur",
@@ -1233,7 +1339,8 @@
     "end": "2026-12-03",
     "time": "19:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – Skallagrímur",
@@ -1245,7 +1352,8 @@
     "end": "2026-12-03",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "Jólapartý Skoppu og Skrítlu",
@@ -1256,7 +1364,8 @@
     "time": "17:00",
     "image": "https://www.mak.is/static/calendar/images/jolaparty-hof-uppfaerd-dags-707x1000-014640.png?v=1791755372",
     "note": "7.500 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Jólaglögg",
@@ -1267,7 +1376,8 @@
     "time": "18:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788789002.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Hamrar, Hof"
+    "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "HK – Þór",
@@ -1279,7 +1389,8 @@
     "end": "2026-12-04",
     "time": "18:30",
     "image": null,
-    "note": "Útileikur · Olís deild karla · Kórinn"
+    "note": "Útileikur · Olís deild karla · Kórinn",
+    "kind": "Íþróttir"
   },
   {
     "title": "Jólaglögg",
@@ -1290,7 +1401,8 @@
     "time": "20:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788789002.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Hamrar, Hof"
+    "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Lón",
@@ -1300,7 +1412,8 @@
     "end": "2026-12-04",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/Q1nJsUeACcLErMUQHPVVaB8gmg0qxL-metaTMOzbiBJLmpwZw==-.webp",
-    "note": "Frá 6.900 kr."
+    "note": "Frá 6.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Jólapartý Skoppu og Skrítlu",
@@ -1311,7 +1424,8 @@
     "time": "11:00",
     "image": "https://www.mak.is/static/calendar/images/jolaparty-hof-uppfaerd-dags-707x1000-014640.png?v=1791755372",
     "note": "7.500 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Jólapartý Skoppu og Skrítlu",
@@ -1322,7 +1436,8 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/jolaparty-hof-uppfaerd-dags-707x1000-014640.png?v=1791755372",
     "note": "7.500 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Jólapartý Skoppu og Skrítlu",
@@ -1333,7 +1448,8 @@
     "time": "15:00",
     "image": "https://www.mak.is/static/calendar/images/jolaparty-hof-uppfaerd-dags-707x1000-014640.png?v=1791755372",
     "note": "7.500 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Þór Ak. – Aþena",
@@ -1345,7 +1461,8 @@
     "end": "2026-12-05",
     "time": "18:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "Á rauðu ljósi",
@@ -1356,7 +1473,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745812.png?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Bubbi - Þorláksmessutónleikar",
@@ -1367,7 +1485,8 @@
     "time": "20:30",
     "image": "https://www.mak.is/static/calendar/images/submit_1788189721.png?v=1791755372",
     "note": "Frá 9.500 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Jóla-Súlur",
@@ -1377,7 +1496,8 @@
     "end": "2026-12-05",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/65xmvcUUihVzsCxqKsyPRUdYCN6L4B-metaSsOzbGFzw7psdXIgMjYgSUkuanBn-.webp",
-    "note": "Nýtt · Frá 4.900 kr."
+    "note": "Nýtt · Frá 4.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Á rauðu ljósi",
@@ -1388,7 +1508,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745812.png?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "KA – Fram",
@@ -1400,7 +1521,8 @@
     "end": "2026-12-08",
     "time": "19:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór – Selfoss",
@@ -1412,7 +1534,8 @@
     "end": "2026-12-09",
     "time": "19:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "Jól með Brother Grass",
@@ -1422,7 +1545,8 @@
     "end": "2026-12-10",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/7IrMe5Ujq6xYaVJaNfzzYKxQFdgokg-metaQnJvdGhlciBncmFzcy5qcGc=-.webp",
-    "note": "Fáir miðar · Frá 6.900 kr."
+    "note": "Fáir miðar · Frá 6.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Vitringarnir 3 - 2026",
@@ -1433,7 +1557,8 @@
     "time": "19:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791755372",
     "note": "Frá 13.999 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Snæfell – Þór Ak.",
@@ -1445,7 +1570,8 @@
     "end": "2026-12-11",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Stykkishólmur"
+    "note": "Útileikur · 1. deild karla · Stykkishólmur",
+    "kind": "Íþróttir"
   },
   {
     "title": "Brother Grass",
@@ -1455,7 +1581,8 @@
     "end": "2026-12-11",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/ILJkuYVKbhzWteKlJBdWUluBWPOhNj-metaQnJvdGhlciBncmFzcy5qcGc=-.webp",
-    "note": "Frá 6.900 kr."
+    "note": "Frá 6.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Vitringarnir 3 - 2026",
@@ -1466,7 +1593,8 @@
     "time": "22:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791755372",
     "note": "Frá 13.999 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "KA – Þróttur Fjarðabyggð",
@@ -1478,7 +1606,8 @@
     "end": "2026-12-12",
     "time": "15:00",
     "image": null,
-    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið"
+    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Vitringarnir 3 - 2026",
@@ -1489,7 +1618,8 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791755372",
     "note": "Frá 13.999 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "SA – SR",
@@ -1501,7 +1631,8 @@
     "end": "2026-12-12",
     "time": "16:45",
     "image": null,
-    "note": "Heimaleikur · Toppdeild karla"
+    "note": "Heimaleikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "Vitringarnir 3 - 2026",
@@ -1512,7 +1643,8 @@
     "time": "19:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791755372",
     "note": "Frá 13.999 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "SA – SR",
@@ -1524,7 +1656,8 @@
     "end": "2026-12-12",
     "time": "19:30",
     "image": null,
-    "note": "Heimaleikur · Toppdeild kvenna"
+    "note": "Heimaleikur · Toppdeild kvenna",
+    "kind": "Íþróttir"
   },
   {
     "title": "Laddi og Hljómsveit mannanna - Jóla hvað?",
@@ -1534,7 +1667,8 @@
     "end": "2026-12-12",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/LtCalN6ewik4zUeLiQWp712Me87flq-metaNVdGcUtZS3cuanBn-.webp",
-    "note": "Frá 8.900 kr."
+    "note": "Frá 8.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Vitringarnir 3 - 2026",
@@ -1545,7 +1679,8 @@
     "time": "22:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791755372",
     "note": "Frá 13.999 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Haukar – KA/Þór",
@@ -1557,7 +1692,8 @@
     "end": "2026-12-13",
     "time": "14:00",
     "image": null,
-    "note": "Útileikur · Olís deild kvenna · Kuehne+Nagel höllin"
+    "note": "Útileikur · Olís deild kvenna · Kuehne+Nagel höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór – Víkingur",
@@ -1569,7 +1705,8 @@
     "end": "2026-12-13",
     "time": "15:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA – Valur",
@@ -1581,7 +1718,8 @@
     "end": "2026-12-13",
     "time": "15:30",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Vitringarnir 3 - 2026",
@@ -1592,7 +1730,8 @@
     "time": "19:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1778669405.jpg?v=1791755372",
     "note": "Frá 13.999 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "KA/Þór – ÍR",
@@ -1604,7 +1743,8 @@
     "end": "2026-12-17",
     "time": "19:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
+    "note": "Heimaleikur · Olís deild kvenna · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Þ. – Þór Ak.",
@@ -1616,7 +1756,8 @@
     "end": "2026-12-18",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Icelandic Glacial höllin"
+    "note": "Útileikur · 1. deild karla · Icelandic Glacial höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Krissmas Spesjal",
@@ -1626,7 +1767,8 @@
     "end": "2026-12-18",
     "time": "20:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/PsRdyVRag0xrOvkjp8GO2oRnpZlbl5-metaS3Jpc3NtYXNzMTAwMHgxMDAwLnBuZw==-.webp",
-    "note": "Frá 7.900 kr."
+    "note": "Frá 7.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Ari Eldjárn: Áramótaskop 2026",
@@ -1637,7 +1779,8 @@
     "time": "18:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1787225556.jpg?v=1791755372",
     "note": "9.990 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Uppistand"
   },
   {
     "title": "KK, Mugison & Jón Jónsson",
@@ -1649,7 +1792,8 @@
     "time": "19:30",
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22175.jpg",
     "note": "Uppselt · 9.500 kr.",
-    "venue": "Glerárkirkja"
+    "venue": "Glerárkirkja",
+    "kind": "Annað"
   },
   {
     "title": "Hátíðartónar",
@@ -1661,7 +1805,8 @@
     "time": "20:00",
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22461.jpg",
     "note": "7.990 kr.",
-    "venue": "Akureyrarkirkja"
+    "venue": "Akureyrarkirkja",
+    "kind": "Annað"
   },
   {
     "title": "Ari Eldjárn: Áramótaskop 2026",
@@ -1672,7 +1817,8 @@
     "time": "21:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1787225556.jpg?v=1791755372",
     "note": "9.990 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Uppistand"
   },
   {
     "title": "Krissmas Spesjal",
@@ -1682,7 +1828,8 @@
     "end": "2026-12-19",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/219mmrQXoGXaT8wOa22rBYyvAympt4-metaS3Jpc3NtYXNzMTAwMHgxMDAwLnBuZw==-.webp",
-    "note": "Frá 7.900 kr."
+    "note": "Frá 7.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Killer Queen",
@@ -1692,7 +1839,8 @@
     "end": "2026-12-26",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/rs4evmwi8KnWKi1Tdtr3mWwKhBHks3-metaS2lsbGVyIHF1ZWVuIDI2LnBuZw==-.webp",
-    "note": "Nýtt · Frá 7.900 kr."
+    "note": "Nýtt · Frá 7.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "Árstíðir - Hátíðartónleikar",
@@ -1704,7 +1852,8 @@
     "time": "20:00",
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22137.jpg",
     "note": "5.900 kr.",
-    "venue": "Akureyrarkirkja"
+    "venue": "Akureyrarkirkja",
+    "kind": "Tónlist"
   },
   {
     "title": "U20 – SA",
@@ -1716,7 +1865,8 @@
     "end": "2027-01-02",
     "time": "16:45",
     "image": null,
-    "note": "Útileikur · Toppdeild karla"
+    "note": "Útileikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "SA – U20",
@@ -1728,7 +1878,8 @@
     "end": "2027-01-03",
     "time": "16:45",
     "image": null,
-    "note": "Heimaleikur · Toppdeild karla"
+    "note": "Heimaleikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Þ. – Þór Ak.",
@@ -1740,7 +1891,8 @@
     "end": "2027-01-06",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Icelandic Glacial höllin"
+    "note": "Útileikur · 1. deild kvenna · Icelandic Glacial höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – Hamar",
@@ -1752,7 +1904,8 @@
     "end": "2027-01-08",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "Valur – KA/Þór",
@@ -1764,7 +1917,8 @@
     "end": "2027-01-09",
     "time": "15:00",
     "image": null,
-    "note": "Útileikur · Olís deild kvenna · N1 höllin"
+    "note": "Útileikur · Olís deild kvenna · N1 höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA – Þróttur Reykjavík/Blakfélag Hafnafjarðar",
@@ -1776,7 +1930,8 @@
     "end": "2027-01-09",
     "time": "15:30",
     "image": null,
-    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið"
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "SA – SR",
@@ -1788,7 +1943,8 @@
     "end": "2027-01-09",
     "time": "16:45",
     "image": null,
-    "note": "Heimaleikur · Toppdeild karla"
+    "note": "Heimaleikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA – Þróttur Reykjavík",
@@ -1800,7 +1956,8 @@
     "end": "2027-01-10",
     "time": "13:00",
     "image": null,
-    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið"
+    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA – Þróttur Reykjavík/Blakfélag Hafnafjarðar",
@@ -1812,7 +1969,8 @@
     "end": "2027-01-10",
     "time": "15:30",
     "image": null,
-    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið"
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Í tunglsljósi á ís",
@@ -1823,7 +1981,8 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/tunglsljos_120017004592.jpg?v=1791755372",
     "note": "Frá 5.900 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Fjölnir – SA",
@@ -1835,7 +1994,8 @@
     "end": "2027-01-10",
     "time": "19:45",
     "image": null,
-    "note": "Útileikur · Toppdeild karla"
+    "note": "Útileikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA/Þór – Grótta",
@@ -1847,7 +2007,8 @@
     "end": "2027-01-15",
     "time": "19:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
+    "note": "Heimaleikur · Olís deild kvenna · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Breiðablik – Þór Ak.",
@@ -1859,7 +2020,8 @@
     "end": "2027-01-15",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Smárinn"
+    "note": "Útileikur · 1. deild karla · Smárinn",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – Skallagrímur",
@@ -1871,7 +2033,8 @@
     "end": "2027-01-17",
     "time": "16:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA – Völsungur",
@@ -1883,7 +2046,8 @@
     "end": "2027-01-20",
     "time": "",
     "image": null,
-    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið"
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "120 ára afmæli Samkomuhússins",
@@ -1894,7 +2058,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Þór Ak. – Fjölnir",
@@ -1906,7 +2071,8 @@
     "end": "2027-01-21",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "120 ára afmæli Samkomuhússins",
@@ -1917,7 +2083,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "KV – Þór Ak.",
@@ -1929,7 +2096,8 @@
     "end": "2027-01-23",
     "time": "18:00",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Meistaravellir"
+    "note": "Útileikur · 1. deild kvenna · Meistaravellir",
+    "kind": "Íþróttir"
   },
   {
     "title": "SA – Fjölnir",
@@ -1941,7 +2109,8 @@
     "end": "2027-01-23",
     "time": "19:45",
     "image": null,
-    "note": "Heimaleikur · Toppdeild kvenna"
+    "note": "Heimaleikur · Toppdeild kvenna",
+    "kind": "Íþróttir"
   },
   {
     "title": "120 ára afmæli Samkomuhússins",
@@ -1952,7 +2121,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Stjarnan – KA/Þór",
@@ -1964,7 +2134,8 @@
     "end": "2027-01-24",
     "time": "15:00",
     "image": null,
-    "note": "Útileikur · Olís deild kvenna · Heklu Höllin"
+    "note": "Útileikur · Olís deild kvenna · Heklu Höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA/Þór – HK",
@@ -1976,7 +2147,8 @@
     "end": "2027-01-28",
     "time": "18:30",
     "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
+    "note": "Heimaleikur · Olís deild kvenna · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Haukar – Þór Ak.",
@@ -1988,7 +2160,8 @@
     "end": "2027-01-29",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Ásvellir"
+    "note": "Útileikur · 1. deild karla · Ásvellir",
+    "kind": "Íþróttir"
   },
   {
     "title": "120 ára afmæli Samkomuhússins",
@@ -1999,7 +2172,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Þór Ak. – ÍR",
@@ -2011,7 +2185,8 @@
     "end": "2027-01-30",
     "time": "18:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "120 ára afmæli Samkomuhússins",
@@ -2022,7 +2197,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Pernille Haaland - Nordic AF",
@@ -2033,7 +2209,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1781103353.png?v=1791755372",
     "note": "4.000 kr.",
-    "venue": "Hamrar, Hof"
+    "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "SA – Fjölnir",
@@ -2045,7 +2222,8 @@
     "end": "2027-01-31",
     "time": "16:45",
     "image": null,
-    "note": "Heimaleikur · Toppdeild karla"
+    "note": "Heimaleikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "ÍBV – KA",
@@ -2057,7 +2235,8 @@
     "end": "2027-02-04",
     "time": "18:00",
     "image": null,
-    "note": "Útileikur · Olís deild karla · Íþróttamiðstöð Vestmannaeyja"
+    "note": "Útileikur · Olís deild karla · Íþróttamiðstöð Vestmannaeyja",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór – Valur",
@@ -2069,7 +2248,8 @@
     "end": "2027-02-05",
     "time": "18:30",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA/Þór – Selfoss",
@@ -2081,7 +2261,8 @@
     "end": "2027-02-06",
     "time": "16:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið"
+    "note": "Heimaleikur · Olís deild kvenna · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "SR – SA",
@@ -2093,7 +2274,8 @@
     "end": "2027-02-06",
     "time": "17:45",
     "image": null,
-    "note": "Útileikur · Toppdeild kvenna"
+    "note": "Útileikur · Toppdeild kvenna",
+    "kind": "Íþróttir"
   },
   {
     "title": "SR – SA",
@@ -2105,7 +2287,8 @@
     "end": "2027-02-06",
     "time": "19:45",
     "image": null,
-    "note": "Útileikur · Toppdeild karla"
+    "note": "Útileikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "120 ára afmæli Samkomuhússins",
@@ -2116,7 +2299,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745604.jpg?v=1791755372",
     "note": "7.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "KA – Stjarnan",
@@ -2128,7 +2312,8 @@
     "end": "2027-02-11",
     "time": "19:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2139,7 +2324,8 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Fjölskylda"
   },
   {
     "title": "Þór – ÍBV",
@@ -2151,7 +2337,8 @@
     "end": "2027-02-13",
     "time": "15:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fram – KA/Þór",
@@ -2163,7 +2350,8 @@
     "end": "2027-02-13",
     "time": "15:30",
     "image": null,
-    "note": "Útileikur · Olís deild kvenna · Lambhagahöllin"
+    "note": "Útileikur · Olís deild kvenna · Lambhagahöllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "SA – Fjölnir",
@@ -2175,7 +2363,8 @@
     "end": "2027-02-13",
     "time": "16:45",
     "image": null,
-    "note": "Heimaleikur · Toppdeild karla"
+    "note": "Heimaleikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "KFG – Þór Ak.",
@@ -2187,7 +2376,8 @@
     "end": "2027-02-13",
     "time": "17:30",
     "image": null,
-    "note": "Útileikur · 1. deild karla · ÞG Verk höllin"
+    "note": "Útileikur · 1. deild karla · ÞG Verk höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "A Country Night in Nashville",
@@ -2198,7 +2388,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1787924382.jpg?v=1791755372",
     "note": "Frá 9.990 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2209,7 +2400,8 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Fjölskylda"
   },
   {
     "title": "HK – KA",
@@ -2221,7 +2413,8 @@
     "end": "2027-02-14",
     "time": "15:00",
     "image": null,
-    "note": "Útileikur · Unbrokendeild karla · Digranes"
+    "note": "Útileikur · Unbrokendeild karla · Digranes",
+    "kind": "Íþróttir"
   },
   {
     "title": "HK – KA",
@@ -2233,7 +2426,8 @@
     "end": "2027-02-14",
     "time": "17:15",
     "image": null,
-    "note": "Útileikur · Unbrokendeild kvenna · Digranes"
+    "note": "Útileikur · Unbrokendeild kvenna · Digranes",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – Njardvik b",
@@ -2245,7 +2439,8 @@
     "end": "2027-02-17",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "Stjarnan – Þór",
@@ -2257,7 +2452,8 @@
     "end": "2027-02-18",
     "time": "18:30",
     "image": null,
-    "note": "Útileikur · Olís deild karla · Heklu Höllin"
+    "note": "Útileikur · Olís deild karla · Heklu Höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Afturelding – KA",
@@ -2269,7 +2465,8 @@
     "end": "2027-02-18",
     "time": "19:00",
     "image": null,
-    "note": "Útileikur · Olís deild karla · Myntkaup höllin"
+    "note": "Útileikur · Olís deild karla · Myntkaup höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – KV",
@@ -2281,7 +2478,8 @@
     "end": "2027-02-18",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "SA – SR",
@@ -2293,7 +2491,8 @@
     "end": "2027-02-19",
     "time": "16:45",
     "image": null,
-    "note": "Heimaleikur · Toppdeild karla"
+    "note": "Heimaleikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2304,7 +2503,8 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Fjölskylda"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2315,7 +2515,8 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Fjölskylda"
   },
   {
     "title": "Daníel Bjarnason stjórnar Brahms",
@@ -2326,7 +2527,8 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/brahms1217004594.jpg?v=1791755372",
     "note": "Frá 6.900 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "SA – Fjölnir",
@@ -2338,7 +2540,8 @@
     "end": "2027-02-21",
     "time": "16:45",
     "image": null,
-    "note": "Heimaleikur · Toppdeild karla"
+    "note": "Heimaleikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór – Afturelding",
@@ -2350,7 +2553,8 @@
     "end": "2027-02-25",
     "time": "19:00",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA – FH",
@@ -2362,7 +2566,8 @@
     "end": "2027-02-25",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "ÍA – Þór Ak.",
@@ -2374,7 +2579,8 @@
     "end": "2027-02-25",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · AvAir höllin"
+    "note": "Útileikur · 1. deild karla · AvAir höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "SR – SA",
@@ -2386,7 +2592,8 @@
     "end": "2027-02-26",
     "time": "19:45",
     "image": null,
-    "note": "Útileikur · Toppdeild karla"
+    "note": "Útileikur · Toppdeild karla",
+    "kind": "Íþróttir"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2397,7 +2604,8 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Fjölskylda"
   },
   {
     "title": "Keflavík b – Þór Ak.",
@@ -2409,7 +2617,8 @@
     "end": "2027-02-27",
     "time": "16:00",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Blue-höllin"
+    "note": "Útileikur · 1. deild kvenna · Blue-höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2420,7 +2629,8 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Fjölskylda"
   },
   {
     "title": "Þróttur Fjarðabyggð – KA",
@@ -2432,7 +2642,8 @@
     "end": "2027-02-28",
     "time": "13:00",
     "image": null,
-    "note": "Útileikur · Unbrokendeild karla · Íþróttahúsið í Neskaupstað"
+    "note": "Útileikur · Unbrokendeild karla · Íþróttahúsið í Neskaupstað",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þróttur Fjarðabyggð – KA",
@@ -2444,7 +2655,8 @@
     "end": "2027-02-28",
     "time": "15:30",
     "image": null,
-    "note": "Útileikur · Unbrokendeild kvenna · Íþróttahúsið í Neskaupstað"
+    "note": "Útileikur · Unbrokendeild kvenna · Íþróttahúsið í Neskaupstað",
+    "kind": "Íþróttir"
   },
   {
     "title": "Selfoss – Þór Ak.",
@@ -2456,7 +2668,8 @@
     "end": "2027-03-05",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Vallaskóli"
+    "note": "Útileikur · 1. deild karla · Vallaskóli",
+    "kind": "Íþróttir"
   },
   {
     "title": "FH – Þór",
@@ -2468,7 +2681,8 @@
     "end": "2027-03-05",
     "time": "19:45",
     "image": null,
-    "note": "Útileikur · Olís deild karla · Kaplakriki"
+    "note": "Útileikur · Olís deild karla · Kaplakriki",
+    "kind": "Íþróttir"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2479,7 +2693,8 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Fjölskylda"
   },
   {
     "title": "KA – Afturelding",
@@ -2491,7 +2706,8 @@
     "end": "2027-03-06",
     "time": "15:30",
     "image": null,
-    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið"
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Haukar – KA",
@@ -2503,7 +2719,8 @@
     "end": "2027-03-06",
     "time": "17:30",
     "image": null,
-    "note": "Útileikur · Olís deild karla · Kuehne+Nagel höllin"
+    "note": "Útileikur · Olís deild karla · Kuehne+Nagel höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "SR – SA",
@@ -2515,7 +2732,8 @@
     "end": "2027-03-06",
     "time": "17:45",
     "image": null,
-    "note": "Útileikur · Toppdeild kvenna"
+    "note": "Útileikur · Toppdeild kvenna",
+    "kind": "Íþróttir"
   },
   {
     "title": "Selfoss – Þór Ak.",
@@ -2527,7 +2745,8 @@
     "end": "2027-03-06",
     "time": "18:00",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Vallaskóli"
+    "note": "Útileikur · 1. deild kvenna · Vallaskóli",
+    "kind": "Íþróttir"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2538,7 +2757,8 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Fjölskylda"
   },
   {
     "title": "KA – Afturelding",
@@ -2550,7 +2770,8 @@
     "end": "2027-03-07",
     "time": "13:00",
     "image": null,
-    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið"
+    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA – Afturelding",
@@ -2562,7 +2783,8 @@
     "end": "2027-03-07",
     "time": "15:30",
     "image": null,
-    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið"
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fjölnir – SA",
@@ -2574,7 +2796,8 @@
     "end": "2027-03-07",
     "time": "16:45",
     "image": null,
-    "note": "Útileikur · Toppdeild kvenna"
+    "note": "Útileikur · Toppdeild kvenna",
+    "kind": "Íþróttir"
   },
   {
     "title": "Aríur örlaganna",
@@ -2585,7 +2808,8 @@
     "time": "17:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782207313.png?v=1791755372",
     "note": "",
-    "venue": "Hamrar, Hof"
+    "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Skallagrímur – Þór Ak.",
@@ -2597,7 +2821,8 @@
     "end": "2027-03-12",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Borgarnes"
+    "note": "Útileikur · 1. deild karla · Borgarnes",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – Haukar u",
@@ -2609,7 +2834,8 @@
     "end": "2027-03-13",
     "time": "18:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2620,7 +2846,8 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Fjölskylda"
   },
   {
     "title": "Þór – Fylkir",
@@ -2632,7 +2859,8 @@
     "end": "2027-03-17",
     "time": "18:00",
     "image": null,
-    "note": "Heimaleikur · Lengjubikar karla - A deild Úrslit · Greifavöllurinn"
+    "note": "Heimaleikur · Lengjubikar karla - A deild Úrslit · Greifavöllurinn",
+    "kind": "Íþróttir"
   },
   {
     "title": "KA – Selfoss",
@@ -2644,7 +2872,8 @@
     "end": "2027-03-17",
     "time": "19:30",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið"
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór – Haukar",
@@ -2656,7 +2885,8 @@
     "end": "2027-03-17",
     "time": "19:30",
     "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri"
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – Snæfell",
@@ -2668,7 +2898,8 @@
     "end": "2027-03-19",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak"
+    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "Aþena – Þór Ak.",
@@ -2680,7 +2911,8 @@
     "end": "2027-03-20",
     "time": "16:00",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Unbroken Höllin"
+    "note": "Útileikur · 1. deild kvenna · Unbroken Höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "SA – SR",
@@ -2692,7 +2924,8 @@
     "end": "2027-03-20",
     "time": "16:45",
     "image": null,
-    "note": "Heimaleikur · Toppdeild kvenna"
+    "note": "Heimaleikur · Toppdeild kvenna",
+    "kind": "Íþróttir"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2703,7 +2936,8 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Fjölskylda"
   },
   {
     "title": "Fram – KA",
@@ -2715,7 +2949,8 @@
     "end": "2027-03-24",
     "time": "19:30",
     "image": null,
-    "note": "Útileikur · Olís deild karla · Lambhagahöllin"
+    "note": "Útileikur · Olís deild karla · Lambhagahöllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Selfoss – Þór",
@@ -2727,7 +2962,8 @@
     "end": "2027-03-24",
     "time": "19:30",
     "image": null,
-    "note": "Útileikur · Olís deild karla · Set höllin"
+    "note": "Útileikur · Olís deild karla · Set höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Úr heimi í heim",
@@ -2738,7 +2974,8 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/urheimi_120017004597.jpg?v=1791755372",
     "note": "Frá 4.900 kr.",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2749,7 +2986,8 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Fjölskylda"
   },
   {
     "title": "Þór Ak. – Breiðablik",
@@ -2761,7 +2999,8 @@
     "end": "2027-03-30",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak"
+    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "kind": "Íþróttir"
   },
   {
     "title": "Draumahliðið",
@@ -2772,7 +3011,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782206629.png?v=1791755372",
     "note": "",
-    "venue": "Black box, Hof"
+    "venue": "Black box, Hof",
+    "kind": "Annað"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2783,7 +3023,8 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Fjölskylda"
   },
   {
     "title": "Fjölnir – SA",
@@ -2795,7 +3036,8 @@
     "end": "2027-04-03",
     "time": "16:45",
     "image": null,
-    "note": "Útileikur · Toppdeild kvenna"
+    "note": "Útileikur · Toppdeild kvenna",
+    "kind": "Íþróttir"
   },
   {
     "title": "Skilaboðaskjóðan",
@@ -2806,7 +3048,8 @@
     "time": "13:00",
     "image": "https://www.mak.is/static/calendar/images/600x800_skilabodaskj_2x4617.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Fjölskylda"
   },
   {
     "title": "SA – Fjölnir",
@@ -2818,7 +3061,8 @@
     "end": "2027-04-10",
     "time": "16:45",
     "image": null,
-    "note": "Heimaleikur · Toppdeild kvenna"
+    "note": "Heimaleikur · Toppdeild kvenna",
+    "kind": "Íþróttir"
   },
   {
     "title": "Urta söguljóð",
@@ -2829,7 +3073,8 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782207254.png?v=1791755372",
     "note": "",
-    "venue": "Hamrar, Hof"
+    "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Gæðablóð",
@@ -2840,7 +3085,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745946.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Gæðablóð",
@@ -2851,7 +3097,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782745946.jpg?v=1791755372",
     "note": "6.900 kr.",
-    "venue": "Samkomuhúsið"
+    "venue": "Samkomuhúsið",
+    "kind": "Leiklist"
   },
   {
     "title": "Teiknimyndalögin okkar",
@@ -2862,7 +3109,8 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782206981.png?v=1791755372",
     "note": "",
-    "venue": "Hamraborg, Hof"
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "BaKaBa - Kvartettfjör að vori",
@@ -2873,7 +3121,8 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1782744648.png?v=1791755372",
     "note": "5.900 kr.",
-    "venue": "Hamrar, Hof"
+    "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Stand up Comedy in broken English • Victor Patrascan in Akureyri",
@@ -2884,7 +3133,8 @@
     "time": "20:00",
     "image": "https://www.mak.is/static/calendar/images/submit_1772030128.jpg?v=1791755372",
     "note": "Frá 3.750 kr.",
-    "venue": "Hamrar, Hof"
+    "venue": "Hamrar, Hof",
+    "kind": "Uppistand"
   },
   {
     "title": "Sólrún Svava og rómantíska fiðlan",
@@ -2895,6 +3145,7 @@
     "time": "16:00",
     "image": "https://www.mak.is/static/calendar/images/34624.png?v=1791755372",
     "note": "3.000 kr.",
-    "venue": "Hamrar, Hof"
+    "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
   }
 ]

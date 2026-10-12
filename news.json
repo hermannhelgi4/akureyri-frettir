@@ -1,21 +1,42 @@
 [
   {
+    "title": "Koma Eiðs vendipunktur: „Hafa ofurtrú á því sem hann kemur fram með“",
+    "link": "https://www.visir.is/g/20262947434d/koma-eids-vendipunktur-hafa-ofurtru-a-thvi-sem-hann-kemur-fram-med-",
+    "summary": "Það virðist hafa verið mikið framfaraskref fyrir KA að hafa fengið Eið Smára Guðjohnsen inn sem þjálfara í ágúst þó að liðið sé enn í bullandi fallbaráttu í Bestu deildinni.",
+    "date": "2026-10-12T22:16:46+00:00",
+    "image": "https://www.visir.is/i/E876580D7D44AC413EDAA2CFC2F4E1DF4A7001B8CA7D7E2376677AAFC6070690_1600x900.jpg",
+    "source": "Vísir",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
     "title": "Níu Akureyringar heiðraðir á Skíðaþingi",
     "link": "https://www.akureyri.net/is/moya/news/niu-akureyringar-heidradir-a-skidathingi",
     "summary": "Nokkrir af máttarstólpum skíðaíþróttarinnar á Akureyri voru heiðraðir á 77. Skíðaþingi Skíðasambands Íslands um liðna helgi fyrir ómetanlegt starf og mikilvægt framlag til íþróttarinnar. Þau sem voru heiðruð voru: Arna Ívarsdóttir, Erlingur Gu...",
     "date": "2026-10-12T17:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/vidurkenningar-til-ska-arsthing-ski.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Fram undan: Fjölbreytt úrval íþróttakappleikja",
     "link": "https://www.akureyri.net/is/moya/news/fram-undan-fjolbreytt-urval-ithrottakappleikja",
-    "summary": "Framboðið að íþróttakappleikjum næstu daga er mikið, sjö heimaleikir og fimm útileikir hjá Akureyrarliðum. Evrópuleikur í fótbolta, deildar- og bikarleikir í handtolba, botnbaráttuleikir í fótbolta, fyrstu heimaleikir KA-kvenna í blaki, heimaleikir í...",
+    "summary": "Framboðið að íþróttakappleikjum næstu daga er mikið, átta heimaleikir og fimm útileikir hjá Akureyrarliðum. Evrópuleikur í fótbolta, deildar- og bikarleikir í handtolba, botnbaráttuleikir í fótbolta, fyrstu heimaleikir KA-kvenna í blaki, heimaleikir ...",
     "date": "2026-10-12T17:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/ithrottavikan-12.10..jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Djúp lægð stefnir á landið á miðvikudag",
@@ -24,7 +45,10 @@
     "date": "2026-10-12T16:32:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/vindakort.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Ný vinátta og mikil sviðsvinna að baki Mean Girls",
@@ -33,7 +57,10 @@
     "date": "2026-10-12T14:05:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/1791814667_hrefna.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Útsynningur á sín góðu augnablik",
@@ -42,7 +69,10 @@
     "date": "2026-10-12T14:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/utsynningur.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Vonskuveður í vændum á miðvikudag – íbúar hvattir til að huga að lausamunum",
@@ -51,7 +81,10 @@
     "date": "2026-10-12T13:50:04+00:00",
     "image": "https://trolli.is/wp-content/uploads/2026/10/vedurspa-14okt26.jpg",
     "source": "Trölli.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Pílufélögin í Fjallabyggð hefja vetrarstarfið",
@@ -60,7 +93,10 @@
     "date": "2026-10-12T13:46:40+00:00",
     "image": "https://trolli.is/wp-content/uploads/2026/10/pila.jpg",
     "source": "Trölli.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Sex félagar í Ferðafélagi Akureyrar sæmd gullmerki Ferðafélags Íslands á afmælisári FA",
@@ -69,7 +105,10 @@
     "date": "2026-10-12T13:28:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/ferdafealg-akur.jpeg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Brúin auðveldar börnum og fjölskyldum leiðina í gegnum þjónustukerfið",
@@ -78,7 +117,10 @@
     "date": "2026-10-12T12:38:58+00:00",
     "image": "https://akureyri.payload.is/api/media/file/fjolskylda-2000x1333.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Joris Rademaker sýnir í Deiglunni",
@@ -87,7 +129,10 @@
     "date": "2026-10-12T11:59:23+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/Screenshot-2026-10-12-at-13.58.53.png",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Húfumátun hjá útskriftarnemum",
@@ -96,7 +141,10 @@
     "date": "2026-10-12T11:39:00+00:00",
     "image": "https://www.vma.is/static/news/sm/hufumaeling.png",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "„Heldurðu að þú getir spilað þig í gegnum lífið, ungi maður?“",
@@ -105,7 +153,10 @@
     "date": "2026-10-12T11:30:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/rafn-sveinsson-10.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Annað Akureyrarliðið mun falla - „KA á auðveldara prógramm eftir\"",
@@ -114,7 +165,10 @@
     "date": "2026-10-12T11:05:00+00:00",
     "image": "https://fotbolti.net/images/news/901000/901183/800/image.jpg",
     "source": "Fótbolti.net",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Í bleikjum kjól og með hatt í október",
@@ -123,7 +177,10 @@
     "date": "2026-10-12T11:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/syning-1.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Í bleikum kjól og með hatt í október",
@@ -132,7 +189,10 @@
     "date": "2026-10-12T11:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/syning-1.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Í námi í VMA og spilar með KA og þremur yngri landsliðum í blaki",
@@ -141,7 +201,11 @@
     "date": "2026-10-12T10:42:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/vmanota.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Stórt skref í framkvæmdum við uppbyggingu Eldisgarðs",
@@ -150,7 +214,10 @@
     "date": "2026-10-12T10:37:00+00:00",
     "image": "https://www.samherji.is/static/news/sm/eldisg-minnk.jpg",
     "source": "Samherji",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Þórhalla hlaut hvatningarstyrk Vísindaráðs",
@@ -159,7 +226,10 @@
     "date": "2026-10-12T10:23:09+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/Screenshot-2026-10-12-at-12.22.31.png",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Sex sæmd gullmerki FÍ á afmælisári Ferðafélags Akureyrar",
@@ -168,7 +238,10 @@
     "date": "2026-10-12T10:16:00+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/844001724_1140068865631220_3732703338647605359_n.jpeg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Tökum vel á móti Gallup - færð þú vinning?",
@@ -177,7 +250,10 @@
     "date": "2026-10-12T09:46:00+00:00",
     "image": "https://www.ein.is/static/news/sm/1-vefur-gallup_story_3_app-c.jpg",
     "source": "Eining-Iðja",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Landsliðsmarkmaður orðinn húsgagnaframleiðandi á Akureyri",
@@ -186,7 +262,11 @@
     "date": "2026-10-12T09:01:04+00:00",
     "image": "https://myndir.ruv.is/eyJidWNrZXQiOiAicnV2LXByb2QtcnV2aXMtcHVibGljIiwgImtleSI6ICJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL0hhbmRib2x0YXNtaWR1cl82LmpwZyIsICJlZGl0cyI6IHsidG9Gb3JtYXQiOiAid2VicCIsICJ3ZWJwIjogeyJxdWFsaXR5IjogNjB9LCAicmVzaXplIjogeyJ3aWR0aCI6ICIxNjAwIiwgImZpdCI6ICJjb3ZlciIsICJoZWlnaHQiOiAiOTAwIn19fQ==",
     "source": "RÚV",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Landsliðsmarkmaður orðinn húsgagnaframleiðandi á Akureyri",
@@ -195,7 +275,11 @@
     "date": "2026-10-12T09:01:04+00:00",
     "image": "https://myndir.ruv.is/eyJidWNrZXQiOiAicnV2LXByb2QtcnV2aXMtcHVibGljIiwgImtleSI6ICJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL0hhbmRib2x0YXNtaWR1cl82LmpwZyIsICJlZGl0cyI6IHsidG9Gb3JtYXQiOiAid2VicCIsICJ3ZWJwIjogeyJxdWFsaXR5IjogNjB9LCAicmVzaXplIjogeyJ3aWR0aCI6ICIxNjAwIiwgImZpdCI6ICJjb3ZlciIsICJoZWlnaHQiOiAiOTAwIn19fQ==",
     "source": "RÚV",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Haustsýning Norðlenskrar hönnunar og handverks",
@@ -204,7 +288,10 @@
     "date": "2026-10-12T08:25:22+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/9_sept_DSC_0380_merkt.jpg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Næfurhandverk – fræðsluerindi og opnun sýningar",
@@ -213,7 +300,10 @@
     "date": "2026-10-12T08:22:05+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/841645602_1412011287715757_4903718768787772733_n.jpg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Áfangaval fyrir vorönn 2027",
@@ -222,7 +312,10 @@
     "date": "2026-10-12T07:51:00+00:00",
     "image": "https://www.vma.is/static/news/sm/1791791750_1790954745_brautaskipti.png",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Erasmus+ vika í VMA",
@@ -231,7 +324,10 @@
     "date": "2026-10-12T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/4065c9fd-e4df-4af5-89ba-cec53c5b8a23.png",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Víðir Sig: Náði tveimur risastórum áföngum. 15 með þrennur fyrir FH. Hverjir hafa fallið oftar?",
@@ -240,7 +336,10 @@
     "date": "2026-10-11T22:05:00+00:00",
     "image": "https://fotbolti.net/images/news/865000/865135/800/image.jpg",
     "source": "Fótbolti.net",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Emma óstöðvandi í sigri Þórs á Skallagrími",
@@ -249,7 +348,11 @@
     "date": "2026-10-11T19:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/thor-th-heima-kvk-2080.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Þreksalur Íþróttamiðstöðvar Ólafsfjarðar lokar tímabundið",
@@ -258,7 +361,11 @@
     "date": "2026-10-11T17:58:45+00:00",
     "image": "https://trolli.is/wp-content/uploads/2026/10/threksalur-olafsfirdi.jpg",
     "source": "Trölli.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Hölludagur haldinn í MA",
@@ -267,7 +374,10 @@
     "date": "2026-10-11T17:41:53+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/20261011_131834.jpg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Akranes og Akureyri dæmi þar sem hættan sé raunveruleg",
@@ -276,7 +386,10 @@
     "date": "2026-10-11T17:22:33+00:00",
     "image": "https://www.visir.is/i/076D3003D548C8C4A3805E9143F102268A87C234152A821F680278C5DB628CD0_1600x900.jpg",
     "source": "Vísir",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Annaðhvort fellur Þór eða KA",
@@ -285,7 +398,11 @@
     "date": "2026-10-11T17:04:06+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/thorka-merki-1.jpg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Hölludagur: Fjölskyldudagur á Möðruvöllum",
@@ -294,7 +411,10 @@
     "date": "2026-10-11T14:47:00+00:00",
     "image": "https://www.ma.is/static/news/sm/20261011_131834.jpg",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Lokaorðið - Ertu iðnaðarmaður ?",
@@ -303,7 +423,10 @@
     "date": "2026-10-11T14:25:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/1791728966_tg.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Hugbúnaður til heilsu",
@@ -312,7 +435,10 @@
     "date": "2026-10-11T14:11:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/body-interact-3.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Alþjóðlegt samstarf í hjúkrunarfræði heldur áfram í Lissabon",
@@ -321,7 +447,10 @@
     "date": "2026-10-11T14:03:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/1791728367_body-interact-3.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Safnar myndbrotum úr sögu Akureyrar",
@@ -330,7 +459,10 @@
     "date": "2026-10-11T12:30:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/50749.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Gerði upp húsið og fann sjálfa sig á ný",
@@ -339,7 +471,10 @@
     "date": "2026-10-11T10:38:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/vid-kaffi-adalstein-sumar-2026-kroppud-meira-meira.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Sjáðu mörkin sem björguðu FH, felldu ÍBV og tryggðu KR tugi milljóna",
@@ -348,7 +483,11 @@
     "date": "2026-10-11T10:17:42+00:00",
     "image": "https://www.visir.is/i/C62830DCC928D09A37B25D1118CD3E131C89B9B7283949BE0B4B3706705E3EAB_1600x900.jpg",
     "source": "Vísir",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Brjóst til styrktar góðu málefni",
@@ -357,7 +496,10 @@
     "date": "2026-10-11T10:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/20261003_150624.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Opna tvær nýjar deildir á Akureyri",
@@ -366,7 +508,10 @@
     "date": "2026-10-11T09:43:20+00:00",
     "image": "https://myndir.ruv.is/eyJidWNrZXQiOiAicnV2LXByb2QtcnV2aXMtcHVibGljIiwgImtleSI6ICJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL1Nrb2ZsdXN0dW5nYV9OeWJieWdpbmdhcl9TQUstNS5qcGciLCAiZWRpdHMiOiB7InRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDYwfSwgInJlc2l6ZSI6IHsid2lkdGgiOiAiMTYwMCIsICJmaXQiOiAiY292ZXIiLCAiaGVpZ2h0IjogIjkwMCJ9fX0=",
     "source": "RÚV",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Íshokkí: Markalaust og tap eftir vítakeppni",
@@ -375,7 +520,11 @@
     "date": "2026-10-11T08:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/1791663770_1763247919_shawlee-geaudrault.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Vænting",
@@ -384,7 +533,10 @@
     "date": "2026-10-11T06:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/1791558258_jon-hlodver.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Þór sendi ÍBV niður og berst nú við KA",
@@ -393,7 +545,11 @@
     "date": "2026-10-10T18:45:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/1791658445_thor-ibv_0g7a0385.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "KA með örlögin í eigin höndum eftir sigur",
@@ -402,7 +558,11 @@
     "date": "2026-10-10T18:45:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/skjamynd-9541.png",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Adam Ægir: Við eigum Akureyri og ætlum að halda því þannig",
@@ -411,7 +571,10 @@
     "date": "2026-10-10T17:40:00+00:00",
     "image": "https://fotbolti.net/images/news/901000/901101/800/image.jpg",
     "source": "Fótbolti.net",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "„Orðið algjört vígi að koma hérna“",
@@ -420,7 +583,11 @@
     "date": "2026-10-10T17:20:15+00:00",
     "image": "https://www.visir.is/i/5319488E413F88D00CD4E652290F176B125BF63431AC86B5E7EF1FDB0CD10748_1600x900.jpg",
     "source": "Vísir",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Eiður Smári: Vissum að þessi dagur yrði mjög tíðindamikill",
@@ -429,7 +596,10 @@
     "date": "2026-10-10T17:19:00+00:00",
     "image": "https://fotbolti.net/images/news/908000/908031/800/image.jpg",
     "source": "Fótbolti.net",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Siggi Höskulds: Eitt af því besta sem við höfum sýnt",
@@ -438,7 +608,10 @@
     "date": "2026-10-10T17:15:00+00:00",
     "image": "https://fotbolti.net/images/news/693000/693530/800/image.jpg",
     "source": "Fótbolti.net",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Aron Birkir: Ég þurfti eiginlega ekki að gera neitt í dag",
@@ -447,7 +620,10 @@
     "date": "2026-10-10T17:00:00+00:00",
     "image": "https://fotbolti.net/images/news/914000/914962/800/image.jpg",
     "source": "Fótbolti.net",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "KA og Þór unnu – en annað liðið mun falla",
@@ -456,7 +632,11 @@
     "date": "2026-10-10T16:30:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/thor-ibv_0g7a0385.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Gerði grín að Síldarminjasafninu en heimsóknin reyndist einn af hápunktum ferðarinnar",
@@ -465,7 +645,10 @@
     "date": "2026-10-10T16:16:08+00:00",
     "image": "https://trolli.is/wp-content/uploads/2026/08/image00012-2.jpg",
     "source": "Trölli.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Íslensk tónlistarsaga kynnt fyrir nýrri kynslóð",
@@ -474,7 +657,10 @@
     "date": "2026-10-10T16:13:00+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/Screenshot-2026-10-10-170431.png",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "ÍBV fallið - Akureyrarlið fer með niður",
@@ -483,7 +669,11 @@
     "date": "2026-10-10T16:02:00+00:00",
     "image": "https://c.arvakur.is/frimg/1/68/37/1683729A.jpg",
     "source": "mbl.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Uppgjörið: Þór - ÍBV 1-0 | Felldu Eyjamenn og halda í vonina",
@@ -492,7 +682,11 @@
     "date": "2026-10-10T16:00:00+00:00",
     "image": "https://www.visir.is/i/125C56363B9B06598810234256E7A5B0A62961B05F765B477C58020817CF092E_1600x900.jpg",
     "source": "Vísir",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Stjarnan - KA 0-3 | Halda sér ofan fallsvæðis",
@@ -501,7 +695,11 @@
     "date": "2026-10-10T15:55:00+00:00",
     "image": "https://www.visir.is/i/6921E50F82BF9C2BF3D1787A599BD81666E7B068F2036137FC40EFC2E50CA9F7_1600x900.jpg",
     "source": "Vísir",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Þreksalur Ólafsfirði lokaður vegna framkvæmda",
@@ -510,7 +708,10 @@
     "date": "2026-10-10T15:41:00+00:00",
     "image": "https://www.fjallabyggd.is/static/news/sm/b180059c-a2c8-4e06-91a2-75df115c6f07.jpg",
     "source": "Fjallabyggð",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Beint: Stór mörk fyrir Akureyrarliðin",
@@ -519,7 +720,11 @@
     "date": "2026-10-10T14:49:00+00:00",
     "image": "https://c.arvakur.is/frimg/1/68/36/1683698A.jpg",
     "source": "mbl.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Krakkakirkja og tónleikar í Ólafsfjarðarkirkju á sunnudag",
@@ -528,7 +733,10 @@
     "date": "2026-10-10T14:35:26+00:00",
     "image": "https://trolli.is/wp-content/uploads/2026/10/sigrun-steinunn.jpg",
     "source": "Trölli.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Stór mörk fyrir Akureyrarliðin",
@@ -537,7 +745,11 @@
     "date": "2026-10-10T14:35:00+00:00",
     "image": "https://c.arvakur.is/frimg/1/68/36/1683698A.jpg",
     "source": "mbl.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "\"Kaffitíminn með ASÍ-UNG\" - Kaffisopi með forsetaframbjóðendum",
@@ -546,7 +758,10 @@
     "date": "2026-10-10T14:00:00+00:00",
     "image": "https://www.ein.is/static/news/sm/1791464561_asi-ung-kaffitiminn2.png",
     "source": "Eining-Iðja",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Eyjafjarðarsveit verður með landbúnaðarsveitarfélögum",
@@ -555,7 +770,10 @@
     "date": "2026-10-10T13:49:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/e-sveit.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Mikilvægt að hefjast handa við nýja skammtíma- og frístundaþjónustu",
@@ -564,7 +782,10 @@
     "date": "2026-10-10T13:38:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/husmaedbtraskolinn.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Stjarnan - KA | Gestirnir þurfa stig í Garðabænum",
@@ -573,7 +794,11 @@
     "date": "2026-10-10T13:17:42+00:00",
     "image": "https://www.visir.is/i/ED3630C4328543EE5D43DC62E90ED11E47FC7C8CCD830EBC03CFE0C371153B6A_1600x900.jpg",
     "source": "Vísir",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Byrjunarlið Þórs og ÍBV: Affi tekur út leikbann",
@@ -582,7 +807,10 @@
     "date": "2026-10-10T13:15:00+00:00",
     "image": "https://fotbolti.net/images/news/915000/915082/800/image.jpg",
     "source": "Fótbolti.net",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "„Reynum að kveikja í hræðslu hjá þeim“",
@@ -591,7 +819,11 @@
     "date": "2026-10-10T11:46:44+00:00",
     "image": "https://www.visir.is/i/4DDCD8F38B33049F362BDBEDE518FFD54F17C8C80844B7C3725FBF71EED680A5_1600x900.jpg",
     "source": "Vísir",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "KA féll úr leik í bikarnum gegn Víkingi",
@@ -600,7 +832,11 @@
     "date": "2026-10-10T10:30:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/1791628686_bjarni-ofeigur-valdimarsson.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Kalla eftir ábendingum um hættustaði í Norðurþingi",
@@ -609,7 +845,10 @@
     "date": "2026-10-10T10:13:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/husavik-umferd.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "SA Víkingar með sigur í framlengdum leik",
@@ -618,7 +857,10 @@
     "date": "2026-10-10T10:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/johann_10.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Eins stigs tap Þórsara í sveiflukenndum leik",
@@ -627,7 +869,11 @@
     "date": "2026-10-10T10:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/thor-korfubolti-gag.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "KA/Þór enn án stiga eftir fimm umferðir",
@@ -636,7 +882,11 @@
     "date": "2026-10-10T10:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/lydia.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "„Ég þarf ekki að skálda allt, sumt skrifar sig sjálft“",
@@ -645,7 +895,10 @@
     "date": "2026-10-10T09:19:02+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/Gabrielle3-1600x1525.jpg.webp",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Brák Jónsdóttir – listamannaspjall um verkin fyrir Sigurhæðir og seinasti sýningardagur",
@@ -654,7 +907,10 @@
     "date": "2026-10-10T09:02:09+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/braksigurhaedir.png",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Taka upp þráðinn í æsilegri botnbaráttu",
@@ -663,7 +919,10 @@
     "date": "2026-10-10T06:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/lokasprekkur-frett_0g7a9893.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Útrýmum mennskunni, maskínan skal sigra!",
@@ -672,7 +931,11 @@
     "date": "2026-10-10T06:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/1791553293_1-stsaem-tilv.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Caesar-salat – eitt þekktasta salat heims",
@@ -681,7 +944,10 @@
     "date": "2026-10-10T06:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/thrainn-10-okt-ceaser-salat-1.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Caesar-salat – frægasta salat heims?",
@@ -690,7 +956,10 @@
     "date": "2026-10-10T06:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/thrainn-ceasar-salat-inni2.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Þegar vinnan er farin í hundana",
@@ -699,7 +968,10 @@
     "date": "2026-10-10T06:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/1791553198_1-stsaem-nota-24.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Indverskur matur og kvíðaspurningin",
@@ -708,7 +980,10 @@
     "date": "2026-10-10T06:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/inga-dagny-eydal.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Juku verulega á áhyggjur Norðankvenna",
@@ -717,7 +992,11 @@
     "date": "2026-10-09T21:01:51+00:00",
     "image": "https://www.visir.is/i/BA51079BAD59529EAD705EC65527F6A16CB97103FE9E3F43881B057DA4B13F29_1600x900.jpg",
     "source": "Vísir",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Fegurð, von og kærleikur",
@@ -726,7 +1005,10 @@
     "date": "2026-10-09T21:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/1791580457_elisabet.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Hiti og úrkoma yfir meðallagi í september",
@@ -735,7 +1017,10 @@
     "date": "2026-10-09T17:30:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/emma-huld_07.10.2026-2270.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Brák Jónsdóttir - listamanns spjall um verkin fyrir Sigurhæðir",
@@ -744,7 +1029,10 @@
     "date": "2026-10-09T16:38:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/1791564065_brakopnunarsinsmynd.png",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Nemendur frá Eistlandi og Finnlandi heimsóttu Ljóðasetrið ásamt nemendum MTR",
@@ -753,7 +1041,10 @@
     "date": "2026-10-09T16:27:35+00:00",
     "image": "https://trolli.is/wp-content/uploads/2026/10/skolahopur-6okt26.jpg",
     "source": "Trölli.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "35 ár frá sögufrægri tvennu blakliðs KA",
@@ -762,7 +1053,10 @@
     "date": "2026-10-09T16:17:00+00:00",
     "image": "https://www.ka.is/static/news/sm/1791562949_1991-kablak.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "LA frumsýnir Fasteignamartröðina",
@@ -771,7 +1065,10 @@
     "date": "2026-10-09T15:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/1791470752_image003.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Einn fluttur á sjúkrahús eftir árekstur við Hlíðarbæ",
@@ -780,7 +1077,10 @@
     "date": "2026-10-09T14:10:00+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2018/10/44535820_2172504093001862_7788204480058621952_n.jpg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Einn slasaður eftir harðan árekstur rétt fyrir utan Akureyri",
@@ -789,7 +1089,10 @@
     "date": "2026-10-09T13:16:35+00:00",
     "image": "https://myndir.ruv.is/eyJidWNrZXQiOiAicnV2LXByb2QtcnV2aXMtcHVibGljIiwgImtleSI6ICJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL2RqaV9mbHlfMjAyNjEwMDlfMTMwOTAyXzAwMDNfMTc5MTU1MTgxODMyMV9waG90bzIuanBnIiwgImVkaXRzIjogeyJ0b0Zvcm1hdCI6ICJ3ZWJwIiwgIndlYnAiOiB7InF1YWxpdHkiOiA2MH0sICJyZXNpemUiOiB7IndpZHRoIjogIjE2MDAiLCAiZml0IjogImNvdmVyIiwgImhlaWdodCI6ICI5MDAifX19",
     "source": "RÚV",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Stapi -Mikilvægt að yfirfara samskiptaupplýsingar",
@@ -798,7 +1101,10 @@
     "date": "2026-10-09T13:16:00+00:00",
     "image": "https://www.ein.is/static/news/sm/1791551909_stapi_600x315-1.png",
     "source": "Eining-Iðja",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Ný og rúmgóð fræhöll tekin í notkun í Vaglaskógi",
@@ -807,7 +1113,10 @@
     "date": "2026-10-09T13:13:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/valgerdur-anna.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Þrettán í einum búningsklefa eina kvöldstund",
@@ -816,7 +1125,10 @@
     "date": "2026-10-09T12:54:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/utsynningur-1.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Hluti Dalsbrautar lokaður mánudaginn 12. október",
@@ -825,7 +1137,10 @@
     "date": "2026-10-09T12:30:00+00:00",
     "image": "https://akureyri.payload.is/api/media/file/dalsbraut-1-1105x864.png",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Póstkassar í hverfinu",
@@ -834,7 +1149,10 @@
     "date": "2026-10-09T11:39:00+00:00",
     "image": "https://www.esveit.is/static/news/sm/laugarborg-postkassar-i-kringum-handverkshatid-en-nu-eru-their-allir-farnir-ur-hverfinu.jpg",
     "source": "Eyjafjarðarsveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Ný lýðheilsustefna samþykkt í bæjarstjórn Akureyrar",
@@ -843,7 +1161,10 @@
     "date": "2026-10-09T11:33:00+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/04/julia-taubitz-F0JfUcvqLaI-unsplash-1-scaled.jpg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Þrjú ný fyrirtæki hljóta stuðning frá Drift EA",
@@ -852,7 +1173,10 @@
     "date": "2026-10-09T11:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/drift-9-10-26.jpg",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Ný lýðheilsustefna samþykkt í bæjarstjórn",
@@ -861,7 +1185,10 @@
     "date": "2026-10-09T11:00:00+00:00",
     "image": "https://akureyri.payload.is/api/media/file/ishokki-er-vinsael-ithrottagrein-a-akureyri-2000x1333.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Uppbyggingartímabilið í Norðurgötunni",
@@ -870,7 +1197,10 @@
     "date": "2026-10-09T10:45:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/hus-dagsins-nordurgata-26.png",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Uppbyggingin mikla í Norðurgötunni 1926",
@@ -879,7 +1209,10 @@
     "date": "2026-10-09T10:45:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/hus-dagsins-nordurgata-26.png",
     "source": "Akureyri.net",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Tvær þjóðir í sama landi?",
@@ -888,7 +1221,10 @@
     "date": "2026-10-09T10:35:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/1791542375_lulli.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Nýtt fræðsluefni opnar á spennandi möguleika í ferðaþjónustu",
@@ -897,7 +1233,10 @@
     "date": "2026-10-09T10:00:00+00:00",
     "image": "https://www.unak.is/static/news/sm/unak_-uplift-verkefni-rmf.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Tillaga að rekstri veitingastofu á Amtsbókasafninu á Akureyri",
@@ -906,7 +1245,10 @@
     "date": "2026-10-09T09:34:14+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/amtidopideftirhle-2000x1126-1.avif",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Þrenn silfurverðlaun hjá KA á Haustmóti JSÍ",
@@ -915,7 +1257,11 @@
     "date": "2026-10-09T09:12:24+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/1791500398_2.jpg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "ChatGPT námskeið með Stefáni Atla á Akureyri",
@@ -924,7 +1270,10 @@
     "date": "2026-10-09T09:07:37+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/Screenshot-2026-10-09-at-11.07.11.png",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Í námi í VMA og spilar með KA og þremur yngri landsliðum í blaki",
@@ -933,7 +1282,10 @@
     "date": "2026-10-09T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/836221671_1672089607803210_4138726047253338545_n.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Þrenn silfurverðlaun hjá KA á Haustmóti JSÍ",
@@ -942,7 +1294,10 @@
     "date": "2026-10-08T22:57:00+00:00",
     "image": "https://www.ka.is/static/news/sm/1791500398_2.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Stúka með félagsheimili senn tilbúin",
@@ -951,7 +1306,11 @@
     "date": "2026-10-08T22:53:00+00:00",
     "image": "https://c.arvakur.is/frimg/1/68/32/1683269A.jpg",
     "source": "mbl.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Dekurdagar hófust í dag",
@@ -960,7 +1319,10 @@
     "date": "2026-10-08T19:26:04+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/831034267_1713948947404769_5215933237856270300_n.jpg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Rafbókin „Fjölskrúðugar rætur“ kynnt í Brimsölum",
@@ -969,7 +1331,10 @@
     "date": "2026-10-08T17:54:46+00:00",
     "image": "https://trolli.is/wp-content/uploads/2026/10/syning-brimsalir-okt26-9.jpg",
     "source": "Trölli.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Við þurfum að hittast, setjast niður, slaka á og hlusta á hvort annað",
@@ -978,7 +1343,10 @@
     "date": "2026-10-08T16:55:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/laugaskoli.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Dekurdagar á Akureyri eru hafnir",
@@ -987,7 +1355,10 @@
     "date": "2026-10-08T16:11:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/1791477271_dekurdagar.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "ASÍ - Vill ráðherra veikja lífeyriskerfið?",
@@ -996,7 +1367,10 @@
     "date": "2026-10-08T16:00:00+00:00",
     "image": "https://www.ein.is/static/news/sm/1791470976_finnbjorn-asi-logo_c.jpg",
     "source": "Eining-Iðja",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Dekurdagar hafnir og sömuleiðis A!",
@@ -1005,7 +1379,10 @@
     "date": "2026-10-08T15:00:00+00:00",
     "image": "https://akureyri.payload.is/api/media/file/dekurdagar-2026-1709x750.png",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Nemendur á listnáms- og hönnunarbraut sýna í kvöld gjörning á A! gjörningahátíð",
@@ -1014,7 +1391,10 @@
     "date": "2026-10-08T14:48:00+00:00",
     "image": "https://www.vma.is/static/news/sm/20261008_143708.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Sunna Hlín varaformaður Sambands íslenskra sveitarfélaga",
@@ -1023,7 +1403,10 @@
     "date": "2026-10-08T14:45:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/samband-islenskra-sv.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Akureyri verður suðupottur gjörningalistar á A!",
@@ -1032,7 +1415,10 @@
     "date": "2026-10-08T14:30:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/algjorningar.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Tilboð á Glerártorgi 9. - 11. október",
@@ -1041,7 +1427,10 @@
     "date": "2026-10-08T14:27:00+00:00",
     "image": "https://www.glerartorg.is/static/news/sm/god_tilbod.png",
     "source": "Glerártorg",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Fulltrúar Hörgársveitar á fjármálaráðstefnu sveitarfélaga 2026",
@@ -1050,7 +1439,10 @@
     "date": "2026-10-08T14:18:00+00:00",
     "image": "https://www.horgarsveit.is/static/news/sm/f4d18e23-0223-4056-9f37-919770948141.jpg",
     "source": "Hörgársveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Nemendur á Akureyri yfir landsmeðaltali í vísindum og stærðfræðilæsi",
@@ -1059,7 +1451,10 @@
     "date": "2026-10-08T14:05:00+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/Screenshot-2026-10-08-at-16.11.17.png",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Aðalfundar Menningarfélags Akureyrar miðvikudaginn 28. október",
@@ -1068,7 +1463,10 @@
     "date": "2026-10-08T14:01:00+00:00",
     "image": "https://www.mak.is/static/news/sm/hof-adkoma-4.jpg",
     "source": "Menningarfélag Akureyrar",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Sara Fusco lýkur doktorsprófi við Háskólann í Lapplandi",
@@ -1077,7 +1475,10 @@
     "date": "2026-10-08T14:00:00+00:00",
     "image": "https://www.unak.is/static/news/sm/7.10.-2026-unak-sara-fusco-doktorsvorn-1.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "SÍMEY - námsframboð á næstunni",
@@ -1086,7 +1487,10 @@
     "date": "2026-10-08T14:00:00+00:00",
     "image": "https://www.ein.is/static/news/sm/1789377271_simey_c.jpg",
     "source": "Eining-Iðja",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Nemendur á Akureyri yfir landsmeðaltali í vísindum og stærðfræðilæsi",
@@ -1095,7 +1499,10 @@
     "date": "2026-10-08T13:30:00+00:00",
     "image": "https://akureyri.payload.is/api/media/file/pisa-1024x554.webp",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "LA frumsýnir Fasteignamartröðina",
@@ -1104,7 +1511,10 @@
     "date": "2026-10-08T13:03:00+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/4014a282-e837-45db-8a33-99feb3b8e412-2-768x512.jpg.webp",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "LA frumsýnir Fasteignamartröðina",
@@ -1113,7 +1523,10 @@
     "date": "2026-10-08T12:48:22+00:00",
     "image": "https://akureyri.payload.is/api/media/file/fasteignamartrodin-768x512.webp",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Alþjóðlegt samstarf í hjúkrunarfræði hjá nemum við HA",
@@ -1122,7 +1535,10 @@
     "date": "2026-10-08T12:38:00+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/body-1.png",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Hvernig samfélag viljum við skapa saman",
@@ -1131,7 +1547,10 @@
     "date": "2026-10-08T12:05:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/ma_i_solbadi.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Vaðlaborgir B íbúðarsvæði, Svalbarðsstrandarhreppi – auglýsing deiliskipulagstillögu",
@@ -1140,7 +1559,10 @@
     "date": "2026-10-08T11:48:00+00:00",
     "image": "https://www.svalbardsstrond.is/static/news/sm/1791467788_logo-med-frett-a-heimasidu.png",
     "source": "Svalbarðsstrandarhreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "PÍSA - Akureyri yfir landsmeðaltali í vísindum og stærðfræði",
@@ -1149,7 +1571,10 @@
     "date": "2026-10-08T11:17:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/1791459065_1738827733_1598343924_brekkuskoli.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "„Ég varð ástfanginn af landinu og fólkinu“",
@@ -1158,7 +1583,10 @@
     "date": "2026-10-08T10:12:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/skakadam1.webp",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Hugbúnaður til heilsu",
@@ -1167,7 +1595,10 @@
     "date": "2026-10-08T10:00:00+00:00",
     "image": "https://www.unak.is/static/news/sm/body-1.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Þrjú ný fyrirtæki hljóta stuðning frá Drift EA",
@@ -1176,7 +1607,10 @@
     "date": "2026-10-08T09:58:48+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/driftea.jpg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Þrjú ný fyrirtæki hljóta stuðning frá Drift EA",
@@ -1185,7 +1619,10 @@
     "date": "2026-10-08T09:55:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/starfsffolk-driftar.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Prófa eitt og annað í NÁSSI",
@@ -1194,7 +1631,10 @@
     "date": "2026-10-08T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/20261001_143709.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Rannsókn vegna leikfangabyssa lokið",
@@ -1203,7 +1643,10 @@
     "date": "2026-10-07T19:59:42+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2025/08/received_1093637555984059-scaled.jpeg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Hver fær reikninginn?",
@@ -1212,7 +1655,10 @@
     "date": "2026-10-07T19:04:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/1791399979_imba.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Ný flotbryggja fyrir Björgunarskipið Sigurvin komin til Siglufjarðar",
@@ -1221,7 +1667,10 @@
     "date": "2026-10-07T17:20:11+00:00",
     "image": "https://trolli.is/wp-content/uploads/2026/10/flotbryggja-sigurvin-12.jpg",
     "source": "Trölli.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Styrkbeiðnir til umfjöllunar hjá bæjarráði Fjallabyggðar",
@@ -1230,7 +1679,10 @@
     "date": "2026-10-07T17:11:27+00:00",
     "image": "https://trolli.is/wp-content/uploads/2026/09/siglo-0926.jpg",
     "source": "Trölli.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Meirihlutinn svarar spurningum um rekstur skíðasvæðisins",
@@ -1239,7 +1691,10 @@
     "date": "2026-10-07T16:25:30+00:00",
     "image": "https://trolli.is/wp-content/uploads/2026/04/radhus-1024x679.jpg",
     "source": "Trölli.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "SKYN2EÁ01 - Skyndihjálparnámskeið haustönn 2026",
@@ -1248,7 +1703,10 @@
     "date": "2026-10-07T15:49:00+00:00",
     "image": "https://www.vma.is/static/news/sm/1791389026_1790954745_brautaskipti.png",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Líflegar umræður á Opnu húsi um netöryggi og upplýsingaóreiðu",
@@ -1257,7 +1715,10 @@
     "date": "2026-10-07T13:44:21+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/75f33ea0-755b-4cae-9783-b086e345151d.jpg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Dekurdagar hefjast á Glerártorgi 8. okt - Opið til 22:00",
@@ -1266,7 +1727,10 @@
     "date": "2026-10-07T12:34:00+00:00",
     "image": "https://www.glerartorg.is/static/news/sm/inniskjar_dekur.png",
     "source": "Glerártorg",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Afreks- og hvatningarstyrkur Eyjafjarðarsveitar",
@@ -1275,7 +1739,10 @@
     "date": "2026-10-07T12:23:00+00:00",
     "image": "https://www.esveit.is/static/news/sm/1791376093_esveit-logo-a-heimasidu-med-fundarbodum-sveitarstjornar.jpg",
     "source": "Eyjafjarðarsveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Sveitarfélög á svæðinu gera samning um Flugklasann Air 66N en óvissa um framlag ríkisins",
@@ -1284,7 +1751,10 @@
     "date": "2026-10-07T11:50:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/flugklasi-easyjet-1.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Friðrik Dór og SinfoniaNord komin á toppinn",
@@ -1293,7 +1763,10 @@
     "date": "2026-10-07T11:40:00+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/8M1A3098-1600x1067.jpg.webp",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Menningarsjóður Eyjafjarðarsveitar auglýsir eftir umsóknum haustið 2026",
@@ -1302,7 +1775,10 @@
     "date": "2026-10-07T11:37:00+00:00",
     "image": "https://www.esveit.is/static/news/sm/1791373769_menningarsjodur-esveitar-2022-og-2023-auglysing-um-umsoknarfrest-fyrir-styrki.jpeg",
     "source": "Eyjafjarðarsveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Rauðu flöggin á netinu geta verið margvísleg",
@@ -1311,7 +1787,10 @@
     "date": "2026-10-07T11:01:00+00:00",
     "image": "https://www.unak.is/static/news/sm/75f33ea0-755b-4cae-9783-b086e345151d.jpg",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Nú fer hver að verða síðastur að sækja um pláss á Jólatorginu",
@@ -1320,7 +1799,10 @@
     "date": "2026-10-07T09:39:48+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/29nov25-16-2000x1124-1.avif",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Ritlistakeppni Ungskálda 2026",
@@ -1329,7 +1811,10 @@
     "date": "2026-10-07T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/1791191938_images-1.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Vilja kortleggja stöðu innflytjenda á Íslandi",
@@ -1338,7 +1823,10 @@
     "date": "2026-10-06T21:04:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/ha-markus-10.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Elko styrkir Zontaklúbb Akureyrar",
@@ -1347,7 +1835,10 @@
     "date": "2026-10-06T19:31:09+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/5161f2d0-8676-4c06-a718-72db1bc41b1c.jpg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Gluggasýning: Í bleikum kjól og með hatt",
@@ -1356,7 +1847,10 @@
     "date": "2026-10-06T17:04:37+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/Screenshot-2026-10-06-at-19.04.10.png",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Framkvæmdir í gangi",
@@ -1365,7 +1859,10 @@
     "date": "2026-10-06T16:29:00+00:00",
     "image": "https://www.grenivik.is/static/news/sm/okt-26-leikskoli.jpg",
     "source": "Grýtubakkahreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Dömulegt tilboð í tilefni Dömulegra dekurdaga",
@@ -1374,7 +1871,10 @@
     "date": "2026-10-06T16:05:00+00:00",
     "image": "https://www.listak.is/static/news/thumb_bleikur-oktober.jpg",
     "source": "Listasafnið á Akureyri",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Nýtt sérhefti Nordicum-Mediterraneum um menningarlæsi og afnýlenduvæðingu",
@@ -1383,7 +1883,10 @@
     "date": "2026-10-06T14:44:00+00:00",
     "image": "https://www.unak.is/static/news/sm/8.10-2026-unak-body-interact-verkefni.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Opið fyrir umsóknir í Uppbyggingarsjóð til 21. október",
@@ -1392,7 +1895,10 @@
     "date": "2026-10-06T14:41:00+00:00",
     "image": "https://www.grenivik.is/static/news/sm/uppbyggingarsjodur-2026.png",
     "source": "Grýtubakkahreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Þjóðarsamtal í Kvosinni í MA",
@@ -1401,7 +1907,10 @@
     "date": "2026-10-06T14:39:58+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2020/06/1590485147_ma1.jpg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Í BLEIKUM KJÓL OG MEÐ HATT - Gluggasýning í Hafnarstræti 88",
@@ -1410,7 +1919,10 @@
     "date": "2026-10-06T14:39:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/1791298269_allur-glugginn.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Nú fer hver að verða síðastur að sækja um pláss á Jólatorginu",
@@ -1419,7 +1931,10 @@
     "date": "2026-10-06T13:11:51+00:00",
     "image": "https://akureyri.payload.is/api/media/file/29nov25-16-2000x1124.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Laxá aftur í gamla farveginn – krafturinn í gljúfrinu magnaður",
@@ -1428,7 +1943,10 @@
     "date": "2026-10-06T11:42:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/1791287393_laxa.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Hvað gerðist áður en hjúkrunarheimilið varð lausnin?",
@@ -1437,7 +1955,10 @@
     "date": "2026-10-06T10:45:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/rannveig-t.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Þekkingu miðlað þvert á landamæri",
@@ -1446,7 +1967,10 @@
     "date": "2026-10-06T10:00:00+00:00",
     "image": "https://www.unak.is/static/news/sm/gro-1.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Viltu móta framtíð Vatnajökulsþjóðgarðs?",
@@ -1455,7 +1979,10 @@
     "date": "2026-10-06T09:51:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/vatnaj0kull.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Forseti Íslands býður til samtals í MA 10. október",
@@ -1464,7 +1991,10 @@
     "date": "2026-10-06T09:45:00+00:00",
     "image": "https://www.ma.is/static/news/sm/6297355631718145127.jpg",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Íslandsmeistari U18 í pílukasti",
@@ -1473,7 +2003,10 @@
     "date": "2026-10-06T08:49:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/pila.jpg?v=1791276690",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "VMA tilnefndur til Íslensku menntaverðlaunanna",
@@ -1482,7 +2015,10 @@
     "date": "2026-10-06T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/55263957068_f5a6413628_o.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Myndir úr leikjum Þórs og Þorlákshafnar Þórsurum",
@@ -1491,7 +2027,10 @@
     "date": "2026-10-05T23:35:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/sigurlaug-eva-pjo_3142.jpg?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Pollamót Þórs og Skógarbaðanna – Langstærsta mótið frá upphafi",
@@ -1500,7 +2039,10 @@
     "date": "2026-10-05T17:31:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/mynd1.jpg?v=1791222086",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Bókasafnið á Facebook",
@@ -1509,7 +2051,10 @@
     "date": "2026-10-05T16:30:00+00:00",
     "image": "https://www.esveit.is/static/news/sm/bokasafnid.jpg",
     "source": "Eyjafjarðarsveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Vetraropnunartími",
@@ -1518,7 +2063,10 @@
     "date": "2026-10-05T16:16:00+00:00",
     "image": "https://www.minjasafnid.is/static/news/sm/album-46-9.jpg",
     "source": "Minjasafnið á Akureyri",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Raddir frá Akureyri á 20 málstofum á Arctic Circle",
@@ -1527,7 +2075,10 @@
     "date": "2026-10-05T15:36:00+00:00",
     "image": "https://www.unak.is/static/news/sm/unak-ha-a-ac-2026.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Akureyri verður suðupottur gjörningalistar á A!",
@@ -1536,7 +2087,10 @@
     "date": "2026-10-05T15:00:00+00:00",
     "image": "https://akureyri.payload.is/api/media/file/diana-burkot-by-alexander-polozun-2000x1333.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Iðavöllur tilnefndur til Íslensku menntaverðlaunanna",
@@ -1545,7 +2099,10 @@
     "date": "2026-10-05T14:34:27+00:00",
     "image": "https://akureyri.payload.is/api/media/file/idavollur-2000x1334.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Vegur að stíflunni í Glerárdal lokaður tímabundið",
@@ -1554,7 +2111,10 @@
     "date": "2026-10-05T14:26:00+00:00",
     "image": "https://www.no.is/static/news/sm/1791210532_untitled-july-29-2026-at-10.55.02.png",
     "source": "Norðurorka",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Rjúpnaland til leigu",
@@ -1563,7 +2123,10 @@
     "date": "2026-10-05T14:23:00+00:00",
     "image": "https://www.grenivik.is/static/themes/2016/images/og.png?v=1791578892",
     "source": "Grýtubakkahreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Viðtalstími hjá sveitarstjórnarfulltrúum",
@@ -1572,7 +2135,10 @@
     "date": "2026-10-05T14:20:00+00:00",
     "image": "https://www.svalbardsstrond.is/static/news/sm/1791210144_logo-med-frett-a-heimasidu.png",
     "source": "Svalbarðsstrandarhreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Fjallabyggð óskar eftir tilboðum í verkið: SNJÓMOKSTUR OG HÁLKUVARNIR Í FJALLABYGGÐ 2026 - 2029",
@@ -1581,7 +2147,10 @@
     "date": "2026-10-05T13:04:00+00:00",
     "image": "https://www.fjallabyggd.is/static/news/sm/1791205795_fjallabyggd-logo.jpg",
     "source": "Fjallabyggð",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Áfangastaðaáætlun Norðurlands",
@@ -1590,7 +2159,10 @@
     "date": "2026-10-05T12:41:00+00:00",
     "image": "https://www.horgarsveit.is/static/news/sm/201982069_10160697969174918_2854633202021111908_n.jpg",
     "source": "Hörgársveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Mikil ánægja með stuðningsþjónustu meðal eldri borgara",
@@ -1599,7 +2171,10 @@
     "date": "2026-10-05T11:03:27+00:00",
     "image": "https://akureyri.payload.is/api/media/file/eldri-borgarar-2000x1333.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Fjárhagsáætlun 2027 – ábendingar og tillögur frá íbúum",
@@ -1608,7 +2183,10 @@
     "date": "2026-10-05T08:46:00+00:00",
     "image": "https://www.fjallabyggd.is/static/news/sm/1791190196_fjallabyggd-logo.jpg",
     "source": "Fjallabyggð",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "MA-ingar á Vísinda- og nýsköpunarþingi",
@@ -1617,7 +2195,10 @@
     "date": "2026-10-05T08:41:00+00:00",
     "image": "https://www.ma.is/static/news/sm/joi-og-snaedis.jpg",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Annar nemendahópurinn í framreiðslu í VMA",
@@ -1626,7 +2207,10 @@
     "date": "2026-10-05T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/20260930_115008.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Heilsuleikskólinn Álfasteinn - atvinna",
@@ -1635,7 +2219,10 @@
     "date": "2026-10-05T00:00:00+00:00",
     "image": "https://www.horgarsveit.is/static/news/sm/1791453812_alfasteinn-logo-med-bakgrunn.png",
     "source": "Hörgársveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Víðir Sig: Ása og Nia í banastuði - Þór/KA vann tímamótaleik - Agla María í fámennan hóp",
@@ -1644,7 +2231,10 @@
     "date": "2026-10-04T18:00:00+00:00",
     "image": "https://fotbolti.net/images/news/912000/912353/800/image.jpg",
     "source": "Fótbolti.net",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Arna Sif best hjá Þór/KA - Karen Hulda efnilegust",
@@ -1653,7 +2243,10 @@
     "date": "2026-10-04T15:00:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/arm19090.jpg?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Körfuboltatímabilið að hefjast",
@@ -1662,7 +2255,10 @@
     "date": "2026-10-04T12:53:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/karfathor.jpg?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Allir með! - Æfingar að hefjast",
@@ -1671,7 +2267,10 @@
     "date": "2026-10-04T10:37:00+00:00",
     "image": "https://www.thorsport.is/static/news/screenshot-2026-10-04-at-10.41.12.png?v=1791483324",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Þór/KA tryggði sætið með glæsibrag - Flestar uppaldar",
@@ -1680,7 +2279,10 @@
     "date": "2026-10-03T09:16:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/thorka3.jpeg?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Beiðnir um brautaskipti í Innu",
@@ -1689,7 +2291,10 @@
     "date": "2026-10-02T15:20:00+00:00",
     "image": "https://www.vma.is/static/news/sm/1790954745_brautaskipti.png",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Listasmiðja 3. okt frá kl. 14 - 16",
@@ -1698,7 +2303,10 @@
     "date": "2026-10-02T15:11:00+00:00",
     "image": "https://www.glerartorg.is/static/news/sm/visit_akureyri.png",
     "source": "Glerártorg",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Fundur í bæjarstjórn 6. október 2026",
@@ -1707,7 +2315,10 @@
     "date": "2026-10-02T14:22:20+00:00",
     "image": "https://akureyri.payload.is/api/media/file/fyrir-utan-radhus-2000x1333.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "A! Gjörningahátíð 8.-10. október",
@@ -1716,7 +2327,10 @@
     "date": "2026-10-02T13:37:00+00:00",
     "image": "https://www.listak.is/static/news/thumb_mynd-a-heimasidu.jpg",
     "source": "Listasafnið á Akureyri",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Losun í Aravíti 5.–23. október",
@@ -1725,7 +2339,10 @@
     "date": "2026-10-02T12:17:00+00:00",
     "image": "https://www.fjallabyggd.is/static/news/sm/1790943980_fjallabyggd.hvitt.png",
     "source": "Fjallabyggð",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Kubota slátturvél hreppsins til sölu",
@@ -1734,7 +2351,10 @@
     "date": "2026-10-02T11:58:00+00:00",
     "image": "https://www.svalbardsstrond.is/static/news/sm/3df3c532-bb50-491a-8092-ba419dbb4b12.jfif",
     "source": "Svalbarðsstrandarhreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Fréttabréf | 17. árgangur 14. tölublað",
@@ -1743,7 +2363,10 @@
     "date": "2026-10-02T11:27:00+00:00",
     "image": "https://www.horgarsveit.is/static/news/sm/1790940541_horgarsveit-logo-med-hjalteyri.png",
     "source": "Hörgársveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Vel heppnuð námstefna Samtaka heilsuleikskóla á Akureyri",
@@ -1752,7 +2375,10 @@
     "date": "2026-10-02T11:04:00+00:00",
     "image": "https://www.horgarsveit.is/static/news/sm/screenshot-2026-10-02-110558.png",
     "source": "Hörgársveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Hörgársveit tekur þátt í þjóðarsátt um verðstöðugleika",
@@ -1761,7 +2387,10 @@
     "date": "2026-10-02T11:00:00+00:00",
     "image": "https://www.horgarsveit.is/static/news/sm/1790938904_horgarsveit-logo-med-mynd-i-bakgrunn.png",
     "source": "Hörgársveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Áhugasamir og áhugavert í Eyvind",
@@ -1770,7 +2399,10 @@
     "date": "2026-10-02T10:19:00+00:00",
     "image": "https://www.esveit.is/static/news/sm/eyvindur-2025.jpg",
     "source": "Eyjafjarðarsveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Skjalasöfnin, minnið og alþjóðalögin á Norðurslóðum",
@@ -1779,7 +2411,10 @@
     "date": "2026-10-02T09:52:00+00:00",
     "image": "https://www.unak.is/static/news/sm/1.10.2026-unak-utgafa-boka_rachael-skjalasofn-2.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Leggja til að gjaldsskrá sorphirðu hækki um 5%",
@@ -1788,7 +2423,10 @@
     "date": "2026-10-02T08:49:27+00:00",
     "image": "https://dal.is/wp-content/uploads/2026/10/terra.jpg",
     "source": "Dal.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Nýtt hundasvæði sunnan við íþróttamiðstöðina á Dalvík",
@@ -1797,7 +2435,11 @@
     "date": "2026-10-02T07:53:09+00:00",
     "image": "https://dal.is/wp-content/uploads/2022/06/ithrottamidstod.jpg",
     "source": "Dal.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Leggja til þriggja tunnu sorphirðukerfi í Dalvíkurbyggð",
@@ -1806,7 +2448,10 @@
     "date": "2026-10-02T07:38:20+00:00",
     "image": "https://dal.is/wp-content/uploads/2019/09/DSCN2139-Small.jpg",
     "source": "Dal.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Gamall skólabíll keyptur á krónu",
@@ -1815,7 +2460,10 @@
     "date": "2026-10-02T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/messenger_creation_b63ac6f2-8e2d-4d83-adae-93d398dd2184.jpeg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "KA á skriði og Haukar enn með fullt hús",
@@ -1824,7 +2472,11 @@
     "date": "2026-10-01T22:05:33+00:00",
     "image": "https://myndir.ruv.is/eyJidWNrZXQiOiAicnV2LXByb2QtcnV2aXMtcHVibGljIiwgImtleSI6ICJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL0FfMTA2MjQ3LmpwZyIsICJlZGl0cyI6IHsidG9Gb3JtYXQiOiAid2VicCIsICJ3ZWJwIjogeyJxdWFsaXR5IjogNjB9LCAicmVzaXplIjogeyJ3aWR0aCI6ICIxNjAwIiwgImZpdCI6ICJjb3ZlciIsICJoZWlnaHQiOiAiOTAwIn19fQ==",
     "source": "RÚV",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Fjölbreyttar vínylplötur í október",
@@ -1833,7 +2485,10 @@
     "date": "2026-10-01T17:22:00+00:00",
     "image": "https://www.ma.is/static/news/sm/vinyl.png",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Stórafmæli félagsmanna",
@@ -1842,7 +2497,10 @@
     "date": "2026-10-01T16:36:00+00:00",
     "image": "https://www.ka.is/static/news/sm/1790873010_autumn-flowers.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Tilkynningar um tjón af völdum refa",
@@ -1851,7 +2509,10 @@
     "date": "2026-10-01T15:09:00+00:00",
     "image": "https://www.esveit.is/static/news/sm/1790867405_esveit-logo-a-heimasidu-med-fundarbodum-sveitarstjornar.jpg",
     "source": "Eyjafjarðarsveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Eyjafjarðarsveit leggur áherslu á hóflegar gjaldskrárhækkanir",
@@ -1860,7 +2521,10 @@
     "date": "2026-10-01T14:11:00+00:00",
     "image": "https://www.esveit.is/static/news/sm/grund.jpg",
     "source": "Eyjafjarðarsveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Traustur rekstur þrátt fyrir lítilsháttar halla á fyrri hluta ársins",
@@ -1869,7 +2533,10 @@
     "date": "2026-10-01T14:00:00+00:00",
     "image": "https://akureyri.payload.is/api/media/file/maria-helena-september-2026-2000x1334.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Öflugt rannsóknastarf á sviði byggða- og samfélagsmála",
@@ -1878,7 +2545,10 @@
     "date": "2026-10-01T13:50:00+00:00",
     "image": "https://www.unak.is/static/news/sm/unak_-radstefna-vidskiptadeildar-01.10.2026.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Smári og félagar í U17 í A-deild",
@@ -1887,7 +2557,10 @@
     "date": "2026-10-01T13:29:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/smari.jpeg?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Hefurðu gaman af því að skrifa?",
@@ -1896,7 +2569,10 @@
     "date": "2026-10-01T11:00:44+00:00",
     "image": "https://akureyri.payload.is/api/media/file/ungskald-1-1800x1044.png",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Starfsmaður í húsvörslu",
@@ -1905,7 +2581,10 @@
     "date": "2026-10-01T10:35:00+00:00",
     "image": "https://www.svalbardsstrond.is/static/themes/2019/images/og.png?v=1791572869",
     "source": "Svalbarðsstrandarhreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Sprellmótið — áratuga gömul hefð sem sameinar HA-inga",
@@ -1914,7 +2593,10 @@
     "date": "2026-10-01T10:00:00+00:00",
     "image": "https://www.unak.is/static/news/sm/unak-frett_-sprellmot-2026.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Hagnýtt námskeið fyrir foreldra",
@@ -1923,7 +2605,10 @@
     "date": "2026-10-01T09:28:26+00:00",
     "image": "https://akureyri.payload.is/api/media/file/fjolskylda-i-lystigardi-2000x1333.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Grunnskólanemar í heimsókn í VMA",
@@ -1932,7 +2617,10 @@
     "date": "2026-10-01T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/20260930_105005.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "SBA-Norðurleið framlengir samstarf við handknattleiksdeild Þórs",
@@ -1941,7 +2629,10 @@
     "date": "2026-09-30T16:17:00+00:00",
     "image": "https://www.sba.is/static/news/sm/handb.-mfl.-nota-.jpeg",
     "source": "SBA-Norðurleið",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Fulltrúar GRECO heimsóttu Akureyrarbæ",
@@ -1950,7 +2641,10 @@
     "date": "2026-09-30T14:58:58+00:00",
     "image": "https://akureyri.payload.is/api/media/file/greco-1800x1044.png",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Er gervigreind lykillinn að betri sjálfbærniskýrslum?",
@@ -1959,7 +2653,10 @@
     "date": "2026-09-30T13:12:00+00:00",
     "image": "https://www.unak.is/static/news/sm/_30.09.2026-unak-utgafa-boka_kjartan-sjalfbaerni-og-gervigreind.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Tæknilæsi fyrir 60 ára og eldri",
@@ -1968,7 +2665,10 @@
     "date": "2026-09-30T12:59:31+00:00",
     "image": "https://akureyri.payload.is/api/media/file/taeknilaesi-1800x1044.png",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Umsóknarfrestur um styrki úr bæjarsjóði Fjallabyggðar rennur út á morgun 1. október.",
@@ -1977,7 +2677,10 @@
     "date": "2026-09-30T10:46:00+00:00",
     "image": "https://www.fjallabyggd.is/static/news/sm/1790765291_fjallabyggd-logo.jpg",
     "source": "Fjallabyggð",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Samherji selur Margréti EA-710",
@@ -1986,7 +2689,10 @@
     "date": "2026-09-30T09:21:00+00:00",
     "image": "https://www.samherji.is/static/news/sm/margret-fors-850.jpg",
     "source": "Samherji",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Gefa málmiðnbraut VMA standborvél",
@@ -1995,7 +2701,10 @@
     "date": "2026-09-30T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/1790705752_for.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Leiðsögn um sýninguna Í skugga átaka",
@@ -2004,7 +2713,10 @@
     "date": "2026-09-29T19:01:00+00:00",
     "image": "https://www.listak.is/static/news/thumb_1790715141_leidsogn.jpg",
     "source": "Listasafnið á Akureyri",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Hitaveita - rof 30. september",
@@ -2013,7 +2725,10 @@
     "date": "2026-09-29T18:28:00+00:00",
     "image": "https://www.grenivik.is/static/news/sm/hitav-rof-sept-26.png",
     "source": "Grýtubakkahreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Listasmiðjan í Safnasafninu býður íbúum hreppsins í heimsókn",
@@ -2022,7 +2737,10 @@
     "date": "2026-09-29T13:04:00+00:00",
     "image": "https://www.svalbardsstrond.is/static/news/sm/1790687166_safnasafnid.jpg",
     "source": "Svalbarðsstrandarhreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Fundarboð 683. fundar sveitarstjórnar Eyjafjarðarsveitar",
@@ -2031,7 +2749,10 @@
     "date": "2026-09-29T11:05:00+00:00",
     "image": "https://www.esveit.is/static/news/sm/1790680688_esveit-logo-a-heimasidu-med-fundarbodum-sveitarstjornar.jpg",
     "source": "Eyjafjarðarsveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Mögulegar vatnstruflanir í Ólafsfirði í dag 29. september",
@@ -2040,7 +2761,10 @@
     "date": "2026-09-29T11:04:00+00:00",
     "image": "https://www.fjallabyggd.is/static/news/sm/1790679981_vatn.jpeg",
     "source": "Fjallabyggð",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Skilaboð frá formanni",
@@ -2049,7 +2773,10 @@
     "date": "2026-09-29T08:41:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/1790671411_noibjorns.jpeg?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Góðir gestir frá Coublevie í Frakklandi",
@@ -2058,7 +2785,10 @@
     "date": "2026-09-29T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/pic-1.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Vald hinna veiku - landhelgismálin í nýju ljósi",
@@ -2067,7 +2797,10 @@
     "date": "2026-09-28T17:16:00+00:00",
     "image": "https://www.minjasafnid.is/static/news/sm/mynd-af-gudna-th.-johannessyni-.jpg",
     "source": "Minjasafnið á Akureyri",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Lokað verður fyrir HEITT VATN 29.09",
@@ -2076,7 +2809,10 @@
     "date": "2026-09-28T13:54:00+00:00",
     "image": "https://www.svalbardsstrond.is/static/news/sm/heitt-vatn.png",
     "source": "Svalbarðsstrandarhreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Handlék 80 ára gamla vinnubók föður síns",
@@ -2085,7 +2821,10 @@
     "date": "2026-09-28T12:54:00+00:00",
     "image": "https://www.ma.is/static/news/sm/berglind-med-bok-fodur-sins.png",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "3.flokkur Íslandsmeistari",
@@ -2094,7 +2833,10 @@
     "date": "2026-09-28T11:07:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/3kvenna.png?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Takk fyrir handboltamótið um helgina",
@@ -2103,7 +2845,10 @@
     "date": "2026-09-28T10:45:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/234821de-97b3-4b05-994c-e27588c3617a.jfif?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Rannsaka kynjamun í notkun gervigreindar",
@@ -2112,7 +2857,10 @@
     "date": "2026-09-28T10:00:00+00:00",
     "image": "https://www.unak.is/static/news/sm/unak-styrkur-rha-kynjamunur-gervigreind-28.09.2026-1.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Kynntu Norrænu nemakeppnina og EuroSkills",
@@ -2121,7 +2869,10 @@
     "date": "2026-09-28T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/1790261785_for.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Ómar Magni er yngsti nýsveinninn í rafvirkjun á Íslandi!",
@@ -2130,7 +2881,10 @@
     "date": "2026-09-26T13:27:00+00:00",
     "image": "https://www.vma.is/static/news/sm/825329291_1110801078119784_7292232480314362775_n.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Jakob Snær framlengir út 2029",
@@ -2139,7 +2893,10 @@
     "date": "2026-09-25T17:32:00+00:00",
     "image": "https://www.ka.is/static/news/sm/jakobsnaer-2026-sida.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Fundarboð 176. fundur 29.09.26",
@@ -2148,7 +2905,10 @@
     "date": "2026-09-25T14:58:00+00:00",
     "image": "https://www.svalbardsstrond.is/static/themes/2019/images/og.png?v=1791572869",
     "source": "Svalbarðsstrandarhreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Brák íbúðafélag auglýsir íbúð lausa til leigu á Siglufirði.",
@@ -2157,7 +2917,10 @@
     "date": "2026-09-25T10:06:00+00:00",
     "image": "https://www.fjallabyggd.is/static/news/sm/brak.jpg",
     "source": "Fjallabyggð",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Ómetanleg gjöf frá Johan Rönning",
@@ -2166,7 +2929,10 @@
     "date": "2026-09-25T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/1790189151_for.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Ritlistakvöld fyrir ungt fólk á Lyst 7. október",
@@ -2175,7 +2941,10 @@
     "date": "2026-09-25T06:55:00+00:00",
     "image": "https://www.vma.is/static/news/sm/20260923_105953.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Húsfélög geta sótt um styrki til að setja upp hleðslustöðvar",
@@ -2184,7 +2953,10 @@
     "date": "2026-09-24T10:17:51+00:00",
     "image": "https://akureyri.payload.is/api/media/file/hledslustod-1800x1044.png",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Ráðherra ítrekar mikilvægi norðurslóðastofnananna og þekkingarsamfélagsins á Akureyri",
@@ -2193,7 +2965,10 @@
     "date": "2026-09-24T10:00:00+00:00",
     "image": "https://www.unak.is/static/news/sm/iacn-og-utanrikisraduneytid-2.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Gervigreindin hefur ekki siðferðiskennd",
@@ -2202,7 +2977,10 @@
     "date": "2026-09-24T10:00:00+00:00",
     "image": "https://www.unak.is/static/news/sm/gervigreind-1.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Aravaka - Minningarmálþing um Ara Brynjólfsson eðlisfræðing",
@@ -2211,7 +2989,10 @@
     "date": "2026-09-24T09:21:00+00:00",
     "image": "https://www.ma.is/static/news/sm/799279320_10235198640008878_2614659139334324837_n.jpg",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Síðustu opnunardagar sundlaugar",
@@ -2220,7 +3001,10 @@
     "date": "2026-09-24T09:18:00+00:00",
     "image": "https://www.svalbardsstrond.is/static/news/sm/haust-sundlaug.png",
     "source": "Svalbarðsstrandarhreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Landsliðsfréttir úr fótboltanum",
@@ -2229,7 +3013,10 @@
     "date": "2026-09-24T08:36:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/uefa-european-under-17-championship-202122-elite-round-draw.webp?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Virkjum íbúana! Tækifæri til að efla samveru og þátttöku íbúa",
@@ -2238,7 +3025,10 @@
     "date": "2026-09-24T08:26:00+00:00",
     "image": "https://www.svalbardsstrond.is/static/news/sm/ssne-23.9.png",
     "source": "Svalbarðsstrandarhreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Sex þreyttu sveinspróf í vélvirkjun",
@@ -2247,7 +3037,10 @@
     "date": "2026-09-24T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/1790014201_for.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Pólskur tryggingaráðgjafi á Norðurlandi",
@@ -2256,7 +3049,10 @@
     "date": "2026-09-23T20:53:46+00:00",
     "image": "https://dal.is/wp-content/uploads/2026/09/Sjova2025_K218199_737x412.jpg",
     "source": "Dal.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Hvernig virkar hafið og hvernig er það að breytast?",
@@ -2265,7 +3061,10 @@
     "date": "2026-09-23T15:20:00+00:00",
     "image": "https://www.unak.is/static/news/sm/unak_-steingrimur-og-sjorinn-23.09.2026.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Fjallabyggð auglýsir eftir starfsfólki á skíðasvæðið í Skarðsdal",
@@ -2274,7 +3073,10 @@
     "date": "2026-09-23T13:54:46+00:00",
     "image": "https://dal.is/wp-content/uploads/2026/09/Fjallabyggd_Skardsdalur_Loka_900x250.png",
     "source": "Dal.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Verkefnið snýst um að framleiða hágæðavöru",
@@ -2283,7 +3085,10 @@
     "date": "2026-09-23T13:00:00+00:00",
     "image": "https://www.samherji.is/static/news/sm/hjalti-staerri.jpg",
     "source": "Samherji",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Dagskrá íþróttaviku Evrópu í VMA",
@@ -2292,7 +3097,10 @@
     "date": "2026-09-23T11:45:00+00:00",
     "image": "https://www.vma.is/static/news/sm/oli.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Fjallabyggð auglýsir eftir starfsfólki á skíðasvæðið í Skarðsdal fyrir reksturinn á svæðinu í vetur.",
@@ -2301,7 +3109,10 @@
     "date": "2026-09-23T10:29:00+00:00",
     "image": "https://www.fjallabyggd.is/static/news/sm/skardid-logo.jpg",
     "source": "Fjallabyggð",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Búið að leiðrétta villu í innheimtukerfi hitaveitu í Dalvíkurbyggð",
@@ -2310,7 +3121,10 @@
     "date": "2026-09-23T10:25:07+00:00",
     "image": "https://dal.is/wp-content/uploads/2019/09/DSCN2139-Small.jpg",
     "source": "Dal.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Tólf tóna korter 3. október",
@@ -2319,7 +3133,10 @@
     "date": "2026-09-23T09:49:00+00:00",
     "image": "https://www.listak.is/static/news/thumb_ttk-margret-og-erla.jpeg",
     "source": "Listasafnið á Akureyri",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Námsmatsdagur 25. september",
@@ -2328,7 +3145,10 @@
     "date": "2026-09-23T09:29:00+00:00",
     "image": "https://www.ma.is/static/news/sm/namsmatsdagur.png",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Þátttakan í ungmennaráði Samfés hefur gefið mér mikið",
@@ -2337,7 +3157,10 @@
     "date": "2026-09-23T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/x.jpeg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Besta deildin: Frítt á leik Þórs/KA og Fram",
@@ -2346,7 +3169,10 @@
     "date": "2026-09-22T15:15:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/arm_8438.jpg?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Paula del Olmo yfirþjálfari og verkefnastjóri blakdeildar KA",
@@ -2355,7 +3181,10 @@
     "date": "2026-09-22T14:26:00+00:00",
     "image": "https://www.ka.is/static/news/sm/paula2026-sida.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "„... nær einhvern veginn að vera bæði lítill og stór eftir því hvað hentar hverju sinni, svona risasmár.“",
@@ -2364,7 +3193,10 @@
     "date": "2026-09-22T14:06:00+00:00",
     "image": "https://www.unak.is/static/news/sm/hofi-unak-hin-glidin.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Þrjár nýjar sýningar opnaðar í Listasafninu",
@@ -2373,7 +3205,10 @@
     "date": "2026-09-22T13:30:00+00:00",
     "image": "https://akureyri.payload.is/api/media/file/ur-verki-berglindar-jonu-hlynsdottur-1500x1004.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Kjarneðlisfræðingurinn frá Krossanesi",
@@ -2382,7 +3217,10 @@
     "date": "2026-09-22T12:30:00+00:00",
     "image": "https://akureyri.payload.is/api/media/file/ari-brynjolfsson-378x558.png",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Blessað barnalán í VMA!",
@@ -2391,7 +3229,10 @@
     "date": "2026-09-22T12:21:00+00:00",
     "image": "https://www.vma.is/static/news/sm/born.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Uppbyggingarsjóður Norðurlands eystra opinn fyrir umsóknir.",
@@ -2400,7 +3241,10 @@
     "date": "2026-09-22T09:00:00+00:00",
     "image": "https://www.fjallabyggd.is/static/news/sm/uppfaert-10.09-15.png",
     "source": "Fjallabyggð",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Fjölskylduleiðsögn á sunnudaginn",
@@ -2409,7 +3253,10 @@
     "date": "2026-09-21T19:47:00+00:00",
     "image": "https://www.listak.is/static/news/thumb_816030289_1108160468326037_2197399938478486570_n.png.jpeg",
     "source": "Listasafnið á Akureyri",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Framkvæmdir við Krossanesbraut og Undirhlíð",
@@ -2418,7 +3265,10 @@
     "date": "2026-09-21T13:53:10+00:00",
     "image": "https://akureyri.payload.is/api/media/file/lokanir-1-966x654.png",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Uppbyggingarsjóður opinn fyrir umsóknir",
@@ -2427,7 +3277,10 @@
     "date": "2026-09-21T12:33:00+00:00",
     "image": "https://www.horgarsveit.is/static/news/sm/uppfaert-10.09-15.png",
     "source": "Hörgársveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Kvenfélagskvöldkaffi - Allar kvenfélagskonur velkomnar og líka þær sem vilja verða kvenfélagskonur",
@@ -2436,7 +3289,10 @@
     "date": "2026-09-21T12:08:00+00:00",
     "image": "https://www.esveit.is/static/news/sm/kvenfelagskvoldkaffi-30.09.2026.jpg",
     "source": "Eyjafjarðarsveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Uppbyggingarsjóður opinn fyrir umsóknir",
@@ -2445,7 +3301,10 @@
     "date": "2026-09-21T11:56:00+00:00",
     "image": "https://www.esveit.is/static/news/sm/uppbyggingarsjodur-21.09.26-uppfaert-10.09-15.png",
     "source": "Eyjafjarðarsveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Íþróttavika Evrópu verður haldin dagana 23.–30. september.",
@@ -2454,7 +3313,10 @@
     "date": "2026-09-21T11:03:00+00:00",
     "image": "https://www.fjallabyggd.is/static/news/sm/ithrottavika_evropu_2026-4.png",
     "source": "Fjallabyggð",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Uppbyggingarsjóður Norðurlands eystra hefur verið opnaður",
@@ -2463,7 +3325,10 @@
     "date": "2026-09-21T10:07:00+00:00",
     "image": "https://www.svalbardsstrond.is/static/news/sm/ssne-21.9.png",
     "source": "Svalbarðsstrandarhreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Uppbyggingarsjóður opinn fyrir umsóknir",
@@ -2472,7 +3337,10 @@
     "date": "2026-09-21T10:00:00+00:00",
     "image": "https://akureyri.payload.is/api/media/file/uppbyggingarsjodur-1172x945.png",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Vélstjórnin hefur mikið aðdráttarafl",
@@ -2481,7 +3349,10 @@
     "date": "2026-09-21T07:00:00+00:00",
     "image": "https://www.vma.is/static/news/sm/img_3045.jpg",
     "source": "VMA",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Ráðherra mennta- og barnamála í heimsókn",
@@ -2490,7 +3361,10 @@
     "date": "2026-09-18T15:09:00+00:00",
     "image": "https://www.ma.is/static/news/sm/20260918_140522.jpg",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Framkvæmdir við Krossanesbraut og Undirhlíð",
@@ -2499,7 +3373,10 @@
     "date": "2026-09-18T14:43:00+00:00",
     "image": "https://www.no.is/static/news/sm/untitled-september-18-2026-at-10.59.26-2.png",
     "source": "Norðurorka",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Næstu skref tekin í stækkun verknámshúss VMA",
@@ -2508,7 +3385,10 @@
     "date": "2026-09-18T14:14:17+00:00",
     "image": "https://akureyri.payload.is/api/media/file/viljayfirlysing-undirritud-2000x1334.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Veganestið – Eyja Drífa Ingólfsdóttir",
@@ -2517,7 +3397,10 @@
     "date": "2026-09-18T12:04:00+00:00",
     "image": "https://www.unak.is/static/news/sm/unak-veganestid920-x-460-px-eyja-drifa-1.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Íbúð til sölu",
@@ -2526,7 +3409,10 @@
     "date": "2026-09-18T10:29:00+00:00",
     "image": "https://www.grenivik.is/static/news/sm/h2b-1.jpg",
     "source": "Grýtubakkahreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Skautamaraþon listskautadeildar á laugardag",
@@ -2535,7 +3421,10 @@
     "date": "2026-09-17T13:04:00+00:00",
     "image": "https://www.sasport.is/static/news/sm/808462574_1608089457777950_5204894626838691327_n.jpg",
     "source": "Skautafélag Akureyrar",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Viðtalstími bæjarfulltrúa þriðjudaginn 22. september",
@@ -2544,7 +3433,10 @@
     "date": "2026-09-17T11:43:01+00:00",
     "image": "https://akureyri.payload.is/api/media/file/vidtalstimi-baejarfulltrua-jana-gunnar-1800x1044.png",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Þingmenn Vestnorræna ráðsins kynntu sér Norðurslóðamiðstöð Íslands",
@@ -2553,7 +3445,10 @@
     "date": "2026-09-17T11:34:00+00:00",
     "image": "https://www.unak.is/static/news/sm/unak_-thingmenn-vestnorraena-radsins-17.09.2026.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Starfsleyfi fiskþurrkunar að Laugum fellt úr gildi vegna annmarka á málsmeðferð",
@@ -2562,7 +3457,10 @@
     "date": "2026-09-17T11:23:00+00:00",
     "image": "https://www.samherji.is/static/news/sm/laugar-bjartari-minnkud.jpg",
     "source": "Samherji",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Sameiginleg loftslagsstefna sveitarfélaga á Norðurlandi eystra",
@@ -2571,7 +3469,10 @@
     "date": "2026-09-17T09:31:07+00:00",
     "image": "https://akureyri.payload.is/api/media/file/loftslagsstefna-godafoss-1800x1044.png",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Messað í Hríseyjarkirkju og Dalvíkurkirkju",
@@ -2580,7 +3481,10 @@
     "date": "2026-09-16T21:30:26+00:00",
     "image": "https://dal.is/wp-content/uploads/2025/12/dalvikurkirkja.jpg",
     "source": "Dal.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Leikfélag Hörgdæla setur upp Hárið",
@@ -2589,7 +3493,10 @@
     "date": "2026-09-16T11:14:00+00:00",
     "image": "https://www.horgarsveit.is/static/news/sm/harid.jfif",
     "source": "Hörgársveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Allar stofnanir Dalvíkurbyggðar lokaðar eftir hádegið 17. september vegna starfsdags",
@@ -2598,7 +3505,10 @@
     "date": "2026-09-16T07:37:26+00:00",
     "image": "https://dal.is/wp-content/uploads/2019/09/DSCN2139-Small.jpg",
     "source": "Dal.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Dularfull bók hinna mörgu eigenda",
@@ -2607,7 +3517,10 @@
     "date": "2026-09-15T19:22:00+00:00",
     "image": "https://www.ma.is/static/news/sm/petur-og-bjarni-ben-og-bokin.png",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Laufás- og Grenivíkursókn",
@@ -2616,7 +3529,10 @@
     "date": "2026-09-15T15:35:00+00:00",
     "image": "https://www.grenivik.is/static/themes/2016/images/og.png?v=1791578892",
     "source": "Grýtubakkahreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Spennandi stjórnunarstarf hjá Akureyrarbæ",
@@ -2625,7 +3541,10 @@
     "date": "2026-09-15T14:26:07+00:00",
     "image": "https://akureyri.payload.is/api/media/file/1713362025_1620315912_akureyri-sumar-3-900x600.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Tafir á framkvæmdum í Hlíðahverfi",
@@ -2634,7 +3553,10 @@
     "date": "2026-09-15T11:21:00+00:00",
     "image": "https://www.no.is/static/news/sm/1q8b1534.jpg",
     "source": "Norðurorka",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Stúdent frá HA tók þátt á vettvangi ungs fólks um framtíð norðurslóða",
@@ -2643,7 +3565,10 @@
     "date": "2026-09-15T10:00:00+00:00",
     "image": "https://www.unak.is/static/news/sm/1789407969_polar-law-sara_youth-1.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Grétar Þór flutti tvö erindi á alþjóðlegri ráðstefnu í Róm",
@@ -2652,7 +3577,10 @@
     "date": "2026-09-14T14:31:00+00:00",
     "image": "https://www.unak.is/static/news/sm/copy-of-unak-frett-isme-oddur-1.09.2026.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Íþróttavika Evrópu í Hörgársveit",
@@ -2661,7 +3589,10 @@
     "date": "2026-09-14T13:48:00+00:00",
     "image": "https://www.horgarsveit.is/static/news/sm/frett-ithve.png",
     "source": "Hörgársveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Síldarvertíð er hafin",
@@ -2670,7 +3601,10 @@
     "date": "2026-09-14T13:40:00+00:00",
     "image": "https://www.samherji.is/static/news/sm/vilhelm.jpg",
     "source": "Samherji",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Wild berries",
@@ -2679,7 +3613,10 @@
     "date": "2026-09-14T10:41:00+00:00",
     "image": "https://www.visitakureyri.is/static/news/sm/1.11.jpg",
     "source": "Visit Akureyri",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Ingunn Björk Jónsdóttir kveðja",
@@ -2688,7 +3625,10 @@
     "date": "2026-09-14T07:30:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/ingunn-bjork-jonsdottir.jpg?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Lokahóf Knattspyrnudeildar Dalvíkur/Reynis",
@@ -2697,7 +3637,11 @@
     "date": "2026-09-13T21:10:42+00:00",
     "image": "http://dal.is/wp-content/uploads/2026/09/gunnlaugur-rafn.jpg",
     "source": "Dal.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
   },
   {
     "title": "Dalvík/Reynir mætti botnliðinu í 2. deild karla",
@@ -2706,7 +3650,10 @@
     "date": "2026-09-12T18:42:57+00:00",
     "image": "https://dal.is/wp-content/uploads/2019/05/dalvikreynir-logo.jpg",
     "source": "Dal.is",
-    "category": "Fréttamiðlar"
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
   },
   {
     "title": "Fundur í bæjarstjórn 15. september 2026",
@@ -2715,7 +3662,10 @@
     "date": "2026-09-11T14:22:20+00:00",
     "image": "https://akureyri.payload.is/api/media/file/fyrir-utan-radhus-2000x1333.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Hvernig líður íslenskum foreldrum í raun og veru?",
@@ -2724,7 +3674,10 @@
     "date": "2026-09-11T14:00:00+00:00",
     "image": "https://www.unak.is/static/news/sm/unak-frett-foreldrakulnun-10.09.2026.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Franskir kennarar í heimsókn",
@@ -2733,7 +3686,10 @@
     "date": "2026-09-11T08:12:00+00:00",
     "image": "https://www.ma.is/static/news/sm/image-13.jpg",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Fréttabréf | 17. árgangur 13. tölublað",
@@ -2742,7 +3698,10 @@
     "date": "2026-09-10T15:29:00+00:00",
     "image": "https://www.horgarsveit.is/static/news/sm/1789054346_horgarsveit-logo-med-mynd-i-bakgrunn.png",
     "source": "Hörgársveit",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Námskeið í rafíþróttum að hefjast",
@@ -2751,7 +3710,10 @@
     "date": "2026-09-10T14:40:00+00:00",
     "image": "https://www.thorsport.is/static/news/esportsthorsport.png?v=1791483324",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Sýning Vatnslitahátíðar Íslands opnar í Listasafninu í dag",
@@ -2760,7 +3722,10 @@
     "date": "2026-09-10T12:42:11+00:00",
     "image": "https://akureyri.payload.is/api/media/file/aurora-1018x1500.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Götugangan fer fram á sunnudaginn",
@@ -2769,7 +3734,10 @@
     "date": "2026-09-10T08:35:41+00:00",
     "image": "https://akureyri.payload.is/api/media/file/gotugangan-2000x1333.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Þór mætir Zalgiris í Evrópukeppni unglingaliða",
@@ -2778,7 +3746,10 @@
     "date": "2026-09-10T08:34:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/youth-league.jpeg?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Fyrsti heimaleikur í handboltanum",
@@ -2787,7 +3758,10 @@
     "date": "2026-09-10T08:32:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/thorhk.jpg?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Körfuboltastarfið komið á fullt",
@@ -2796,7 +3770,10 @@
     "date": "2026-09-10T08:27:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/karfatafla.jpeg?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Aukin þjónusta Bergsins fyrir ungmenni á Norðurlandi eystra",
@@ -2805,7 +3782,10 @@
     "date": "2026-09-09T14:53:58+00:00",
     "image": "https://akureyri.payload.is/api/media/file/bergid-ssne-2000x1446.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Viltu vera með á Jólatorginu?",
@@ -2814,7 +3794,10 @@
     "date": "2026-09-09T13:01:16+00:00",
     "image": "https://akureyri.payload.is/api/media/file/29nov25-16-2000x1124.jpg",
     "source": "Akureyrarbær",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Haustverkin í Laufási",
@@ -2823,7 +3806,10 @@
     "date": "2026-09-08T19:56:00+00:00",
     "image": "https://www.minjasafnid.is/static/news/sm/hg_3367.jpg",
     "source": "Minjasafnið á Akureyri",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Svipmyndir: Nemandi í MA hitti Bandaríkjaforseta í Washington 1956",
@@ -2832,7 +3818,10 @@
     "date": "2026-09-08T15:10:00+00:00",
     "image": "https://www.ma.is/static/news/sm/hitti-eisenhower-1956.png",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Fyrsti söngsalur skólaársins",
@@ -2841,7 +3830,10 @@
     "date": "2026-09-08T13:47:00+00:00",
     "image": "https://www.ma.is/static/news/sm/20260908_100108.jpg",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Magnús Dagur kveður KA",
@@ -2850,7 +3842,10 @@
     "date": "2026-09-08T13:46:00+00:00",
     "image": "https://www.ka.is/static/news/sm/takkmaggi-sida.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Ný dæla sett niður á Hjalteyri",
@@ -2859,7 +3854,10 @@
     "date": "2026-09-07T11:36:00+00:00",
     "image": "https://www.no.is/static/news/sm/1q8b1821.jpg",
     "source": "Norðurorka",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Taekwondo fyrir 4-5 ára",
@@ -2868,7 +3866,10 @@
     "date": "2026-09-06T22:23:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/skrimsli-auglysing-01-copy.jpg?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Taekwondo æfingar komnar á fullt",
@@ -2877,7 +3878,10 @@
     "date": "2026-09-06T17:22:00+00:00",
     "image": "https://www.thorsport.is/static/news/sm/auglysing-haust-2026-01.jpg?v=1",
     "source": "Þór",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Kvennaliðið hefur keppni í Toppdeildinni í dag",
@@ -2886,7 +3890,10 @@
     "date": "2026-09-05T10:20:00+00:00",
     "image": "https://www.sasport.is/static/news/sm/oli14017.jpg",
     "source": "Skautafélag Akureyrar",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Litríkar treyjur og mikil samstaða á Treyjudeginum",
@@ -2895,7 +3902,10 @@
     "date": "2026-09-04T14:01:00+00:00",
     "image": "https://www.samherji.is/static/news/sm/skrifstofa-a-akureyri.jpg",
     "source": "Samherji",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Síðasti opnunardagur sumarsins 2026",
@@ -2904,7 +3914,10 @@
     "date": "2026-09-04T12:54:00+00:00",
     "image": "https://www.hlidarfjall.is/static/news/sm/792091146_1729549811593314_7151123576342536762_n.jpg",
     "source": "Hlíðarfjall",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Kristinn Soð : Svínakótilettur í suðrænni kryddblöndu með rabbabara-chimichurri",
@@ -2913,7 +3926,10 @@
     "date": "2026-09-03T16:25:57+00:00",
     "image": "https://irp.cdn-website.com/3ffc504c/dms3rep/multi/0DE0AD06-9DE4-4B35-B88A-7B0AE121EFF0_4_5005_c+%281%29.jpeg",
     "source": "Kjarnafæði Norðlenska",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Býr ónýtt orka innra með þér? Taktu þátt í stjórn Norðurorku",
@@ -2922,7 +3938,10 @@
     "date": "2026-09-03T13:59:00+00:00",
     "image": "https://www.no.is/static/news/sm/1744109638-no-drone-4-agust-2024.jpg",
     "source": "Norðurorka",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Kynningarkvöld handboltans á föstudaginn",
@@ -2931,7 +3950,10 @@
     "date": "2026-09-02T13:56:00+00:00",
     "image": "https://www.ka.is/static/news/sm/kynningarkvold-hand-2026-sida.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Harðfiskdagur 4. september",
@@ -2940,7 +3962,10 @@
     "date": "2026-09-01T14:40:00+00:00",
     "image": "https://www.grenivik.is/static/news/sm/1788273785_hausar.jpg",
     "source": "Grýtubakkahreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Svavar Ingi yfirmaður handboltamála hjá KA",
@@ -2949,7 +3974,10 @@
     "date": "2026-09-01T13:55:00+00:00",
     "image": "https://www.ka.is/static/news/sm/svabbi-2026-sida.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Elvar Björn og Viltė fengu styrk úr Afreks- og hvatningarsjóði HÍ",
@@ -2958,7 +3986,10 @@
     "date": "2026-09-01T13:44:00+00:00",
     "image": "https://www.ma.is/static/news/sm/kri_afreks_og_hvatningarsjodur_260831_049.jpg",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Stórafmæli félagsmanna",
@@ -2967,7 +3998,10 @@
     "date": "2026-09-01T12:09:00+00:00",
     "image": "https://www.ka.is/static/news/sm/1788264924_birthday-flowers-autumn.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Landvinnsla komin á fulla ferð eftir sumarleyfi",
@@ -2976,7 +4010,10 @@
     "date": "2026-09-01T08:16:00+00:00",
     "image": "https://www.samherji.is/static/news/sm/_sso02092.jpg",
     "source": "Samherji",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Frístundarrútan og vetrartöflur",
@@ -2985,7 +4022,10 @@
     "date": "2026-09-01T07:33:00+00:00",
     "image": "https://www.ka.is/static/news/sm/fristundarruta2026-sida.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Göngur og réttir 2026",
@@ -2994,7 +4034,10 @@
     "date": "2026-08-31T16:30:00+00:00",
     "image": "https://www.grenivik.is/static/news/sm/1788193990_rettir.jpg",
     "source": "Grýtubakkahreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "1H sigurvegari í nýnemadanskeppninni",
@@ -3003,7 +4046,10 @@
     "date": "2026-08-27T11:23:00+00:00",
     "image": "https://www.ma.is/static/news/sm/pxl_20260826_185511963.jpg",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Makrílvertíð í fullum gangi",
@@ -3012,7 +4058,10 @@
     "date": "2026-08-26T14:59:00+00:00",
     "image": "https://www.samherji.is/static/news/sm/vilhelm_neskaupstad_1000.jpg",
     "source": "Samherji",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Vetrarstarfið hafið hjá Skautafélagi Akureyrar",
@@ -3021,7 +4070,10 @@
     "date": "2026-08-26T09:51:00+00:00",
     "image": "https://www.sasport.is/static/news/sm/byrjendur-2-dagskrain-heilsida-augysing-2026-148-226-mm.png",
     "source": "Skautafélag Akureyrar",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Sjáumst á Akureyrarvöku í Hofi!",
@@ -3030,7 +4082,10 @@
     "date": "2026-08-25T15:50:00+00:00",
     "image": "https://www.mak.is/static/news/sm/akureyrarvaka-layout.png",
     "source": "Menningarfélag Akureyrar",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Hamarstígur lokaður vegna framkvæmda",
@@ -3039,7 +4094,10 @@
     "date": "2026-08-25T14:43:00+00:00",
     "image": "https://www.no.is/static/news/sm/2026-08-25-11.20.17.jpg",
     "source": "Norðurorka",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Heimir Örn aðstoðar Andra Snæ í vetur",
@@ -3048,7 +4106,10 @@
     "date": "2026-08-25T13:39:00+00:00",
     "image": "https://www.ka.is/static/news/sm/heimirandri2026.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Friður og stríð í Davíðshúsi",
@@ -3057,7 +4118,10 @@
     "date": "2026-08-24T20:08:00+00:00",
     "image": "https://www.minjasafnid.is/static/news/sm/f94ee60a-b531-4e58-b47a-cf2578c39c22.jpg",
     "source": "Minjasafnið á Akureyri",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Söfnin á Akureyrarvöku",
@@ -3066,7 +4130,10 @@
     "date": "2026-08-24T19:44:00+00:00",
     "image": "https://www.minjasafnid.is/static/news/sm/29a343e4-00d4-49e5-bec2-e40e4af7d1a4.jpg",
     "source": "Minjasafnið á Akureyri",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "100 manns sprettu úr spori frá Skautahöllinni í gær",
@@ -3075,7 +4142,10 @@
     "date": "2026-08-23T20:43:00+00:00",
     "image": "https://www.sasport.is/static/news/sm/img_1132.jpg",
     "source": "Skautafélag Akureyrar",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Jón Þór Kristjánsson ráðinn verkefnastjóri upplýsingamiðlunar hjá Samherja",
@@ -3084,7 +4154,10 @@
     "date": "2026-08-21T10:43:00+00:00",
     "image": "https://www.samherji.is/static/news/sm/jon-thor.jpg",
     "source": "Samherji",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Andri Freyr til liðs við KA",
@@ -3093,7 +4166,10 @@
     "date": "2026-08-20T15:09:00+00:00",
     "image": "https://www.ka.is/static/news/sm/andrifreyr-sida2.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "🔧 Fjarkinn lokaður í dag, fimmtudaginn 20. ágúst 🔧",
@@ -3102,7 +4178,10 @@
     "date": "2026-08-20T14:34:00+00:00",
     "image": "https://www.hlidarfjall.is/static/news/sm/18.08.2026.jpg",
     "source": "Hlíðarfjall",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Fullfermi í fyrsta túr sem skipstjóri",
@@ -3111,7 +4190,10 @@
     "date": "2026-08-20T12:37:00+00:00",
     "image": "https://www.samherji.is/static/news/sm/lydur-i-brunni.jpg",
     "source": "Samherji",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Áheyrnarprufur fyrir Skilaboðaskjóðuna",
@@ -3120,7 +4202,10 @@
     "date": "2026-08-20T11:15:00+00:00",
     "image": "https://www.mak.is/static/news/sm/800x600_skilabodaskj_2x.jpg",
     "source": "Menningarfélag Akureyrar",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Göngum í minningu Sollu",
@@ -3129,7 +4214,10 @@
     "date": "2026-08-19T19:56:00+00:00",
     "image": "https://www.sasport.is/static/news/sm/b8aa1d10-dd7d-4abe-812c-0e3ab215fa11.jpeg",
     "source": "Skautafélag Akureyrar",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Kvosin yfirfull á skólasetningu",
@@ -3138,7 +4226,10 @@
     "date": "2026-08-19T18:12:00+00:00",
     "image": "https://www.ma.is/static/news/sm/image-11.jpg",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Eiður Smári í þjálfarateymi KA",
@@ -3147,7 +4238,10 @@
     "date": "2026-08-19T16:50:00+00:00",
     "image": "https://www.ka.is/static/news/sm/eidursmari-sida.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Fyrsti samlestur á nýju leikári",
@@ -3156,7 +4250,10 @@
     "date": "2026-08-19T13:53:00+00:00",
     "image": "https://www.mak.is/static/news/sm/unknown-1.png",
     "source": "Menningarfélag Akureyrar",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Töflubreytingar í Innu",
@@ -3165,7 +4262,10 @@
     "date": "2026-08-19T12:54:00+00:00",
     "image": "https://www.ma.is/static/news/sm/untitled-design-1.jpg",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Nýtt Íslandsmet hjá Alex og Bikarmeistaratitill í hús",
@@ -3174,7 +4274,10 @@
     "date": "2026-08-19T12:18:00+00:00",
     "image": "https://www.ka.is/static/news/sm/alex2026.jpeg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Þjóðaratkvæðagreiðsla 29. ágúst 2026",
@@ -3183,7 +4286,10 @@
     "date": "2026-08-19T09:26:00+00:00",
     "image": "https://www.grenivik.is/static/news/sm/thjodaratkv-2026.png",
     "source": "Grýtubakkahreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Hraðtafla 20. ágúst",
@@ -3192,7 +4298,10 @@
     "date": "2026-08-18T13:07:00+00:00",
     "image": "https://www.ma.is/static/news/sm/pxl_20250513_102334013.mp.jpg",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Júdódeild KA vekur athygli í virtasta júdótímariti Frakklands",
@@ -3201,7 +4310,10 @@
     "date": "2026-08-16T19:35:00+00:00",
     "image": "https://www.ka.is/static/news/sm/judofrett.png",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Nýtt tímabil handan við hornið.",
@@ -3210,7 +4322,10 @@
     "date": "2026-08-15T17:38:00+00:00",
     "image": "https://www.sasport.is/static/news/sm/ff7a886c-a87d-4f0e-813a-afe81860d299.jpeg",
     "source": "Skautafélag Akureyrar",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Innköllun á Krónu pylsum 10 stk",
@@ -3219,7 +4334,10 @@
     "date": "2026-08-13T15:29:21+00:00",
     "image": "https://irp.cdn-website.com/3ffc504c/dms3rep/multi/processed-CF7ABE70-D55F-4B52-88EF-BAC4B8DDE63D.jpeg",
     "source": "Kjarnafæði Norðlenska",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Lokað fyrir heitt vatn",
@@ -3228,7 +4346,10 @@
     "date": "2026-08-13T09:53:00+00:00",
     "image": "https://www.grenivik.is/static/news/sm/hitavlokun-ag-2026.png",
     "source": "Grýtubakkahreppur",
-    "category": "Nærsveitir"
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
   },
   {
     "title": "Skólasetning Menntaskólans á Akureyri er 19. ágúst",
@@ -3237,7 +4358,10 @@
     "date": "2026-08-12T14:08:00+00:00",
     "image": "https://www.ma.is/static/news/sm/1786544753_img_8381.jpeg",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun"
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Stórafmæli félagsmanna",
@@ -3246,7 +4370,10 @@
     "date": "2026-08-01T14:04:00+00:00",
     "image": "https://www.ka.is/static/news/sm/august-flowers.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Góð fjölskylduskemmtun á Glerártorgi",
@@ -3255,7 +4382,10 @@
     "date": "2026-07-30T15:17:00+00:00",
     "image": "https://www.glerartorg.is/static/news/sm/1785493832_facebook-event.png",
     "source": "Glerártorg",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Heimsókn frá Jarðhitaskóla Sameinuðu þjóðanna",
@@ -3264,7 +4394,10 @@
     "date": "2026-07-30T12:00:00+00:00",
     "image": "https://www.no.is/static/news/sm/img_08691.jpg",
     "source": "Norðurorka",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Knattspyrnudeild og Sjóvá framlengja samstarfið",
@@ -3273,7 +4406,10 @@
     "date": "2026-07-29T15:03:00+00:00",
     "image": "https://www.ka.is/static/news/sm/sjova-samningur2026-sida.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Vegur að stíflunni í Glerárdal lokaður tímabundið",
@@ -3282,7 +4418,10 @@
     "date": "2026-07-29T11:32:00+00:00",
     "image": "https://www.no.is/static/news/sm/untitled-july-29-2026-at-10.55.02.png",
     "source": "Norðurorka",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Opnunartími um Verslunarmannahelgina",
@@ -3291,7 +4430,10 @@
     "date": "2026-07-29T11:31:00+00:00",
     "image": "https://www.glerartorg.is/static/news/sm/opnunartimi-verslo.png",
     "source": "Glerártorg",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Kristinn Soð : Melónu- og lambafilletsalat fyrir tvo",
@@ -3300,7 +4442,10 @@
     "date": "2026-07-28T15:22:06+00:00",
     "image": "https://irp.cdn-website.com/3ffc504c/dms3rep/multi/IMG_0893.png",
     "source": "Kjarnafæði Norðlenska",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Matarleifar valda stíflum í fráveitu",
@@ -3309,7 +4454,10 @@
     "date": "2026-07-23T13:45:00+00:00",
     "image": "https://www.no.is/static/news/sm/1784815016_top-view-trash-cooking-concept.jpg",
     "source": "Norðurorka",
-    "category": "Bærinn"
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Stórtónleikar Orkester Norden í Hamraborg",
@@ -3318,7 +4466,10 @@
     "date": "2026-07-23T13:36:00+00:00",
     "image": "https://www.mak.is/static/news/sm/img_5797.jpeg",
     "source": "Menningarfélag Akureyrar",
-    "category": "Menning"
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Stórátak gegn fíknivanda. Stofna Samheldni til að auka og bæta þjónustu fyrir fólk í fíknivanda. Fjárfestingu verulega ábótavant.",
@@ -3327,7 +4478,10 @@
     "date": "2026-07-21T10:46:00+00:00",
     "image": "https://www.samherji.is/static/themes/2015/images/og.png?v=1791483818",
     "source": "Samherji",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   },
   {
     "title": "Lenka Ratvajská gengur til liðs við KA/Þór",
@@ -3336,7 +4490,10 @@
     "date": "2026-07-20T14:24:00+00:00",
     "image": "https://www.ka.is/static/news/sm/kathor-lenka-sida.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Veglegur styrkur kvennakvölds Þórs og KA",
@@ -3345,7 +4502,10 @@
     "date": "2026-07-20T12:37:00+00:00",
     "image": "https://www.ka.is/static/news/sm/kvennakvold2026-styrkur-sida.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Fimm fulltrúar KA með U18 á EM á Ítalíu",
@@ -3354,7 +4514,10 @@
     "date": "2026-07-20T08:06:00+00:00",
     "image": "https://www.ka.is/static/news/sm/landslids-blak-2026-u18kk.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Maggi og Jens í 13. sæti á EM með U20",
@@ -3363,7 +4526,10 @@
     "date": "2026-07-19T20:55:00+00:00",
     "image": "https://www.ka.is/static/news/sm/landslids-2026-hand-u20.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "Sóldís vann einnig gull á SCA móti í Andorra",
@@ -3372,7 +4538,10 @@
     "date": "2026-07-19T18:34:00+00:00",
     "image": "https://www.ka.is/static/news/sm/blak-soldis-strandblak2026.jpg",
     "source": "KA",
-    "category": "Íþróttir"
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
   },
   {
     "title": "„Sumarstarfsmenn setja skemmtilegan svip á starfsemina“",
@@ -3381,6 +4550,9 @@
     "date": "2026-07-16T08:50:00+00:00",
     "image": "https://www.samherji.is/static/news/sm/sumar-1.jpg",
     "source": "Samherji",
-    "category": "Fyrirtæki & félög"
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
   }
 ]
