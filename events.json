@@ -1,31 +1,5 @@
 [
   {
-    "title": "Þór Ak. – Þór Þ.",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156170",
-    "start": "2026-10-04",
-    "end": "2026-10-04",
-    "time": "15:30",
-    "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
-    "res": "80–82"
-  },
-  {
-    "title": "Þór Ak. – Þór Þ.",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Karlar",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=191&season_id=132571&game_id=6153928",
-    "start": "2026-10-04",
-    "end": "2026-10-04",
-    "time": "18:00",
-    "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
-    "res": "82–121"
-  },
-  {
     "title": "Víkingur – KA",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -1616,6 +1590,18 @@
     "image": "https://www.mak.is/static/calendar/images/submit_1787225556.jpg?v=1791755372",
     "note": "9.990 kr.",
     "venue": "Hamraborg, Hof"
+  },
+  {
+    "title": "KK, Mugison & Jón Jónsson",
+    "source": "Miðasala",
+    "site": "Tix",
+    "link": "https://tix.is/event/22175/kk-mugison-jon-jonsson",
+    "start": "2026-12-19",
+    "end": "2026-12-19",
+    "time": "19:30",
+    "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22175.jpg",
+    "note": "Uppselt · 9.500 kr.",
+    "venue": "Glerárkirkja"
   },
   {
     "title": "Ari Eldjárn: Áramótaskop 2026",
