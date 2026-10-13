@@ -1,11 +1,11 @@
 {
- "upd": "13.10 17:45",
+ "upd": "13.10 18:15",
  "now": {
-  "T": 5.8,
+  "T": 5.1,
   "F": 1.0,
-  "D": "NNV",
-  "W": "Lítils háttar rigning",
-  "night": false
+  "D": "NV",
+  "W": "Rigning",
+  "night": true
  },
  "days": [
   {
