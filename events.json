@@ -1013,6 +1013,19 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "Fjölnir – KA/Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Konur",
+    "link": "https://www.hsi.is/match/113399",
+    "start": "2026-11-18",
+    "end": "2026-11-18",
+    "time": "",
+    "image": null,
+    "note": "Útileikur · Powerade bikar kvenna 2027 · Fjölnishöll",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Celebrating George Michael",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/celebrating-george-michael",
@@ -1316,6 +1329,17 @@
     "note": "13.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
+  },
+  {
+    "title": "Issi - Frá Ak til Ö",
+    "source": "Græni hatturinn",
+    "link": "https://www.graenihatturinn.is/is/issi-fra-ak-til-o-28-nov-2026/eid/298",
+    "start": "2026-11-28",
+    "end": "2026-11-28",
+    "time": "21:00",
+    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/jUE5s7DubAehsFBvn2pNxcU7Exyrxp-metaaXNzaS5qcGc=-.webp",
+    "note": "Nýtt · Frá 5.900 kr.",
     "kind": "Tónlist"
   },
   {
@@ -2603,19 +2627,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "ÍA – Þór Ak.",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Karlar",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=191&season_id=132571&game_id=6154038",
-    "start": "2027-02-25",
-    "end": "2027-02-25",
-    "time": "19:15",
-    "image": null,
-    "note": "Útileikur · 1. deild karla · AvAir höllin",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "KA – FH",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -2626,6 +2637,19 @@
     "time": "19:15",
     "image": null,
     "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "ÍA – Þór Ak.",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=191&season_id=132571&game_id=6154038",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "time": "19:15",
+    "image": null,
+    "note": "Útileikur · 1. deild karla · AvAir höllin",
     "kind": "Íþróttir"
   },
   {
