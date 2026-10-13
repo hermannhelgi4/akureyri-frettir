@@ -1,19 +1,5 @@
 [
   {
-    "title": "Víkingur – KA",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/113406",
-    "start": "2026-10-09",
-    "end": "2026-10-09",
-    "time": "19:00",
-    "image": null,
-    "note": "Útileikur · Powerade bikar karla 2027 · Virkið",
-    "res": "35–28",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Hamar – Þór Ak.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -53,34 +39,6 @@
     "image": null,
     "note": "Útileikur · Toppdeild karla",
     "res": "4–5",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Stjarnan – KA",
-    "source": "Íþróttir",
-    "sport": "Fótbolti",
-    "gender": "Karlar",
-    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100289",
-    "start": "2026-10-10",
-    "end": "2026-10-10",
-    "time": "14:00",
-    "image": null,
-    "note": "Útileikur · Besta deild karla - Neðri hluti · Samsungvöllurinn",
-    "res": "0–3",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Þór – ÍBV",
-    "source": "Íþróttir",
-    "sport": "Fótbolti",
-    "gender": "Karlar",
-    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100291",
-    "start": "2026-10-10",
-    "end": "2026-10-10",
-    "time": "14:00",
-    "image": null,
-    "note": "Heimaleikur · Besta deild karla - Neðri hluti · VÍS völlurinn",
-    "res": "1–0",
     "kind": "Íþróttir"
   },
   {
@@ -222,19 +180,6 @@
     "time": "16:00",
     "image": null,
     "note": "Heimaleikur · VÍS bikar karla · Höllin Ak",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "ÍBV 2 – Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/113418",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "16:30",
-    "image": null,
-    "note": "Útileikur · Powerade bikar karla 2027 · Íþróttamiðstöð Vestmannaeyja",
     "kind": "Íþróttir"
   },
   {
@@ -528,6 +473,7 @@
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22415.jpg",
     "note": "4.990 kr.",
     "venue": "Múlaberg, Akureyri",
+    "cat0": "Gaman, Sýning",
     "kind": "Tónlist"
   },
   {
@@ -708,6 +654,7 @@
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22495.jpg",
     "note": "16.900 kr.",
     "venue": "Múlaberg, Akureyri",
+    "cat0": "Námskeið",
     "kind": "Fræðsla"
   },
   {
@@ -745,6 +692,7 @@
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22327.jpg",
     "note": "6.990 kr.",
     "venue": "Múlaberg, Hafnarstræti 89, 600 Akureyri",
+    "cat0": "Uppistand",
     "kind": "Uppistand"
   },
   {
@@ -997,6 +945,7 @@
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22368.jpg",
     "note": "7.900 kr.",
     "venue": "Verkstæðið, Akureyri",
+    "cat0": "Tónlist",
     "kind": "Tónlist"
   },
   {
@@ -1010,19 +959,6 @@
     "time": "18:00",
     "image": null,
     "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Fjölnir – KA/Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/match/113399",
-    "start": "2026-11-18",
-    "end": "2026-11-18",
-    "time": "",
-    "image": null,
-    "note": "Útileikur · Powerade bikar kvenna 2027 · Fjölnishöll",
     "kind": "Íþróttir"
   },
   {
@@ -1848,6 +1784,7 @@
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22175.jpg",
     "note": "Uppselt · 9.500 kr.",
     "venue": "Glerárkirkja",
+    "cat0": "Aðventa, Jól, Jólatónleikar, Tónleikar, Tónlist",
     "kind": "Tónlist"
   },
   {
@@ -1861,6 +1798,7 @@
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22461.jpg",
     "note": "7.990 kr.",
     "venue": "Akureyrarkirkja",
+    "cat0": "Jól, Tónlist",
     "kind": "Tónlist"
   },
   {
@@ -1909,6 +1847,7 @@
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22137.jpg",
     "note": "5.900 kr.",
     "venue": "Akureyrarkirkja",
+    "cat0": "Hátíðir, Tónleikar, Tónlist",
     "kind": "Tónlist"
   },
   {
