@@ -1,5 +1,29 @@
 [
   {
+    "title": "Menningarrými og innflytjendur í brennidepli",
+    "link": "https://www.akureyri.is/menningarrymi-og-innflytjendur-i-brennidepli",
+    "summary": "Viðburðurinn Menningarrými og innflytjendur: Rannsóknir og list verður haldinn á Amtsbókasafninu á Akureyri laugardaginn 17. október.",
+    "date": "2026-10-13T13:57:38+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/innflytjendur-1200x522.png",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Verkefnið Virkjum íbúana",
+    "link": "https://www.fjallabyggd.is/is/frettir/verkefnid-virkjum-ibuana",
+    "summary": "SSNE auglýsir eftir verkefnahugmyndum undir yfirskriftinni „Virkjum íbúana“ þar sem markmiðið er að efla samveru, virkni og þátttöku íbúa á Norðurlandi eystra. Umsóknarfrestur er til 29. október 2026.",
+    "date": "2026-10-13T13:40:00+00:00",
+    "image": "https://www.fjallabyggd.is/static/news/sm/uppfaert-10.09-17-ssne.png",
+    "source": "Fjallabyggð",
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
+  },
+  {
     "title": "Hagspá ASÍ 2026 – 2028 komin út",
     "link": "https://www.ein.is/is/um-einingu-idju/utgefid-efni/frettir/hagspa-asi-2026-2028-komin-ut",
     "summary": "Útlit er fyrir hægagang í íslensku hagkerfi á næstu árum og mikið atvinnuleysi samkvæmt nýrri hagspá ASÍ fyrir árin 2026–2028.",
@@ -3406,18 +3430,6 @@
     ]
   },
   {
-    "title": "Íþróttavika Evrópu verður haldin dagana 23.–30. september.",
-    "link": "https://www.fjallabyggd.is/is/frettir/ithrottavika-evropu-verdur-haldin-dagana-23-30-september",
-    "summary": "Fjallabyggð býður íbúum frítt í sund dagana 23.–30. september í tilefni vikunnar.",
-    "date": "2026-09-21T11:03:00+00:00",
-    "image": "https://www.fjallabyggd.is/static/news/sm/ithrottavika_evropu_2026-4.png",
-    "source": "Fjallabyggð",
-    "category": "Nærsveitir",
-    "cats": [
-      "Nærsveitir"
-    ]
-  },
-  {
     "title": "Uppbyggingarsjóður Norðurlands eystra hefur verið opnaður",
     "link": "https://www.svalbardsstrond.is/is/mannlifid/frettir/uppbyggingarsjodur-nordurlands-eystra-hefur-verid-opnadur",
     "summary": "Opnað hefur verið fyrir umsóknir í Uppbyggingarsjóð Norðurlands eystra",
@@ -3883,18 +3895,6 @@
     "summary": "Öll tíu sveitarfélögin innan SSNE hafa samþykkt samstarfssamning við Bergið Headspace um aukna stuðnings- og ráðgjafarþjónustu fyrir ungmenni á Norðurlandi eystra.",
     "date": "2026-09-09T14:53:58+00:00",
     "image": "https://akureyri.payload.is/api/media/file/bergid-ssne-2000x1446.jpg",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Viltu vera með á Jólatorginu?",
-    "link": "https://www.akureyri.is/viltu-vera-med-a-jolatorginu",
-    "summary": "Jólatorgið á Ráðhústorgi verður opnað í þriðja sinn laugardaginn 21. nóvember. Nú hefur verið opnað fyrir umsóknir söluaðila sem vilja taka þátt.",
-    "date": "2026-09-09T13:01:16+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/29nov25-16-2000x1124.jpg",
     "source": "Akureyrarbær",
     "category": "Bærinn",
     "cats": [
