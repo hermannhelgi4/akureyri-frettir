@@ -56,20 +56,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "Þór – ÍBV",
-    "source": "Íþróttir",
-    "sport": "Fótbolti",
-    "gender": "Karlar",
-    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100291",
-    "start": "2026-10-10",
-    "end": "2026-10-10",
-    "time": "14:00",
-    "image": null,
-    "note": "Heimaleikur · Besta deild karla - Neðri hluti · VÍS völlurinn",
-    "res": "1–0",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "SR – SA",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -987,6 +973,19 @@
     "time": "18:00",
     "image": null,
     "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Fjölnir – KA/Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Konur",
+    "link": "https://www.hsi.is/match/113399",
+    "start": "2026-11-18",
+    "end": "2026-11-18",
+    "time": "",
+    "image": null,
+    "note": "Útileikur · Powerade bikar kvenna 2027 · Fjölnishöll",
     "kind": "Íþróttir"
   },
   {
@@ -2594,19 +2593,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "KA – FH",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/111545",
-    "start": "2027-02-25",
-    "end": "2027-02-25",
-    "time": "19:15",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "ÍA – Þór Ak.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -2617,6 +2603,19 @@
     "time": "19:15",
     "image": null,
     "note": "Útileikur · 1. deild karla · AvAir höllin",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – FH",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111545",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "time": "19:15",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
     "kind": "Íþróttir"
   },
   {
