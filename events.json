@@ -113,13 +113,39 @@
   {
     "title": "Angurværð",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/angurvaerd-15-oct-2026/eid/286",
+    "link": "https://www.graenihatturinn.is/index.php/is/angurvaerd-15-oct-2026/eid/286",
     "start": "2026-10-15",
     "end": "2026-10-15",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/cNlM78cEy39wDl4kkURpl85WV8ynZQ-metaYW5ndXJ2w6Zyw7AgSS5qcGc=-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/cNlM78cEy39wDl4kkURpl85WV8ynZQ-metaYW5ndXJ2w6Zyw7AgSS5qcGc=-.webp",
     "note": "Frá 4.900 kr.",
     "kind": "Tónlist"
+  },
+  {
+    "title": "ÍBV – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111465",
+    "start": "2026-10-16",
+    "end": "2026-10-16",
+    "time": "18:00",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Íþróttamiðstöð Vestmannaeyja",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Stjarnan – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111466",
+    "start": "2026-10-16",
+    "end": "2026-10-16",
+    "time": "18:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Heklu Höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fasteignamartröðin",
@@ -137,11 +163,11 @@
   {
     "title": "Papar - 40 ára afmælistónleikar",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/papar-40-ara-afmaelistonleikar-16-oct-2026/eid/285",
+    "link": "https://www.graenihatturinn.is/index.php/is/papar-40-ara-afmaelistonleikar-16-oct-2026/eid/285",
     "start": "2026-10-16",
     "end": "2026-10-16",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/vneLkA40FV2AOQxM6DXTCY5qtqyBXh-metaYmVaZFpKQUEuanBn-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/vneLkA40FV2AOQxM6DXTCY5qtqyBXh-metaYmVaZFpKQUEuanBn-.webp",
     "note": "Uppselt · Frá 7.900 kr.",
     "kind": "Tónlist"
   },
@@ -226,11 +252,11 @@
   {
     "title": "Hjálmar",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/hjamar-17-oct-2026/eid/291",
+    "link": "https://www.graenihatturinn.is/index.php/is/hjamar-17-oct-2026/eid/291",
     "start": "2026-10-17",
     "end": "2026-10-17",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/HxJs034Q6OlieOYv6F7V3r3Q6rm4Qy-metaaGrDoWxtYXIgMjUuanBn-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/HxJs034Q6OlieOYv6F7V3r3Q6rm4Qy-metaaGrDoWxtYXIgMjUuanBn-.webp",
     "note": "Frá 7.900 kr.",
     "kind": "Tónlist"
   },
@@ -274,13 +300,39 @@
     "kind": "Tónlist"
   },
   {
+    "title": "Þór – Stjarnan",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111474",
+    "start": "2026-10-21",
+    "end": "2026-10-21",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – Afturelding",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111473",
+    "start": "2026-10-22",
+    "end": "2026-10-22",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Guðríð Hansdóttir",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/gudrid-hansdottir-22-oct-2026/eid/278",
+    "link": "https://www.graenihatturinn.is/index.php/is/gudrid-hansdottir-22-oct-2026/eid/278",
     "start": "2026-10-22",
     "end": "2026-10-22",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/mdJJ5xR2R5YIuFQUY8rqSX0Gv9P3xP-metaZ3VkcmlkLmpwZw==-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/mdJJ5xR2R5YIuFQUY8rqSX0Gv9P3xP-metaZ3VkcmlkLmpwZw==-.webp",
     "note": "Frá 5.990 kr.",
     "kind": "Tónlist"
   },
@@ -326,11 +378,11 @@
   {
     "title": "Sólstafir",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/solstafir-23-oct-2026/eid/273",
+    "link": "https://www.graenihatturinn.is/index.php/is/solstafir-23-oct-2026/eid/273",
     "start": "2026-10-23",
     "end": "2026-10-23",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/WsrRklMyKRTeNwgHjJqTixX3t755y6-metac8OzbHN0YWZpciAyNS5qcGc=-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/WsrRklMyKRTeNwgHjJqTixX3t755y6-metac8OzbHN0YWZpciAyNS5qcGc=-.webp",
     "note": "Frá 7.900 kr.",
     "kind": "Tónlist"
   },
@@ -453,6 +505,19 @@
     "kind": "Tónlist"
   },
   {
+    "title": "Afturelding – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111478",
+    "start": "2026-10-27",
+    "end": "2026-10-27",
+    "time": "18:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Myntkaup höllin",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Hrekkjavökutónleikar",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/hrekkjavokutonleikar-1",
@@ -464,6 +529,19 @@
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
     "kind": "Tónlist"
+  },
+  {
+    "title": "FH – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111479",
+    "start": "2026-10-28",
+    "end": "2026-10-28",
+    "time": "18:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Kaplakriki",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – Haukar",
@@ -490,6 +568,19 @@
     "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
     "kind": "Leiklist"
+  },
+  {
+    "title": "KA – Haukar",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111484",
+    "start": "2026-10-31",
+    "end": "2026-10-31",
+    "time": "18:30",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fasteignamartröðin",
@@ -520,13 +611,26 @@
   {
     "title": "Drykkir innbyrðis",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/drykkir-innbyrdis-31-oct-2026/eid/257",
+    "link": "https://www.graenihatturinn.is/index.php/is/drykkir-innbyrdis-31-oct-2026/eid/257",
     "start": "2026-10-31",
     "end": "2026-10-31",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/8s4V2TO8KXzL6OOATeAQSqAJZjmn1G-metaRHJ5a2tpciBpbm5ieXJnw7Bpcy5qcGc=-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/8s4V2TO8KXzL6OOATeAQSqAJZjmn1G-metaRHJ5a2tpciBpbm5ieXJnw7Bpcy5qcGc=-.webp",
     "note": "Frá 5.900 kr.",
     "kind": "Tónlist"
+  },
+  {
+    "title": "Þór – FH",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111485",
+    "start": "2026-11-01",
+    "end": "2026-11-01",
+    "time": "15:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "Ingimar Eydal 90 ára",
@@ -571,11 +675,11 @@
   {
     "title": "Sigurdís Tryggvadóttir",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/sigurdis-tryggvadottir-05-nov-2026/eid/277",
+    "link": "https://www.graenihatturinn.is/index.php/is/sigurdis-tryggvadottir-05-nov-2026/eid/277",
     "start": "2026-11-05",
     "end": "2026-11-05",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/ES1VtCKnSBSH9WbnajinLLoGmrUkQo-metac2lndXJkw61zIElJSS5qcGc=-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/ES1VtCKnSBSH9WbnajinLLoGmrUkQo-metac2lndXJkw61zIElJSS5qcGc=-.webp",
     "note": "Frá 5.900 kr.",
     "kind": "Tónlist"
   },
@@ -609,11 +713,11 @@
   {
     "title": "Jimi Hendrix - Heiðurstónleikar",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/jimi-hendrix-tribute-concert-06-nov-2026/eid/287",
+    "link": "https://www.graenihatturinn.is/index.php/is/jimi-hendrix-tribute-concert-06-nov-2026/eid/287",
     "start": "2026-11-06",
     "end": "2026-11-06",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/vb2zS9FmoHdchbEcNGtm8ttDUjKIV9-metaaGVuZHJpeC5wbmc=-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/vb2zS9FmoHdchbEcNGtm8ttDUjKIV9-metaaGVuZHJpeC5wbmc=-.webp",
     "note": "Frá 6.900 kr.",
     "kind": "Tónlist"
   },
@@ -659,11 +763,11 @@
   {
     "title": "DIMMA",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/dimma-07-nov-2026/eid/282",
+    "link": "https://www.graenihatturinn.is/index.php/is/dimma-07-nov-2026/eid/282",
     "start": "2026-11-07",
     "end": "2026-11-07",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/jmPO4aCQUmmTnK0zuA76Ii9k8DzoGs-metaRGltbWEgMjAyNiBuw70gc3TDs3IuanBn-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/jmPO4aCQUmmTnK0zuA76Ii9k8DzoGs-metaRGltbWEgMjAyNiBuw70gc3TDs3IuanBn-.webp",
     "note": "Frá 7.900 kr.",
     "kind": "Tónlist"
   },
@@ -691,6 +795,19 @@
     "time": "16:00",
     "image": null,
     "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Haukar – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111491",
+    "start": "2026-11-12",
+    "end": "2026-11-12",
+    "time": "18:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Kuehne+Nagel höllin",
     "kind": "Íþróttir"
   },
   {
@@ -733,13 +850,26 @@
     "kind": "Leiklist"
   },
   {
+    "title": "Selfoss – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111492",
+    "start": "2026-11-13",
+    "end": "2026-11-13",
+    "time": "20:15",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Set höllin",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Sex Pistols Expose",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/sex-pistol-expose-13-nov-2026/eid/259",
+    "link": "https://www.graenihatturinn.is/index.php/is/sex-pistol-expose-13-nov-2026/eid/259",
     "start": "2026-11-13",
     "end": "2026-11-13",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/GSaCZzSYI6c23R2VPBJZY3psZbZMmN-metac2V4IHBpc3QgSUkuanBn-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/GSaCZzSYI6c23R2VPBJZY3psZbZMmN-metac2V4IHBpc3QgSUkuanBn-.webp",
     "note": "Frá 7.900 kr.",
     "kind": "Tónlist"
   },
@@ -785,11 +915,11 @@
   {
     "title": "Oasis - Heiðurstónleikar",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/oasis-heidurstonleikar-14-nov-2026/eid/233",
+    "link": "https://www.graenihatturinn.is/index.php/is/oasis-heidurstonleikar-14-nov-2026/eid/233",
     "start": "2026-11-14",
     "end": "2026-11-14",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/GwdvF1ol93aLUp4niWcdVbkXxJ5g4k-metaZ3LDpm5pIGNvcHkuanBn-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/GwdvF1ol93aLUp4niWcdVbkXxJ5g4k-metaZ3LDpm5pIGNvcHkuanBn-.webp",
     "note": "Frá 7.900 kr.",
     "kind": "Tónlist"
   },
@@ -849,11 +979,11 @@
   {
     "title": "Skálmöld",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/skalmold-20-nov-2026/eid/288",
+    "link": "https://www.graenihatturinn.is/index.php/is/skalmold-20-nov-2026/eid/288",
     "start": "2026-11-20",
     "end": "2026-11-20",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/NRbC45vdyt1InuUIm3cARqJAtc6WAQ-metac2vDoWxtw7ZsZCBiYWxkdXIuanBn-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/NRbC45vdyt1InuUIm3cARqJAtc6WAQ-metac2vDoWxtw7ZsZCBiYWxkdXIuanBn-.webp",
     "note": "Uppselt · Frá 8.900 kr.",
     "kind": "Tónlist"
   },
@@ -925,13 +1055,52 @@
   {
     "title": "Skálmöld",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/skalmold-21-nov-2026/eid/289",
+    "link": "https://www.graenihatturinn.is/index.php/is/skalmold-21-nov-2026/eid/289",
     "start": "2026-11-21",
     "end": "2026-11-21",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/b3CTzkvZ56UTJWaO2IfgGRh5yJgMkO-metac2vDoWxtw7ZsZCBiYWxkdXIuanBn-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/b3CTzkvZ56UTJWaO2IfgGRh5yJgMkO-metac2vDoWxtw7ZsZCBiYWxkdXIuanBn-.webp",
     "note": "Uppselt · Frá 8.900 kr.",
     "kind": "Tónlist"
+  },
+  {
+    "title": "Þór – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111517",
+    "start": "2026-11-22",
+    "end": "2026-11-22",
+    "time": "18:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þór – Fram",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111504",
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – HK",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111505",
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "time": "19:30",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Jólaglögg",
@@ -1001,11 +1170,11 @@
   {
     "title": "Skítamórall",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/skitamorall-27-nov-2026/eid/292",
+    "link": "https://www.graenihatturinn.is/index.php/is/skitamorall-27-nov-2026/eid/292",
     "start": "2026-11-27",
     "end": "2026-11-27",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/v5FSlygO8Tq2R4W0dCc589bbKeFZY0-metaU2vDrW3DsyAyNiBJSUlJLmpwZw==-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/v5FSlygO8Tq2R4W0dCc589bbKeFZY0-metaU2vDrW3DsyAyNiBJSUlJLmpwZw==-.webp",
     "note": "Frá 8.500 kr.",
     "kind": "Tónlist"
   },
@@ -1090,11 +1259,11 @@
   {
     "title": "Issi - Frá Ak til Ö",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/issi-fra-ak-til-o-28-nov-2026/eid/298",
+    "link": "https://www.graenihatturinn.is/index.php/is/issi-fra-ak-til-o-28-nov-2026/eid/298",
     "start": "2026-11-28",
     "end": "2026-11-28",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/jUE5s7DubAehsFBvn2pNxcU7Exyrxp-metaaXNzaS5qcGc=-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/jUE5s7DubAehsFBvn2pNxcU7Exyrxp-metaaXNzaS5qcGc=-.webp",
     "note": "Nýtt · Frá 5.900 kr.",
     "kind": "Tónlist"
   },
@@ -1123,6 +1292,19 @@
     "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
     "kind": "Leiklist"
+  },
+  {
+    "title": "KA – Víkingur",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111512",
+    "start": "2026-12-03",
+    "end": "2026-12-03",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – Skallagrímur",
@@ -1164,6 +1346,19 @@
     "kind": "Leiklist"
   },
   {
+    "title": "HK – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111507",
+    "start": "2026-12-04",
+    "end": "2026-12-04",
+    "time": "18:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Kórinn",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Jólaglögg",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/jolaglogg-1",
@@ -1179,11 +1374,11 @@
   {
     "title": "Lón",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/lon-04-dec-2026/eid/294",
+    "link": "https://www.graenihatturinn.is/index.php/is/lon-04-dec-2026/eid/294",
     "start": "2026-12-04",
     "end": "2026-12-04",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/Q1nJsUeACcLErMUQHPVVaB8gmg0qxL-metaTMOzbiBJLmpwZw==-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/Q1nJsUeACcLErMUQHPVVaB8gmg0qxL-metaTMOzbiBJLmpwZw==-.webp",
     "note": "Frá 6.900 kr.",
     "kind": "Tónlist"
   },
@@ -1268,11 +1463,11 @@
   {
     "title": "Jóla-Súlur",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/jola-sulur-05-dec-2026/eid/295",
+    "link": "https://www.graenihatturinn.is/index.php/is/jola-sulur-05-dec-2026/eid/295",
     "start": "2026-12-05",
     "end": "2026-12-05",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/65xmvcUUihVzsCxqKsyPRUdYCN6L4B-metaSsOzbGFzw7psdXIgMjYgSUkuanBn-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/65xmvcUUihVzsCxqKsyPRUdYCN6L4B-metaSsOzbGFzw7psdXIgMjYgSUkuanBn-.webp",
     "note": "Nýtt · Frá 4.900 kr.",
     "kind": "Tónlist"
   },
@@ -1290,13 +1485,39 @@
     "kind": "Leiklist"
   },
   {
+    "title": "KA – Fram",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111495",
+    "start": "2026-12-08",
+    "end": "2026-12-08",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þór – Selfoss",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111496",
+    "start": "2026-12-09",
+    "end": "2026-12-09",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Jól með Brother Grass",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/jol-med-brother-grass-10-dec-2026/eid/290",
+    "link": "https://www.graenihatturinn.is/index.php/is/jol-med-brother-grass-10-dec-2026/eid/290",
     "start": "2026-12-10",
     "end": "2026-12-10",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/7IrMe5Ujq6xYaVJaNfzzYKxQFdgokg-metaQnJvdGhlciBncmFzcy5qcGc=-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/7IrMe5Ujq6xYaVJaNfzzYKxQFdgokg-metaQnJvdGhlciBncmFzcy5qcGc=-.webp",
     "note": "Fáir miðar · Frá 6.900 kr.",
     "kind": "Tónlist"
   },
@@ -1329,11 +1550,11 @@
   {
     "title": "Brother Grass",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/brother-grass-11-dec-2026/eid/293",
+    "link": "https://www.graenihatturinn.is/index.php/is/brother-grass-11-dec-2026/eid/293",
     "start": "2026-12-11",
     "end": "2026-12-11",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/ILJkuYVKbhzWteKlJBdWUluBWPOhNj-metaQnJvdGhlciBncmFzcy5qcGc=-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/ILJkuYVKbhzWteKlJBdWUluBWPOhNj-metaQnJvdGhlciBncmFzcy5qcGc=-.webp",
     "note": "Frá 6.900 kr.",
     "kind": "Tónlist"
   },
@@ -1418,11 +1639,11 @@
   {
     "title": "Laddi og Hljómsveit mannanna - Jóla hvað?",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/laddi-og-hljomsveit-mannanna-jola-hvad-12-dec-2026/eid/283",
+    "link": "https://www.graenihatturinn.is/index.php/is/laddi-og-hljomsveit-mannanna-jola-hvad-12-dec-2026/eid/283",
     "start": "2026-12-12",
     "end": "2026-12-12",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/LtCalN6ewik4zUeLiQWp712Me87flq-metaNVdGcUtZS3cuanBn-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/LtCalN6ewik4zUeLiQWp712Me87flq-metaNVdGcUtZS3cuanBn-.webp",
     "note": "Frá 8.900 kr.",
     "kind": "Tónlist"
   },
@@ -1438,6 +1659,32 @@
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
     "kind": "Tónlist"
+  },
+  {
+    "title": "Þór – Víkingur",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111524",
+    "start": "2026-12-13",
+    "end": "2026-12-13",
+    "time": "15:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – Valur",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111519",
+    "start": "2026-12-13",
+    "end": "2026-12-13",
+    "time": "15:30",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Vitringarnir 3 - 2026",
@@ -1468,11 +1715,11 @@
   {
     "title": "Krissmas Spesjal",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/krissmas-spesjal-18-dec-2026/eid/280",
+    "link": "https://www.graenihatturinn.is/index.php/is/krissmas-spesjal-18-dec-2026/eid/280",
     "start": "2026-12-18",
     "end": "2026-12-18",
     "time": "20:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/PsRdyVRag0xrOvkjp8GO2oRnpZlbl5-metaS3Jpc3NtYXNzMTAwMHgxMDAwLnBuZw==-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/PsRdyVRag0xrOvkjp8GO2oRnpZlbl5-metaS3Jpc3NtYXNzMTAwMHgxMDAwLnBuZw==-.webp",
     "note": "Frá 7.900 kr.",
     "kind": "Tónlist"
   },
@@ -1533,22 +1780,22 @@
   {
     "title": "Krissmas Spesjal",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/krissmas-spesjal-19-dec-2026/eid/281",
+    "link": "https://www.graenihatturinn.is/index.php/is/krissmas-spesjal-19-dec-2026/eid/281",
     "start": "2026-12-19",
     "end": "2026-12-19",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/219mmrQXoGXaT8wOa22rBYyvAympt4-metaS3Jpc3NtYXNzMTAwMHgxMDAwLnBuZw==-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/219mmrQXoGXaT8wOa22rBYyvAympt4-metaS3Jpc3NtYXNzMTAwMHgxMDAwLnBuZw==-.webp",
     "note": "Frá 7.900 kr.",
     "kind": "Tónlist"
   },
   {
     "title": "Killer Queen",
     "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/killer-queen-26-dec-2026/eid/297",
+    "link": "https://www.graenihatturinn.is/index.php/is/killer-queen-26-dec-2026/eid/297",
     "start": "2026-12-26",
     "end": "2026-12-26",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/rs4evmwi8KnWKi1Tdtr3mWwKhBHks3-metaS2lsbGVyIHF1ZWVuIDI2LnBuZw==-.webp",
+    "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/rs4evmwi8KnWKi1Tdtr3mWwKhBHks3-metaS2lsbGVyIHF1ZWVuIDI2LnBuZw==-.webp",
     "note": "Nýtt · Frá 7.900 kr.",
     "kind": "Tónlist"
   },
@@ -1892,6 +2139,32 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "ÍBV – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111528",
+    "start": "2027-02-04",
+    "end": "2027-02-04",
+    "time": "18:00",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Íþróttamiðstöð Vestmannaeyja",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þór – Valur",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111529",
+    "start": "2027-02-05",
+    "end": "2027-02-05",
+    "time": "18:30",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "SR – SA",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -1931,6 +2204,19 @@
     "kind": "Leiklist"
   },
   {
+    "title": "KA – Stjarnan",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111532",
+    "start": "2027-02-11",
+    "end": "2027-02-11",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
@@ -1942,6 +2228,19 @@
     "cat0": "",
     "venue": "Samkomuhúsið",
     "kind": "Fjölskylda"
+  },
+  {
+    "title": "Þór – ÍBV",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111531",
+    "start": "2027-02-13",
+    "end": "2027-02-13",
+    "time": "15:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "SA – Fjölnir",
@@ -2035,6 +2334,32 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "Stjarnan – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111540",
+    "start": "2027-02-18",
+    "end": "2027-02-18",
+    "time": "18:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Heklu Höllin",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Afturelding – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111539",
+    "start": "2027-02-18",
+    "end": "2027-02-18",
+    "time": "19:00",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Myntkaup höllin",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Þór Ak. – KV",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -2110,6 +2435,32 @@
     "time": "16:45",
     "image": null,
     "note": "Heimaleikur · Toppdeild karla",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þór – Afturelding",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111544",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – FH",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111545",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "time": "19:15",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
     "kind": "Íþróttir"
   },
   {
@@ -2217,6 +2568,19 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "FH – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111551",
+    "start": "2027-03-05",
+    "end": "2027-03-05",
+    "time": "19:45",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Kaplakriki",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
@@ -2240,6 +2604,19 @@
     "time": "15:30",
     "image": null,
     "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Haukar – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111550",
+    "start": "2027-03-06",
+    "end": "2027-03-06",
+    "time": "17:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Kuehne+Nagel höllin",
     "kind": "Íþróttir"
   },
   {
@@ -2386,6 +2763,32 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "KA – Selfoss",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111558",
+    "start": "2027-03-17",
+    "end": "2027-03-17",
+    "time": "19:30",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þór – Haukar",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111557",
+    "start": "2027-03-17",
+    "end": "2027-03-17",
+    "time": "19:30",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Þór Ak. – Snæfell",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -2436,6 +2839,32 @@
     "cat0": "",
     "venue": "Samkomuhúsið",
     "kind": "Fjölskylda"
+  },
+  {
+    "title": "Fram – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111561",
+    "start": "2027-03-24",
+    "end": "2027-03-24",
+    "time": "19:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Lambhagahöllin",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Selfoss – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111562",
+    "start": "2027-03-24",
+    "end": "2027-03-24",
+    "time": "19:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Set höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Úr heimi í heim",
