@@ -136,6 +136,32 @@
     "kind": "Tónlist"
   },
   {
+    "title": "ÍBV – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111465",
+    "start": "2026-10-16",
+    "end": "2026-10-16",
+    "time": "18:00",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Íþróttamiðstöð Vestmannaeyja",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Stjarnan – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111466",
+    "start": "2026-10-16",
+    "end": "2026-10-16",
+    "time": "18:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Heklu Höllin",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Fasteignamartröðin",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/fasteignamartrodin",
@@ -299,6 +325,32 @@
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
     "kind": "Tónlist"
+  },
+  {
+    "title": "Þór – Stjarnan",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111474",
+    "start": "2026-10-21",
+    "end": "2026-10-21",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – Afturelding",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111473",
+    "start": "2026-10-22",
+    "end": "2026-10-22",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
   },
   {
     "title": "Guðríð Hansdóttir",
@@ -480,6 +532,19 @@
     "kind": "Tónlist"
   },
   {
+    "title": "Afturelding – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111478",
+    "start": "2026-10-27",
+    "end": "2026-10-27",
+    "time": "18:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Myntkaup höllin",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Hrekkjavökutónleikar",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/hrekkjavokutonleikar-1",
@@ -491,6 +556,19 @@
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
     "kind": "Tónlist"
+  },
+  {
+    "title": "FH – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111479",
+    "start": "2026-10-28",
+    "end": "2026-10-28",
+    "time": "18:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Kaplakriki",
+    "kind": "Íþróttir"
   },
   {
     "title": "Þór Ak. – Haukar",
@@ -532,6 +610,19 @@
     "kind": "Leiklist"
   },
   {
+    "title": "KA – Haukar",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111484",
+    "start": "2026-10-31",
+    "end": "2026-10-31",
+    "time": "18:30",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Fasteignamartröðin",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/fasteignamartrodin",
@@ -567,6 +658,19 @@
     "image": "https://www.graenihatturinn.is/index.php/storage/event/poster/main/368x430/8s4V2TO8KXzL6OOATeAQSqAJZjmn1G-metaRHJ5a2tpciBpbm5ieXJnw7Bpcy5qcGc=-.webp",
     "note": "Frá 5.900 kr.",
     "kind": "Tónlist"
+  },
+  {
+    "title": "Þór – FH",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111485",
+    "start": "2026-11-01",
+    "end": "2026-11-01",
+    "time": "15:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "Ingimar Eydal 90 ára",
@@ -747,6 +851,19 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "Haukar – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111491",
+    "start": "2026-11-12",
+    "end": "2026-11-12",
+    "time": "18:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Kuehne+Nagel höllin",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Afnám Tilviljunar - Abolishing Chance",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/afnam-tilviljunar-abolishing-chance",
@@ -797,6 +914,19 @@
     "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
     "kind": "Leiklist"
+  },
+  {
+    "title": "Selfoss – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111492",
+    "start": "2026-11-13",
+    "end": "2026-11-13",
+    "time": "20:15",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Set höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Sex Pistols Expose",
@@ -1013,6 +1143,45 @@
     "kind": "Tónlist"
   },
   {
+    "title": "Þór – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111517",
+    "start": "2026-11-22",
+    "end": "2026-11-22",
+    "time": "18:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þór – Fram",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111504",
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – HK",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111505",
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "time": "19:30",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Jólaglögg",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/jolaglogg-1",
@@ -1204,6 +1373,19 @@
     "kind": "Leiklist"
   },
   {
+    "title": "KA – Víkingur",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111512",
+    "start": "2026-12-03",
+    "end": "2026-12-03",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Þór Ak. – Skallagrímur",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -1241,6 +1423,19 @@
     "cat0": "Leiksýningar",
     "venue": "Hamrar, Hof",
     "kind": "Leiklist"
+  },
+  {
+    "title": "HK – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111507",
+    "start": "2026-12-04",
+    "end": "2026-12-04",
+    "time": "18:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Kórinn",
+    "kind": "Íþróttir"
   },
   {
     "title": "Jólaglögg",
@@ -1367,6 +1562,32 @@
     "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
     "kind": "Leiklist"
+  },
+  {
+    "title": "KA – Fram",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111495",
+    "start": "2026-12-08",
+    "end": "2026-12-08",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þór – Selfoss",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111496",
+    "start": "2026-12-09",
+    "end": "2026-12-09",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "Jól með Brother Grass",
@@ -1529,6 +1750,32 @@
     "time": "14:00",
     "image": null,
     "note": "Útileikur · Olís deild kvenna · Kuehne+Nagel höllin",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þór – Víkingur",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111524",
+    "start": "2026-12-13",
+    "end": "2026-12-13",
+    "time": "15:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – Valur",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111519",
+    "start": "2026-12-13",
+    "end": "2026-12-13",
+    "time": "15:30",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
     "kind": "Íþróttir"
   },
   {
@@ -2049,6 +2296,32 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "ÍBV – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111528",
+    "start": "2027-02-04",
+    "end": "2027-02-04",
+    "time": "18:00",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Íþróttamiðstöð Vestmannaeyja",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þór – Valur",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111529",
+    "start": "2027-02-05",
+    "end": "2027-02-05",
+    "time": "18:30",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "KA/Þór – Selfoss",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -2101,6 +2374,19 @@
     "kind": "Leiklist"
   },
   {
+    "title": "KA – Stjarnan",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111532",
+    "start": "2027-02-11",
+    "end": "2027-02-11",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
@@ -2112,6 +2398,19 @@
     "cat0": "",
     "venue": "Samkomuhúsið",
     "kind": "Fjölskylda"
+  },
+  {
+    "title": "Þór – ÍBV",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111531",
+    "start": "2027-02-13",
+    "end": "2027-02-13",
+    "time": "15:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
   },
   {
     "title": "Fram – KA/Þór",
@@ -2218,6 +2517,32 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "Stjarnan – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111540",
+    "start": "2027-02-18",
+    "end": "2027-02-18",
+    "time": "18:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Heklu Höllin",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Afturelding – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111539",
+    "start": "2027-02-18",
+    "end": "2027-02-18",
+    "time": "19:00",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Myntkaup höllin",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Þór Ak. – KV",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -2293,6 +2618,32 @@
     "time": "16:45",
     "image": null,
     "note": "Heimaleikur · Toppdeild karla",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þór – Afturelding",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111544",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "time": "19:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – FH",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111545",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "time": "19:15",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
     "kind": "Íþróttir"
   },
   {
@@ -2400,6 +2751,19 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "FH – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111551",
+    "start": "2027-03-05",
+    "end": "2027-03-05",
+    "time": "19:45",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Kaplakriki",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
@@ -2423,6 +2787,19 @@
     "time": "15:30",
     "image": null,
     "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Haukar – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111550",
+    "start": "2027-03-06",
+    "end": "2027-03-06",
+    "time": "17:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Kuehne+Nagel höllin",
     "kind": "Íþróttir"
   },
   {
@@ -2569,6 +2946,32 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "KA – Selfoss",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111558",
+    "start": "2027-03-17",
+    "end": "2027-03-17",
+    "time": "19:30",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þór – Haukar",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111557",
+    "start": "2027-03-17",
+    "end": "2027-03-17",
+    "time": "19:30",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Þór Ak. – Snæfell",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -2619,6 +3022,32 @@
     "cat0": "",
     "venue": "Samkomuhúsið",
     "kind": "Fjölskylda"
+  },
+  {
+    "title": "Fram – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111561",
+    "start": "2027-03-24",
+    "end": "2027-03-24",
+    "time": "19:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Lambhagahöllin",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Selfoss – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111562",
+    "start": "2027-03-24",
+    "end": "2027-03-24",
+    "time": "19:30",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Set höllin",
+    "kind": "Íþróttir"
   },
   {
     "title": "Úr heimi í heim",
