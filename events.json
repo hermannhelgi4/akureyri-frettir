@@ -219,6 +219,22 @@
     "kind": "Tónlist"
   },
   {
+    "title": "KA – HK Ýmir",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2026-10-17",
+    "end": "2026-10-17",
+    "time": "13:30",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "teams": [
+      "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Valur – KA",
     "source": "Íþróttir",
     "sport": "Fótbolti",
@@ -619,6 +635,22 @@
     "kind": "Tónlist"
   },
   {
+    "title": "Vestri – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2026-10-25",
+    "end": "2026-10-25",
+    "time": "13:00",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild karla · Íþróttahúsið Torfnesi",
+    "teams": [
+      "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Afturelding – Þór",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -854,6 +886,22 @@
     "kind": "Tónlist"
   },
   {
+    "title": "KA – HK",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2026-11-07",
+    "end": "2026-11-07",
+    "time": "13:00",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið",
+    "teams": [
+      "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Selfoss – KA/Þór",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -866,6 +914,22 @@
     "note": "Útileikur · Olís deild kvenna · Set höllin",
     "teams": [
       "KA/Þór"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – HK",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2026-11-07",
+    "end": "2026-11-07",
+    "time": "15:30",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "teams": [
+      "KA"
     ],
     "kind": "Íþróttir"
   },
@@ -1528,6 +1592,22 @@
     "kind": "Leiklist"
   },
   {
+    "title": "Völsungur – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2026-12-02",
+    "end": "2026-12-02",
+    "time": "19:00",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild kvenna · GPG Höllin á Húsavík",
+    "teams": [
+      "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "KA – Víkingur",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -1650,6 +1730,22 @@
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
     "kind": "Tónlist"
+  },
+  {
+    "title": "KA – Vestri",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "time": "14:00",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið",
+    "teams": [
+      "KA"
+    ],
+    "kind": "Íþróttir"
   },
   {
     "title": "Jólapartý Skoppu og Skrítlu",
@@ -1886,6 +1982,22 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "KA – Þróttur Fjarðabyggð",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2026-12-12",
+    "end": "2026-12-12",
+    "time": "17:30",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "teams": [
+      "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Vitringarnir 3 - 2026",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/vitringarnir-3-2026",
@@ -2043,6 +2155,38 @@
     "kind": "Tónlist"
   },
   {
+    "title": "HK Ýmir – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2026-12-18",
+    "end": "2026-12-18",
+    "time": "20:15",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild kvenna · Digranes",
+    "teams": [
+      "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Hamar – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2026-12-19",
+    "end": "2026-12-19",
+    "time": "13:00",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild karla · Íþróttahúsið í Hveragerði",
+    "teams": [
+      "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Ari Eldjárn: Áramótaskop 2026",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/ari-eldjarn-1",
@@ -2193,6 +2337,22 @@
     "note": "Heimaleikur · 1. deild karla · Höllin Ak",
     "teams": [
       "Þór Ak."
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – Þróttur Reykjavík",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2027-01-09",
+    "end": "2027-01-09",
+    "time": "13:00",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið",
+    "teams": [
+      "KA"
     ],
     "kind": "Íþróttir"
   },
@@ -2714,6 +2874,22 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "HK – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2027-02-13",
+    "end": "2027-02-13",
+    "time": "15:00",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild karla · Digranes",
+    "teams": [
+      "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Fram – KA/Þór",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -2742,6 +2918,22 @@
     "note": "Heimaleikur · Toppdeild karla",
     "teams": [
       "SA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "HK – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2027-02-13",
+    "end": "2027-02-13",
+    "time": "17:15",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild kvenna · Digranes",
+    "teams": [
+      "KA"
     ],
     "kind": "Íþróttir"
   },
@@ -3032,6 +3224,22 @@
     "kind": "Fjölskylda"
   },
   {
+    "title": "Þróttur Fjarðabyggð – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2027-02-27",
+    "end": "2027-02-27",
+    "time": "14:00",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild karla · Íþróttahúsið í Neskaupstað",
+    "teams": [
+      "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Keflavík b – Þór Ak.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -3044,6 +3252,22 @@
     "note": "Útileikur · 1. deild kvenna · Blue-höllin",
     "teams": [
       "Þór Ak."
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þróttur Fjarðabyggð – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2027-02-27",
+    "end": "2027-02-27",
+    "time": "16:30",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild kvenna · Íþróttahúsið í Neskaupstað",
+    "teams": [
+      "KA"
     ],
     "kind": "Íþróttir"
   },
@@ -3136,6 +3360,22 @@
     "cat0": "",
     "venue": "Samkomuhúsið",
     "kind": "Fjölskylda"
+  },
+  {
+    "title": "KA – Afturelding",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2027-03-06",
+    "end": "2027-03-06",
+    "time": "13:00",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið",
+    "teams": [
+      "KA"
+    ],
+    "kind": "Íþróttir"
   },
   {
     "title": "KA – Afturelding",
