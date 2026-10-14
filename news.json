@@ -1,5 +1,42 @@
 [
   {
+    "title": "Joris Rademaker og Myndlíking trjánna",
+    "link": "https://www.akureyri.net/is/moya/news/joris-rademaker-og-myndliking-trjanna",
+    "summary": "Joris Rademaker heldur sýninguna Myndlíking trjánna um næstu helgi í Deiglunni í Listagilinu. Sýningin verður opnuð kl. 19 á föstudagskvöldið, 16. október, og hún verður opin frá kl. 14 til 17 laugardag og sunnudag. Til sýnis eru eldri og ný verk un...",
+    "date": "2026-10-14T14:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/joris-syning-ny.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Íþróttamiðstöðinni á Siglufirði lokað vegna óveðurs",
+    "link": "https://www.fjallabyggd.is/is/frettir/ithrottamidstodinni-a-siglufirdi-lokad-vegna-ovedurs",
+    "summary": "Vegna óveðurs á Siglufirði hefur verið ákveðið að loka Íþróttamiðstöðinni á Siglufirði í dag, miðvikudaginn 14. október. Við hvetjum íbúa til að fara varlega í veðrinu.",
+    "date": "2026-10-14T13:49:00+00:00",
+    "image": "https://www.fjallabyggd.is/static/news/sm/vedur.webp",
+    "source": "Fjallabyggð",
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
+  },
+  {
+    "title": "Þór leikur í Litháen í dag – Bein textalýsing",
+    "link": "https://www.akureyri.net/is/moya/news/thor-leikur-i-lithaen-i-dag-bein-textalysing",
+    "summary": "Seinni leikur Þórs og litháísku meistaranna í FK Zalgiris í fyrstu umferð forkeppni Evrópudeildar ungmenna í knattspyrnu – UEFA Youth League, fer fram í Vilnius í dag. Litháarnir unnu fyrri leikinn 4:3 á VÍS-velli Þórs um miðjan september. Þórsarar þ...",
+    "date": "2026-10-14T13:30:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/thor-2-flokkur-evropudeild-ungmenna.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
     "title": "Evrópukeppni unglingaliða: Bjarki með tvennu - Þór spilar í Vilnius í dag",
     "link": "https://fotbolti.net/news/14-10-2026/evropukeppni-unglingalida-bjarki-med-tvennu-thor-spilar-i-vilnius-i-dag",
     "summary": "Unglingalandsliðsmaðurinn Bjarki Hrafn Garðarsson hefur verið iðinn við kolann fyrir U19 lið Borussia Dortmund og hann skoraði tvö mörk fyrir þýska liðið í 5-0 sigri gegn Bodö/Glimt í Evrópukeppni unglingaliða í dag. Bjarki lék fyrstu 66 mínútur leiksins en þetta var annar leikur Dortmund í deildark",
@@ -1531,31 +1568,6 @@
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
-    ]
-  },
-  {
-    "title": "Taka upp þráðinn í æsilegri botnbaráttu",
-    "link": "https://www.akureyri.net/is/moya/news/taka-upp-thradinn-i-aesilegri-botnbarattu",
-    "summary": "akureyri.net",
-    "date": "2026-10-10T06:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/lokasprekkur-frett_0g7a9893.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Útrýmum mennskunni, maskínan skal sigra!",
-    "link": "https://www.akureyri.net/is/moya/news/utrymum-mennskunni-maskinan-skal-sigra",
-    "summary": "Stefán Þór Sæmundsson er enn á spjalli með Aðalsteini Öfgar, ellefta laugardaginn í röð, og nú er sá síðarnefndi í talsverðum ham sem kemur raunar ekki á óvart. Upphaf pistils Stefáns Þórs í dag er svohljóðandi: „Finnst þér ekki forkostulegt hverni...",
-    "date": "2026-10-10T06:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/1791553293_1-stsaem-tilv.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
     ]
   },
   {
@@ -3394,18 +3406,6 @@
     "category": "Menntun",
     "cats": [
       "Bærinn"
-    ]
-  },
-  {
-    "title": "Fjallabyggð auglýsir eftir starfsfólki á skíðasvæðið í Skarðsdal fyrir reksturinn á svæðinu í vetur.",
-    "link": "https://www.fjallabyggd.is/is/frettir/fjallabyggd-auglysir-eftir-starfsfolki-a-skidasvaedid-i-skardsdal-fyrir-reksturinn-a-svaedinu-i-vetur",
-    "summary": "Auglýst er eftir starfsfólki í eftirfarandi störf: Umsjónarmanni/svæðisstjóra í 100% starf frá 1. desember 2026 til 31.maí 2027, Almennum starfsmanni á svæðinu í 100% starf frá 1.desember 2026 til 31. maí 2027, Tveimur starfsmönnum til vinnu á snjótroðurum og undirbúningi svæðis.",
-    "date": "2026-09-23T10:29:00+00:00",
-    "image": "https://www.fjallabyggd.is/static/news/sm/skardid-logo.jpg",
-    "source": "Fjallabyggð",
-    "category": "Nærsveitir",
-    "cats": [
-      "Nærsveitir"
     ]
   },
   {
