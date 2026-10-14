@@ -1,5 +1,54 @@
 [
   {
+    "title": "SA Víkingar: Bleikur leikur á laugardag",
+    "link": "https://www.akureyri.net/is/moya/news/sa-vikingar-bleikur-leikur-a-laugardag",
+    "summary": "Leikur SA Víkinga, karlaliðs Skautafélags Akureyrar í íshokkí, gegn liði Skautafélags Reykjavíkur, Íslandsmeisturunum, á laugardag verður meira en bara íshokkíleikur. Vissulega eru viðureignir þessara félaga ávallt miklir baráttuleikir enda hafa þess...",
+    "date": "2026-10-14T11:15:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/bleikur-leikur.png",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Samanburður broddhlyns og garðahlyns",
+    "link": "https://www.akureyri.net/is/moya/news/samanburdur-broddhlyns-og-gardahlyns",
+    "summary": "Sigurður Arnarson",
+    "date": "2026-10-14T10:45:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1791975149_1-sigurdur-nota.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Boreal - alþjóðleg dansvídeóhátíð 2026",
+    "link": "https://www.listak.is/is/moya/news/boreal-althjodleg-dansvideohatid-2026",
+    "summary": "Á hátíðinni eru sýnd metnaðarfull dansvídeó alls staðar að úr heiminum. Frítt er inn á alla viðburði.",
+    "date": "2026-10-14T10:42:00+00:00",
+    "image": "https://www.listak.is/static/news/thumb_boreal26_stillposter_onlineuse.jpg",
+    "source": "Listasafnið á Akureyri",
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "47. þing ASÍ - setningarræða forseta ASÍ",
+    "link": "https://www.ein.is/is/um-einingu-idju/utgefid-efni/frettir/47-thing-asi-setningarraeda-forseta-asi",
+    "summary": "47. þing Alþýðusambands Íslands var sett nú í morgun og stendur næstu þrjá daga. Finnbjörn A. Hermannsson, forseti ASÍ, setti þingið formlega klukkan 10:00 og flutti setningarræðu, sem lesa má hér fyrir neðan.",
+    "date": "2026-10-14T10:35:00+00:00",
+    "image": "https://www.ein.is/static/news/sm/finnbjorn-asi-logo-2.jpg",
+    "source": "Eining-Iðja",
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "KEA fagnar 140 ára afmæli með 10 milljóna króna styrk til björgunarsveita",
     "link": "https://kaffid.is/kea-fagnar-140-ara-afmaeli-med-10-milljona-krona-styrk-til-bjorgunarsveita/",
     "summary": "Í tilefni 140 ára afmælis KEA á árinu hefur félagið ákveðið að styrkja björgunarsveitir á félagssvæði sínu um samtals 10 […]",
@@ -29,6 +78,18 @@
     "summary": "Í tilefni 140 ára afmælis KEA á árinu hefur félagið ákveðið að styrkja björgunarsveitir á félagssvæði sínu um samtals 10 milljónir króna. Með styrknum vill KEA þakka björgunarsveitunum fyrir ómetanlegt framlag þeirra til öryggis og velferðar íbúa á svæðinu.",
     "date": "2026-10-14T09:55:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/kea-nytt.png",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "KEA fagnar 140 ára afmæli með 10 milljóna króna styrk til björgunarsveita",
+    "link": "https://www.vikubladid.is/is/moya/news/kea-fagnar-140-ara-afmaeli-med-10-milljona-krona-styrk-til-bjorgunarsveita-1",
+    "summary": "Í tilefni 140 ára afmælis KEA á árinu hefur félagið ákveðið að styrkja björgunarsveitir á félagssvæði sínu um samtals 10 milljónir króna. Með styrknum vill KEA þakka björgunarsveitunum fyrir ómetanlegt framlag þeirra til öryggis og velferðar íbúa á svæðinu.",
+    "date": "2026-10-14T09:55:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/keatest.png",
     "source": "Vikudagur",
     "category": "Fréttamiðlar",
     "cats": [
@@ -304,7 +365,7 @@
   {
     "title": "„Það er miklu meira við háskólalífið en bara fyrirlestrar og verkefni“",
     "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/thad-er-miklu-meira-vid-haskolalifid-en-bara-fyrirlestrar-og-verkefni",
-    "summary": "Jósep Snorri og Hanna Klara, stúdentar í Háskólanum á Akureyri, eru næstu viðmælendur í samstarfi Kaffið.is og Háskólans á Akureyri þar sem við fáum að kynnast mannlífinu í háskólanum.",
+    "summary": "Jósep Snorri og Hanna Klara, stúdentar í Háskólanum á Akureyri, eru næstu viðmælendur í samstarfi Kaffið.is og Háskólans á Akureyri þar sem við fáum að kynnast mannlífinu í háskólanum",
     "date": "2026-10-13T13:25:00+00:00",
     "image": "https://www.unak.is/static/news/sm/josep-og-hanna-kruttpar.png",
     "source": "Háskólinn á Akureyri",
@@ -726,18 +787,6 @@
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
-    ]
-  },
-  {
-    "title": "Tökum vel á móti Gallup - færð þú vinning?",
-    "link": "https://www.ein.is/is/um-einingu-idju/utgefid-efni/frettir/tokum-vel-a-moti-gallup-faerd-thu-vinning-9",
-    "summary": "Á næstunni mun Gallup kanna ýmis atriði sem snerta kjör, viðhorf og starfsaðstæður félagsmanna Einingar-Iðju og AFLS starfsgreinafélags. Félagið þitt notar niðurstöður könnunarinnar til að móta starfsemi sína og til að berjast fyrir bættum kjörum fyrir félagsmenn.",
-    "date": "2026-10-12T09:46:00+00:00",
-    "image": "https://www.ein.is/static/news/sm/1-vefur-gallup_story_3_app-c.jpg",
-    "source": "Eining-Iðja",
-    "category": "Fyrirtæki & félög",
-    "cats": [
-      "Bærinn"
     ]
   },
   {
@@ -1425,30 +1474,6 @@
     ]
   },
   {
-    "title": "Caesar-salat – frægasta salat heims?",
-    "link": "https://www.akureyri.net/is/moya/news/caesar-salat-fraegasta-salat-heims",
-    "summary": "",
-    "date": "2026-10-10T06:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/thrainn-ceasar-salat-inni2.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Þegar vinnan er farin í hundana",
-    "link": "https://www.akureyri.net/is/moya/news/thegar-vinnan-er-farin-i-hundana",
-    "summary": "Stefán Þór Sæmundsson",
-    "date": "2026-10-10T06:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/1791553198_1-stsaem-nota-24.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Juku verulega á áhyggjur Norðankvenna",
     "link": "https://www.visir.is/g/20262946470d/juku-verulega-a-ahyggjur-nordankvenna",
     "summary": "Slæmt gengi KA/Þórs í Olís deild kvenna í handbolta hélt áfram í kvöld þegar liðið tapaði gegn Gróttu í 5. umferð deildarinnar. Lokatölur urðu 30-25, Gróttu í vil.",
@@ -2114,18 +2139,6 @@
     "category": "Menntun",
     "cats": [
       "Bærinn"
-    ]
-  },
-  {
-    "title": "Vilja kortleggja stöðu innflytjenda á Íslandi",
-    "link": "https://www.vikubladid.is/is/moya/news/vilja-kortleggja-stodu-innflytjenda-a-islandi",
-    "summary": "-„Við vitum enn of lítið,“ segir Markus Meckl, prófessor við Háskólann á Akureyri",
-    "date": "2026-10-06T21:04:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/ha-markus-10.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
