@@ -1527,6 +1527,20 @@
     "kind": "Leiklist"
   },
   {
+    "title": "Ásgeir Trausti",
+    "source": "Miðasala",
+    "site": "Tix",
+    "link": "https://tix.is/event/22514/asgeir-trausti",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "time": "20:00",
+    "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22514.jpg",
+    "note": "7.990 kr.",
+    "venue": "Glerárkirkja",
+    "cat0": "Tónleikar, Tónlist",
+    "kind": "Tónlist"
+  },
+  {
     "title": "Bubbi - Þorláksmessutónleikar",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/bubbi-thorlaksmessutonleikar-2",
@@ -1547,7 +1561,7 @@
     "end": "2026-12-05",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/65xmvcUUihVzsCxqKsyPRUdYCN6L4B-metaSsOzbGFzw7psdXIgMjYgSUkuanBn-.webp",
-    "note": "Nýtt · Frá 4.900 kr.",
+    "note": "Frá 4.900 kr.",
     "kind": "Tónlist"
   },
   {
