@@ -406,16 +406,16 @@ blocks.sort((a,b)=>a.d-b.d);blocks.forEach(b=>box.appendChild(b.n));
 box.appendChild(el("div","fnote","Upplýsingar eru skráðar eftir heimasíðum flugfélaga og ferðaskrifstofa og geta breyst. Staðfestu alltaf tíma og verð við bókun."))}
 function renderSp(){const n0=new Date(),t=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("splist"),c1=document.getElementById("spchips"),c2=document.getElementById("spchips2");
 const TN=x=>x==="Þór Ak."?"Þór":x;const all=EVENTS.filter(e=>e.source==="Íþróttir");c1.innerHTML="";c2.innerHTML="";
-const tb=document.getElementById("spteams");tb.innerHTML="";const TO=["Þór","KA","KA/Þór","Þór/KA","SA"];const tms=[...new Set(all.flatMap(e=>(e.teams||[]).map(TN)))].sort((a,b)=>(TO.indexOf(a)<0?9:TO.indexOf(a))-(TO.indexOf(b)<0?9:TO.indexOf(b)));
+const tb=document.getElementById("spteams");tb.innerHTML="";const TO=["Þór","KA","KA/Þór","Þór/KA","SA"];const tms=[...new Set(all.flatMap(e=>(e.teams||[]).map(TN)).concat(STAND.flatMap(g=>g.rows.filter(r=>r.me).map(r=>TN(r.t)))))].sort((a,b)=>(TO.indexOf(a)<0?9:TO.indexOf(a))-(TO.indexOf(b)<0?9:TO.indexOf(b)));
 if(spTeam&&tms.indexOf(spTeam)<0)spTeam="";
 if(tms.length>1)["Öll lið",...tms].forEach(x=>{const v=x==="Öll lið"?"":x,b=el("button","chip"+(v===spTeam?" on":""),x);b.onclick=()=>{spTeam=v;renderSp()};tb.appendChild(b)});
-const sp=["Allt",...new Set(all.filter(e=>!spTeam||(e.teams||[]).map(TN).indexOf(spTeam)>=0).map(e=>e.sport))];if(spSport&&sp.indexOf(spSport)<0)spSport="";sp.forEach(x=>{const b=el("button","chip"+((x==="Allt"?!spSport:x===spSport)?" on":""),x);b.onclick=()=>{spSport=(x==="Allt"?"":x);renderSp()};c1.appendChild(b)});
+const sOrd=["Handbolti","Fótbolti","Körfubolti","Blak","Íshokkí"];const sps=new Set(all.filter(e=>!spTeam||(e.teams||[]).map(TN).indexOf(spTeam)>=0).map(e=>e.sport));STAND.filter(g=>!spTeam||g.rows.some(r=>r.me&&TN(r.t)===spTeam)).forEach(g=>sps.add(g.sport));const sp=["Allt",...[...sps].sort((x,y)=>(sOrd.indexOf(x)<0?9:sOrd.indexOf(x))-(sOrd.indexOf(y)<0?9:sOrd.indexOf(y)))];if(spSport&&sp.indexOf(spSport)<0)spSport="";sp.forEach(x=>{const b=el("button","chip"+((x==="Allt"?!spSport:x===spSport)?" on":""),x);b.onclick=()=>{spSport=(x==="Allt"?"":x);renderSp()};c1.appendChild(b)});
 const sg=document.getElementById("spseg");sg.innerHTML="";[["Næstu leikir","fix"],["Úrslit","res"],["Tafla","tab"]].forEach(a=>{const b=el("button",spMode===a[1]?"on":"",a[0]);b.onclick=()=>{spMode=a[1];renderSp()};sg.appendChild(b)});
 [["Allir",""],["Karlar","Karlar"],["Konur","Konur"]].forEach(x=>{const b=el("button","chip"+(x[1]===spGen?" on":""),x[0]);b.onclick=()=>{spGen=x[1];renderSp()};c2.appendChild(b)});
 const cmp=(a,b)=>a.start<b.start?-1:a.start>b.start?1:((a.time||"")<(b.time||"")?-1:1);
 const spRes=(spMode==="res");box.innerHTML="";if(spMode==="tab"){renderTab(box);return}
 const L=all.filter(e=>(!spSport||e.sport===spSport)&&(!spGen||e.gender===spGen)&&(!spTeam||(e.teams||[]).map(TN).indexOf(spTeam)>=0)&&(spRes?!!e.res:!(e.res&&pd(e.start)<t))).sort(spRes?(a,b)=>cmp(b,a):cmp);
-if(!L.length){box.appendChild(el("div","sub",spRes?"Engin úrslit síðustu daga.":"Engir leikir fundust."));return}
+if(!L.length){box.appendChild(el("div","sub",spRes?"Engin úrslit síðustu daga.":(spTeam?"Engir leikir framundan hjá "+spTeam+" í bili – sjáðu Töflu eða Úrslit.":"Engir leikir fundust.")));return}
 const SPI={"Fótbolti":"⚽","Handbolti":"🤾","Körfubolti":"🏀","Blak":"🏐","Íshokkí":"🏒"};
 function spLab(e){const d=el("div","lb");d.appendChild(el("span","sp",(SPI[e.sport]||"🏅")+" "+e.sport));if(e.gender)d.appendChild(el("span","gd"+(e.gender==="Konur"?" k":""),e.gender));return d}
 function crest(n,cls){const w=(n||"").replace(/[^A-Za-zÀ-ÿÞþÐðÆæÖö ]/g,"").trim().split(" ").filter(Boolean);const c=(w.length>1?w.map(x=>x[0]).join("").slice(0,3):(w[0]||"?").slice(0,3)).toUpperCase();return el("div","cr"+(cls?" "+cls:""),c)}
@@ -1485,7 +1485,7 @@ def _bli_span(chunk, suffix):
     return html.unescape(m.group(1)).strip() if m else ""
 
 
-def bli_parse(page, gender, comp, link):
+def bli_parse_old(page, gender, comp, link):
     starts = [m.start() for m in re.finditer(r'id="[^"]*_LB_DataOra"', page)]
     out = []
     for i, s in enumerate(starts):
@@ -1502,6 +1502,35 @@ def bli_parse(page, gender, comp, link):
                     "rh": _bli_span(chunk, "LB_SetCasa"), "ra": _bli_span(chunk, "LB_SetOspiti"),
                     "venue": _bli_span(chunk, "LB_Palasport"), "link": link})
     return out
+
+
+def bli_parse(page, gender, comp, link):
+    """Hver leikur hefur sitt auðkenni (RADLIST_Matches_ctrlN) og tvö útlit: Label2/Label4 eða LBL_HomeTeamName/LBL_GuestTeamName.
+    Ég les alla reiti eftir auðkenni leiksins svo enginn leikur týnist og dagsetning lendir alltaf á réttum leik."""
+    games, order = {}, []
+    for m in re.finditer(r'<span[^>]*\bid="([^"]*?RADLIST_Matches_ctrl\d+)_(\w+)"[^>]*>([^<]*)<', page):
+        key, name, val = m.group(1), m.group(2), html.unescape(m.group(3)).strip()
+        if key not in games:
+            games[key] = {}
+            order.append(key)
+        if val and name not in games[key]:
+            games[key][name] = val
+    out = []
+    for key in order:
+        g = games[key]
+        d = BLI_DATE.search(g.get("LB_DataOra", ""))
+        home = g.get("LBL_HomeTeamName") or g.get("Label2", "")
+        away = g.get("LBL_GuestTeamName") or g.get("Label4", "")
+        if not d or not home or not away:
+            continue
+        hh, mm = int(d.group(4)), d.group(5)
+        out.append({"sport": "Blak", "gender": gender, "comp": comp,
+                    "date": "%s-%02d-%02d" % (d.group(3), int(d.group(2)), int(d.group(1))),
+                    "time": "" if (hh == 0 and mm == "00") else "%02d:%s" % (hh, mm),
+                    "home": home, "away": away,
+                    "rh": g.get("LB_SetCasa", ""), "ra": g.get("LB_SetOspiti", ""),
+                    "venue": g.get("LB_Palasport", ""), "link": link})
+    return out or bli_parse_old(page, gender, comp, link)
 
 
 def read_bli(today):
@@ -1921,7 +1950,7 @@ def bli_table(page):
         if not m:
             continue
         name = html.unescape(m.group(1)).strip()
-        body = re.sub(r"(?is)<(script|style).*?</\1>", " ", part[m.end(): m.end() + 2500])
+        body = re.sub(r"(?is)<(script|style).*?</\1>", " ", part[m.end(): m.end() + 12000])
         body = body.split("TeamName")[0]
         toks = html.unescape(re.sub(r"<[^>]+>", " ", body)).split()
         nums = []
