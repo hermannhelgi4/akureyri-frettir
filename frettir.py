@@ -69,7 +69,7 @@ CAT_BY_SOURCE["Fótbolti.net"] = "Íþróttir"
 
 # Stofnar orða (án beygingarendinga) sem sýna að frétt tengist Akureyri.
 KEYWORDS = [
-    "akureyr", "eyjafj", "eyjafirð", "hlíðarfj", "vaðlaheið", "dalvík", "hrísey",
+    "akureyr", "eyjafjörð", "eyjafjarð", "eyjafirð", "hlíðarfj", "vaðlaheið", "dalvík", "hrísey",
     "grímsey", "grenivík", "hörgársveit", "fjallabyggð", "siglufj", "ólafsfj",
     "þór/ka", "ka/þór", "norðurorka", "samherj", "kjarnaskóg",
 ]
@@ -2462,7 +2462,7 @@ def collect_fotbolti(checked, known, by_link, budget=120):
 
 
 _AK_RE = re.compile(
-    r"(?<!\w)(?:akureyr|eyjafj|eyjafirð|hlíðarfj|vaðlaheið|dalvík|hrísey|grímsey|grenivík|hörgársveit|"
+    r"(?<!\w)(?:akureyr|eyjafjörð|eyjafjarð|eyjafirð|hlíðarfj|vaðlaheið|dalvík|hrísey|grímsey|grenivík|hörgársveit|"
     r"fjallabyggð|siglufj|ólafsfj|kjarnaskóg|norðurorka)\w*", re.I)
 _OTHER_PLACES = re.compile(
     r"(?<!\w)(?:reykjav|kópavog|hafnarfj|garðab|keflavík|reykjanes|selfoss|ísafj|egilsst|vestmannaey|"
