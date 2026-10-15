@@ -1,5 +1,22 @@
 [
   {
+    "title": "Víkingur – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/113406",
+    "start": "2026-10-09",
+    "end": "2026-10-09",
+    "time": "19:00",
+    "image": null,
+    "note": "Útileikur · Powerade bikar karla 2027 · Virkið",
+    "teams": [
+      "KA"
+    ],
+    "res": "35–28",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Hamar – Þór Ak.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -262,6 +279,22 @@
     "note": "Heimaleikur · VÍS bikar karla · Höllin Ak",
     "teams": [
       "Þór Ak."
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "ÍBV 2 – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/113418",
+    "start": "2026-10-17",
+    "end": "2026-10-17",
+    "time": "16:30",
+    "image": null,
+    "note": "Útileikur · Powerade bikar karla 2027 · Íþróttamiðstöð Vestmannaeyja",
+    "teams": [
+      "Þór"
     ],
     "kind": "Íþróttir"
   },
@@ -1153,6 +1186,22 @@
     "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
     "teams": [
       "Þór Ak."
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Fjölnir – KA/Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Konur",
+    "link": "https://www.hsi.is/match/113399",
+    "start": "2026-11-18",
+    "end": "2026-11-18",
+    "time": "",
+    "image": null,
+    "note": "Útileikur · Powerade bikar kvenna 2027 · Fjölnishöll",
+    "teams": [
+      "KA/Þór"
     ],
     "kind": "Íþróttir"
   },
@@ -3701,7 +3750,7 @@
     "start": "2027-04-01",
     "end": "2027-04-01",
     "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782206629.png?v=1791842302",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782206629.png?v=1792023283",
     "note": "",
     "cat0": "",
     "venue": "Black box, Hof",
@@ -3772,7 +3821,7 @@
     "start": "2027-04-18",
     "end": "2027-04-18",
     "time": "16:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782207254.png?v=1791842302",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782207254.png?v=1792023283",
     "note": "",
     "cat0": "Tónleikar",
     "venue": "Hamrar, Hof",
@@ -3785,7 +3834,7 @@
     "start": "2027-04-29",
     "end": "2027-04-29",
     "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782745946.jpg?v=1791842302",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782745946.jpg?v=1792023283",
     "note": "6.900 kr.",
     "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
@@ -3798,7 +3847,7 @@
     "start": "2027-04-30",
     "end": "2027-04-30",
     "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782745946.jpg?v=1791842302",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782745946.jpg?v=1792023283",
     "note": "6.900 kr.",
     "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
@@ -3811,7 +3860,7 @@
     "start": "2027-05-09",
     "end": "2027-05-09",
     "time": "16:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782206981.png?v=1791842302",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782206981.png?v=1792023283",
     "note": "",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
@@ -3824,7 +3873,7 @@
     "start": "2027-05-09",
     "end": "2027-05-09",
     "time": "16:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782744648.png?v=1791842302",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782744648.png?v=1792023283",
     "note": "5.900 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamrar, Hof",
@@ -3837,7 +3886,7 @@
     "start": "2027-05-22",
     "end": "2027-05-22",
     "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1772030128.jpg?v=1791842302",
+    "image": "https://www.mak.is/static/calendar/images/submit_1772030128.jpg?v=1792023283",
     "note": "Frá 3.750 kr.",
     "cat0": "Uppistand",
     "venue": "Hamrar, Hof",
@@ -3850,7 +3899,7 @@
     "start": "2027-06-13",
     "end": "2027-06-13",
     "time": "16:00",
-    "image": "https://www.mak.is/static/calendar/images/34624.png?v=1791842302",
+    "image": "https://www.mak.is/static/calendar/images/34624.png?v=1792023283",
     "note": "3.000 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamrar, Hof",
