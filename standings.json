@@ -2,7 +2,7 @@
  {
   "sport": "Handbolti",
   "gender": "Karlar",
-  "comp": "Handbolti",
+  "comp": "Olís deild karla",
   "link": "https://www.hsi.is/tournament/9142",
   "rows": [
    {
@@ -18,6 +18,17 @@
    },
    {
     "n": 2,
+    "t": "Afturelding",
+    "p": 6,
+    "w": 4,
+    "d": 1,
+    "l": 1,
+    "g": "212-178",
+    "pts": 9,
+    "me": false
+   },
+   {
+    "n": 3,
     "t": "KA",
     "p": 5,
     "w": 4,
@@ -26,17 +37,6 @@
     "g": "164-146",
     "pts": 8,
     "me": true
-   },
-   {
-    "n": 3,
-    "t": "Afturelding",
-    "p": 5,
-    "w": 3,
-    "d": 1,
-    "l": 1,
-    "g": "182-152",
-    "pts": 7,
-    "me": false
    },
    {
     "n": 4,
@@ -96,11 +96,11 @@
    {
     "n": 9,
     "t": "HK",
-    "p": 5,
+    "p": 6,
     "w": 2,
     "d": 0,
-    "l": 3,
-    "g": "158-176",
+    "l": 4,
+    "g": "184-206",
     "pts": 4,
     "me": false
    },
