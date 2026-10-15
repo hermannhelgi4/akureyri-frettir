@@ -249,8 +249,11 @@ main .strip{max-width:none;margin:0;padding:0;min-width:0;overflow:hidden}.strip
 .seg{display:flex;max-width:688px;margin:4px auto 6px;width:calc(100% - 32px);background:var(--bd);border-radius:12px;padding:3px}.seg button{flex:1;border:0;background:none;padding:9px 0;font-size:13px;font-weight:700;color:var(--mu);border-radius:10px;cursor:pointer;font-family:inherit}.seg button.on{background:var(--card);color:var(--tx);box-shadow:0 1px 3px rgba(0,0,0,.15)}
 .lb{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.sp,.gd{font-size:12px;font-weight:800;padding:3px 10px;border-radius:999px;white-space:nowrap}.sp{background:color-mix(in srgb,var(--ac) 16%,transparent);color:var(--ac)}.gd{background:#dbeafe;color:#1e40af}.gd.k{background:#fce7f3;color:#9d174d}
 @media(prefers-color-scheme:dark){.gd{background:#1e3a8a;color:#bfdbfe}.gd.k{background:#831843;color:#fbcfe8}}
-.cr{width:50px;height:50px;border-radius:50%;background:#fff;color:#0b6e99;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;margin:0 auto 6px;border:2px solid #0b6e99;flex:none}.cr.o{background:#ffd9a8;color:#7a4a00;border-color:#e8a84f}
+.cr{width:50px;height:50px;border-radius:50%;background:#fff;color:#0b6e99;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;margin:0 auto 6px;border:2px solid #0b6e99;flex:none}.cr.o{background:#ffd9a8;color:#7a4a00;border-color:#e8a84f}.cr.lg,.cr.lg.o{background:#fff;border-color:var(--bd,#e5e7eb);padding:3px;overflow:hidden}.cr.lg img{width:100%;height:100%;object-fit:contain;display:block}
 .next{display:block;border-radius:18px;background:linear-gradient(135deg,#0a4f70,#0b6e99);color:#fff;padding:16px;text-decoration:none}.next .lab{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.85;margin-bottom:8px}.next .sp{background:rgba(255,255,255,.2);color:#fff}.next .gd,.next .gd.k{background:#fff}.next .gd{color:#1e40af}.next .gd.k{color:#9d174d}
+.spdd{max-width:720px;margin:0 auto;padding:6px 16px 4px;display:flex;gap:8px;align-items:center;position:relative;z-index:6}.ddw{position:relative}.ddb{display:flex;align-items:center;gap:6px;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:999px;padding:7px 8px 7px 13px;font-size:13px;font-family:inherit;cursor:pointer;white-space:nowrap}.ddb span{color:var(--mu);font-weight:600}.ddb b{font-weight:800}.ddb i{font-style:normal;color:var(--mu);font-size:11px;padding-right:4px}.ddb.act{border-color:var(--ac);background:color-mix(in srgb,var(--ac) 14%,transparent)}.ddb.act span,.ddb.act b{color:var(--ac)}
+.ddm{position:absolute;top:calc(100% + 6px);left:0;min-width:170px;background:var(--card);border:1px solid var(--bd);border-radius:14px;box-shadow:0 10px 28px rgba(0,0,0,.22);overflow:hidden;z-index:40}.ddo{display:flex;justify-content:space-between;align-items:center;width:100%;border:0;border-top:1px solid var(--bd);background:none;color:var(--tx);padding:12px 14px;font-size:14px;font-family:inherit;text-align:left;cursor:pointer}.ddo:first-child{border-top:0}.ddo:hover{background:var(--bg)}.ddo.on{font-weight:800;color:var(--ac)}.ddo.on:after{content:"✓"}.ddc{border:0;background:none;color:var(--ac);font-weight:700;font-size:13px;font-family:inherit;cursor:pointer;padding:6px 4px}
+@media(min-width:900px){.spdd{max-width:1040px}}
 .hu{font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;background:var(--bd);color:var(--mu);white-space:nowrap}.hu.h{background:var(--ac);color:#fff}
 .vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:12px 0 8px;text-align:center}.vs .n{font-size:14px;font-weight:700}.vs .m{font-size:13px;opacity:.95}.vs .m b{display:block;font-size:26px}
 .cd{display:flex;gap:6px;justify-content:center;margin-top:10px}.cd div{background:rgba(255,255,255,.16);border-radius:10px;padding:6px 10px;text-align:center;font-size:10px}.cd b{display:block;font-size:20px}
@@ -259,7 +262,7 @@ main .strip{max-width:none;margin:0;padding:0;min-width:0;overflow:hidden}.strip
 .tm{display:grid;grid-template-columns:38px 1fr auto;gap:10px;align-items:center;margin:6px 0}.tm .cr{width:38px;height:38px;font-size:10px;margin:0;border-width:1.5px;letter-spacing:-.3px}.tm .n{font-weight:700;font-size:15px}.tm .s{font-weight:800;font-size:20px}.tm.lose .n,.tm.lose .s{color:var(--mu);font-weight:600}
 .badge{display:inline-block;font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px;background:#16a34a;color:#fff;white-space:nowrap}.badge.l{background:#dc2626}.badge.t{background:#94a3b8}
 #splist{display:grid;gap:8px}
-</style></head><body><header><h1>Akureyri í fréttum</h1><div class="sub" id="upd"></div><div class="wx" id="wx"></div></header><nav class="tabbar"><button data-v="news" class="on" onclick="setView('news')"><svg viewBox="0 0 24 24"><path d="M4 5h13v14H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M7 9h7M7 12h7M7 15h4"/></svg>Fréttir</button><button data-v="ev" onclick="setView('ev')"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>Viðburðir</button><button data-v="sp" onclick="setView('sp')"><svg viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 20h8M10 17h4"/></svg>Íþróttir</button><button data-v="fl" onclick="setView('fl')"><svg viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>Flug</button><button data-v="of" onclick="setView('of')"><svg viewBox="0 0 24 24"><path d="M3 12V4h8l9 9-8 8z"/><circle cx="7.5" cy="8.5" r="1.2"/></svg>Tilboð</button></nav><div id="viewNews"><div class="chips" id="chips"></div><div class="strip" id="strip"></div><div class="wrap"><main id="list"></main><aside><div class="top" id="top"></div></aside></div></div><div id="viewEv" hidden><div class="chips" id="evchips"></div><div class="evwrap"><div id="evlist"></div></div></div><div id="viewSp" hidden><div class="chips" id="spteams"></div><div class="chips" id="spchips"></div><div class="chips" id="spchips2"></div><div class="seg" id="spseg"></div><div class="spwrap"><div id="splist"></div></div></div><div id="viewFl" hidden><div class="chips" id="flchips"></div><div class="flwrap"><div id="fllist"></div></div></div><div id="viewOf" hidden><div class="chips" id="ofchips"></div><div class="ofwrap"><div id="oflist"></div></div></div>
+</style></head><body><header><h1>Akureyri í fréttum</h1><div class="sub" id="upd"></div><div class="wx" id="wx"></div></header><nav class="tabbar"><button data-v="news" class="on" onclick="setView('news')"><svg viewBox="0 0 24 24"><path d="M4 5h13v14H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M7 9h7M7 12h7M7 15h4"/></svg>Fréttir</button><button data-v="ev" onclick="setView('ev')"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>Viðburðir</button><button data-v="sp" onclick="setView('sp')"><svg viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 20h8M10 17h4"/></svg>Íþróttir</button><button data-v="fl" onclick="setView('fl')"><svg viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>Flug</button><button data-v="of" onclick="setView('of')"><svg viewBox="0 0 24 24"><path d="M3 12V4h8l9 9-8 8z"/><circle cx="7.5" cy="8.5" r="1.2"/></svg>Tilboð</button></nav><div id="viewNews"><div class="chips" id="chips"></div><div class="strip" id="strip"></div><div class="wrap"><main id="list"></main><aside><div class="top" id="top"></div></aside></div></div><div id="viewEv" hidden><div class="chips" id="evchips"></div><div class="evwrap"><div id="evlist"></div></div></div><div id="viewSp" hidden><div class="chips" id="spteams"></div><div class="spdd" id="spdd"></div><div class="seg" id="spseg"></div><div class="spwrap"><div id="splist"></div></div></div><div id="viewFl" hidden><div class="chips" id="flchips"></div><div class="flwrap"><div id="fllist"></div></div></div><div id="viewOf" hidden><div class="chips" id="ofchips"></div><div class="ofwrap"><div id="oflist"></div></div></div>
 <script>
 const WEATHER=__WEATHER__;
 function wxIcon(t,night){t=(t||"").toLowerCase();const h=s=>t.indexOf(s)>=0;
@@ -290,7 +293,7 @@ function renderWx(){const b=document.getElementById("wx");if(!WEATHER||!WEATHER.
 let h='<a class="wxc now" target="_blank" rel="noopener" href="'+wxLink("")+'" title="Veðrið núna á Akureyri (mælt kl. '+WEATHER.upd+')"><div class="wxd">Núna</div><div class="wxt">'+wxIcon(n.W,n.night)+" "+(n.T===null?"–":wxT(n.T))+'</div><div class="wxw">'+wxWind(n.F,n.D)+"</div></a>";
 WEATHER.days.forEach(d=>{const dt=new Date(d.date+"T12:00:00Z");h+='<a class="wxc" target="_blank" rel="noopener" href="'+wxLink(d.date)+'" title="Spá kl. 12:00"><div class="wxd">'+DN[dt.getUTCDay()]+" "+dt.getUTCDate()+"."+(dt.getUTCMonth()+1)+'</div><div class="wxt">'+wxIcon(d.W,false)+" "+wxT(d.T)+'</div><div class="wxw">'+wxWind(d.F,d.D)+"</div></a>"});
 b.innerHTML=h}
-const NEWS=__DATA__;const EVENTS=__EVENTS__;const OFFERS=__OFFERS__;const STAND=__STAND__;const FLIGHTS=__FLIGHTS__;let flCat="Allt";let ofCat="Allt",ofTimer=null;let spSport="",spGen="",spMode="fix",spTeam="";let evSrc="Allt",evSport="",evGen="",evRes=false;const API="__API__";let TOP=[];let cur="Allt";const CM={"Fréttamiðlar":"Fréttir","Nærsveitir":"Nærsveitir","Íþróttir":"Íþróttir"};NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar";n.cats=n.cats||[CM[n.category]||"Bærinn"]});const ORDER=["Fréttir","Bærinn","Nærsveitir","Íþróttir"];
+const NEWS=__DATA__;const EVENTS=__EVENTS__;const OFFERS=__OFFERS__;const STAND=__STAND__;const LOGOS=__LOGOS__;const FLIGHTS=__FLIGHTS__;let flCat="Allt";let ofCat="Allt",ofTimer=null;let spSport="",spGen="",spMode="fix",spTeam="",spOpen="";let evSrc="Allt",evSport="",evGen="",evRes=false;const API="__API__";let TOP=[];let cur="Allt";const CM={"Fréttamiðlar":"Fréttir","Nærsveitir":"Nærsveitir","Íþróttir":"Íþróttir"};NEWS.forEach(n=>{n.category=n.category||"Fréttamiðlar";n.cats=n.cats||[CM[n.category]||"Bærinn"]});const ORDER=["Fréttir","Bærinn","Nærsveitir","Íþróttir"];
 function ago(d){if(!d)return"";const m=(Date.now()-new Date(d))/6e4;if(m<60)return"fyrir "+Math.max(1,Math.round(m))+" mín.";if(m<1440)return"fyrir "+Math.round(m/60)+" klst.";return"fyrir "+Math.round(m/1440)+" d."}
 function track(n){if(!API)return;try{const k="c:"+n.link;if(!localStorage.getItem(k)){localStorage.setItem(k,"1");fetch(API+"/click",{method:"POST",body:n.link,keepalive:true})}}catch(e){}}
 function strip(){const t=document.getElementById("strip");t.innerHTML="";if(cur==="Mest lesið")return;let L=TOP.map(k=>NEWS.find(n=>n.link===k)).filter(Boolean).slice(0,5);const real=L.length>0;if(!real)L=NEWS.slice(0,5);t.appendChild(el("h3","",real?"Mest lesið":"Mest lesið (nýjustu í bili)"));const r=el("div","row");L.forEach((n,i)=>{const a=el("a","");a.href=n.link;a.target="_blank";a.rel="noopener";a.onclick=()=>track(n);const x=el("div","t");x.appendChild(el("b","",String(i+1)));x.appendChild(document.createTextNode(n.title));a.appendChild(x);a.appendChild(el("small","",n.source));r.appendChild(a)});t.appendChild(r)}
@@ -336,7 +339,7 @@ b.appendChild(el("div","ostat"+(st==="ok"?" ok":""),st==="ok"?"✔ Gildir í dag
 if(o.details)b.appendChild(el("div","odet",o.details));b.appendChild(el("div","orow",daysText(o)));if(o.until)b.appendChild(el("div","orow","Gildir til og með "+fd(pd(o.until))));if(o.address)b.appendChild(el("div","orow","📍 "+o.address));
 const ck=el("div","oclock");b.appendChild(ck);const tick=()=>{const n=new Date(),p=v=>String(v).padStart(2,"0");ck.textContent="Sýndu starfsmanni þetta kort · "+LONGD[n.getDay()]+" "+fd(n)+" kl. "+p(n.getHours())+":"+p(n.getMinutes())+":"+p(n.getSeconds())};tick();ofTimer=setInterval(tick,1000);
 c.append(a,b);m.appendChild(c);document.body.appendChild(m);document.body.style.overflow="hidden"}
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeCard()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeCard();if(spOpen){spOpen="";renderSp()}}});document.addEventListener("click",e=>{if(spOpen&&!e.target.closest(".ddm")){spOpen="";renderSp()}});
 function renderEv(){const n0=new Date(),t=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("evlist"),ch=document.getElementById("evchips");
 const KO=["Tónlist","Leiklist","Uppistand","Sýningar","Fjölskylda","Fræðsla","Íþróttir"];const all=EVENTS.filter(e=>e.source!=="Íþróttir"&&(e.res||pd(e.end)>=t));const srcs=["Allt",...KO.filter(k=>all.some(e=>e.kind===k))];ch.innerHTML="";
 srcs.forEach(s=>{const b=el("button","chip"+(s===evSrc?" on":""),s);b.onclick=()=>{evSrc=s;renderEv()};ch.appendChild(b)});
@@ -400,25 +403,29 @@ else dt.textContent="Smelltu á litaðan dag til að skoða flug og bóka.";c.ap
 function renderFl(){const n0=new Date(),t0=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("fllist");document.getElementById("flchips").innerHTML="";box.innerHTML="";
 const W=FLIGHTS.filter(f=>f.kind==="weekly"&&pd(f.until)>=t0),blocks=[];
 if(W.length){const nx=flNext(W,t0);blocks.push({d:nx||new Date(9999,0,1),n:flCal(W,t0)})}
-FLIGHTS.filter(f=>f.kind!=="weekly").forEach(f=>{const e=pd(f.end);if(e<t0)return;const s=pd(f.start);blocks.push({d:s<t0?t0:s,n:flTrip(f,t0)})});
+FLIGHTS.filter(f=>f.kind!=="weekly").forEach(f=>{const s=pd(f.start);if(s<t0)return;blocks.push({d:s,n:flTrip(f,t0)})});
 if(!blocks.length){box.appendChild(el("div","sub","Engin flug skráð."));return}
 blocks.sort((a,b)=>a.d-b.d);blocks.forEach(b=>box.appendChild(b.n));
 box.appendChild(el("div","fnote","Upplýsingar eru skráðar eftir heimasíðum flugfélaga og ferðaskrifstofa og geta breyst. Staðfestu alltaf tíma og verð við bókun."))}
-function renderSp(){const n0=new Date(),t=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("splist"),c1=document.getElementById("spchips"),c2=document.getElementById("spchips2");
-const TN=x=>x==="Þór Ak."?"Þór":x;const all=EVENTS.filter(e=>e.source==="Íþróttir");c1.innerHTML="";c2.innerHTML="";
+function renderSp(){const n0=new Date(),t=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("splist"),dd=document.getElementById("spdd");
+const TN=x=>x==="Þór Ak."?"Þór":x;const all=EVENTS.filter(e=>e.source==="Íþróttir");dd.innerHTML="";
 const tb=document.getElementById("spteams");tb.innerHTML="";const TO=["Þór","KA","KA/Þór","Þór/KA","SA"];const tms=[...new Set(all.flatMap(e=>(e.teams||[]).map(TN)).concat(STAND.flatMap(g=>g.rows.filter(r=>r.me).map(r=>TN(r.t)))))].sort((a,b)=>(TO.indexOf(a)<0?9:TO.indexOf(a))-(TO.indexOf(b)<0?9:TO.indexOf(b)));
 if(spTeam&&tms.indexOf(spTeam)<0)spTeam="";
 if(tms.length>1)["Öll lið",...tms].forEach(x=>{const v=x==="Öll lið"?"":x,b=el("button","chip"+(v===spTeam?" on":""),x);b.onclick=()=>{spTeam=v;renderSp()};tb.appendChild(b)});
-const sOrd=["Handbolti","Fótbolti","Körfubolti","Blak","Íshokkí"];const sps=new Set(all.filter(e=>!spTeam||(e.teams||[]).map(TN).indexOf(spTeam)>=0).map(e=>e.sport));STAND.filter(g=>!spTeam||g.rows.some(r=>r.me&&TN(r.t)===spTeam)).forEach(g=>sps.add(g.sport));const sp=["Allt",...[...sps].sort((x,y)=>(sOrd.indexOf(x)<0?9:sOrd.indexOf(x))-(sOrd.indexOf(y)<0?9:sOrd.indexOf(y)))];if(spSport&&sp.indexOf(spSport)<0)spSport="";sp.forEach(x=>{const b=el("button","chip"+((x==="Allt"?!spSport:x===spSport)?" on":""),x);b.onclick=()=>{spSport=(x==="Allt"?"":x);renderSp()};c1.appendChild(b)});
+const sOrd=["Handbolti","Fótbolti","Körfubolti","Blak","Íshokkí"];const sps=new Set(all.filter(e=>!spTeam||(e.teams||[]).map(TN).indexOf(spTeam)>=0).map(e=>e.sport));STAND.filter(g=>!spTeam||g.rows.some(r=>r.me&&TN(r.t)===spTeam)).forEach(g=>sps.add(g.sport));const sp=["Allt",...[...sps].sort((x,y)=>(sOrd.indexOf(x)<0?9:sOrd.indexOf(x))-(sOrd.indexOf(y)<0?9:sOrd.indexOf(y)))];if(spSport&&sp.indexOf(spSport)<0)spSport="";
 const sg=document.getElementById("spseg");sg.innerHTML="";[["Næstu leikir","fix"],["Úrslit","res"],["Tafla","tab"]].forEach(a=>{const b=el("button",spMode===a[1]?"on":"",a[0]);b.onclick=()=>{spMode=a[1];renderSp()};sg.appendChild(b)});
-[["Allir",""],["Karlar","Karlar"],["Konur","Konur"]].forEach(x=>{const b=el("button","chip"+(x[1]===spGen?" on":""),x[0]);b.onclick=()=>{spGen=x[1];renderSp()};c2.appendChild(b)});
+const mkdd=(key,lab,def,opts,cur,set)=>{const w=el("div","ddw"),b=el("button","ddb"+(cur?" act":""));b.appendChild(el("span","",lab));b.appendChild(el("b","",cur||def));b.appendChild(el("i","","▾"));
+b.onclick=e=>{e.stopPropagation();spOpen=(spOpen===key?"":key);renderSp()};w.appendChild(b);
+if(spOpen===key){const m=el("div","ddm");opts.forEach(o=>{const v=o===def?"":o,i=el("button","ddo"+(v===cur?" on":""),o);i.onclick=e=>{e.stopPropagation();set(v);spOpen="";renderSp()};m.appendChild(i)});w.appendChild(m)}return w};
+dd.appendChild(mkdd("sport","Íþrótt","Allt",sp,spSport,v=>{spSport=v}));dd.appendChild(mkdd("gen","Kyn","Allir",["Allir","Karlar","Konur"],spGen,v=>{spGen=v}));
+if(spSport||spGen){const c=el("button","ddc","Hreinsa");c.onclick=()=>{spSport="";spGen="";spOpen="";renderSp()};dd.appendChild(c)}
 const cmp=(a,b)=>a.start<b.start?-1:a.start>b.start?1:((a.time||"")<(b.time||"")?-1:1);
 const spRes=(spMode==="res");box.innerHTML="";if(spMode==="tab"){renderTab(box);return}
 const L=all.filter(e=>(!spSport||e.sport===spSport)&&(!spGen||e.gender===spGen)&&(!spTeam||(e.teams||[]).map(TN).indexOf(spTeam)>=0)&&(spRes?!!e.res:!(e.res&&pd(e.start)<t))).sort(spRes?(a,b)=>cmp(b,a):cmp);
 if(!L.length){box.appendChild(el("div","sub",spRes?"Engin úrslit síðustu daga.":(spTeam?"Engir leikir framundan hjá "+spTeam+" í bili – sjáðu Töflu eða Úrslit.":"Engir leikir fundust.")));return}
 const SPI={"Fótbolti":"⚽","Handbolti":"🤾","Körfubolti":"🏀","Blak":"🏐","Íshokkí":"🏒"};
 function spLab(e){const d=el("div","lb");d.appendChild(el("span","sp",(SPI[e.sport]||"🏅")+" "+e.sport));if(e.gender)d.appendChild(el("span","gd"+(e.gender==="Konur"?" k":""),e.gender));return d}
-function crest(n,cls){const w=(n||"").replace(/[^A-Za-zÀ-ÿÞþÐðÆæÖö ]/g,"").trim().split(" ").filter(Boolean);const c=(w.length>1?w.map(x=>x[0]).join("").slice(0,3):(w[0]||"?").slice(0,3)).toUpperCase();return el("div","cr"+(cls?" "+cls:""),c)}
+function crest(n,cls){const w=(n||"").replace(/[^A-Za-zÀ-ÿÞþÐðÆæÖö ]/g,"").trim().split(" ").filter(Boolean);const c=(w.length>1?w.map(x=>x[0]).join("").slice(0,3):(w[0]||"?").slice(0,3)).toUpperCase();const d=el("div","cr"+(cls?" "+cls:""),c);const u=LOGOS[n]||LOGOS[(n||"")+" Ak."];if(u){const im=document.createElement("img");im.src=u;im.alt="";im.referrerPolicy="no-referrer";im.onload=function(){d.textContent="";d.classList.add("lg");d.appendChild(im)};}return d}
 function spInfo(e){const p=(e.note||"").split(" · "),home=p[0]==="Heimaleikur",away=p[0]==="Útileikur";const tm=e.title.split(" – ");return{home:home,away:away,t1:tm[0]||e.title,t2:tm[1]||"",rest:p.filter(x=>x!=="Heimaleikur"&&x!=="Útileikur")}}
 let first=!spRes;
 L.forEach(e=>{const s=pd(e.start),I=spInfo(e),diff=Math.round((s-t)/864e5);
@@ -542,7 +549,14 @@ def write_html(items, events=None, offers=None, stand=None, flights=None, weathe
     ofdata = json.dumps(offers or [], ensure_ascii=False).replace("</", "<\\/")
     data = json.dumps(items, ensure_ascii=False).replace("</", "<\\/")
     evdata = json.dumps(events or [], ensure_ascii=False).replace("</", "<\\/")
-    page = HTML.replace("__WEATHER__", wxdata).replace("__FLIGHTS__", fldata).replace("__STAND__", stdata).replace("__OFFERS__", ofdata).replace("__EVENTS__", evdata).replace("__DATA__", data).replace("__API__", COUNTER_URL).replace("__TIME__", datetime.now().strftime("%d.%m.%Y %H:%M"))
+    logos = dict(HOCKEY_LOGOS)  # íshokkí: IIHF-síðan er ekki með merki, þau koma frá Wikipedia
+    logos.update(LOGOS)
+    try:
+        logos.update(_load("logos_manual.json", {}) or {})  # merki sem þú setur sjálf(ur) ganga fyrir
+    except Exception:
+        pass
+    logodata = json.dumps(logos, ensure_ascii=False).replace("</", "<\\/")
+    page = HTML.replace("__WEATHER__", wxdata).replace("__FLIGHTS__", fldata).replace("__LOGOS__", logodata).replace("__STAND__", stdata).replace("__OFFERS__", ofdata).replace("__EVENTS__", evdata).replace("__DATA__", data).replace("__API__", COUNTER_URL).replace("__TIME__", datetime.now().strftime("%d.%m.%Y %H:%M"))
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(page)
 
@@ -1394,6 +1408,19 @@ def fetch_json(url):
     raise last
 
 
+HOCKEY_LOGOS = {
+    "SA": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Skautaf%C3%A9lag_Akureyrar_logo.png/120px-Skautaf%C3%A9lag_Akureyrar_logo.png",
+    "SR": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Skautaf%C3%A9lag_Reykjav%C3%ADkur_logo.png/120px-Skautaf%C3%A9lag_Reykjav%C3%ADkur_logo.png",
+}
+LOGOS = {}  # liðsnafn -> slóð á merki (fyllist þegar leikir eru sóttir)
+
+
+def add_logo(name, url):
+    name, url = (name or "").strip(), (url or "").strip()
+    if name and url.startswith("http") and name not in LOGOS:
+        LOGOS[name] = html.unescape(url)
+
+
 def read_hsi(today):
     """Handbolti: HSÍ býður upp á opið JSON með öllum leikjum móts."""
     out = []
@@ -1407,6 +1434,9 @@ def read_hsi(today):
         for g in data:
             home, away = (g.get("HomeTeamName") or "").strip(), (g.get("AwayTeamName") or "").strip()
             statuses.add(g.get("Status", ""))
+            for nm_, tid_ in ((home, g.get("HomeTeamid")), (away, g.get("AwayTeamId"))):
+                if nm_ and tid_:
+                    add_logo(nm_, "https://www.hsi.is/logo/team/%s/original_small" % tid_)
             if home not in SPORT_TEAMS and away not in SPORT_TEAMS:
                 continue
             dt = g.get("GameDayTime") or ""
@@ -1507,6 +1537,8 @@ def bli_parse_old(page, gender, comp, link):
 def bli_parse(page, gender, comp, link):
     """Hver leikur hefur sitt auðkenni (RADLIST_Matches_ctrlN) og tvö útlit: Label2/Label4 eða LBL_HomeTeamName/LBL_GuestTeamName.
     Ég les alla reiti eftir auðkenni leiksins svo enginn leikur týnist og dagsetning lendir alltaf á réttum leik."""
+    for m in re.finditer(r"TeamLogo/\d+/\d+/TeamLogo_(\d+)\.jpg[^<]{0,60}</div>\s*</td>\s*<td[^>]*>\s*([^<]+?)\s*</td>", page):
+        add_logo(html.unescape(m.group(2)), "https://images.dataproject.com/bli/TeamLogo/40/30/TeamLogo_%s.jpg" % m.group(1))
     games, order = {}, []
     for m in re.finditer(r'<span[^>]*\bid="([^"]*?RADLIST_Matches_ctrl\d+)_(\w+)"[^>]*>([^<]*)<', page):
         key, name, val = m.group(1), m.group(2), html.unescape(m.group(3)).strip()
@@ -1677,6 +1709,12 @@ def ksi_parse(page, today, cid):
             continue
         sc = KSI_SCORE.match(toks[j])
         d = ksi_date(int(dm.group(1)), mon, today)
+        for im in re.finditer(r"<img\b[^>]*>", chunk):
+            tag = im.group(0)
+            a_ = re.search(r'alt="([^"]+)"', tag)
+            s_ = re.search(r'src="(https://comet\.ksi\.is/file\?id=[^"]+)"', tag)
+            if a_ and s_:
+                add_logo(html.unescape(a_.group(1)), s_.group(1))
         gid = re.search(r"leikur\?id=(\d+)", chunk)
         out.append({"date": d.isoformat(), "time": "" if dm.group(3) + dm.group(4) == "0000" else "%s:%s" % (dm.group(3), dm.group(4)),
                     "venue": toks[1] if j - 2 > 1 else "", "comp": toks[j - 2], "home": toks[j - 1], "away": toks[j + 1],
@@ -1845,6 +1883,8 @@ def load_flights(today):
         last = c["until"] if kind == "weekly" else c["end"]
         if last < today.isoformat():
             continue
+        if kind != "weekly" and c["start"] < today.isoformat():
+            continue  # ferðin dettur út daginn eftir brottför
         out.append(c)
     print("OK Flug: %d staðfest (%d óstaðfest ekki sýnd)" % (len(out), skipped))
     return out
@@ -2004,6 +2044,9 @@ def kki_table(raw):
         w = re.search(r"(\d+)<span></span>/<span></span>(\d+)</td>\s*<td>(\d+)</td>", tr)
         if not m or not w:
             continue
+        im = re.search(r'<img[^>]*src="(https?://[^"]+)"', tr)
+        if im:
+            add_logo(html.unescape(m.group(1)).strip(), im.group(1))
         won, lost = int(w.group(1)), int(w.group(2))
         rows.append(srow(len(rows) + 1, html.unescape(m.group(1)).strip(), won + lost, won, 0, lost, "", w.group(3)))
     return rows
@@ -2022,7 +2065,7 @@ def stand_kki(today):
                 continue
             raw = kki_fetch(kki_stand_url(container="6-300-standings-container", widget=300, part="table", state=state.group(1),
                                           param__season_id=season.group(1), param__group_filter=group.group(1),
-                                          param__showTeamLogo="", param__teamLogoSize="20x20"))
+                                          param__showTeamLogo="1", param__teamLogoSize="40x40"))
             rows = kki_table(raw)
             if rows and has_mine(rows):
                 out.append({"sport": "Körfubolti", "gender": gender, "comp": comp, "link": KKI_LINK, "rows": rows})
