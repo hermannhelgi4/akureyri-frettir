@@ -168,7 +168,18 @@ def parse_feed(root):
     return items
 
 
+# Fréttir um Eyjafjöll (Suðurland) eiga ekki heima hér, þó fyrirsögn segi stundum „Eyjafirði“ fyrir mistök.
+NOT_AK = re.compile(r"eyjafj(?:öll|alla|allajök|ölln)|undir eyjafjöllum|mið-mörk|mið-mörkin|vestur-eyjafj|austur-eyjafj", re.I)
+
+
+def not_akureyri(item):
+    text = ((item.get("title") or "") + " " + (item.get("summary") or "")).lower()
+    return bool(NOT_AK.search(text)) and "akureyr" not in text
+
+
 def about_akureyri(item):
+    if not_akureyri(item):
+        return False
     text = (item["title"] + " " + item["summary"]).lower()
     return any(k in text for k in KEYWORDS)
 
@@ -2717,6 +2728,8 @@ def main():
     for i in sorted(by_link.values(), key=lambda i: i["date"] or "", reverse=True):
         if i["date"] and i["date"][:10] < age_cut:
             continue
+        if i["source"] in nonlocal_sources and not_akureyri(i):
+            continue  # gömul frétt sem átti aldrei heima hér
         per_source[i["source"]] = per_source.get(i["source"], 0) + 1
         if per_source[i["source"]] <= MAX_BY_SOURCE.get(i["source"], 30):
             merged.append(i)
