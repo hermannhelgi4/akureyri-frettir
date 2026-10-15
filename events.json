@@ -869,22 +869,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "Selfoss – KA/Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/match/110533",
-    "start": "2026-11-07",
-    "end": "2026-11-07",
-    "time": "15:30",
-    "image": null,
-    "note": "Útileikur · Olís deild kvenna · Set höllin",
-    "teams": [
-      "KA/Þór"
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "KA – HK",
     "source": "Íþróttir",
     "sport": "Blak",
@@ -897,6 +881,22 @@
     "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
     "teams": [
       "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Selfoss – KA/Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Konur",
+    "link": "https://www.hsi.is/match/110533",
+    "start": "2026-11-07",
+    "end": "2026-11-07",
+    "time": "15:30",
+    "image": null,
+    "note": "Útileikur · Olís deild kvenna · Set höllin",
+    "teams": [
+      "KA/Þór"
     ],
     "kind": "Íþróttir"
   },
