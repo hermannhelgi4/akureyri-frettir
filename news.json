@@ -1,5 +1,29 @@
 [
   {
+    "title": "Endurhæfum Kristnes",
+    "link": "https://www.vikubladid.is/is/moya/news/endurhaefum-kristnes",
+    "summary": "Nýlega var kjördæmavika og við þingmenn Norðausturkjördæmis ferðuðumst saman um kjördæmið, hittum sveitarstjórnarfólk, fyrirtæki, forstöðumenn hinna ýmsu stofnana og áttum mörg góð samtöl um þau verkefni sem helst brenna á íbúum. Einn af rauðu þráðunum í þessum samtölum, sérstaklega á Norðurlandi ey",
+    "date": "2026-10-15T11:10:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/ingvar.png",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Áhrifadagar ungmenna í Hofi í lok október",
+    "link": "https://www.akureyri.is/ahrifadagar-ungmenna-i-hofi-i-lok-oktober",
+    "summary": "Ráðstefnan er haldin í tilefni af tíu ára afmæli verkefnisins Barnvæn sveitarfélög sem UNICEF á Íslandi hefur unnið að í samstarfi við íslensk sveitarfélög.",
+    "date": "2026-10-15T10:46:50+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/hof-ad-vetri-til-2000x1125.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Akureyrarbær, MAk, Norðurorka og HA á meðal viðurkenningarhafa",
     "link": "https://kaffid.is/akureyrarbaer-mak-nordurorka-og-ha-a-medal-vidurkenningarhafa/",
     "summary": "Jafnvægisvogin veitti í gær 163 fyrirtækjum, sveitarfélögum og stofnunum viðurkenningu fyrir kynjajafnvægi í framkvæmdastjórnum. Það er 27,3% fjölgun milli ára. […]",
@@ -2196,18 +2220,6 @@
     ]
   },
   {
-    "title": "PÍSA - Akureyri yfir landsmeðaltali í vísindum og stærðfræði",
-    "link": "https://www.vikubladid.is/is/moya/news/pisa-akureyri-yfir-landsmedaltali-i-visindum-og-staerdfraedi",
-    "summary": "Ný greining á PISA 2025 sýnir að 15 ára nemendur á Akureyri mælast yfir landsmeðaltali í vísindum og stærðfræði, en munurinn minnkar þegar tekið er tillit til bakgrunns nemenda.",
-    "date": "2026-10-08T11:17:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/1791459065_1738827733_1598343924_brekkuskoli.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Hugbúnaður til heilsu",
     "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/hugbunadur-til-heilsu-1",
     "summary": "Alþjóðlegt samstarf í hjúkrunarfræði heldur áfram í Lissabon",
@@ -4031,18 +4043,6 @@
     "cats": [
       "Fréttir",
       "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Fundur í bæjarstjórn 15. september 2026",
-    "link": "https://www.akureyri.is/fundur-i-baejarstjorn-15-september-2026",
-    "summary": "Bæjarstjórn Akureyrar kemur saman til fundar þriðjudaginn 15. september næstkomandi klukkan 16:00.",
-    "date": "2026-09-11T14:22:20+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/fyrir-utan-radhus-2000x1333.jpg",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
-    "cats": [
-      "Bærinn"
     ]
   },
   {
