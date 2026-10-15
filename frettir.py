@@ -1437,7 +1437,7 @@ def read_hsi(today):
             statuses.add(g.get("Status", ""))
             for nm_, tid_ in ((home, g.get("HomeTeamid")), (away, g.get("AwayTeamId"))):
                 if nm_ and tid_:
-                    add_logo(nm_, "https://www.hsi.is/logo/team/%s/original_small" % tid_)
+                    add_logo(nm_, "https://www.hsi.is/logo/team/%s" % tid_)
             if home not in SPORT_TEAMS and away not in SPORT_TEAMS:
                 continue
             dt = g.get("GameDayTime") or ""
@@ -1692,7 +1692,17 @@ def ksi_date(day, month, today):
     return best
 
 
+def ksi_logos(page):
+    for im in re.finditer(r"<img\b[^>]*>", page):
+        tag = im.group(0)
+        a_ = re.search(r'alt="([^"]+)"', tag)
+        s_ = re.search(r'src="(https://comet\.ksi\.is/file\?id=[^"]+)"', tag)
+        if a_ and s_:
+            add_logo(html.unescape(a_.group(1)).strip(), html.unescape(s_.group(1)))
+
+
 def ksi_parse(page, today, cid):
+    ksi_logos(page)
     marks = [m for m in re.finditer(r"<span[^>]*>\s*((?:Mán|Þri|Mið|Fim|Fös|Lau|Sun)\s+\d{1,2}\.\s+[^<\s]+\s+\d{2}:\d{2})\s*</span>", page)]
     out = []
     for i, mk in enumerate(marks):
@@ -1710,12 +1720,6 @@ def ksi_parse(page, today, cid):
             continue
         sc = KSI_SCORE.match(toks[j])
         d = ksi_date(int(dm.group(1)), mon, today)
-        for im in re.finditer(r"<img\b[^>]*>", chunk):
-            tag = im.group(0)
-            a_ = re.search(r'alt="([^"]+)"', tag)
-            s_ = re.search(r'src="(https://comet\.ksi\.is/file\?id=[^"]+)"', tag)
-            if a_ and s_:
-                add_logo(html.unescape(a_.group(1)), s_.group(1))
         gid = re.search(r"leikur\?id=(\d+)", chunk)
         out.append({"date": d.isoformat(), "time": "" if dm.group(3) + dm.group(4) == "0000" else "%s:%s" % (dm.group(3), dm.group(4)),
                     "venue": toks[1] if j - 2 > 1 else "", "comp": toks[j - 2], "home": toks[j - 1], "away": toks[j + 1],
@@ -2077,6 +2081,7 @@ def stand_kki(today):
 
 
 def ksi_table(page):
+    ksi_logos(page)
     for tb in re.findall(r"(?is)<table\b.*?</table>", page):
         ths = [re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", x))).strip().lower() for x in re.findall(r"(?is)<th\b.*?</th>", tb)]
         if not ths or ths[0] != "lið" or len(ths) < 8:
