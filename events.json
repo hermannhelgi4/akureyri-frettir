@@ -149,6 +149,7 @@
     "teams": [
       "Þór Ak."
     ],
+    "res": "88–104",
     "kind": "Íþróttir"
   },
   {
@@ -902,22 +903,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "KA – HK",
-    "source": "Íþróttir",
-    "sport": "Blak",
-    "gender": "Konur",
-    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
-    "start": "2026-11-07",
-    "end": "2026-11-07",
-    "time": "15:30",
-    "image": null,
-    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
-    "teams": [
-      "KA"
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Selfoss – KA/Þór",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -930,6 +915,22 @@
     "note": "Útileikur · Olís deild kvenna · Set höllin",
     "teams": [
       "KA/Þór"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – HK",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2026-11-07",
+    "end": "2026-11-07",
+    "time": "15:30",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "teams": [
+      "KA"
     ],
     "kind": "Íþróttir"
   },

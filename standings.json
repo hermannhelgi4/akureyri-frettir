@@ -8,12 +8,12 @@
    {
     "n": 1,
     "t": "Haukar",
-    "p": 5,
-    "w": 5,
+    "p": 6,
+    "w": 6,
     "d": 0,
     "l": 0,
-    "g": "180-153",
-    "pts": 10,
+    "g": "211-175",
+    "pts": 12,
     "me": false
    },
    {
@@ -129,11 +129,11 @@
    {
     "n": 12,
     "t": "Selfoss",
-    "p": 5,
+    "p": 6,
     "w": 0,
     "d": 1,
-    "l": 4,
-    "g": "156-176",
+    "l": 5,
+    "g": "178-207",
     "pts": 1,
     "me": false
    }
@@ -142,7 +142,7 @@
  {
   "sport": "Handbolti",
   "gender": "Konur",
-  "comp": "Handbolti",
+  "comp": "Olís deild kvenna",
   "link": "https://www.hsi.is/tournament/9141",
   "rows": [
    {
