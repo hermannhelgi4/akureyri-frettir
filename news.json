@@ -1,5 +1,41 @@
 [
   {
+    "title": "Menningarsúpan 26. október",
+    "link": "https://www.listak.is/is/moya/news/menningarsupan-26-oktober",
+    "summary": "Súpa tvö, þar sem við tökum upp þráðinn með óformlegan mánaðarlegan hitting fyrir fólk sem hefur áhuga á menningu og menningarlífi á Akureyri og í nágrenni.",
+    "date": "2026-10-16T09:57:00+00:00",
+    "image": "https://www.listak.is/static/news/thumb_845881247_2132676030952492_5696109457064978134_n.png.jpeg",
+    "source": "Listasafnið á Akureyri",
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Akureyrarbær hlýtur viðurkenningu Jafnvægisvogarinnar 2026",
+    "link": "https://www.akureyri.is/akureyrarbaer-hlytur-vidurkenningu-jafnvaegisvogarinnar-2026",
+    "summary": "Akureyrarbær hefur hlotið viðurkenningu Jafnvægisvogarinnar 2026 fyrir að hafa náð markmiði um kynjajafnvægi í efsta stjórnendalagi.",
+    "date": "2026-10-16T09:30:00+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/jafnvaegisvogin-700x360.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Kristinn Eiríkur Bóasson - Minning",
+    "link": "https://www.sasport.is/krulla/moya/news/kristinn-eirikur-boasson-minning",
+    "summary": "Í dag minnumst við og kveðjum góðan félaga okkar, Kristin Eirík Bóasson, eða Eika Bó eins og við þekktum hann best.",
+    "date": "2026-10-16T09:16:00+00:00",
+    "image": null,
+    "source": "Skautafélag Akureyrar",
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
+  },
+  {
     "title": "Viðburðir á aðventu og í aðdraganda jóla – sendið okkur upplýsingar",
     "link": "https://www.fjallabyggd.is/is/frettir/vidburdir-a-adventu-og-i-addraganda-jola-sendid-okkur-upplysingar",
     "summary": "Aðventan og jólin eru notalegur tími í Fjallabyggð og á hverju ári er fjölbreytt dagskrá í boði víðs vegar um sveitarfélagið. Undanfarin ár hefur Fjallabyggð tekið saman og gefið út viðburðadagatal fyrir aðventuna og jólin þar sem íbúar og gestir get...",
@@ -4073,18 +4109,6 @@
     "category": "Nærsveitir",
     "cats": [
       "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Spennandi stjórnunarstarf hjá Akureyrarbæ",
-    "link": "https://www.akureyri.is/spennandi-stjornunarstarf-hja-akureyrarbae",
-    "summary": "Akureyrarbær leitar að öflugum og framsýnum leiðtoga í starf sviðsstjóra umhverfis- og mannvirkjasviðs.",
-    "date": "2026-09-15T14:26:07+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/1713362025_1620315912_akureyri-sumar-3-900x600.jpg",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
-    "cats": [
-      "Bærinn"
     ]
   },
   {
