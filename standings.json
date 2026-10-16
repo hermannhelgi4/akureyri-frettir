@@ -2,7 +2,7 @@
  {
   "sport": "Handbolti",
   "gender": "Karlar",
-  "comp": "Handbolti",
+  "comp": "Olís deild karla",
   "link": "https://www.hsi.is/tournament/9142",
   "rows": [
    {
@@ -136,124 +136,6 @@
     "g": "178-207",
     "pts": 1,
     "me": false
-   }
-  ]
- },
- {
-  "sport": "Handbolti",
-  "gender": "Konur",
-  "comp": "Olís deild kvenna",
-  "link": "https://www.hsi.is/tournament/9141",
-  "rows": [
-   {
-    "n": 1,
-    "t": "Haukar",
-    "p": 5,
-    "w": 5,
-    "d": 0,
-    "l": 0,
-    "g": "156-124",
-    "pts": 10,
-    "me": false
-   },
-   {
-    "n": 2,
-    "t": "ÍBV",
-    "p": 5,
-    "w": 4,
-    "d": 0,
-    "l": 1,
-    "g": "154-143",
-    "pts": 8,
-    "me": false
-   },
-   {
-    "n": 3,
-    "t": "Fram",
-    "p": 5,
-    "w": 4,
-    "d": 0,
-    "l": 1,
-    "g": "137-122",
-    "pts": 8,
-    "me": false
-   },
-   {
-    "n": 4,
-    "t": "ÍR",
-    "p": 5,
-    "w": 4,
-    "d": 0,
-    "l": 1,
-    "g": "123-114",
-    "pts": 8,
-    "me": false
-   },
-   {
-    "n": 5,
-    "t": "Valur",
-    "p": 5,
-    "w": 3,
-    "d": 0,
-    "l": 2,
-    "g": "141-132",
-    "pts": 6,
-    "me": false
-   },
-   {
-    "n": 6,
-    "t": "Grótta",
-    "p": 5,
-    "w": 2,
-    "d": 0,
-    "l": 3,
-    "g": "137-143",
-    "pts": 4,
-    "me": false
-   },
-   {
-    "n": 7,
-    "t": "HK",
-    "p": 5,
-    "w": 1,
-    "d": 0,
-    "l": 4,
-    "g": "106-123",
-    "pts": 2,
-    "me": false
-   },
-   {
-    "n": 8,
-    "t": "Selfoss",
-    "p": 5,
-    "w": 1,
-    "d": 0,
-    "l": 4,
-    "g": "127-139",
-    "pts": 2,
-    "me": false
-   },
-   {
-    "n": 9,
-    "t": "Stjarnan",
-    "p": 5,
-    "w": 1,
-    "d": 0,
-    "l": 4,
-    "g": "128-138",
-    "pts": 2,
-    "me": false
-   },
-   {
-    "n": 10,
-    "t": "KA/Þór",
-    "p": 5,
-    "w": 0,
-    "d": 0,
-    "l": 5,
-    "g": "122-153",
-    "pts": 0,
-    "me": true
    }
   ]
  },
