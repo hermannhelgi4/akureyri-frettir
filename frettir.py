@@ -2110,15 +2110,18 @@ def kki_table(raw):
     s = kki_unesc(raw)
     rows = []
     for tr in re.split(r"<tr class=\"row\d\"", s)[1:]:
-        m = re.search(r"team_name[^\"]*\">\s*([^<]*?)\s*</td>", tr)
+        tc = re.search(r"team_name[^\"]*\">(.*?)</td>", tr, re.S)  # reiturinn getur innihaldið <img> á undan nafninu
+        name = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", tc.group(1))).strip() if tc else ""
+        m = re.search(r"(.+)", name) if name else None
         w = re.search(r"(\d+)<span></span>/<span></span>(\d+)</td>\s*<td>(\d+)</td>", tr)
         if not m or not w:
             continue
         im = re.search(r'<img[^>]*src="(https?://[^"]+)"', tr)
+        nm_ = html.unescape(m.group(1)).strip()
         if im:
-            add_logo(html.unescape(m.group(1)).strip(), im.group(1))
+            add_logo(nm_, html.unescape(im.group(1)))
         won, lost = int(w.group(1)), int(w.group(2))
-        rows.append(srow(len(rows) + 1, html.unescape(m.group(1)).strip(), won + lost, won, 0, lost, "", w.group(3)))
+        rows.append(srow(len(rows) + 1, nm_, won + lost, won, 0, lost, "", w.group(3)))
     return rows
 
 
@@ -2200,10 +2203,23 @@ def collect_standings(today):
         except Exception as e:
             print("X  Töflur %s: tókst ekki (%s)" % (name, e))
             got = []
+        stamp = today.isoformat()
+        for g in got:
+            g["ts"] = stamp
         if not got:
             got = [g for g in old if g.get("sport") == name]
-            print("   Töflur %s: engar nýjar, held í fyrri (%d)" % (name, len(got)))
+            print("VIÐVÖRUN Töflur %s: engar nýjar, held í fyrri (%d)" % (name, len(got)))
         else:
+            have = {(g["gender"], g["comp"]) for g in got}
+            keep = []
+            for g in old:
+                if g.get("sport") != name or (g["gender"], g["comp"]) in have:
+                    continue
+                g.setdefault("ts", stamp)  # fyrri tafla sem vantar núna: haldið í allt að 14 daga
+                if (today - date.fromisoformat(g["ts"])).days <= 14:
+                    keep.append(g)
+                    print("VIÐVÖRUN Tafla vantar núna og fyrri er haldið: %s %s %s" % (name, g["gender"], g["comp"]))
+            got += keep
             print("OK Töflur %s: %d" % (name, len(got)))
         res += got
     try:
