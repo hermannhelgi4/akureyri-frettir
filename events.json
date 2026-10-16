@@ -1,22 +1,5 @@
 [
   {
-    "title": "Víkingur – KA",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/113406",
-    "start": "2026-10-09",
-    "end": "2026-10-09",
-    "time": "19:00",
-    "image": null,
-    "note": "Útileikur · Powerade bikar karla 2027 · Virkið",
-    "teams": [
-      "KA"
-    ],
-    "res": "35–28",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Hamar – Þór Ak.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -207,22 +190,6 @@
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/vneLkA40FV2AOQxM6DXTCY5qtqyBXh-metaYmVaZFpKQUEuanBn-.webp",
     "note": "Uppselt · Frá 7.900 kr.",
     "kind": "Tónlist"
-  },
-  {
-    "title": "ÍBV 2 – Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/113418",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "12:00",
-    "image": null,
-    "note": "Útileikur · Powerade bikar karla 2027 · Íþróttamiðstöð Vestmannaeyja - Gamli salur",
-    "teams": [
-      "Þór"
-    ],
-    "kind": "Íþróttir"
   },
   {
     "title": "Valur – KA",
@@ -1176,22 +1143,6 @@
     "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
     "teams": [
       "Þór Ak."
-    ],
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Fjölnir – KA/Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/match/113399",
-    "start": "2026-11-18",
-    "end": "2026-11-18",
-    "time": "",
-    "image": null,
-    "note": "Útileikur · Powerade bikar kvenna 2027 · Fjölnishöll",
-    "teams": [
-      "KA/Þór"
     ],
     "kind": "Íþróttir"
   },
