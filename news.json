@@ -1,18 +1,5 @@
 [
   {
-    "title": "Myndband: Pollamót Þórs og Skógarbaðanna sló öll met",
-    "link": "https://kaffid.is/myndband-pollamot-thors-og-skogarbadanna-slo-oll-met/",
-    "summary": "Pollamót Þórs og Skógarbaðanna fór fram með glæsibrag 2. og 3. október sl. í Íþróttahöllinni á Akureyri. Aldrei hafa fleiri […]",
-    "date": "2026-10-16T18:56:52+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2016/09/cropped-favicon-3.png",
-    "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
     "title": "Slökkviliðsstjóri vill vindmæli í miðbæ Siglufjarðar",
     "link": "https://trolli.is/slokkvilidsstjori-vill-vindmaeli-i-midbae-siglufjardar/",
     "summary": "Jóhann K. Jóhannsson, slökkviliðsstjóri Fjallabyggðar, telur tímabært að komið verði upp vindmæli í miðbæ Siglufjarðar eftir óveðrið sem gekk yfir bæinn á miðvikudag. Eins og greint er frá á visir.is mældist sterkasta vindhviðan í óveðrinu á miðvikudag um 56 metrar á sekúndu. Mælingin kom frá varðsk",
@@ -125,6 +112,19 @@
     "cats": [
       "Fréttir",
       "Nærsveitir"
+    ]
+  },
+  {
+    "title": "Myndband: Pollamót Þórs og Skógarbaðanna sló öll met",
+    "link": "https://kaffid.is/myndband-pollamot-thors-og-skogarbadanna-slo-oll-met/",
+    "summary": "Pollamót Þórs og Skógarbaðanna fór fram með glæsibrag 2. og 3. október sl. í Íþróttahöllinni á Akureyri. Aldrei hafa fleiri […]",
+    "date": "2026-10-16T16:56:00+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2016/09/cropped-favicon-3.png",
+    "source": "Kaffið",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
     ]
   },
   {
