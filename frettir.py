@@ -459,20 +459,21 @@ dd.appendChild(mkdd("sport","Íþrótt","Allt",sp,spSport,v=>{spSport=v}));dd.ap
 if(spSport||spGen){const c=el("button","ddc","Hreinsa");c.onclick=()=>{spSport="";spGen="";spOpen="";renderSp()};dd.appendChild(c)}
 const cmp=(a,b)=>a.start<b.start?-1:a.start>b.start?1:((a.time||"")<(b.time||"")?-1:1);
 const spRes=(spMode==="res");box.innerHTML="";if(spMode==="tab"){renderTab(box);return}
-const L=all.filter(e=>(!spSport||e.sport===spSport)&&(!spGen||e.gender===spGen)&&(!spTeam||(e.teams||[]).map(TN).indexOf(spTeam)>=0)&&(spRes?!!e.res:!(e.res&&pd(e.start)<t))).sort(spRes?(a,b)=>cmp(b,a):cmp);
+const L=all.filter(e=>(!spSport||e.sport===spSport)&&(!spGen||e.gender===spGen)&&(!spTeam||(e.teams||[]).map(TN).indexOf(spTeam)>=0)&&(spRes?!!e.res:!e.res)).sort(spRes?(a,b)=>cmp(b,a):cmp);
 if(!L.length){box.appendChild(el("div","sub",spRes?"Engin úrslit síðustu daga.":(spTeam?"Engir leikir framundan hjá "+spTeam+" í bili – sjáðu Töflu eða Úrslit.":"Engir leikir fundust.")));return}
 const SPI={"Fótbolti":"⚽","Handbolti":"🤾","Körfubolti":"🏀","Blak":"🏐","Íshokkí":"🏒"};
 function spLab(e){const d=el("div","lb");d.appendChild(el("span","sp",(SPI[e.sport]||"🏅")+" "+e.sport));if(e.gender)d.appendChild(el("span","gd"+(e.gender==="Konur"?" k":""),e.gender));return d}
 function crest(n,cls){const w=(n||"").replace(/[^A-Za-zÀ-ÿÞþÐðÆæÖö ]/g,"").trim().split(" ").filter(Boolean);const c=(w.length>1?w.map(x=>x[0]).join("").slice(0,3):(w[0]||"?").slice(0,3)).toUpperCase();const d=el("div","cr"+(cls?" "+cls:""),c);const u=logoUrl(n);if(u){const im=document.createElement("img");im.src=u;im.alt="";im.referrerPolicy="no-referrer";im.onload=function(){d.textContent="";d.classList.add("lg");d.appendChild(im)};}return d}
 function spInfo(e){const p=(e.note||"").split(" · "),home=p[0]==="Heimaleikur",away=p[0]==="Útileikur";const tm=e.title.split(" – ");return{home:home,away:away,t1:tm[0]||e.title,t2:tm[1]||"",rest:p.filter(x=>x!=="Heimaleikur"&&x!=="Útileikur")}}
-let first=!spRes,needH=false;
+const firstDay=L[0].start;let lastDay="";
 L.forEach(e=>{const s=pd(e.start),I=spInfo(e),diff=Math.round((s-t)/864e5);
+if(!spRes&&e.start!==lastDay){lastDay=e.start;box.appendChild(el("h3","evh",(diff===0?"Í dag · ":diff===1?"Á morgun · ":"")+DAYS[s.getDay()]+". "+fd(s)+(s.getFullYear()!==t.getFullYear()?" "+s.getFullYear():"")))}
 if(spRes){const sc=(e.res||"").split("–"),a1=parseInt(sc[0]),a2=parseInt(sc[1]);const c=el("a","mc");c.href=e.link;c.target="_blank";c.rel="noopener";
 const h=el("div","h2");h.appendChild(spLab(e));let bd="",bc="";if((I.home||I.away)&&!isNaN(a1)&&!isNaN(a2)){const m=I.home?a1:a2,o=I.home?a2:a1;bd=m>o?"Sigur":m<o?"Tap":"Jafntefli";bc=m>o?"":m<o?" l":" t"}if(bd)h.appendChild(el("span","badge"+bc,bd));c.appendChild(h);
 c.appendChild(el("div","meta",DAYS[s.getDay()]+". "+fd(s)+(I.rest.length?" · "+I.rest.join(" · "):"")));
 [[I.t1,a1,a1<a2,I.home],[I.t2,a2,a2<a1,I.away]].forEach(x=>{const r=el("div","tm"+(x[2]?" lose":""));r.appendChild(crest(x[0],x[3]?"":"o"));r.appendChild(el("div","n",x[0]));r.appendChild(el("div","s",isNaN(x[1])?"":String(x[1])));c.appendChild(r)});
 box.appendChild(c);return}
-if(!spRes&&I.t2&&!e.res&&(first||diff===0)){first=false;needH=true;const c=el("a","next");c.href=e.link;c.target="_blank";c.rel="noopener";const hb=HBL[nk(I.t1)+"|"+nk(I.t2)];c.appendChild(el("div","lab",diff===0?"Leikur dagsins":"Næsti leikur"));c.appendChild(spLab(e));
+if(!spRes&&I.t2&&e.start===firstDay){const c=el("a","next");c.href=e.link;c.target="_blank";c.rel="noopener";const hb=HBL[nk(I.t1)+"|"+nk(I.t2)];c.appendChild(el("div","lab",diff===0?"Leikur dagsins":"Næsti leikur"));c.appendChild(spLab(e));
 const v=el("div","vs"),L1=el("div",""),R1=el("div","");L1.appendChild(crest(I.t1,I.away?"o":""));L1.appendChild(el("div","n",I.t1));R1.appendChild(crest(I.t2,I.home?"o":""));R1.appendChild(el("div","n",I.t2));
 const m=el("div","m",(diff===0?"Í dag":diff===1?"Á morgun":DAYS[s.getDay()]+". "+fd(s)));m.appendChild(el("b","",hb&&hb.st!=="upcoming"?hb.h+" – "+hb.a:(e.time||"–")));if(I.rest[0])m.appendChild(document.createTextNode(I.rest[0]));v.append(L1,m,R1);c.appendChild(v);
 const tp=(e.time||"").split(":"),ts=new Date(s.getFullYear(),s.getMonth(),s.getDate(),+tp[0]||0,+tp[1]||0),ms=ts-new Date();
@@ -480,7 +481,7 @@ if(API&&e.sport==="Handbolti"&&ms<=9e5&&ms>-108e5)hbPoll();const hl=hb&&(hb.st==
 if(ms>0){const cd=el("div","cd"),dd=Math.floor(ms/864e5),hh=Math.floor(ms%864e5/36e5),mm=Math.floor(ms%36e5/6e4);[[dd,"dagar"],[hh,"klst."],[mm,"mín."]].forEach(x=>{const d=el("div","");d.appendChild(el("b","",String(x[0])));d.appendChild(document.createTextNode(x[1]));cd.appendChild(d)});c.appendChild(cd)}
 box.appendChild(c);return}
 const c=el("a","row2");c.href=e.link;c.target="_blank";c.rel="noopener";const r1=el("div","r1");r1.appendChild(spLab(e));if(I.home||I.away)r1.appendChild(el("span","hu"+(I.home?" h":""),I.home?"Heima":"Úti"));c.appendChild(r1);
-const r2=el("div","r2"),d=el("div","d",diff===0?"Í DAG":diff===1?"MORGUN":DAYS[s.getDay()].toUpperCase());d.appendChild(el("b","",String(s.getDate())));const w=el("div","");const tt=el("div","t");if(I.t1&&I.t2){const a1=lg(I.t1),a2=lg(I.t2);if(a1)tt.appendChild(a1);tt.appendChild(document.createTextNode(I.t1+" – "));if(a2)tt.appendChild(a2);tt.appendChild(document.createTextNode(I.t2))}else tt.textContent=e.title;w.appendChild(tt);w.appendChild(el("div","meta",[e.time,...I.rest].filter(Boolean).join(" · ")));r2.append(d,w);c.appendChild(r2);if(needH){needH=false;box.appendChild(el("div","nsec","Svo koma"))}box.appendChild(c)})}
+const r2=el("div","r2"),d=el("div","d");r2.style.gridTemplateColumns="56px 1fr";d.appendChild(el("b","",e.time||"–"));const w=el("div","");const tt=el("div","t");if(I.t1&&I.t2){const a1=lg(I.t1),a2=lg(I.t2);if(a1)tt.appendChild(a1);tt.appendChild(document.createTextNode(I.t1+" – "));if(a2)tt.appendChild(a2);tt.appendChild(document.createTextNode(I.t2))}else tt.textContent=e.title;w.appendChild(tt);w.appendChild(el("div","meta",I.rest.filter(Boolean).join(" · ")));r2.append(d,w);c.appendChild(r2);box.appendChild(c)})}
 (function(){const p=document.createElement("div");p.id="ptr";const sp=document.createElement("span");p.appendChild(sp);document.body.appendChild(p);let y0=null,dy=0,busy=false;
 function reset(){p.style.transition="transform .2s";p.style.transform="translateY(-60px)"}
 document.addEventListener("touchstart",function(e){if(busy||window.scrollY>0||e.touches.length!==1){y0=null;return}y0=e.touches[0].clientY;dy=0;p.style.transition="none"},{passive:true});
@@ -2234,9 +2235,12 @@ def collect_standings(today):
             print("VIÐVÖRUN Töflur %s: engar nýjar, held í fyrri (%d)" % (name, len(got)))
         else:
             have = {(g["gender"], g["comp"]) for g in got}
+            # sama mót undir öðru heiti (t.d. „Handbolti“ í stað „Olís deild karla“) telst vera sama taflan
+            have_gl = {(g["gender"], g["link"]) for g in got
+                       if sum(1 for x in got if x["gender"] == g["gender"] and x["link"] == g["link"]) == 1}
             keep = []
             for g in old:
-                if g.get("sport") != name or (g["gender"], g["comp"]) in have:
+                if g.get("sport") != name or (g["gender"], g["comp"]) in have or (g["gender"], g.get("link")) in have_gl:
                     continue
                 g.setdefault("ts", stamp)  # fyrri tafla sem vantar núna: haldið í allt að 14 daga
                 if (today - date.fromisoformat(g["ts"])).days <= 14:
