@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Sækir fréttir úr RSS-veitum, síar landsmiðla eftir Akureyri og býr til news.json."""
-import json, re, html, time, urllib.parse, urllib.request, urllib.robotparser, urllib.error
+import json, re, html, time, urllib.parse, urllib.request, urllib.response, urllib.robotparser, urllib.error
 from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
@@ -79,7 +79,26 @@ class Redirect308(urllib.request.HTTPRedirectHandler):
         return self.http_error_302(req, fp, 302, msg, headers)
 
 
-OPENER = urllib.request.build_opener(Redirect308)
+class GunzipHandler(urllib.request.BaseHandler):
+    """Sumir vefir (t.d. hsi.is) senda stundum gzip-þjappað svar þótt ekki sé beðið um það. Pakka því upp hér."""
+    handler_order = 900
+
+    def _unpack(self, req, resp):
+        import gzip, io
+        data = resp.read()
+        if data[:2] == b"\x1f\x8b":
+            try:
+                data = gzip.decompress(data)
+            except Exception:
+                pass
+        out = urllib.response.addinfourl(io.BytesIO(data), resp.headers, resp.geturl(), resp.code)
+        out.msg = getattr(resp, "msg", "")
+        return out
+
+    http_response = https_response = _unpack
+
+
+OPENER = urllib.request.build_opener(Redirect308, GunzipHandler)
 UA = {"User-Agent": "Mozilla/5.0 (Akureyri-frettir prototype)"}
 NS = {
     "content": "http://purl.org/rss/1.0/modules/content/",
