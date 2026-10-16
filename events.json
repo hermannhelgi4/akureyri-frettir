@@ -192,6 +192,22 @@
     "kind": "Tónlist"
   },
   {
+    "title": "Valur – KA",
+    "source": "Íþróttir",
+    "sport": "Fótbolti",
+    "gender": "Karlar",
+    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100293",
+    "start": "2026-10-17",
+    "end": "2026-10-17",
+    "time": "13:00",
+    "image": null,
+    "note": "Útileikur · Besta deild karla - Neðri hluti · N1-völlurinn Hlíðarenda",
+    "teams": [
+      "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "KA – HK Ýmir",
     "source": "Íþróttir",
     "sport": "Blak",
@@ -202,22 +218,6 @@
     "time": "13:30",
     "image": null,
     "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
-    "teams": [
-      "KA"
-    ],
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Valur – KA",
-    "source": "Íþróttir",
-    "sport": "Fótbolti",
-    "gender": "Karlar",
-    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100293",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "14:00",
-    "image": null,
-    "note": "Útileikur · Besta deild karla - Neðri hluti · N1-völlurinn Hlíðarenda",
     "teams": [
       "KA"
     ],
@@ -1143,22 +1143,6 @@
     "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
     "teams": [
       "Þór Ak."
-    ],
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Fjölnir – KA/Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/match/113399",
-    "start": "2026-11-18",
-    "end": "2026-11-18",
-    "time": "",
-    "image": null,
-    "note": "Útileikur · Powerade bikar kvenna 2027 · Fjölnishöll",
-    "teams": [
-      "KA/Þór"
     ],
     "kind": "Íþróttir"
   },
