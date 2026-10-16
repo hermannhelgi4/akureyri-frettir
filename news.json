@@ -1,5 +1,17 @@
 [
   {
+    "title": "Víðavangshlaup Íslands í Kjarnaskógi",
+    "link": "https://www.akureyri.is/vidavangshlaup-islands-i-kjarnaskogi",
+    "summary": "Á morgun, laugardaginn 17. október, verður Víðavangshlaup Íslands hlaupið í Kjarnaskógi.",
+    "date": "2026-10-16T12:00:00+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/utanvegahlaup-i-kjarnaskogi-2000x1333.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Georg Páll Skúlason nýr forseti ASÍ",
     "link": "https://www.ein.is/is/um-einingu-idju/utgefid-efni/frettir/georg-pall-skulason-nyr-forseti-asi",
     "summary": "Georg Páll Skúlasonvar var fyrr í morgun kjörinn nýr forseti Alþýðusambands Íslands á 47. þingi sambandsins. Georg hlaut 56,2% atkvæða en mótframbjóðandi hans, Arnaldur Grétarsson, 43,8%.",
@@ -4096,18 +4108,6 @@
     "image": "https://www.samherji.is/static/news/sm/laugar-bjartari-minnkud.jpg",
     "source": "Samherji",
     "category": "Fyrirtæki & félög",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Sameiginleg loftslagsstefna sveitarfélaga á Norðurlandi eystra",
-    "link": "https://www.akureyri.is/sameiginleg-loftslagsstefna-sveitarfelaga-a-nordurlandi-eystra",
-    "summary": "Stefnan var unnin í samstarfi allra sveitarfélaga innan SSNE og hefur verið samþykkt af sveitarstjórnum þeirra, stjórn SSNE og ársþingi SSNE.",
-    "date": "2026-09-17T09:31:07+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/loftslagsstefna-godafoss-1800x1044.png",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
     "cats": [
       "Bærinn"
     ]
