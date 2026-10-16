@@ -169,7 +169,7 @@ def parse_feed(root):
 
 
 # Fréttir um Eyjafjöll (Suðurland) eiga ekki heima hér, þó fyrirsögn segi stundum „Eyjafirði“ fyrir mistök.
-NOT_AK = re.compile(r"eyjafj(?:öll|alla|allajök|ölln)|undir eyjafjöllum|mið-mörk|mið-mörkin|vestur-eyjafj|austur-eyjafj", re.I)
+NOT_AK = re.compile(r"eyjafj(?:öll|alla|allajök|ölln)|undir eyjafjöllum|mið-mörk|mið-mörkin|vestur-eyjafj|austur-eyjafj|ragnar(?:s|i)? þór", re.I)
 
 
 def not_akureyri(item):
@@ -453,7 +453,7 @@ if(first&&I.t2){first=false;const c=el("a","next");c.href=e.link;c.target="_blan
 const v=el("div","vs"),L1=el("div",""),R1=el("div","");L1.appendChild(crest(I.t1,I.away?"o":""));L1.appendChild(el("div","n",I.t1));R1.appendChild(crest(I.t2,I.home?"o":""));R1.appendChild(el("div","n",I.t2));
 const m=el("div","m",(diff===0?"Í dag":diff===1?"Á morgun":DAYS[s.getDay()]+". "+fd(s)));m.appendChild(el("b","",e.time||"–"));if(I.rest[0])m.appendChild(document.createTextNode(I.rest[0]));v.append(L1,m,R1);c.appendChild(v);
 const tp=(e.time||"").split(":"),ts=new Date(s.getFullYear(),s.getMonth(),s.getDate(),+tp[0]||0,+tp[1]||0),ms=ts-new Date();
-if(ms<=0&&ms>-108e5&&!e.res&&e.time){const lv=el("div","live");lv.appendChild(el("span","dot"));lv.appendChild(document.createTextNode("Leikur í gangi – sjá beina tölfræði ›"));c.appendChild(lv)}
+if(ms<=0&&ms>-108e5&&!e.res&&e.time){const lv=el("div","live");lv.appendChild(el("span","dot"));lv.appendChild(document.createTextNode("Leikur í gangi – sjá beina tölfræði ›"));c.appendChild(lv);if(e.live)c.href=e.live}
 if(ms>0){const cd=el("div","cd"),dd=Math.floor(ms/864e5),hh=Math.floor(ms%864e5/36e5),mm=Math.floor(ms%36e5/6e4);[[dd,"dagar"],[hh,"klst."],[mm,"mín."]].forEach(x=>{const d=el("div","");d.appendChild(el("b","",String(x[0])));d.appendChild(document.createTextNode(x[1]));cd.appendChild(d)});c.appendChild(cd)}
 box.appendChild(c);box.appendChild(el("div","nsec","Svo koma"));return}
 const c=el("a","row2");c.href=e.link;c.target="_blank";c.rel="noopener";const r1=el("div","r1");r1.appendChild(spLab(e));if(I.home||I.away)r1.appendChild(el("span","hu"+(I.home?" h":""),I.home?"Heima":"Úti"));c.appendChild(r1);
@@ -1474,6 +1474,7 @@ def read_hsi(today):
                         "date": dt[:10], "time": tm, "home": home, "away": away,
                         "rh": (g.get("ResultHomeTeam") or "").strip(), "ra": (g.get("ResultAwayTeam") or "").strip(),
                         "venue": (g.get("StadiumName") or "").strip(),
+                        "hid": g.get("HomeTeamid"), "aid": g.get("AwayTeamId"),
                         "link": ("https://www.hsi.is/match/%s" % g["GameId"]) if g.get("GameId") else "https://www.hsi.is/tournament/%d" % tid})
         nm = data[0].get("TournamentName") if data else "?"
         print("   HSÍ %s: %d leikir alls, %d hjá Akureyrarliðum, stöður %s" % (nm, len(data), n, sorted(statuses)))
@@ -1799,7 +1800,29 @@ def read_ksi(today):
 SPORT_SOURCES = [("Handbolti", read_hsi), ("Íshokkí", read_ihi), ("Blak", read_bli), ("Körfubolti", read_kki), ("Fótbolti", read_ksi)]
 
 
+def hbstatz_live():
+    """Handbolti: hbstatz.is birtir leiki dagsins (í gangi og framundan) með slóð á beina tölfræði.
+    Skilar (dagsetning, {(heimalið-HSÍ-nr, gestalið-HSÍ-nr): slóð})."""
+    try:
+        d = fetch_json("https://www.hbstatz.is/api/live.php")
+    except Exception as e:
+        print("X  hbstatz: tókst ekki (%s)" % e)
+        return "", {}
+    out = {}
+    for lst in ("live", "upcoming", "finished"):
+        for g in d.get(lst) or []:
+            try:
+                key = (int(g["home"]["hsi_id"]), int(g["away"]["hsi_id"]))
+            except (KeyError, TypeError, ValueError):
+                continue
+            if g.get("reportUrl"):
+                out[key] = "https://www.hbstatz.is/" + g["reportUrl"].lstrip("/")
+    print("   hbstatz: %d leikir dagsins (%s)" % (len(out), d.get("date")))
+    return d.get("date") or "", out
+
+
 def collect_sports(old, today):
+    hb_date, hb_urls = hbstatz_live()
     matches = []
     for name, reader in SPORT_SOURCES:
         try:
@@ -1858,6 +1881,12 @@ def collect_sports(old, today):
                  "gender": m["gender"], "link": m["link"], "start": m["date"], "end": m["date"],
                  "time": m["time"], "image": None, "note": " · ".join(tags),
                  "teams": [x for x in (m["home"], m["away"]) if x in SPORT_TEAMS]}
+            try:
+                hb = hb_urls.get((int(m.get("hid")), int(m.get("aid")))) if m["date"] == hb_date else None
+            except (TypeError, ValueError):
+                hb = None
+            if hb:
+                e["live"] = hb
             if played(m):
                 if m["date"] < cutoff:
                     continue
@@ -2298,6 +2327,8 @@ def team_mentions(text):
                 continue
             if _NAME_AFTER.match(text[m.end():m.end() + 20]):
                 continue
+        elif _NAME_BEFORE.search(text[max(0, m.start() - 25):m.start()]) and re.search(r"[a-záðéíóúýþæö]s $", text[max(0, m.start() - 25):m.start()]):
+            continue  # „Ragnars Þórs“: eignarfall mannsnafns, ekki félagið
         n += 1
     return n
 
