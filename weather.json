@@ -1,11 +1,11 @@
 {
- "upd": "17.10 08:17",
+ "upd": "17.10 08:56",
  "now": {
   "T": 8.4,
   "F": 2.0,
   "D": "S",
   "W": "Léttskýjað",
-  "night": true
+  "night": false
  },
  "days": [
   {
