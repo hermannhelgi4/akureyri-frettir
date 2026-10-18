@@ -1444,7 +1444,7 @@ def load_offers(today):
 # ---------- Íþróttaleikir ----------
 # Félögin á Akureyri sem við fylgjumst með (nöfn eins og sambandið skrifar þau)
 SPORT_TEAMS = {"KA", "Þór", "KA/Þór", "SA", "Þór Ak.", "Þór/KA"}
-SPORT_RESULT_DAYS = 7  # úrslit eru geymd svona marga daga (sjást í Úrslit-hnappnum; leikir dagsins sjást á aðallistanum)
+SPORT_RESULT_DAYS = 21  # úrslit eru geymd svona marga daga (sjást í Úrslit-hnappnum; leikir dagsins sjást á aðallistanum)
 
 # HSÍ (handbolti): (mót-númer, kyn). Nafn mótsins kemur úr gögnunum sjálfum.
 HSI_TOURNAMENTS = [(9142, "Karlar"), (9141, "Konur"), (9140, "Karlar"), (9143, "Konur"), (9295, "Karlar"), (9303, "Konur")]
@@ -1652,6 +1652,9 @@ def read_bli(today):
             time.sleep(0.3)
         mine = [r for r in rows if r["home"] in SPORT_TEAMS or r["away"] in SPORT_TEAMS]
         print("   Blak %s: fasar %s, %d leikir alls, %d hjá KA" % (comp, pids, len(rows), len(mine)))
+        for r in mine:  # greining: sýni KA-leiki fram að deginum í dag og hvaða úrslit fundust
+            if r["date"] <= today.isoformat():
+                print("   Blak-leikur %s %s %s – %s  sett: [%s]-[%s]" % (r["date"], r["time"], r["home"], r["away"], r["rh"], r["ra"]))
         out += mine
     return out
 
