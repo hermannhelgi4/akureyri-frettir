@@ -1,56 +1,5 @@
 [
   {
-    "title": "Stjarnan – KA",
-    "source": "Íþróttir",
-    "sport": "Fótbolti",
-    "gender": "Karlar",
-    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100289",
-    "start": "2026-10-10",
-    "end": "2026-10-10",
-    "time": "14:00",
-    "image": null,
-    "note": "Útileikur · Besta deild karla - Neðri hluti · Samsungvöllurinn",
-    "teams": [
-      "KA"
-    ],
-    "res": "0–3",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Þór – ÍBV",
-    "source": "Íþróttir",
-    "sport": "Fótbolti",
-    "gender": "Karlar",
-    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100291",
-    "start": "2026-10-10",
-    "end": "2026-10-10",
-    "time": "14:00",
-    "image": null,
-    "note": "Heimaleikur · Besta deild karla - Neðri hluti · VÍS völlurinn",
-    "teams": [
-      "Þór"
-    ],
-    "res": "1–0",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "SR – SA",
-    "source": "Íþróttir",
-    "sport": "Íshokkí",
-    "gender": "Konur",
-    "link": "https://stats.iihf.com/ihi/100/index.html",
-    "start": "2026-10-10",
-    "end": "2026-10-10",
-    "time": "17:45",
-    "image": null,
-    "note": "Útileikur · Toppdeild kvenna",
-    "teams": [
-      "SA"
-    ],
-    "res": "1–0",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Skallagrímur – Þór Ak.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -132,7 +81,6 @@
     "teams": [
       "Þór"
     ],
-    "live": "https://www.hbstatz.is/?game=6758",
     "res": "27–30",
     "kind": "Íþróttir"
   },
@@ -218,33 +166,8 @@
     "teams": [
       "KA/Þór"
     ],
-    "live": "https://www.hbstatz.is/?live=13017",
     "res": "32–28",
     "kind": "Íþróttir"
-  },
-  {
-    "title": "Fasteignamartröðin",
-    "source": "MAK / Hof",
-    "link": "https://www.mak.is/is/vidburdir/fasteignamartrodin",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1792189702",
-    "note": "7.900 kr.",
-    "cat0": "Leiksýningar",
-    "venue": "Samkomuhúsið",
-    "kind": "Leiklist"
-  },
-  {
-    "title": "Hjálmar",
-    "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/hjamar-17-oct-2026/eid/291",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/HxJs034Q6OlieOYv6F7V3r3Q6rm4Qy-metaaGrDoWxtYXIgMjUuanBn-.webp",
-    "note": "Frá 7.900 kr.",
-    "kind": "Tónlist"
   },
   {
     "title": "KA – HK Ýmir",
