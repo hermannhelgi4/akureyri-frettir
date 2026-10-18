@@ -612,6 +612,11 @@ def write_html(items, events=None, offers=None, stand=None, flights=None, weathe
         logos.update(_load("logos_manual.json", {}) or {})  # merki sem þú setur sjálf(ur) ganga fyrir
     except Exception:
         pass
+    try:  # sama merkjaskrá fyrir appið
+        with open("logos.json", "w", encoding="utf-8") as lf:
+            json.dump(logos, lf, ensure_ascii=False)
+    except Exception:
+        pass
     logodata = json.dumps(logos, ensure_ascii=False).replace("</", "<\\/")
     page = HTML.replace("__WEATHER__", wxdata).replace("__FLIGHTS__", fldata).replace("__LOGOS__", logodata).replace("__STAND__", stdata).replace("__OFFERS__", ofdata).replace("__EVENTS__", evdata).replace("__DATA__", data).replace("__API__", COUNTER_URL).replace("__TIME__", datetime.now().strftime("%d.%m.%Y %H:%M"))
     with open("index.html", "w", encoding="utf-8") as f:
