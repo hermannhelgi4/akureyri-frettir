@@ -1626,9 +1626,19 @@ def bli_parse(page, gender, comp, link):
             order.append(key)
         if val and name not in games[key]:
             games[key][name] = val
-    out = []
+    # spilaðir leikir geta komið í tveimur hlutum (heimalið og gestalið sitt í hvorum) með sömu dagsetningu og stað: sameina
+    merged, morder = {}, []
     for key in order:
         g = games[key]
+        mk = (g.get("LB_DataOra", ""), g.get("LB_Palasport", "")) if g.get("LB_DataOra") else (key,)
+        if mk not in merged:
+            merged[mk] = {}
+            morder.append(mk)
+        for k_, v_ in g.items():
+            merged[mk].setdefault(k_, v_)
+    out = []
+    for mk in morder:
+        g = merged[mk]
         d = BLI_DATE.search(g.get("LB_DataOra", ""))
         if not d:  # spilaður leikur getur haft dagsetninguna í öðrum reit
             for v_ in g.values():
