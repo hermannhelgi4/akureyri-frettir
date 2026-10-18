@@ -1601,6 +1601,18 @@ def bli_parse_old(page, gender, comp, link):
     return out
 
 
+def _bli_sets(g, it, en):
+    """Fjöldi hrinu sem lið vann: fyrst LB_SetCasa/Ospiti, annars reitur með 'Set'/'Result' og heimaliðs/gestaliðs-heiti."""
+    v = g.get("LB_Set" + it, "")
+    if v.strip().isdigit():
+        return v.strip()
+    for k, val in g.items():
+        kl = k.lower()
+        if val.strip().isdigit() and ("set" in kl or "result" in kl or "score" in kl) and (it.lower() in kl or en.lower() in kl):
+            return val.strip()
+    return v
+
+
 def bli_parse(page, gender, comp, link):
     """Hver leikur hefur sitt auðkenni (RADLIST_Matches_ctrlN) og tvö útlit: Label2/Label4 eða LBL_HomeTeamName/LBL_GuestTeamName.
     Ég les alla reiti eftir auðkenni leiksins svo enginn leikur týnist og dagsetning lendir alltaf á réttum leik."""
@@ -1618,16 +1630,23 @@ def bli_parse(page, gender, comp, link):
     for key in order:
         g = games[key]
         d = BLI_DATE.search(g.get("LB_DataOra", ""))
+        if not d:  # spilaður leikur getur haft dagsetninguna í öðrum reit
+            for v_ in g.values():
+                d = BLI_DATE.search(v_)
+                if d:
+                    break
         home = g.get("LBL_HomeTeamName") or g.get("Label2", "")
         away = g.get("LBL_GuestTeamName") or g.get("Label4", "")
         if not d or not home or not away:
+            if home or away:  # greining: leikur sem er sleppt
+                print("   Blak-sleppt %s – %s | reitir: %s" % (home, away, {k: v for k, v in g.items() if v}))
             continue
         hh, mm = int(d.group(4)), d.group(5)
         out.append({"sport": "Blak", "gender": gender, "comp": comp,
                     "date": "%s-%02d-%02d" % (d.group(3), int(d.group(2)), int(d.group(1))),
                     "time": "" if (hh == 0 and mm == "00") else "%02d:%s" % (hh, mm),
                     "home": home, "away": away,
-                    "rh": g.get("LB_SetCasa", ""), "ra": g.get("LB_SetOspiti", ""),
+                    "rh": _bli_sets(g, "Casa", "Home"), "ra": _bli_sets(g, "Ospiti", "Guest"),
                     "venue": g.get("LB_Palasport", ""), "link": link})
     return out or bli_parse_old(page, gender, comp, link)
 
