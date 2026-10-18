@@ -1619,8 +1619,9 @@ def bli_parse(page, gender, comp, link):
     for m in re.finditer(r"TeamLogo/\d+/\d+/TeamLogo_(\d+)\.jpg[^<]{0,60}</div>\s*</td>\s*<td[^>]*>\s*([^<]+?)\s*</td>", page):
         add_logo(html.unescape(m.group(2)), "https://images.dataproject.com/bli/TeamLogo/40/30/TeamLogo_%s.jpg" % m.group(1))
     games, order = {}, []
-    for m in re.finditer(r'<span[^>]*\bid="([^"]*?RADLIST_Matches_ctrl\d+)_(\w+)"[^>]*>([^<]*)<', page):
-        key, name, val = m.group(1), m.group(2), html.unescape(m.group(3)).strip()
+    for m in re.finditer(r'<span[^>]*\bid="([^"]*?RADLIST_Matches_ctrl\d+)_(\w+)"[^>]*>(.*?)</span>', page, re.S):
+        # spilaðir leikir hafa oft innihald með merkingu inni í reitnum (t.d. feitletrað sigurlið): fjarlægi hana og les textann
+        key, name, val = m.group(1), m.group(2), html.unescape(re.sub(r"<[^>]*>", "", m.group(3))).strip()
         if key not in games:
             games[key] = {}
             order.append(key)
@@ -1648,8 +1649,6 @@ def bli_parse(page, gender, comp, link):
         home = g.get("LBL_HomeTeamName") or g.get("Label2", "")
         away = g.get("LBL_GuestTeamName") or g.get("Label4", "")
         if not d or not home or not away:
-            if home or away:  # greining: leikur sem er sleppt
-                print("   Blak-sleppt %s – %s | reitir: %s" % (home, away, {k: v for k, v in g.items() if v}))
             continue
         hh, mm = int(d.group(4)), d.group(5)
         out.append({"sport": "Blak", "gender": gender, "comp": comp,
@@ -1681,9 +1680,11 @@ def read_bli(today):
             time.sleep(0.3)
         mine = [r for r in rows if r["home"] in SPORT_TEAMS or r["away"] in SPORT_TEAMS]
         print("   Blak %s: fasar %s, %d leikir alls, %d hjá KA" % (comp, pids, len(rows), len(mine)))
-        for r in mine:  # greining: sýni KA-leiki fram að deginum í dag og hvaða úrslit fundust
-            if r["date"] <= today.isoformat():
-                print("   Blak-leikur %s %s %s – %s  sett: [%s]-[%s]" % (r["date"], r["time"], r["home"], r["away"], r["rh"], r["ra"]))
+        past = [r for r in mine if r["date"] <= today.isoformat()]
+        noresult = [r for r in past if not (r["rh"] and r["ra"])]
+        print("   Blak %s: %d leikir spilaðir, %d án úrslita" % (comp, len(past), len(noresult)))
+        for r in noresult[:2]:
+            print("     án úrslita: %s %s – %s" % (r["date"], r["home"], r["away"]))
         out += mine
     return out
 
