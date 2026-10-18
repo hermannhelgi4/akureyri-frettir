@@ -102,6 +102,40 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "KA – Hamar",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2026-10-03",
+    "end": "2026-10-03",
+    "time": "18:00",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið",
+    "teams": [
+      "KA"
+    ],
+    "res": "0–3",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – Hamar",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2026-10-04",
+    "end": "2026-10-04",
+    "time": "15:00",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið",
+    "teams": [
+      "KA"
+    ],
+    "res": "3–1",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Þór Ak. – Þór Þ.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -133,6 +167,23 @@
       "Þór Ak."
     ],
     "res": "82–121",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Völsungur – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2026-10-07",
+    "end": "2026-10-07",
+    "time": "19:00",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild kvenna · GPG Höllin á Húsavík",
+    "teams": [
+      "KA"
+    ],
+    "res": "0–3",
     "kind": "Íþróttir"
   },
   {
@@ -357,6 +408,23 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "KA – HK Ýmir",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2026-10-17",
+    "end": "2026-10-17",
+    "time": "13:30",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "teams": [
+      "KA"
+    ],
+    "res": "3–0",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Þór – Stjarnan",
     "source": "Íþróttir",
     "sport": "Fótbolti",
@@ -422,6 +490,23 @@
       "KA/Þór"
     ],
     "res": "32–28",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – HK Ýmir",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2026-10-18",
+    "end": "2026-10-18",
+    "time": "14:00",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "teams": [
+      "KA"
+    ],
+    "res": "3–0",
     "kind": "Íþróttir"
   },
   {
