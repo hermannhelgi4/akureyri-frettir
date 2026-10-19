@@ -1,5 +1,29 @@
 [
   {
+    "title": "Út með útlitsdýrkun",
+    "link": "https://kaffid.is/ut-med-utlitsdyrkun/",
+    "summary": "Og inn með líkamsvirðingu. Ég geri mér fulla grein fyrir því að ég hef nú þegar skrifað einhverja pistla um […]",
+    "date": "2026-10-19T16:00:27+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2023/08/Screenshot-2023-08-15-at-13.58.56.png",
+    "source": "Kaffið",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Nýtt nám í kennslu íslensku sem 2. máls",
+    "link": "https://www.akureyri.net/is/moya/news/nytt-nam-i-kennslu-islensku-sem-2-mals",
+    "summary": "Háskólaráð Háskólans á Akureyri (HA) samþykkti á fundi sínum 26. september sl. að setja á laggirnar nýtt nám í kennslu íslensku sem annars máls við kennaradeild háskólans. Náminu er ætlað að mæta vaxandi þörf fyrir sérhæfingu kennara í íslenskum skól...",
+    "date": "2026-10-19T16:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/unak2.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Myndir komnar í albúm",
     "link": "https://www.thorsport.is/is/frettir-greinar/myndir-komnar-i-album",
     "summary": "Myndir úr leikjum Þórs og Breiðabliks í 1. deild karla og Þórs og KV í 1. deild kvenna eru komnar í myndaalbúm.",
@@ -80,6 +104,18 @@
     "date": "2026-10-19T14:20:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/tryggvi-akbaer-nordurorka-logo-c.jpg",
     "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Fer fram á að Norðurorka endurskoði ákvörðun um verðhækkanir",
+    "link": "https://kaffid.is/fer-fram-a-ad-nordurorka-endurskodi-akvordun-um-verdhaekkanir/",
+    "summary": "Tryggvi Jóhannsson, formaður Einingar-Iðju, hefur lýst yfir miklum vonbrigðum með ákvörðun stjórnar Norðurorku að hækka gjaldskrá fyrirtækisins um næstu áramót […]",
+    "date": "2026-10-19T14:09:00+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/10/tryggvi-akbaer-nordurorka-logo-c.jpg",
+    "source": "Kaffið",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
@@ -1537,18 +1573,6 @@
     ]
   },
   {
-    "title": "Biggi Maus og MeMMM spila á Skollamjólk",
-    "link": "https://www.akureyri.net/is/moya/news/biggi-maus-og-memmm-spila-a-skollamjolk",
-    "summary": "Næstu tónleikar tónleikaraðarinnar Skollamjólkur verða á morgun, laugardaginn 17. október, þegar Biggi Maus og MeMMM koma fram. Tónleikar Skollamjólkur fara fram mánaðarlega í Slímstöðinni, höfuðstöðvum listasamlagsins MBS, og er markmiðið bæði að au...",
-    "date": "2026-10-16T16:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/skollamjolk.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Kennarar fræðast í Gryfjunni",
     "link": "https://www.vma.is/is/skolinn/frettir/kennarar-fraedast-i-gryfjunni",
     "summary": "Starfsþróun",
@@ -2447,18 +2471,6 @@
   },
   {
     "title": "KEA fagnar 140 ára afmæli með 10 milljóna króna styrk til björgunarsveita",
-    "link": "https://kaffid.is/kea-fagnar-140-ara-afmaeli-med-10-milljona-krona-styrk-til-bjorgunarsveita/",
-    "summary": "Í tilefni 140 ára afmælis KEA á árinu hefur félagið ákveðið að styrkja björgunarsveitir á félagssvæði sínu um samtals 10 […]",
-    "date": "2026-10-14T10:02:11+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2026/10/KEA-afmaelir-Bsveitir-okt-2026.png",
-    "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "KEA fagnar 140 ára afmæli með 10 milljóna króna styrk til björgunarsveita",
     "link": "https://www.vikubladid.is/is/moya/news/kea-fagnar-140-ara-afmaeli-med-10-milljona-krona-styrk-til-bjorgunarsveita",
     "summary": "Í tilefni 140 ára afmælis KEA á árinu hefur félagið ákveðið að styrkja björgunarsveitir á félagssvæði sínu um samtals 10 milljónir króna. Með styrknum vill KEA þakka björgunarsveitunum fyrir ómetanlegt framlag þeirra til öryggis og velferðar íbúa á svæðinu.",
     "date": "2026-10-14T09:55:00+00:00",
@@ -2479,18 +2491,6 @@
     "category": "Íþróttir",
     "cats": [
       "Íþróttir"
-    ]
-  },
-  {
-    "title": "Tvær nýjar námsleiðir við HA",
-    "link": "https://kaffid.is/tvaer-nyjar-namsleidir-vid-ha/",
-    "summary": "Háskólaráð Háskólans á Akureyri samþykkti á fundi sínum 26. september að setja á laggirnar nýtt þriggja ára bakkalárnám í Áfengis- […]",
-    "date": "2026-10-14T08:22:53+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2026/10/DST_6218.jpg",
-    "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
