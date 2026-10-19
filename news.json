@@ -1,5 +1,29 @@
 [
   {
+    "title": "Myndir komnar í albúm",
+    "link": "https://www.thorsport.is/is/frettir-greinar/myndir-komnar-i-album",
+    "summary": "Myndir úr leikjum Þórs og Breiðabliks í 1. deild karla og Þórs og KV í 1. deild kvenna eru komnar í myndaalbúm.",
+    "date": "2026-10-19T15:33:00+00:00",
+    "image": "https://www.thorsport.is/static/news/sm/nile-miller-pjo_3864.jpg?v=1",
+    "source": "Þór",
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Talsverðar framkvæmdir á Grenivík",
+    "link": "https://www.vikubladid.is/is/moya/news/talsverdar-framkvaemdir-a-grenivik",
+    "summary": "Viðbygging við leikskólann Krummafót á Grenivík eru langt komin. Hún er Hún er nálægt 150 fermetrum að stærð og mun hýsa alla starfsmannaaðstöðu, stoðþjónustu, fundar- og samkomuaðstöðu.",
+    "date": "2026-10-19T15:26:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/grenivik-okt-26-skoli-pallur.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Tónlistarveisla fram undan á Tröllaskaga",
     "link": "https://trolli.is/tonlistarveisla-fram-undan-a-trollaskaga/",
     "summary": "Hausttónleikar Tónlistarskólans á Tröllaskaga (TÁT) hefjast í dag, mánudaginn 19. október, og verða alls sex tónleikar haldnir í Fjallabyggð og Dalvíkurbyggð á næstu vikum. Á tónleikunum gefst gestum tækifæri til að hlusta á nemendur skólans flytja fjölbreytt tónlistaratriði og sýna afrakstur þeirra",
@@ -2439,18 +2463,6 @@
     "summary": "Í tilefni 140 ára afmælis KEA á árinu hefur félagið ákveðið að styrkja björgunarsveitir á félagssvæði sínu um samtals 10 milljónir króna. Með styrknum vill KEA þakka björgunarsveitunum fyrir ómetanlegt framlag þeirra til öryggis og velferðar íbúa á svæðinu.",
     "date": "2026-10-14T09:55:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/kea-nytt.png",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "KEA fagnar 140 ára afmæli með 10 milljóna króna styrk til björgunarsveita",
-    "link": "https://www.vikubladid.is/is/moya/news/kea-fagnar-140-ara-afmaeli-med-10-milljona-krona-styrk-til-bjorgunarsveita-1",
-    "summary": "Í tilefni 140 ára afmælis KEA á árinu hefur félagið ákveðið að styrkja björgunarsveitir á félagssvæði sínu um samtals 10 milljónir króna. Með styrknum vill KEA þakka björgunarsveitunum fyrir ómetanlegt framlag þeirra til öryggis og velferðar íbúa á svæðinu.",
-    "date": "2026-10-14T09:55:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/keatest.png",
     "source": "Vikudagur",
     "category": "Fréttamiðlar",
     "cats": [
