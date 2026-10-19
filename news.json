@@ -1,5 +1,42 @@
 [
   {
+    "title": "Serena býður upp á ítalskan kvöldverð",
+    "link": "https://www.akureyri.net/is/moya/news/serena-bydur-upp-a-italskan-kvoldverd",
+    "summary": "akureyri.net",
+    "date": "2026-10-19T10:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/serena-frett.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Emma og Nile öflugar í sigri Þórs á KV",
+    "link": "https://www.akureyri.net/is/moya/news/emma-og-nile-oflugar-i-sigri-thors-a-kv",
+    "summary": "Þór vann KV með 20 stiga mun, 90-70, í þriðju umferð 1. deildar kvenna í körfubolta þegar liðin mættust í Íþróttahöllinni á Akureyri í gær. Tveimur stigum munaði eftir fyrri hálfleikinn, en frábærir kaflar í seinni hálfleiknum skiluðu Þórsliðinu örug...",
+    "date": "2026-10-19T10:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/_u3a7181.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Tryggvi kjörinn í miðstjórn ASÍ",
+    "link": "https://www.ein.is/is/um-einingu-idju/utgefid-efni/frettir/tryggvi-kjorinn-i-midstjorn-asi",
+    "summary": "Á nýafstöðnu þingi ASÍ voru kjörnir nýir aðal- og varamenn í miðstjórn Alþýðusambandsins til næstu tveggja ára. Tryggvi Jóhannsonn, formaður Einingar-Iðju, var kjörinn til setu í miðstjórn ASÍ.",
+    "date": "2026-10-19T09:42:00+00:00",
+    "image": "https://www.ein.is/static/news/sm/tryggvi-asi-logo-c.jpg",
+    "source": "Eining-Iðja",
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Stórsigur SA og allur ágóði rennur til Krabbameinsfélagsins",
     "link": "https://kaffid.is/storsigur-sa-og-allur-agodi-rennur-til-krabbameinsfelagsins/",
     "summary": "SA Víkingar unnu stórsigur á SR í íshókki í Skautahöllinni á Akureyri um helgina. SA Víkingar spiluðu í bleikum treyjum […]",
@@ -1378,18 +1415,6 @@
     ]
   },
   {
-    "title": "Eiríkur Bóasson",
-    "link": "https://www.akureyri.net/is/moya/news/eirikur-boasson-1",
-    "summary": "",
-    "date": "2026-10-16T15:30:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/1792164931_eirikur-boasson.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Kennarar fræðast í Gryfjunni",
     "link": "https://www.vma.is/is/skolinn/frettir/kennarar-fraedast-i-gryfjunni",
     "summary": "Starfsþróun",
@@ -1612,18 +1637,6 @@
     "date": "2026-10-16T10:15:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/honnun-og-handverk.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Akureyrarpistlarnir komnir út á bók",
-    "link": "https://www.akureyri.net/is/moya/news/akureyrarpistlarnir-komnir-ut-a-bok",
-    "summary": "akureyri.net",
-    "date": "2026-10-16T10:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/ser-bokin.jpg",
-    "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
@@ -1943,18 +1956,6 @@
     "image": "https://www.ma.is/static/news/sm/pxl_20261014_202330491.jpg",
     "source": "Menntaskólinn á Akureyri",
     "category": "Menntun",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Stapi - Opnað fyrir almenna ráðstöfun séreignar inn á lán",
-    "link": "https://www.ein.is/is/um-einingu-idju/utgefid-efni/frettir/stapi-opnad-fyrir-almenna-radstofun-sereignar-inn-a-lan",
-    "summary": "Vert er að benda félagsmönnum sem greiða í Stapa lífeyrissjóð á eftirfarandi frétt sem nýlega birtist á heimasíðu sjóðsins.",
-    "date": "2026-10-15T12:00:00+00:00",
-    "image": "https://www.ein.is/static/news/sm/1791971213_stapi_600x315-1.png",
-    "source": "Eining-Iðja",
-    "category": "Fyrirtæki & félög",
     "cats": [
       "Bærinn"
     ]
