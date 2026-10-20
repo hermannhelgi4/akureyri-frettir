@@ -1,5 +1,41 @@
 [
   {
+    "title": "Velferðarráð Akureyrarbæjar auglýsir styrki til úthlutunar",
+    "link": "https://kaffid.is/velferdarrad-akureyrarbaejar-auglysir-styrki-til-uthlutunar/",
+    "summary": "Velferðarráð Akureyrarbæjar hefur auglýst eftir umsóknum vegna árlegrar styrkveitingar ráðsins. Velferðarráð úthlutar styrkjum til starfsemi og þjónustu, sem fellur að […]",
+    "date": "2026-10-20T11:23:07+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/10/akureyri-9-2000x1333-1.avif",
+    "source": "Kaffið",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Leiðsögn á úkraínsku / ЕКСКУРСІЯ УКРАЇНСЬКОЮ МОВОЮ",
+    "link": "https://www.listak.is/is/moya/news/leidsogn-a-ukrainsku-1045-1050-1057-1050-1059-1056-1057-1030-1071-1059-1050-1056-1040-1031-1053-1057-1068-1050-1054-1070-1052-1054-1042-1054-1070-",
+    "summary": "Um sýninguna í skugga átaka / Про виставку У тіні конфлікту",
+    "date": "2026-10-20T11:05:00+00:00",
+    "image": "https://www.listak.is/static/news/thumb_dst_6746.jpg",
+    "source": "Listasafnið á Akureyri",
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Velferðarráð auglýsir styrki til úthlutunar",
+    "link": "https://www.akureyri.is/velferdarrad-auglysir-styrki-til-uthlutunar-1",
+    "summary": "Velferðarráð Akureyrarbæjar úthlutar styrkjum til starfsemi og þjónustu, sem fellur að hlutverkum þess, einu sinni á ári.",
+    "date": "2026-10-20T11:04:25+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/akureyri-9-2000x1333.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Stórbætti stoðsendingametið - „Búinn að heyra um þetta met margoft frá Adam Ægi vini mínum\"",
     "link": "https://fotbolti.net/news/20-10-2026/storbaetti-stodsendingametid",
     "summary": "Tryggvi Hrafn Haraldsson sló á laugardag stoðsendingametið í efstu deild þegar hann lagði upp þrjú mörk gegn KA í 4-1 sigri Vals. Samkvæmt tölfræði Óskars Ófeigs Jónssonar var Tryggvi búinn að jafna metið fyrir leikinn en stórbætti það svo í leiknum gegn KA. Tryggvi skoraði einnig eitt mark í leiknu",
@@ -119,6 +155,18 @@
     "cats": [
       "Fréttir",
       "Nærsveitir"
+    ]
+  },
+  {
+    "title": "Coca-Cola á Íslandi og Slysavarnafélagið Landsbjörg halda áfram öflugu samstarfi",
+    "link": "https://kaffid.is/coca-cola-a-islandi-og-slysavarnafelagid-landsbjorg-halda-afram-oflugu-samstarfi/",
+    "summary": "Hefur tryggt fræðslu og þjálfun ríflega 2.100 einstaklinga árlega undanfarin þrjú ár. Coca-Cola á Íslandi og Slysavarnafélagið Landsbjörg hafa undirritað […]",
+    "date": "2026-10-20T06:13:00+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/10/CCEP_LB.jpg",
+    "source": "Kaffið",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
     ]
   },
   {
@@ -2269,30 +2317,6 @@
     "date": "2026-10-15T10:15:00+00:00",
     "image": "https://c.arvakur.is/frimg/1/68/46/1684672A.jpg",
     "source": "mbl.is",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Gáfu byggingadeild VMA þakdúka",
-    "link": "https://kaffid.is/gafu-byggingadeild-vma-thakduka/",
-    "summary": "Fyrirtækið Alfa Byggingalausnir ehf. hafa fært byggingadeild Verkmenntaskólans á Akureyri nokkrar gerðir af þakdúkum sem fyrirtækið selur. Þakdúkana mun byggingadeild […]",
-    "date": "2026-10-15T08:51:00+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2026/10/713e47ef-13c1-455a-8edd-6d86fd98af78.jpg",
-    "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Vill sjö nýja lögreglumenn til starfa",
-    "link": "https://kaffid.is/vill-sjo-nyja-logreglumenn-til-starfa/",
-    "summary": "Páley Borgþórsdóttir, lögreglustjóri á Norðurlandi eystra, fer fram á 154 milljónir króna til að fjölga lögreglumönnum í embættinu um sjö […]",
-    "date": "2026-10-15T08:37:00+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2026/10/paley.jpg",
-    "source": "Kaffið",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
@@ -4650,18 +4674,6 @@
     "date": "2026-09-18T14:43:00+00:00",
     "image": "https://www.no.is/static/news/sm/untitled-september-18-2026-at-10.59.26-2.png",
     "source": "Norðurorka",
-    "category": "Bærinn",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Næstu skref tekin í stækkun verknámshúss VMA",
-    "link": "https://www.akureyri.is/naestu-skref-tekin-i-staekkun-verknamshuss-vma",
-    "summary": "Inga Sæland, mennta- og barnamálaráðherra, og Berglind Ósk Guðmundsdóttir, bæjarstjóri Akureyrarbæjar, undirrituðu í dag viljayfirlýsingu um stækkun verknámshúss Verkmenntaskólans á Akureyri.",
-    "date": "2026-09-18T14:14:17+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/viljayfirlysing-undirritud-2000x1334.jpg",
-    "source": "Akureyrarbær",
     "category": "Bærinn",
     "cats": [
       "Bærinn"
