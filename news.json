@@ -1,5 +1,41 @@
 [
   {
+    "title": "Yfirlýsing vegna fréttar um fjársvik",
+    "link": "https://www.grenivik.is/is/moya/news/yfirlysing-vegna-frettar-um-fjardratt",
+    "summary": "Vegna fréttar Ríkisútvarpsins um fjársvik á hjúkrunarheimilinu Grenilundi, vilja forsvarsmenn þess koma eftirfarandi á framfæri; Þegar málið kom upp lét viðkomandi starfsmaður af störfum þegar í stað. Af hálfu heimilisins var málið strax tekið föstu...",
+    "date": "2026-10-20T14:18:00+00:00",
+    "image": "https://www.grenivik.is/static/news/sm/1792506039_logo.png",
+    "source": "Grýtubakkahreppur",
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
+  },
+  {
+    "title": "Eigendur NO vilja fylgja samkomulagi um hóflegar hækkanir",
+    "link": "https://www.vikubladid.is/is/moya/news/eigendur-no-vilja-fylgja-samkomulagi-um-hoflegar-haekkanir",
+    "summary": "Gjaldskrár Norðurorku munu ekki hækka umfram 2,5% um næstu áramót eftir ákvörðun eigenda fyrirtækisins á aukaaðalfundi á þriðjudagsmorgun. Á þeim fundi var tillögum meirihluta stjórnar hafnað, en þær gerðu ráð fyrir á bilinu 2,5 og upp í 7% hækkun á gjaldskrá veitnanna um næstu áramót. Norðurorka re",
+    "date": "2026-10-20T14:10:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/1792506115_no.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Vídeódanshátíðin Boreal Screendance Festival 2026 hefst á föstudaginn",
+    "link": "https://www.vikubladid.is/is/moya/news/videodanshatidin-boreal-screendance-festival-2026-hefst-a-fostudaginn",
+    "summary": "Vídeódanshátíðin Boreal Screendance Festival 2026 hefst á föstudaginn í Ketilhúsi Listasafnsins á Akureyri. Boreal hefur verið haldin á mörkum hausts og vetrar frá árinu 2020, fyrst í Mjólkurbúðinni en nú leggur hátíðin undir sig Listagilið rúmar þrjár vikur í október og nóvember. Viðburðir Boreal a",
+    "date": "2026-10-20T13:56:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/newboreal26_fb_event.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Þór líklegra til að falla þrátt fyrir forskot",
     "link": "https://fotbolti.net/news/20-10-2026/thor-liklegra-til-ad-falla-thratt-fyrir-forskot",
     "summary": "Lokaumferð Bestu deildarinnar fer fram næstkomandi laugardag þar sem Akureyrarliðin Þór og KA berjast um að halda sæti sínu í deildinni. Þór situr í tíunda sæti deildarinnar með eins stigs forskot á KA fyrir lokaumferðina. Þórsarar sækja FH heim í Kaplakrika á meðan KA tekur á móti föllnum Eyjamönnu",
@@ -39,6 +75,18 @@
   {
     "title": "Nokkur ráð til að líða betur í skammdeginu",
     "link": "https://www.akureyri.net/is/moya/news/heils-tilvisun",
+    "summary": "„Þá er það að skella á okkur aftur, skammdegið. Þessi tími ársins þegar við vöknum í myrkri, förum í vinnuna í hálfrökkri og áður en við vitum af er orðið dimmt aftur. Þó að við Íslendingar ættum að vera orðin vön þessu, þá kemur þetta mörgum okkar j...",
+    "date": "2026-10-20T12:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1792425620_tilvisun-gudrun.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Nokkur ráð til að líða betur í skammdeginu",
+    "link": "https://www.akureyri.net/is/moya/news/nokkur-rad-til-ad-lida-betur-i-skammdeginu-1",
     "summary": "„Þá er það að skella á okkur aftur, skammdegið. Þessi tími ársins þegar við vöknum í myrkri, förum í vinnuna í hálfrökkri og áður en við vitum af er orðið dimmt aftur. Þó að við Íslendingar ættum að vera orðin vön þessu, þá kemur þetta mörgum okkar j...",
     "date": "2026-10-20T12:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/1792425620_tilvisun-gudrun.jpg",
@@ -1524,18 +1572,6 @@
     ]
   },
   {
-    "title": "Ragnar Hólm er Utan vega í nýrri sýningu",
-    "link": "https://www.akureyri.net/is/moya/news/ragnar-holm-er-utan-vega-i-nyrri-syningu",
-    "summary": "Ragnar Hólm Ragnarsson opnar sýninguna Utan vega í Mjólkurbúðinni á Akureyri í dag, laugardaginn 17. október klukkan 14. Á sýningunni gefur að líta ný olíumálverk sem öll eru unnin á þessu ári. Ragnar hefur á undanförnum árum verið iðinn við vatnsli...",
-    "date": "2026-10-17T08:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/ragnar-holm.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Öflugur hópur frumkvöðla valinn í Startup Landið 2026",
     "link": "https://dal.is/oflugur-hopur-frumkvodla-valinn-i-startup-landid-2026/",
     "summary": "Fjórtán fjölbreytt nýsköpunarverkefni af öllu landinu hafa verið valin til þátttöku í viðskiptahraðlinum Startup Landið. Hraðallinn er sérstaklega hannaður til",
@@ -2421,18 +2457,6 @@
     ]
   },
   {
-    "title": "Drift EA eflir ráðgjöf á sviði hugverkaréttinda og einkaleyfa",
-    "link": "https://www.vikubladid.is/is/moya/news/drift-ea-eflir-radgjof-a-svidi-hugverkarettinda-og-einkaleyfa",
-    "summary": "Ingólfur Pálsson, evrópskur einkaleyfafulltrúi hjá Dragsted Partners A/S í Danmörku, hefur gengið til liðs við hóp sérfræðinga hjá Drift EA sem kallast Driftarar. Með þátttöku hans eykst aðgengi frumkvöðla að sérfræðiþekkingu á sviði einkaleyfa og verndar hugverka, sem getur skipt sköpum í þróun nýr",
-    "date": "2026-10-14T15:03:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/ingolfur-palsson-serfraedingur-i-einkaleyfum.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Gámasvæði á Siglufirði og Ólafsfirði lokuð",
     "link": "https://www.fjallabyggd.is/is/frettir/gamasvaedi-a-siglufirdi-og-olafsfirdi-lokud",
     "summary": "Vegna óveðurs verður gámasvæðum á Siglufirði og í Ólafsfirði lokað í dag, miðvikudaginn 14. október.",
@@ -2503,18 +2527,6 @@
     "category": "Nærsveitir",
     "cats": [
       "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Háskólinn á Akureyri opnar fyrir nám í áfengis- og vímuefnaráðgjöf",
-    "link": "https://www.vikubladid.is/is/moya/news/haskolinn-a-akureyri-opnar-fyrir-nam-i-afengis-og-vimuefnaradgjof",
-    "summary": "Háskólaráð Háskólans á Akureyri samþykkti á fundi sínum 26. september að setja á laggirnar nýtt þriggja ára bakkalárnám í Áfengis- og vímuefnaráðgjöf við Hjúkrunarfræðideild.",
-    "date": "2026-10-14T11:58:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/1791979266_ha.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
@@ -5461,18 +5473,6 @@
     "category": "Íþróttir",
     "cats": [
       "Íþróttir"
-    ]
-  },
-  {
-    "title": "Þjóðaratkvæðagreiðsla 29. ágúst 2026",
-    "link": "https://www.grenivik.is/is/moya/news/thjodaratkvaedagreidsla-29-agust-2026",
-    "summary": "Laugardaginn 29. ágúst verður haldin þjóðaratkvæðagreiðsla um aðlildarviðræður við Evrópusambandið. Kjörstaður í Grýtubakkahreppi verður Grenivíkurskóli, efri hæð, gengið inn um aðalinngang. Kjörstaður veður opinn á kjördag frá klukkan 9:00 til 17:...",
-    "date": "2026-08-19T09:26:00+00:00",
-    "image": "https://www.grenivik.is/static/news/sm/thjodaratkv-2026.png",
-    "source": "Grýtubakkahreppur",
-    "category": "Nærsveitir",
-    "cats": [
-      "Nærsveitir"
     ]
   },
   {
