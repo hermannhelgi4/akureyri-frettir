@@ -1,5 +1,42 @@
 [
   {
+    "title": "Góðar fréttir - Norðurorka hækkar ekki meira en um 2,5%",
+    "link": "https://www.ein.is/is/um-einingu-idju/utgefid-efni/frettir/godar-frettir",
+    "summary": "Gjaldskrá Norðurorku verður ekki hækkuð um meira en 2,5% um áramótin. Þetta var ákveðið á auka aðalfundi fyrirtækisins í morgun. Meirihluti stjórnar vildi hækka gjaldskrá rafmagns um 5%, hitaveitu um 5,5% og fráveitu um 7% en eigendur fyrirtækisins, fjögur sveitarfélög við Eyjafjörð auk Þingeyjarsve",
+    "date": "2026-10-20T12:29:00+00:00",
+    "image": "https://www.ein.is/static/news/sm/1792492757_tryggvi-akbaer-nordurorka-logo-c.jpg",
+    "source": "Eining-Iðja",
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Gjaldskrá hækkar að hámarki um 2,5%",
+    "link": "https://www.akureyri.net/is/moya/news/gjaldskra-haekkar-ad-hamarki-um-25",
+    "summary": "Gjaldskrá Norðurorku verður ekki hækkuð um meira en 2,5% um áramótin. Þetta var ákveðið á auka aðalfundi fyrirtækisins í morgun. Meirihluti stjórnar vildi hækka gjaldskrá rafmagns um 5%, hitaveitu um 5,5% og fráveitu um 7% en eigendur fyrirtækisins, ...",
+    "date": "2026-10-20T12:12:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1792498329_1792404233_no.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Færeyska tónlistarkonan Gudrid Hansdóttir með tónleika á Græna",
+    "link": "https://www.vikubladid.is/is/moya/news/faereyska-tonlistarkonan-gudrid-hansdottir-med-tonleika-a-graena-1",
+    "summary": "Færeyska tónlistarkonan Guðrið Hansdóttir er hér á landi í október og heldur níu tónleika í hringferð um landið dagana 20.–29. október. Tilefnið er útgáfa sjöundu hljóðversplötu hennar, Sýrublað, sem kom út í vor og hlaut góðar viðtökur. Platan er unnin af Høgna Lisberg.",
+    "date": "2026-10-20T11:45:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/pegasus.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Tónleikar til styrktar viðgerðum á orgeli Akureyrarkirkju",
     "link": "https://kaffid.is/tonleikar-til-styrktar-vidgerdum-a-orgeli-akureyrarkirkju/",
     "summary": "Næstkomandi laugardag, 24. október klukkan 12, verða haldnir orgeltónleikar í Akureyrar. Tónleikarnir eru til styrktar viðgerðum á orgeli kirkjunnar. Aðgangseyrir […]",
@@ -132,18 +169,6 @@
     ]
   },
   {
-    "title": "Bækur og aftur bækur",
-    "link": "https://kaffid.is/baekur-og-aftur-baekur/",
-    "summary": "Rithöfundurinn Sandra B. Clausen hefur ekki setið auðum höndum á árinu. Hún hefur þegar gefið út ljóðabók og skáldsögu á […]",
-    "date": "2026-10-20T08:22:02+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2026/10/Fjadrir.jpg",
-    "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Styrkir úr Uppbyggingarsjóði Norðurlands eystra",
     "link": "https://dal.is/styrkir-ur-uppbyggingarsjodi-nordurlands-eystra/",
     "summary": "Uppbyggingarsjóður er samkeppnissjóður sem hefur það hlutverk að styrkja við verkefni sem falla að Sóknaráætlun Norðurlands eystra í þremur flokkum,",
@@ -167,6 +192,18 @@
     "cats": [
       "Fréttir",
       "Nærsveitir"
+    ]
+  },
+  {
+    "title": "Bækur og aftur bækur",
+    "link": "https://kaffid.is/baekur-og-aftur-baekur/",
+    "summary": "Rithöfundurinn Sandra B. Clausen hefur ekki setið auðum höndum á árinu. Hún hefur þegar gefið út ljóðabók og skáldsögu á […]",
+    "date": "2026-10-20T06:22:00+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/10/Fjadrir.jpg",
+    "source": "Kaffið",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
     ]
   },
   {
@@ -495,18 +532,6 @@
     "cats": [
       "Fréttir",
       "Íþróttir"
-    ]
-  },
-  {
-    "title": "Tryggvi kjörinn í miðstjórn ASÍ",
-    "link": "https://www.ein.is/is/um-einingu-idju/utgefid-efni/frettir/tryggvi-kjorinn-i-midstjorn-asi",
-    "summary": "Á nýafstöðnu þingi ASÍ voru kjörnir nýir aðal- og varamenn í miðstjórn Alþýðusambandsins til næstu tveggja ára. Tryggvi Jóhannsson, formaður Einingar-Iðju, var kjörinn til setu í miðstjórn ASÍ.",
-    "date": "2026-10-19T09:42:00+00:00",
-    "image": "https://www.ein.is/static/news/sm/tryggvi-asi-logo-c.jpg",
-    "source": "Eining-Iðja",
-    "category": "Fyrirtæki & félög",
-    "cats": [
-      "Bærinn"
     ]
   },
   {
@@ -1537,19 +1562,6 @@
     ]
   },
   {
-    "title": "Langur laugardagur hjá íþróttaáhugafólki",
-    "link": "https://www.akureyri.net/is/moya/news/langur-laugardagur-hja-ithrottaahugafolki",
-    "summary": "Af nógu er að taka fyrir íþróttaáhugafólk sem fylgist með og styður akureyrskt íþróttafólk og keppnislið. Á dagskránni er víðavangshlaup, handbolti, blak, fótbolti, körfubolti, íshokkí og pílukast. Víðavangshlaup og fimm kappleikir á Akureyri, en ein...",
-    "date": "2026-10-17T06:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/ithrottir-dagsins-17.10.2026.png",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
     "title": "KA-menn brotlentu í Garðabæ",
     "link": "https://www.visir.is/g/20262949653d/ka-menn-brotlentu-i-gardabae",
     "summary": "Stjörnumenn unnu frábæran sigur gegn heitum KA-mönnum í kvöld, 35-33, í 6. umferð Olís-deildar karla í handbolta. Þetta var annar sigur Stjörnunnar og annað tap KA sem situr í 3. sæti.",
@@ -2527,18 +2539,6 @@
     "category": "Menning",
     "cats": [
       "Bærinn"
-    ]
-  },
-  {
-    "title": "KEA fagnar 140 ára afmæli með 10 milljóna króna styrk til björgunarsveita",
-    "link": "https://www.vikubladid.is/is/moya/news/kea-fagnar-140-ara-afmaeli-med-10-milljona-krona-styrk-til-bjorgunarsveita",
-    "summary": "Í tilefni 140 ára afmælis KEA á árinu hefur félagið ákveðið að styrkja björgunarsveitir á félagssvæði sínu um samtals 10 milljónir króna. Með styrknum vill KEA þakka björgunarsveitunum fyrir ómetanlegt framlag þeirra til öryggis og velferðar íbúa á svæðinu.",
-    "date": "2026-10-14T09:55:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/kea-nytt.png",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
