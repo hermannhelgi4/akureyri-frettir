@@ -1,10 +1,46 @@
 [
   {
-    "title": "277. fundur bæjarstjórnar Fjallabyggðar, verður haldinn í Ráðhúsi Fjallabyggðar, Gránugötu 24, Siglufirði",
+    "title": "Ashani Arulananthan lýkur doktorsprófi við Háskólann á Akureyri",
+    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/ashani-arulananthan-lykur-doktorsprofi-vid-haskolann-a-akureyri",
+    "summary": "Rannsakaði áhrif þrávirkra mengunarefna á kísilþörunga og örverur sem þeim tengjast",
+    "date": "2026-10-20T15:32:00+00:00",
+    "image": "https://www.unak.is/static/news/sm/ashani-doktorsvorn.jpg",
+    "source": "Háskólinn á Akureyri",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Góð staða í leikskólamálum á Akureyri",
+    "link": "https://www.akureyri.is/god-stada-i-leikskolamalum-a-akureyri",
+    "summary": "Vel gengur að útvega börnum leikskólapláss hjá Akureyrarbæ en aðeins eitt barn sem náð hefur innritunaraldri er nú á biðlista.",
+    "date": "2026-10-20T15:29:45+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/leikskoli-851x315.png",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Þín reynsla skiptir máli",
+    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/thin-reynsla-skiptir-mali",
+    "summary": "Jafnréttisráð HA leitar að stúdentum til þátttöku í rýnihópaviðtöl",
+    "date": "2026-10-20T15:04:00+00:00",
+    "image": "https://www.unak.is/static/news/sm/unak-20.10.2026-jafnrettisrad-leitar-ad-thatttakendum.png",
+    "source": "Háskólinn á Akureyri",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "277. fundur bæjarstjórnar Fjallabyggðar",
     "link": "https://www.fjallabyggd.is/is/frettir/277-fundur-baejarstjornar-fjallabyggdar-verdur-haldinn-i-radhusi-fjallabyggdar-granugotu-24-siglufirdi",
-    "summary": "Bæjarstjórn Fjallabyggðar 277. fundur bæjarstjórnar Fjallabyggðar, verður haldinn í Ráðhúsi Fjallabyggðar, Gránugötu 24, Siglufirði 20.október 2026 kl. 17:00 Dagskrá: Fundargerð 934. fundar bæjarráðs frá 24. september 2026 Fundargerð 9...",
+    "summary": "277. fundur bæjarstjórnar Fjallabyggðar, verður haldinn í Ráðhúsi Fjallabyggðar, Gránugötu 24, Siglufirði 20.október 2026 kl. 17:00",
     "date": "2026-10-20T14:53:00+00:00",
-    "image": "https://www.fjallabyggd.is/static/themes/2018/images/og.png?v=1792506051",
+    "image": "https://www.fjallabyggd.is/static/news/sm/1792508831_1791205795_fjallabyggd-logo.jpg",
     "source": "Fjallabyggð",
     "category": "Nærsveitir",
     "cats": [
@@ -64,7 +100,7 @@
     "link": "https://www.vikubladid.is/is/moya/news/eigendur-no-vilja-fylgja-samkomulagi-um-hoflegar-haekkanir",
     "summary": "Gjaldskrár Norðurorku munu ekki hækka umfram 2,5% um næstu áramót eftir ákvörðun eigenda fyrirtækisins á aukaaðalfundi á þriðjudagsmorgun. Á þeim fundi var tillögum meirihluta stjórnar hafnað, en þær gerðu ráð fyrir á bilinu 2,5 og upp í 7% hækkun á gjaldskrá veitnanna um næstu áramót. Norðurorka re",
     "date": "2026-10-20T14:10:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/1792506115_no.jpg",
+    "image": "https://www.vikubladid.is/static/news/sm/nonota.jpg",
     "source": "Vikudagur",
     "category": "Fréttamiðlar",
     "cats": [
@@ -150,6 +186,18 @@
     "summary": "„Þá er það að skella á okkur aftur, skammdegið. Þessi tími ársins þegar við vöknum í myrkri, förum í vinnuna í hálfrökkri og áður en við vitum af er orðið dimmt aftur. Þó að við Íslendingar ættum að vera orðin vön þessu, þá kemur þetta mörgum okkar j...",
     "date": "2026-10-20T12:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/1792425620_tilvisun-gudrun.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Nokkur ráð til að líða betur í skammdeginu",
+    "link": "https://www.akureyri.net/is/moya/news/nokkur-rad-til-ad-lida-betur-i-skammdeginu",
+    "summary": "Guðrún Arngrímsdóttir",
+    "date": "2026-10-20T12:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1792425025_1-pistill-gudrun.jpg",
     "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
@@ -1581,18 +1629,6 @@
     "category": "Nærsveitir",
     "cats": [
       "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Að vera góður (með sig) en samt ...",
-    "link": "https://www.akureyri.net/is/moya/news/ad-vera-godur-med-sig-en-samt",
-    "summary": "„Löngum hef ég reynt að tjónka við Aðalstein Öfgar síðustu árin, stundum með þokkalegum árangri. Um daginn bauð ég honum í gamaldags grautarlummur og gljásvart kaffi, hvorki þynnt né styrkt með göróttum drykkjum. Niðurstaðan eftir spjallið varð óvænt...",
-    "date": "2026-10-17T11:15:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/1792235944_1-stsaem-tilv.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
@@ -4665,18 +4701,6 @@
     "category": "Nærsveitir",
     "cats": [
       "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Uppbyggingarsjóður opinn fyrir umsóknir",
-    "link": "https://www.akureyri.is/uppbyggingarsjodur-opinn-fyrir-umsoknir",
-    "summary": "Uppbyggingarsjóður Norðurlands eystra er nú opinn fyrir umsóknir. Sjóðurinn styður fjölbreytt verkefni á sviði atvinnuþróunar, nýsköpunar, menningar og samfélagsþróunar á Norðurlandi eystra.",
-    "date": "2026-09-21T10:00:00+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/uppbyggingarsjodur-1172x945.png",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
-    "cats": [
-      "Bærinn"
     ]
   },
   {
