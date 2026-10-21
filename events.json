@@ -374,23 +374,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "Valur – KA",
-    "source": "Íþróttir",
-    "sport": "Fótbolti",
-    "gender": "Karlar",
-    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100293",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "13:00",
-    "image": null,
-    "note": "Útileikur · Besta deild karla - Neðri hluti · N1-völlurinn Hlíðarenda",
-    "teams": [
-      "KA"
-    ],
-    "res": "4–1",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "KA – HK Ýmir",
     "source": "Íþróttir",
     "sport": "Blak",
@@ -405,23 +388,6 @@
       "KA"
     ],
     "res": "3–0",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Þór – Stjarnan",
-    "source": "Íþróttir",
-    "sport": "Fótbolti",
-    "gender": "Karlar",
-    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100292",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "14:00",
-    "image": null,
-    "note": "Heimaleikur · Besta deild karla - Neðri hluti · VÍS völlurinn",
-    "teams": [
-      "Þór"
-    ],
-    "res": "3–1",
     "kind": "Íþróttir"
   },
   {

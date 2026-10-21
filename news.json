@@ -1,5 +1,43 @@
 [
   {
+    "title": "Rúm milljón til KAON eftir bleika leikinn",
+    "link": "https://www.akureyri.net/is/moya/news/rum-milljon-til-kaon-eftir-bleika-leikinn",
+    "summary": "Nokkrir leikmenn SA Víkinga, karlaliði Skautafélags Akureyrar í íshokkí, afhentu í dag fulltrúum Krabbameinsfélags Akureyrar og nágrennis 1.150 þúsund krónur, sem er afrakstur bleika leiksins eða hundrað krónu leiksins, viðureignar SA og SR síðastlið...",
+    "date": "2026-10-21T15:50:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/rumlega-bleik-milljon.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Bleikur dagur hjá Samherja",
+    "link": "https://www.samherji.is/is/frettir/bleikur-dagur-hja-samherja",
+    "summary": "Bleiki dagurinn er í dag, 21. október, og af því tilefni var bleiki liturinn allsráðandi á starfsstöðvum Samherja.",
+    "date": "2026-10-21T15:06:00+00:00",
+    "image": "https://www.samherji.is/static/news/sm/sandgerdi-3nota.jpg",
+    "source": "Samherji",
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Sjóða þarf neysluvatn á Siglufirði vegna mengunar",
+    "link": "https://trolli.is/sjoda-tharf-neysluvatn-a-siglufirdi-vegna-mengunar/",
+    "summary": "E. coli gerlar hafa greinst í neysluvatni á Siglufirði og eru íbúar hvattir til að sjóða allt vatn sem ætlað er til neyslu. Ekki er enn ljóst hvað veldur menguninni. Þetta kemur fram í tilkynningu frá Fjallabyggð. Mengunin kom í ljós við reglubundið eftirlit Heilbrigðiseftirlits Norðurlands vestra (",
+    "date": "2026-10-21T15:01:25+00:00",
+    "image": "https://trolli.is/wp-content/uploads/2026/10/sjoda-vatn.jpg",
+    "source": "Trölli.is",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Nærsveitir"
+    ]
+  },
+  {
     "title": "Samvinna og snör handtök",
     "link": "https://www.esveit.is/eyjafjardarsveit/frettir/samvinna-og-snor-handtok",
     "summary": "Góð og þétt samvinna Eyjafjarðarsveitar og Ungmennafélagsins Samherja birtist með ýmsum hætti – nú síðast í formi nýrrar fartölvu.",
@@ -1515,19 +1553,6 @@
     ]
   },
   {
-    "title": "Þórsarar komnir í 8-liða úrslit bikarins",
-    "link": "https://www.akureyri.net/is/moya/news/thorsarar-komnir-i-8-lida-urslit-bikarins",
-    "summary": "Þórsarar báru sigurorð af ÍBV 2 í 16-liða úrslitum bikarkeppni karla í handknattleik í Eyjum í gær. Lokatölur urðu 30:27 Þór í vil, eftir að staðan hafði verið jöfn í leikhléi, 14:14. Eyjamenn voru skrefinu á undan nánast allan fyrri hálfleik en ann...",
-    "date": "2026-10-18T06:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/simonsen.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
     "title": "Náði þrettán réttum tvisvar í röð",
     "link": "https://fotbolti.net/news/18-10-2026/nadi-threttan-rettum-tvisvar-i-rod",
     "summary": "Glúrinn tippari frá Akureyri var tvisvar í röð með 13 rétta leiki hjá íslenskum getraunum og fékk rúmlega 1,2 milljónir króna í sinn hlut.",
@@ -2943,19 +2968,6 @@
     "summary": "Djúp lægð nálgast landið og útlit er fyrir mjög slæmt veður miðvikudaginn 14. október. Spáð er hvassviðri og úrkomu víða um land, en samkvæmt núverandi veðurspá verður veðrið verst á norðvestanverðu landinu. Búast má við að gefnar verði út gular og jafnvel appelsínugular veðurviðvaranir þegar nær dr",
     "date": "2026-10-12T13:50:04+00:00",
     "image": "https://trolli.is/wp-content/uploads/2026/10/vedurspa-14okt26.jpg",
-    "source": "Trölli.is",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Pílufélögin í Fjallabyggð hefja vetrarstarfið",
-    "link": "https://trolli.is/pilufelogin-i-fjallabyggd-hefja-vetrarstarfid/",
-    "summary": "Pílufélögin tvö í Fjallabyggð eru að hefja vetrarstarf sitt og bjóða áhugafólki um pílukast að mæta og taka þátt í skemmtilegum spilakvöldum. Félögin eru með aðstöðu á Siglufirði og í Ólafsfirði þar sem pílukastarar geta komið saman og spreytt sig við píluspjaldið. Pílukvöld á fimmtudögum á Siglufir",
-    "date": "2026-10-12T13:46:40+00:00",
-    "image": "https://trolli.is/wp-content/uploads/2026/10/pila.jpg",
     "source": "Trölli.is",
     "category": "Fréttamiðlar",
     "cats": [
