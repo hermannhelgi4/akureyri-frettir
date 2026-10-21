@@ -1,5 +1,17 @@
 [
   {
+    "title": "Nemendur af íþrótta- og lýðheilsubraut í Lillehammer/Gausdal",
+    "link": "https://www.vma.is/is/skolinn/frettir/nemendur-af-ithrotta-og-lydheilsubraut-i-lillehammergausdal",
+    "summary": "Gausdal",
+    "date": "2026-10-21T07:00:00+00:00",
+    "image": "https://www.vma.is/static/news/sm/img_9162.jpeg",
+    "source": "VMA",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Handbolti: Langþráður heimaleikur Þórsara",
     "link": "https://www.akureyri.net/is/moya/news/handbolti-langthradur-heimaleikur-thorsara",
     "summary": "Sjöunda umferð efstu deildar karla í handknattleik, Olísdeildinni, hófst í gær og verður fram haldið í kvöld og næstu kvöld. Fyrri Akureyrarleikurinn er í kvöld þegar Þór tekur á móti Stjörnunni. Þórsarar töpuðu fyrir ÍBV í Eyjum í síðustu umferð me...",
@@ -4686,18 +4698,6 @@
     "image": "https://akureyri.payload.is/api/media/file/ari-brynjolfsson-378x558.png",
     "source": "Akureyrarbær",
     "category": "Bærinn",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Blessað barnalán í VMA!",
-    "link": "https://www.vma.is/is/skolinn/frettir/fimm-ungabornum-fagnad",
-    "summary": "Ungabörn",
-    "date": "2026-09-22T12:21:00+00:00",
-    "image": "https://www.vma.is/static/news/sm/born.jpg",
-    "source": "VMA",
-    "category": "Menntun",
     "cats": [
       "Bærinn"
     ]
