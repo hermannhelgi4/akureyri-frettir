@@ -1,11 +1,11 @@
 {
- "upd": "21.10 08:07",
+ "upd": "21.10 09:06",
  "now": {
   "T": -1.0,
   "F": 0.0,
   "D": "Logn",
-  "W": "Skýjað",
-  "night": true
+  "W": "Alskýjað",
+  "night": false
  },
  "days": [
   {
