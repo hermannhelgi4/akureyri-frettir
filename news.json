@@ -1,5 +1,41 @@
 [
   {
+    "title": "Bleiki dagurinn í VMA",
+    "link": "https://www.vma.is/is/skolinn/frettir/bleiki-dagurinn-i-vma",
+    "summary": "Bleiki dagurinn",
+    "date": "2026-10-21T10:29:00+00:00",
+    "image": "https://www.vma.is/static/news/sm/20261021_094905.jpg",
+    "source": "VMA",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Nýtt lag frá Dimmu: „Mikill andi í bandinu“",
+    "link": "https://kaffid.is/nytt-lag-fra-dimmu-mikill-andi-i-bandinu/",
+    "summary": "Hljómsveitin Dimma sendi í dag frá sér nýtt lag. Lagið heitir Þegar Dómklukkan Slær og er annað lagið sem rokksveitin […]",
+    "date": "2026-10-21T10:21:57+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/10/dimma.png",
+    "source": "Kaffið",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Ashani Arulananthan lýkur doktorsprófi við Háskólann á Akureyri",
+    "link": "https://kaffid.is/ashani-arulananthan-lykur-doktorsprofi-vid-haskolann-a-akureyri/",
+    "summary": "Ashani Arulananthan varði doktorsritgerð sína í auðlindafræðum við Háskólann á Akureyri þann 7. október síðastliðinn. Ritgerðin ber heitið Áhrif fjölflúorsetinna […]",
+    "date": "2026-10-21T10:01:27+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/10/ashani-doktorsvorn.png",
+    "source": "Kaffið",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Fjórir úr KA í sigurliði U20 smáþjóða í blaki",
     "link": "https://www.akureyri.net/is/moya/news/fjorir-ur-ka-i-sigurlidi-u20-smathjoda-i-blaki",
     "summary": "Blakdeild KA átti fjóra fulltrúa í U20 landsiði karla sem vann SCA-keppni í blaki, smáþjóðamót sem gefur þjóðum möguleika á stigasöfnun og er jafnframt undankeppni fyrir Evrópumót U20. Með sigrinum tryggði liðið rétt til þátttöku í lokakeppni EM sem ...",
@@ -10,6 +46,18 @@
     "cats": [
       "Fréttir",
       "Íþróttir"
+    ]
+  },
+  {
+    "title": "Hlíðarvallamálinu frestað í bæjarstjórn",
+    "link": "https://www.akureyri.net/is/moya/news/hlidarvallamalinu-frestad-i-baejarstjorn",
+    "summary": "Bæjarstjórn samþykkti í gær samhljóða að fresta afgreiðslu deiliskipulagsbreytingar fyrir athafnasvæði við Hlíðarvelli sem skipulagsráð hafði vísað til bæjarstjórnar og lagt til að bæjarstjórn samþykkti með minniháttar breytingum sem ráðið gerði til ...",
+    "date": "2026-10-21T10:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1792576647_bilaklubbur-akureyri.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
     ]
   },
   {
@@ -43,6 +91,18 @@
     "date": "2026-10-21T09:55:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/holduradal.jpg",
     "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Jafnvægismerkið veitt 163 fyrirtækjum",
+    "link": "https://www.akureyri.net/is/moya/news/jafnvaegismerkid-veitt-163-fyrirtaekjum",
+    "summary": "Fjöldi fyrirtækja og stofnana sem starfa á Akureyri er í hópi þeirra 163 aðila sem hlutu viðurkenningu Jafnvægisvogarinnar árið 2026. Viðurkenningarnar voru afhentar sl. miðvikudag fyrir árangur við að tryggja kynjajafnvægi í framkvæmdastjórnum. Jaf...",
+    "date": "2026-10-21T09:30:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1792161076_image001.jpg",
+    "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
@@ -1359,32 +1419,6 @@
     ]
   },
   {
-    "title": "Handbolti: Fyrsti sigurinn hjá KA/Þór",
-    "link": "https://www.akureyri.net/is/moya/news/handbolti-fyrsti-sigurinn-hja-kathor",
-    "summary": "KA/Þór vann 32:28 sigur á Stjörnunni í 6. umferð efstu deildar kvenna í handknattleik, Olís-deildinni, í KA-heimilinu í dag. Sigurinn var bæði kærkominn og nauðsynlegur, því liðið hafði tapað fyrstu fimm leikjunum en lyfti sér af botninum með þessum ...",
-    "date": "2026-10-17T21:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/jonni2.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Sigþóra Brynja og Arnar Íslandsmeistarar",
-    "link": "https://www.akureyri.net/is/moya/news/sigthora-brynja-og-arnar-islandsmeistarar",
-    "summary": "Sigþóra Brynja Kristjánsdóttir úr Ungmennafélagi Akureyrar (UFA) varð í morgun Íslandsmeistari í víðavangshlaupi kvenna. Sigþóra hljóp tíu kílómetrana á 43:56 mínútum. Keppendur úr UFA hirtu reyndar öll verðlaunin í kvennaflokknum því Rannveig Oddsdó...",
-    "date": "2026-10-17T20:45:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/8m1a3717.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
     "title": "Akureyringar unnu botnslaginn",
     "link": "https://www.mbl.is/sport/handbolti/2026/10/17/akureyringar_unnu_botnslaginn/",
     "summary": "KA/Þór vann sinn fyrsta sigur á tímabilinu í úrvalsdeild kvenna í handbolta í kvöld er liðið lagði Stjörnuna, 32:28, á heimavelli.",
@@ -2053,35 +2087,11 @@
   },
   {
     "title": "Gæði hjúkrunarheimila eru mælikvarði á velmegun",
-    "link": "https://kaffid.is/gaedi-hjukrunarheimila-eru-maelikvardi-a-velmegun/",
-    "summary": "Þegar foreldri eða maki flytur á hjúkrunarheimili breytist margt í lífi fjölskyldunnar. Aðstandendur þurfa að geta treyst því að manneskjan […]",
-    "date": "2026-10-16T14:28:22+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2025/10/rsz_1framsokn-althingi-ingbjorg_isaksen-157.jpg",
-    "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Gæði hjúkrunarheimila eru mælikvarði á velmegun",
     "link": "https://www.vikubladid.is/is/moya/news/gaedi-hjukrunar-heimila-eru-maeli-kvardi-a-vel-megun",
     "summary": "Þegar foreldri eða maki flytur á hjúkrunarheimili breytist margt í lífi fjölskyldunnar. Aðstandendur þurfa að geta treyst því að manneskjan sem þeim þykir vænt um fái góða umönnun. Sá sem flytur þarf að finna að hlustað sé á hann, að óskir hans skipti máli og að hann geti áfram haft áhrif á eigið lí",
     "date": "2026-10-16T14:26:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/1792161234_imba.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Verkfærasalan styður verklega kennslu í tæknifræði",
-    "link": "https://kaffid.is/verkfaerasalan-stydur-verklega-kennslu-i-taeknifraedi/",
-    "summary": "Tæknifræðideild HA/HR fékk á dögunum handverkfæri að gjöf frá Verkfærasölunni. Í tilkynningu á vef Háskólans á Akureyri í dag segir […]",
-    "date": "2026-10-16T14:25:35+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2026/10/unak-16.10.2026-gjof.png",
-    "source": "Kaffið",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
@@ -4624,18 +4634,6 @@
     "date": "2026-09-23T09:29:00+00:00",
     "image": "https://www.ma.is/static/news/sm/namsmatsdagur.png",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Þátttakan í ungmennaráði Samfés hefur gefið mér mikið",
-    "link": "https://www.vma.is/is/skolinn/frettir/oflug-i-starfi-ungmennarads-samfes",
-    "summary": "Erla",
-    "date": "2026-09-23T07:00:00+00:00",
-    "image": "https://www.vma.is/static/news/sm/x.jpeg",
-    "source": "VMA",
     "category": "Menntun",
     "cats": [
       "Bærinn"
