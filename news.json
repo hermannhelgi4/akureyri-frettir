@@ -1,5 +1,29 @@
 [
   {
+    "title": "Þjónustu- og fundagátt liggja niðri vegna uppfærslu",
+    "link": "https://www.akureyri.is/thjonustu-og-fundagatt-liggja-nidri-vegna-uppfaerslu",
+    "summary": "Vonast er til að þær verði aftur aðgengilegar síðar í dag, en mögulega ekki fyrr en á morgun.",
+    "date": "2026-10-21T11:43:59+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/R%C3%A1%C3%B0h%C3%BAsi%C3%B0%20-%20Bjarki%20Brynj%C3%B3lfs-11-2000x1333.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Snjóframleiðsla að hefjast í Hlíðarfjalli",
+    "link": "https://kaffid.is/snjoframleidsla-ad-hefjast-i-hlidarfjalli/",
+    "summary": "Fyrsti snjóframleiðslugluggi vetrarins í Hlíðarfjalli er framundan og stefnt er á að hefja framleiðslu næstkomandi föstudag, 23. október, og framleiða […]",
+    "date": "2026-10-21T11:30:52+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/10/hlidarfjallsnjor.png",
+    "source": "Kaffið",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Raunfærnimat í brennidepli í alþjóðlegri heimsókn",
     "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/raunfaernimat-i-brennidepli-i-althjodlegri-heimsokn",
     "summary": "Starfsfólk háskólans tók á móti gestum í alþjóðlegu Erasmus+ verkfni",
@@ -85,24 +109,24 @@
     ]
   },
   {
-    "title": "Aðalsteinn Þórsson sýnir í Leyni",
-    "link": "https://kaffid.is/adalsteinn-thorsson-synir-i-leyni/",
-    "summary": "Myndlistarmaðurinn Aðalsteinn Þórsson sýnir málverk og teikningar á Leyni Hafnarstræti 95 á Akureyri. Myndirnar eiga það sameiginlegt að vera af […]",
-    "date": "2026-10-21T09:55:24+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2026/10/6ad8899ab2c83.jpg",
-    "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Þrjátíu ára umhverfisvegferð Hölds: 40.000 tré gróðursett",
     "link": "https://www.vikubladid.is/is/moya/news/thrjatiu-ara-umhverfisvegferd-holds-40000-tre-grodursett",
     "summary": "Merkum áfanga var náð á dögunum þegar starfsfólk Hölds gróðursetti tré númer 40.000 í árlegri gróðursetningarferð félagsins. Gróðursetning hefur verið fastur liður í starfsemi Hölds í þrjá áratugi og hefur starfsfólk víða um land tekið þátt í verkefninu.",
     "date": "2026-10-21T09:55:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/holduradal.jpg",
     "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "„Orkuskipti þurfa að taka mið af þeim miklu vegalengdum sem við búum við“",
+    "link": "https://kaffid.is/orkuskipti-thurfa-ad-taka-mid-af-theim-miklum-vegalengdum-sem-vid-buum-vid/",
+    "summary": "Nýlega lauk þriggja ára Evrópuverkefninu RECET sem tengdi saman samstarfsaðila frá fimm löndum til að finna leiðir sem henta sveitarfélögum […]",
+    "date": "2026-10-21T09:43:00+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/10/recet_verkefni_albertina_sigurborg.jpg",
+    "source": "Kaffið",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
@@ -127,6 +151,18 @@
     "date": "2026-10-21T09:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/holdur-grodursetning.jpg",
     "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Aðalsteinn Þórsson sýnir í Leyni",
+    "link": "https://kaffid.is/adalsteinn-thorsson-synir-i-leyni/",
+    "summary": "Myndlistarmaðurinn Aðalsteinn Þórsson sýnir málverk og teikningar á Leyni Hafnarstræti 95 á Akureyri. Myndirnar eiga það sameiginlegt að vera af […]",
+    "date": "2026-10-21T07:55:00+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/10/6ad8899ab2c83.jpg",
+    "source": "Kaffið",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
@@ -2058,31 +2094,6 @@
     "cats": [
       "Fréttir",
       "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Myndband: Pollamót Þórs og Skógarbaðanna sló öll met",
-    "link": "https://kaffid.is/myndband-pollamot-thors-og-skogarbadanna-slo-oll-met/",
-    "summary": "Pollamót Þórs og Skógarbaðanna fór fram með glæsibrag 2. og 3. október sl. í Íþróttahöllinni á Akureyri. Aldrei hafa fleiri […]",
-    "date": "2026-10-16T16:56:00+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2016/09/cropped-favicon-3.png",
-    "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Stofnun félagasamtaka um björgun Kristnesspítala",
-    "link": "https://kaffid.is/stofnun-felagasamtaka-um-bjorgun-kristnesspitala/",
-    "summary": "Þann 1. nóvember næstkomandi verða liðin 99 ár frá vígslu Kristneshælis í Eyjafirði. Eins og alþjóð veit er ástand hússins […]",
-    "date": "2026-10-16T16:07:16+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2026/10/IMG_3054.jpg",
-    "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
@@ -4719,18 +4730,6 @@
     "image": "https://www.listak.is/static/news/thumb_816030289_1108160468326037_2197399938478486570_n.png.jpeg",
     "source": "Listasafnið á Akureyri",
     "category": "Menning",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Framkvæmdir við Krossanesbraut og Undirhlíð",
-    "link": "https://www.akureyri.is/framkvaemdir-vid-krossanesbraut-og-undirhlid",
-    "summary": "Í næstu viku hefjast framkvæmdir við endurbætur á gatnamótum Undirhlíðar og Krossanesbrautar. Samhliða verður ráðist í endurnýjun regnvatnslagna.",
-    "date": "2026-09-21T13:53:10+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/lokanir-1-966x654.png",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
     "cats": [
       "Bærinn"
     ]
