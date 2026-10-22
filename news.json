@@ -1,5 +1,17 @@
 [
   {
+    "title": "Viðtalstími bæjarfulltrúa þriðjudaginn 27. október",
+    "link": "https://www.akureyri.is/vidtalstimi-baejarfulltrua-thridjudaginn-27-oktober",
+    "summary": "Boðið er upp á þrjú 30 mínútna viðtöl og þarf að bóka tíma fyrirfram á akureyri.is",
+    "date": "2026-10-22T10:45:55+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/baejarfulltruar-1800x1044.png",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Guðrið Hansdóttir með tónleika á Græna",
     "link": "https://www.akureyri.net/is/moya/news/gudrid-hansdottir-med-tonleika-a-graena",
     "summary": "Færeyska tónlistarkonan Guðrið Hansdóttir kemur fram á Græna hattinum á Akureyri í kvöld, fimmtudagskvöldið 22. október. Tónleikarnir eru hluti af níu tónleika hringferð hennar um Ísland, sem helguð er nýjustu plötu hennar, Sýrublað. Platan kom út f...",
@@ -45,6 +57,18 @@
     "category": "Íþróttir",
     "cats": [
       "Íþróttir"
+    ]
+  },
+  {
+    "title": "„Vinnustaður þar sem fólk hefur jöfn tækifæri til að hafa áhrif“",
+    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/vinnustadur-thar-sem-folk-hefur-jofn-taekifaeri-til-ad-hafa-ahrif",
+    "summary": "HA hlýtur viðurkenningu Jafnvægisvogarinnar 2026",
+    "date": "2026-10-22T09:49:00+00:00",
+    "image": "https://www.unak.is/static/news/sm/unak-frett-21.10.26-apel-verkefni-3.png",
+    "source": "Háskólinn á Akureyri",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
     ]
   },
   {
@@ -4795,18 +4819,6 @@
     ]
   },
   {
-    "title": "Kjarneðlisfræðingurinn frá Krossanesi",
-    "link": "https://www.akureyri.is/kjarnedlisfraedingurinn-fra-krossanesi",
-    "summary": "Minningarmálþing í tilefni 100 ára fæðingarafmælis Ara Brynjólfssonar eðlisfræðings fer fram í Menntaskólanum á Akureyri sunnudaginn 27. september kl. 13.30. Málþingið ber heitið Aravaka og fer fram á ensku.",
-    "date": "2026-09-22T12:30:00+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/ari-brynjolfsson-378x558.png",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
     "title": "Fjölskylduleiðsögn á sunnudaginn",
     "link": "https://www.listak.is/is/moya/news/fjolskylduleidsogn-a-sunnudaginn-41",
     "summary": "Sagt verður frá sýningunum Í snertingu, Hversdagsland og Hughrif - litir - form II.",
@@ -4994,18 +5006,6 @@
     "summary": "Analaise Maria Sepp-Dallas, stúdent í heimskautarétti, tók nýverið þátt í Arctic Youth Dialogue 2026",
     "date": "2026-09-15T10:00:00+00:00",
     "image": "https://www.unak.is/static/news/sm/1789407969_polar-law-sara_youth-1.png",
-    "source": "Háskólinn á Akureyri",
-    "category": "Menntun",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Grétar Þór flutti tvö erindi á alþjóðlegri ráðstefnu í Róm",
-    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/gretar-thor-flutti-tvo-erindi-a-althjodlegri-radstefnu-i-rom",
-    "summary": "Heimastjórnir og viðbrögð við Covid meðal efnis í erindunum",
-    "date": "2026-09-14T14:31:00+00:00",
-    "image": "https://www.unak.is/static/news/sm/copy-of-unak-frett-isme-oddur-1.09.2026.png",
     "source": "Háskólinn á Akureyri",
     "category": "Menntun",
     "cats": [
