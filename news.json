@@ -1,5 +1,66 @@
 [
   {
+    "title": "Guðrið Hansdóttir með tónleika á Græna",
+    "link": "https://www.akureyri.net/is/moya/news/gudrid-hansdottir-med-tonleika-a-graena",
+    "summary": "Færeyska tónlistarkonan Guðrið Hansdóttir kemur fram á Græna hattinum á Akureyri í kvöld, fimmtudagskvöldið 22. október. Tónleikarnir eru hluti af níu tónleika hringferð hennar um Ísland, sem helguð er nýjustu plötu hennar, Sýrublað. Platan kom út f...",
+    "date": "2026-10-22T10:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/gudrid-hansdottir.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Aðalsteinn sýnir Hausa og andlitsmyndir",
+    "link": "https://www.akureyri.net/is/moya/news/adalsteinn-synir-hausa-og-andlitsmyndir",
+    "summary": "Aðalsteinn Þórsson opnar í kvöld, fimmtudagskvöld, sýninguna Hausar og andlitsmyndir á Leyni við Hafnarstræti 95 á Akureyri. Þar sýnir hann verk frá ólíkum tímum á ferlinum, unnin með fjölbreyttum aðferðum en eiga það sameiginlegt að fjalla um höfuð ...",
+    "date": "2026-10-22T10:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/steini2.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Ábyrgðin er þín!",
+    "link": "https://www.ein.is/is/um-einingu-idju/utgefid-efni/frettir/abyrgdin-er-thin-12",
+    "summary": "Öllum launagreiðslum skal fylgja launaseðill, hvort sem þú ert fast- eða lausráðinn, í fullu starfi, hlutastarfi eða sumarvinnu. Ef þú færð ekki launaseðil þá er það á þína ábyrgð að biðja um hann.",
+    "date": "2026-10-22T10:00:00+00:00",
+    "image": "https://www.ein.is/static/news/sm/1792491790_abyrgdin_er_thin_1-c.jpg",
+    "source": "Eining-Iðja",
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Lesendur spá KA falli á laugardaginn",
+    "link": "https://fotbolti.net/news/22-10-2026/lesendur-spa-ka-falli-a-laugardaginn",
+    "summary": "Lokaumferð Bestu deildarinnar fer fram á laugardag þar sem Akureyrarliðin Þór og KA berjast um að halda sæti sínu í deildinni. Þór situr í tíunda sæti deildarinnar með eins stigs forskot á KA fyrir lokaumferðina. Þórsarar sækja FH heim í Kaplakrika á meðan KA tekur á móti föllnum Eyjamönnum. Þórsara",
+    "date": "2026-10-22T10:00:00+00:00",
+    "image": "https://fotbolti.net/images/news/917000/917790/800/image.jpg",
+    "source": "Fótbolti.net",
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Öruggur sigur Þórs á Stjörnunni",
+    "link": "https://www.akureyri.net/is/moya/news/oruggur-sigur-thors-a-stjornunni",
+    "summary": "Þórsarar unnu sanngjarnan sigur á Stjörnunni, 37:32 á heimavelli í gærkvöldi í sjöundu umferð efstu deildar Íslandsmótsins í handbolta, Olísdeildarinnar. Fyrri hálfleikurinn var sveiflukenndur; Þór byrjaði betur og komst í 4:1 eftir fjórar mínútur, ...",
+    "date": "2026-10-22T09:30:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/mikkel-bak-scheumann-jensen-arm_6698-nota.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
     "title": "KA-menn taka á móti Aftureldingu í kvöld",
     "link": "https://www.akureyri.net/is/moya/news/ka-menn-taka-a-moti-aftureldingu-i-kvold",
     "summary": "Sjöunda umferð efstu deildar karla í handknattleik, Olísdeildarinnar, er hálfnuð. KA-menn taka á móti liði Aftureldingar í kvöld og umferðinni lýkur annað kvöld með tveimur leikjum. Tveir síðustu leikir KA voru á útivelli, hinn fyrri í bikarkeppninn...",
@@ -985,18 +1046,6 @@
     ]
   },
   {
-    "title": "Ný viðmið fyrir ræstingaútboð ríkisins",
-    "link": "https://www.ein.is/is/um-einingu-idju/utgefid-efni/frettir/ny-vidmid-fyrir-raestingautbod-rikisins",
-    "summary": "Fjármála- og efnahagsráðuneytið hefur gefið út viðmið fyrir útboð ræstinga ríkisins. Markmið þeirra er að stuðla að auknu gagnsæi, samræmi og gæðum við útboð ríkisins. Jafnframt er þeim ætlað að efla ábyrg innkaup sem byggjast á raunhæfum kostnaðarforsendum og taka mið af kjarasamningsbundnum réttin",
-    "date": "2026-10-20T10:00:00+00:00",
-    "image": "https://www.ein.is/static/news/sm/mynf-af-vef-stjornarradsins.webp",
-    "source": "Eining-Iðja",
-    "category": "Fyrirtæki & félög",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
     "title": "Boreal Screendance Festival hefst á föstudaginn",
     "link": "https://kaffid.is/boreal-screendance-festival-hefst-a-fostudaginn/",
     "summary": "Vídeódanshátíðin Boreal Screendance Festival 2026 hefst á föstudaginn í Ketilhúsi Listasafnsins á Akureyri. Boreal hefur verið haldin á mörkum hausts og […]",
@@ -1461,31 +1510,6 @@
     ]
   },
   {
-    "title": "Sex hæðir of mikið að mati skipulagsráðs",
-    "link": "https://www.akureyri.net/is/moya/news/sex-haedir-of-mikid-ad-mati-skipulagsrads",
-    "summary": "Skipulagsráð telur hugmyndir Hrísalundar ehf. um byggingu fjölbýlishúss að Hrísalundi 3 fela í sér of háa byggingu. Fyrirliggjandi tillaga eigenda gerir ráð fyrir sex hæða húsi ásamt bílakjallara, en það er mat skipulagsráðs að lækka þurfi húsið um a...",
-    "date": "2026-10-18T17:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/hrisalundur-3-hugmyndir-lodarhafa.png",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Hallgrímur sá sjöundi með 400 deildaleiki",
-    "link": "https://www.akureyri.net/is/moya/news/hallgrimur-sa-sjoundi-med-400-deildaleiki",
-    "summary": "Hallgrímur Mar Steingrímsson, KA-maðurinn reyndi, varð aðeins sjöundi leikmaðurinn í sögu Íslandsmótsins í knattspyrnu til að ná stórum áfanga þegar KA sótti Valsmenn heim í næstsíðustu umferð Bestu deildar karla í gær. Hallgrímur lék þar sinn 400. ...",
-    "date": "2026-10-18T16:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/arm-hallgrimur-mar_9083.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
     "title": "Hausttónleikar Tónlistarskólans á Tröllaskaga",
     "link": "https://dal.is/hausttonleikar-tonlistarskolans-a-trollaskaga-3/",
     "summary": "Hausttónleikar Tónlistarskólans á Tröllaskaga standa yfir næstu daga í Fjallabyggð og í Dalvíkurbyggð. Fjöldi nemenda stígur á sviðið og eru",
@@ -1687,19 +1711,6 @@
     ]
   },
   {
-    "title": "Blak og körfubolti heima – pílukast í Reykjavík",
-    "link": "https://www.akureyri.net/is/moya/news/blak-og-korfubolti-heima-pilukast-i-reykjavik",
-    "summary": "Tveir leikir eru á dagskránni á Akureyri í dag, seinni blakleikur KA-kvenna gegn HK/Ými og leikur Þórs og KV í 1. deild kvenna í körfubolta. Keppendur frá píludeild Þórs halda áfram á seinni degi Íslandsmóts félagsliða í Reykjavík í dag. Blak: KA ...",
-    "date": "2026-10-18T11:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/ithrottir-dagsins-18.10..png",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
     "title": "Sjáðu mörkin: KR tryggði annað sætið og fallbaráttan tók óvænta stefnu",
     "link": "https://www.visir.is/g/20262949936d/sjadu-morkin-kr-tryggdi-annad-saetid-og-fallbarattan-tok-ovaenta-stefnu",
     "summary": "Þrír athyglisverðir leikir fóru fram í Bestu deild karla í fótbolta í gær. KR tryggði annað sæti deildarinnar og í neðri hlutanum áttu sér stað óvæntar sviptingar sem breyta landslaginu fyrir lokaumferð deildarinnar.",
@@ -1885,18 +1896,6 @@
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Besta deildin: Þórsarar sendu nágranna sína í fallsæti",
-    "link": "https://fotbolti.net/news/17-10-2026/besta-deildin-thorsarar-sendu-nagranna-sina-i-fallsaeti",
-    "summary": "Þór 3 - 1 Stjarnan 0-1 Örvar Eggertsson ('3 ) 1-1 Ásbjörn Líndal Arnarsson ('11 ) 2-1 Sverrir Páll Ingason ('19 ) 3-1 Þorri Ingólfsson ('58 ) Lestu um leikinn",
-    "date": "2026-10-17T15:58:00+00:00",
-    "image": "https://fotbolti.net/images/news/924000/924970/800/image.jpg",
-    "source": "Fótbolti.net",
-    "category": "Íþróttir",
-    "cats": [
       "Íþróttir"
     ]
   },
