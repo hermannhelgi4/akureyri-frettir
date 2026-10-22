@@ -1,9 +1,22 @@
 [
   {
+    "title": "KA-menn taka á móti Aftureldingu í kvöld",
+    "link": "https://www.akureyri.net/is/moya/news/ka-menn-taka-a-moti-aftureldingu-i-kvold",
+    "summary": "Sjöunda umferð efstu deildar karla í handknattleik, Olísdeildarinnar, er hálfnuð. KA-menn taka á móti liði Aftureldingar í kvöld og umferðinni lýkur annað kvöld með tveimur leikjum. Tveir síðustu leikir KA voru á útivelli, hinn fyrri í bikarkeppninn...",
+    "date": "2026-10-22T08:30:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/ka-thor_arm_5351.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
     "title": "„Árangurinn verður ekki til af sjálfu sér“",
     "link": "https://kaffid.is/arangurinn-verdur-ekki-til-af-sjalfu-ser/",
     "summary": "Helena Eydís Ingólfsdóttir, forseti sveitarstjórnar Norðurþings og varaformaður SSNE, ávarpaði gesti á árlegri uppskeruhátíð ferðaþjónustunnar sem Markaðsstofa Norðurlands hélt fimmtudaginn […]",
-    "date": "2026-10-22T08:16:00+00:00",
+    "date": "2026-10-22T06:16:00+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/helena_eydis_ingolfsdottir.jpg",
     "source": "Kaffið",
     "category": "Fréttamiðlar",
@@ -203,7 +216,7 @@
     "link": "https://www.esveit.is/eyjafjardarsveit/frettir/samvinna-og-snor-handtok",
     "summary": "Góð og þétt samvinna Eyjafjarðarsveitar og Ungmennafélagsins Samherja birtist með ýmsum hætti – nú síðast í formi nýrrar fartölvu.",
     "date": "2026-10-21T14:39:00+00:00",
-    "image": "https://www.esveit.is/static/news/sm/pxl_20261013_130508082.jpg",
+    "image": "https://www.esveit.is/static/news/sm/aaaa.jpg",
     "source": "Eyjafjarðarsveit",
     "category": "Nærsveitir",
     "cats": [
@@ -479,7 +492,7 @@
   {
     "title": "Handbolti: Langþráður heimaleikur Þórsara",
     "link": "https://www.akureyri.net/is/moya/news/handbolti-langthradur-heimaleikur-thorsara",
-    "summary": "Sjöunda umferð efstu deildar karla í handknattleik, Olísdeildinni, hófst í gær og verður fram haldið í kvöld og næstu kvöld. Fyrri Akureyrarleikurinn er í kvöld þegar Þór tekur á móti Stjörnunni. Þórsarar töpuðu fyrir ÍBV í Eyjum í síðustu umferð me...",
+    "summary": "Sjöunda umferð efstu deildar karla í handknattleik, Olísdeildarinnar, hófst í gær og verður fram haldið í kvöld og næstu kvöld. Fyrri Akureyrarleikurinn er í kvöld þegar Þór tekur á móti Stjörnunni. Þórsarar töpuðu fyrir ÍBV í Eyjum í síðustu umferð...",
     "date": "2026-10-21T06:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/arm_7349-2.jpg",
     "source": "Akureyri.net",
@@ -1679,19 +1692,6 @@
     "summary": "Tveir leikir eru á dagskránni á Akureyri í dag, seinni blakleikur KA-kvenna gegn HK/Ými og leikur Þórs og KV í 1. deild kvenna í körfubolta. Keppendur frá píludeild Þórs halda áfram á seinni degi Íslandsmóts félagsliða í Reykjavík í dag. Blak: KA ...",
     "date": "2026-10-18T11:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/ithrottir-dagsins-18.10..png",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Körfubolti: Þór úr leik í bikarkeppninni",
-    "link": "https://www.akureyri.net/is/moya/news/korfubolti-thor-ur-leik-i-bikarkeppninni",
-    "summary": "Karlalið Þórs í körfuknattleik er úr leik í bikarkeppninni, VÍS-bikarnum, eftir tap á heimavelli fyrir úrvalsdeildarliði Sindra frá Hornafirði í gær í 16 liða úrslitum keppninnar. Lokatölur urðu 82-107. Gestirnir frá Hornafirði byrjuðu betur, en Þór...",
-    "date": "2026-10-18T10:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/thor-sindri-gag.png",
     "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
