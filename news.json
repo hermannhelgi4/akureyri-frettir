@@ -1,5 +1,17 @@
 [
   {
+    "title": "Haustfrí í VMA",
+    "link": "https://www.vma.is/is/skolinn/frettir/haustfri-i-vma",
+    "summary": "haustrí",
+    "date": "2026-10-23T07:00:00+00:00",
+    "image": "https://www.vma.is/static/news/sm/20261021_123540.jpg",
+    "source": "VMA",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Viðtalstími bæjarfulltrúa þriðjudaginn 27. október",
     "link": "https://kaffid.is/vidtalstimi-baejarfulltrua-thridjudaginn-27-oktober/",
     "summary": "Næsti viðtalstími bæjarfulltrúa verður þriðjudaginn 27. október klukkan 16 til 17.30. Boðið verður upp á þrjú 30 mínútna viðtöl og […]",
@@ -4791,18 +4803,6 @@
     "image": "https://www.samherji.is/static/news/sm/hjalti-staerri.jpg",
     "source": "Samherji",
     "category": "Fyrirtæki & félög",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Dagskrá íþróttaviku Evrópu í VMA",
-    "link": "https://www.vma.is/is/skolinn/frettir/dagskra-ithrottaviku-evropu-i-vma",
-    "summary": "Íþróttavika",
-    "date": "2026-09-23T11:45:00+00:00",
-    "image": "https://www.vma.is/static/news/sm/oli.jpg",
-    "source": "VMA",
-    "category": "Menntun",
     "cats": [
       "Bærinn"
     ]
