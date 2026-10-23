@@ -1,5 +1,41 @@
 [
   {
+    "title": "Boreal Screendance hátíðin sett í kvöld",
+    "link": "https://www.akureyri.net/is/moya/news/boreal-screendance-hatidin-sett-i-kvold",
+    "summary": "Vídeódanshátíðin Boreal Screendance Festival hefst í Ketilhúsi Listasafnsins á Akureyri í kvöld, föstudaginn 23. október. Hátíðin hefur verið haldin árlega frá árinu 2020 og býður að þessu sinni upp á 16 vídeódansverk frá 13 löndum, auk sérstakra sýn...",
+    "date": "2026-10-23T10:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/borealscreendancefestival2026_2.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Gæludýr leyfð í Húsafelli",
+    "link": "https://www.ein.is/is/um-einingu-idju/utgefid-efni/frettir/gaeludyr-leyfd-i-husafelli-10",
+    "summary": "Vert er að minna félagsfólk á að gæludýr eru leyfð í orlofshúsi félagsins í Húsafelli.",
+    "date": "2026-10-23T10:00:00+00:00",
+    "image": "https://www.ein.is/static/news/sm/1791818219_20230807_151529cr_c.jpg",
+    "source": "Eining-Iðja",
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Treysta á að FH mæti fagmannlega í lokaleikinn",
+    "link": "https://fotbolti.net/news/23-10-2026/treysta-a-ad-fh-maeti-fagmannlega-i-lokaleikinn",
+    "summary": "Klukkan 14:00 hefst lokaumferðin í Bestu deildinni og tveir leikir fara fram sem skipta verulegu máli. Þór er með eins stigs forskot á KA en staðan er þannig að ef KA fær fleiri stig en Þór þá munu gulir og bláir halda sæti sínu í deildinni. Þór fer á Kaplakrikavöll og KA tekur á móti botnliði ÍBV. ",
+    "date": "2026-10-23T09:30:00+00:00",
+    "image": "https://fotbolti.net/images/news/877000/877043/800/image.jpg",
+    "source": "Fótbolti.net",
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
+  },
+  {
     "title": "Þessir dæma í lokaumferð Bestu",
     "link": "https://fotbolti.net/news/23-10-2026/thessir-daema-i-lokaumferd-bestu",
     "summary": "Lokaumferð Bestu deildar karla verður spiluð á morgun og er mesta spennan í fallbaráttunni þar sem KA og Þór berjast fyrir lífi sínu. Þór er með örlögin í sínum höndum og mun halda sér í deildinni með sigri á FH í Kaplakrika. Helgi Mikael Jónasson dæmir þann leik, Jovan Subic og Ragnar Þór Bender er",
@@ -1382,30 +1418,6 @@
     ]
   },
   {
-    "title": "Þór líklegra til að falla þrátt fyrir forskot",
-    "link": "https://fotbolti.net/news/20-10-2026/thor-liklegra-til-ad-falla-thratt-fyrir-forskot",
-    "summary": "Lokaumferð Bestu deildarinnar fer fram næstkomandi laugardag þar sem Akureyrarliðin Þór og KA berjast um að halda sæti sínu í deildinni. Þór situr í tíunda sæti deildarinnar með eins stigs forskot á KA fyrir lokaumferðina. Þórsarar sækja FH heim í Kaplakrika á meðan KA tekur á móti föllnum Eyjamönnu",
-    "date": "2026-10-20T12:52:00+00:00",
-    "image": "https://fotbolti.net/images/news/914000/914747/800/image.jpg",
-    "source": "Fótbolti.net",
-    "category": "Íþróttir",
-    "cats": [
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Góðar fréttir - Norðurorka hækkar ekki meira en um 2,5%",
-    "link": "https://www.ein.is/is/um-einingu-idju/utgefid-efni/frettir/godar-frettir",
-    "summary": "Gjaldskrá Norðurorku verður ekki hækkuð um meira en 2,5% um áramótin. Þetta var ákveðið á auka aðalfundi fyrirtækisins í morgun. Meirihluti stjórnar vildi hækka gjaldskrá rafmagns um 5%, hitaveitu um 5,5% og fráveitu um 7% en eigendur fyrirtækisins, fjögur sveitarfélög við Eyjafjörð auk Þingeyjarsve",
-    "date": "2026-10-20T12:29:00+00:00",
-    "image": "https://www.ein.is/static/news/sm/1792492757_tryggvi-akbaer-nordurorka-logo-c.jpg",
-    "source": "Eining-Iðja",
-    "category": "Fyrirtæki & félög",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
     "title": "Gjaldskrá hækkar að hámarki um 2,5%",
     "link": "https://www.akureyri.net/is/moya/news/gjaldskra-haekkar-ad-hamarki-um-25",
     "summary": "Gjaldskrá Norðurorku verður ekki hækkuð um meira en 2,5% um áramótin. Þetta var ákveðið á auka aðalfundi fyrirtækisins í morgun. Meirihluti stjórnar vildi hækka gjaldskrá rafmagns um 5%, hitaveitu um 5,5% og fráveitu um 7% en eigendur fyrirtækisins, ...",
@@ -1619,18 +1631,6 @@
     "date": "2026-10-20T06:13:00+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/CCEP_LB.jpg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Veruleiki kvenna á sögulegum tímum",
-    "link": "https://www.akureyri.net/is/moya/news/veruleiki-kvenna-a-sogulegum-timum",
-    "summary": "",
-    "date": "2026-10-20T06:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/93-hronn.jpg",
-    "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
