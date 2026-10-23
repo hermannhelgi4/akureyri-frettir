@@ -1000,22 +1000,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "KA – HK",
-    "source": "Íþróttir",
-    "sport": "Blak",
-    "gender": "Konur",
-    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
-    "start": "2026-11-07",
-    "end": "2026-11-07",
-    "time": "15:30",
-    "image": null,
-    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
-    "teams": [
-      "KA"
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Selfoss – KA/Þór",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -1028,6 +1012,22 @@
     "note": "Útileikur · Olís deild kvenna · Set höllin",
     "teams": [
       "KA/Þór"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "KA – HK",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Konur",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
+    "start": "2026-11-07",
+    "end": "2026-11-07",
+    "time": "15:30",
+    "image": null,
+    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
+    "teams": [
+      "KA"
     ],
     "kind": "Íþróttir"
   },
@@ -2615,7 +2615,7 @@
     "start": "2027-01-17",
     "end": "2027-01-17",
     "time": "15:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1792402917.jpg?v=1792579842",
+    "image": "https://www.mak.is/static/calendar/images/submit_1792402917.jpg?v=1792753413",
     "note": "5.000 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamrar, Hof",
@@ -2982,22 +2982,6 @@
     "kind": "Fjölskylda"
   },
   {
-    "title": "HK – KA",
-    "source": "Íþróttir",
-    "sport": "Blak",
-    "gender": "Karlar",
-    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
-    "start": "2027-02-13",
-    "end": "2027-02-13",
-    "time": "15:00",
-    "image": null,
-    "note": "Útileikur · Unbrokendeild karla · Digranes",
-    "teams": [
-      "KA"
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Þór – ÍBV",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -3010,6 +2994,22 @@
     "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
     "teams": [
       "Þór"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "HK – KA",
+    "source": "Íþróttir",
+    "sport": "Blak",
+    "gender": "Karlar",
+    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
+    "start": "2027-02-13",
+    "end": "2027-02-13",
+    "time": "15:00",
+    "image": null,
+    "note": "Útileikur · Unbrokendeild karla · Digranes",
+    "teams": [
+      "KA"
     ],
     "kind": "Íþróttir"
   },
