@@ -1,5 +1,29 @@
 [
   {
+    "title": "Farþegafjölgun hjá Sæfara á liðnu sumri..... um einn",
+    "link": "https://www.vikubladid.is/is/moya/news/farthegafjolgun-hja-saefara-a-lidnu-sumri-um-einn",
+    "summary": "Farþegum með Grímseyjarferjunni Sæfara fjölgaði milli ára samkvæmt nýjum tölum fyrir tímabilið 1. maí til 1. september. Sumarið 2025 flutti ferjan 6.028 farþega en sumarið 2026 voru farþegarnir 6.029. Það fjölgaði um einn farþega á tímabilinu.",
+    "date": "2026-10-24T12:07:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/grimseyjarferja.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Lögreglan á Norðurlandi eystra Óskar eftir fjármögnun 7 nýrra stöðugilda",
+    "link": "https://www.vikubladid.is/is/moya/news/logreglan-a-nordurlandi-eystra-oskar-eftir-fjarmognun-7-nyrra-stodugilda",
+    "summary": "Lögreglan á Norðurlandi eystra fer fram á fjármögnun fyrir sjö ný stöðugildi, þar af fimm til almennrar eflingar löggæslu og tvö vegna verkefna sem tengjast ofbeldi gegn börnum.",
+    "date": "2026-10-24T11:55:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/logreglan-ney.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Sagnavaka á Leyni",
     "link": "https://kaffid.is/sagnavaka-a-leyni/",
     "summary": "Þjóðdansafélag Reykjavíkur heldur Sagnavöku á Leyni í kvöld, þann 24. október kl. 21:00 og er viðburðurinn opinn öllum þeim sem […]",
@@ -20,6 +44,19 @@
     "source": "Fótbolti.net",
     "category": "Íþróttir",
     "cats": [
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Þór mætir FH á velli Þróttar í Laugardal",
+    "link": "https://www.akureyri.net/is/moya/news/thor-maetir-fh-a-velli-throttar-i-laugardal",
+    "summary": "Leikur Þórs og FH í lokaumferð Bestu deildar karla í knattspyrnu verður á velli Þróttar í Laugardal, Pepsivellinum. Liðin áttu að mætast á heimavelli FH í Hafnarfirði en frost er í jörðu á borgarhorninu og Kaplakrikavöllur var í morgun metinn óleikhæ...",
+    "date": "2026-10-24T11:30:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/thor-fh-gyrdir_0g7a5824.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
       "Íþróttir"
     ]
   },
@@ -1617,18 +1654,6 @@
     ]
   },
   {
-    "title": "Jafnvægismerkið veitt 163 fyrirtækjum",
-    "link": "https://www.akureyri.net/is/moya/news/jafnvaegismerkid-veitt-163-fyrirtaekjum",
-    "summary": "Fjöldi fyrirtækja og stofnana sem starfa á Akureyri er í hópi þeirra 163 aðila sem hlutu viðurkenningu Jafnvægisvogarinnar árið 2026. Viðurkenningarnar voru afhentar sl. miðvikudag fyrir árangur við að tryggja kynjajafnvægi í framkvæmdastjórnum. Jaf...",
-    "date": "2026-10-21T09:30:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/1792161076_image001.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Aðalsteinn Þórsson sýnir í Leyni",
     "link": "https://kaffid.is/adalsteinn-thorsson-synir-i-leyni/",
     "summary": "Myndlistarmaðurinn Aðalsteinn Þórsson sýnir málverk og teikningar á Leyni Hafnarstræti 95 á Akureyri. Myndirnar eiga það sameiginlegt að vera af […]",
@@ -2577,30 +2602,6 @@
     "summary": "Háskólaráð Háskólans á Akureyri samþykkti á fundi sínum 26. september að setja á laggirnar nýtt nám í Kennslu íslensku sem annars máls við Kennaradeild. Námið svarar vaxandi þörf fyrir sérhæfingu kennara í fjöltyngdu skólasamfélagi.",
     "date": "2026-10-17T12:32:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/1792240442_unak.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Brúin fjölskyldusetur Auðveldar börnum og fjölskyldum leið um þjónustukerfið",
-    "link": "https://www.vikubladid.is/is/moya/news/bruin-fjolskyldusetur-audveldar-bornum-og-fjolskyldum-leid-um-thjonustukerfid",
-    "summary": "Brúin fjölskyldusetur, samstarfsverkefni 11 sveitarfélaga á Norðurlandi eystra, hóf formlega starfsemi í vor. Markmið Brúarinnar er að einfalda leið barna og fjölskyldna í gegnum þjónustukerfið með því að tengja saman þá þjónustu sem þau þurfa á að halda.",
-    "date": "2026-10-17T12:29:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/scfsds.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Skipulögð rjúpnaveiði á Þeistareykjum",
-    "link": "https://www.vikubladid.is/is/moya/news/skipulogd-rjupnaveidi-a-theistareykjum",
-    "summary": "Atvinnu- og nýsköpunarnefnd Þingeyjarsveitar hefur samþykkt að fyrirkomulag rjúpnaveiði á Þeistareykjum verði óbreytt frá því sem verið hefur frá árinu 2021. Veiði verður áfram heimil á ákveðnum veiðidögum gegn gjaldi og verða veiðileyfi seld í gegnum vefsíðuna Hlunnindi.is. Óheimilt verður að stund",
-    "date": "2026-10-17T12:23:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/rjupa.jpg",
     "source": "Vikudagur",
     "category": "Fréttamiðlar",
     "cats": [
