@@ -1,5 +1,5 @@
 {
- "upd": "24.10 04:27",
+ "upd": "24.10 04:58",
  "now": {
   "T": -5.6,
   "F": 1.0,
@@ -10,17 +10,17 @@
  "days": [
   {
    "date": "2026-10-25",
-   "T": 2.0,
+   "T": 0.0,
    "F": 3.0,
    "D": "SA",
-   "W": "Lítils háttar slydda"
+   "W": "Lítils háttar snjókoma"
   },
   {
    "date": "2026-10-26",
    "T": 1.0,
    "F": 2.0,
-   "D": "S",
-   "W": "Lítils háttar rigning"
+   "D": "SSA",
+   "W": "Lítils háttar slydda"
   },
   {
    "date": "2026-10-27",
