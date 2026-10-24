@@ -932,22 +932,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "Selfoss – KA/Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/match/110533",
-    "start": "2026-11-07",
-    "end": "2026-11-07",
-    "time": "15:30",
-    "image": null,
-    "note": "Útileikur · Olís deild kvenna · Set höllin",
-    "teams": [
-      "KA/Þór"
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "KA – HK",
     "source": "Íþróttir",
     "sport": "Blak",
@@ -960,6 +944,22 @@
     "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
     "teams": [
       "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Selfoss – KA/Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Konur",
+    "link": "https://www.hsi.is/match/110533",
+    "start": "2026-11-07",
+    "end": "2026-11-07",
+    "time": "15:30",
+    "image": null,
+    "note": "Útileikur · Olís deild kvenna · Set höllin",
+    "teams": [
+      "KA/Þór"
     ],
     "kind": "Íþróttir"
   },
@@ -2204,11 +2204,11 @@
     "title": "Jóla-Drag Bröns Akureyri",
     "source": "Miðasala",
     "site": "Midix",
-    "link": "https://www.midix.is/index.php/is/jola-drag-brons-akureyri-19-dec-2026/eid/1214",
+    "link": "https://www.midix.is/is/jola-drag-brons-akureyri-19-dec-2026/eid/1214",
     "start": "2026-12-19",
     "end": "2026-12-19",
     "time": "13:00",
-    "image": "https://www.midix.is/index.php/storage/event/poster/main/9msuHTfUwAHEI016nqWGUzWRf2cTph-metaSsOzbGEtRHJhZyBCcsO2bnNfQWt1cmV5cmlfNDY2WDU0NS5qcGc=-.jpg",
+    "image": "https://www.midix.is/storage/event/poster/main/9msuHTfUwAHEI016nqWGUzWRf2cTph-metaSsOzbGEtRHJhZyBCcsO2bnNfQWt1cmV5cmlfNDY2WDU0NS5qcGc=-.jpg",
     "note": "8.990 kr.",
     "venue": "Múlaberg",
     "kind": "Tónlist"
@@ -2914,22 +2914,6 @@
     "kind": "Fjölskylda"
   },
   {
-    "title": "Þór – ÍBV",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/111531",
-    "start": "2027-02-13",
-    "end": "2027-02-13",
-    "time": "15:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
-    "teams": [
-      "Þór"
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "HK – KA",
     "source": "Íþróttir",
     "sport": "Blak",
@@ -2942,6 +2926,22 @@
     "note": "Útileikur · Unbrokendeild karla · Digranes",
     "teams": [
       "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þór – ÍBV",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111531",
+    "start": "2027-02-13",
+    "end": "2027-02-13",
+    "time": "15:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
+    "teams": [
+      "Þór"
     ],
     "kind": "Íþróttir"
   },
