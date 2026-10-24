@@ -1,5 +1,41 @@
 [
   {
+    "title": "Sagnavaka á Leyni",
+    "link": "https://kaffid.is/sagnavaka-a-leyni/",
+    "summary": "Þjóðdansafélag Reykjavíkur heldur Sagnavöku á Leyni í kvöld, þann 24. október kl. 21:00 og er viðburðurinn opinn öllum þeim sem […]",
+    "date": "2026-10-24T11:41:29+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/07/703797381_122128419207157116_5777510105631748702_n.jpg",
+    "source": "Kaffið",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Ungu leikmennirnir í sviðsljósinu þegar Akureyrarliðin berjast fyrir lífi sínu",
+    "link": "https://fotbolti.net/news/24-10-2026/ungu-leikmennirnir-i-svidsljosinu-thegar-akureyrarlidin-berjast-fyrir-lifi-sinu",
+    "summary": "Það verður gríðarleg spenna í lokaumferð Bestu deildar karla á laugardaginn þegar KA og Þór berjast um að halda sæti sínu í deildinni. Þórsarar eru með 27 stig, einu stigi meira en KA, og eru því með örlögin í eigin höndum þegar þeir heimsækja FH í Kaplakrika. KA tekur hins vegar á móti föllnum Eyja",
+    "date": "2026-10-24T11:30:00+00:00",
+    "image": "https://fotbolti.net/images/news/915000/915119/800/image.jpg",
+    "source": "Fótbolti.net",
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Vilja að dætur geti leitað jafnt til pabba og mömmu",
+    "link": "https://www.vikubladid.is/is/moya/news/vilja-ad-daetur-geti-leitad-jafnt-til-pabba-og-mommu",
+    "summary": "Tögl og tíðir: Að greiða hár barns getur verið meira en verkefni sem þarf að ljúka áður en haldið er út í daginn. Stundin getur líka gefið færi á spjalli, samveru og tengslamyndun. Á námskeiðinu Tögl og tíðir hjá Þekkingarneti Þingeyinga fá feður tækifæri til að æfa hárgreiðslu og fræðast um blæðing",
+    "date": "2026-10-24T11:06:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/collagethth.png",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Leikur FH og Þórs færður í Laugardalinn",
     "link": "https://fotbolti.net/news/24-10-2026/leikur-fh-og-thors-faerdur-i-laugardalinn",
     "summary": "Leikur FH og Þórs í lokaumferð Bestu deildar karla hefur verið færður á Pepsi-völlinn í Laugardal og hefst hann klukkan 14:00.",
@@ -991,18 +1027,6 @@
     "cats": [
       "Fréttir",
       "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Grímsi: Vildi ekki hitta neinn og lokaði mig inni í herbergi í tvo daga",
-    "link": "https://fotbolti.net/news/22-10-2026/grimsi-vildi-ekki-hitta-neinn-og-lokadi-mig-inni-i-herbergi-i-tvo-daga",
-    "summary": "„Við reynum að nálgast þennan leik eins og þetta sé hver annar leikur þó að í grunninn skiptir hann töluvert meira máli en flestir leikir, en við getum ekkert verið að pæla of mikið í því,\" segir Hallgrímur Mar Steingrímsson, leikmaður KA, við Fótbolta.net. Framundan er leikur KA og ÍBV í lokaumferð",
-    "date": "2026-10-22T16:31:00+00:00",
-    "image": "https://fotbolti.net/images/news/925000/925169/800/image.jpg",
-    "source": "Fótbolti.net",
-    "category": "Íþróttir",
-    "cats": [
-      "Íþróttir"
     ]
   },
   {
@@ -2016,18 +2040,6 @@
     ]
   },
   {
-    "title": "Hver spyr?",
-    "link": "https://kaffid.is/hver-spyr/",
-    "summary": "Ásta Kristín Gunnarsdóttir, hjúkrunarfræðingur og nemi í heilabilunarráðgjöf við Háskólann á Akureyri, skrifar Einmanaleiki er ekki bundinn við einn aldur. […]",
-    "date": "2026-10-19T17:13:00+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2026/10/Copy-of-Kaffidh-Template-2026-10-19T191241.961.png",
-    "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Myndir komnar í albúm",
     "link": "https://www.thorsport.is/is/frettir-greinar/myndir-komnar-i-album",
     "summary": "Myndir úr leikjum Þórs og Breiðabliks í 1. deild karla og Þórs og KV í 1. deild kvenna eru komnar í myndaalbúm.",
@@ -2589,18 +2601,6 @@
     "summary": "Atvinnu- og nýsköpunarnefnd Þingeyjarsveitar hefur samþykkt að fyrirkomulag rjúpnaveiði á Þeistareykjum verði óbreytt frá því sem verið hefur frá árinu 2021. Veiði verður áfram heimil á ákveðnum veiðidögum gegn gjaldi og verða veiðileyfi seld í gegnum vefsíðuna Hlunnindi.is. Óheimilt verður að stund",
     "date": "2026-10-17T12:23:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/rjupa.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Byggðarráð Norðurþings Vill fjölga störfum embættis sýslumanns",
-    "link": "https://www.vikubladid.is/is/moya/news/byggdarrad-nordurthings-vill-fjolga-storfum-embaettis-syslumanns",
-    "summary": "Byggðarráð Norðurþings hvetur nýjan sýslumann til að fjölga störfum embættisins í sveitarfélaginu þegar ný lög um sýslumenn taka gildi 1. janúar 2027. Samkvæmt lögunum skal að minnsta kosti 65% starfa sýslumanna vera staðsett á landsbyggðinni.",
-    "date": "2026-10-17T12:20:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/1792239679_1760618824_husavik.jpg",
     "source": "Vikudagur",
     "category": "Fréttamiðlar",
     "cats": [
