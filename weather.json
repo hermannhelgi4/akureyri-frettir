@@ -1,26 +1,26 @@
 {
- "upd": "24.10 07:58",
+ "upd": "24.10 08:23",
  "now": {
-  "T": -4.6,
+  "T": -4.4,
   "F": 1.0,
-  "D": "SV",
+  "D": "S",
   "W": "Alskýjað",
   "night": true
  },
  "days": [
   {
    "date": "2026-10-25",
-   "T": 0.0,
-   "F": 3.0,
-   "D": "SA",
-   "W": "Lítils háttar snjókoma"
+   "T": 1.0,
+   "F": 2.0,
+   "D": "S",
+   "W": "Slydda"
   },
   {
    "date": "2026-10-26",
    "T": 1.0,
-   "F": 2.0,
+   "F": 1.0,
    "D": "SSA",
-   "W": "Lítils háttar slydda"
+   "W": "Lítils háttar rigning"
   },
   {
    "date": "2026-10-27",
