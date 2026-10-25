@@ -1,11 +1,11 @@
 {
- "upd": "25.10 08:58",
+ "upd": "25.10 09:21",
  "now": {
-  "T": 0.5,
+  "T": 0.2,
   "F": 1.0,
-  "D": "VSV",
+  "D": "S",
   "W": "Rigning",
-  "night": true
+  "night": false
  },
  "days": [
   {
