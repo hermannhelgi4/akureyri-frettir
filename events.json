@@ -1,39 +1,5 @@
 [
   {
-    "title": "SR – SA",
-    "source": "Íþróttir",
-    "sport": "Íshokkí",
-    "gender": "Karlar",
-    "link": "https://stats.iihf.com/ihi/99/index.html",
-    "start": "2026-10-03",
-    "end": "2026-10-03",
-    "time": "17:45",
-    "image": null,
-    "note": "Útileikur · Toppdeild karla",
-    "teams": [
-      "SA"
-    ],
-    "res": "3–2",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "KA – Hamar",
-    "source": "Íþróttir",
-    "sport": "Blak",
-    "gender": "Karlar",
-    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
-    "start": "2026-10-03",
-    "end": "2026-10-03",
-    "time": "18:00",
-    "image": null,
-    "note": "Heimaleikur · Unbrokendeild karla · KA-heimilið",
-    "teams": [
-      "KA"
-    ],
-    "res": "0–3",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "KA – Hamar",
     "source": "Íþróttir",
     "sport": "Blak",
@@ -561,35 +527,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "Lífið er konsert",
-    "source": "MAK / Hof",
-    "link": "https://www.mak.is/is/vidburdir/lifid-er-konsert",
-    "start": "2026-10-24",
-    "end": "2026-10-24",
-    "time": "16:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782999805.jpg?v=1792709889",
-    "note": "Frá 9.900 kr.",
-    "cat0": "Tónleikar",
-    "venue": "Hamraborg, Hof",
-    "kind": "Tónlist"
-  },
-  {
-    "title": "Fjölnir – SA",
-    "source": "Íþróttir",
-    "sport": "Íshokkí",
-    "gender": "Karlar",
-    "link": "https://stats.iihf.com/ihi/99/index.html",
-    "start": "2026-10-24",
-    "end": "2026-10-24",
-    "time": "16:45",
-    "image": null,
-    "note": "Útileikur · Toppdeild karla",
-    "teams": [
-      "SA"
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "ÍR – Þór Ak.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -622,33 +559,6 @@
     ],
     "res": "0–4",
     "kind": "Íþróttir"
-  },
-  {
-    "title": "Fasteignamartröðin",
-    "source": "MAK / Hof",
-    "link": "https://www.mak.is/is/vidburdir/fasteignamartrodin",
-    "start": "2026-10-24",
-    "end": "2026-10-24",
-    "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1792709889",
-    "note": "7.900 kr.",
-    "cat0": "Leiksýningar",
-    "venue": "Samkomuhúsið",
-    "kind": "Leiklist"
-  },
-  {
-    "title": "Vandræðaskáld kynna: Aðför - ofsóknir og önnur áhugamál þjóðar",
-    "source": "Miðasala",
-    "site": "Tix",
-    "link": "https://tix.is/event/22415/vandraedaskald-kynna-adfor-ofsoknir-og-onnur-ahugamal-thjodar",
-    "start": "2026-10-24",
-    "end": "2026-10-24",
-    "time": "21:00",
-    "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22415.jpg",
-    "note": "4.990 kr.",
-    "venue": "Múlaberg, Akureyri",
-    "cat0": "Gaman, Sýning",
-    "kind": "Tónlist"
   },
   {
     "title": "Vestri – KA",
