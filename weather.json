@@ -1,19 +1,19 @@
 {
- "upd": "25.10 16:56",
+ "upd": "25.10 17:19",
  "now": {
-  "T": 3.4,
-  "F": 2.0,
-  "D": "NNV",
+  "T": 2.4,
+  "F": 0.0,
+  "D": "Logn",
   "W": "Rigning",
-  "night": false
+  "night": true
  },
  "days": [
   {
    "date": "2026-10-26",
-   "T": 3.0,
-   "F": 1.0,
+   "T": 2.0,
+   "F": 2.0,
    "D": "SSA",
-   "W": "Lítils háttar rigning"
+   "W": "Rigning"
   },
   {
    "date": "2026-10-27",
@@ -26,7 +26,7 @@
    "date": "2026-10-28",
    "T": 4.0,
    "F": 2.0,
-   "D": "A",
+   "D": "ANA",
    "W": "Lítils háttar rigning"
   }
  ]

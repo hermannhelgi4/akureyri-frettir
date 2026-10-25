@@ -527,6 +527,23 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "Fjölnir – SA",
+    "source": "Íþróttir",
+    "sport": "Íshokkí",
+    "gender": "Karlar",
+    "link": "https://stats.iihf.com/ihi/99/index.html",
+    "start": "2026-10-24",
+    "end": "2026-10-24",
+    "time": "16:45",
+    "image": null,
+    "note": "Útileikur · Toppdeild karla",
+    "teams": [
+      "SA"
+    ],
+    "res": "6–8",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "ÍR – Þór Ak.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
