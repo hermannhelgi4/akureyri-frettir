@@ -1,5 +1,17 @@
 [
   {
+    "title": "Beitarkóngur á Borgum",
+    "link": "https://www.akureyri.net/is/moya/news/beitarkongur-a-borgum",
+    "summary": "Jóhann Árelíuz",
+    "date": "2026-10-25T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1792887938_johann-areliuz-pistlar.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Býst við að hafa spilað sinn síðasta leik fyrir Þór í bili",
     "link": "https://fotbolti.net/news/24-10-2026/byst-vid-ad-hafa-spilad-sinn-sidasta-leik-fyrir-thor-i-bili",
     "summary": "Bráðefnilegur Einar Freyr Halldórsson, sem á 27 leiki að baki fyrir unglingalandslið Íslands, býst við að vera búinn að spila sinn síðasta leik fyrir Þór í bili.",
@@ -1362,18 +1374,6 @@
     "cats": [
       "Fréttir",
       "Íþróttir"
-    ]
-  },
-  {
-    "title": "Leikfélag VMA sýnir Með allt á hreinu",
-    "link": "https://www.akureyri.net/is/moya/news/leikfelag-vma-synir-med-allt-a-hreinu",
-    "summary": "Leikfélag Verkmenntaskólans á Akureyri hefur valið söngleikinn Með allt á hreinu sem uppsetningu vetrarins. Verkið byggir á samnefndri kvikmynd Stuðmanna frá árinu 1982, sem löngu er orðin klassík í íslenskri kvikmyndasögu. Stefnt er að frumsýningu í...",
-    "date": "2026-10-22T19:45:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/med-allt-a-hreinu.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
