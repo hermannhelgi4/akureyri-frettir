@@ -493,6 +493,40 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "KA – ÍBV",
+    "source": "Íþróttir",
+    "sport": "Fótbolti",
+    "gender": "Karlar",
+    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100297",
+    "start": "2026-10-24",
+    "end": "2026-10-24",
+    "time": "14:00",
+    "image": null,
+    "note": "Heimaleikur · Besta deild karla - Neðri hluti · Greifavöllurinn",
+    "teams": [
+      "KA"
+    ],
+    "res": "5–1",
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "FH – Þór",
+    "source": "Íþróttir",
+    "sport": "Fótbolti",
+    "gender": "Karlar",
+    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100296",
+    "start": "2026-10-24",
+    "end": "2026-10-24",
+    "time": "14:00",
+    "image": null,
+    "note": "Útileikur · Besta deild karla - Neðri hluti · PEPSI völlurinn",
+    "teams": [
+      "Þór"
+    ],
+    "res": "1–2",
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Fjölnir – SA",
     "source": "Íþróttir",
     "sport": "Íshokkí",
