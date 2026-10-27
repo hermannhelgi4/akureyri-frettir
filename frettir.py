@@ -59,11 +59,11 @@ FEEDS = [
     {"name": "Kjarnafæði Norðlenska", "url": "https://www.kn.is/feed/rss2", "local": True, "cat": "Fyrirtæki & félög"},
     {"name": "Norlandair", "url": "https://www.norlandair.is/is/feed", "local": True, "cat": "Fyrirtæki & félög"},
     {"name": "Glerártorg", "url": "https://www.glerartorg.is/is/feed", "local": True, "cat": "Fyrirtæki & félög"},
-    {"name": "Eining-Iðja", "url": "https://www.ein.is/is/feed", "local": True, "cat": "Fyrirtæki & félög", "max": 5},
 ]
 CAT_BY_SOURCE = {f["name"]: f["cat"] for f in FEEDS}
 MAX_BY_SOURCE = {f["name"]: f.get("max", 30) for f in FEEDS}
 MAX_BY_SOURCE["Fótbolti.net"] = 15
+REMOVED_SOURCES = {"Eining-Iðja"}  # heimildir sem eru teknar út (líka gamlar fréttir frá þeim)
 MAX_AGE_DAYS = 90  # fréttir eldri en þetta (í dögum) eru ekki sýndar
 CAT_BY_SOURCE["Fótbolti.net"] = "Íþróttir"
 
@@ -444,7 +444,7 @@ if(!blocks.length){box.appendChild(el("div","sub","Engin flug skráð."));return
 blocks.sort((a,b)=>a.d-b.d);blocks.forEach(b=>box.appendChild(b.n));
 box.appendChild(el("div","fnote","Upplýsingar eru skráðar eftir heimasíðum flugfélaga og ferðaskrifstofa og geta breyst. Staðfestu alltaf tíma og verð við bókun."))}
 const nk=x=>(x==="Þór Ak."?"Þór":x||"").toLowerCase().replace(/[ .]/g,"");let HBL={},hbT=0;
-function hbPoll(){if(!API||Date.now()-hbT<25000)return;hbT=Date.now();fetch(API+"/hb").then(r=>r.json()).then(d=>{const m={};["live","upcoming","finished"].forEach(k=>(d[k]||[]).forEach(g=>{m[nk(g.home.name)+"|"+nk(g.away.name)]={h:g.home.score,a:g.away.score,clock:g.clock,st:g.status,url:"https://www.hbstatz.is/"+(g.reportUrl||"").replace(/^[/]/,"")}}));HBL=m;const v=document.getElementById("viewSp");if(v&&!v.hidden)renderSp()}).catch(function(){})}
+function hbPoll(){if(!API||Date.now()-hbT<25000)return;hbT=Date.now();fetch(API+"/hb").then(r=>r.json()).then(d=>{const m={};["upcoming","finished","live"].forEach(k=>(d[k]||[]).forEach(g=>{m[nk(g.home.name)+"|"+nk(g.away.name)]={h:g.home.score,a:g.away.score,clock:g.clock,st:g.status,url:"https://www.hbstatz.is/"+(g.reportUrl||"").replace(/^[/]/,"")}}));HBL=m;const v=document.getElementById("viewSp");if(v&&!v.hidden)renderSp()}).catch(function(){})}
 function renderSp(){const n0=new Date(),t=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("splist"),dd=document.getElementById("spdd");
 const TN=x=>x==="Þór Ak."?"Þór":x;const all=EVENTS.filter(e=>e.source==="Íþróttir");dd.innerHTML="";
 const tb=document.getElementById("spteams");tb.innerHTML="";const TO=["Þór","KA","KA/Þór","Þór/KA","SA"];const tms=[...new Set(all.flatMap(e=>(e.teams||[]).map(TN)).concat(STAND.flatMap(g=>g.rows.filter(r=>r.me).map(r=>TN(r.t)))))].sort((a,b)=>(TO.indexOf(a)<0?9:TO.indexOf(a))-(TO.indexOf(b)<0?9:TO.indexOf(b)));
@@ -544,7 +544,7 @@ def read_weather():
         for o in _wx_get("obs").iter("station"):
             tm = (o.findtext("time") or "").strip().replace(" ", "T")[:19]
             if tm and _wx_num(o, "T") is not None:
-                obs.append({"t": tm, "T": _wx_num(o, "T"), "F": _wx_num(o, "F"), "R": None,
+                obs.append({"t": tm, "T": _wx_num(o, "T"), "F": _wx_num(o, "F"), "R": _wx_num(o, "R"),
                             "D": (o.findtext("D") or "").strip(), "W": (o.findtext("W") or "").strip()})
         if obs:
             cur = max(obs, key=lambda x: x["t"])
@@ -555,7 +555,9 @@ def read_weather():
     if cur is None:
         cur = dict(nxt)
     elif not cur.get("W"):
-        cur["W"] = nxt.get("W", "")  # mælingin hefur oft ekki lýsingu, notum spána fyrir sama tíma
+        cur["W"] = nxt.get("W", "")
+    if cur.get("R") is None:
+        cur["R"] = nxt.get("R")  # mælingin hefur oft ekki lýsingu, notum spána fyrir sama tíma
     days = {}
     for x in pts:
         if x["t"][:10] > today:
@@ -565,10 +567,10 @@ def read_weather():
         mid = min(days[d], key=lambda x: abs(int(x["t"][11:13]) - 12))  # spáin kl. 12:00
         if mid["T"] is None:
             continue
-        out.append({"date": d, "T": mid["T"], "F": mid["F"], "D": mid["D"], "W": mid["W"]})
+        out.append({"date": d, "T": mid["T"], "F": mid["F"], "D": mid["D"], "W": mid["W"], "R": mid.get("R")})
     if not out:
         raise ValueError("engin dagagögn")
-    return {"upd": now_utc.strftime("%d.%m %H:%M"), "now": {"T": cur["T"], "F": cur["F"], "D": cur["D"], "W": cur["W"], "night": _wx_night(now_utc)}, "days": out}
+    return {"upd": now_utc.strftime("%d.%m %H:%M"), "now": {"T": cur["T"], "F": cur["F"], "D": cur["D"], "W": cur["W"], "R": cur.get("R"), "night": _wx_night(now_utc)}, "days": out}
 
 
 def _wx_night(t):
@@ -599,6 +601,19 @@ def load_weather():
         return _load("weather.json", None)
 
 
+CONTACT_EMAIL = "hermannh2000@gmail.com"  # netfang sem sýnt er í persónuverndartexta og í appinu (breyttu hér ef þú vilt annað)
+PRIVACY_HTML = """<!doctype html><html lang="is"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Persónuvernd – AkureyrarAppið</title>
+<style>:root{color-scheme:light dark}body{font-family:-apple-system,system-ui,sans-serif;max-width:680px;margin:0 auto;padding:20px 16px 60px;line-height:1.55;color:#14202b;background:#f5f7fa}h1{font-size:26px}h2{font-size:18px;margin-top:26px}a{color:#0b6e99}small{color:#64748b}@media(prefers-color-scheme:dark){body{color:#e8eef4;background:#0e1620}a{color:#5cc0e8}small{color:#94a3b8}}</style></head><body>
+<h1>Persónuvernd</h1><small>AkureyrarAppið og vefsíðan · Síðast uppfært október 2026</small>
+<h2>Í stuttu máli</h2><p>AkureyrarAppið safnar fréttum, viðburðum, íþróttaleikjum og flugum á Akureyri á einn stað. Við biðjum ekki um nafn, netfang, kennitölu eða aðgang og við sýnum engar auglýsingar frá þriðja aðila. Við rekjum þig ekki á milli appa eða vefsíðna.</p>
+<h2>Hvað er talið</h2><p>Til að vita hversu margir nota appið og hvaða flipar eru skoðaðir er tilviljanakennt auðkenni búið til í tækinu þínu (t.d. „app3k2…“). Það inniheldur engar persónuupplýsingar og tengist hvorki nafni þínu né Apple-aðgangi. Með hverri tengingu sendist auðkennið, hvaða flipi er opinn (Fréttir, Viðburðir, Íþróttir eða Flug) og tímasetning. Við vistum hvorki IP-tölu þína né staðsetningu. Þegar þú opnar frétt er talinn einn smellur á þá frétt, óháð því hver þú ert, svo við getum sýnt „Mest lesið“.</p>
+<h2>Hvað er ekki gert</h2><ul><li>Engin skráning eða innskráning.</li><li>Engin staðsetning, engir tengiliðir, engar myndir eða hljóðnemi.</li><li>Engin gögn seld eða afhent þriðja aðila.</li></ul>
+<h2>Tenglar á aðrar síður</h2><p>Fréttir, viðburðir og leikir opna síður þeirra miðla og fyrirtækja sem eiga efnið (t.d. Akureyri.net, Vikudagur, Tix, KKÍ, HSÍ). Þegar þú ferð þangað gilda persónuverndarreglur þeirra, ekki okkar. Við afritum ekki efni þeirra heldur vísum fólki á það.</p>
+<h2>Geymsla og réttindi</h2><p>Talningargögnin eru geymd nafnlaus og engin leið er að rekja þau til einstaklings. Ef þú vilt að auðkenni tækisins sé fjarlægt, eyddu appinu: þá hverfur auðkennið úr tækinu.</p>
+<h2>Hafa samband</h2><p>Spurningar um persónuvernd eða ábendingar: <a href="mailto:__EMAIL__">__EMAIL__</a></p>
+</body></html>"""
+
+
 def write_html(items, events=None, offers=None, stand=None, flights=None, weather=None):
     wxdata = json.dumps(weather, ensure_ascii=False).replace("</", "<\\/")
     fldata = json.dumps(flights or [], ensure_ascii=False).replace("</", "<\\/")
@@ -621,6 +636,11 @@ def write_html(items, events=None, offers=None, stand=None, flights=None, weathe
     page = HTML.replace("__WEATHER__", wxdata).replace("__FLIGHTS__", fldata).replace("__LOGOS__", logodata).replace("__STAND__", stdata).replace("__OFFERS__", ofdata).replace("__EVENTS__", evdata).replace("__DATA__", data).replace("__API__", COUNTER_URL).replace("__TIME__", datetime.now().strftime("%d.%m.%Y %H:%M"))
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(page)
+    try:
+        with open("personuvernd.html", "w", encoding="utf-8") as pf:
+            pf.write(PRIVACY_HTML.replace("__EMAIL__", CONTACT_EMAIL))
+    except Exception:
+        pass
 
 
 DEEP_UA = {"User-Agent": "AkureyriFrettir/0.1 (+https://github.com/hermannhelgi4/akureyri-frettir)"}
@@ -1882,7 +1902,7 @@ def hbstatz_live():
         print("X  hbstatz: tókst ekki (%s)" % e)
         return "", {}
     out = {}
-    for lst in ("live", "upcoming", "finished"):
+    for lst in ("upcoming", "finished", "live"):
         for g in d.get(lst) or []:
             try:
                 key = (int(g["home"]["hsi_id"]), int(g["away"]["hsi_id"]))
@@ -2850,6 +2870,8 @@ def main():
     age_cut = (date.today() - timedelta(days=MAX_AGE_DAYS)).isoformat()
     for i in sorted(by_link.values(), key=lambda i: i["date"] or "", reverse=True):
         if i["date"] and i["date"][:10] < age_cut:
+            continue
+        if i["source"] in REMOVED_SOURCES:
             continue
         if i["source"] in nonlocal_sources and not_akureyri(i):
             continue  # gömul frétt sem átti aldrei heima hér
