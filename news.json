@@ -1,5 +1,55 @@
 [
   {
+    "title": "Aðeins eitt barn á biðlista eftir leikskólaplássi",
+    "link": "https://www.akureyri.is/adeins-eitt-barn-a-bidlista-eftir-leikskolaplassi",
+    "summary": "Á Akureyri eru 1040 leikskólabörn. Starfið fer fram í tíu leikskólum á 13 starfstöðum auk eins sjálfstætt starfandi leikskóla.",
+    "date": "2026-10-27T13:02:54+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/erna-ros-ingvarsdottir-1271x1280.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "HSN: Fyrsti barna- og unglingageðlæknirinn",
+    "link": "https://www.akureyri.net/is/moya/news/hsn-fyrsti-barna-og-unglingagedlaeknirinn",
+    "summary": "Hrefna Sæunn Einarsdóttir hefur hafið störf sem barna- og unglingageðlæknir hjá Heilbrigðisstofnun Norðurlands (HSN). Hún er fyrsti barna- og unglingageðlæknirinn í nýrri stöðu innan sálfélagslegrar þjónustu stofnunarinnar og starfar í geðheilsuteymi...",
+    "date": "2026-10-27T13:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/hrefna-hsn-1.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Myndu deyja fyrir klúbbinn",
+    "link": "https://www.mbl.is/sport/efstadeild/2026/10/27/myndu_deyja_fyrir_klubbinn/",
+    "summary": "Þórsarar voru með örlögin í sínum höndum fyrir lokaumferðina í Bestu deild karla í fótbolta og ljóst að sigur á FH myndi nægja til að enda fyrir ofan KA-menn og fella nágranna sína.",
+    "date": "2026-10-27T12:35:00+00:00",
+    "image": "https://c.arvakur.is/frimg/1/68/71/1687176A.jpg",
+    "source": "mbl.is",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Þórsarar leika í Mosfellsbæ í kvöld",
+    "link": "https://www.akureyri.net/is/moya/news/thorsarar-leika-i-mosfellsbae-i-kvold",
+    "summary": "Karlalið Þórs í handbolta mætir Afturelding á útivelli í kvöld í Olísdeildinni, efstu deild Íslandsmótsins. Þór vann Stjörnuna á heimavelli í síðustu umferð en Afturelding tapaði fyrir KA á Akureyri. Þórsliðið er í sjöunda sæti deildarinnar með sex ...",
+    "date": "2026-10-27T12:30:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/hakon-ingi-halldorsson-arm_6075.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
     "title": "Jarðhitasvæðið á Hjalteyri rannsakað enn frekar",
     "link": "https://www.no.is/is/um-no/frettir/jardhitasvaedid-a-hjalteyri-rannsakad-enn-frekar",
     "summary": "Um miðjan október var unnið að kortlagningu jarðhitasvæðisins á Hjalteyri, þegar jarðfræðingur frá ÍSOR mældi þykkt lausra jarðlaga á svæðinu með svokallaðari jarðsjá.",
@@ -940,19 +990,6 @@
     ]
   },
   {
-    "title": "Stórkostleg stjórn – stóð algjörlega með okkur",
-    "link": "https://www.akureyri.net/is/moya/news/storkostleg-stjorn-stod-algjorlega-med-okkur",
-    "summary": "Sigurður Heiðar Höskuldsson þjálfari Þórs kvaðst vera afar stoltur af sínu liði eftir að það lagði FH að velli, 2-1, í lokaumferð Bestu deildar karla á Þróttarvellinum í Reykjavík í dag og tryggði sér með því áframhaldandi sæti meðal þeirra bestu. Þ...",
-    "date": "2026-10-24T20:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/thor-sveinn-elias-sigurdur.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
     "title": "Sjáðu fagnaðarlæti Þórsara í leikslok",
     "link": "https://fotbolti.net/news/24-10-2026/sjadu-fagnadarlaeti-thorsara-i-leikslok",
     "summary": "Þór bjargaði sér frá falli úr Bestu deildinni með því að sigra þrjá síðustu deildarleiki tímabilsins.",
@@ -961,19 +998,6 @@
     "source": "Fótbolti.net",
     "category": "Íþróttir",
     "cats": [
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Við þurfum að læsa hann einhvers staðar inni",
-    "link": "https://www.akureyri.net/is/moya/news/vid-thurfum-ad-laesa-hann-einhvers-stadar-inni",
-    "summary": "Atli Sigurjónsson reyndasti leikmaður Þórs, tók þátt í að sigla heim sigri liðsins á FH, 2-1, í lokaumferð Bestu deildarinnar í fótbolta á Þróttarvellinum í Reykjavík í dag og var brosmildur eins og aðrir Þórsarar á svæðinu þegar akureyri.net ræddi v...",
-    "date": "2026-10-24T19:30:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/thor-atli-sigurjonsson.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
       "Íþróttir"
     ]
   },
@@ -4742,18 +4766,6 @@
     "image": "https://www.unak.is/static/news/sm/_30.09.2026-unak-utgafa-boka_kjartan-sjalfbaerni-og-gervigreind.png",
     "source": "Háskólinn á Akureyri",
     "category": "Menntun",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Tæknilæsi fyrir 60 ára og eldri",
-    "link": "https://www.akureyri.is/taeknilaesi-fyrir-60-ara-og-eldri",
-    "summary": "Akureyrarbær býður upp á ókeypis námskeið fyrir fólk 60 ára og eldri þar sem farið verður yfir grunnatriði í notkun tölva og snjalltækja.",
-    "date": "2026-09-30T12:59:31+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/taeknilaesi-1800x1044.png",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
     "cats": [
       "Bærinn"
     ]
