@@ -1,5 +1,42 @@
 [
   {
+    "title": "Tónleikar, leikhús, salsa og vídeódans",
+    "link": "https://www.akureyri.net/is/moya/news/tonleikar-leikhus-salsa-og-videodans",
+    "summary": "Hvaða viðburðir á sviði menningar og mannlífs eru í boði á svæðinu þessa vikuna? Akureyri.net skellir í samantekt í hverri viku, þar sem lesendur geta séð hvað verður á seyði og penslað inn í dagatalið. Í þessari viku má nefna að á sunnudaginn verða...",
+    "date": "2026-10-27T15:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/menning_44.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "VG - Andstaða við vindorkuver á Hólaheiði",
+    "link": "https://www.vikubladid.is/is/moya/news/vg-andstada-vid-vindorkuver-a-holaheidi",
+    "summary": "Kjördæmisþing Vinstrihreyfingarinnar græns framboðs í Norðausturkjördæmi lýsir andstöðu við fyrirhugað vindorku á Hólaheiði á Melrakkasléttu.",
+    "date": "2026-10-27T14:46:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/1793112528_vindur.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Siglufirði bregður fyrir í nýju vetrarmyndbandi frá Norðurlandi",
+    "link": "https://trolli.is/siglufirdi-bregdur-fyrir-i-nyju-vetrarmyndbandi-fra-nordurlandi/",
+    "summary": "Siglufirði bregður fyrir í nýju kynningarmyndbandi Markaðsstofu Norðurlands þar sem vetrarfegurð landshlutans er í aðalhlutverki. Myndbandið sýnir fjölbreytta náttúru, mannlíf og afþreyingu á Norðurlandi yfir vetrarmánuðina. Þráinn Kolbeins tók upp myndefnið og sá um klippingu myndbandsins. Í tilkyn",
+    "date": "2026-10-27T14:26:59+00:00",
+    "image": "https://trolli.is/wp-content/uploads/2026/10/vetrarmyndband-2.jpg",
+    "source": "Trölli.is",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Nærsveitir"
+    ]
+  },
+  {
     "title": "Styðjum við unga skíðafólkið á Siglufirði",
     "link": "https://trolli.is/stydjum-vid-unga-skidafolkid-a-siglufirdi/",
     "summary": "Hið árlega happdrætti Skíðafélags Siglufjarðar Skíðaborgar er hafið, en ágóði af miðasölunni rennur til styrktar barna- og unglingastarfi félagsins. Alls eru 50 glæsilegir vinningar í boði, meðal annars gjafabréf, gjafapakkar, vörur og ýmiss konar upplifanir frá fyrirtækjum víðs vegar um landið. Hve",
@@ -25,7 +62,7 @@
     ]
   },
   {
-    "title": "Öflug þátttaka Akureyringa í Hringborði norðurslóða",
+    "title": "Öflug þátttaka Akureyringa á Hringborði norðurslóða",
     "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/oflug-thatttaka-akureyringa-i-hringbordi-nordursloda",
     "summary": "Fjölmenn sendinefnd fræðafólks og sérfræðinga frá Norðurslóðamiðstöð Íslands á Akureyri tók þátt í einum stærsta alþjóðlega samráðsvettvangi um málefni norðurslóða",
     "date": "2026-10-27T13:57:00+00:00",
@@ -1018,19 +1055,6 @@
     "summary": "„Þetta er dálítið fyndið,“ var það fyrsta sem Aron Birkir Stefánsson markvörður og fyrirliði Þórs sagði við akureyri.net eftir sigur liðsins á FH, 2-1, í lokaumferð Bestu deildar karla í fótbolta á Þróttarvellinum í Reykjavík í dag. Sigur sem tryggði...",
     "date": "2026-10-24T20:30:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/aron-birkir_0g7a9585.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Þór stóðst stærsta prófið og sendi KA niður",
-    "link": "https://www.akureyri.net/is/moya/news/thor-stodst-staersta-profid-og-sendi-ka-nidur",
-    "summary": "Nú hafa orðið umskipti í fótboltanum á Akureyri. Árið 2027 verður Þór fulltrúi bæjarins í Bestu deild karla á meðan KA þarf að sætta sig við að spila í 1. deild í fyrsta skipti frá árinu 2016. Þetta varð niðurstaðan í lokaumferð deildarinnar í dag ...",
-    "date": "2026-10-24T20:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/thor-fagna-saman.jpg",
     "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
@@ -2629,18 +2653,6 @@
     ]
   },
   {
-    "title": "Eigendur NO vilja fylgja samkomulagi um hóflegar hækkanir",
-    "link": "https://www.vikubladid.is/is/moya/news/eigendur-no-vilja-fylgja-samkomulagi-um-hoflegar-haekkanir-1",
-    "summary": "Gjaldskrár Norðurorku munu ekki hækka umfram 2,5% um næstu áramót eftir ákvörðun eigenda fyrirtækisins á aukaaðalfundi á þriðjudagsmorgun. Á þeim fundi var tillögum meirihluta stjórnar hafnað, en þær gerðu ráð fyrir á bilinu 2,5 og upp í 7% hækkun á gjaldskrá veitnanna um næstu áramót. Norðurorka re",
-    "date": "2026-10-20T14:10:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/nonota.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Leiðsögn á úkraínsku / ЕКСКУРСІЯ УКРАЇНСЬКОЮ МОВОЮ",
     "link": "https://www.listak.is/is/moya/news/leidsogn-a-ukrainsku-1045-1050-1057-1050-1059-1056-1057-1030-1071-1059-1050-1056-1040-1031-1053-1057-1068-1050-1054-1070-1052-1054-1042-1054-1070-",
     "summary": "Um sýninguna í skugga átaka / Про виставку У тіні конфлікту",
@@ -3156,19 +3168,6 @@
     "summary": "Tónlistar- og predikunarguðsþjónusta verður haldin í Siglufjarðarkirkju sunnudaginn 18. október klukkan 14:00. Dagurinn er jafnframt helgaður heilbrigðisþjónustunni. Hrafn Óli Sigurðsson hjúkrunarfræðingur verður organisti og ræðumaður við guðsþjónustuna, en Sigurður Ægisson sóknarprestur þjónar fyr",
     "date": "2026-10-16T17:19:17+00:00",
     "image": "https://trolli.is/wp-content/uploads/2026/09/siglufjardarkirkja.jpg",
-    "source": "Trölli.is",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Jóladagatalið í Fjallabyggð í undirbúningi – Frestur til 11. nóvember til að skrá jólaviðburði",
-    "link": "https://trolli.is/joladagatalid-i-fjallabyggd-i-undirbuningi-frestur-til-11-november-til-ad-skra-jolavidburdi/",
-    "summary": "Fjallabyggð hefur hafið undirbúning að útgáfu viðburðadagatals fyrir aðventuna og jólin og óskar eftir upplýsingum frá þeim sem hyggjast standa fyrir viðburðum í sveitarfélaginu í aðdraganda jólanna. Undanfarin ár hefur sveitarfélagið gefið út sérstakt viðburðadagatal þar sem íbúar og gestir geta ky",
-    "date": "2026-10-16T17:10:30+00:00",
-    "image": "https://trolli.is/wp-content/uploads/2026/10/adventa-i-fjallabyggd.jpg",
     "source": "Trölli.is",
     "category": "Fréttamiðlar",
     "cats": [
