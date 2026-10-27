@@ -1,5 +1,54 @@
 [
   {
+    "title": "Styðjum við unga skíðafólkið á Siglufirði",
+    "link": "https://trolli.is/stydjum-vid-unga-skidafolkid-a-siglufirdi/",
+    "summary": "Hið árlega happdrætti Skíðafélags Siglufjarðar Skíðaborgar er hafið, en ágóði af miðasölunni rennur til styrktar barna- og unglingastarfi félagsins. Alls eru 50 glæsilegir vinningar í boði, meðal annars gjafabréf, gjafapakkar, vörur og ýmiss konar upplifanir frá fyrirtækjum víðs vegar um landið. Hve",
+    "date": "2026-10-27T14:08:15+00:00",
+    "image": "https://trolli.is/wp-content/uploads/2026/10/sss-logo.jpg",
+    "source": "Trölli.is",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Nærsveitir"
+    ]
+  },
+  {
+    "title": "Átt þú eftir að svara Gallup - vinnur þú kr. 150.000?",
+    "link": "https://www.ein.is/is/um-einingu-idju/utgefid-efni/frettir/att-thu-eftir-ad-svara-gallup-vinnur-thu-kr-150004",
+    "summary": "Þessa dagana er Gallup að kanna ýmis atriði sem snerta kjör, viðhorf og starfsaðstæður félagsmanna Einingar-Iðju og AFLS starfsgreinafélags. Könnunin er jafnframt happdrættismiði því allir sem taka þátt geta unnið veglega vinninga.",
+    "date": "2026-10-27T14:00:00+00:00",
+    "image": "https://www.ein.is/static/news/sm/1-vefur-2-c.jpg",
+    "source": "Eining-Iðja",
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Öflug þátttaka Akureyringa í Hringborði norðurslóða",
+    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/oflug-thatttaka-akureyringa-i-hringbordi-nordursloda",
+    "summary": "Fjölmenn sendinefnd fræðafólks og sérfræðinga frá Norðurslóðamiðstöð Íslands á Akureyri tók þátt í einum stærsta alþjóðlega samráðsvettvangi um málefni norðurslóða",
+    "date": "2026-10-27T13:57:00+00:00",
+    "image": "https://www.unak.is/static/news/sm/unak-ac-cover-photo-26.png",
+    "source": "Háskólinn á Akureyri",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "FUNDARBOÐ 685. fundur sveitarstjórnar Eyjafjarðarsveitar",
+    "link": "https://www.esveit.is/eyjafjardarsveit/frettir/fundarbod-685-fundur-sveitarstjornar-eyjafjardarsveitar",
+    "summary": "685. fundur sveitarstjórnar Eyjafjarðarsveitarverður haldinn í fundarstofu 2, Skólatröð 9, fimmtudaginn 29. október 2026 og hefst kl. 08:00.",
+    "date": "2026-10-27T13:25:00+00:00",
+    "image": "https://www.esveit.is/static/news/sm/1793108474_esveit-logo-a-heimasidu-med-fundarbodum-sveitarstjornar.jpg",
+    "source": "Eyjafjarðarsveit",
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
+  },
+  {
     "title": "Aðeins eitt barn á biðlista eftir leikskólaplássi",
     "link": "https://www.akureyri.is/adeins-eitt-barn-a-bidlista-eftir-leikskolaplassi",
     "summary": "Á Akureyri eru 1040 leikskólabörn. Starfið fer fram í tíu leikskólum á 13 starfstöðum auk eins sjálfstætt starfandi leikskóla.",
@@ -1402,18 +1451,6 @@
     "cats": [
       "Fréttir",
       "Íþróttir"
-    ]
-  },
-  {
-    "title": "Mínar síður - Átt þú eftir að skrá þína starfsstöð?",
-    "link": "https://www.ein.is/is/um-einingu-idju/utgefid-efni/frettir/minar-sidur-att-thu-eftir-ad-skra-thina-starfsstod-6",
-    "summary": "Á Mínum síðum félagsins er auðvelt að skrá starfsstöð og einnig að tilkynna um breytingu á starfsmannaflokk og jafnvel skrá starfsheiti. Einnig er nauðsynlegt að uppfæra ef þarf upplýsingar um síma, netfang og bankaupplýsingar.",
-    "date": "2026-10-24T10:00:00+00:00",
-    "image": "https://www.ein.is/static/news/sm/1792494978_personublad_starfsstod_c.jpg",
-    "source": "Eining-Iðja",
-    "category": "Fyrirtæki & félög",
-    "cats": [
-      "Bærinn"
     ]
   },
   {
@@ -3308,19 +3345,6 @@
     ]
   },
   {
-    "title": "Vetur konungur minnir á sig í Fjallabyggð og Fljótum",
-    "link": "https://trolli.is/vetur-konungur-minnir-a-sig-i-fjallabyggd-og-fljotum/",
-    "summary": "Vetur konungur hefur heldur betur látið til sín taka í Fjallabyggð og Fljótum. Töluverð snjókoma var í nótt og þegar íbúar vöknuðu í morgun blasti við þeim alhvít jörð. Vetrarlegt er nú um að litast á Siglufirði, Ólafsfirði og í Fljótum eftir snjókomu næturinnar. Þá er einnig mikill sjógangur við Ól",
-    "date": "2026-10-15T18:56:22+00:00",
-    "image": "https://trolli.is/wp-content/uploads/2026/10/snjor-26-15-okt.jpg",
-    "source": "Trölli.is",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Nærsveitir"
-    ]
-  },
-  {
     "title": "Endurvirkjun vatnslindar í Sellalandslindum",
     "link": "https://www.no.is/is/um-no/frettir/endurvirkjun-vatnslindar-i-sellalandslindum",
     "summary": "Í september var unnið að endurvirkjun vatnslindar í Sellandslindum. Hvaðan kemur vatnið í lindirnar, hvernig komum við því til notenda og hvernig er staðið að gæðaprófunum og vatnsvernd?",
@@ -4076,18 +4100,6 @@
     "summary": "Markmið afreks- og hvatninarstyrksins er að styðja ungt afreksfólk með lögheimili í Eyjafjarðarsveit til þátttöku í viðurkenndum alþjóðlegum verkefnum á sviði íþrótta og lista og mæta hluta af ferðakostnaði vegna slíkrar þátttöku. Styrkurinn er hvatningar- og viðurkenningarstyrkur en ekki almennur t",
     "date": "2026-10-07T12:23:00+00:00",
     "image": "https://www.esveit.is/static/news/sm/1791376093_esveit-logo-a-heimasidu-med-fundarbodum-sveitarstjornar.jpg",
-    "source": "Eyjafjarðarsveit",
-    "category": "Nærsveitir",
-    "cats": [
-      "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Menningarsjóður Eyjafjarðarsveitar auglýsir eftir umsóknum haustið 2026",
-    "link": "https://www.esveit.is/eyjafjardarsveit/frettir/menningarsjodur-eyjafjardarsveitar-auglysir-eftir-umsoknum-haustid-2026",
-    "summary": "Menningarsjóður Eyjafjarðarsveitar auglýsir eftir umsóknum í síðasta lagi þriðjudaginn 27. október vegna úthlutunar úr sjóðnum 1. nóvember næstkomandi. Tilgangur Menningarsjóðs Eyjafjarðarsveitar er: Að styrkja menningarverkefni í Eyjafjarðarsveit Að leggja til framlag til kaupa á listaverkum fyrir ",
-    "date": "2026-10-07T11:37:00+00:00",
-    "image": "https://www.esveit.is/static/news/sm/1791373769_menningarsjodur-esveitar-2022-og-2023-auglysing-um-umsoknarfrest-fyrir-styrki.jpeg",
     "source": "Eyjafjarðarsveit",
     "category": "Nærsveitir",
     "cats": [
@@ -5275,18 +5287,6 @@
     "category": "Íþróttir",
     "cats": [
       "Íþróttir"
-    ]
-  },
-  {
-    "title": "Þingmenn Vestnorræna ráðsins kynntu sér Norðurslóðamiðstöð Íslands",
-    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/thingmenn-vestnorraena-radsins-kynntu-ser-nordurslodamidstod-islands",
-    "summary": "Heimsóknin var hluti af ársfundi Vestnorræna ráðsins sem haldinn var á Akureyri",
-    "date": "2026-09-17T11:34:00+00:00",
-    "image": "https://www.unak.is/static/news/sm/unak_-thingmenn-vestnorraena-radsins-17.09.2026.png",
-    "source": "Háskólinn á Akureyri",
-    "category": "Menntun",
-    "cats": [
-      "Bærinn"
     ]
   },
   {
