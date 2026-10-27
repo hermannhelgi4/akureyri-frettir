@@ -1,10 +1,11 @@
 {
- "upd": "27.10 20:36",
+ "upd": "27.10 21:15",
  "now": {
-  "T": 4.7,
-  "F": 6.0,
-  "D": "N",
+  "T": 5.6,
+  "F": 7.0,
+  "D": "NNV",
   "W": "Lítils háttar rigning",
+  "R": 0.4,
   "night": true
  },
  "days": [
@@ -13,21 +14,24 @@
    "T": 5.0,
    "F": 3.0,
    "D": "NNV",
-   "W": "Alskýjað"
+   "W": "Alskýjað",
+   "R": null
   },
   {
    "date": "2026-10-29",
    "T": 8.0,
    "F": 3.0,
    "D": "SSV",
-   "W": "Alskýjað"
+   "W": "Alskýjað",
+   "R": null
   },
   {
    "date": "2026-10-30",
    "T": 6.0,
    "F": 5.0,
    "D": "ASA",
-   "W": "Heiðskírt"
+   "W": "Heiðskírt",
+   "R": null
   }
  ]
 }
