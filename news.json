@@ -1,5 +1,41 @@
 [
   {
+    "title": "Gróa öll sár að fullu?",
+    "link": "https://www.akureyri.net/is/moya/news/groa-oll-sar-ad-fullu",
+    "summary": "",
+    "date": "2026-10-27T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/94-doddi.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Björgvin Birgisson",
+    "link": "https://www.akureyri.net/is/moya/news/bjorgvin-birgisson",
+    "summary": "Stefán Sigurðsson",
+    "date": "2026-10-27T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1792949745_bjorgvin-birgisson-greinar.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Björgvin Birgisson – lífshlaupið",
+    "link": "https://www.akureyri.net/is/moya/news/bjorgvin-birgisson-lifshlaupid",
+    "summary": "",
+    "date": "2026-10-27T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/bjorgvin-birgisson-greinar.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Fyrirhugaðar breytingar á Loftbrú gagnrýndar – dýrari flug gætu kostað landsbyggðarfólk meira",
     "link": "https://trolli.is/fyrirhugadar-breytingar-a-loftbru-gagnryndar-dyrari-flug-gaetu-kostad-landsbyggdarfolk-meira/",
     "summary": "Frá næstu áramótum stendur til að afnema 40% afslátt Loftbrúar af innanlandsflugi og taka í staðinn upp fasta niðurgreiðslu upp á 7.000 krónur á fluglegg. Ákvörðunin hefur sætt gagnrýni meðal íbúa landsbyggðarinnar og nú vill innviðaráðherra hækka fjárhæðina í 9.000 krónur. Verðkönnun Trölli.is sýni",
@@ -1260,43 +1296,6 @@
     "category": "Fyrirtæki & félög",
     "cats": [
       "Bærinn"
-    ]
-  },
-  {
-    "title": "Íshokkí, blak, karfa og örlög í fótboltanum",
-    "link": "https://www.akureyri.net/is/moya/news/ishokki-blak-karfa-og-orlog-i-fotboltanum",
-    "summary": "Viðburðaríkur dagur fram undan á íþróttasviðinu. Tvö íshokkílið að takast á við Reykvíkinga í Laugardalnum, blaklið karla að berjast við Ísfirðinga og körfuboltakonur berjast í Breiðholtinu. Líklega verða þó flestra augu og eyru á tveimur fótboltalei...",
-    "date": "2026-10-24T06:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/ithrottir-24.10.2026.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Mexíkó – Maturinn segir sögu þjóðarinnar",
-    "link": "https://www.akureyri.net/is/moya/news/mexiko-maturinn-segir-sogu-thjodarinnar",
-    "summary": "Þegar Spánverjar komu til Mið-Mexíkó árið 1519, fundu þeir ekki frumstæða matarhefð sem beið þess að verða „siðmenntuð“. Þeir gengu inn í þróaðan matarmenningarheim með aldagamlar ræktunarhefðir, markaði, sérhæfða matreiðslu og flókið bragðkerfi. Þe...",
-    "date": "2026-10-24T06:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/thrainn-tilvisun-mexiko.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Mexíkó – þar sem matur segir sögu heillar þjóðar",
-    "link": "https://www.akureyri.net/is/moya/news/mexiko-thar-sem-matur-segir-sogu-heillar-thjodar",
-    "summary": "",
-    "date": "2026-10-24T06:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/thrainn-mexico-inn.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
