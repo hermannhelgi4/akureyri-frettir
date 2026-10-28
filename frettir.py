@@ -1409,7 +1409,43 @@ def read_midasala(today):
 
 
 # (nafn, lesari á lista, lesari á síðu viðburðar, bið í sek. milli beiðna, mest margar síður í hverri keyrslu)
+def read_lyst(today):
+    """Lyst í Lystigarðinum (lyst.is). Vefurinn notar The Events Calendar (WordPress) sem býður upp á JSON-viðmót."""
+    url = "https://lyst.is/wp-json/tribe/events/v1/events?per_page=50&start_date=%s" % today.isoformat()
+    data = fetch_json(url)
+    events = []
+    for e in data.get("events") or []:
+        link = (e.get("url") or "").strip()
+        sd = (e.get("start_date") or "")[:16]
+        if not link or len(sd) < 10:
+            continue
+        title = clean(re.sub(r"<[^>]+>", " ", html.unescape(e.get("title") or "")))
+        notes = []
+        if re.search(r"uppselt", title, re.I):
+            title = clean(re.sub(r"[\s\-–—·|:]*uppselt[\s\-–—·|:]*", " ", title, flags=re.I))
+            notes.append("Uppselt")
+        title = title.strip(" -–—·|,.:")
+        if len(title) < 2:
+            continue
+        cost = html.unescape(re.sub(r"<[^>]+>", "", str(e.get("cost") or ""))).strip()
+        digits = re.sub(r"\D", "", cost)
+        if digits and digits != "0":
+            notes.append("{:,}".format(int(digits)).replace(",", ".") + " kr.")
+        elif cost.lower() in ("ókeypis", "free", "0"):
+            notes.append("Ókeypis")
+        img = e.get("image")
+        img = img.get("url") if isinstance(img, dict) else None
+        desc = clean(re.sub(r"<[^>]+>", " ", html.unescape(e.get("description") or "")))[:600]
+        tm = sd[11:16] if len(sd) >= 16 else ""
+        ed = (e.get("end_date") or sd)[:10]
+        events.append({"title": title[:140], "source": "Lyst", "link": link, "start": sd[:10],
+                       "end": max(ed, sd[:10]), "time": tm, "image": img, "note": " · ".join(notes),
+                       "venue": "Lyst í Lystigarðinum", "txt": desc})
+    return events
+
+
 EVENT_SOURCES = [
+    ("Lyst", read_lyst, None, 1, 0),  # lyst.is – JSON-viðmót, engin síða hvers viðburðar sótt
     ("MAK / Hof", read_mak, mak_detail, 5, 15),  # MAK biður um 5 sek. bil (Crawl-delay)
     ("Græni hatturinn", read_graeni, graeni_detail, 1, 25),
     (MIDASALA, read_midasala, graeni_detail, 1, 20),  # Tix, Midix og Stubb (síður sóttar aðeins fyrir Midix; sama kerfi og Græni hatturinn)
