@@ -471,16 +471,27 @@
    {
     "n": 3,
     "t": "Þróttur Reykjavík/Blakfélag Hafnafjarðar",
-    "p": 4,
+    "p": 5,
     "w": 2,
     "d": 0,
-    "l": 2,
-    "g": "8-7",
+    "l": 3,
+    "g": "8-10",
     "pts": 7,
     "me": false
    },
    {
     "n": 4,
+    "t": "Afturelding",
+    "p": 3,
+    "w": 2,
+    "d": 0,
+    "l": 1,
+    "g": "7-3",
+    "pts": 6,
+    "me": false
+   },
+   {
+    "n": 5,
     "t": "Þróttur Fjarðabyggð",
     "p": 4,
     "w": 2,
@@ -488,17 +499,6 @@
     "l": 2,
     "g": "8-8",
     "pts": 5,
-    "me": false
-   },
-   {
-    "n": 5,
-    "t": "Afturelding",
-    "p": 2,
-    "w": 1,
-    "d": 0,
-    "l": 1,
-    "g": "4-3",
-    "pts": 3,
     "me": false
    },
    {
