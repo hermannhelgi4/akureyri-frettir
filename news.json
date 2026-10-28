@@ -1,5 +1,30 @@
 [
   {
+    "title": "Algjört einsdæmi á Íslandi",
+    "link": "https://www.mbl.is/sport/efstadeild/2026/10/28/algjort_einsdaemi_a_islandi/",
+    "summary": "Þór tryggði sér áframhaldandi veru í Bestu deild karla í fótbolta með sigri á FH, 2:1, í lokaumferð deildarinnar síðastliðinn laugardag.",
+    "date": "2026-10-28T14:40:00+00:00",
+    "image": "https://c.arvakur.is/frimg/1/68/74/1687456A.jpg",
+    "source": "mbl.is",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Lára Brynhildur fagnaði 100 ára afmæli",
+    "link": "https://www.akureyri.is/lara-brynhildur-fagnadi-100-ara-afmaeli",
+    "summary": "Af því tilefni heimsótti Berglind Ósk Guðmundsdóttir bæjarstjóri hana og færði henni blómvönd.",
+    "date": "2026-10-28T14:24:05+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/lara-brynhildur-eiriksdottir-2000x1500.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Fór á árabát niður Gilið á Akureyri",
     "link": "https://www.ruv.is/frettir/innlent/2026-10-28-for-a-arabat-nidur-gilid-a-akureyri-491119/",
     "summary": "A Gjörningarlistahátíð var haldin á Akureyri á dögunum. Fjöldi listamanna tók þátt í hátíðinni. Þar var fremst í flokki Anna Richardsdóttir sem hefur lagt stund á gjörningalist á Akureyri í bráðum fjörtíu ár. Í þetta sinn fór hún á árabát niður Gilið á Akureyri og hafði með sér heilan karlakór.",
@@ -4811,18 +4836,6 @@
     "image": "https://www.sba.is/static/news/sm/handb.-mfl.-nota-.jpeg",
     "source": "SBA-Norðurleið",
     "category": "Fyrirtæki & félög",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Fulltrúar GRECO heimsóttu Akureyrarbæ",
-    "link": "https://www.akureyri.is/fulltruar-greco-heimsottu-akureyrarbae",
-    "summary": "Í dag tók Akureyrarbær á móti fulltrúum GRECO (Group of States against Corruption), sem starfar á vegum Evrópuráðsins við að efla heilindi, gagnsæi og varnir gegn spillingu í aðildarríkjum.",
-    "date": "2026-09-30T14:58:58+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/greco-1800x1044.png",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
     "cats": [
       "Bærinn"
     ]
