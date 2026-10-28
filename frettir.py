@@ -2868,9 +2868,27 @@ def main():
 
     merged, per_source = [], {}
     age_cut = (date.today() - timedelta(days=MAX_AGE_DAYS)).isoformat()
+    dup_seen, dup_removed = {}, 0
+
+    def _norm_link(l):
+        l = re.sub(r"^https?://(www\.)?", "", (l or "").strip().lower())
+        return re.sub(r"[?#].*$", "", l).rstrip("/")
+
+    def _norm_title(t):
+        return re.sub(r"[\W_]+", " ", (t or "").lower()).strip()
+
     for i in sorted(by_link.values(), key=lambda i: i["date"] or "", reverse=True):
         if i["date"] and i["date"][:10] < age_cut:
             continue
+        # Sama frétt tvisvar (t.d. slóðinni breytt eftir að fyrirsögn var lagfærð): geymum nýjustu útgáfuna
+        k1, k2 = ("l", _norm_link(i["link"])), ("t", i["source"], _norm_title(i["title"]))
+        prev = dup_seen.get(k1) or dup_seen.get(k2)
+        if prev is not None:
+            if not prev.get("image") and i.get("image"):
+                prev["image"] = i["image"]
+            dup_removed += 1
+            continue
+        dup_seen[k1] = dup_seen[k2] = i
         if i["source"] in REMOVED_SOURCES:
             continue
         if i["source"] in nonlocal_sources and not_akureyri(i):
@@ -2878,6 +2896,8 @@ def main():
         per_source[i["source"]] = per_source.get(i["source"], 0) + 1
         if per_source[i["source"]] <= MAX_BY_SOURCE.get(i["source"], 30):
             merged.append(i)
+    if dup_removed:
+        print("Tvítekningar: %d fréttir sama miðils með sömu fyrirsögn/slóð fjarlægðar" % dup_removed)
     for i in merged:
         i["cats"] = news_cats(i)
     with open("news.json", "w", encoding="utf-8") as f:
