@@ -1,5 +1,29 @@
 [
   {
+    "title": "Ungskáld hittast á LYST",
+    "link": "https://www.akureyri.is/ungskald-hittast-a-lyst",
+    "summary": "Ungt fólk með áhuga á ritlist getur komið saman, kynnst skrifum annarra og jafnvel lesið upp eigin verk á kaffihúsakvöldi Ungskálda miðvikudaginn 4. nóvember.",
+    "date": "2026-10-28T15:34:43+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/kaffihusakvold-ungskalda-1200x794.png",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Lára 100 ára – „Alltaf verið kát og glöð“",
+    "link": "https://www.akureyri.net/is/moya/news/lara-100-ara-alltaf-verid-kat-og-glod",
+    "summary": "akureyri.net",
+    "date": "2026-10-28T14:45:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/skjamynd-9622.png",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Algjört einsdæmi á Íslandi",
     "link": "https://www.mbl.is/sport/efstadeild/2026/10/28/algjort_einsdaemi_a_islandi/",
     "summary": "Þór tryggði sér áframhaldandi veru í Bestu deild karla í fótbolta með sigri á FH, 2:1, í lokaumferð deildarinnar síðastliðinn laugardag.",
@@ -1273,18 +1297,6 @@
     "date": "2026-10-25T12:06:40+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/Messenger_creation_BEF22EE2-DD17-485C-8234-C2816D4D3CCE.jpeg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "DIMMA sendir frá sér annað nýtt lag",
-    "link": "https://www.akureyri.net/is/moya/news/dimma-sendir-fra-ser-annad-nytt-lag",
-    "summary": "Rokksveitin DIMMA hefur sent frá sér nýtt lag, Þegar Dómklukkan Slær, annað lag sveitarinnar eftir nýlegar breytingar á liðskipan. Sveitin fylgir útgáfunni eftir með þrennum tónleikum þar sem nýju lögin verða leikin í fyrsta sinn á sviði. Í spjalli ...",
-    "date": "2026-10-25T12:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/dimma.jpg",
-    "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
@@ -4800,18 +4812,6 @@
     "image": "https://www.unak.is/static/news/sm/unak-frett_-sprellmot-2026.png",
     "source": "Háskólinn á Akureyri",
     "category": "Menntun",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Hagnýtt námskeið fyrir foreldra",
-    "link": "https://www.akureyri.is/hagnytt-namskeid-fyrir-foreldra-barna-0-10-ara",
-    "summary": "Velferðarsvið Akureyrarbæjar og Heilbrigðisstofnun Norðurlands bjóða foreldrum barna á aldrinum 0–10 ára upp á námskeiðið Uppeldi sem virkar – færni til framtíðar.",
-    "date": "2026-10-01T09:28:26+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/fjolskylda-i-lystigardi-2000x1333.jpg",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
     "cats": [
       "Bærinn"
     ]
