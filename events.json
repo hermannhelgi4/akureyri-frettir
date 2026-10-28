@@ -561,6 +561,18 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "Vetrarhlaup LYST & UFA",
+    "source": "Lyst",
+    "link": "https://lyst.is/vidburdir/vetrarhlaup-lyst-ufa/",
+    "start": "2026-10-28",
+    "end": "2026-10-28",
+    "time": "17:30",
+    "image": "https://lyst.is/wp-content/uploads/2026/10/2-1.webp",
+    "note": "",
+    "venue": "Lyst í Lystigarðinum",
+    "kind": "Tónlist"
+  },
+  {
     "title": "Hrekkjavökutónleikar",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/hrekkjavokutonleikar-1",
@@ -757,6 +769,18 @@
     "venue": "Múlaberg, Akureyri",
     "cat0": "Námskeið",
     "kind": "Fræðsla"
+  },
+  {
+    "title": "Birna Rún – Nýtt tilrauna uppistand",
+    "source": "Lyst",
+    "link": "https://lyst.is/vidburdir/birna-run-nytt-tilrauna-uppistand/",
+    "start": "2026-11-05",
+    "end": "2026-11-05",
+    "time": "21:00",
+    "image": "https://lyst.is/wp-content/uploads/2026/10/birna-run.webp",
+    "note": "Uppselt · 49.900 kr.",
+    "venue": "Lyst í Lystigarðinum",
+    "kind": "Uppistand"
   },
   {
     "title": "Sigurdís Tryggvadóttir",
@@ -1670,6 +1694,20 @@
     "kind": "Tónlist"
   },
   {
+    "title": "Jólatónleikar Karlakórs Akureyrar Geysis",
+    "source": "Miðasala",
+    "site": "Tix",
+    "link": "https://tix.is/event/22585/jolatonleikar-karlakors-akureyrar-geysis",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "time": "17:00",
+    "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22585.jpg",
+    "note": "5.900 kr.",
+    "venue": "Akureyrarkirkja",
+    "cat0": "Jól, Jólatónleikar, Kór",
+    "kind": "Tónlist"
+  },
+  {
     "title": "Þór Ak. – Aþena",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -2147,6 +2185,18 @@
     "note": "7.990 kr.",
     "venue": "Akureyrarkirkja",
     "cat0": "Jól, Tónlist",
+    "kind": "Tónlist"
+  },
+  {
+    "title": "Teitur Magnússon – Hátíðartónleikar",
+    "source": "Lyst",
+    "link": "https://lyst.is/vidburdir/teitur-magnusson-hatidartonleikar/",
+    "start": "2026-12-19",
+    "end": "2026-12-19",
+    "time": "21:00",
+    "image": "https://lyst.is/wp-content/uploads/2026/10/2-1.png",
+    "note": "39.900 kr.",
+    "venue": "Lyst í Lystigarðinum",
     "kind": "Tónlist"
   },
   {
