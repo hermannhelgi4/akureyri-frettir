@@ -1409,6 +1409,21 @@ def read_midasala(today):
 
 
 # (nafn, lesari á lista, lesari á síðu viðburðar, bið í sek. milli beiðna, mest margar síður í hverri keyrslu)
+def _lyst_amount(cost):
+    """Verð sem heil tala í krónum. Les „4.900 kr.“, „4900“, „4900.00“ og „4900,0“ rétt (aukastafir eru ekki hluti krónutölunnar)."""
+    m = re.search(r"\d[\d.,\s]*", cost or "")
+    if not m:
+        return None
+    t = m.group(0).strip().replace(" ", "")
+    if re.fullmatch(r"\d{1,3}([.,]\d{3})+", t):  # þúsundaskil: 4.900 eða 12.900
+        return int(re.sub(r"[.,]", "", t))
+    t = t.replace(",", ".")
+    try:
+        return int(round(float(t)))  # 4900, 4900.0, 4900.00
+    except ValueError:
+        return None
+
+
 def read_lyst(today):
     """Lyst í Lystigarðinum (lyst.is). Vefurinn notar The Events Calendar (WordPress) sem býður upp á JSON-viðmót."""
     url = "https://lyst.is/wp-json/tribe/events/v1/events?per_page=50&start_date=%s" % today.isoformat()
@@ -1428,10 +1443,10 @@ def read_lyst(today):
         if len(title) < 2:
             continue
         cost = html.unescape(re.sub(r"<[^>]+>", "", str(e.get("cost") or ""))).strip()
-        digits = re.sub(r"\D", "", cost)
-        if digits and digits != "0":
-            notes.append("{:,}".format(int(digits)).replace(",", ".") + " kr.")
-        elif cost.lower() in ("ókeypis", "free", "0"):
+        amount = _lyst_amount(cost)
+        if amount:
+            notes.append("{:,}".format(amount).replace(",", ".") + " kr.")
+        elif cost.lower() in ("ókeypis", "free", "0") or amount == 0:
             notes.append("Ókeypis")
         img = e.get("image")
         img = img.get("url") if isinstance(img, dict) else None
