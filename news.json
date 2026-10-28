@@ -1,5 +1,41 @@
 [
   {
+    "title": "Góðri síldarvertíð er lokið",
+    "link": "https://www.samherji.is/is/frettir/godri-sildarvertid-er-lokid",
+    "summary": "Uppsjávarskipin Vilhelm Þorsteinsson EA-11 og Bjarni Ólafsson AK-70 komu í land á mánudaginn með síðasta síldarfarm ársins.",
+    "date": "2026-10-28T10:25:00+00:00",
+    "image": "https://www.samherji.is/static/news/sm/vilhelm1.jpg",
+    "source": "Samherji",
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Stofna félagasamtök um björgun Kristnesspítala",
+    "link": "https://www.akureyri.net/is/moya/news/stofna-felagasamtok-um-bjorgun-kristnesspitala",
+    "summary": "Félagasamtökin Björgum Kristnesspítala verða stofnuð næsta sunnudag, 1. nóvember, á 99 ára afmæli Kristneshælis í Eyjafirði. Stofnfundurinn fer fram á Hælinu, setri um sögu berklanna, klukkan 17. Eins og ítrekað hefur komið fram í fréttum undanfarna...",
+    "date": "2026-10-28T10:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1792938092_kristnes.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Opið fyrir umsóknir um samfélagsstyrki 2027",
+    "link": "https://www.no.is/is/um-no/frettir/opid-fyrir-umsoknir-um-samfelagsstyrki-2027",
+    "summary": "Markmið með samfélagsstyrkjum félagsins er að styðja við sjálfsprottið starf, starfsemi frjálsra félagasamtaka og framtak einstaklinga sem stuðlar að farsælli þróun samfélagsins, lífsgæðum og fjölbreyttu mannlífi.",
+    "date": "2026-10-28T08:36:00+00:00",
+    "image": "https://www.no.is/static/news/sm/ad_6888.png",
+    "source": "Norðurorka",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Hrekkjavökutónleikar blásarasveitanna í Hofi",
     "link": "https://www.akureyri.net/is/moya/news/hrekkjavokutonleikar-blasarasveitanna-i-hofi-1",
     "summary": "akureyri.net",
@@ -1163,19 +1199,6 @@
     "date": "2026-10-25T10:32:43+00:00",
     "image": "https://www.visir.is/i/C57D93A7195B90FD645A2DA11321F254B2820373F796195A68BA2AE7D88488BA_1600x900.jpg",
     "source": "Vísir",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Kvennalið Þórs áfram á beinu brautinni",
-    "link": "https://www.akureyri.net/is/moya/news/kvennalid-thors-afram-a-beinu-brautinni",
-    "summary": "Kvennalið Þórs í körfuknattleik vann öruggan sigur á ÍR-ingum í Breiðholtinu í gær. Munurinn varð 19 stig þegar upp var staðið, lokatölur 65-84. Þetta er þriðji sigur Þórsliðsins í röð og sá þriðji í fjórum leikjum á tímabilinu. Fyrsti leikhlutinn v...",
-    "date": "2026-10-25T10:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/skallar-uti-kvk-2481.jpg",
-    "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir",
