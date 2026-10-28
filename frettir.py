@@ -1410,18 +1410,15 @@ def read_midasala(today):
 
 # (nafn, lesari á lista, lesari á síðu viðburðar, bið í sek. milli beiðna, mest margar síður í hverri keyrslu)
 def _lyst_amount(cost):
-    """Verð sem heil tala í krónum. Les „4.900 kr.“, „4900“, „4900.00“ og „4900,0“ rétt (aukastafir eru ekki hluti krónutölunnar)."""
-    m = re.search(r"\d[\d.,\s]*", cost or "")
+    """Verð sem heil tala í krónum. Aukastafir (1–2 stafir á eftir . eða ,) eru fjarlægðir og síðan þúsundaskil:
+    „4.900 kr.“, „4900“, „4900.00“, „4900,0“, „4.900,0“ og „4,900.00“ verða allt 4900."""
+    m = re.search(r"\d[\d.,\s]*\d|\d", cost or "")
     if not m:
         return None
-    t = m.group(0).strip().replace(" ", "")
-    if re.fullmatch(r"\d{1,3}([.,]\d{3})+", t):  # þúsundaskil: 4.900 eða 12.900
-        return int(re.sub(r"[.,]", "", t))
-    t = t.replace(",", ".")
-    try:
-        return int(round(float(t)))  # 4900, 4900.0, 4900.00
-    except ValueError:
-        return None
+    t = m.group(0).replace(" ", "")
+    t = re.sub(r"[.,]\d{1,2}$", "", t)  # aukastafir
+    t = re.sub(r"[.,]", "", t)  # þúsundaskil
+    return int(t) if t.isdigit() else None
 
 
 def read_lyst(today):
@@ -1444,6 +1441,8 @@ def read_lyst(today):
             continue
         cost = html.unescape(re.sub(r"<[^>]+>", "", str(e.get("cost") or ""))).strip()
         amount = _lyst_amount(cost)
+        if len(events) < 3:
+            print("   Lyst: verð í gögnum %r -> %r kr." % (e.get("cost"), amount))
         if amount:
             notes.append("{:,}".format(amount).replace(",", ".") + " kr.")
         elif cost.lower() in ("ókeypis", "free", "0") or amount == 0:
