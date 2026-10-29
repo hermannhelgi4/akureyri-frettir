@@ -1,5 +1,42 @@
 [
   {
+    "title": "Réttir, fé og fjallaskil í Dalvíkurbyggð",
+    "link": "https://www.akureyri.net/is/moya/news/rettir-fe-og-fjallaskil-i-dalvikurbyggd",
+    "summary": "akureyri.net",
+    "date": "2026-10-29T09:30:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/2-vignir-sveinsson.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Engin uppalin spilaði með Fram",
+    "link": "https://www.visir.is/g/20262955050d/engin-uppalin-spiladi-med-fram",
+    "summary": "Hlutfallslega spiluðu uppaldir leikmenn flestar mínútur hjá Þór/KA í Bestu deild kvenna í sumar og Breiðablik kom þar skammt á eftir. Hjá Fram spiluðu uppaldir leikmenn ekki neitt.",
+    "date": "2026-10-29T09:01:47+00:00",
+    "image": "https://www.visir.is/i/88EF89AC6174565F1EAC99C45CBE89B8099CA070466752CFE6E0F1673B62EEEC_1600x900.jpg",
+    "source": "Vísir",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Frosið verð frá upphafi og þannig verður það áfram",
+    "link": "https://www.samherji.is/is/frettir/frosid-verd-fra-upphafi-og-thannig-verdur-thad-afram",
+    "summary": "Í dag, 29. október, er eitt ár liðið frá því að Besti bitinn af þorskinum fór á markað á Íslandi. Frá því að þessir frosnu þorskhnakkar frá Samherja komu í sölu í matvöruverslunum innanlands hefur heildsöluverð til verslana verið óbreytt. Samherji ætlar að gera enn betur og mun ekki hækka verð á vör",
+    "date": "2026-10-29T08:48:00+00:00",
+    "image": "https://www.samherji.is/static/news/sm/bestibitinn-frosidverd-3.jpg",
+    "source": "Samherji",
+    "category": "Fyrirtæki & félög",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Körfubolti: Þór tekur á móti Haukum í kvöld",
     "link": "https://www.akureyri.net/is/moya/news/korfubolti-thor-tekur-a-moti-haukum-i-kvold",
     "summary": "Karlalið Þórs í körfuknattleik tekur á móti liði Hauka úr Hafnarfirði í Íþróttahöllinni á Akureyri í kvöld kl. 19:15 í fimmtu umferð 1. deildarinnar. Þórsliðið vann sinn fyrsta sigur á leiktíðinni í fjórðu umferð 1. deildarinnar um síðastliðna...",
@@ -1364,19 +1401,6 @@
     "source": "Þór",
     "category": "Íþróttir",
     "cats": [
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Blak: Tvö töp hjá KA gegn Vestra vestra",
-    "link": "https://www.akureyri.net/is/moya/news/tvo-top-hja-ka-gegn-vestra-vestra",
-    "summary": "Karlalið KA í blaki sneri tómhent heim úr helgarferð sinni til Ísafjarðar en liðið mætti þar heimamönnum í Vestra tvívegis í deildarkeppninni. Báðir leikirnir voru jafnir og hörkuspennandi og réðust í oddahrinu, þar sem heimamenn höfðu betur í bæði s...",
-    "date": "2026-10-25T14:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/1793023678_zdravko-kamenov-fyrirlidi-og-miguel-mateo-thjalfari.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
       "Íþróttir"
     ]
   },
@@ -2765,18 +2789,6 @@
     "cats": [
       "Fréttir",
       "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Sigurvin kallaður út vegna Hildar",
-    "link": "https://www.visir.is/g/20262951224d/sigurvin-kalladur-ut-vegna-hildar",
-    "summary": "Björgunarskipið Sigurvin var kallað út í morgun vegna 475 tonna fiskiskips að nafni Hildur sem hafði fengið veiðarfæri í skrúfuna og varð í kjölfarið aflvana. Skipið var statt um miðja vegu milli Siglufjarðar og Grímseyjar.",
-    "date": "2026-10-20T17:00:41+00:00",
-    "image": "https://www.visir.is/i/AA52910ABBAB932DC4788ADE779B8D26F1E10F7FA9579CC902AFF4B16E5F00EF_1600x900.jpg",
-    "source": "Vísir",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
