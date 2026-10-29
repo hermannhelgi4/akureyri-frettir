@@ -2796,8 +2796,35 @@ def kind_default(e):
     return "Tónlist"
 
 
+def kki_probe():
+    """TÍMABUNDIÐ: kannar hvar KKÍ geymir FIBA LiveStats-númer leikja. Prentar aðeins stutt yfirlit í logginn (merkt PROBE)."""
+    def get(u, n=400000):
+        req = urllib.request.Request(u, headers=dict(DEEP_UA, Referer="https://www.kki.is/"))
+        with OPENER.open(req, timeout=20) as r:
+            return r.read(n).decode("utf-8", "replace")
+    pat = re.compile(r"[^\s\"'<>]*(?:fibalivestats|geniussports|livestats|fls)[^\s\"'<>]*", re.I)
+    for name, u in (("forsíða", "https://www.kki.is/"),
+                    ("leikur", "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=191&season_id=132571&game_id=6153956"),
+                    ("FIBA-yfirlit", "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/"),
+                    ("FIBA-gögn", "https://fibalivestats.dcd.shared.geniussports.com/data/2856657/data.json")):
+        try:
+            t = get(u)
+            found = sorted(set(m.group(0)[:160] for m in pat.finditer(t)))[:12]
+            srcs = sorted(set(re.findall(r"<(?:script|iframe)[^>]+src=[\"']([^\"']+)", t)))
+            srcs = [x[:140] for x in srcs if re.search(r"live|fiba|genius|baskethotel|widget|score|match", x, re.I)][:10]
+            print("PROBE %s: %d stafir, tenglar=%s, src=%s" % (name, len(t), found, srcs))
+            if name.startswith("FIBA-yfirlit"):
+                print("PROBE FIBA-yfirlit byrjar: %r" % re.sub(r"\s+", " ", t[:700]))
+        except Exception as e:
+            print("PROBE %s: tókst ekki (%s)" % (name, e))
+
+
 def main():
     t_start = time.time()
+    try:
+        kki_probe()
+    except Exception as e:
+        print("PROBE villa: %s" % e)
     try:  # fyrri fréttir eru geymdar svo landsmiðlafréttir um Akureyri hverfi ekki
         with open("news.json", encoding="utf-8") as f:
             old = json.load(f)
