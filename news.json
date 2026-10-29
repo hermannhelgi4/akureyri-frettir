@@ -1,5 +1,41 @@
 [
   {
+    "title": "Að byrja á hinu nærtæka og opna glugga út í heim",
+    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/visindafolkid-okkar-valgerdur-palmadottir",
+    "summary": "Vísindafólkið okkar – Valgerður Pálmadóttir",
+    "date": "2026-10-29T14:21:00+00:00",
+    "image": "https://www.unak.is/static/news/sm/unak_-visindafolkid-okkar-valgerdur-palmadottir.png",
+    "source": "Háskólinn á Akureyri",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Aðeins eitt barn á biðlista eftir leikskólaplássi á Akureyri",
+    "link": "https://www.vikubladid.is/is/moya/news/adeins-eitt-barn-a-bidlista-eftir-leikskolaplassi-a-akureyri-1",
+    "summary": "Vel gengur að útvega börnum leikskólapláss hjá Akureyrarbæ en aðeins eitt barn sem náð hefur innritunaraldri er nú á biðlista",
+    "date": "2026-10-29T13:57:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/1793282389_leikskolar.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Akureyri Um 330 íbúðir á þéttingarsvæðum",
+    "link": "https://www.vikubladid.is/is/moya/news/akureyri-um-330-ibudir-a-thettingarsvaedum",
+    "summary": "Tæplega 330 nýjar íbúðir eru í byggingu eða undirbúningi á þéttingarsvæðum hér og þar um Akureyri.",
+    "date": "2026-10-29T13:31:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/thettingarreitir-ak.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Engin ákvörðun tekin um lokun sambýlisins við Lindargötu – Aðstandendur boðaðir til fundar",
     "link": "https://trolli.is/engin-akvordun-tekin-um-lokun-sambylisins-vid-lindargotu-adstandendur-bodadir-til-fundar/",
     "summary": "Engin ákvörðun hefur verið tekin um að loka sambýlinu við Lindargötu á Siglufirði eða flytja núverandi íbúa þess í önnur búsetuúrræði. Þetta kemur fram í ítarlegu svari Hafdísar Huldar, bæjarstjóra Fjallabyggðar, við fyrirspurn Trölli.is. Miðillinn leitaði svara hjá bæjarstjóra í kjölfar umræðu sem ",
@@ -2549,30 +2585,6 @@
     "summary": "„Við erum bara rétt að byrja, en fáum ágætis start þannig að mér finnst það lofa góðu um framhaldið,“ segir Snorri Jónsson einn þeirra sem standa að stofnun nýrrar leigubílastöðvar á Akureyri, TaxiAk. Bílstjórarnir eru fimm talsins og mun sá sjötti bætast við um áramót. Bílaflotinn saman stendur af ",
     "date": "2026-10-22T12:35:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/taxiak.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Starfsemi fiskþurrkunar á Laugum hefst að nýju",
-    "link": "https://www.vikubladid.is/is/moya/news/starfsemi-fiskthurrkunar-a-laugum-hefst-ad-nyju",
-    "summary": "Heimasíða Samherja segir frá því að Umhverfis- og orkustofnun hafi veitt Samherja bráðabirgðaheimild vegna reksturs fiskþurrkunar á Laugum í Reykjadal. Heimildin gildir þar til nýtt starfsleyfi hefur verið gefið út vegna starfseminnar",
-    "date": "2026-10-22T12:20:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/samherjilkaugum.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Þrjátíu ár af söng, vináttu og gleði - Afmælistónleikar Karlakórs Eyjafjarðar",
-    "link": "https://www.vikubladid.is/is/moya/news/thrjatiu-ar-af-song-vinattu-og-gledi-afmaelistonleikar-karlakors-akureyrar",
-    "summary": "Karlakór Eyjafjarðar fagnar 30 ára starfsafmæli sínu með stórtónleikum í Menningarhúsinu Hofi á Akureyri laugardaginn 24. október 2026 klukkan 16. Þar verður sannkölluð tónlistarveisla þar sem kórinn, gestasöngvarar og sjö manna hljómsveit sameinast á sviðinu.",
-    "date": "2026-10-22T11:31:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/karlakor-eyjafjardar.png",
     "source": "Vikudagur",
     "category": "Fréttamiðlar",
     "cats": [
@@ -5381,18 +5393,6 @@
     "image": "https://www.no.is/static/news/sm/untitled-september-18-2026-at-10.59.26-2.png",
     "source": "Norðurorka",
     "category": "Bærinn",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Veganestið – Eyja Drífa Ingólfsdóttir",
-    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/veganestid-eyja-drifa-ingolfsdottir",
-    "summary": "Veganestið er greinaflokkur á vegum Góðvina HA þar sem rætt er við brautskráða HA-inga",
-    "date": "2026-09-18T12:04:00+00:00",
-    "image": "https://www.unak.is/static/news/sm/unak-veganestid920-x-460-px-eyja-drifa-1.png",
-    "source": "Háskólinn á Akureyri",
-    "category": "Menntun",
     "cats": [
       "Bærinn"
     ]
