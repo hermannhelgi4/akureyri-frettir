@@ -1,22 +1,5 @@
 [
   {
-    "title": "Völsungur – KA",
-    "source": "Íþróttir",
-    "sport": "Blak",
-    "gender": "Konur",
-    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
-    "start": "2026-10-07",
-    "end": "2026-10-07",
-    "time": "19:00",
-    "image": null,
-    "note": "Útileikur · Unbrokendeild kvenna · GPG Höllin á Húsavík",
-    "teams": [
-      "KA"
-    ],
-    "res": "0–3",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Víkingur – KA",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -561,31 +544,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "Vetrarhlaup LYST & UFA",
-    "source": "Lyst",
-    "link": "https://lyst.is/vidburdir/vetrarhlaup-lyst-ufa/",
-    "start": "2026-10-28",
-    "end": "2026-10-28",
-    "time": "17:30",
-    "image": "https://lyst.is/wp-content/uploads/2026/10/2-1.webp",
-    "note": "",
-    "venue": "Lyst í Lystigarðinum",
-    "kind": "Tónlist"
-  },
-  {
-    "title": "Hrekkjavökutónleikar",
-    "source": "MAK / Hof",
-    "link": "https://www.mak.is/is/vidburdir/hrekkjavokutonleikar-1",
-    "start": "2026-10-28",
-    "end": "2026-10-28",
-    "time": "18:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1790849002.png?v=1793056878",
-    "note": "",
-    "cat0": "Tónleikar",
-    "venue": "Hamraborg, Hof",
-    "kind": "Tónlist"
-  },
-  {
     "title": "FH – KA",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -599,7 +557,6 @@
     "teams": [
       "KA"
     ],
-    "live": "https://www.hbstatz.is/?live=13035",
     "res": "33–39",
     "kind": "Íþróttir"
   },
