@@ -1964,8 +1964,66 @@ def hbstatz_live():
     return d.get("date") or "", out
 
 
+# Körfubolti í beinni: KKÍ sýnir leiki dagsins á forsíðunni úr Genius Sports-forriti (sama forrit og kki.is felur inn).
+# Þar eru leikir gærdagsins, dagsins í dag og morgundagsins með slóð á FIBA LiveStats (númer leiks).
+FIBA_WIDGET = "https://widget.wh.geniussports.com/widget/?0MLTTXJM1APRHDRGFW1S47R3OBIO1Q"
+FIBA_LIVE_URL = "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/%s/"
+FIBA_MONTHS = {"Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6, "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12}
+
+
+def fiba_parse(script):
+    """Forritið skilar JavaScript með HTML í streng (var html = "..."). Skilar lista af leikjum: númer, deild, staða, liðskóðar, dagsetning."""
+    m = re.search(r'var html = ("(?:[^"\\]|\\.)*");', script, re.S)
+    if not m:
+        return []
+    page = json.loads(m.group(1))
+    out = []
+    for li in re.finditer(r'<li class="spls_lsmatch([^"]*)">\s*<a href="[^"]*/KKI/(\d+)/"[^>]*>(.*?)</a>\s*</li>', page, re.S):
+        b = li.group(3)
+        g = lambda r: (re.search(r, b) or [None, ""])[1].strip()
+        names = [html.unescape(x).strip() for x in re.findall(r'teamname"\s*>([^<]*)<', b)]
+        if len(names) < 2:
+            continue
+        ds = re.match(r"(\d{1,2}) ([A-Za-z]{3}) (\d{4})", g(r'spls_datefield"\s*>([^<]*)<'))
+        out.append({"id": li.group(2), "comp": html.unescape(g(r'spls_matchcomp"\s*>([^<]*)<')),
+                    "status": g(r'spls_matchstatus"\s*>([^<]*)<'), "home": names[0], "away": names[1],
+                    "date": date(int(ds.group(3)), FIBA_MONTHS.get(ds.group(2), 1), int(ds.group(1))).isoformat() if ds else ""})
+    return out
+
+
+def fiba_matches():
+    try:
+        req = urllib.request.Request(FIBA_WIDGET, headers=dict(DEEP_UA, Referer="https://www.kki.is/"))
+        with OPENER.open(req, timeout=20) as r:
+            lst = fiba_parse(r.read(2000000).decode("utf-8", "replace"))
+        print("   FIBA LiveStats: %d leikir í lista KKÍ" % len(lst))
+        return lst
+    except Exception as e:
+        print("X  FIBA LiveStats: tókst ekki (%s)" % e)
+        return []
+
+
+def fiba_same(code, name):
+    """Liðskóði í FIBA (t.d. ÞÓR, HAU, ÍR.) á móti nafni liðs hjá KKÍ (t.d. Þór Ak., Haukar, ÍR): fyrstu stafir fyrsta orðs."""
+    c = code.rstrip(".").upper()
+    w = (name.split() or [""])[0].rstrip(".").upper()
+    return bool(c) and bool(w) and w.startswith(c)
+
+
+def fiba_url(fiba, home, away, day, today):
+    """Slóð á beina tölfræði leiksins ef hann er á lista KKÍ. Leikir í gangi hafa enga dagsetningu og teljast leikir dagsins."""
+    for f in fiba:
+        if not (fiba_same(f["home"], home) and fiba_same(f["away"], away)):
+            continue
+        when = f["date"] or today
+        if when == day:
+            return FIBA_LIVE_URL % f["id"]
+    return ""
+
+
 def collect_sports(old, today):
     hb_date, hb_urls = hbstatz_live()
+    fiba = fiba_matches()
     matches = []
     for name, reader in SPORT_SOURCES:
         try:
@@ -2030,6 +2088,10 @@ def collect_sports(old, today):
                 hb = None
             if hb:
                 e["live"] = hb
+            if m["sport"] == "Körfubolti" and not e.get("live"):
+                fu = fiba_url(fiba, m["home"], m["away"], m["date"], t0)
+                if fu:
+                    e["live"] = fu
             if played(m):
                 if m["date"] < cutoff:
                     continue
@@ -2796,35 +2858,8 @@ def kind_default(e):
     return "Tónlist"
 
 
-def kki_probe():
-    """TÍMABUNDIÐ: kannar hvar KKÍ geymir FIBA LiveStats-númer leikja. Prentar aðeins stutt yfirlit í logginn (merkt PROBE)."""
-    def get(u, n=400000):
-        req = urllib.request.Request(u, headers=dict(DEEP_UA, Referer="https://www.kki.is/"))
-        with OPENER.open(req, timeout=20) as r:
-            return r.read(n).decode("utf-8", "replace")
-    pat = re.compile(r"[^\s\"'<>]*(?:fibalivestats|geniussports|livestats|fls)[^\s\"'<>]*", re.I)
-    for name, u in (("forsíða", "https://www.kki.is/"),
-                    ("leikur", "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=191&season_id=132571&game_id=6153956"),
-                    ("FIBA-yfirlit", "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/"),
-                    ("FIBA-gögn", "https://fibalivestats.dcd.shared.geniussports.com/data/2856657/data.json")):
-        try:
-            t = get(u)
-            found = sorted(set(m.group(0)[:160] for m in pat.finditer(t)))[:12]
-            srcs = sorted(set(re.findall(r"<(?:script|iframe)[^>]+src=[\"']([^\"']+)", t)))
-            srcs = [x[:140] for x in srcs if re.search(r"live|fiba|genius|baskethotel|widget|score|match", x, re.I)][:10]
-            print("PROBE %s: %d stafir, tenglar=%s, src=%s" % (name, len(t), found, srcs))
-            if name.startswith("FIBA-yfirlit"):
-                print("PROBE FIBA-yfirlit byrjar: %r" % re.sub(r"\s+", " ", t[:700]))
-        except Exception as e:
-            print("PROBE %s: tókst ekki (%s)" % (name, e))
-
-
 def main():
     t_start = time.time()
-    try:
-        kki_probe()
-    except Exception as e:
-        print("PROBE villa: %s" % e)
     try:  # fyrri fréttir eru geymdar svo landsmiðlafréttir um Akureyri hverfi ekki
         with open("news.json", encoding="utf-8") as f:
             old = json.load(f)
