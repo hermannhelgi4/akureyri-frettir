@@ -1,5 +1,41 @@
 [
   {
+    "title": "Nýr stjóri umhverfis- og mannvirkjasviðs",
+    "link": "https://www.akureyri.net/is/moya/news/nyr-stjori-umhverfis-og-mannvirkjasvids",
+    "summary": "Böðvar Þórir Kristjánsson hefur verið ráðinn sviðsstjóri umhverfis- og mannvirkjasviðs Akureyrarbæjar. Greint er frá þessu á vef sveitarfélagsins í dag. Böðvar tekur við af Guðríði Erlu Friðriksdóttur sem stýrt hefur sviðinu um árabil en hún lét nýle...",
+    "date": "2026-10-29T15:30:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/bodvar-thorir-kristjansson.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Landsátakið Syndum hefst 1. nóvember",
+    "link": "https://www.esveit.is/eyjafjardarsveit/frettir/landsatakid-syndum-hefst-1-november",
+    "summary": "Íþrótta- og Ólympíusamband Íslands í samstarfi við Sundsamband Íslands stendur fyrir landsátaki í sundi frá 1. - 30. nóvember 2026. Syndum er heilsu- og hvatningarátak sem höfðar til allra landsmanna. Sund er fyrir alla óháð aldri, bakgrunni eða líkamlegu ástandi. Sund er tilvalin þjálfunaraðferð þa",
+    "date": "2026-10-29T15:24:00+00:00",
+    "image": "https://www.esveit.is/static/news/sm/1793287546_syndum-logo_lit-2.png",
+    "source": "Eyjafjarðarsveit",
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
+  },
+  {
+    "title": "Erum við ráðalaus gegn einmanaleika?",
+    "link": "https://www.akureyri.net/is/moya/news/erum-vid-radalaus-gegn-einmanaleika",
+    "summary": "Sóley Björk Stefánsdóttir",
+    "date": "2026-10-29T15:15:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/xv-1.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Að byrja á hinu nærtæka og opna glugga út í heim",
     "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/visindafolkid-okkar-valgerdur-palmadottir",
     "summary": "Vísindafólkið okkar – Valgerður Pálmadóttir",
@@ -1311,19 +1347,6 @@
     ]
   },
   {
-    "title": "Handbolti og körfubolti á dagskrá vikunnar",
-    "link": "https://www.akureyri.net/is/moya/news/handbolti-og-korfubolti-a-dagskra-vikunnar",
-    "summary": "Leikir vikunnar dreifast jafnt á sex daga, einn leikur á dag. Fótboltinn kominn í frí og eingöngu handbolti og körfubolti á dagskrá Akureyrarliðanna í þessari viku. Handbolti: Bæði Akureyrarliðin í Olísdeild karla unnu í síðustu umferð, KA gegn Af...",
-    "date": "2026-10-26T19:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/ithrottavikan-26.10.2026.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
     "title": "Bókakynning í Bergi – Réttir, fé og fjallaskil í Dalvíkurbyggð",
     "link": "https://dal.is/bokakynning-i-bergi-rettir-fe-og-fjallaskil-i-dalvikurbyggd/",
     "summary": "Út er komin bók Vignis Sveinssonar um réttir, fé og fjallskil í Dalvíkurbyggð. Á ríflega 300 síðum segir Vignir frá",
@@ -1345,19 +1368,6 @@
     "source": "Fótbolti.net",
     "category": "Íþróttir",
     "cats": [
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Hallgrímur bestur og Mikael efnilegastur",
-    "link": "https://www.akureyri.net/is/moya/news/hallgrimur-bestur-og-mikael-efnilegastur",
-    "summary": "Hallgrímur Mar Steingrímsson var kjörinn besti leikmaður karlaliðs KA í knattspyrnu í sumar og Mikael Breki Þórðarson var valinn efnilegasti leikmaður liðsins. Þetta var tilkynnt á lokahófi knattspyrnudeildar KA um helgina. Hallgrímur Mar fékk einnig...",
-    "date": "2026-10-26T18:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/lokahof-fot-2026-sida.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
       "Íþróttir"
     ]
   },
@@ -4091,18 +4101,6 @@
     "category": "Bærinn",
     "cats": [
       "Bærinn"
-    ]
-  },
-  {
-    "title": "Póstkassar í hverfinu",
-    "link": "https://www.esveit.is/eyjafjardarsveit/frettir/postkassar-i-hverfinu",
-    "summary": "Búið er að taka niður póstkassana sem voru fyrir göturnar Laugartröð, Ártröð, Brekkutröð, Vallartröð, Skógartröð, Meltröð, Hjallatröð, Sunnutröð og Bakkatröð. Þeir sem vilja nálgast sinn póstkassa geta sótt hann á gámasvæðið sem er opið þriðjudaga, fimmtudaga og laugardaga kl. 13-17. Þau heimili sem",
-    "date": "2026-10-09T11:39:00+00:00",
-    "image": "https://www.esveit.is/static/news/sm/laugarborg-postkassar-i-kringum-handverkshatid-en-nu-eru-their-allir-farnir-ur-hverfinu.jpg",
-    "source": "Eyjafjarðarsveit",
-    "category": "Nærsveitir",
-    "cats": [
-      "Nærsveitir"
     ]
   },
   {
