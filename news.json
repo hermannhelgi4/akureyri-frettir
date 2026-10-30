@@ -1,5 +1,53 @@
 [
   {
+    "title": "Þristurinn gefinn Flugsafni Íslands",
+    "link": "https://kaffid.is/thristurinn-gefinn-flugsafni-islands/",
+    "summary": "Stjórn Þristasjóðs, Flugsafn Íslands og DC-3 Þristavinafélagið hafa komist að samkomulagi um að eignarhald flugvélarinnar TF-NPK, eða Þristsins Páls Sveinssonar, […]",
+    "date": "2026-10-30T15:02:00+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/10/thristur.png",
+    "source": "Kaffið",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Árleg hunda- og kattahreinsun",
+    "link": "https://www.fjallabyggd.is/is/frettir/arleg-hunda-og-kattahreinsun-1",
+    "summary": "Dýralæknir verður í Fjallabyggð sem hér segir: Þriðjudaginn 3. nóvember - hundahreinsun Áhaldahús Siglufirði kl. 13:00 - 15:00 Námuvegur 11, Ólafsfirði 16:00 - 18:00 Miðvikudaginn 4. nóvember - kattahreinsun Námuvegur 11, Ólafsfi...",
+    "date": "2026-10-30T14:55:00+00:00",
+    "image": "https://www.fjallabyggd.is/static/news/sm/hundur.jpg",
+    "source": "Fjallabyggð",
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
+  },
+  {
+    "title": "Játningar nýliða",
+    "link": "https://www.vikubladid.is/is/moya/news/jatningar-nylida",
+    "summary": "Ég flutti heim til Akureyrar í miðjum heimsfaraldri, eftir að hafa dvalið í höfuðborginni og erlendis um árabil. Fljótlega eftir að samfélagið rúllaði aftur af stað var ég spurð hvort ég vildi ekki taka þátt í bæjarmálunum, hafandi verið virk í stúdentapólitíkinni áður og með mikinn áhuga á samfélag",
+    "date": "2026-10-30T14:43:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/kristin-helga.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Góð gjöf til Stórutjarnarskóla",
+    "link": "https://www.vikubladid.is/is/moya/news/god-gjof-til-storutjarnarskola",
+    "summary": "UMF Bjarmi í Fnjóskadal hefur afhent Stórutjarnaskóla að gjöf tvö píluspjöld af fullkomnustu gerð ásamt nauðsynlegum fylgibúnaði í tilefni af 55 ára afmæli skólans þann 9. nóvember nk.",
+    "date": "2026-10-30T14:24:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/bjarni.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Fundur í bæjarstjórn 3. nóvember 2026",
     "link": "https://www.akureyri.is/fundur-i-baejarstjorn-3-november-2026",
     "summary": "Bæjarstjórn Akureyrar kemur saman til fundar þriðjudaginn 3. nóvember næstkomandi klukkan 16:00.",
@@ -2379,18 +2427,6 @@
     ]
   },
   {
-    "title": "Tæplega 1300 manns starfa við ferðaþjónustu á Akureyri",
-    "link": "https://www.vikubladid.is/is/moya/news/taeplega-1300-manns-starfa-vid-ferdathjonustu-a-akureyri",
-    "summary": "„Ferðaþjónusta hefur á undanförnum árum orðið afar mikilvæg stoð í atvinnulífi á Akureyri,“ segir Jóhannes Þór Skúlason framkvæmdastjóri Samtaka ferðaþjónustunnar.",
-    "date": "2026-10-23T14:49:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/johannes-ferdamal-1.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Nýtt kynningarmyndband fyrir Norðurland",
     "link": "https://kaffid.is/nytt-kynningarmyndband-fyrir-nordurland/",
     "summary": "Markaðsstofa Norðurlands hefur gefið út nýtt kynningarmyndband fyrir Norðurland Íslands sem áfangastað. Myndbandið dregur fram það sem gerir Norðurland að […]",
@@ -2464,18 +2500,6 @@
     ]
   },
   {
-    "title": "Akureyri Kynjajafnvægi í efsta stjórnendalagi",
-    "link": "https://www.vikubladid.is/is/moya/news/akureyri-kynjajafnvaegi-i-efsta-stjornendalagi",
-    "summary": "Akureyrarbær hefur hlotið viðurkenningu Jafnvægisvogarinnar 2026 fyrir að hafa náð markmiði um kynjajafnvægi í efsta stjórnendalagi. Viðurkenningin er staðfesting á þeirri vegferð sem sveitarfélagið hefur verið á með því að skapa vinnustað þar sem öll hafa jöfn tækifæri til að vaxa, leiða og hafa áh",
-    "date": "2026-10-23T13:28:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/1792762350_radhusid-a-ak-002.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Nýtt fyrirkomulag Loftbrúar: „Landsbyggðin á betra skilið“",
     "link": "https://kaffid.is/nytt-fyrirkomulag-loftbruar-landsbyggdin-a-betra-skilid/",
     "summary": "Ákveðið hefur verið að taka upp nýtt fyrirkomulag vegna afsláttarkóða Loftbrúar frá og með næstu áramótum. Afsláttarkóðar verða framvegis bundnir […]",
@@ -2493,18 +2517,6 @@
     "summary": "Um 270 bangsar og dúkkur fengu aðhlynningu á bangsaspítölum HSN sem haldnir voru á Blönduósi og Akureyri nýverið. Börnin tóku […]",
     "date": "2026-10-23T13:11:31+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/bangsaspitali.png",
-    "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Húsvíkingar fagna 250 árum frá stofnun fyrsta skíðaskóla í heimi",
-    "link": "https://kaffid.is/husvikingar-fagna-250-arum-fra-stofnun-fyrsta-skidaskola-i-heimi/",
-    "summary": "Í dag, 23. október, er nákvæmlega eitt ár þar til Nikulásarleikarnir fara fram á Húsavík, en þar verður þess minnst […]",
-    "date": "2026-10-23T12:21:00+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2026/10/Nikulasarleikarnir.jpg",
     "source": "Kaffið",
     "category": "Fréttamiðlar",
     "cats": [
@@ -3874,18 +3886,6 @@
     "category": "Bærinn",
     "cats": [
       "Bærinn"
-    ]
-  },
-  {
-    "title": "Íþróttamiðstöðinni á Siglufirði lokað vegna óveðurs",
-    "link": "https://www.fjallabyggd.is/is/frettir/ithrottamidstodinni-a-siglufirdi-lokad-vegna-ovedurs",
-    "summary": "Vegna óveðurs á Siglufirði hefur verið ákveðið að loka Íþróttamiðstöðinni á Siglufirði í dag, miðvikudaginn 14. október. Við hvetjum íbúa til að fara varlega í veðrinu.",
-    "date": "2026-10-14T13:49:00+00:00",
-    "image": "https://www.fjallabyggd.is/static/news/sm/vedur.webp",
-    "source": "Fjallabyggð",
-    "category": "Nærsveitir",
-    "cats": [
-      "Nærsveitir"
     ]
   },
   {
