@@ -731,6 +731,19 @@
     "kind": "Fræðsla"
   },
   {
+    "title": "Þér er boðið í bíó! Superfish: Salmon",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/superfish",
+    "start": "2026-11-05",
+    "end": "2026-11-05",
+    "time": "19:00",
+    "image": null,
+    "note": "",
+    "cat0": "",
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
+  },
+  {
     "title": "Birna Rún – Nýtt tilrauna uppistand",
     "source": "Lyst",
     "link": "https://lyst.is/vidburdir/birna-run-nytt-tilrauna-uppistand/",
@@ -2002,6 +2015,22 @@
     "note": "Heimaleikur · Olís deild karla · KA heimilið",
     "teams": [
       "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þór Ak. – Ármann",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=208&season_id=133289&game_id=6199575",
+    "start": "2026-12-13",
+    "end": "2026-12-13",
+    "time": "18:00",
+    "image": null,
+    "note": "Heimaleikur · VÍS bikar kvenna · Höllin Ak",
+    "teams": [
+      "Þór Ak."
     ],
     "kind": "Íþróttir"
   },
@@ -3825,19 +3854,6 @@
     "kind": "Leiklist"
   },
   {
-    "title": "BaKaBa - Kvartettfjör að vori",
-    "source": "MAK / Hof",
-    "link": "https://www.mak.is/is/vidburdir/bakaba-kvartettfjor-ad-vori",
-    "start": "2027-05-09",
-    "end": "2027-05-09",
-    "time": "16:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782744648.png?v=1793244893",
-    "note": "5.900 kr.",
-    "cat0": "Tónleikar",
-    "venue": "Hamrar, Hof",
-    "kind": "Tónlist"
-  },
-  {
     "title": "Teiknimyndalögin okkar",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/teiknimyndalogin-okkar-1",
@@ -3848,6 +3864,19 @@
     "note": "",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
+  },
+  {
+    "title": "BaKaBa - Kvartettfjör að vori",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/bakaba-kvartettfjor-ad-vori",
+    "start": "2027-05-09",
+    "end": "2027-05-09",
+    "time": "16:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782744648.png?v=1793244893",
+    "note": "5.900 kr.",
+    "cat0": "Tónleikar",
+    "venue": "Hamrar, Hof",
     "kind": "Tónlist"
   },
   {
