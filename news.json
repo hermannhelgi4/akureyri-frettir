@@ -1,5 +1,41 @@
 [
   {
+    "title": "Börn ganga í hús á hrekkjavöku",
+    "link": "https://www.akureyri.net/is/moya/news/born-ganga-i-hus-a-hrekkjavoku",
+    "summary": "Snæfríður Ingadóttir",
+    "date": "2026-10-30T12:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/188u7go6gpsjp1mvfqeriaf.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Sveitarstjórn óskar Freyvangsleikhúsinu til hamingju með Útsynning",
+    "link": "https://www.esveit.is/eyjafjardarsveit/frettir/sveitarstjorn-oskar-freyvangsleikhusinu-til-hamingju-med-utsynning",
+    "summary": "Á 685. fundi sveitarstjórnar Eyjafjarðarsveitar, sem haldinn var 29. október 2026, óskaði sveitarstjórn Freyvangsleikhúsinu til hamingju með leiksýninguna Útsynning.",
+    "date": "2026-10-30T11:51:00+00:00",
+    "image": "https://www.esveit.is/static/news/sm/812940420_922587057199009_8057153845986464114_n-1.jpeg",
+    "source": "Eyjafjarðarsveit",
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
+  },
+  {
+    "title": "Drykkir Innbyrðis halda útgáfutónleika á Græna",
+    "link": "https://kaffid.is/drykkir-innbyrdis-halda-utgafutonleika-a-graena/",
+    "summary": "Hljómsveitin Drykkir Innbyrðis heldur útgáfutónleika á morgun, laugardaginn 31. október, á Græna hattinum á Akureyri. Hljómsveitin gaf út samnefnda plötu […]",
+    "date": "2026-10-30T11:45:00+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/10/drykkir.jpeg",
+    "source": "Kaffið",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Hjaltastaðir fá 1,6 milljóna styrk",
     "link": "https://kaffid.is/hjaltastadir-fa-16-milljona-styrk/",
     "summary": "Hjaltastaðir hafa hlotið 1,6 milljóna krónu styrk úr Styrktarsjóði geðheilbrigðis fyrir verkefnið „Frá vansæld til tengsla og þátttöku“. „Þessi styrkur […]",
@@ -56,6 +92,19 @@
     "source": "Fótbolti.net",
     "category": "Íþróttir",
     "cats": [
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Þórsarar töpuðu eftir skotsýningu Hauka",
+    "link": "https://www.akureyri.net/is/moya/news/thorsarar-topudu-eftir-skotsyningu-hauka",
+    "summary": "Þórsarar töpuðu með 26 stiga mun fyrir Haukum í fimmtu umferð 1. deildar karla í körfuknattleik í gær. Slakur fyrri hálfleikur gerði Þórsurum erfitt fyrir, en þeir náðu þó að saxa nokkuð á forskot Hauka í seinni hálfleiknum. Haukar voru óstöðvandi í ...",
+    "date": "2026-10-30T10:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/breidablik-kk-h-2792.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
       "Íþróttir"
     ]
   },
@@ -575,7 +624,7 @@
   {
     "title": "Breytingar á sorphirðu",
     "link": "https://www.horgarsveit.is/is/moya/news/breytingar-a-sorphirdu",
-    "summary": "Af gefnu tilefni er rétt að taka eftirfarandi fram.",
+    "summary": "Sjá frétt",
     "date": "2026-10-29T08:18:00+00:00",
     "image": "https://www.horgarsveit.is/static/news/sm/1793262019_1792421907_horgarsveit-logo-med-hjalteyri.png",
     "source": "Hörgársveit",
@@ -1473,30 +1522,6 @@
     "summary": "Sex sýnisverkefni í fimm Evrópulöndum og Kanada, eitt þeirra í Húnaþingi vestra Gengið hefur verið frá samningi um styrk sem nemur tæpum fimm milljónum evra, eða um 700 milljónum króna, við framkvæmdastjórn Evrópusambandsins um verkefnið DEPLOY-PE...",
     "date": "2026-10-27T10:30:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/1792889597_eimur.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Árangur LEB er ótvíræður – en fátækt eldri borgara er þjóðarskömm",
-    "link": "https://www.akureyri.net/is/moya/news/arangur-leb-er-otviraedur-en-fataekt-eldri-borgara-er-thjodarskomm",
-    "summary": "Björn Snæbjörnsson",
-    "date": "2026-10-27T10:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/1793095527_bjorn-med-grein.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Andvíg sjókvíaeldi og vindorkuveri",
-    "link": "https://www.akureyri.net/is/moya/news/andvig-sjokviaeldi-og-vindorkuveri",
-    "summary": "akureyri.net",
-    "date": "2026-10-27T09:30:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/vg.jpg",
     "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
@@ -2472,18 +2497,6 @@
     "category": "Bærinn",
     "cats": [
       "Bærinn"
-    ]
-  },
-  {
-    "title": "Eimur stýrir nýju Evrópuverkefni um orkujákvæð héruð",
-    "link": "https://kaffid.is/eimur-styrir-nyju-evropuverkefni-um-orkujakvaed-herud/",
-    "summary": "Gengið hefur verið frá styrksamningi við framkvæmdastjórn Evrópusambandsins um verkefnið DEPLOY-PED, sem Eimur stýrir. Þetta er í fyrsta sinn sem […]",
-    "date": "2026-10-23T11:02:00+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2026/10/hildur.png",
-    "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
@@ -3957,18 +3970,6 @@
     "category": "Menning",
     "cats": [
       "Bærinn"
-    ]
-  },
-  {
-    "title": "Norðurinngangur lokaður vegna framkvæmda frá mánudeginum 19. október",
-    "link": "https://www.esveit.is/eyjafjardarsveit/frettir/nordurinngangur-lokadur-vegna-framkvaemda-fra-manudeginum-19-oktober",
-    "summary": "Frá og með mánudeginum 19. október verður norðurinngangi Hrafnagilsskóla og íþróttamiðstöðvar lokað vegna framkvæmda. Búist er við að framkvæmdir taki nokkrar vikur. Á meðan þessu varir er gestum bent á bílastæðið sunnan megin við bygginguna, en starfsfólk mun áfram þurfa að nota bílastæðin norðan m",
-    "date": "2026-10-13T10:53:00+00:00",
-    "image": "https://www.esveit.is/static/news/sm/lokad-vegna-framkvaemda-fra-manudeginum-19.-oktober-4.png",
-    "source": "Eyjafjarðarsveit",
-    "category": "Nærsveitir",
-    "cats": [
-      "Nærsveitir"
     ]
   },
   {
