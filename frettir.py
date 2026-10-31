@@ -1313,74 +1313,81 @@ def _walk(x, found):
             _walk(v, found)
 
 
+# --- Stubb: viðburðir eru sóttir af einstökum viðburðasíðum (gagnaslóð Stubbs, /api/, er bönnuð í robots.txt og er ekki notuð) ---
+STUBB_CACHE = "stubb_cache.json"
+STUBB_BUDGET = 150      # mest svo margar viðburðasíður í hverri keyrslu (robots.txt biður um 1 sek. bil); restin kemur í næstu keyrslum
+STUBB_SPORT_VENUE = re.compile(r"skautahöll|höllin|íþrótta|ka-?heimil|boginn|greifavöll|akureyrarvöll|sundlaug|keiluhöll", re.I)
+STUBB_TEAM_TITLE = re.compile(r"^.{2,40}\s-\s.{2,40}$")
+
+def stubb_event(x, code, today):
+    """Viðburður úr gögnum viðburðasíðu. Skilar None ef þetta er íþróttaleikur, ekki á Akureyri eða liðinn."""
+    ser = str(x.get("seriesId") or "")
+    title = clean(str(x.get("name") or ""))
+    ds = str(x.get("timeOfEvent") or "")
+    ven = clean(str(x.get("eventLocationName") or ""))
+    if not title or not re.match(r"20\d\d-\d\d-\d\d", ds) or x.get("hideEvent") or x.get("eventActive") is False:
+        return None
+    if ser.startswith("is.sport") or SPORT_WORDS.search(str(x.get("eventSeriesName") or "") + " " + title):
+        return None
+    if STUBB_TEAM_TITLE.match(title) and STUBB_SPORT_VENUE.search(ven):
+        return None  # íþróttaleikur sem er skráður sem „aðrir viðburðir“
+    if ds[:10] < today.isoformat() or not _is_ak(ven, title):
+        return None
+    dac = x.get("directAccessCode")
+    link = "https://stubb.is/%s" % dac if dac else "https://stubb.is/events/%s" % code
+    img = x.get("imageUrl") or x.get("imageUrlLandscape")
+    return {"title": title[:140], "source": MIDASALA, "site": "Stubb", "link": link, "start": ds[:10], "end": ds[:10],
+            "time": ds[11:16] if len(ds) >= 16 and ds[11:16] != "00:00" else "",
+            "image": img if isinstance(img, str) and img.startswith("http") else None,
+            "note": "Uppselt" if x.get("soldOut") else "", "venue": ven, "detail": False}
+
+
 def read_stubb(today):
-    out, seen, pages = [], set(), 0
-    for url in STUBB_PAGES:
+    base = "https://stubb.is"
+    try:
+        if not (allowed(base + "/sitemap.xml") and allowed(base + "/events/x")):
+            print("VIÐVÖRUN Stubb: robots.txt bannar aðgang")
+            return []
+        sm = fetch_page(base + "/sitemap.xml")
+    except Exception as e:
+        print("X  Stubb: sitemap.xml tókst ekki (%s)" % e)
+        return []
+    codes = list(dict.fromkeys(re.findall(r"<loc>https://stubb\.is/events/([A-Za-z0-9]+)</loc>", sm)))
+    cache = _load(STUBB_CACHE, {})
+    now = time.time()
+
+    def stale(c):
+        v = cache.get(c)
+        if not v:
+            return True
+        return bool(v.get("ev")) and now - v.get("ts", 0) > 12 * 3600  # Akureyrarviðburður: skoðaður aftur tvisvar á dag
+
+    todo = [c for c in codes if stale(c)][:STUBB_BUDGET]
+    errs = 0
+    for c in todo:
         try:
-            page = fetch_page(url)
+            page = fetch_page("%s/events/%s" % (base, c))
+            m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', page, re.S)
+            x = json.loads(m.group(1))["props"]["pageProps"]["serverData"] if m else None
+            ev = stubb_event(x, c, today) if isinstance(x, dict) else None
+            cache[c] = {"ts": now, "ev": [ev] if ev else []}
         except Exception as e:
-            print("   Stubb %s: %s" % (url, str(e)[:100]))
-            continue
-        pages += 1
-        # 1) gögn sem fylgja síðunni (__NEXT_DATA__)
-        m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', page, re.S)
-        if m:
-            try:
-                found = []
-                _walk(json.loads(m.group(1)), found)
-                if found:
-                    print("   Stubb: %d hlutir í __NEXT_DATA__ (lyklar fyrsta: %s)" % (len(found), sorted(found[0].keys())[:20]))
-                for x in found:
-                    title = clean(next(x[k] for k in STUBB_NAME_KEYS if isinstance(x.get(k), str)))
-                    ds = next(x[k] for k in STUBB_DATE_KEYS if isinstance(x.get(k), str) and re.match(r"20\d\d-\d\d-\d\d", x[k]))
-                    ven = x.get("venue") or x.get("location") or x.get("venueName") or ""
-                    if isinstance(ven, dict):
-                        ven = ven.get("name") or ven.get("title") or ""
-                    ven = clean(str(ven))
-                    cat = " ".join(str(x.get(k) or "") for k in ("category", "categoryName", "type", "sport"))
-                    if SPORT_WORDS.search(cat + " " + title) or not _is_ak(ven, title):
-                        continue
-                    code = x.get("slug") or x.get("id") or x.get("code") or ""
-                    link = "https://stubb.is/events/%s" % code if code else "https://stubb.is/"
-                    key = (link, ds[:10])
-                    if key in seen:
-                        continue
-                    seen.add(key)
-                    out.append({"title": title[:140], "source": MIDASALA, "site": "Stubb", "link": link, "start": ds[:10],
-                                "end": ds[:10], "time": ds[11:16] if len(ds) >= 16 and ds[11:16] != "00:00" else "",
-                                "image": x.get("image") if isinstance(x.get("image"), str) else None, "note": "", "venue": ven, "detail": False})
-            except Exception as e:
-                print("   Stubb: __NEXT_DATA__ las ekki (%s)" % e)
-        # 2) spjöld með tengla á /events/<kóði> í HTML
-        for g in link_groups(page, re.compile(r"^/events/[A-Za-z0-9]+$")):
-            parts = [p.strip() for p in g["text"].split("|") if p.strip()]
-            if len(parts) < 3:
-                continue
-            dm = None
-            for i, p in enumerate(parts):
-                dm = STUBB_DATE.match(p)
-                if dm:
-                    parts = parts[i + 1:]
-                    break
-            if not dm:
-                continue
-            parts = [p for p in parts if not re.fullmatch(r"UPPSELT!?|FÁIR MIÐAR( EFTIR)?|Frá.*|\+\d+ dagsetning\w*", p, re.I)]
-            if len(parts) < 2:
-                continue
-            title, ven = parts[0], parts[-1]
-            if SPORT_WORDS.search(" ".join(parts)) or not _is_ak(ven, title):
-                continue
-            d = _on_or_after(int(dm.group(1)), MONTHS_IS[dm.group(2).lower()], today)
-            if not d:
-                continue
-            link = urljoin("https://stubb.is", g["href"])
-            key = (link, d.isoformat())
-            if key in seen:
-                continue
-            seen.add(key)
-            out.append({"title": title[:140], "source": MIDASALA, "site": "Stubb", "link": link, "start": d.isoformat(),
-                        "end": d.isoformat(), "time": "", "image": None, "note": "", "venue": ven, "detail": False})
-    print("   Stubb: %d síður lesnar, %d viðburðir á Akureyri" % (pages, len(out)))
+            errs += 1
+            if errs <= 3:
+                print("   Stubb %s: %s" % (c, str(e)[:100]))
+        time.sleep(1.0)
+    cache = {k: v for k, v in cache.items() if k in set(codes)}
+    with open(STUBB_CACHE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False)
+    out, seen = [], set()
+    for v in cache.values():
+        for e in v.get("ev", []):
+            if e["start"] >= today.isoformat() and (e["link"], e["start"]) not in seen:
+                seen.add((e["link"], e["start"]))
+                out.append(e)
+    left = len([c for c in codes if c not in cache])
+    print("   Stubb: %d af %d viðburðasíðum skoðaðar núna (%d villur, %d eftir), %d viðburðir á Akureyri" % (
+        len(todo), len(codes), errs, left, len(out)))
     return out
 
 
