@@ -686,6 +686,19 @@
     "kind": "Tónlist"
   },
   {
+    "title": "Jaakko Laitinen & Väärä Raha í Leyni",
+    "source": "Miðasala",
+    "site": "Stubb",
+    "link": "https://stubb.is/events/oOLGwb",
+    "start": "2026-11-06",
+    "end": "2026-11-06",
+    "time": "20:00",
+    "image": "https://dashboard.stubb.is/uploads/1788290609_6a972631d6203_thumb.png",
+    "note": "",
+    "venue": "Leyni bar Akureyri",
+    "kind": "Tónlist"
+  },
+  {
     "title": "Mjög fín bara - Snjólaug Lúðvíksdóttir uppistand - Akureyri",
     "source": "Miðasala",
     "site": "Tix",
@@ -982,6 +995,19 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/GwdvF1ol93aLUp4niWcdVbkXxJ5g4k-metaZ3LDpm5pIGNvcHkuanBn-.webp",
     "note": "Frá 7.900 kr.",
+    "kind": "Tónlist"
+  },
+  {
+    "title": "LEÐJUMESSAN",
+    "source": "Miðasala",
+    "site": "Stubb",
+    "link": "https://stubb.is/events/ndBXeo",
+    "start": "2026-11-14",
+    "end": "2026-11-14",
+    "time": "21:00",
+    "image": "https://dashboard.stubb.is/uploads/1792789065_6adbca4993669_thumb.jpg",
+    "note": "",
+    "venue": "Leyni bar Akureyri",
     "kind": "Tónlist"
   },
   {
