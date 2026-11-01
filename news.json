@@ -1,5 +1,31 @@
 [
   {
+    "title": "FH upp í þriðja sæti eftir sigur á Akureyri",
+    "link": "https://www.mbl.is/sport/handbolti/2026/11/01/fh_upp_i_thridja_saeti_eftir_sigur_a_akureyri/",
+    "summary": "FH er komið í þriðja sæti úrvalsdeildar karla í handbolta eftir útisigur á Þór Akureyri, 37:30, á Akureyri í dag.",
+    "date": "2026-11-01T17:11:00+00:00",
+    "image": "https://c.arvakur.is/frimg/1/68/87/1688799A.jpg",
+    "source": "mbl.is",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Hansen með freistandi tilboð frá Akureyri",
+    "link": "https://www.visir.is/g/20262956801d/hansen-med-freistandi-tilbod-fra-akureyri",
+    "summary": "Nikolaj Hansen, fráfarandi leikmaður Víkings, er með stórt tilboð frá nýföllnu liði KA á borðinu.",
+    "date": "2026-11-01T16:43:51+00:00",
+    "image": "https://www.visir.is/i/5C60B062D4169BB251064002F8E39EBBB4859AC177188D81C3852D86DCD5A545_1600x900.jpg",
+    "source": "Vísir",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
     "title": "Akureyri Nálar fundust í Hrekkjavökusælgæti",
     "link": "https://www.vikubladid.is/is/moya/news/akureyri-nalar-fundust-i-hrekkjavokusaelgaeti",
     "summary": "Lögreglan á Akureyri sendi frá sér eftirfrandi tilkynninu fyrir skömmu: Okkur var að berast tilkynning um aðskotahlut sem fannst í sælgæti sem dreift var í gærkvöldi vegna Hrekkjavöku. Um er að ræða nálar sem var stungið inn í nokkur Þrist og Milky Way súkkulaðistykki. Við biðjum foreldra um að yfir",
@@ -169,6 +195,18 @@
     "cats": [
       "Fréttir",
       "Íþróttir"
+    ]
+  },
+  {
+    "title": "Afi og amma á Hraunfelli",
+    "link": "https://www.akureyri.net/is/moya/news/afi-og-amma-a-hraunfelli",
+    "summary": "Jóhann Árelíuz",
+    "date": "2026-11-01T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1793492088_johann-areliuz-pistlar.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
     ]
   },
   {
@@ -1508,18 +1546,6 @@
     "date": "2026-10-28T19:01:00+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2024/10/Screenshot-2024-10-30-at-12.50.07.png",
     "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "„Nú geta akureyrskir ökuþórar andað léttar“",
-    "link": "https://www.akureyri.net/is/moya/news/nu-geta-akureyrskir-okuthorar-andad-lettar",
-    "summary": "„Wúhú! Nú geta akureyrskir ökuþórar andað léttar. Bráðabirgðahraðahindranirnar sem settar voru upp í sumar í Oddeyrargötu hafa verið fjarlægðar og umferðin farin að láta á sér kræla á ný.“ Þannig hefst pistill sem Aðalsteinn Svan Hjelm, áhugamaður um...",
-    "date": "2026-10-28T18:30:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/adalsteinn-svan-hjelm-i-oddeyrargotu.jpg",
-    "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
@@ -3057,18 +3083,6 @@
     ]
   },
   {
-    "title": "E. coli greindist í neysluvatni íbúa",
-    "link": "https://www.visir.is/g/20262951884d/e.-coli-greindist-i-neysluvatni-ibua",
-    "summary": "E. coli-gerlar greindust í neysluvatni á Siglufirði við reglubundið eftirlit Heilbrigðiseftirlits Norðurlands vestra. Í ljósi þessa er íbúum ráðlagt að sjóða vatnið fyrir neyslu. Ákvörðunin var tekin í samráði við Matvælastofnun.",
-    "date": "2026-10-21T22:41:31+00:00",
-    "image": "https://www.visir.is/i/30D3AB1E3E4E8238ED107497CCC5F54B2F8724ACB7BDECC7573FAE9F14012D11_1600x900.jpg",
-    "source": "Vísir",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Breyting á akstri skólarútu vegna vetrarfrís",
     "link": "https://www.fjallabyggd.is/is/frettir/breyting-a-akstri-skolarutu-vegna-vetrarfris-1",
     "summary": "Vegna vetrarfrís í grunnskóla Fjallabyggðar verða breytingar á akstri skólarútu mánudaginn 26. og þriðjudaginn 27. október nk. Skólarútan mun aka samkvæmt breyttri tímaáætlun þessa daga, eins og fram kemur í meðfylgjandi töflu.",
@@ -4277,19 +4291,6 @@
     "summary": "ÍBV er fallið úr Bestu deild karla í fótbolta eftir tap fyrir Þór, 1:0, á Akureyri í dag. Eyjamenn geta ekki komið sér úr fallsæti þrátt fyrir að eiga enn tvo leiki eftir.",
     "date": "2026-10-10T16:02:00+00:00",
     "image": "https://c.arvakur.is/frimg/1/68/37/1683729A.jpg",
-    "source": "mbl.is",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Beint: Stór mörk fyrir Akureyrarliðin",
-    "link": "https://www.mbl.is/sport/efstadeild/2026/10/10/beint_stor_mork_fyrir_akureyrarlidin/",
-    "summary": "Þrír leikir verða flautaðir á í neðri hluta Bestu deildar karla í fótbolta klukkan 14. Mbl.is fylgist með þeim öllum og færir ykkur það helsta í einni textalýsingu.",
-    "date": "2026-10-10T14:49:00+00:00",
-    "image": "https://c.arvakur.is/frimg/1/68/36/1683698A.jpg",
     "source": "mbl.is",
     "category": "Fréttamiðlar",
     "cats": [
