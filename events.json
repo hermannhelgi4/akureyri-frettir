@@ -1,56 +1,5 @@
 [
   {
-    "title": "Stjarnan – KA",
-    "source": "Íþróttir",
-    "sport": "Fótbolti",
-    "gender": "Karlar",
-    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100289",
-    "start": "2026-10-10",
-    "end": "2026-10-10",
-    "time": "14:00",
-    "image": null,
-    "note": "Útileikur · Besta deild karla - Neðri hluti · Samsungvöllurinn",
-    "teams": [
-      "KA"
-    ],
-    "res": "0–3",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Þór – ÍBV",
-    "source": "Íþróttir",
-    "sport": "Fótbolti",
-    "gender": "Karlar",
-    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100291",
-    "start": "2026-10-10",
-    "end": "2026-10-10",
-    "time": "14:00",
-    "image": null,
-    "note": "Heimaleikur · Besta deild karla - Neðri hluti · VÍS völlurinn",
-    "teams": [
-      "Þór"
-    ],
-    "res": "1–0",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "SR – SA",
-    "source": "Íþróttir",
-    "sport": "Íshokkí",
-    "gender": "Konur",
-    "link": "https://stats.iihf.com/ihi/100/index.html",
-    "start": "2026-10-10",
-    "end": "2026-10-10",
-    "time": "17:45",
-    "image": null,
-    "note": "Útileikur · Toppdeild kvenna",
-    "teams": [
-      "SA"
-    ],
-    "res": "1–0",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Skallagrímur – Þór Ak.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -540,60 +489,8 @@
     "teams": [
       "KA"
     ],
-    "live": "https://www.hbstatz.is/?live=13046",
     "res": "27–36",
     "kind": "Íþróttir"
-  },
-  {
-    "title": "Fasteignamartröðin",
-    "source": "MAK / Hof",
-    "link": "https://www.mak.is/is/vidburdir/fasteignamartrodin",
-    "start": "2026-10-31",
-    "end": "2026-10-31",
-    "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1793410830",
-    "note": "7.900 kr.",
-    "cat0": "Leiksýningar",
-    "venue": "Samkomuhúsið",
-    "kind": "Leiklist"
-  },
-  {
-    "title": "Nýdönsk - Fullkomið farartæki",
-    "source": "MAK / Hof",
-    "link": "https://www.mak.is/is/vidburdir/nydonsk-fullkomid-farartaeki",
-    "start": "2026-10-31",
-    "end": "2026-10-31",
-    "time": "21:00",
-    "image": "https://www.mak.is/static/calendar/images/ako_1200x1700-24547.png?v=1793410830",
-    "note": "Frá 11.990 kr.",
-    "cat0": "Tónleikar",
-    "venue": "Hamraborg, Hof",
-    "kind": "Tónlist"
-  },
-  {
-    "title": "Drykkir innbyrðis",
-    "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/drykkir-innbyrdis-31-oct-2026/eid/257",
-    "start": "2026-10-31",
-    "end": "2026-10-31",
-    "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/8s4V2TO8KXzL6OOATeAQSqAJZjmn1G-metaRHJ5a2tpciBpbm5ieXJnw7Bpcy5qcGc=-.webp",
-    "note": "Frá 5.900 kr.",
-    "kind": "Tónlist"
-  },
-  {
-    "title": "SJALLOWEEN Í SJALLANUM",
-    "source": "Miðasala",
-    "site": "Tix",
-    "link": "https://tix.is/event/22532/sjalloween-i-sjallanum",
-    "start": "2026-10-31",
-    "end": "2026-10-31",
-    "time": "23:55",
-    "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22532.jpg",
-    "note": "6.490 – 7.490 kr.",
-    "venue": "Sjallinn",
-    "cat0": "Halloween, Tónleikar, Tónlist",
-    "kind": "Tónlist"
   },
   {
     "title": "Þór – FH",
@@ -1242,11 +1139,11 @@
     "title": "Jólatónleikar Gospelkórs Glerárkirkju ásamt Heru Björk",
     "source": "Miðasala",
     "site": "Midix",
-    "link": "https://www.midix.is/is/jolatonleikar-gospelkors-glerarkirkju-asamt-heru-bjork-26-nov-2026/eid/1269",
+    "link": "https://www.midix.is/index.php/is/jolatonleikar-gospelkors-glerarkirkju-asamt-heru-bjork-26-nov-2026/eid/1269",
     "start": "2026-11-26",
     "end": "2026-11-26",
     "time": "20:30",
-    "image": "https://www.midix.is/storage/event/poster/main/t0QYJ4XjGDZCGSCLXaQIFMzB6n7Vrl-metaYWRhbC5wbmc=-.png",
+    "image": "https://www.midix.is/index.php/storage/event/poster/main/t0QYJ4XjGDZCGSCLXaQIFMzB6n7Vrl-metaYWRhbC5wbmc=-.png",
     "note": "Nýtt · 5.900 kr.",
     "venue": "Glerárkirkja | | 0",
     "kind": "Tónlist"
@@ -2070,11 +1967,11 @@
     "title": "Jóla-Drag Bröns Akureyri",
     "source": "Miðasala",
     "site": "Midix",
-    "link": "https://www.midix.is/is/jola-drag-brons-akureyri-19-dec-2026/eid/1214",
+    "link": "https://www.midix.is/index.php/is/jola-drag-brons-akureyri-19-dec-2026/eid/1214",
     "start": "2026-12-19",
     "end": "2026-12-19",
     "time": "13:00",
-    "image": "https://www.midix.is/storage/event/poster/main/9msuHTfUwAHEI016nqWGUzWRf2cTph-metaSsOzbGEtRHJhZyBCcsO2bnNfQWt1cmV5cmlfNDY2WDU0NS5qcGc=-.jpg",
+    "image": "https://www.midix.is/index.php/storage/event/poster/main/9msuHTfUwAHEI016nqWGUzWRf2cTph-metaSsOzbGEtRHJhZyBCcsO2bnNfQWt1cmV5cmlfNDY2WDU0NS5qcGc=-.jpg",
     "note": "8.990 kr.",
     "venue": "Múlaberg",
     "kind": "Tónlist"
