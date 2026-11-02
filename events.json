@@ -9,7 +9,7 @@
     "end": "2026-10-15",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild karla · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -196,7 +196,7 @@
     "end": "2026-10-18",
     "time": "15:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -247,7 +247,7 @@
     "end": "2026-10-23",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Dalhús",
+    "note": "Útileikur · Bæjarins Beztu deild karla · Dalhús",
     "teams": [
       "Þór Ak."
     ],
@@ -349,7 +349,7 @@
     "end": "2026-10-24",
     "time": "18:00",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Skógarsel",
+    "note": "Útileikur · Bæjarins Beztu deild kvenna · Skógarsel",
     "teams": [
       "Þór Ak."
     ],
@@ -434,7 +434,7 @@
     "end": "2026-10-29",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild karla · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -597,6 +597,22 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "Selfoss – KA/Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Konur",
+    "link": "https://www.hsi.is/match/110533",
+    "start": "2026-11-07",
+    "end": "2026-11-07",
+    "time": "15:00",
+    "image": null,
+    "note": "Útileikur · Olís deild kvenna · Set höllin",
+    "teams": [
+      "KA/Þór"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "KA – HK",
     "source": "Íþróttir",
     "sport": "Blak",
@@ -613,22 +629,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "Selfoss – KA/Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/match/110533",
-    "start": "2026-11-07",
-    "end": "2026-11-07",
-    "time": "16:00",
-    "image": null,
-    "note": "Útileikur · Olís deild kvenna · Set höllin",
-    "teams": [
-      "KA/Þór"
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Njardvik b – Þór Ak.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -638,7 +638,7 @@
     "end": "2026-11-07",
     "time": "16:00",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · IceMar-höllin",
+    "note": "Útileikur · Bæjarins Beztu deild kvenna · IceMar-höllin",
     "teams": [
       "Þór Ak."
     ],
@@ -707,7 +707,7 @@
     "end": "2026-11-08",
     "time": "16:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild karla · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -768,7 +768,7 @@
     "end": "2026-11-13",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Meistaravellir",
+    "note": "Útileikur · Bæjarins Beztu deild karla · Meistaravellir",
     "teams": [
       "Þór Ak."
     ],
@@ -891,7 +891,7 @@
     "end": "2026-11-17",
     "time": "19:30",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -979,7 +979,7 @@
     "end": "2026-11-21",
     "time": "15:30",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild karla · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -1027,7 +1027,7 @@
     "end": "2026-11-21",
     "time": "18:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -1129,7 +1129,7 @@
     "end": "2026-11-27",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild karla · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -1198,7 +1198,7 @@
     "end": "2026-11-28",
     "time": "13:00",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Ásvellir",
+    "note": "Útileikur · Bæjarins Beztu deild kvenna · Ásvellir",
     "teams": [
       "Þór Ak."
     ],
@@ -1293,7 +1293,7 @@
     "end": "2026-11-29",
     "time": "16:30",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Smárinn",
+    "note": "Útileikur · Bæjarins Beztu deild kvenna · Smárinn",
     "teams": [
       "Þór Ak."
     ],
@@ -1354,7 +1354,7 @@
     "end": "2026-12-03",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild karla · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -1505,7 +1505,7 @@
     "end": "2026-12-05",
     "time": "18:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -1641,7 +1641,7 @@
     "end": "2026-12-11",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Stykkishólmur",
+    "note": "Útileikur · Bæjarins Beztu deild karla · Stykkishólmur",
     "teams": [
       "Þór Ak."
     ],
@@ -1888,7 +1888,7 @@
     "end": "2026-12-18",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Icelandic Glacial höllin",
+    "note": "Útileikur · Bæjarins Beztu deild karla · Icelandic Glacial höllin",
     "teams": [
       "Þór Ak."
     ],
@@ -2094,7 +2094,7 @@
     "end": "2027-01-06",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Icelandic Glacial höllin",
+    "note": "Útileikur · Bæjarins Beztu deild kvenna · Icelandic Glacial höllin",
     "teams": [
       "Þór Ak."
     ],
@@ -2110,7 +2110,7 @@
     "end": "2027-01-08",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild karla · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -2267,7 +2267,7 @@
     "end": "2027-01-15",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Smárinn",
+    "note": "Útileikur · Bæjarins Beztu deild karla · Smárinn",
     "teams": [
       "Þór Ak."
     ],
@@ -2296,7 +2296,7 @@
     "end": "2027-01-17",
     "time": "16:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -2341,7 +2341,7 @@
     "end": "2027-01-21",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild karla · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -2370,7 +2370,7 @@
     "end": "2027-01-23",
     "time": "18:00",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Meistaravellir",
+    "note": "Útileikur · Bæjarins Beztu deild kvenna · Meistaravellir",
     "teams": [
       "Þór Ak."
     ],
@@ -2447,7 +2447,7 @@
     "end": "2027-01-29",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Ásvellir",
+    "note": "Útileikur · Bæjarins Beztu deild karla · Ásvellir",
     "teams": [
       "Þór Ak."
     ],
@@ -2476,7 +2476,7 @@
     "end": "2027-01-30",
     "time": "18:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -2720,7 +2720,7 @@
     "end": "2027-02-13",
     "time": "17:00",
     "image": null,
-    "note": "Útileikur · 1. deild karla · ÞG Verk höllin",
+    "note": "Útileikur · Bæjarins Beztu deild karla · ÞG Verk höllin",
     "teams": [
       "Þór Ak."
     ],
@@ -2810,7 +2810,7 @@
     "end": "2027-02-17",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -2858,7 +2858,7 @@
     "end": "2027-02-18",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild karla · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -2977,7 +2977,7 @@
     "end": "2027-02-25",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · AvAir höllin",
+    "note": "Útileikur · Bæjarins Beztu deild karla · AvAir höllin",
     "teams": [
       "Þór Ak."
     ],
@@ -3038,7 +3038,7 @@
     "end": "2027-02-27",
     "time": "16:00",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Blue-höllin",
+    "note": "Útileikur · Bæjarins Beztu deild kvenna · Blue-höllin",
     "teams": [
       "Þór Ak."
     ],
@@ -3115,7 +3115,7 @@
     "end": "2027-03-05",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Vallaskóli",
+    "note": "Útileikur · Bæjarins Beztu deild karla · Vallaskóli",
     "teams": [
       "Þór Ak."
     ],
@@ -3224,7 +3224,7 @@
     "end": "2027-03-06",
     "time": "18:00",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Vallaskóli",
+    "note": "Útileikur · Bæjarins Beztu deild kvenna · Vallaskóli",
     "teams": [
       "Þór Ak."
     ],
@@ -3314,7 +3314,7 @@
     "end": "2027-03-12",
     "time": "19:15",
     "image": null,
-    "note": "Útileikur · 1. deild karla · Borgarnes",
+    "note": "Útileikur · Bæjarins Beztu deild karla · Borgarnes",
     "teams": [
       "Þór Ak."
     ],
@@ -3343,7 +3343,7 @@
     "end": "2027-03-13",
     "time": "18:00",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -3420,7 +3420,7 @@
     "end": "2027-03-19",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild karla · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild karla · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
@@ -3436,7 +3436,7 @@
     "end": "2027-03-20",
     "time": "16:00",
     "image": null,
-    "note": "Útileikur · 1. deild kvenna · Unbroken Höllin",
+    "note": "Útileikur · Bæjarins Beztu deild kvenna · Unbroken Höllin",
     "teams": [
       "Þór Ak."
     ],
@@ -3539,7 +3539,7 @@
     "end": "2027-03-30",
     "time": "19:15",
     "image": null,
-    "note": "Heimaleikur · 1. deild kvenna · Höllin Ak",
+    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
     "teams": [
       "Þór Ak."
     ],
