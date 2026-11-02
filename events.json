@@ -1102,7 +1102,7 @@
     "end": "2026-11-26",
     "time": "20:30",
     "image": "https://www.midix.is/storage/event/poster/main/t0QYJ4XjGDZCGSCLXaQIFMzB6n7Vrl-metaYWRhbC5wbmc=-.png",
-    "note": "Nýtt · 5.900 kr.",
+    "note": "5.900 kr.",
     "venue": "Glerárkirkja | | 0",
     "kind": "Tónlist"
   },
@@ -1282,6 +1282,32 @@
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/jUE5s7DubAehsFBvn2pNxcU7Exyrxp-metaaXNzaS5qcGc=-.webp",
     "note": "Frá 5.900 kr.",
     "kind": "Tónlist"
+  },
+  {
+    "title": "Elf - hátíðarsýning DSA",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/elf-hatidarsyning-dsa",
+    "start": "2026-11-29",
+    "end": "2026-11-29",
+    "time": "12:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1793630801.jpg?v=1793627330",
+    "note": "4.200 kr.",
+    "cat0": "",
+    "venue": "Hamraborg, Hof",
+    "kind": "Fjölskylda"
+  },
+  {
+    "title": "Elf - hátíðarsýning DSA",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/elf-hatidarsyning-dsa",
+    "start": "2026-11-29",
+    "end": "2026-11-29",
+    "time": "14:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1793630801.jpg?v=1793627330",
+    "note": "4.200 kr.",
+    "cat0": "",
+    "venue": "Hamraborg, Hof",
+    "kind": "Fjölskylda"
   },
   {
     "title": "Breiðablik – Þór Ak.",
@@ -3327,7 +3353,7 @@
     "start": "2027-03-12",
     "end": "2027-03-12",
     "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1793280156.png?v=1793454117",
+    "image": "https://www.mak.is/static/calendar/images/submit_1793280156.png?v=1793627330",
     "note": "Frá 11.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
@@ -3669,19 +3695,6 @@
     "kind": "Leiklist"
   },
   {
-    "title": "Teiknimyndalögin okkar",
-    "source": "MAK / Hof",
-    "link": "https://www.mak.is/is/vidburdir/teiknimyndalogin-okkar-1",
-    "start": "2027-05-09",
-    "end": "2027-05-09",
-    "time": "16:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782206981.png?v=1793591239",
-    "note": "",
-    "cat0": "Tónleikar",
-    "venue": "Hamraborg, Hof",
-    "kind": "Tónlist"
-  },
-  {
     "title": "BaKaBa - Kvartettfjör að vori",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/bakaba-kvartettfjor-ad-vori",
@@ -3692,6 +3705,19 @@
     "note": "5.900 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
+  },
+  {
+    "title": "Teiknimyndalögin okkar",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/teiknimyndalogin-okkar-1",
+    "start": "2027-05-09",
+    "end": "2027-05-09",
+    "time": "16:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782206981.png?v=1793591239",
+    "note": "",
+    "cat0": "Tónleikar",
+    "venue": "Hamraborg, Hof",
     "kind": "Tónlist"
   },
   {
