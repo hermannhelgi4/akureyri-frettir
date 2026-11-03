@@ -1,5 +1,42 @@
 [
   {
+    "title": "Kærulausar kannanir Melkorku Mjallar",
+    "link": "https://www.akureyri.net/is/moya/news/kaerulausar-kannanir-melkorku-mjallar",
+    "summary": "Melkorka Mjöll Kristinsdóttir sendi nýverið frá sér bókina Kærulausar kannanir, „samansafn örsagna og vangaveltna konu sem mætir ofur hversdagslegum augnablikum og sígildum stefjum ýmist undrandi, full efasemda, með háði eða af einlægni,“ eins og seg...",
+    "date": "2026-11-03T09:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/kaerulausar-kannanir.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Bæjarlistamaður Fjallabyggðar 2027",
+    "link": "https://www.fjallabyggd.is/is/frettir/baejarlistamadur-fjallabyggdar-2027",
+    "summary": "Fjallabyggð auglýsir eftir tilnefningum um titilinn Bæjarlistamaður Fjallabyggðar 2027.",
+    "date": "2026-11-03T09:00:00+00:00",
+    "image": "https://www.fjallabyggd.is/static/news/sm/baejarlistamenn-2026.jpeg",
+    "source": "Fjallabyggð",
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
+  },
+  {
+    "title": "Af hverju sleit KA sambandinu við Þór?",
+    "link": "https://www.ruv.is/frettir/ithrottir/2026-11-03-af-hverju-sleit-ka-sambandinu-vid-thor-491555/",
+    "summary": "KA hefur slitið samstarfi sínu við Þór en liðin stilltu upp sameiginlegu liði í meistaraflokki kvenna í áraraðir. Lið Þór/KA hefur átt fast sæti í efstu deild kvenna frá 2006 en á sér lengri sögu. Eftir að samstarfinu var slitið heldur Þór liði sínu í efstu deild en KA byrjar í neðstu deild, þeirri ",
+    "date": "2026-11-03T08:55:28+00:00",
+    "image": "https://myndir.ruv.is/eyJidWNrZXQiOiAicnV2LXByb2QtcnV2aXMtcHVibGljIiwgImtleSI6ICJtZWRpYS9wdWJsaWMvb3JpZ2luYWxfaW1hZ2VzL1VudGl0bGVkX2Rlc2lnbl8zX09qSFByaGwucG5nIiwgImVkaXRzIjogeyJ0b0Zvcm1hdCI6ICJ3ZWJwIiwgIndlYnAiOiB7InF1YWxpdHkiOiA2MH0sICJyZXNpemUiOiB7IndpZHRoIjogIjE2MDAiLCAiZml0IjogImNvdmVyIiwgImhlaWdodCI6ICI5MDAifX19",
+    "source": "RÚV",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
     "title": "Öflugar byggðir gera Ísland sterkara",
     "link": "https://kaffid.is/oflugar-byggdir-gera-island-sterkara/",
     "summary": "Október hefur verið annasamur og fjölbreyttur mánuður hjá SSNE. Eins og oft áður hefur stór hluti starfsins hefur snúist um […]",
@@ -42,6 +79,18 @@
     "summary": "",
     "date": "2026-11-03T06:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/95-aija.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Djúpslökun og töfrar Jóga Nidra",
+    "link": "https://www.akureyri.net/is/moya/news/djupslokun-og-tofrar-joga-nidra",
+    "summary": "Hrafnhildur Reykjalín Vigfúsdóttir",
+    "date": "2026-11-03T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1793611477_1-pistill-hrafnhildur.jpg",
     "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
@@ -1454,18 +1503,6 @@
     ]
   },
   {
-    "title": "Játningar nýliða",
-    "link": "https://www.akureyri.net/is/moya/news/jatningar-nylida",
-    "summary": "Kristín Helga Schiöth",
-    "date": "2026-10-30T18:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/kristin-helga-schioth-grein.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Hryllilega skemmtileg helgi framundan",
     "link": "https://kaffid.is/hryllilega-skemmtileg-helgi-framundan/",
     "summary": "Það verður nóg um að vera hjá Menningarfélagi Akureyrar um helgina. Sýningar á Fasteignamartröðinni halda áfram, tónleikar með Nýdönsk og […]",
@@ -1484,18 +1521,6 @@
     "date": "2026-10-30T15:02:00+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/10/thristur.png",
     "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Tónlistin skapar tengsl frá fyrstu tíð",
-    "link": "https://www.akureyri.net/is/moya/news/tonlistin-skapar-tengsl-fra-fyrstu-tid",
-    "summary": "Ekki allir nemendur Tónlistarskólans á Akureyri eru komnir á þann aldur að geta gengið, hvað þá sungið eða leikið á hljóðfæri. Í tónlistartímunum Krútttónó og Smátónó eru nemendurnir á aldrinum fjögurra mánaða og upp í þriggja ára gamlir, en um er að...",
-    "date": "2026-10-30T15:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/krutttono_bj5a8619.jpg",
-    "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
@@ -4172,18 +4197,6 @@
     "category": "Bærinn",
     "cats": [
       "Bærinn"
-    ]
-  },
-  {
-    "title": "Gámasvæði á Siglufirði og Ólafsfirði lokuð",
-    "link": "https://www.fjallabyggd.is/is/frettir/gamasvaedi-a-siglufirdi-og-olafsfirdi-lokud",
-    "summary": "Vegna óveðurs verður gámasvæðum á Siglufirði og í Ólafsfirði lokað í dag, miðvikudaginn 14. október.",
-    "date": "2026-10-14T15:03:00+00:00",
-    "image": "https://www.fjallabyggd.is/static/news/sm/gamasvaedi.jpg",
-    "source": "Fjallabyggð",
-    "category": "Nærsveitir",
-    "cats": [
-      "Nærsveitir"
     ]
   },
   {
