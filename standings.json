@@ -800,6 +800,134 @@
  {
   "sport": "Fótbolti",
   "gender": "Karlar",
+  "comp": "Besta deild karla - Neðri hluti",
+  "link": "https://www.ksi.is/oll-mot/mot/?id=7025532&banner-tab=overview",
+  "rows": [
+   {
+    "n": 1,
+    "t": "Stjarnan",
+    "p": 27,
+    "w": 10,
+    "d": 4,
+    "l": 13,
+    "g": "53-61",
+    "pts": 34,
+    "me": false
+   },
+   {
+    "n": 2,
+    "t": "Valur",
+    "p": 27,
+    "w": 10,
+    "d": 4,
+    "l": 13,
+    "g": "51-59",
+    "pts": 34,
+    "me": false
+   },
+   {
+    "n": 3,
+    "t": "FH",
+    "p": 27,
+    "w": 7,
+    "d": 9,
+    "l": 11,
+    "g": "42-49",
+    "pts": 30,
+    "me": false
+   },
+   {
+    "n": 4,
+    "t": "Þór",
+    "p": 27,
+    "w": 9,
+    "d": 3,
+    "l": 15,
+    "g": "29-59",
+    "pts": 30,
+    "me": true
+   },
+   {
+    "n": 5,
+    "t": "KA",
+    "p": 27,
+    "w": 8,
+    "d": 5,
+    "l": 14,
+    "g": "47-56",
+    "pts": 29,
+    "me": true
+   },
+   {
+    "n": 6,
+    "t": "ÍBV",
+    "p": 27,
+    "w": 5,
+    "d": 7,
+    "l": 15,
+    "g": "37-55",
+    "pts": 22,
+    "me": false
+   }
+  ],
+  "ts": "2026-11-03"
+ },
+ {
+  "sport": "Fótbolti",
+  "gender": "Konur",
+  "comp": "Besta deild kvenna - Neðri hluti",
+  "link": "https://www.ksi.is/oll-mot/mot/?id=7025661&banner-tab=overview",
+  "rows": [
+   {
+    "n": 1,
+    "t": "Fram",
+    "p": 21,
+    "w": 8,
+    "d": 2,
+    "l": 11,
+    "g": "33-48",
+    "pts": 26,
+    "me": false
+   },
+   {
+    "n": 2,
+    "t": "Þór/KA",
+    "p": 21,
+    "w": 7,
+    "d": 4,
+    "l": 10,
+    "g": "28-30",
+    "pts": 25,
+    "me": true
+   },
+   {
+    "n": 3,
+    "t": "Valur",
+    "p": 21,
+    "w": 6,
+    "d": 6,
+    "l": 9,
+    "g": "25-34",
+    "pts": 24,
+    "me": false
+   },
+   {
+    "n": 4,
+    "t": "Víkingur R.",
+    "p": 21,
+    "w": 6,
+    "d": 4,
+    "l": 11,
+    "g": "30-43",
+    "pts": 22,
+    "me": false
+   }
+  ],
+  "ts": "2026-11-03"
+ },
+ {
+  "sport": "Fótbolti",
+  "gender": "Karlar",
   "comp": "Besta deild karla",
   "link": "https://www.ksi.is/oll-mot/mot/?id=7025510&banner-tab=overview",
   "rows": [
@@ -933,134 +1061,6 @@
     "l": 12,
     "g": "32-45",
     "pts": 18,
-    "me": false
-   }
-  ],
-  "ts": "2026-11-03"
- },
- {
-  "sport": "Fótbolti",
-  "gender": "Karlar",
-  "comp": "Besta deild karla - Neðri hluti",
-  "link": "https://www.ksi.is/oll-mot/mot/?id=7025532&banner-tab=overview",
-  "rows": [
-   {
-    "n": 1,
-    "t": "Stjarnan",
-    "p": 27,
-    "w": 10,
-    "d": 4,
-    "l": 13,
-    "g": "53-61",
-    "pts": 34,
-    "me": false
-   },
-   {
-    "n": 2,
-    "t": "Valur",
-    "p": 27,
-    "w": 10,
-    "d": 4,
-    "l": 13,
-    "g": "51-59",
-    "pts": 34,
-    "me": false
-   },
-   {
-    "n": 3,
-    "t": "FH",
-    "p": 27,
-    "w": 7,
-    "d": 9,
-    "l": 11,
-    "g": "42-49",
-    "pts": 30,
-    "me": false
-   },
-   {
-    "n": 4,
-    "t": "Þór",
-    "p": 27,
-    "w": 9,
-    "d": 3,
-    "l": 15,
-    "g": "29-59",
-    "pts": 30,
-    "me": true
-   },
-   {
-    "n": 5,
-    "t": "KA",
-    "p": 27,
-    "w": 8,
-    "d": 5,
-    "l": 14,
-    "g": "47-56",
-    "pts": 29,
-    "me": true
-   },
-   {
-    "n": 6,
-    "t": "ÍBV",
-    "p": 27,
-    "w": 5,
-    "d": 7,
-    "l": 15,
-    "g": "37-55",
-    "pts": 22,
-    "me": false
-   }
-  ],
-  "ts": "2026-11-03"
- },
- {
-  "sport": "Fótbolti",
-  "gender": "Konur",
-  "comp": "Besta deild kvenna - Neðri hluti",
-  "link": "https://www.ksi.is/oll-mot/mot/?id=7025661&banner-tab=overview",
-  "rows": [
-   {
-    "n": 1,
-    "t": "Fram",
-    "p": 21,
-    "w": 8,
-    "d": 2,
-    "l": 11,
-    "g": "33-48",
-    "pts": 26,
-    "me": false
-   },
-   {
-    "n": 2,
-    "t": "Þór/KA",
-    "p": 21,
-    "w": 7,
-    "d": 4,
-    "l": 10,
-    "g": "28-30",
-    "pts": 25,
-    "me": true
-   },
-   {
-    "n": 3,
-    "t": "Valur",
-    "p": 21,
-    "w": 6,
-    "d": 6,
-    "l": 9,
-    "g": "25-34",
-    "pts": 24,
-    "me": false
-   },
-   {
-    "n": 4,
-    "t": "Víkingur R.",
-    "p": 21,
-    "w": 6,
-    "d": 4,
-    "l": 11,
-    "g": "30-43",
-    "pts": 22,
     "me": false
    }
   ],
