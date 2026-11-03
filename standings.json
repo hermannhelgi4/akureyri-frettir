@@ -800,6 +800,147 @@
  {
   "sport": "Fótbolti",
   "gender": "Karlar",
+  "comp": "Besta deild karla",
+  "link": "https://www.ksi.is/oll-mot/mot/?id=7025510&banner-tab=overview",
+  "rows": [
+   {
+    "n": 1,
+    "t": "Víkingur R.",
+    "p": 22,
+    "w": 16,
+    "d": 5,
+    "l": 1,
+    "g": "67-21",
+    "pts": 53,
+    "me": false
+   },
+   {
+    "n": 2,
+    "t": "Fram",
+    "p": 22,
+    "w": 13,
+    "d": 6,
+    "l": 3,
+    "g": "56-42",
+    "pts": 45,
+    "me": false
+   },
+   {
+    "n": 3,
+    "t": "KR",
+    "p": 22,
+    "w": 13,
+    "d": 5,
+    "l": 4,
+    "g": "74-49",
+    "pts": 44,
+    "me": false
+   },
+   {
+    "n": 4,
+    "t": "Breiðablik",
+    "p": 22,
+    "w": 8,
+    "d": 6,
+    "l": 8,
+    "g": "43-41",
+    "pts": 30,
+    "me": false
+   },
+   {
+    "n": 5,
+    "t": "ÍA",
+    "p": 22,
+    "w": 8,
+    "d": 6,
+    "l": 8,
+    "g": "39-41",
+    "pts": 30,
+    "me": false
+   },
+   {
+    "n": 6,
+    "t": "Keflavík",
+    "p": 22,
+    "w": 8,
+    "d": 4,
+    "l": 10,
+    "g": "33-38",
+    "pts": 28,
+    "me": false
+   },
+   {
+    "n": 7,
+    "t": "Stjarnan",
+    "p": 22,
+    "w": 8,
+    "d": 4,
+    "l": 10,
+    "g": "42-50",
+    "pts": 28,
+    "me": false
+   },
+   {
+    "n": 8,
+    "t": "Valur",
+    "p": 22,
+    "w": 8,
+    "d": 3,
+    "l": 11,
+    "g": "39-45",
+    "pts": 27,
+    "me": false
+   },
+   {
+    "n": 9,
+    "t": "FH",
+    "p": 22,
+    "w": 4,
+    "d": 9,
+    "l": 9,
+    "g": "27-39",
+    "pts": 21,
+    "me": false
+   },
+   {
+    "n": 10,
+    "t": "Þór",
+    "p": 22,
+    "w": 6,
+    "d": 3,
+    "l": 13,
+    "g": "22-50",
+    "pts": 21,
+    "me": true
+   },
+   {
+    "n": 11,
+    "t": "KA",
+    "p": 22,
+    "w": 5,
+    "d": 5,
+    "l": 12,
+    "g": "35-48",
+    "pts": 20,
+    "me": true
+   },
+   {
+    "n": 12,
+    "t": "ÍBV",
+    "p": 22,
+    "w": 4,
+    "d": 6,
+    "l": 12,
+    "g": "32-45",
+    "pts": 18,
+    "me": false
+   }
+  ],
+  "ts": "2026-11-03"
+ },
+ {
+  "sport": "Fótbolti",
+  "gender": "Karlar",
   "comp": "Besta deild karla - Neðri hluti",
   "link": "https://www.ksi.is/oll-mot/mot/?id=7025532&banner-tab=overview",
   "rows": [
