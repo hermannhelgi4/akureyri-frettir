@@ -2152,6 +2152,17 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "Ljótu Hálfvitarnir",
+    "source": "Græni hatturinn",
+    "link": "https://www.graenihatturinn.is/is/ljotu-halfvitarnir-08-jan-2027/eid/301",
+    "start": "2027-01-08",
+    "end": "2027-01-08",
+    "time": "19:00",
+    "image": "https://www.graenihatturinn.is/storage/event/poster/main/8yrS48LwEsViqWajXk3sZ2H8gPBrzr-metabGrDs3R1IDIwMjcgc3TDs3IuanBn-.jpg",
+    "note": "Frá 9.900 kr.",
+    "kind": "Tónlist"
+  },
+  {
     "title": "Þór Ak. – Hamar",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -2230,6 +2241,17 @@
       "SA"
     ],
     "kind": "Íþróttir"
+  },
+  {
+    "title": "Ljótu Hálfvitarnir",
+    "source": "Græni hatturinn",
+    "link": "https://www.graenihatturinn.is/is/ljotu-halfvitarnir-09-jan-2027/eid/302",
+    "start": "2027-01-09",
+    "end": "2027-01-09",
+    "time": "21:00",
+    "image": "https://www.graenihatturinn.is/storage/event/poster/main/mKC8HBnTqQsbCFq4L4vkKZyMRDXfLy-metabGrDs3R1IDIwMjcgc3TDs3IuanBn-.jpg",
+    "note": "Frá 9.900 kr.",
+    "kind": "Tónlist"
   },
   {
     "title": "KA – Þróttur Reykjavík",
