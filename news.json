@@ -1,5 +1,41 @@
 [
   {
+    "title": "Bæjarstjórn Akureyrar mótmælir breytingum á Loftbrú",
+    "link": "https://www.vikubladid.is/is/moya/news/baejarstjorn-akureyrar-motmaelir-breytingum-a-loftbru-1",
+    "summary": "Á fundi bæjarstjórnar Akureyrar í gær óskaði Þórhallur Jónsson Akureyrarlistanum eftir umræðu um fyrirhugaðar breytingar á Loftbrú sem boðaðar hafa verið. Eftirfarandi ályktun sem Þórhallur lagði fram var samþykkt samhljóða.",
+    "date": "2026-11-04T11:29:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/aklistinn.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Meiri tæknimaður en tónlistarmaður",
+    "link": "https://www.vikubladid.is/is/moya/news/meiri-taeknimadur-en-tonlistarmadur",
+    "summary": "Á vef Verkmenntaskólans er að finna skemmtilegt viðtal við Haukur Eiríksson kennara við skólann. Utan kennslu bregður hann sér af og til í það hlutverk að setjast við hljómborðið með félögum sínum í hljómsveitinni Drykkjum innbyrðis.",
+    "date": "2026-11-04T10:52:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/drykkir.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Nýjar bækur Giorgios Baruchello kynntar í Genúa",
+    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/nyjar-baekur-giorgios-baruchello-kynntar-i-genua",
+    "summary": "Heimspeki með húmor í nýjum bókum höfundar",
+    "date": "2026-11-04T10:50:00+00:00",
+    "image": "https://www.unak.is/static/news/sm/giorgio-bokakynning-1.png",
+    "source": "Háskólinn á Akureyri",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Tólf tóna korter - Hjörleifur",
     "link": "https://www.listak.is/is/moya/news/tolf-tona-korter-hjorleifur",
     "summary": "Korterslangir tónleikar í Listasafninu á Akureyri, laugardaginn 7. nóvember kl. 15 og 16. Aðgangur ókeypis.",
@@ -9,6 +45,30 @@
     "category": "Menning",
     "cats": [
       "Bærinn"
+    ]
+  },
+  {
+    "title": "Birkið í Trjáræktarstöðinni afhjúpað - Haustið kjaftar frá",
+    "link": "https://www.akureyri.net/is/moya/news/birkid-i-trjaraektarstodinni-afhjupad-haustid-kjaftar-fra",
+    "summary": "Helgi Þórsson",
+    "date": "2026-11-04T10:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1793784781_helgi-thorsson.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Fundaáætlun 2026",
+    "link": "https://www.horgarsveit.is/is/moya/news/fundaaaetlun-2026",
+    "summary": "Sveitarstjórn og skipulagsnefnd",
+    "date": "2026-11-04T08:49:00+00:00",
+    "image": "https://www.horgarsveit.is/static/news/sm/1782982327_horgarsveit-hviturbakgrunnur-frett.jpg",
+    "source": "Hörgársveit",
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
     ]
   },
   {
@@ -1447,19 +1507,6 @@
     ]
   },
   {
-    "title": "Handbolti: Þórsarar taka á móti FH í dag",
-    "link": "https://www.akureyri.net/is/moya/news/handbolti-thorsarar-taka-a-moti-fh-i-dag",
-    "summary": "Lið frá vinabæjunum Akureyri og Hafnarfirði etja kappi tvo daga í röð í handbolta þessa helgina. KA tókst ekki að stöðva sigurgöngu Hauka í gær, en í dag tekur Þór á móti hinu Hafnarfjarðarliðinu, FH, í níundu umferð Olísdeildar karla. Bæði liðin töp...",
-    "date": "2026-11-01T06:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/arm_6002.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
     "title": "Verður áfram með Dalvík/Reyni",
     "link": "https://www.mbl.is/sport/efstadeild/2026/10/31/verdur_afram_med_dalvik_reyni/",
     "summary": "Hörður Snævar Jónsson verður áfram þjálfari karlaliðs Dalvíkur/Reynis í fótbolta sem leikur í 2. deild.",
@@ -2147,30 +2194,6 @@
     "category": "Menntun",
     "cats": [
       "Bærinn"
-    ]
-  },
-  {
-    "title": "Aðeins eitt barn á biðlista eftir leikskólaplássi á Akureyri",
-    "link": "https://www.vikubladid.is/is/moya/news/adeins-eitt-barn-a-bidlista-eftir-leikskolaplassi-a-akureyri-1",
-    "summary": "Vel gengur að útvega börnum leikskólapláss hjá Akureyrarbæ en aðeins eitt barn sem náð hefur innritunaraldri er nú á biðlista",
-    "date": "2026-10-29T13:57:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/1793282389_leikskolar.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Akureyri Um 330 íbúðir á þéttingarsvæðum",
-    "link": "https://www.vikubladid.is/is/moya/news/akureyri-um-330-ibudir-a-thettingarsvaedum",
-    "summary": "Tæplega 330 nýjar íbúðir eru í byggingu eða undirbúningi á þéttingarsvæðum hér og þar um Akureyri.",
-    "date": "2026-10-29T13:31:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/thettingarreitir-ak.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
@@ -5123,18 +5146,6 @@
     ]
   },
   {
-    "title": "Vel heppnuð námstefna Samtaka heilsuleikskóla á Akureyri",
-    "link": "https://www.horgarsveit.is/is/moya/news/vel-heppnud-namstefna-samtaka-heilsuleikskola-a-akureyri",
-    "summary": "Um 150 þátttakendur alls staðar af landinu",
-    "date": "2026-10-02T11:04:00+00:00",
-    "image": "https://www.horgarsveit.is/static/news/sm/screenshot-2026-10-02-110558.png",
-    "source": "Hörgársveit",
-    "category": "Nærsveitir",
-    "cats": [
-      "Nærsveitir"
-    ]
-  },
-  {
     "title": "Skjalasöfnin, minnið og alþjóðalögin á Norðurslóðum",
     "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/httpswwwunakisissamfelagidfrettasafnfrettirnewitem",
     "summary": "Ný bók eftir Rachael Lorna Johnstone, prófessor við Lagadeild og rannsóknastjóra háskólans",
@@ -5468,18 +5479,6 @@
     "summary": "Nýr samstarfssamningur Norðurslóðanetsins og utanríkisráðuneytisins eflir enn frekar Norðurslóðamiðstöð Íslands",
     "date": "2026-09-24T10:00:00+00:00",
     "image": "https://www.unak.is/static/news/sm/iacn-og-utanrikisraduneytid-2.png",
-    "source": "Háskólinn á Akureyri",
-    "category": "Menntun",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Gervigreindin hefur ekki siðferðiskennd",
-    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/gervigreindin-hefur-ekki-sidferdiskennd",
-    "summary": "Húsfyllir á fyrsta opna húsi haustsins",
-    "date": "2026-09-24T10:00:00+00:00",
-    "image": "https://www.unak.is/static/news/sm/gervigreind-1.png",
     "source": "Háskólinn á Akureyri",
     "category": "Menntun",
     "cats": [
