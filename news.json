@@ -1,5 +1,17 @@
 [
   {
+    "title": "Hópur frá Newtown School á Írlandi í heimsókn í VMA",
+    "link": "https://www.vma.is/is/skolinn/frettir/hopur-fra-newtown-school-a-irlandi-i-heimsokn",
+    "summary": "Írar",
+    "date": "2026-11-05T07:00:00+00:00",
+    "image": "https://www.vma.is/static/news/sm/nemendur-fra-newtown-school-a-irlandi-3.-november-2026.jpg",
+    "source": "VMA",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "KA með góðan árangur á JRB International",
     "link": "https://www.ka.is/judo/frettir/ka-med-godan-arangur-a-jrb-international",
     "summary": "Keppendur frá Júdódeild KA tóku þátt í alþjóðlega mótinu JRB International sem Júdófélag Reykjanesbæjar hélt í Reykjanesbæ dagana 25. og 26. október. Keppt var sunnudaginn 25. október og mánudaginn 26. október fóru fram æfingabúðir fyrir U15. Fjórir keppendur frá KA kepptu á mótinu og unnu allir til",
@@ -5300,18 +5312,6 @@
     "date": "2026-10-01T10:00:00+00:00",
     "image": "https://www.unak.is/static/news/sm/unak-frett_-sprellmot-2026.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Grunnskólanemar í heimsókn í VMA",
-    "link": "https://www.vma.is/is/skolinn/frettir/grunnskolanemar-i-heimsokn-i-vma",
-    "summary": "Grunnskólanemar",
-    "date": "2026-10-01T07:00:00+00:00",
-    "image": "https://www.vma.is/static/news/sm/20260930_105005.jpg",
-    "source": "VMA",
     "category": "Menntun",
     "cats": [
       "Bærinn"
