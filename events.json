@@ -1085,11 +1085,11 @@
     "title": "Jólatónleikar Gospelkórs Glerárkirkju ásamt Heru Björk",
     "source": "Miðasala",
     "site": "Midix",
-    "link": "https://www.midix.is/index.php/is/jolatonleikar-gospelkors-glerarkirkju-asamt-heru-bjork-26-nov-2026/eid/1269",
+    "link": "https://www.midix.is/is/jolatonleikar-gospelkors-glerarkirkju-asamt-heru-bjork-26-nov-2026/eid/1269",
     "start": "2026-11-26",
     "end": "2026-11-26",
     "time": "20:30",
-    "image": "https://www.midix.is/index.php/storage/event/poster/main/t0QYJ4XjGDZCGSCLXaQIFMzB6n7Vrl-metaYWRhbC5wbmc=-.png",
+    "image": "https://www.midix.is/storage/event/poster/main/t0QYJ4XjGDZCGSCLXaQIFMzB6n7Vrl-metaYWRhbC5wbmc=-.png",
     "note": "5.900 kr.",
     "venue": "Glerárkirkja | | 0",
     "kind": "Tónlist"
@@ -1952,11 +1952,11 @@
     "title": "Jóla-Drag Bröns Akureyri",
     "source": "Miðasala",
     "site": "Midix",
-    "link": "https://www.midix.is/index.php/is/jola-drag-brons-akureyri-19-dec-2026/eid/1214",
+    "link": "https://www.midix.is/is/jola-drag-brons-akureyri-19-dec-2026/eid/1214",
     "start": "2026-12-19",
     "end": "2026-12-19",
     "time": "13:00",
-    "image": "https://www.midix.is/index.php/storage/event/poster/main/9msuHTfUwAHEI016nqWGUzWRf2cTph-metaSsOzbGEtRHJhZyBCcsO2bnNfQWt1cmV5cmlfNDY2WDU0NS5qcGc=-.jpg",
+    "image": "https://www.midix.is/storage/event/poster/main/9msuHTfUwAHEI016nqWGUzWRf2cTph-metaSsOzbGEtRHJhZyBCcsO2bnNfQWt1cmV5cmlfNDY2WDU0NS5qcGc=-.jpg",
     "note": "8.990 kr.",
     "venue": "Múlaberg",
     "kind": "Tónlist"
@@ -2074,6 +2074,17 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/RHuF0FeDbTrH7aFWKtCsG5NJcuwKOa-metaQnLDrWV0IGRlcyAyNi5qcGc=-.webp",
     "note": "Nýtt · Frá 8.500 kr.",
+    "kind": "Tónlist"
+  },
+  {
+    "title": "Una Torfa",
+    "source": "Græni hatturinn",
+    "link": "https://www.graenihatturinn.is/is/una-torfa-28-dec-2026/eid/304",
+    "start": "2026-12-28",
+    "end": "2026-12-28",
+    "time": "21:00",
+    "image": "https://www.graenihatturinn.is/storage/event/poster/main/IOqAxGEAlWLtEqKXASWNGFrXygTC2Y-metadW5hIHRvcmZhIGrDs2wgMjYuanBn-.jpg",
+    "note": "Frá 6.900 kr.",
     "kind": "Tónlist"
   },
   {
@@ -2707,13 +2718,14 @@
   {
     "title": "1991",
     "source": "MAK / Hof",
-    "link": "https://www.mak.is/is/vidburdir/1991",
+    "link": "https://www.mak.is/is/vidburdir/nitjanhundrud-niutiu-og-eitt27",
     "start": "2027-02-12",
     "end": "2027-02-12",
     "time": "20:00",
-    "image": null,
-    "note": "",
+    "image": "https://www.mak.is/static/calendar/images/submit_1793699145.png?v=1793887266",
+    "note": "Frá 8.990 kr.",
     "cat0": "Tónleikar",
+    "venue": "Hamraborg, Hof",
     "kind": "Tónlist"
   },
   {
