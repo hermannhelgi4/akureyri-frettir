@@ -1,5 +1,41 @@
 [
   {
+    "title": "Jólaljósin farin að lýsa upp bæinn",
+    "link": "https://www.akureyri.is/jolaljosin-farin-ad-lysa-upp-baeinn",
+    "summary": "Akureyrarbær hefur hafið uppsetningu jólaskrauts í bænum, viku fyrr en undanfarin ár.",
+    "date": "2026-11-05T15:38:09+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/jolaljos-2000x1500.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Doktorsvörn Guðmundar Kristjáns Óskarssonar",
+    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/doktorsvorn-gudmundar-kristjans-oskarssonar",
+    "summary": "Ver doktorsritgerð sína í umhverfis- og auðlindafræði við Viðskiptadeild Háskóla Íslands",
+    "date": "2026-11-05T15:27:00+00:00",
+    "image": "https://www.unak.is/static/news/sm/unak-frett-05.11.2026-doktorsvorn-gok.png",
+    "source": "Háskólinn á Akureyri",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Heimildarmynd í Hofi um villta laxinn",
+    "link": "https://www.akureyri.net/is/moya/news/heimildarmynd-i-hofi-um-villta-laxinn",
+    "summary": "Akureyringum og nærsveitungum er boðið á sýningu merkilegrar kvikmyndar í menningarhúsinu Hofi í kvöld. Um er að ræða heimildarmyndina Superfish: Salmon, þar sem Emmy- og BAFTA-verðlaunahafinn og sjávarlíffræðingurinn Rick Rosenthal leiðir áhorfendur...",
+    "date": "2026-11-05T14:30:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/superfish-mak4649.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Í 20 ár hefur þjóðin svarað Neyðarkallinu",
     "link": "https://www.vikubladid.is/is/moya/news/i-20-ar-hefur-thjodin-svarad-neydarkallinu",
     "summary": "Sjálfboðaliðar björgunarsveitanna ganga í hús og verða á ferðinni dagana 4.–8. nóvember með Neyðarkallinn til sölu. Með kaupum á kallinum getur almenningur stutt við mikilvægt björgunar- og slysavarnastarf.",
@@ -1441,18 +1477,6 @@
     "date": "2026-11-02T13:05:06+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/11/stjorn_ssne_2026.jpg",
     "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Hvar eru efndirnar, bæjarfulltrúar?",
-    "link": "https://www.akureyri.net/is/moya/news/hvar-eru-efndirnar-baejarfulltruar",
-    "summary": "„Fyrir kosningarnar í vor gáfu allir þrír flokkar núverandi meirihluta fyrirheit um bætta félagsaðstöðu eldri borgara. Þess vegna á ekki að þurfa að sannfæra meirihlutann um þörfina. Flokkarnir viðurkenndu hana sjálfir og báðu um umboð kjósenda til a...",
-    "date": "2026-11-02T12:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/bjorn-og-karl-frett.jpg",
-    "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
@@ -4810,18 +4834,6 @@
     ]
   },
   {
-    "title": "Nemendur á Akureyri yfir landsmeðaltali í vísindum og stærðfræðilæsi",
-    "link": "https://www.akureyri.is/nemendur-a-akureyri-yfir-landsmedaltali-i-visindum-og-staerdfraedilaesi",
-    "summary": "Mennta- og barnamálaráðuneytið hefur nú greint frammistöðu íslenskra nemenda í PISA 2025 rannsókninni niður á sjö fjölmennustu sveitarfélög landsins og borið saman við landsmeðaltal.",
-    "date": "2026-10-08T13:30:00+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/pisa-1024x554.webp",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
     "title": "Vaðlaborgir B íbúðarsvæði, Svalbarðsstrandarhreppi – auglýsing deiliskipulagstillögu",
     "link": "https://www.svalbardsstrond.is/is/mannlifid/frettir/vadlaborgir-b-ibudarsvaedi-svalbardsstrandarhreppi-auglysing-deiliskipulagstillogu",
     "summary": "Sveitarstjórn Svalbarðsstrandarhrepps samþykkti á fundi sínum 18. ágúst 2026 að vísa tillögu að deiliskipulagi fyrir íbúðarbyggð í Vaðlaborgum B",
@@ -5373,18 +5385,6 @@
     "image": "https://www.sba.is/static/news/sm/handb.-mfl.-nota-.jpeg",
     "source": "SBA-Norðurleið",
     "category": "Fyrirtæki & félög",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Er gervigreind lykillinn að betri sjálfbærniskýrslum?",
-    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/er-gervigreind-lykillinn-ad-betri-sjalfbaerniskyrslum",
-    "summary": "Kjartan Sigurðsson, dósent við Viðskiptadeild, er meðhöfundur nýrrar bókar um gervigreind og framtíð sjálfbærniskýrslugerðar",
-    "date": "2026-09-30T13:12:00+00:00",
-    "image": "https://www.unak.is/static/news/sm/_30.09.2026-unak-utgafa-boka_kjartan-sjalfbaerni-og-gervigreind.png",
-    "source": "Háskólinn á Akureyri",
-    "category": "Menntun",
     "cats": [
       "Bærinn"
     ]
