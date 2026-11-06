@@ -1,5 +1,54 @@
 [
   {
+    "title": "Nýjasta fréttabréf Hörgársveitar",
+    "link": "https://www.horgarsveit.is/is/moya/news/nyjasta-frettabref-horgarsveitar",
+    "summary": "17. árgangur 16. tölublað",
+    "date": "2026-11-06T10:10:00+00:00",
+    "image": "https://www.horgarsveit.is/static/news/sm/1793960671_horgarsveit-logo-med-mynd-i-bakgrunn.png",
+    "source": "Hörgársveit",
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
+  },
+  {
+    "title": "Brú og jöfnunarstöð að taka á sig mynd",
+    "link": "https://www.akureyri.net/is/moya/news/bru-og-jofnunarstod-ad-taka-a-sig-mynd",
+    "summary": "Karl Eskil Pálsson",
+    "date": "2026-11-06T10:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/dji_0602_vefur-adal.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Fyrstu jólatrén farin út í bæ",
+    "link": "https://www.vikubladid.is/is/moya/news/fyrstu-jolatren-farin-ut-i-bae",
+    "summary": "Aðventuundirbúningur er kominn á fullan skrið í Kjarnaskógi og eru fyrstu lifandi jólatrén þegar farin að birtast í verslunum bæjarins, en lögð er áhersla á að bjóða aðeins upp á raunveruleg tré af heimamarkaði að sögn Ingólfs Jóhannssonar framkvæmdastjóra Skógræktarfélags Eyfirðinga.",
+    "date": "2026-11-06T09:51:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/jmj.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Þórsarar áberandi í U19 landsliðinu",
+    "link": "https://www.akureyri.net/is/moya/news/thorsarar-aberandi-i-u19-landslidinu",
+    "summary": "Þórsarar eru áberandi í leikmanna Þórhalls Siggeirssonar, þjálfara landsliðs 19 ára og yngri, fyrir þrjá leiki í undanriðli Evrópumótsins í knattspyrnu. Leikið verður 9. - 18. nóvember í Wales, gegn heimamönnum, Finnum og Spánverjum. Fjóri...",
+    "date": "2026-11-06T09:30:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/u19-2.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
     "title": "Fimm ár með varðskipið Freyju í heimahöfn á Siglufirði",
     "link": "https://www.fjallabyggd.is/is/frettir/fimm-ar-med-vardskipid-freyju-a-siglufirdi",
     "summary": "Í dag 6. nóvember eru liðin fimm ár frá því varðskipið Freyja lagðist að bryggju í fyrsta sinn á Siglufirði þar sem skipið á heimahöfn. Af því tilefni bauð Einar Valsson skipherra bæjarstjórn Fjallabyggðar í heimsókn um borð í skipið þar sem farið va...",
@@ -1202,31 +1251,6 @@
     ]
   },
   {
-    "title": "Tvö Íslandsmet Bergs á HM í lyftingum í Kína",
-    "link": "https://www.akureyri.net/is/moya/news/tvo-islandsmet-bergs-a-hm-i-lyftingum-i-kina",
-    "summary": "KA-maðurinn Bergur Sverrisson setti tvö Íslandsmet á heimsmeistaramótinu í ólympískum lyftingum sem stendur yfir í Kína. Bergur, sem keppti í 85 kg flokki í morgun, setti Íslandsmet í snörun – 135 kg – og samanlögðu – 293 kg. Á vef Lyftingasambands ...",
-    "date": "2026-11-02T22:30:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/bergur-atg09425.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "„Við segjum góða nótt við þær allar nætur“",
-    "link": "https://www.akureyri.net/is/moya/news/vid-segjum-goda-nott-vid-thaer-allar-naetur",
-    "summary": "Ungt par á Akureyri, Kolbrún María Garðarsdóttir og Egill Rúnar Halldórsson, hefur mátt þola meira á þessu ári en margir á heilli ævi. Móðir Kolbrúnar, Sólveig Hulda Valgeirsdóttir, varð bráðkvödd 22. febrúar aðeins fimmtug að aldri og um miðjan maí ...",
-    "date": "2026-11-02T21:30:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/skjamynd-9652.png",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Hvar er þyrla Akureyringa?",
     "link": "https://www.mbl.is/frettir/innlent/2026/11/02/hvar_er_thyrla_akureyringa/",
     "summary": "Njáll Trausti Friðbertsson, þingmaður Sjálfstæðisflokksins í Norðausturkjördæmi, spurði Kristrúnu Frostadóttur forsætisráðherra að því á Alþingi í dag hvort íbúar á Norðurlandi mættu búast við þyrlu í sjúkraflutninga í fasta starfsstöð á vegum Landhelgisgæslunnar á Akureyri.",
@@ -2079,19 +2103,6 @@
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
-    ]
-  },
-  {
-    "title": "„Ég held ég væri ekki á þessum stað í dag án hennar“",
-    "link": "https://www.vikubladid.is/is/moya/news/eg-held-eg-vaeri-ekki-a-thessum-stad-i-dag-an-hennar",
-    "summary": "Ísabella Anna Kjartansdóttir á að baki viðburðaríkt fótboltasumar. Hún skoraði átta mörk fyrir Völsung í Lengjudeildinni, varð Íslandsmeistari í þriðja flokki og hefur nú verið á æfingum með U16-landsliðinu. Hún stefnir á atvinnumennsku og A-landsliðið en einn mikilvægasti stuðningsmaðurinn er nærri",
-    "date": "2026-10-31T12:04:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/508559330_10235140387948758_2960740471209586740_n.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
     ]
   },
   {
@@ -5139,18 +5150,6 @@
     "category": "Menntun",
     "cats": [
       "Bærinn"
-    ]
-  },
-  {
-    "title": "Heilsuleikskólinn Álfasteinn - atvinna",
-    "link": "https://www.horgarsveit.is/is/moya/news/heilsuleikskolinn-alfasteinn-atvinna",
-    "summary": "100% tímabundin staða laus",
-    "date": "2026-10-05T00:00:00+00:00",
-    "image": "https://www.horgarsveit.is/static/news/sm/1791453812_alfasteinn-logo-med-bakgrunn.png",
-    "source": "Hörgársveit",
-    "category": "Nærsveitir",
-    "cats": [
-      "Nærsveitir"
     ]
   },
   {
