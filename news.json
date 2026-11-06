@@ -1,5 +1,41 @@
 [
   {
+    "title": "Villi varpar nýju ljósi á listina",
+    "link": "https://www.listak.is/is/moya/news/villi-varpar-nyju-ljosi-a-listina",
+    "summary": "Laugardaginn 14. nóvember kl. 14:00 býður Listasafnið á Akureyri upp á óvenjulega og skemmtilega leiðsögn um safnið í fylgd Vilhjálms Bragasonar leikara, tónlistarmanns og höfundar.",
+    "date": "2026-11-06T16:29:00+00:00",
+    "image": "https://www.listak.is/static/news/thumb_img_5540.jpeg",
+    "source": "Listasafnið á Akureyri",
+    "category": "Menning",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "„Okkar hlutverk er að hjálpa fólki að taka næsta skref“",
+    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/okkar-hlutverk-er-ad-hjalpa-folki-ad-taka-naesta-skref",
+    "summary": "Ný hugverkastefna háskólans tók gildi í byrjun nóvember",
+    "date": "2026-11-06T16:07:00+00:00",
+    "image": "https://www.unak.is/static/news/sm/1793981353_unak-14.10.2026-nyjar-namsleidir-2.png",
+    "source": "Háskólinn á Akureyri",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Bekkur til minningar um Þorvald Þorsteinsson",
+    "link": "https://www.akureyri.net/is/moya/news/bekkur-til-minningar-um-thorvald-thorsteinsson",
+    "summary": "Minningarbekkur til heiðurs Þorvaldi Þorsteinssyni verður afhjúpaður á Hamarkotstúni á morgun – á afmælisdegi listamannsins. Hann fæddist á Akureyri 7. nóvember 1960 en lést á heimili sínu í Antwerpen í Belgíu 23. febrúar 2013. Það eru skóla...",
+    "date": "2026-11-06T16:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/thorvaldur-fyrir-vef.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Auglýst er eftir umsjónarmanni/svæðisstjóra á skíðasvæðið í Skarðsdal á Siglufirði",
     "link": "https://www.fjallabyggd.is/is/frettir/auglyst-er-eftir-umsjonarmannisvaedisstjora-a-skidasvaedid-i-skardsdal-i-siglufirdi",
     "summary": "Auglýst er eftir umsjónarmanni/svæðisstjóra á skíðasvæðið í Skarðsdal á Siglufirði í 100% starf frá 1. desember 2026 til 31. maí 2027. Helstu verkefni Dagleg stjórnun og umsjón með rekstri skíðasvæðisins. Skipulagning vinnu og verkstjórn sta...",
@@ -334,7 +370,7 @@
   {
     "title": "Þórsarar áberandi í U19 landsliðinu",
     "link": "https://www.akureyri.net/is/moya/news/thorsarar-aberandi-i-u19-landslidinu",
-    "summary": "Þórsarar eru áberandi í leikmannahópi Þórhalls Siggeirssonar, þjálfara landsliðs 19 ára og yngri, fyrir þrjá leiki í undanriðli Evrópumótsins í knattspyrnu. Leikið verður 9. - 18. nóvember í Wales, gegn heimamönnum, Finnum og Spánverjum. F...",
+    "summary": "Þórsarar eru áberandi í leikmannahópi Þórhalls Siggeirssonar, þjálfara landsliðs 19 ára og yngri, fyrir þrjá leiki í undanriðli Evrópumótsins í knattspyrnu. Leikið verður 9. - 18. nóvember í Wales, gegn heimamönnum, Finnum og Spánverjum. Fjórir...",
     "date": "2026-11-06T09:30:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/u19-2.jpg",
     "source": "Akureyri.net",
@@ -1372,18 +1408,6 @@
     "category": "Nærsveitir",
     "cats": [
       "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Látum Loftbrúna vera",
-    "link": "https://www.akureyri.net/is/moya/news/latum-loftbruna-vera",
-    "summary": "Sindri S. Kristjánsson",
-    "date": "2026-11-03T13:10:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/sindri-kristjansson-greinar-nov-2026.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
@@ -5455,18 +5479,6 @@
     "category": "Nærsveitir",
     "cats": [
       "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Sprellmótið — áratuga gömul hefð sem sameinar HA-inga",
-    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/sprellmotid-aratuga-gomul-hefd-sem-sameinar-ha-inga",
-    "summary": "Sprellmótið hefur í áratugi verið órjúfanlegur hluti af félagslífi stúdenta við HA",
-    "date": "2026-10-01T10:00:00+00:00",
-    "image": "https://www.unak.is/static/news/sm/unak-frett_-sprellmot-2026.png",
-    "source": "Háskólinn á Akureyri",
-    "category": "Menntun",
-    "cats": [
-      "Bærinn"
     ]
   },
   {
