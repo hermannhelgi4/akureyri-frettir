@@ -1,9 +1,9 @@
 {
- "upd": "06.11 16:42",
+ "upd": "06.11 17:42",
  "now": {
-  "T": 6.3,
-  "F": 2.0,
-  "D": "SA",
+  "T": 5.9,
+  "F": 3.0,
+  "D": "VNV",
   "W": "Skýjað",
   "R": 0.0,
   "night": true
@@ -14,22 +14,22 @@
    "T": 9.0,
    "F": 4.0,
    "D": "SSA",
-   "W": "Alskýjað",
+   "W": "Lítils háttar rigning",
    "R": null
   },
   {
    "date": "2026-11-08",
-   "T": 6.0,
-   "F": 3.0,
-   "D": "NNA",
-   "W": "Rigning",
+   "T": 8.0,
+   "F": 2.0,
+   "D": "SSA",
+   "W": "Lítils háttar rigning",
    "R": null
   },
   {
    "date": "2026-11-09",
    "T": 3.0,
    "F": 1.0,
-   "D": "VSV",
+   "D": "SV",
    "W": "Alskýjað",
    "R": null
   }
