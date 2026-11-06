@@ -1,22 +1,5 @@
 [
   {
-    "title": "Þór Ak. – Breiðablik",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Karlar",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=191&season_id=132571&game_id=6153939",
-    "start": "2026-10-15",
-    "end": "2026-10-15",
-    "time": "19:15",
-    "image": null,
-    "note": "Heimaleikur · Bæjarins Beztu deild karla · Höllin Ak",
-    "teams": [
-      "Þór Ak."
-    ],
-    "res": "88–104",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "ÍBV – Þór",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -491,42 +474,6 @@
     ],
     "res": "30–37",
     "kind": "Íþróttir"
-  },
-  {
-    "title": "Þér er boðið í bíó! Superfish: Salmon",
-    "source": "MAK / Hof",
-    "link": "https://www.mak.is/is/vidburdir/superfish",
-    "start": "2026-11-05",
-    "end": "2026-11-05",
-    "time": "19:00",
-    "image": "https://www.mak.is/static/calendar/images/superfish-mak4649.jpg?v=1793872817",
-    "note": "",
-    "cat0": "",
-    "venue": "Hamraborg, Hof",
-    "kind": "Tónlist"
-  },
-  {
-    "title": "Birna Rún – Nýtt tilrauna uppistand",
-    "source": "Lyst",
-    "link": "https://lyst.is/vidburdir/birna-run-nytt-tilrauna-uppistand/",
-    "start": "2026-11-05",
-    "end": "2026-11-05",
-    "time": "21:00",
-    "image": "https://lyst.is/wp-content/uploads/2026/10/birna-run.webp",
-    "note": "Uppselt · 4.990 kr.",
-    "venue": "Lyst í Lystigarðinum",
-    "kind": "Uppistand"
-  },
-  {
-    "title": "Sigurdís Tryggvadóttir",
-    "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/sigurdis-tryggvadottir-05-nov-2026/eid/277",
-    "start": "2026-11-05",
-    "end": "2026-11-05",
-    "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/ES1VtCKnSBSH9WbnajinLLoGmrUkQo-metac2lndXJkw61zIElJSS5qcGc=-.webp",
-    "note": "Frá 5.900 kr.",
-    "kind": "Tónlist"
   },
   {
     "title": "Jaakko Laitinen & Väärä Raha í Leyni",
