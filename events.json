@@ -1,39 +1,5 @@
 [
   {
-    "title": "ÍBV – Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/111465",
-    "start": "2026-10-16",
-    "end": "2026-10-16",
-    "time": "18:00",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Íþróttamiðstöð Vestmannaeyja",
-    "teams": [
-      "Þór"
-    ],
-    "res": "37–31",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Stjarnan – KA",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/111466",
-    "start": "2026-10-16",
-    "end": "2026-10-16",
-    "time": "18:30",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Heklu Höllin",
-    "teams": [
-      "KA"
-    ],
-    "res": "35–33",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "ÍBV 2 – Þór",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -474,44 +440,6 @@
     ],
     "res": "30–37",
     "kind": "Íþróttir"
-  },
-  {
-    "title": "Jaakko Laitinen & Väärä Raha í Leyni",
-    "source": "Miðasala",
-    "site": "Stubb",
-    "link": "https://stubb.is/events/oOLGwb",
-    "start": "2026-11-06",
-    "end": "2026-11-06",
-    "time": "20:00",
-    "image": "https://dashboard.stubb.is/uploads/1788290609_6a972631d6203_thumb.png",
-    "note": "",
-    "venue": "Leyni bar Akureyri",
-    "kind": "Tónlist"
-  },
-  {
-    "title": "Mjög fín bara - Snjólaug Lúðvíksdóttir uppistand - Akureyri",
-    "source": "Miðasala",
-    "site": "Tix",
-    "link": "https://tix.is/event/22327/mjog-fin-bara-snjolaug-ludviksdottir-uppistand-akureyri",
-    "start": "2026-11-06",
-    "end": "2026-11-06",
-    "time": "20:30",
-    "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22327.jpg",
-    "note": "6.990 kr.",
-    "venue": "Múlaberg, Hafnarstræti 89, 600 Akureyri",
-    "cat0": "Uppistand",
-    "kind": "Uppistand"
-  },
-  {
-    "title": "Jimi Hendrix - Heiðurstónleikar",
-    "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/jimi-hendrix-tribute-concert-06-nov-2026/eid/287",
-    "start": "2026-11-06",
-    "end": "2026-11-06",
-    "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/vb2zS9FmoHdchbEcNGtm8ttDUjKIV9-metaaGVuZHJpeC5wbmc=-.webp",
-    "note": "Frá 6.900 kr.",
-    "kind": "Tónlist"
   },
   {
     "title": "KA – HK",
