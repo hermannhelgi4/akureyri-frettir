@@ -1,124 +1,5 @@
 [
   {
-    "title": "ÍBV 2 – Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/113418",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "12:00",
-    "image": null,
-    "note": "Útileikur · Powerade bikar karla 2027 · Íþróttamiðstöð Vestmannaeyja - Gamli salur",
-    "teams": [
-      "Þór"
-    ],
-    "res": "27–30",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Valur – KA",
-    "source": "Íþróttir",
-    "sport": "Fótbolti",
-    "gender": "Karlar",
-    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100293",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "13:00",
-    "image": null,
-    "note": "Útileikur · Besta deild karla - Neðri hluti · N1-völlurinn Hlíðarenda",
-    "teams": [
-      "KA"
-    ],
-    "res": "4–1",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "KA – HK Ýmir",
-    "source": "Íþróttir",
-    "sport": "Blak",
-    "gender": "Konur",
-    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=143&PID=211",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "13:30",
-    "image": null,
-    "note": "Heimaleikur · Unbrokendeild kvenna · KA-heimilið",
-    "teams": [
-      "KA"
-    ],
-    "res": "3–0",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Þór – Stjarnan",
-    "source": "Íþróttir",
-    "sport": "Fótbolti",
-    "gender": "Karlar",
-    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7100292",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "14:00",
-    "image": null,
-    "note": "Heimaleikur · Besta deild karla - Neðri hluti · VÍS völlurinn",
-    "teams": [
-      "Þór"
-    ],
-    "res": "3–1",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Þór Ak. – Sindri",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Karlar",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=205&season_id=133288&game_id=6190828",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "16:00",
-    "image": null,
-    "note": "Heimaleikur · VÍS bikar karla · Höllin Ak",
-    "teams": [
-      "Þór Ak."
-    ],
-    "res": "82–107",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "SA – SR",
-    "source": "Íþróttir",
-    "sport": "Íshokkí",
-    "gender": "Karlar",
-    "link": "https://stats.iihf.com/ihi/99/index.html",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "16:45",
-    "image": null,
-    "note": "Heimaleikur · Toppdeild karla",
-    "teams": [
-      "SA"
-    ],
-    "res": "6–0",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "KA/Þór – Stjarnan",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/match/110527",
-    "start": "2026-10-17",
-    "end": "2026-10-17",
-    "time": "17:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið",
-    "teams": [
-      "KA/Þór"
-    ],
-    "res": "32–28",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "KA – HK Ýmir",
     "source": "Íþróttir",
     "sport": "Blak",
@@ -472,7 +353,6 @@
     "teams": [
       "KA/Þór"
     ],
-    "live": "https://www.hbstatz.is/?live=13056",
     "res": "26–22",
     "kind": "Íþróttir"
   },
@@ -527,30 +407,6 @@
     ],
     "res": "8–1",
     "kind": "Íþróttir"
-  },
-  {
-    "title": "Fasteignamartröðin",
-    "source": "MAK / Hof",
-    "link": "https://www.mak.is/is/vidburdir/fasteignamartrodin",
-    "start": "2026-11-07",
-    "end": "2026-11-07",
-    "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782745467.jpg?v=1793930602",
-    "note": "7.900 kr.",
-    "cat0": "Leiksýningar",
-    "venue": "Samkomuhúsið",
-    "kind": "Leiklist"
-  },
-  {
-    "title": "DIMMA",
-    "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/dimma-07-nov-2026/eid/282",
-    "start": "2026-11-07",
-    "end": "2026-11-07",
-    "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/jmPO4aCQUmmTnK0zuA76Ii9k8DzoGs-metaRGltbWEgMjAyNiBuw70gc3TDs3IuanBn-.webp",
-    "note": "Frá 7.900 kr.",
-    "kind": "Tónlist"
   },
   {
     "title": "Ferund",
@@ -641,6 +497,7 @@
     "teams": [
       "Þór Ak."
     ],
+    "live": "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/2856649/",
     "kind": "Íþróttir"
   },
   {
