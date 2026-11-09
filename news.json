@@ -1,5 +1,90 @@
 [
   {
+    "title": "Launakostnaður Þór/KA var 27 milljónir króna á síðasta ári",
+    "link": "https://fotbolti.net/news/09-11-2026/launakostnadur-thor-ka-var-27-milljonir-krona-a-sidasta-ari",
+    "summary": "KA tilkynnti í síðustu vika að félagið hefði tekið þá ákvörðun að endurnýja ekki samstarfssamning félagsins við Þór um kvennaliðið Þór/KA. Á áskriftarvef Fótbolti.net var farið yfir ársreikinga síðustu ára hjá Þór/KA og rýnt í tölurnar. Þessi frétt er hluti af pistli sem birtist 8. nóvember á áskrif",
+    "date": "2026-11-09T09:30:00+00:00",
+    "image": null,
+    "source": "Fótbolti.net",
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Aðalskipulag Hörgársveitar 2024-2044",
+    "link": "https://www.horgarsveit.is/is/moya/news/adalskipulag-horgarsveitar-2024-2045",
+    "summary": "Samþykkt",
+    "date": "2026-11-09T09:15:00+00:00",
+    "image": "https://www.horgarsveit.is/static/news/sm/1794216151_horgarsveit-logo-med-mynd-i-bakgrunn.png",
+    "source": "Hörgársveit",
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
+  },
+  {
+    "title": "Akureyrarbær hlaut heiðursskjal Golfsambands Íslands",
+    "link": "https://www.akureyri.is/akureyrarbaer-hlaut-heidursskjal-golfsambands-islands",
+    "summary": "Akureyrarbær hlaut heiðursskjal Golfsambands Íslands þann 7. nóvember á formannafundi GSÍ. Heimir Örn Árnason tók við skjalinu fyrir hönd bæjarins.",
+    "date": "2026-11-09T09:00:00+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/akureyrarbaer-og-golfsamband-islands-2000x1333.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Utan vallar: Vonandi ekki ákvörðun tekin af tapsárum KA-mönnum",
+    "link": "https://www.visir.is/g/20262960157d/utan-vallar-vonandi-ekki-akvordun-tekin-af-tapsarum-ka-monnum",
+    "summary": "Á endanum voru það bæði KA-liðin sem féllu úr Bestu deildinni í ár, karlarnir féllu inni á vellinum en konurnar á skrifstofu knattspyrnudeildarinnar.",
+    "date": "2026-11-09T08:30:43+00:00",
+    "image": "https://www.visir.is/i/D0A5E32113DC11BAC4016B6710CC51EFEA12F8AA7FF4E428C6286CFF392B72DC_1600x900.jpg",
+    "source": "Vísir",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Einbeitt í bingói",
+    "link": "https://www.vma.is/is/skolinn/frettir/einbeitt-i-bingoi",
+    "summary": "Bingó",
+    "date": "2026-11-09T07:00:00+00:00",
+    "image": "https://www.vma.is/static/news/sm/1793813894_for.jpg",
+    "source": "VMA",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "GSÍ verðlaunar bæinn og golfklúbbinn",
+    "link": "https://www.akureyri.net/is/moya/news/gsi-verdlaunar-baeinn-og-golfklubbinn",
+    "summary": "Golfklúbbur Akureyrar (GA) hlýtur sjálfbærniverðlaun Golfsambands Íslands (GSÍ) 2026. Þetta var tilkynnt á formannafundi GSÍ sem haldinn var í húsakynnum GA að Jaðri á laugardaginn og við sama tækifæri hlaut Akureyrarbær heiðursskjal golfsambandsins....",
+    "date": "2026-11-09T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/gsi-ga_499a1499-1.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Fjórir ungir framlengja við Þór",
+    "link": "https://fotbolti.net/news/09-11-2026/fjorir-ungir-framlengja-vid-thorrrr",
+    "summary": "Fjórir ungir Þórsarar hafa skrifað undir nýja samninga við félagið. Það eru þeir Kjartan Ingi Friðriksson, Kári Jónsson, Ólíver Sesar Bjarnason og Víðir Jökull Valdimarsson.",
+    "date": "2026-11-09T06:00:00+00:00",
+    "image": "https://fotbolti.net/images/news/929000/929217/800/image.jpg",
+    "source": "Fótbolti.net",
+    "category": "Íþróttir",
+    "cats": [
+      "Íþróttir"
+    ]
+  },
+  {
     "title": "Táp og fjör á 87. og 88. Goðamóti Þórs",
     "link": "https://www.thorsport.is/is/frettir-greinar/tap-og-fjor-a-87-og-88-godamoti-thors",
     "summary": "Goðamótaröðin hefur verið í gangi í Boganum síðustu tvær helgar.",
@@ -1078,18 +1163,6 @@
     "summary": "Tölvuleikir, kvikmyndir, sjónvarpsþættir, ópera og popp framundan hjá hjá SinfoniaNord Nóg verður um að vera hjá SinfoniaNord – Sinfóníuhljómsveit Norðurlands á næstunni þegar hljómsveitin tekur þátt í upptökum á tónlist fyrir alþjóðlegar kvikmynd...",
     "date": "2026-11-05T20:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/sinfo-nord-adal.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Einar Örn umdæmis- og flugvallarstjóri",
-    "link": "https://www.akureyri.net/is/moya/news/einar-orn-umdaemis-og-flugvallarstjori",
-    "summary": "Einar Örn Héðinsson hefur verið ráðinn flugvallarstjóri á Akureyrarflugvelli og umdæmisstjóri Isavia á Norðurlandi og þegar tekið til starfa. Einar er Akureyringur, stúdent frá Menntaskólanum á Akureyri, með próf í vélaverkfræði frá Háskóla Íslands a...",
-    "date": "2026-11-05T19:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/flugvthorgeir.jpg",
     "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
@@ -2358,18 +2431,6 @@
     ]
   },
   {
-    "title": "Túfa og Niko kynntir hjá KA í vikunni?",
-    "link": "https://fotbolti.net/news/01-11-2026/tufa-og-niko-kynntir-hja-ka-i-vikunni",
-    "summary": "KA er stórhuga fyrir baráttuna í Lengjudeildinni næsta sumar en Fótbolti.net hefur fengið ábendingar um að það sé frágengið að Srdjan Tufegdzic, Túfa, taki við sem þjálfari liðsins og Nikolaj Hansen verði leikmaður þess.",
-    "date": "2026-11-01T19:48:00+00:00",
-    "image": "https://fotbolti.net/images/news/256000/256573/800/image.jpg",
-    "source": "Fótbolti.net",
-    "category": "Íþróttir",
-    "cats": [
-      "Íþróttir"
-    ]
-  },
-  {
     "title": "Fram steinlá gegn nýliðunum og FH vann Þór",
     "link": "https://www.visir.is/g/20262956831d/fram-steinla-gegn-nylidunum-og-fh-vann-thor",
     "summary": "Einu og hálfu ári eftir langþráðan Íslandsmeistaratitil hafa Framarar átt afar erfitt uppdráttar í Olís-deild karla í handbolta í haust og þeir steinlágu gegn nýliðum Víkings á heimavelli í dag, 36-28. FH vann Þór á Akureyri, 37-30.",
@@ -2379,18 +2440,6 @@
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Bæði Akureyrarliðin vilja Nikolaj - Segja frá gylliboði",
-    "link": "https://fotbolti.net/news/01-11-2026/baedi-akureyrarlidin-vilja-nikolaj-segja-fra-gyllibodi",
-    "summary": "Nikolaj Hansen, leikmaður Víkings, er eftirsóttur en honum var tjáð í vikunni að hann mætti líta í kringum sig. Nikolaj hefur verið leikmaður Víkinigs frá 2017 og var fyrirliði liðsins áður en Oliver Ekroth tók við bandinu undir stjórn Sölva Geirs Ottesen.",
-    "date": "2026-11-01T18:02:00+00:00",
-    "image": "https://fotbolti.net/images/news/903000/903923/800/image.jpg",
-    "source": "Fótbolti.net",
-    "category": "Íþróttir",
-    "cats": [
       "Íþróttir"
     ]
   },
@@ -3763,19 +3812,6 @@
     ]
   },
   {
-    "title": "Leikur FH og Þórs færður vegna frosts",
-    "link": "https://www.visir.is/g/20262953115d/leikur-fh-og-thors-faerdur-vegna-frosts",
-    "summary": "FH og Þór mætast í gríðarlega mikilvægum leik í dag en í morgun var ákveðið að færa leikinn. Hann átti upprunalega að fara fram í Kaplakrika en mun nú fara fram á Pepsi-vellinum í Laugardal.",
-    "date": "2026-10-24T12:48:08+00:00",
-    "image": "https://www.visir.is/i/0A62F0F0E205B289755F9B3BBCA4FF2C87681CCE9AF1F28C4673F4CDD17DD8D2_1600x900.jpg",
-    "source": "Vísir",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
     "title": "FH mætir Þór í Laugardalnum- Ekki hægt að spila í Kaplakrika",
     "link": "https://www.mbl.is/sport/efstadeild/2026/10/24/fh_maetir_thor_i_laugardalnum_ekki_haegt_ad_spila_i/",
     "summary": "Leikur FH og Þórs í Bestu deild karla í fótbolta fer fram á Þróttarvelli í Laugardal í dag kl. 14 þar sem Kaplakrikavöllur hefur verið metin óleikhæfur.",
@@ -4980,18 +5016,6 @@
     ]
   },
   {
-    "title": "Dekurdagar hafnir og sömuleiðis A!",
-    "link": "https://www.akureyri.is/dekurdagar-hafnir-og-somuleidis-a",
-    "summary": "Mikið verður um að vera á Akureyri um helgina. Dekurdagar 2026 hefjast í dag og sömuleiðis gjörningahátíðin A!",
-    "date": "2026-10-08T15:00:00+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/dekurdagar-2026-1709x750.png",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
     "title": "Nemendur á listnáms- og hönnunarbraut sýna í kvöld gjörning á A! gjörningahátíð",
     "link": "https://www.vma.is/is/skolinn/frettir/nemendur-a-listnams-og-honnunarbraut-syna-gjorning-a-a-gjorningahatid",
     "summary": "A! gjörningahátíð",
@@ -5304,18 +5328,6 @@
     ]
   },
   {
-    "title": "Áfangastaðaáætlun Norðurlands",
-    "link": "https://www.horgarsveit.is/is/moya/news/afangastadaaaetlun-nordurlands-horgarsveit",
-    "summary": "Óskað er eftir tillögum að áhugaverðum stöðum og verkefnum sem geta orðið hluti af Áfangastaðaáætlun Norðurlands.",
-    "date": "2026-10-05T12:41:00+00:00",
-    "image": "https://www.horgarsveit.is/static/news/sm/201982069_10160697969174918_2854633202021111908_n.jpg",
-    "source": "Hörgársveit",
-    "category": "Nærsveitir",
-    "cats": [
-      "Nærsveitir"
-    ]
-  },
-  {
     "title": "MA-ingar á Vísinda- og nýsköpunarþingi",
     "link": "https://www.ma.is/is/frettir/ma-ingar-a-visinda-og-nyskopunarthingi",
     "summary": "Fulltrúum framhaldsskólanemenda var boðið að taka þátt í Vísinda- og nýsköpunarþingi í Grósku 25. september þar sem þau hlýddu á erindi frá leiðandi einstaklingum úr íslensku vísinda- og nýsköpunarumhverfi og kynntust fjölbreyttum verkefnum á sviði t...",
@@ -5385,18 +5397,6 @@
     "category": "Íþróttir",
     "cats": [
       "Íþróttir"
-    ]
-  },
-  {
-    "title": "Beiðnir um brautaskipti í Innu",
-    "link": "https://www.vma.is/is/skolinn/frettir/beidnir-um-brautaskipti-i-innu",
-    "summary": "Beiðnir um brautaskipti í Innu",
-    "date": "2026-10-02T15:20:00+00:00",
-    "image": "https://www.vma.is/static/news/sm/1790954745_brautaskipti.png",
-    "source": "VMA",
-    "category": "Menntun",
-    "cats": [
-      "Bærinn"
     ]
   },
   {
