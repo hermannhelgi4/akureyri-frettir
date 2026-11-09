@@ -251,7 +251,7 @@
     "teams": [
       "KA/Þór"
     ],
-    "res": "24–27",
+    "res": "0–10",
     "kind": "Íþróttir"
   },
   {
@@ -421,6 +421,22 @@
     "kind": "Tónlist"
   },
   {
+    "title": "Selfoss – KA",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111492",
+    "start": "2026-11-13",
+    "end": "2026-11-13",
+    "time": "18:00",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Set höllin",
+    "teams": [
+      "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "KA/Þór – Fram",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -451,22 +467,6 @@
       "Þór Ak."
     ],
     "live": "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/2856649/",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Selfoss – KA",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/111492",
-    "start": "2026-11-13",
-    "end": "2026-11-13",
-    "time": "20:15",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Set höllin",
-    "teams": [
-      "KA"
-    ],
     "kind": "Íþróttir"
   },
   {
@@ -2439,7 +2439,7 @@
     "start": "2027-02-12",
     "end": "2027-02-12",
     "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1793699145.png?v=1794060650",
+    "image": "https://www.mak.is/static/calendar/images/submit_1793699145.png?v=1794241527",
     "note": "Frá 8.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
@@ -2931,6 +2931,22 @@
     "kind": "Tónlist"
   },
   {
+    "title": "FH – Þór",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111551",
+    "start": "2027-03-04",
+    "end": "2027-03-04",
+    "time": "19:45",
+    "image": null,
+    "note": "Útileikur · Olís deild karla · Kaplakriki",
+    "teams": [
+      "Þór"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Selfoss – Þór Ak.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -2943,22 +2959,6 @@
     "note": "Útileikur · Bæjarins Beztu deild karla · Vallaskóli",
     "teams": [
       "Þór Ak."
-    ],
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "FH – Þór",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/111551",
-    "start": "2027-03-05",
-    "end": "2027-03-05",
-    "time": "19:45",
-    "image": null,
-    "note": "Útileikur · Olís deild karla · Kaplakriki",
-    "teams": [
-      "Þór"
     ],
     "kind": "Íþróttir"
   },
@@ -3563,7 +3563,7 @@
     "start": "2027-09-18",
     "end": "2027-09-18",
     "time": "21:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1793871607.png?v=1794046191",
+    "image": "https://www.mak.is/static/calendar/images/submit_1793871607.png?v=1794241527",
     "note": "Frá 11.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
