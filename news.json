@@ -1,5 +1,77 @@
 [
   {
+    "title": "Fundarboð 686. fundar sveitarstjórnar Eyjafjarðarsveitar",
+    "link": "https://www.esveit.is/eyjafjardarsveit/frettir/fundarbod-686-fundar-sveitarstjornar-eyjafjardarsveitar",
+    "summary": "686. fundur sveitarstjórnar Eyjafjarðarsveitar verður haldinn í fundarstofu 2, Skólatröð 9, fimmtudaginn 12. nóvember 2026 og hefst kl. 08:00.",
+    "date": "2026-11-10T10:25:00+00:00",
+    "image": "https://www.esveit.is/static/news/sm/1794306481_esveit-logo-a-heimasidu-med-fundarbodum-sveitarstjornar-2.jpg",
+    "source": "Eyjafjarðarsveit",
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
+  },
+  {
+    "title": "Losun á pappír og plasti frestast til morguns",
+    "link": "https://www.fjallabyggd.is/is/frettir/losun-a-pappir-og-plasti-frestast-til-morguns",
+    "summary": "Vegna hvassviðris hefur verið ákveðið að fresta sorphirðu á Siglufirði í dag, þriðjudaginn 10. nóvember. Unnið var að hirðu á pappír og plasti en vegna veðuraðstæðna er ekki talið öruggt að halda sorphirðunni áfram þar sem hætta er á að úrgangur fjú...",
+    "date": "2026-11-10T09:51:00+00:00",
+    "image": "https://www.fjallabyggd.is/static/news/sm/1794304427_gamaf.jpg",
+    "source": "Fjallabyggð",
+    "category": "Nærsveitir",
+    "cats": [
+      "Nærsveitir"
+    ]
+  },
+  {
+    "title": "Opnað hefur verið fyrir umsóknir í Menningarsjóð Akureyrarbæjar",
+    "link": "https://www.akureyri.is/opnad-hefur-verid-fyrir-umsoknir-i-menningarsjod-akureyrarbaejar",
+    "summary": "Akureyrarbær auglýsir eftir umsóknum í Menningarsjóð fyrir árið 2027. Umsóknarfrestur er til miðnættis 2. desember 2026.",
+    "date": "2026-11-10T09:30:00+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/_SSO4937ddd-1833x1192.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Um 100 þátttakendur á vinnustofu RHA og Jafnréttisstofu um kynjajafnrétti",
+    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/um-100-thatttakendur-a-vinnustofu-rha-og-jafnrettisstofu-um-kynjajafnretti",
+    "summary": "Fyrstu niðurstöður rannsóknarverkefnisins Energising Nordic Equality voru kynntar á ráðstefnunni Nordic Energy Impact Days í Kaupmannahöfn",
+    "date": "2026-11-10T08:20:00+00:00",
+    "image": "https://www.unak.is/static/news/sm/unak-frett-tryggvi-saeunn-10.11.2026.png",
+    "source": "Háskólinn á Akureyri",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Aldrei of seint að læra",
+    "link": "https://www.vma.is/is/skolinn/frettir/aldrei-of-seint-ad-laera",
+    "summary": "Mayflor",
+    "date": "2026-11-10T07:00:00+00:00",
+    "image": "https://www.vma.is/static/news/sm/mayflor-perez-cajes.jpg",
+    "source": "VMA",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Litríkt og krúttlegt en ekki er allt sem sýnist",
+    "link": "https://www.akureyri.net/is/moya/news/litrikt-og-kruttlegt-en-ekki-er-allt-sem-synist",
+    "summary": "AF BÓKUM – 96 Starfsfólk Amtsbókasafnsins á Akureyri segir lesendum akureyri.net frá bók eða bókum á þriðjudögum. Það vekur vonandi athygli á bókakosti safnsins, þar sem af nógu er að taka, og glæðir áhuga sem flestra á bóklestri. Í dag s...",
+    "date": "2026-11-10T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/96-reynir.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Hvatasjóður: Ein milljón til Akureyrar",
     "link": "https://www.akureyri.net/is/moya/news/hvatasjodur-ein-milljon-til-akureyrar",
     "summary": "Sex verkefni íþróttafélaga á Norðurlandi eystra fengu úthlutað rúmum 2,2 milljónum króna úr Hvatasjóði íþróttahreyfingarinnar í síðustu viku. Þrjú fengu 500 þúsund krónur hvert og voru það hæstu styrkirnir. Hin verkefnin þrjú hlutu 250 þúsund krónur ...",
@@ -1085,19 +1157,6 @@
     "cats": [
       "Fréttir",
       "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Fjórir heimaleikir í þremur íþróttagreinum",
-    "link": "https://www.akureyri.net/is/moya/news/fimm-heimaleikir-i-fjorum-ithrottagreinum",
-    "summary": "Framboðið á íþróttakappleikjum Akureyrarliða þessa vikuna þjappast á tvo daga, laugardag og sunnudag. Tveir blakleikir, íshokkí, körfubolti og handbolti á heimavöllum og einn körfuboltaleikur á útivelli. Blakáhugafólk fær svokallaðan tvíhöfða í KA...",
-    "date": "2026-11-06T14:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/ithrottavikan-02.11.2026.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
     ]
   },
   {
@@ -3528,18 +3587,6 @@
     ]
   },
   {
-    "title": "Sorphirðu frestað á Siglufirði vegna veðurs",
-    "link": "https://www.fjallabyggd.is/is/frettir/sorphirdu-frestad-a-siglufirdi-vegna-vedurs",
-    "summary": "Vegna óhagstæðra veðurskilyrða á Siglufirði hefur sorphirðu verið frestað í dag, þriðjudaginn 27. október.",
-    "date": "2026-10-27T10:35:00+00:00",
-    "image": "https://www.fjallabyggd.is/static/news/sm/1793097494_gamaf.jpg",
-    "source": "Fjallabyggð",
-    "category": "Nærsveitir",
-    "cats": [
-      "Nærsveitir"
-    ]
-  },
-  {
     "title": "Brunamálaskólinn hélt námskeið á Dalvík",
     "link": "https://dal.is/brunamalaskolinn-helt-namskeid-a-dalvik/",
     "summary": "Brunamálaskólinn hélt námskeið á Dalvík um nýliðna helgi þar sem slökkviliðsmenn fengu þjálfun í vatnsöflun, reykköfun og almennum björgunaraðgerðum. Þá",
@@ -3893,18 +3940,6 @@
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
-    ]
-  },
-  {
-    "title": "Uppfærðar leiðbeiningar um flokkun á heyrúlluplasti frá Terra",
-    "link": "https://www.esveit.is/eyjafjardarsveit/frettir/uppfaerdar-leidbeiningar-um-flokkun-a-heyrulluplasti-fra-terra",
-    "summary": "Landbúnaðarplast sem er notað utan um heyrúllur er úrvalsplast sem er tilvalið í endurvinnslu. Ef plastið er ekki rétt flokkað eða óhreint er ekki hægt að endurvinna það.",
-    "date": "2026-10-23T14:06:00+00:00",
-    "image": "https://www.esveit.is/static/news/sm/1792764617_logo-terra.jpg",
-    "source": "Eyjafjarðarsveit",
-    "category": "Nærsveitir",
-    "cats": [
-      "Nærsveitir"
     ]
   },
   {
@@ -4979,18 +5014,6 @@
     ]
   },
   {
-    "title": "Hluti Dalsbrautar lokaður mánudaginn 12. október",
-    "link": "https://www.akureyri.is/hluti-dalsbrautar-lokadur-manudaginn-12-oktober",
-    "summary": "Fyrirhugað er að malbika Dalsbraut á milli Skógarlundar og Miðhúsabrautar mánudaginn 12. október.",
-    "date": "2026-10-09T12:30:00+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/dalsbraut-1-1105x864.png",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
     "title": "Nýtt fræðsluefni opnar á spennandi möguleika í ferðaþjónustu",
     "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/nytt-fraedsluefni-opnar-a-spennandi-moguleika-i-ferdathjonustu",
     "summary": "Afrakstur tveggja ára alþjóðlegs samstarfs nú aðgengilegur",
@@ -5351,18 +5374,6 @@
     ]
   },
   {
-    "title": "Annar nemendahópurinn í framreiðslu í VMA",
-    "link": "https://www.vma.is/is/skolinn/frettir/enginn-titill-188",
-    "summary": "Framreiðslunemar",
-    "date": "2026-10-05T07:00:00+00:00",
-    "image": "https://www.vma.is/static/news/sm/20260930_115008.jpg",
-    "source": "VMA",
-    "category": "Menntun",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
     "title": "Arna Sif best hjá Þór/KA - Karen Hulda efnilegust",
     "link": "https://www.thorsport.is/is/frettir-greinar/arna-sif-best-hja-thorka-karen-hulda-efnilegust",
     "summary": "Arna Sif Ásgrímsdóttir var hlaðin verðlaunum á lokahófi Þórs/KA sem fram fór í gærkvöld, valin besti leikmaðurinn, leikmaður leikmannanna og hlaut Kollubikarinn. Miðvarðaparið sem varð til snemma móts hirti verðlaun kvöldsins því Karen Hulda Hrafnsdóttir var valin efnilegust.",
@@ -5517,18 +5528,6 @@
     "date": "2026-10-01T17:22:00+00:00",
     "image": "https://www.ma.is/static/news/sm/vinyl.png",
     "source": "Menntaskólinn á Akureyri",
-    "category": "Menntun",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Öflugt rannsóknastarf á sviði byggða- og samfélagsmála",
-    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/oflugt-rannsoknastarf-a-svidi-byggda-og-samfelagsmala",
-    "summary": "Vel sótt ráðstefna Viðskiptadeildar er nú aðgengileg í upptöku",
-    "date": "2026-10-01T13:50:00+00:00",
-    "image": "https://www.unak.is/static/news/sm/unak_-radstefna-vidskiptadeildar-01.10.2026.png",
-    "source": "Háskólinn á Akureyri",
     "category": "Menntun",
     "cats": [
       "Bærinn"
