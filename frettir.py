@@ -355,7 +355,7 @@ const LONGD=["sunnudagur","mánudagur","þriðjudagur","miðvikudagur","fimmtuda
 function art(o,cls){const c=CATS[o.category]||["#0b6e99","#5cc0e8","⭐"],d=el("div",cls);d.style.background="linear-gradient(135deg,"+c[0]+","+c[1]+")";d.appendChild(document.createTextNode(c[2]));if(o.image){const i=document.createElement("img");i.src=o.image;i.alt=o.business;i.loading="lazy";i.referrerPolicy="no-referrer";i.onerror=()=>i.remove();d.appendChild(i)}return d}
 function ofState(o,t){const iso=t.getFullYear()+"-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0");if(o.until&&o.until<iso)return"expired";if(o.from&&o.from>iso)return"later";if(o.days&&o.days.length&&!o.days.includes(DAYS[t.getDay()]))return"notday";return"ok"}
 function daysText(o){return(o.days&&o.days.length)?"Gildir "+o.days.map(d=>LONG[d]||d).join(", "):"Gildir alla daga"}
-function today0(){const n=new Date();return new Date(n.getFullYear(),n.getMonth(),n.getDate())}
+function today0(){const n=new Date();return new Date(n.getUTCFullYear(),n.getUTCMonth(),n.getUTCDate())}
 function renderOf(){const t=today0(),box=document.getElementById("oflist"),ch=document.getElementById("ofchips");const all=OFFERS.filter(o=>ofState(o,t)!=="expired");
 const cats=["Allt",...new Set(all.map(o=>o.category||"Annað"))];ch.innerHTML="";cats.forEach(c=>{const b=el("button","chip"+(c===ofCat?" on":""),c);b.onclick=()=>{ofCat=c;renderOf()};ch.appendChild(b)});
 box.innerHTML="";const rank=o=>ofState(o,t)==="ok"?0:1;const L=all.filter(o=>ofCat==="Allt"||(o.category||"Annað")===ofCat).sort((a,b)=>rank(a)-rank(b)||a.business.localeCompare(b.business,"is"));
@@ -372,7 +372,7 @@ if(o.details)b.appendChild(el("div","odet",o.details));b.appendChild(el("div","o
 const ck=el("div","oclock");b.appendChild(ck);const tick=()=>{const n=new Date(),p=v=>String(v).padStart(2,"0");ck.textContent="Sýndu starfsmanni þetta kort · "+LONGD[n.getDay()]+" "+fd(n)+" kl. "+p(n.getHours())+":"+p(n.getMinutes())+":"+p(n.getSeconds())};tick();ofTimer=setInterval(tick,1000);
 c.append(a,b);m.appendChild(c);document.body.appendChild(m);document.body.style.overflow="hidden"}
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeCard();if(spOpen){spOpen="";renderSp()}}});document.addEventListener("click",e=>{if(spOpen&&!e.target.closest(".ddm")){spOpen="";renderSp()}});
-function renderEv(){const n0=new Date(),t=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("evlist"),ch=document.getElementById("evchips");
+function renderEv(){const n0=new Date(),t=new Date(n0.getUTCFullYear(),n0.getUTCMonth(),n0.getUTCDate()),box=document.getElementById("evlist"),ch=document.getElementById("evchips");
 const KO=["Tónlist","Leiklist","Uppistand","Sýningar","Fjölskylda","Fræðsla","Íþróttir"];const all=EVENTS.filter(e=>e.source!=="Íþróttir"&&(e.res||pd(e.end)>=t));const srcs=["Allt",...KO.filter(k=>all.some(e=>e.kind===k))];ch.innerHTML="";
 srcs.forEach(s=>{const b=el("button","chip"+(s===evSrc?" on":""),s);b.onclick=()=>{evSrc=s;renderEv()};ch.appendChild(b)});
 const resMode=false;
@@ -436,7 +436,7 @@ if(flOut){const f=flOut.f;dt.innerHTML="<b>Út:</b> "+DAYS[flOut.d.getDay()]+" "
 const href=(flRet?f.bookRT:f.bookOW)||f.link;if(href)dt.appendChild(flBtn(f,href.replace("{dd}",flIso(flOut.d)).replace("{rd}",flRet?flIso(flRet):""),flRet?"Bóka fram og til baka á "+f.operator+" ›":"Bóka aðra leið á "+f.operator+" ›"));
 dt.appendChild(el("div","fs","Tímar og verð sjást hjá "+f.operator+", og þar er hægt að breyta dögum."+(f.note?" "+f.note:"")))}
 else dt.textContent="Smelltu á litaðan dag til að skoða flug og bóka.";c.appendChild(dt);return c}
-function renderFl(){const n0=new Date(),t0=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("fllist");document.getElementById("flchips").innerHTML="";box.innerHTML="";
+function renderFl(){const n0=new Date(),t0=new Date(n0.getUTCFullYear(),n0.getUTCMonth(),n0.getUTCDate()),box=document.getElementById("fllist");document.getElementById("flchips").innerHTML="";box.innerHTML="";
 const W=FLIGHTS.filter(f=>f.kind==="weekly"&&pd(f.until)>=t0),blocks=[];
 if(W.length){const nx=flNext(W,t0);blocks.push({d:nx||new Date(9999,0,1),n:flCal(W,t0)})}
 FLIGHTS.filter(f=>f.kind!=="weekly").forEach(f=>{const s=pd(f.start);if(s<t0)return;blocks.push({d:s,n:flTrip(f,t0)})});
@@ -445,7 +445,7 @@ blocks.sort((a,b)=>a.d-b.d);blocks.forEach(b=>box.appendChild(b.n));
 box.appendChild(el("div","fnote","Upplýsingar eru skráðar eftir heimasíðum flugfélaga og ferðaskrifstofa og geta breyst. Staðfestu alltaf tíma og verð við bókun."))}
 const nk=x=>(x==="Þór Ak."?"Þór":x||"").toLowerCase().replace(/[ .]/g,"");let HBL={},hbT=0;
 function hbPoll(){if(!API||Date.now()-hbT<25000)return;hbT=Date.now();fetch(API+"/hb").then(r=>r.json()).then(d=>{const m={};["upcoming","finished","live"].forEach(k=>(d[k]||[]).forEach(g=>{m[nk(g.home.name)+"|"+nk(g.away.name)]={h:g.home.score,a:g.away.score,clock:g.clock,st:g.status,url:"https://www.hbstatz.is/"+(g.reportUrl||"").replace(/^[/]/,"")}}));HBL=m;const v=document.getElementById("viewSp");if(v&&!v.hidden)renderSp()}).catch(function(){})}
-function renderSp(){const n0=new Date(),t=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()),box=document.getElementById("splist"),dd=document.getElementById("spdd");
+function renderSp(){const n0=new Date(),t=new Date(n0.getUTCFullYear(),n0.getUTCMonth(),n0.getUTCDate()),box=document.getElementById("splist"),dd=document.getElementById("spdd");
 const TN=x=>x==="Þór Ak."?"Þór":x;const all=EVENTS.filter(e=>e.source==="Íþróttir");dd.innerHTML="";
 const tb=document.getElementById("spteams");tb.innerHTML="";const TO=["Þór","KA","KA/Þór","Þór/KA","SA"];const tms=[...new Set(all.flatMap(e=>(e.teams||[]).map(TN)).concat(STAND.flatMap(g=>g.rows.filter(r=>r.me).map(r=>TN(r.t)))))].sort((a,b)=>(TO.indexOf(a)<0?9:TO.indexOf(a))-(TO.indexOf(b)<0?9:TO.indexOf(b)));
 if(spTeam&&tms.indexOf(spTeam)<0)spTeam="";
@@ -476,7 +476,7 @@ box.appendChild(c);return}
 if(!spRes&&I.t2&&e.start===firstDay){const c=el("a","next");c.href=e.link;c.target="_blank";c.rel="noopener";const hb=HBL[nk(I.t1)+"|"+nk(I.t2)];c.appendChild(el("div","lab",diff===0?"Leikur dagsins":"Næsti leikur"));c.appendChild(spLab(e));
 const v=el("div","vs"),L1=el("div",""),R1=el("div","");L1.appendChild(crest(I.t1,I.away?"o":""));L1.appendChild(el("div","n",I.t1));R1.appendChild(crest(I.t2,I.home?"o":""));R1.appendChild(el("div","n",I.t2));
 const m=el("div","m",(diff===0?"Í dag":diff===1?"Á morgun":DAYS[s.getDay()]+". "+fd(s)));m.appendChild(el("b","",hb&&hb.st!=="upcoming"?hb.h+" – "+hb.a:(e.time||"–")));if(I.rest[0])m.appendChild(document.createTextNode(I.rest[0]));v.append(L1,m,R1);c.appendChild(v);
-const tp=(e.time||"").split(":"),ts=new Date(s.getFullYear(),s.getMonth(),s.getDate(),+tp[0]||0,+tp[1]||0),ms=ts-new Date();
+const tp=(e.time||"").split(":"),ts=new Date(Date.UTC(s.getFullYear(),s.getMonth(),s.getDate(),+tp[0]||0,+tp[1]||0)),ms=ts-new Date();
 if(API&&e.sport==="Handbolti"&&ms<=9e5&&ms>-108e5)hbPoll();const hl=hb&&(hb.st==="live"||hb.st==="halftime"),fin=hb&&hb.st==="finished";if(fin||hl||(ms<=0&&ms>-108e5&&e.time)){const lv=el("div","live"+(fin?" fin":""));if(!fin)lv.appendChild(el("span","dot"));lv.appendChild(document.createTextNode(fin?"Leik lokið – sjá tölfræði ›":hl?"Í beinni · "+hb.clock+" – sjá beina tölfræði ›":"Leikur í gangi – sjá beina tölfræði ›"));c.appendChild(lv);const u=(hb&&hb.url)||e.live;if(u)c.href=u}if(hb&&hb.st!=="upcoming")c.appendChild(el("div","hbc","Staða og tölfræði frá hbstatz.is"));
 if(ms>0){const cd=el("div","cd"),dd=Math.floor(ms/864e5),hh=Math.floor(ms%864e5/36e5),mm=Math.floor(ms%36e5/6e4);[[dd,"dagar"],[hh,"klst."],[mm,"mín."]].forEach(x=>{const d=el("div","");d.appendChild(el("b","",String(x[0])));d.appendChild(document.createTextNode(x[1]));cd.appendChild(d)});c.appendChild(cd)}
 box.appendChild(c);return}
@@ -2865,8 +2865,37 @@ def kind_default(e):
     return "Tónlist"
 
 
+def bli_probe():
+    """TÍMABUNDIÐ: kannar hvernig DataProject sýnir stöðu blakleikja í beinni. Prentar stutt yfirlit í logginn (merkt PROBE)."""
+    base = BLI_BASE + "CompetitionMatches.aspx?ID=142&PID=209"
+    page = fetch_page(base)
+    links = []
+    for m in re.finditer(r'href="([^"]*(?:MatchStatistics|LiveScore|MatchDetail|Live)[^"]*)"', page, re.I):
+        u = urljoin(BLI_BASE, html.unescape(m.group(1)))
+        if u not in links:
+            links.append(u)
+    print("PROBE blak: %d stafir á mótasíðu, %d tenglar á leiki, dæmi: %s" % (len(page), len(links), [x[:170] for x in links[:4]]))
+    live = re.findall(r'.{0,160}(?:í gangi|In progress|LIVE|live).{0,160}', page, re.I | re.S)
+    print("PROBE blak „í gangi“ á mótasíðu: %r" % [re.sub(r"\s+", " ", x)[:260] for x in live[:3]])
+    for u in links[:2]:
+        try:
+            t = fetch_page(u)
+        except Exception as e:
+            print("PROBE blak %s: tókst ekki (%s)" % (u[:120], e))
+            continue
+        ids = re.findall(r'<(?:span|div|td)[^>]*\bid="([^"]*)"[^>]*>\s*(\d{1,3}|[A-Za-zÀ-ÿ ]{2,20})\s*<', t)
+        sc = [x[:80] for x in re.findall(r"<script[^>]+src=[\"']([^\"']+)", t) if re.search(r"signalr|live|hub|socket|score", x, re.I)]
+        hint = re.findall(r".{0,80}(?:signalr|WebSocket|\.asmx|WebMethod|setInterval|Timer1|hub).{0,120}", t, re.I)
+        print("PROBE blak leikur %s: %d stafir, reitir=%s" % (u[-90:], len(t), [ "%s=%s" % (a[-40:], b) for a, b in ids[:40]]))
+        print("PROBE blak leikur forskriftir=%s vísbendingar=%s" % (sc[:6], [re.sub(r"\s+", " ", h)[:200] for h in hint[:5]]))
+
+
 def main():
     t_start = time.time()
+    try:
+        bli_probe()
+    except Exception as e:
+        print("PROBE blak villa: %s" % e)
     try:  # fyrri fréttir eru geymdar svo landsmiðlafréttir um Akureyri hverfi ekki
         with open("news.json", encoding="utf-8") as f:
             old = json.load(f)
@@ -2888,13 +2917,29 @@ def main():
     nonlocal_sources = {f["name"] for f in FEEDS if not f["local"]}
     V = "v2:"  # ný og strangari sía; gamlar niðurstöður (án V) eru ekki notaðar
 
+    BROWSER_UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+                  "Accept": "application/rss+xml, application/xml, text/xml, */*;q=0.8",
+                  "Accept-Language": "is,en;q=0.8"}
+
     def get_feed(feed):
-        try:
-            req = urllib.request.Request(feed["url"], headers=UA)
-            with OPENER.open(req, timeout=15) as r:
-                return parse_feed(ET.fromstring(r.read())), None
-        except Exception as e:
-            return None, e
+        # Fyrst venjulega; ef það bregst reynum við aftur með vafra-haus og öðrum slóðum (sumar síður loka á vélmenni)
+        url = feed["url"]
+        tries = [(url, UA)]
+        if feed["name"] == "Kaffið":
+            tries += [(url, BROWSER_UA), (url.rstrip("/") + "/", BROWSER_UA),
+                      ("https://kaffid.is/feed", BROWSER_UA), ("https://www.kaffid.is/?feed=rss2", BROWSER_UA)]
+        else:
+            tries += [(url, BROWSER_UA)]
+        err = None
+        for u, h in tries:
+            try:
+                req = urllib.request.Request(u, headers=h)
+                with OPENER.open(req, timeout=15) as r:
+                    return parse_feed(ET.fromstring(r.read())), None
+            except Exception as e:
+                err = "%s [%s]" % (e, u)
+                time.sleep(1)
+        return None, err
 
     results = pmap(get_feed, FEEDS, workers=8)
     print("Tími: veitur sóttar á %.0f sek." % (time.time() - t_start))
