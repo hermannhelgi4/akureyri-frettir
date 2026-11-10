@@ -188,7 +188,7 @@ def parse_feed(root):
 
 
 # Fréttir um Eyjafjöll (Suðurland) eiga ekki heima hér, þó fyrirsögn segi stundum „Eyjafirði“ fyrir mistök.
-NOT_AK = re.compile(r"eyjafj(?:öll|alla|allajök|ölln)|undir eyjafjöllum|mið-mörk|mið-mörkin|vestur-eyjafj|austur-eyjafj|ragnar(?:s|i)? þór", re.I)
+NOT_AK = re.compile(r"þórsmörk|þórsgat|þórshöfn|eyjafj(?:öll|alla|allajök|ölln)|undir eyjafjöllum|mið-mörk|mið-mörkin|vestur-eyjafj|austur-eyjafj|ragnar(?:s|i)? þór", re.I)
 
 
 def not_akureyri(item):
@@ -2541,7 +2541,9 @@ FOTBOLTI_NAME = "Fótbolti.net"
 # Þór sem eiginnafn (Hlynur Þór, Þór Llorens, Þórsson) er ekki talið lið.
 _TEAM_COMBO = re.compile(r"Þór ?/ ?KA|KA ?/ ?Þór")
 _TEAM_KA = re.compile(r"(?<![\w/])KA(?![\w/])|(?<![\w/])KA-(?=[a-záðéíóúýþæö])")
-_TEAM_THOR = re.compile(r"(?<![\w/])Þór(?:s(?!son\b|dóttir)\w*)?(?![\w/])")
+# Þór eitt og sér, eða orð sem eru örugglega um félagið (Þórsarar, Þórsvöllur …). Þórsmörk, Þórsgata, Þórshöfn o.fl. teljast EKKI með.
+_TEAM_THOR = re.compile(
+    r"(?<![\w/])Þór(?:s(?:ar(?:ar|ana|a|i|inn)?|liðið|liðinu|liði|vell(?:i|inum|ir|ina)?|heimil\w*|stúlk\w*|kon\w*|menn\w*|íþrótt\w*|félag\w*)?)?(?![\w/])")
 _NAME_BEFORE = re.compile(r"[A-ZÁÐÉÍÓÚÝÞÆÖ][a-záðéíóúýþæö]+ $")
 _NAME_AFTER = re.compile(r"^ (?!Ak\b|Akureyri)[A-ZÁÐÉÍÓÚÝÞÆÖ][a-záðéíóúýþæö]")
 
@@ -2740,7 +2742,9 @@ _AK_RE = re.compile(
 _OTHER_PLACES = re.compile(
     r"(?<!\w)(?:reykjav|kópavog|hafnarfj|garðab|keflavík|reykjanes|selfoss|ísafj|egilsst|vestmannaey|"
     r"borgarnes|akranes|grindavík|suðurnes|mosfellsb|seltjarnarn|höfuðborgarsv|húsavík|reyðarfj|neskaupst|"
-    r"sauðárkr|blönduós|patreksfj|bolungarv|hveragerð|árborg)\w*", re.I)
+    r"sauðárkr|blönduós|patreksfj|bolungarv|hveragerð|árborg|þórsmörk|þórshöfn|þórsgat|þingvell|hornafj|stykkishólm|"
+    r"ólafsvík|grundarfj|búðardal|hólmavík|vopnafj|seyðisfj|eskifj|fáskrúðsfj|djúpavog|mýrdal|hvolsv|flúðir|laugarvatn|"
+    r"þorlákshöfn|sandgerð|reykjanesb|borgarfj|skagafj|mývatn|kirkjubæjark|vík í)\w*", re.I)
 
 
 def ak_count(text):
