@@ -664,22 +664,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "Þór Ak. – ÍA",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Karlar",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=191&season_id=132571&game_id=6153972",
-    "start": "2026-11-21",
-    "end": "2026-11-21",
-    "time": "15:30",
-    "image": null,
-    "note": "Heimaleikur · Bæjarins Beztu deild karla · Höllin Ak",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "SA – SR",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -736,6 +720,22 @@
     "teams": [
       "Þór",
       "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
+    "title": "Þór Ak. – ÍA",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Karlar",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=191&season_id=132571&game_id=6153972",
+    "start": "2026-11-23",
+    "end": "2026-11-23",
+    "time": "19:15",
+    "image": null,
+    "note": "Heimaleikur · Bæjarins Beztu deild karla · Höllin Ak",
+    "teams": [
+      "Þór Ak."
     ],
     "kind": "Íþróttir"
   },
@@ -2460,7 +2460,7 @@
     "start": "2027-02-12",
     "end": "2027-02-12",
     "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1793699145.png?v=1794241527",
+    "image": "https://www.mak.is/static/calendar/images/submit_1793699145.png?v=1794422151",
     "note": "Frá 8.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
@@ -2991,7 +2991,7 @@
     "end": "2027-03-05",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/zMDST537GInu78Zbyy4W4SSTR9TBIL-metacGluayBmbG95LnBuZw==-.webp",
-    "note": "Nýtt · Frá 8.900 kr.",
+    "note": "Frá 8.900 kr.",
     "kind": "Tónlist"
   },
   {
@@ -3445,6 +3445,19 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "Á Móti Sól 30 ára",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/a-moti-sol-30-ara",
+    "start": "2027-04-03",
+    "end": "2027-04-03",
+    "time": "20:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1794411799.png?v=1794422151",
+    "note": "Frá 9.990 kr.",
+    "cat0": "Tónleikar",
+    "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
+  },
+  {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
@@ -3526,19 +3539,6 @@
     "kind": "Leiklist"
   },
   {
-    "title": "Teiknimyndalögin okkar",
-    "source": "MAK / Hof",
-    "link": "https://www.mak.is/is/vidburdir/teiknimyndalogin-okkar-1",
-    "start": "2027-05-09",
-    "end": "2027-05-09",
-    "time": "16:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782206981.png?v=1794321034",
-    "note": "",
-    "cat0": "Tónleikar",
-    "venue": "Hamraborg, Hof",
-    "kind": "Tónlist"
-  },
-  {
     "title": "BaKaBa - Kvartettfjör að vori",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/bakaba-kvartettfjor-ad-vori",
@@ -3549,6 +3549,19 @@
     "note": "5.900 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
+  },
+  {
+    "title": "Teiknimyndalögin okkar",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/teiknimyndalogin-okkar-1",
+    "start": "2027-05-09",
+    "end": "2027-05-09",
+    "time": "16:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782206981.png?v=1794321034",
+    "note": "",
+    "cat0": "Tónleikar",
+    "venue": "Hamraborg, Hof",
     "kind": "Tónlist"
   },
   {
@@ -3584,7 +3597,7 @@
     "start": "2027-09-18",
     "end": "2027-09-18",
     "time": "21:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1793871607.png?v=1794241527",
+    "image": "https://www.mak.is/static/calendar/images/submit_1793871607.png?v=1794422151",
     "note": "Frá 11.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
