@@ -1,20 +1,20 @@
 {
- "upd": "12.11 17:45",
+ "upd": "12.11 23:10",
  "now": {
-  "T": 0.5,
-  "F": 3.0,
-  "D": "SSA",
-  "W": "Alskýjað",
+  "T": 1.2,
+  "F": 1.0,
+  "D": "NNV",
+  "W": "Lítils háttar rigning",
   "R": 0.0,
   "night": true
  },
  "days": [
   {
    "date": "2026-11-13",
-   "T": -1.0,
-   "F": 6.0,
-   "D": "NV",
-   "W": "Lítils háttar snjókoma",
+   "T": 0.0,
+   "F": 13.0,
+   "D": "VNV",
+   "W": "Snjókoma",
    "R": null
   },
   {
@@ -28,9 +28,9 @@
   {
    "date": "2026-11-15",
    "T": -1.0,
-   "F": 5.0,
-   "D": "NNV",
-   "W": "Alskýjað",
+   "F": 4.0,
+   "D": "N",
+   "W": "Skýjað",
    "R": null
   }
  ]
