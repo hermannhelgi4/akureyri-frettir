@@ -370,22 +370,7 @@
     "teams": [
       "KA"
     ],
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "KA/Þór – Fram",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Konur",
-    "link": "https://www.hsi.is/match/110516",
-    "start": "2026-11-13",
-    "end": "2026-11-13",
-    "time": "19:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild kvenna · KA heimilið",
-    "teams": [
-      "KA/Þór"
-    ],
+    "live": "https://www.hbstatz.is/?live=13069",
     "kind": "Íþróttir"
   },
   {
@@ -415,6 +400,22 @@
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/Cvd20HZ1Nw7AgxBvVCMcNfca6mXU4k-metaU2V4IHBpc3QgSUlJLmpwZw==-.webp",
     "note": "Frá 7.900 kr.",
     "kind": "Tónlist"
+  },
+  {
+    "title": "KA/Þór – Fram",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Konur",
+    "link": "https://www.hsi.is/match/110516",
+    "start": "2026-11-14",
+    "end": "2026-11-14",
+    "time": "14:00",
+    "image": null,
+    "note": "Heimaleikur · Olís deild kvenna · KA heimilið",
+    "teams": [
+      "KA/Þór"
+    ],
+    "kind": "Íþróttir"
   },
   {
     "title": "SA – Fjölnir",
@@ -1727,7 +1728,7 @@
     "end": "2026-12-27",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/RHuF0FeDbTrH7aFWKtCsG5NJcuwKOa-metaQnLDrWV0IGRlcyAyNi5qcGc=-.webp",
-    "note": "Nýtt · Frá 8.500 kr.",
+    "note": "Frá 8.500 kr.",
     "kind": "Tónlist"
   },
   {
@@ -1738,7 +1739,7 @@
     "end": "2026-12-28",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/IOqAxGEAlWLtEqKXASWNGFrXygTC2Y-metadW5hIHRvcmZhIGrDs2wgMjYuanBn-.webp",
-    "note": "Nýtt · Frá 6.900 kr.",
+    "note": "Frá 6.900 kr.",
     "kind": "Tónlist"
   },
   {
@@ -1749,7 +1750,7 @@
     "end": "2026-12-29",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/d2f1e1btF077mtLAo8McKQX43YJLmx-metaSGVycmEgYcyBIGdyw6ZuYSAtIElJSS5wbmc=-.webp",
-    "note": "Nýtt · Frá 7.900 kr.",
+    "note": "Fáir miðar · Frá 7.900 kr.",
     "kind": "Tónlist"
   },
   {
