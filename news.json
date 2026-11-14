@@ -1,5 +1,67 @@
 [
   {
+    "title": "Allt snitsel í raspi er ekki vínarsnitsel",
+    "link": "https://www.akureyri.net/is/moya/news/allt-snitsel-i-raspi-er-ekki-vinarsnitsel",
+    "summary": "„Á Íslandi hefur því miður lengi verið tilhneiging til að kalla allt snitsel í raspi vínarsnitsel, jafnvel meðal fagmanna í matreiðslu,“ segir Þráinn Lárusson í vikulegum pistli fyrir akureyri.net í röðinni MATARÞRÁ-INN og bætir við: „En það er ...",
+    "date": "2026-11-14T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/thrainn-snitsel-tilvisun.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "KA hristi Selfoss af sér undir lokin",
+    "link": "https://www.akureyri.net/is/moya/news/ka-hristi-selfoss-af-ser-undir-lokin",
+    "summary": "KA jafnaði Valsmenn í 3. sæti efstu deildar karla í handknattleik, Olísdeildinni, með sigri á heimamönnum á Selfossi í gærkvöld. Eftir að leikurinn hafði verið jafn nánast allan tímann tryggðu KA-menn sér öruggan 36:30 sigur með því að skora 5 síðust...",
+    "date": "2026-11-14T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/morten.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "KA/Þór mætir Fram – SA Víkingar gegn Fjölni",
+    "link": "https://www.akureyri.net/is/moya/news/kathor-maetir-fram-sa-vikingar-gegn-fjolni",
+    "summary": "Mögulega verður boðið upp á markaveistlu í Skautahöllinni á Akureyri í dag þegar SA Víkingar, karlalið Skautafélags Akureyrar, tekur á móti Fjölni í Toppdeild karla í íshokkí. Á dagskránni er einnig handboltaleikur sem átti að fara fram í gær, en var...",
+    "date": "2026-11-14T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/leikir-dagsins-14.11..jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Vínarsnitsel, en ekki hleypa svíninu inn!",
+    "link": "https://www.akureyri.net/is/moya/news/vinarsnitsel-en-ekki-hleypa-svininu-inn",
+    "summary": "",
+    "date": "2026-11-14T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/thrainn-snitsel-inni.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Vilhelm losnaði frá bryggju í Krossanesi",
+    "link": "https://www.akureyri.net/is/moya/news/vilhelm-losnadi-fra-bryggju-i-krossanesi",
+    "summary": "Vilhelm Þorsteinsson EA 11, uppsjávarskip Samherja, losnaði frá bryggju í Krossanesi á Akureyri í mjög slæmu veðri í kvöld, föstudagskvöld. Í ljós kom að bryggjupollar sem skipið var bundið við höfðu brotnað, Vilhelm hékk á einni taug þegar að var ko...",
+    "date": "2026-11-14T00:45:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/kaldbakur-losnadi.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "KA upp í 3. sæti",
     "link": "https://www.ruv.is/frettir/ithrottir/2026-11-13-ka-upp-i-3-saeti-492724/",
     "summary": "Bjarni Ófeigur Valdimarsson.Rúv / Mummi Lú KA komst í kvöld upp í 3. sæti Olísdeildar karla í handbolta eftir sex marka sigur á Selfossi í 10. umferð deildarinnar. Úrslitin urðu 36-30 KA-mönnum í hag sem hafa nú 14 stig í 3. sæti. Bjarni Ófeigur Valdimarsson var markahæstur í liði KA með átta mörk. ",
@@ -19,6 +81,19 @@
     "date": "2026-11-13T19:40:16+00:00",
     "image": "https://www.visir.is/i/084A48AAB4E6C9CA39A539528126FFA645029650A73D8028971C54DA3FA5396B_1600x900.jpg",
     "source": "Vísir",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Selfoss í miklu brasi",
+    "link": "https://www.mbl.is/sport/handbolti/2026/11/13/selfoss_i_miklu_brasi/",
+    "summary": "KA vann sannfærandi 36:30-sigur á Selfossi þegar liðin mættust í tíundu umferð úrvalsdeildar karla í handbolta á Selfossi í kvöld.",
+    "date": "2026-11-13T19:40:00+00:00",
+    "image": "https://c.arvakur.is/frimg/1/68/24/1682402A.jpg",
+    "source": "mbl.is",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir",
@@ -1721,73 +1796,12 @@
     ]
   },
   {
-    "title": "Litríkt og krúttlegt en ekki er allt sem sýnist",
-    "link": "https://www.akureyri.net/is/moya/news/litrikt-og-kruttlegt-en-ekki-er-allt-sem-synist",
-    "summary": "AF BÓKUM – 96 Starfsfólk Amtsbókasafnsins á Akureyri segir lesendum akureyri.net frá bók eða bókum á þriðjudögum. Það vekur vonandi athygli á bókakosti safnsins, þar sem af nógu er að taka, og glæðir áhuga sem flestra á bóklestri. Í dag s...",
-    "date": "2026-11-10T06:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/96-reynir.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Hvatasjóður: Ein milljón til Akureyrar",
-    "link": "https://www.akureyri.net/is/moya/news/hvatasjodur-ein-milljon-til-akureyrar",
-    "summary": "Sex verkefni íþróttafélaga á Norðurlandi eystra fengu úthlutað rúmum 2,2 milljónum króna úr Hvatasjóði íþróttahreyfingarinnar í síðustu viku. Þrjú fengu 500 þúsund krónur hvert og voru það hæstu styrkirnir. Hin verkefnin þrjú hlutu 250 þúsund krónur ...",
-    "date": "2026-11-09T20:30:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/rbnfld10kzmb2din509ni.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Hvetur Icelandair til „að horfa norður“",
-    "link": "https://www.akureyri.net/is/moya/news/hvetur-icelandair-til-ad-horfa-nordur",
-    "summary": "Beint flug easyJet milli Akureyrar og tveggja enskra borga, Liverpool og Manchester, hefur reynst mjög vinsælt og vitað er að marga dreymir um beint flug milli Akureyrar og Kaupmannahafnar. Viðskiptafræðinemi við Háskólann, Birgir Orri Ásgrímsson, hv...",
-    "date": "2026-11-09T20:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/icelandair-airbus_bj5a7460.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Icelandair ætti að horfa norður",
-    "link": "https://www.akureyri.net/is/moya/news/icelandair-aetti-ad-horfa-nordur",
-    "summary": "Birgir Orri Ásgrímsson",
-    "date": "2026-11-09T19:30:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/birgir-orri-ny-greinar-2026.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Icelandair ætti að horfa til Akureyrar",
     "link": "https://www.visir.is/g/20262960758d/icelandair-aetti-ad-horfa-til-akureyrar",
     "summary": "Það er kominn tími til að Icelandair hefji beint áætlunarflug milli Akureyrar og Kaupmannahafnar. Þróun síðustu ára hefur styrkt rökin fyrir þeirri leið: easyJet hefur fest sig í sessi með flugi frá London og Manchester, innviðir Akureyrarflugvallar hafa verið efldir og minni Airbus-vélar eru á leið",
     "date": "2026-11-09T19:03:44+00:00",
     "image": "https://www.visir.is/i/ABDE1413BFD770DAB508A2B05533117475E5B4D013C5F6E105A0B138A6D320FD_1600x900.jpg",
     "source": "Vísir",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Akureyrin í Þorvaldi",
-    "link": "https://www.akureyri.net/is/moya/news/akureyrin-i-thorvaldi",
-    "summary": "Hjörleifur Hjartarson",
-    "date": "2026-11-09T17:30:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/hjorleifur-hjartarson.jpg",
-    "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
