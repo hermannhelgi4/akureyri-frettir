@@ -371,6 +371,7 @@
     "teams": [
       "KA/Þór"
     ],
+    "live": "https://www.hbstatz.is/?game=6949",
     "kind": "Íþróttir"
   },
   {
@@ -923,6 +924,19 @@
     "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
     "kind": "Leiklist"
+  },
+  {
+    "title": "Ennio Morricone in memoriam - 98 ára afmæli",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/ennio-morricone-in-memoriam-98-ara-afmaeli",
+    "start": "2026-11-29",
+    "end": "2026-11-29",
+    "time": "20:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1794656660.jpg?v=1794660536",
+    "note": "4.900 kr.",
+    "cat0": "Tónleikar",
+    "venue": "Hamrar, Hof",
+    "kind": "Tónlist"
   },
   {
     "title": "Völsungur – KA",
@@ -1892,7 +1906,7 @@
     "end": "2027-01-09",
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/mKC8HBnTqQsbCFq4L4vkKZyMRDXfLy-metabGrDs3R1IDIwMjcgc3TDs3IuanBn-.webp",
-    "note": "Fáir miðar · Frá 9.900 kr.",
+    "note": "Uppselt · Frá 9.900 kr.",
     "kind": "Tónlist"
   },
   {
@@ -3434,19 +3448,6 @@
     "kind": "Leiklist"
   },
   {
-    "title": "BaKaBa - Kvartettfjör að vori",
-    "source": "MAK / Hof",
-    "link": "https://www.mak.is/is/vidburdir/bakaba-kvartettfjor-ad-vori",
-    "start": "2027-05-09",
-    "end": "2027-05-09",
-    "time": "16:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1782744648.png?v=1794523352",
-    "note": "5.900 kr.",
-    "cat0": "Tónleikar",
-    "venue": "Hamrar, Hof",
-    "kind": "Tónlist"
-  },
-  {
     "title": "Teiknimyndalögin okkar",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/teiknimyndalogin-okkar-1",
@@ -3457,6 +3458,19 @@
     "note": "",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
+    "kind": "Tónlist"
+  },
+  {
+    "title": "BaKaBa - Kvartettfjör að vori",
+    "source": "MAK / Hof",
+    "link": "https://www.mak.is/is/vidburdir/bakaba-kvartettfjor-ad-vori",
+    "start": "2027-05-09",
+    "end": "2027-05-09",
+    "time": "16:00",
+    "image": "https://www.mak.is/static/calendar/images/submit_1782744648.png?v=1794523352",
+    "note": "5.900 kr.",
+    "cat0": "Tónleikar",
+    "venue": "Hamrar, Hof",
     "kind": "Tónlist"
   },
   {
