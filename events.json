@@ -1,39 +1,5 @@
 [
   {
-    "title": "Fjölnir – Þór Ak.",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Karlar",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=191&season_id=132571&game_id=6153949",
-    "start": "2026-10-23",
-    "end": "2026-10-23",
-    "time": "19:15",
-    "image": null,
-    "note": "Útileikur · Bæjarins Beztu deild karla · Dalhús",
-    "teams": [
-      "Þór Ak."
-    ],
-    "res": "87–92",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "SR – SA",
-    "source": "Íþróttir",
-    "sport": "Íshokkí",
-    "gender": "Karlar",
-    "link": "https://stats.iihf.com/ihi/99/index.html",
-    "start": "2026-10-23",
-    "end": "2026-10-23",
-    "time": "19:45",
-    "image": null,
-    "note": "Útileikur · Toppdeild karla",
-    "teams": [
-      "SA"
-    ],
-    "res": "6–5",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Vestri – KA",
     "source": "Íþróttir",
     "sport": "Blak",
@@ -370,7 +336,7 @@
     "teams": [
       "KA"
     ],
-    "live": "https://www.hbstatz.is/?live=13069",
+    "res": "30–36",
     "kind": "Íþróttir"
   },
   {
@@ -388,18 +354,8 @@
       "Þór Ak."
     ],
     "live": "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/2856649/",
+    "res": "96–90",
     "kind": "Íþróttir"
-  },
-  {
-    "title": "Sex Pistols Expose",
-    "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/sex-pistol-expose-13-nov-2026/eid/259",
-    "start": "2026-11-13",
-    "end": "2026-11-13",
-    "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/Cvd20HZ1Nw7AgxBvVCMcNfca6mXU4k-metaU2V4IHBpc3QgSUlJLmpwZw==-.webp",
-    "note": "Frá 7.900 kr.",
-    "kind": "Tónlist"
   },
   {
     "title": "KA/Þór – Fram",
@@ -2399,7 +2355,7 @@
     "start": "2027-02-12",
     "end": "2027-02-12",
     "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1793699145.png?v=1794422151",
+    "image": "https://www.mak.is/static/calendar/images/submit_1793699145.png?v=1794610042",
     "note": "Frá 8.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
@@ -3390,7 +3346,7 @@
     "start": "2027-04-03",
     "end": "2027-04-03",
     "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1794411799.png?v=1794422151",
+    "image": "https://www.mak.is/static/calendar/images/submit_1794411799.png?v=1794610042",
     "note": "Frá 9.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
@@ -3520,6 +3476,22 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "Þór/KA – Stjarnan",
+    "source": "Íþróttir",
+    "sport": "Fótbolti",
+    "gender": "Konur",
+    "link": "https://www.ksi.is/leikir-og-urslit/felagslid/leikur?id=7412918",
+    "start": "2027-05-15",
+    "end": "2027-05-15",
+    "time": "18:00",
+    "image": null,
+    "note": "Heimaleikur · Mjólkurbikar kvenna · VÍS völlurinn",
+    "teams": [
+      "Þór/KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Stand up Comedy in broken English • Victor Patrascan in Akureyri",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/stand-up-comedy-in-broken-english-victor-patrascan-in-akureyri-1",
@@ -3552,7 +3524,7 @@
     "start": "2027-09-18",
     "end": "2027-09-18",
     "time": "21:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1793871607.png?v=1794422151",
+    "image": "https://www.mak.is/static/calendar/images/submit_1793871607.png?v=1794610042",
     "note": "Frá 11.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
