@@ -1,0 +1,214 @@
+{
+ "updated": "2026-11-15T14:52:45+00:00",
+ "trips": [
+  {
+   "kind": "trip",
+   "to": "Veróna",
+   "short": "Veróna",
+   "operator": "Smartwings (Kompaníferðir)",
+   "agency": "Kompaníferðir",
+   "start": "2027-01-06",
+   "end": "2027-01-13",
+   "times": "",
+   "price": "",
+   "note": "Skíðaferð til Madonna di Campiglio",
+   "flag": "🇮🇹",
+   "link": "https://kompaniferdir.is/einstaklingsferdir/madonna-skidaferd-akureyri-januar2026",
+   "linkText": "Skoða hjá Kompaníferðir ›",
+   "confirmed": true,
+   "soldout": false,
+   "source": "auto"
+  },
+  {
+   "kind": "trip",
+   "to": "Tenerife",
+   "short": "Tenerife",
+   "operator": "Úrval Útsýn",
+   "agency": "Úrval Útsýn",
+   "start": "2027-01-25",
+   "end": "2027-02-04",
+   "times": "",
+   "price": "Verð á mann frá 157.900 kr.",
+   "note": "",
+   "flag": "🇪🇸",
+   "link": "https://www.uu.is/packages/results.aspx?clp=BEA&destinationID=176137&ages=0505&packageType=packages&originID=181103&endDate=2027-02-04&paxs=22&accion=searchpackages&duration=11&startDate=2027-01-25",
+   "linkText": "Skoða hjá Úrval Útsýn ›",
+   "confirmed": true,
+   "soldout": false,
+   "source": "auto"
+  },
+  {
+   "kind": "trip",
+   "to": "Amsterdam",
+   "short": "Amsterdam",
+   "operator": "Transavia (Verdi Travel)",
+   "agency": "Verdi Travel",
+   "start": "2027-01-30",
+   "end": "2027-03-06",
+   "times": "",
+   "price": "Stök sæti frá 38.900 kr. aðra leið (með tösku og sköttum)",
+   "note": "Vikulega á laugardögum",
+   "flag": "🇳🇱",
+   "link": "https://www.verditravel.is/is/ferdir/amsterdam-vetur-1",
+   "linkText": "Skoða hjá Verdi Travel ›",
+   "confirmed": true,
+   "soldout": false,
+   "source": "auto",
+   "days": [
+    "lau"
+   ],
+   "last": "2027-03-06"
+  },
+  {
+   "kind": "trip",
+   "to": "Kraká",
+   "short": "Kraká",
+   "operator": "Enter Air (Aventura)",
+   "agency": "Aventura",
+   "start": "2027-04-15",
+   "end": "2027-04-18",
+   "times": "",
+   "price": "",
+   "note": "",
+   "flag": "🇵🇱",
+   "link": "https://aventura.is/is/krakaaey",
+   "linkText": "Skoða hjá Aventura ›",
+   "confirmed": true,
+   "soldout": false,
+   "source": "auto"
+  }
+ ],
+ "groups": [
+  {
+   "operator": "Icelandair",
+   "agency": "Aventura",
+   "dests": [
+    "Tenerife"
+   ],
+   "last": "2027-11-02",
+   "soldout": false,
+   "link": "https://aventura.is/is/tenerifeaey",
+   "linkOk": true
+  },
+  {
+   "operator": "easyJet",
+   "agency": "Aventura",
+   "dests": [
+    "London",
+    "Brighton",
+    "Manchester"
+   ],
+   "last": "2027-04-20",
+   "soldout": false,
+   "link": "https://aventura.is/is/beintfraakureyri",
+   "linkOk": true
+  },
+  {
+   "operator": "easyJet",
+   "agency": "Verdi Travel",
+   "dests": [
+    "Liverpool"
+   ],
+   "last": "2027-01-01",
+   "soldout": true,
+   "link": "https://www.verditravel.is/is/ferdir#fra-akureyri",
+   "linkOk": true
+  }
+ ],
+ "packages": [
+  {
+   "operator": "Icelandair",
+   "to": "Tenerife",
+   "agency": "Aventura",
+   "title": "Tenerife – flug og hótel",
+   "dest": "Tenerife",
+   "dates": "Brottfarir 19.10., 26.10. og 2.11.2027 · 7, 14 eða 21 nótt",
+   "first": "2027-10-19",
+   "last": "2027-11-02",
+   "link": "https://aventura.is/is/tenerifeaey",
+   "soldout": false
+  },
+  {
+   "operator": "easyJet",
+   "to": "Manchester",
+   "agency": "Aventura",
+   "title": "Manchester – flug og hótel",
+   "dest": "Manchester",
+   "dates": "Allir flugdagar 16.11.2026 – 22.3.2027",
+   "first": "2026-11-16",
+   "last": "2027-03-22",
+   "link": "https://aventura.is/is/manchesteraey",
+   "soldout": false
+  },
+  {
+   "operator": "easyJet",
+   "to": "London",
+   "agency": "Aventura",
+   "title": "London – flug og hótel",
+   "dest": "London",
+   "dates": "Allir flugdagar 17.11.2026 – 20.4.2027",
+   "first": "2026-11-17",
+   "last": "2027-04-20",
+   "link": "https://aventura.is/is/londonaey",
+   "soldout": false
+  },
+  {
+   "operator": "easyJet",
+   "to": "London",
+   "agency": "Aventura",
+   "title": "Brighton – flug og hótel",
+   "dest": "Brighton",
+   "dates": "Flogið til London · Allir flugdagar 17.11.2026 – 20.4.2027",
+   "first": "2026-11-17",
+   "last": "2027-04-20",
+   "link": "https://aventura.is/is/brightonaey",
+   "soldout": false
+  },
+  {
+   "operator": "easyJet",
+   "to": "Manchester",
+   "agency": "Verdi Travel",
+   "title": "Liverpool - Tottenham",
+   "dest": "Liverpool",
+   "dates": "Flogið til Manchester · 18.–21.12.2026",
+   "first": "2026-12-18",
+   "last": "2026-12-18",
+   "link": "https://www.verditravel.is/is/ferdir/liverpool-tottenham-aey",
+   "soldout": true
+  },
+  {
+   "operator": "easyJet",
+   "to": "Manchester",
+   "agency": "Verdi Travel",
+   "title": "Liverpool - Coventry",
+   "dest": "Liverpool",
+   "dates": "Flogið til Manchester · 1.–4.1.2027",
+   "first": "2027-01-01",
+   "last": "2027-01-01",
+   "link": "https://www.verditravel.is/is/ferdir/liverpool-coventry-aey",
+   "soldout": true
+  }
+ ],
+ "unclear": [
+  "Verdi Travel · Manchester frá Akureyri: engar dagsetningar á síðunni",
+  "Verdi Travel · London frá Akureyri: engar dagsetningar á síðunni",
+  "Verdi Travel · Brighton frá Akureyri: engar dagsetningar á síðunni"
+ ],
+ "skipped": [
+  "Aventura · Portó 30.9.2027: er þegar handskráð í flug.json",
+  "Aventura · Portó 28.10.2027: er þegar handskráð í flug.json",
+  "Tripical · Gdansk 20.11.2026: er þegar handskráð í flug.json"
+ ],
+ "notes": [
+  "Manchester → easyJet Manchester: brottför utan dagatals 24.12.2026"
+ ],
+ "status": {
+  "Aventura": "ok",
+  "Verdi Travel": "ok",
+  "Heimsferðir": "ok",
+  "Úrval Útsýn": "ok",
+  "Kompaníferðir": "ok",
+  "Tripical": "ok",
+  "Atlantis Travel": "ok"
+ }
+}
