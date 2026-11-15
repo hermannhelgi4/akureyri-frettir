@@ -2161,6 +2161,554 @@ def load_flights(today):
     return out
 
 
+# ---------- Ferðir ferðaskrifstofa með beinu flugi frá Akureyri ----------
+# Býr til ferdir.json: {"trips": [...], "packages": [...], "unclear": [...], "skipped": [...]}
+#  - trips: leiguflug ferðaskrifstofu (eigið spjald, sama snið og kind=trip í flug.json)
+#  - packages: pakkaferðir á áætlunarflugi (easyJet, Icelandair o.fl.); birtast undir dagatali þess flugs
+#  - unclear: ekki birt (óljóst hvort áætlunar- eða leiguflug, eða dagsetningar vantar)
+# flug.json (handskráð) er aldrei snert. Ferð sem er þegar handskráð þar er ekki tekin með.
+# Uppselt er aðeins merkt þegar það stendur skýrt á síðu ferðaskrifstofunnar.
+FD_EVERY_HOURS = 3          # lesararnir keyra mest á 3 klst. fresti
+FD_UA = DEEP_UA
+_fd_last = {}
+_fd_pages = {}
+# Yfirlitssíða hverrar ferðaskrifstofu: tengill línunnar þegar hún hefur fleiri en eina ferð með sama flugi.
+# „#fra-akureyri“ hjá Verdi: appið smellir sjálft á síuna „Sérferðir frá Akureyri“ (sían hefur enga eigin slóð).
+FD_OVERVIEW = {"Aventura": "https://aventura.is/is/beintfraakureyri",
+               "Verdi Travel": "https://www.verditravel.is/is/ferdir#fra-akureyri",
+               "Úrval Útsýn": "https://www.uu.is/sol",
+               "Kompaníferðir": "https://kompaniferdir.is/einstaklingsferdir",
+               "Tripical": "https://tripical.is/",
+               "Atlantis Travel": "https://www.atlantistravel.is/",
+               "Heimsferðir": "https://www.heimsferdir.is/content/content.aspx?id=2837916"}
+
+FD_MONTHS = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "maí": 5, "mai": 5, "jún": 6, "jun": 6, "júl": 7, "jul": 7,
+             "ágú": 8, "ág": 8, "agu": 8, "sep": 9, "okt": 10, "nóv": 11, "nov": 11, "des": 12}
+FD_MW = r"(jan\w*|feb\w*|mar\w*|apr\w*|maí|mai|jún\w*|júl\w*|ág\w*|sep\w*|okt\w*|nóv\w*|des\w*)"
+FD_R2 = re.compile(r"(\d{1,2})\.\s*" + FD_MW + r"\.?\s*(20\d\d)?\s*[–\-→]\s*(\d{1,2})\.\s*" + FD_MW + r"\.?\s*(20\d\d)", re.I)
+FD_R1 = re.compile(r"(\d{1,2})\.?\s*[–\-]\s*(\d{1,2})\.\s*" + FD_MW + r"\.?\s*(20\d\d)", re.I)
+FD_RN = re.compile(r"(\d{1,2})\.(\d{1,2})\.(20\d\d)?\s*[–\-]\s*(\d{1,2})\.(\d{1,2})\.(20\d\d)")
+FD_DAYIDX = {"mán": 0, "þri": 1, "mið": 2, "fim": 3, "fös": 4, "lau": 5, "sun": 6}
+# Staðir sem eru flognir um annan flugvöll (pakkaferð á áætlunarflugi þangað)
+FD_VIA = {"brighton": ["london"], "liverpool": ["manchester", "london"], "coventry": ["manchester", "london"]}
+FD_FLAGS = {"krak": "🇵🇱", "gdansk": "🇵🇱", "porto": "🇵🇹", "tenerife": "🇪🇸", "kanar": "🇪🇸", "alicante": "🇪🇸",
+            "valencia": "🇪🇸", "amsterdam": "🇳🇱", "verona": "🇮🇹", "madonna": "🇮🇹", "edinb": "🇬🇧", "london": "🇬🇧",
+            "manchester": "🇬🇧", "vilni": "🇱🇹", "zurich": "🇨🇭", "prag": "🇨🇿", "budapest": "🇭🇺", "riga": "🇱🇻"}
+FD_AIRLINE = re.compile(r"\b(Enter\s?air|Smartwings|Transavia|Neos|Atlantic Airways|Titan Airways|Niceair|Edelweiss|Jet2|Sunclass)\b", re.I)
+
+
+def fd_fetch(url):
+    """Sækir síðu ef robots.txt leyfir og virðir Crawl-delay (minnst 1 sek. milli síðna á sama vef)."""
+    if not allowed(url):
+        raise RuntimeError("robots.txt bannar " + url)
+    u = urlparse(url)
+    rp = _robots.get("%s://%s" % (u.scheme, u.netloc))
+    try:
+        gap = max(1.0, float(rp.crawl_delay("AkureyriFrettir") or 1)) if rp else 1.0
+    except Exception:
+        gap = 1.0
+    wait = _fd_last.get(u.netloc, 0) + gap - time.time()
+    if wait > 0:
+        time.sleep(wait)
+    if url in _fd_pages:
+        return _fd_pages[url]
+    try:
+        with OPENER.open(urllib.request.Request(url, headers=FD_UA), timeout=25) as r:
+            page = r.read(3000000).decode("utf-8", "ignore")
+            _fd_pages[url] = page
+            return page
+    finally:
+        _fd_last[u.netloc] = time.time()
+
+
+def fd_nocomments(s):
+    return re.sub(r"(?s)<!--.*?-->", " ", s)
+
+
+def fd_text(s):
+    s = fd_nocomments(s)
+    s = re.sub(r"(?is)<(script|style|noscript|svg)[^>]*>.*?</\1>", " ", s)
+    s = re.sub(r"(?s)<[^>]+>", "\n", s)
+    s = html.unescape(s).replace("\u00a0", " ")
+    return "\n".join(l.strip() for l in s.split("\n") if l.strip())
+
+
+def fd_month(w):
+    w = w.lower().strip(". ")
+    for k, v in FD_MONTHS.items():
+        if w.startswith(k):
+            return v
+    return None
+
+
+def fd_range(t):
+    """(upphaf, endir) aðeins ef ártal er þekkt, annars None."""
+    from datetime import date as _d
+    t = t.replace("\u00a0", " ")
+    m = FD_R2.search(t)
+    if m:
+        d1, m1, y1, d2, m2, y2 = m.groups()
+        mo1, mo2 = fd_month(m1), fd_month(m2)
+        if mo1 and mo2:
+            y2 = int(y2)
+            y1 = int(y1) if y1 else (y2 - 1 if mo1 > mo2 else y2)
+            return _d(y1, mo1, int(d1)), _d(y2, mo2, int(d2))
+    m = FD_R1.search(t)
+    if m:
+        d1, d2, mw, y = m.groups()
+        mo = fd_month(mw)
+        if mo:
+            return _d(int(y), mo, int(d1)), _d(int(y), mo, int(d2))
+    m = FD_RN.search(t)
+    if m:
+        d1, m1, y1, d2, m2, y2 = m.groups()
+        y2 = int(y2)
+        y1 = int(y1) if y1 else (y2 - 1 if int(m1) > int(m2) else y2)
+        return _d(y1, int(m1), int(d1)), _d(y2, int(m2), int(d2))
+    return None
+
+
+def fd_norm(s):
+    s = (s or "").lower()
+    for a, b in (("ó", "o"), ("á", "a"), ("é", "e"), ("í", "i"), ("ú", "u"), ("ý", "y"), ("ö", "o"), ("ð", "d"),
+                 ("þ", "th"), ("æ", "ae"), ("ń", "n"), ("ü", "u")):
+        s = s.replace(a, b)
+    return s.replace("gatwick", "").replace("kraka", "krakow").strip()
+
+
+def fd_flag(to):
+    n = fd_norm(to)
+    for k, v in FD_FLAGS.items():
+        if k in n:
+            return v
+    return ""
+
+
+def fd_dmy(d):
+    return "%d.%d.%d" % (d.day, d.month, d.year)
+
+
+def fd_dm(d):
+    return "%d.%d." % (d.day, d.month)
+
+
+def fd_mentions(txt):
+    t = txt.lower()
+    return [n for n, k in (("easyJet", "easyjet"), ("Icelandair", "icelandair"), ("áætlunarflug", "áætlunarflug")) if k in t]
+
+
+def fd_airline(txt):
+    m = FD_AIRLINE.search(txt)
+    if not m:
+        return ""
+    a = m.group(1)
+    return {"enterair": "Enter Air", "enter air": "Enter Air", "smartwings": "Smartwings", "transavia": "Transavia"}.get(a.lower(), a)
+
+
+def fd_span(d0, d1):
+    if d0.year == d1.year and d0.month == d1.month:
+        return "%d.–%d.%d.%d" % (d0.day, d1.day, d1.month, d1.year)
+    if d0.year == d1.year:
+        return "%s–%s" % (fd_dm(d0), fd_dmy(d1))
+    return "%s–%s" % (fd_dmy(d0), fd_dmy(d1))
+
+
+def fd_flies(cal, d):
+    return cal["from"] <= d.isoformat() <= cal["until"] and d.weekday() in [FD_DAYIDX[x] for x in cal["days"] if x in FD_DAYIDX]
+
+
+def fd_match(dest, deps, cals, ment=(), notes=None):
+    """Dagatal áætlunarflugs sem passar við áfangastað og brottfarir. Allar brottfarir verða að passa,
+    nema síðan nefni flugfélagið (eða „áætlunarflug“): þá mega ~10% (hátíðarfrávik) vera utan dagatals."""
+    nd = fd_norm(dest)
+    targets = [nd] + FD_VIA.get(nd, [])
+    if not deps:
+        return None, None
+    cand = []
+    for c in cals:
+        cn = fd_norm(c.get("short") or c.get("to"))
+        hit = next((t for t in targets if t and (t in cn or cn in t)), None)
+        if hit:
+            cand.append((c, hit, [d for d in deps if not fd_flies(c, d)]))
+    # 1) dagatal þar sem ALLAR brottfarir passa
+    for c, hit, miss in cand:
+        if not miss:
+            return c, (hit != nd and hit)
+    # 2) síðan nefnir flugfélagið og aðeins örfá frávik (≤10%, minnst 10 brottfarir)
+    for c, hit, miss in cand:
+        if (c["operator"] in ment or "áætlunarflug" in ment) and len(miss) <= len(deps) // 10:
+            if notes is not None:
+                notes.append("%s → %s %s: brottför utan dagatals %s" % (dest, c["operator"], c.get("short"), ", ".join(fd_dmy(d) for d in miss)))
+            return c, (hit != nd and hit)
+    return None, None
+
+
+def fd_nights(ns):
+    ns = sorted(set(ns))
+    word = "nótt" if ns[-1] % 10 == 1 and ns[-1] % 100 != 11 else "nætur"
+    if len(ns) == 1:
+        return "%d %s" % (ns[0], word)
+    return "%s eða %d %s" % (", ".join(map(str, ns[:-1])), ns[-1], word)
+
+
+# --- einstakir lesarar: skila lista af hráum ferðum {agency, to, deps:[(date, nights|None, soldout)], end, link, text, ...}
+def fd_aventura(log):
+    from datetime import date as _d, timedelta as _td
+    base = "https://aventura.is"
+    page = fd_nocomments(fd_fetch(base + "/is/beintfraakureyri"))
+    m = re.search(r'\{"settings":\{"id":\d+.*?\}\}(?=\s*<)', page, re.S)
+    if not m:
+        raise RuntimeError("fann ekki gögn um brottfarir")
+    fd = json.loads(html.unescape(m.group(0)))["form_data"]
+    city = str(fd["cities_from"][0]["cities"][0]["id"])
+    names = {str(d["id"]): d["name"] for lst in fd["destinations"].values() for d in lst}
+    slugs = {}
+    for href in re.findall(r'href="(https://aventura\.is/is/[a-z]+aey)"', page):
+        slugs.setdefault(href.rsplit("/", 1)[1][:-3], href)
+    out = []
+    for did, deps in (fd.get("charter_dates", {}).get(city) or {}).items():
+        name = names.get(did, did)
+        key = fd_norm(name).replace("krakow", "kraka")
+        link = slugs.get(key) or "%s/is/%saey" % (base, key)
+        try:
+            st = fd_text(fd_fetch(link))
+        except Exception as e:
+            log.append("Aventura %s: %s" % (name, e))
+            st = ""
+        lines = st.split("\n")
+        items = []
+        for ds, nights in sorted(deps.items()):
+            d0 = _d.fromisoformat(ds)
+            sold = False
+            for i in range(len(lines)):
+                r = fd_range(" ".join(lines[i:i + 2]))
+                if r and r[0] == d0:
+                    sold = "UPPSELT" in " ".join(lines[i:i + 3]).upper()
+                    break
+            n = sorted(set(nights))
+            items.append((d0, n, sold))
+        dynamic = len(items) > 6
+        out.append({"agency": "Aventura", "to": name, "link": link, "text": st, "airline": fd_airline(st),
+                    "items": items, "dynamic": dynamic,
+                    "title": "%s – flug og hótel" % name})
+    return out
+
+
+def fd_verdi(log):
+    base = "https://www.verditravel.is"
+    page = fd_nocomments(fd_fetch(base + "/is/ferdir"))
+    out = []
+    for m in re.finditer(r'<div class="single__trip[^"]*airport-aey[^"]*"(.*?)(?=<div class="single__trip|$)', page, re.S):
+        block = m.group(1)
+        a = re.search(r'href="(/is/ferdir/[^"]+)"[^>]*>([^<]+)<', block)
+        if not a:
+            continue
+        link, title = urllib.parse.urljoin(base, a.group(1)), html.unescape(a.group(2)).strip()
+        lt = fd_text(block)
+        price = re.search(r"Verð frá\s*\n?\s*([\d.]+)\s*kr", lt)
+        try:
+            st = fd_text(fd_fetch(link))
+        except Exception as e:
+            log.append("Verdi %s: %s" % (title, e))
+            continue
+        head = "\n".join(st.split("\n")[:60])
+        # uppselt: merki á listanum eða rétt við fyrirsögn ferðasíðunnar
+        sold = bool(re.search(r"^Uppselt$", lt, re.M)) or bool(re.search(re.escape(title) + r"\s*\nUppselt\b", head))
+        out.append({"agency": "Verdi Travel", "title": title, "link": link, "text": st, "list": lt,
+                    "soldout": sold, "price": price.group(1) if price else ""})
+    return out
+
+
+def fd_heimsferdir(log):
+    st = fd_text(fd_fetch("https://www.heimsferdir.is/content/content.aspx?id=2837916"))
+    parts = st.split("Frá Akureyri")
+    body = parts[2] if len(parts) > 2 else ""
+    if re.search(r"\d{1,2}\.\s*\w+\s*20\d\d", body):
+        log.append("Heimsferðir: síðan „Frá Akureyri“ er komin með efni – lesarann þarf að klára")
+    return []
+
+
+def fd_uu(log):
+    from datetime import date as _d
+    base = "https://www.uu.is"
+    page = fd_nocomments(fd_fetch(base + "/sol"))
+    out = []
+    for m in re.finditer(r"<article[^>]*>(.*?)</article>", page, re.S):
+        art = m.group(1)
+        a = re.search(r"href='([^']+)'", art) or re.search(r'href="([^"]+)"', art)
+        if not a:
+            continue
+        href = html.unescape(a.group(1))
+        q = urllib.parse.parse_qs(urlparse(href).query)
+        at = fd_text(art)
+        if q.get("originID", [""])[0] != "181103" and "AKUREYRI" not in at.upper():
+            continue
+        try:
+            d0, d1 = _d.fromisoformat(q["startDate"][0]), _d.fromisoformat(q["endDate"][0])
+        except Exception:
+            log.append("Úrval Útsýn: ártal vantar (%s)" % at[:40])
+            continue
+        nm = re.search(r'data-alt="([^"]+)"', art)
+        title = html.unescape(nm.group(1)) if nm else at.split("\n")[0]
+        price = re.search(r"([\d.]+)\s*ISK", at)
+        out.append({"agency": "Úrval Útsýn", "title": title, "to": title.split("-")[-1].strip().title(),
+                    "link": href, "start": d0, "end": d1, "text": at, "soldout": bool(re.search(r"\buppselt\b", at, re.I)),
+                    "price": price.group(1) if price else ""})
+    return out
+
+
+def fd_kompani(log):
+    base = "https://kompaniferdir.is"
+    page = fd_nocomments(fd_fetch(base + "/einstaklingsferdir"))
+    out = []
+    for href in sorted(set(re.findall(r'href="(/einstaklingsferdir/[^"#?]+)"', page))):
+        url = urllib.parse.urljoin(base, href)
+        try:
+            st = fd_text(fd_fetch(url))
+        except Exception as e:
+            log.append("Kompaníferðir %s: %s" % (url, e))
+            continue
+        frm = re.search(r"Flug frá\s*\n\s*([A-Z]{3})", st)
+        sel = st.split("Veldu brottför", 1)[1][:400] if "Veldu brottför" in st else ""
+        dest = re.search(r"Flug til ([A-ZÁÉÍÓÚÞÆÖ][\wáéíóúýþæöð]+) frá Akureyri", st) or \
+            re.search(r"til ([A-ZÁÉÍÓÚÞÆÖ][\wáéíóúýþæöð]+)", st)
+        to = dest.group(1) if dest else st.split("\n")[0].split("|")[0].strip()
+        out.append({"agency": "Kompaníferðir", "title": st.split("\n")[0].split("|")[0].strip(), "to": to, "link": url,
+                    "from": frm.group(1) if frm else "", "range": fd_range(st), "text": st,
+                    "soldout": bool(re.search(r"\buppselt\b", sel, re.I)), "airline": fd_airline(st)})
+    return out
+
+
+def fd_tripical(log):
+    sm = fd_fetch("https://tripical.is/product-sitemap.xml")
+    out = []
+    for u in re.findall(r"<loc>([^<]+)</loc>", sm):
+        if "akureyri" not in u.lower():
+            continue
+        page = fd_fetch(u)
+        st = fd_text(page)
+        if not re.search(r"flug\s+frá\s+akureyri|akureyri\s*[-–]\s*\w+\s+kl\.", st, re.I):
+            continue
+        hotels = re.findall(r"^.+\*{3,5}.*$", st, re.M)
+        sold_h = [h for h in hotels if "UPPSELT" in h.upper()]
+        oos = 'class="stock out-of-stock"' in page
+        title = st.split("\n")[0].split(" - Tripical")[0]
+        to = re.search(r"til ([A-ZÁÉÍÓÚÞÆÖ][\wáéíóúýþæöðńą]+)", title)
+        out.append({"agency": "Tripical", "title": title, "to": to.group(1) if to else title, "link": u,
+                    "range": fd_range(st), "text": st, "airline": fd_airline(st),
+                    "soldout": oos or (bool(hotels) and len(sold_h) == len(hotels))})
+    return out
+
+
+def fd_atlantis(log):
+    base = "https://www.atlantistravel.is"
+    page = fd_nocomments(fd_fetch(base + "/"))
+    out = []
+    for href, label in set(re.findall(r'href="(/[^"#?]+)"[^>]*>\s*([^<]*Akureyri[^<]*)<', page)):
+        url = urllib.parse.urljoin(base, href)
+        st = fd_text(fd_fetch(url))
+        to = re.sub(r"(?i)\s*frá akureyri.*", "", html.unescape(label)).strip()
+        out.append({"agency": "Atlantis Travel", "title": html.unescape(label).strip(), "to": to, "link": url,
+                    "range": fd_range(st), "text": st, "airline": fd_airline(st),
+                    "soldout": bool(re.search(r"^\s*uppselt\s*$", st, re.I | re.M))})
+    return out
+
+
+FD_READERS = [("Aventura", fd_aventura), ("Verdi Travel", fd_verdi), ("Heimsferðir", fd_heimsferdir),
+              ("Úrval Útsýn", fd_uu), ("Kompaníferðir", fd_kompani), ("Tripical", fd_tripical), ("Atlantis Travel", fd_atlantis)]
+
+
+def collect_ferdir(today, force=False):
+    from datetime import timedelta as _td
+    old = _load("ferdir.json", {}) or {}
+    try:
+        age = (datetime.now(timezone.utc) - datetime.fromisoformat(old.get("updated", ""))).total_seconds() / 3600
+    except Exception:
+        age = 999
+    if not force and age < FD_EVERY_HOURS:
+        print("OK Ferðir: nýlega uppfært (%.1f klst.), sleppi" % age)
+        return
+    flights = (_load("flug.json", []) or []) + (_load("flug_nytt.json", []) or [])
+    cals = [f for f in flights if isinstance(f, dict) and f.get("kind") == "weekly" and f.get("confirmed") is True
+            and f.get("from") and f.get("until") and f.get("days")]
+    hand = {(fd_norm(f.get("to")), f.get("start")) for f in flights if isinstance(f, dict) and f.get("kind") == "trip"}
+    trips, packages, unclear, skipped, notes, status = [], [], [], [], [], {}
+    seen = set()
+
+    def add_trip(r, to, d0, d1, sold, airline="", note="", price="", days=None):
+        last = d1 if days else d0     # röð vikulegra fluga: helst inni fram að síðasta flugi
+        if last < today:
+            return
+        if (fd_norm(to), d0.isoformat()) in hand:
+            skipped.append("%s · %s %s: er þegar handskráð í flug.json" % (r["agency"], to, fd_dmy(d0)))
+            return
+        k = (fd_norm(to), d0.isoformat())
+        if k in seen:
+            return
+        seen.add(k)
+        t = {"kind": "trip", "to": to, "short": to, "operator": ("%s (%s)" % (airline, r["agency"])) if airline else r["agency"],
+             "agency": r["agency"], "start": d0.isoformat(), "end": d1.isoformat(), "times": "", "price": price,
+             "note": note, "flag": fd_flag(to), "link": r["link"], "linkText": "Skoða hjá %s ›" % r["agency"],
+             "confirmed": True, "soldout": bool(sold), "source": "auto"}
+        if days:
+            t["days"] = days
+            t["last"] = d1.isoformat()
+        trips.append(t)
+
+    def add_pkg(cal, via, r, title, dates_txt, last, sold, first, dest=None):
+        if last < today:
+            return
+        if via:
+            dates_txt = "Flogið til %s · %s" % (cal.get("short") or cal["to"], dates_txt)
+        packages.append({"operator": cal["operator"], "to": cal.get("short") or cal["to"], "agency": r["agency"],
+                         "title": title, "dest": dest or r.get("to") or title, "dates": dates_txt,
+                         "first": first.isoformat(), "last": last.isoformat(), "link": r["link"], "soldout": bool(sold)})
+
+    def one(r, to, d0, d1, sold, airline="", note="", price="", days=None, title=None):
+        """Ein ferð með upphafs- og lokadegi: pakkaferð ef hún passar við áætlunarflug, annars eigið spjald."""
+        ment = fd_mentions(r.get("text", ""))
+        cal, via = fd_match(to, [d0], cals, ment, notes)
+        if cal:
+            nm = re.sub(r"(?i)\s*frá akureyri\s*$", "", title or r.get("title") or to)
+            add_pkg(cal, via, r, nm, fd_span(d0, d1), d0, sold, d0, to)
+        elif ment:
+            unclear.append("%s · %s %s: nefnir %s en passar ekki við dagatal" % (r["agency"], to, fd_dmy(d0), "/".join(ment)))
+        else:
+            add_trip(r, to, d0, d1, sold, airline, note, price, days)
+
+    for agency, fn in FD_READERS:
+        log = []
+        try:
+            raw = fn(log)
+            status[agency] = "ok"
+        except Exception as e:
+            print("X  Ferðir %s: %s – held síðustu þekktu ferðum" % (agency, e))
+            status[agency] = "villa"
+            for t in old.get("trips", []):
+                if t.get("agency") == agency and (t.get("last") or t.get("start", "")) >= today.isoformat():
+                    trips.append(t)
+            for p in old.get("packages", []):
+                if p.get("agency") == agency and p.get("last", "") >= today.isoformat():
+                    packages.append(p)
+            continue
+        notes.extend(log)
+        for r in raw:
+            try:
+                if agency == "Aventura":
+                    live = [it for it in r["items"] if it[0] >= today]
+                    if not live:
+                        continue
+                    ment = fd_mentions(r["text"])
+                    cal, via = fd_match(r["to"], [it[0] for it in live], cals, ment, notes)
+                    if cal:
+                        open_ = [it for it in live if not it[2]] or live
+                        if r["dynamic"]:
+                            txt = "Allir flugdagar %s – %s" % (fd_dmy(live[0][0]), fd_dmy(live[-1][0]))
+                        else:
+                            ds = [it[0] for it in open_]
+                            dl = ", ".join(fd_dm(d) for d in ds[:-1]) + (" og " if len(ds) > 1 else "") + fd_dmy(ds[-1])
+                            txt = "Brottfarir %s · %s" % (dl, fd_nights([n for it in open_ for n in it[1]]))
+                        add_pkg(cal, via, r, r["title"], txt, live[-1][0], all(it[2] for it in live), live[0][0])
+                    elif ment:
+                        unclear.append("Aventura · %s: síðan nefnir %s en dagsetningar passa ekki við dagatal" % (r["to"], "/".join(ment)))
+                    else:
+                        for d0, ns, sold in live:
+                            if len(ns) != 1:
+                                unclear.append("Aventura · %s %s: margar lengdir en ekkert dagatal passar" % (r["to"], fd_dmy(d0)))
+                                continue
+                            add_trip(r, r["to"], d0, d0 + _td(days=ns[0]), sold, r["airline"])
+                elif agency == "Verdi Travel":
+                    rg = fd_range(r["text"]) or fd_range(r["list"])
+                    to = re.sub(r"(?i)^stök flugsæti\s*-\s*|akureyri\s*-\s*|\s*frá akureyri|\s*vetur\s*\d+", "", r["title"]).strip(" -")
+                    to = re.split(r"\s+[-–]\s+", to)[0].strip()
+                    if not rg:
+                        unclear.append("Verdi Travel · %s: engar dagsetningar á síðunni" % r["title"])
+                        continue
+                    d0, d1 = rg
+                    ment = fd_mentions(r["text"])
+                    weekly = re.search(r"vikulega á (\w+)dögum", r["text"], re.I)
+                    price = ("Stök sæti frá %s kr. aðra leið (með tösku og sköttum)" % r["price"]) if r["price"] and "flugsæti" in r["title"].lower() \
+                        else (("Verð frá %s kr." % r["price"]) if r["price"] else "")
+                    if weekly and not ment:
+                        dayk = weekly.group(1).lower()[:3]
+                        dayk = {"lau": "lau", "sun": "sun", "mán": "mán", "þri": "þri", "mið": "mið", "fim": "fim", "fös": "fös"}.get(dayk, "")
+                        # einstök uppseld flug í röðinni: „<dagur>. <mán>“ og næsta lína „Uppselt“
+                        lines = r["text"].split("\n")
+                        sold_days = []
+                        for i, l in enumerate(lines[:-1]):
+                            mm = re.match(r"^(\d{1,2})\.\s*" + FD_MW + r"\.?$", l, re.I)
+                            if mm and re.match(r"(?i)^uppselt", lines[i + 1]):
+                                sold_days.append("%s. %s" % (mm.group(1), mm.group(2)))
+                        note = "Vikulega á %sdögum" % weekly.group(1).lower()
+                        if sold_days:
+                            note += " · uppselt: " + ", ".join(sorted(set(sold_days)))
+                        add_trip(r, to, d0, d1, r["soldout"], fd_airline(r["text"]), note, price, [dayk] if dayk else None)
+                    else:
+                        one(r, to, d0, d1, r["soldout"], fd_airline(r["text"]), "", price, title=r["title"])
+                elif agency == "Úrval Útsýn":
+                    one(r, r["to"], r["start"], r["end"], r["soldout"], "", "",
+                        ("Verð á mann frá %s kr." % r["price"]) if r["price"] else "", title=r["title"].title())
+                else:  # Kompaníferðir, Tripical, Atlantis
+                    if r.get("from") and r["from"] != "AEY":
+                        continue
+                    if not r["range"]:
+                        unclear.append("%s · %s: ártal vantar" % (agency, r["title"]))
+                        continue
+                    d0, d1 = r["range"]
+                    one(r, r["to"], d0, d1, r["soldout"], r.get("airline", ""), note=r["title"], title=r["title"])
+            except Exception as e:
+                notes.append("%s · %s: villa við flokkun (%s)" % (agency, r.get("title") or r.get("to"), e))
+
+    trips.sort(key=lambda t: (t["soldout"], t["start"]))
+    packages.sort(key=lambda p: (p["operator"], p["soldout"], p["first"]))
+
+    # Ein lína á hverja ferðaskrifstofu og flug: „Aventura · London, Brighton, Manchester ›“
+    groups = []
+    # röð áfangastaða: eftir röð dagatalsins (London, Manchester); staður flogin um flugvöll kemur beint á eftir honum
+    corder = [fd_norm(c.get("short") or c.get("to")) for c in cals]
+    def dkey(p):
+        hub = fd_norm(p["to"])
+        return (corder.index(hub) if hub in corder else 99, fd_norm(p["dest"]) != hub, p["first"])
+    for p in sorted(packages, key=lambda p: (p["operator"], dkey(p))):
+        g = next((g for g in groups if g["operator"] == p["operator"] and g["agency"] == p["agency"]), None)
+        if g is None:
+            g = {"operator": p["operator"], "agency": p["agency"], "dests": [], "_links": [], "_sold": [], "last": p["last"]}
+            groups.append(g)
+        if p["dest"] not in g["dests"]:
+            g["dests"].append(p["dest"])
+        if p["link"] not in g["_links"]:
+            g["_links"].append(p["link"])
+        g["_sold"].append(p["soldout"])
+        g["last"] = max(g["last"], p["last"])
+    for g in groups:
+        links = g.pop("_links")
+        g["soldout"] = all(g.pop("_sold"))
+        if len(links) == 1:
+            g["link"], g["linkOk"] = links[0], True
+            continue
+        ov = FD_OVERVIEW.get(g["agency"], "")
+        ok = False
+        if ov:
+            try:
+                page = fd_nocomments(fd_fetch(ov.split("#")[0]))
+                ok = all((urlparse(l).path or l) in page for l in links)
+            except Exception as e:
+                notes.append("%s: gat ekki sótt yfirlitssíðu (%s)" % (g["agency"], e))
+        if ok:
+            g["link"], g["linkOk"] = ov, True
+        else:
+            g["link"], g["linkOk"] = links[0], False
+            notes.append("SLÓÐ ÓLJÓS: %s · %s (%s) – yfirlitssíðan %s sýnir ekki allar ferðirnar; tengill fer á fyrstu ferðina" % (
+                g["agency"], ", ".join(g["dests"]), g["operator"], ov or "(engin)"))
+    groups.sort(key=lambda g: (g["operator"], g["soldout"], g["agency"]))
+    data = {"updated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "trips": trips, "groups": groups, "packages": packages,
+            "unclear": unclear, "skipped": skipped, "notes": notes, "status": status}
+    with open("ferdir.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=1)
+    print("OK Ferðir: %d spjöld, %d pakkaferðir í %d línum, %d óljóst (%s)" % (
+        len(trips), len(packages), len(groups), len(unclear), ", ".join("%s %s" % kv for kv in status.items())))
+
+
 # ---------- Stöðutöflur ----------
 # Hver tafla: {sport, gender, comp, link, rows:[{n, t, p, w, d, l, g, pts, me}]}  (p=leikir, w=unnir, d=jafntefli, l=töp, g="mörk fyrir-gegn")
 def srow(n, team, p, w, d, l, g, pts):
@@ -3101,6 +3649,10 @@ def main():
     except Exception as e:
         print("X  Flug: villa (%s)" % e)
         flights = []
+    try:
+        collect_ferdir(datetime.now().date())
+    except Exception as e:
+        print("X  Ferðir: óvænt villa (%s)" % e)
     write_html(merged, events, offers, stand, flights, load_weather())
     print("Tími alls: %.0f sek." % (time.time() - t_start))
     print("Búið. %d fréttir í news.json (%d nýjar). Opnaðu index.html til að sjá þær." % (len(merged), new_count))

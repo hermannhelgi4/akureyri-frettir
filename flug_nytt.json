@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "weekly",
+    "to": "Zürich",
+    "short": "Zürich",
+    "operator": "Edelweiss",
+    "days": [
+      "fös"
+    ],
+    "from": "2027-06-18",
+    "until": "2027-08-20",
+    "note": "",
+    "flag": "🇨🇭",
+    "link": "https://booking.flyedelweiss.com/en-ch/search?calendarStart=JUN27&origin1=AEY&destination1=ZRH&origin2=ZRH&destination2=AEY&adult=1",
+    "linkText": "Skoða á flyedelweiss.com ›",
+    "bookRT": "",
+    "bookOW": "",
+    "confirmed": true
+  },
+  {
+    "kind": "weekly",
+    "to": "Tenerife",
+    "short": "Tenerife",
+    "operator": "Icelandair",
+    "days": [
+      "þri"
+    ],
+    "from": "2027-10-19",
+    "until": "2028-04-18",
+    "note": "Áætlunarflug einu sinni í viku. Brottfarartímar og sala eru ekki komin inn.",
+    "flag": "🇪🇸",
+    "link": "https://www.akureyri.net/is/moya/news/aaetlunarflug-naesta-vetur-til-tenerife",
+    "linkText": "Lesa fréttina ›",
+    "bookRT": "",
+    "bookOW": "",
+    "confirmed": true
+  }
+]
