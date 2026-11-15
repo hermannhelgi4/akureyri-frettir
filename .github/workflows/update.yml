@@ -1,9 +1,21 @@
 name: Uppfæra fréttir
+# Nafn keyrslunnar sýnir gerðina („frettir“ eða „allt“); Worker les það til að vita hvenær síðasta fulla keyrsla var
+run-name: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'allt' }}
 
 on:
+  # Varaleið: full keyrsla einu sinni á klst. ef Worker (akureyri-smellir) ræsir ekki
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "7 * * * *"
+  # Worker ræsir á 10 mín. fresti: „frettir“ (hröð, bara fréttir) eða „allt“ (full keyrsla)
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "frettir = bara fréttir (hratt), allt = full keyrsla"
+        type: choice
+        options:
+          - allt
+          - frettir
+        default: allt
 
 permissions:
   contents: write
@@ -17,20 +29,32 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      MODE: ${{ inputs.mode || 'allt' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Sækja fréttir
-        run: python frettir.py
+        run: |
+          if [ "$MODE" = "frettir" ]; then
+            python frettir.py --frettir
+          else
+            python frettir.py
+          fi
       - name: Vista niðurstöðu
         run: |
           git config user.name "frettir-bot"
           git config user.email "actions@users.noreply.github.com"
+          # Hröð keyrsla vistar aðeins ef nýjar fréttir komu (færri Pages-byggingar og minni vöxtur repo-sins)
+          if [ "$MODE" = "frettir" ] && git diff --quiet -- news.json; then
+            echo "Engar nýjar fréttir – ekkert vistað"
+            exit 0
+          fi
           git add -A
           git diff --cached --quiet && exit 0
-          git commit -m "Uppfæra fréttir"
+          git commit -m "Uppfæra fréttir ($MODE)"
           # Ef einhver annar vistaði á meðan: sæki nýjasta, og nýju skrárnar frá okkur vinna ef þær rekast á
           for i in 1 2 3; do
             if git pull --rebase -X theirs && git push; then
