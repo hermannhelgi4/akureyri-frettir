@@ -2173,9 +2173,9 @@ FD_UA = DEEP_UA
 _fd_last = {}
 _fd_pages = {}
 # Yfirlitssíða hverrar ferðaskrifstofu: tengill línunnar þegar hún hefur fleiri en eina ferð með sama flugi.
-# „#fra-akureyri“ hjá Verdi: appið smellir sjálft á síuna „Sérferðir frá Akureyri“ (sían hefur enga eigin slóð).
+# Verdi: „Ferðir í sölu“ (engin tilfærsla; ferðir frá Akureyri eru merktar AEY). Sían „Sérferðir frá Akureyri“ hefur enga eigin slóð.
 FD_OVERVIEW = {"Aventura": "https://aventura.is/is/beintfraakureyri",
-               "Verdi Travel": "https://www.verditravel.is/is/ferdir#fra-akureyri",
+               "Verdi Travel": "https://www.verditravel.is/is/ferdir",
                "Úrval Útsýn": "https://www.uu.is/sol",
                "Kompaníferðir": "https://kompaniferdir.is/einstaklingsferdir",
                "Tripical": "https://tripical.is/",

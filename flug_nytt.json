@@ -1,24 +1,6 @@
 [
   {
     "kind": "weekly",
-    "to": "Zürich",
-    "short": "Zürich",
-    "operator": "Edelweiss",
-    "days": [
-      "fös"
-    ],
-    "from": "2027-06-18",
-    "until": "2027-08-20",
-    "note": "",
-    "flag": "🇨🇭",
-    "link": "https://booking.flyedelweiss.com/en-ch/search?calendarStart=JUN27&origin1=AEY&destination1=ZRH&origin2=ZRH&destination2=AEY&adult=1",
-    "linkText": "Skoða á flyedelweiss.com ›",
-    "bookRT": "",
-    "bookOW": "",
-    "confirmed": true
-  },
-  {
-    "kind": "weekly",
     "to": "Tenerife",
     "short": "Tenerife",
     "operator": "Icelandair",
@@ -31,8 +13,8 @@
     "flag": "🇪🇸",
     "link": "https://www.akureyri.net/is/moya/news/aaetlunarflug-naesta-vetur-til-tenerife",
     "linkText": "Lesa fréttina ›",
-    "bookRT": "",
-    "bookOW": "",
+    "bookRT": "https://booking.icelandair.com/?triptype=return&adt=1&yth=0&chd=0&inf=0&ins=0&legstart1=AEY&legend1=TFS&legdate1={dd}&legstart2=TFS&legend2=AEY&legdate2={rd}&commercialFareFamilie=OWECOEU&points=0&lang=en-US&source_web=www.icelandair.com",
+    "bookOW": "https://booking.icelandair.com/?triptype=oneway&adt=1&yth=0&chd=0&inf=0&ins=0&legstart1=AEY&legend1=TFS&legdate1={dd}&commercialFareFamilie=OWECOEU&points=0&lang=en-US&source_web=www.icelandair.com",
     "confirmed": true
   }
 ]
