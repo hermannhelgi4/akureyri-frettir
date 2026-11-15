@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Sækir fréttir úr RSS-veitum, síar landsmiðla eftir Akureyri og býr til news.json."""
-import json, re, html, time, urllib.parse, urllib.request, urllib.response, urllib.robotparser, urllib.error
+import json, re, html, sys, time, urllib.parse, urllib.request, urllib.response, urllib.robotparser, urllib.error
 from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
@@ -646,6 +646,7 @@ def write_html(items, events=None, offers=None, stand=None, flights=None, weathe
 DEEP_UA = {"User-Agent": "AkureyriFrettir/0.1 (+https://github.com/hermannhelgi4/akureyri-frettir)"}
 DEEP_KEYWORDS = [k for k in KEYWORDS if k != "samherj"]  # Samherji kemur oft fyrir í fréttum sem eru ekki um Akureyri
 DEEP_BUDGET = 200  # mest svo margar fréttasíður sóttar í hverri keyrslu
+DEEP_BUDGET_FAST = 60  # í hraðri keyrslu (--frettir)
 _robots = {}
 
 
@@ -3417,37 +3418,11 @@ def kind_default(e):
     return "Tónlist"
 
 
-def bli_probe():
-    """TÍMABUNDIÐ: kannar hvernig DataProject sýnir stöðu blakleikja í beinni. Prentar stutt yfirlit í logginn (merkt PROBE)."""
-    base = BLI_BASE + "CompetitionMatches.aspx?ID=142&PID=209"
-    page = fetch_page(base)
-    links = []
-    for m in re.finditer(r'href="([^"]*(?:MatchStatistics|LiveScore|MatchDetail|Live)[^"]*)"', page, re.I):
-        u = urljoin(BLI_BASE, html.unescape(m.group(1)))
-        if u not in links:
-            links.append(u)
-    print("PROBE blak: %d stafir á mótasíðu, %d tenglar á leiki, dæmi: %s" % (len(page), len(links), [x[:170] for x in links[:4]]))
-    live = re.findall(r'.{0,160}(?:í gangi|In progress|LIVE|live).{0,160}', page, re.I | re.S)
-    print("PROBE blak „í gangi“ á mótasíðu: %r" % [re.sub(r"\s+", " ", x)[:260] for x in live[:3]])
-    for u in links[:2]:
-        try:
-            t = fetch_page(u)
-        except Exception as e:
-            print("PROBE blak %s: tókst ekki (%s)" % (u[:120], e))
-            continue
-        ids = re.findall(r'<(?:span|div|td)[^>]*\bid="([^"]*)"[^>]*>\s*(\d{1,3}|[A-Za-zÀ-ÿ ]{2,20})\s*<', t)
-        sc = [x[:80] for x in re.findall(r"<script[^>]+src=[\"']([^\"']+)", t) if re.search(r"signalr|live|hub|socket|score", x, re.I)]
-        hint = re.findall(r".{0,80}(?:signalr|WebSocket|\.asmx|WebMethod|setInterval|Timer1|hub).{0,120}", t, re.I)
-        print("PROBE blak leikur %s: %d stafir, reitir=%s" % (u[-90:], len(t), [ "%s=%s" % (a[-40:], b) for a, b in ids[:40]]))
-        print("PROBE blak leikur forskriftir=%s vísbendingar=%s" % (sc[:6], [re.sub(r"\s+", " ", h)[:200] for h in hint[:5]]))
-
-
 def main():
+    # --frettir: hröð keyrsla (á ~10 mín. fresti) – aðeins fréttir; viðburðir, töflur, ferðir o.fl. eru sótt í fullri keyrslu (á klst. fresti)
+    fast = "--frettir" in sys.argv
     t_start = time.time()
-    try:
-        bli_probe()
-    except Exception as e:
-        print("PROBE blak villa: %s" % e)
+    print("Keyrsla: %s" % ("HRÖÐ (bara fréttir)" if fast else "FULL"))
     try:  # fyrri fréttir eru geymdar svo landsmiðlafréttir um Akureyri hverfi ekki
         with open("news.json", encoding="utf-8") as f:
             old = json.load(f)
@@ -3463,7 +3438,7 @@ def main():
             checked = json.load(f)
     except Exception:
         checked = {}
-    budget = DEEP_BUDGET
+    budget0 = budget = DEEP_BUDGET_FAST if fast else DEEP_BUDGET
     unreadable = 0
 
     nonlocal_sources = {f["name"] for f in FEEDS if not f["local"]}
@@ -3580,7 +3555,7 @@ def main():
 
     with open("athugad.json", "w", encoding="utf-8") as f:
         json.dump(dict(list(checked.items())[-4000:]), f, ensure_ascii=False)
-    print("Yfirlestur: %d síður lesnar núna, %d niðurstöður í minni." % (DEEP_BUDGET - budget, len(checked)))
+    print("Yfirlestur: %d síður lesnar núna, %d niðurstöður í minni." % (budget0 - budget, len(checked)))
 
     merged, per_source = [], {}
     age_cut = (date.today() - timedelta(days=MAX_AGE_DAYS)).isoformat()
@@ -3616,8 +3591,35 @@ def main():
         print("Tvítekningar: %d fréttir sama miðils með sömu fyrirsögn/slóð fjarlægðar" % dup_removed)
     for i in merged:
         i["cats"] = news_cats(i)
-    with open("news.json", "w", encoding="utf-8") as f:
-        json.dump(merged, f, ensure_ascii=False, indent=2)
+    new_json = json.dumps(merged, ensure_ascii=False, indent=2)
+    try:
+        with open("news.json", encoding="utf-8") as f:
+            changed = f.read() != new_json
+    except Exception:
+        changed = True
+    if changed:
+        with open("news.json", "w", encoding="utf-8") as f:
+            f.write(new_json)
+    print("news.json: %s" % ("BREYTT" if changed else "óbreytt (engar nýjar fréttir)"))
+
+    if fast:
+        # Vefsíðan fær nýju fréttirnar; annað efni kemur úr vistuðum skrám (engar nýjar fyrirspurnir).
+        # LOGOS fyllist annars aðeins þegar leikir eru sóttir – án þessa myndi logos.json tapa merkjum liðanna.
+        LOGOS.update(_load("logos.json", {}) or {})
+        today = datetime.now().date()
+        try:
+            offers = load_offers(today)
+        except Exception:
+            offers = []
+        try:
+            flights = load_flights(today)
+        except Exception:
+            flights = []
+        write_html(merged, _load("events.json", []), offers, _load("standings.json", []), flights, _load("weather.json", None))
+        print("Tími alls: %.0f sek." % (time.time() - t_start))
+        print("Búið (hröð keyrsla). %d fréttir í news.json (%d nýjar)." % (len(merged), new_count))
+        return
+
     def timed(name, fn):
         t0 = time.time()
         try:
