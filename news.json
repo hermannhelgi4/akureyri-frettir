@@ -1,5 +1,42 @@
 [
   {
+    "title": "Söngurinn er stóra áhugamálið",
+    "link": "https://www.vikubladid.is/is/moya/news/songurinn-er-stora-ahugamalid",
+    "summary": "Ólafur Árni Haraldsson kom, sá og sigraði í Sturtuhausnum – söngkeppni VMA sl. fimmtudagskvöld. Hann söng hið sígilda og gullfallega lag My way, sem óhætt er að segja að hafi verið einskonar einkennislag Frank Sinatra.",
+    "date": "2026-11-16T15:35:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/olafur-arni-haraldsson.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Kveðja Þór/KA og horfa til framtíðar",
+    "link": "https://www.mbl.is/sport/efstadeild/2026/11/16/kvedja_thor_ka_og_horfa_til_framtidar/",
+    "summary": "Þór boðar áframhaldandi uppbyggingu í kvennaknattspyrnu og óskar eftir fólki til að taka þátt í starfinu þegar félagið undirbýr nýtt upphaf undir eigin merkjum.",
+    "date": "2026-11-16T15:30:00+00:00",
+    "image": "https://c.arvakur.is/frimg/1/69/26/1692603A.jpg",
+    "source": "mbl.is",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Jólailmur í Hofi á sunnudaginn",
+    "link": "https://kaffid.is/jolailmur-i-hofi-a-sunnudaginn/",
+    "summary": "Vinsæli jólamarkaðurinn Jólailmur verður haldinn í Hofi á Akureyri næstkomandi sunnudag, 22. nóvember, frá klukkan 12 til 19. Rúmlega 30 […]",
+    "date": "2026-11-16T14:59:29+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/11/hof.jpg",
+    "source": "Kaffið",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Sveitarstjórn Svalbarðsstrandarhrepps mótmælir breytingum á Loftbrú",
     "link": "https://kaffid.is/sveitarstjorn-svalbardsstrandarhrepps-motmaelir-breytingum-a-loftbru/",
     "summary": "Sveitarstjórn Svalbarðsstrandarhrepps hefur lýst yfir miklum áhyggjum af fyrirhuguðum breytingum á Loftbrú og skorar á stjórnvöld að endurskoða breytingarnar og […]",
@@ -49,7 +86,7 @@
     ]
   },
   {
-    "title": "Svalbarðsstrandarhreppur takur þátt í verðstöðugleika",
+    "title": "Svalbarðsstrandarhreppur tekur þátt í verðstöðugleika",
     "link": "https://www.svalbardsstrond.is/is/mannlifid/frettir/svalbardsstrandarhreppur-takur-thatt-i-verdstodugleika",
     "summary": "Fjárhagsáætlun Svalbarðsstrandarhrepps fyrir árið 2027, ásamt þriggja ára áætlun fyrir árin 2028–2030",
     "date": "2026-11-16T13:14:00+00:00",
@@ -1754,18 +1791,6 @@
     ]
   },
   {
-    "title": "Allar snjóbyssur komnar í gang í Hlíðarfjalli",
-    "link": "https://kaffid.is/allar-snjobyssur-komnar-i-gang-i-hlidarfjalli/",
-    "summary": "Allar sjóframleiðslubyssur eru nú komnar í gang í Hlíðarfjalli. Í vikunni hefur kólnað í fjallinu eftir hlýindatíð og útlit er […]",
-    "date": "2026-11-12T07:32:43+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2026/11/904030177_1447494210920898_8189287865711677091_n.jpg",
-    "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Sturtuhausinn í kvöld",
     "link": "https://www.vma.is/is/skolinn/frettir/sturtuhausinn-i-kvold-3",
     "summary": "Sturtuhausinn",
@@ -2115,18 +2140,6 @@
     "summary": "Njáll Trausti Friðbertsson, þingmaður Norðausturkjördæmis, segir mikilvægt að koma á reglulegu áætlunarflugi milli Akureyrar og Kaupmannahafnar. Hann telur slíkt flug geta haft veruleg áhrif á byggðaþróun, atvinnulíf og uppbyggingu heilsársferðaþjónustu á Norður- og Austurlandi. Í Facebookfærslu ger",
     "date": "2026-11-10T16:32:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/1794328725_njalli.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Sviðsstjóri umhverfis- og mannvirkjasviðs Akureyrarbæjar. Böðvar Þórir Kristjánsson ráðinn",
-    "link": "https://www.vikubladid.is/is/moya/news/svidsstjori-umhverfis-og-mannvirkjasvids-akureyrarbaejar-bodvar-thorir-kristjansson-radinn",
-    "summary": "Böðvar Þórir Kristjánsson hefur verið ráðinn sviðsstjóri umhverfis- og mannvirkjasviðs Akureyrarbæjar.",
-    "date": "2026-11-10T16:22:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/bodvar.png",
     "source": "Vikudagur",
     "category": "Fréttamiðlar",
     "cats": [
@@ -4401,19 +4414,6 @@
     "summary": "Lokaumferð Bestu deildar karla í fótbolta verður í beinni textalýsingu hér á mbl.is þar sem fylgst verður með gangi mála í fimm leikjum sem hefjast kl. 14.",
     "date": "2026-10-24T14:42:00+00:00",
     "image": "https://c.arvakur.is/frimg/1/68/68/1686830A.jpg",
-    "source": "mbl.is",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Beint: Þórsarar í vondum málum",
-    "link": "https://www.mbl.is/sport/efstadeild/2026/10/24/beint_thorsarar_i_vondum_malum/",
-    "summary": "Lokaumferð Bestu deildar karla í fótbolta verður í beinni textalýsingu hér á mbl.is þar sem fylgst verður með gangi mála í fimm leikjum sem hefjast kl. 14.",
-    "date": "2026-10-24T14:10:00+00:00",
-    "image": "https://c.arvakur.is/frimg/1/67/85/1678582A.jpg",
     "source": "mbl.is",
     "category": "Fréttamiðlar",
     "cats": [
