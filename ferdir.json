@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T16:54:10+00:00",
+ "updated": "2026-11-16T20:23:14+00:00",
  "trips": [
   {
    "kind": "trip",
@@ -28,7 +28,7 @@
    "start": "2027-01-25",
    "end": "2027-02-04",
    "times": "",
-   "price": "Verð á mann frá 157.900 kr.",
+   "price": "Verð á mann frá 175.900 kr.",
    "note": "",
    "flag": "🇪🇸",
    "link": "https://www.uu.is/packages/results.aspx?clp=BEA&destinationID=176137&ages=0505&packageType=packages&originID=181103&endDate=2027-02-04&paxs=22&accion=searchpackages&duration=11&startDate=2027-01-25",
