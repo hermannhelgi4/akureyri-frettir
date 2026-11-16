@@ -1,22 +1,5 @@
 [
   {
-    "title": "Vestri – KA",
-    "source": "Íþróttir",
-    "sport": "Blak",
-    "gender": "Karlar",
-    "link": "https://bli-web.dataproject.com/CompetitionMatches.aspx?ID=142&PID=209",
-    "start": "2026-10-25",
-    "end": "2026-10-25",
-    "time": "13:00",
-    "image": null,
-    "note": "Útileikur · Unbrokendeild karla · Íþróttahúsið Torfnesi",
-    "teams": [
-      "KA"
-    ],
-    "res": "3–2",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Afturelding – Þór",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -2220,7 +2203,7 @@
     "start": "2027-02-12",
     "end": "2027-02-12",
     "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1793699145.png?v=1794610042",
+    "image": "https://www.mak.is/static/calendar/images/submit_1793699145.png?v=1794783229",
     "note": "Frá 8.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
@@ -3211,7 +3194,7 @@
     "start": "2027-04-03",
     "end": "2027-04-03",
     "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1794411799.png?v=1794610042",
+    "image": "https://www.mak.is/static/calendar/images/submit_1794411799.png?v=1794783229",
     "note": "Frá 9.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
@@ -3389,7 +3372,7 @@
     "start": "2027-09-18",
     "end": "2027-09-18",
     "time": "21:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1793871607.png?v=1794610042",
+    "image": "https://www.mak.is/static/calendar/images/submit_1793871607.png?v=1794783229",
     "note": "Frá 11.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
