@@ -1,5 +1,17 @@
 [
   {
+    "title": "Námskeið fyrir foreldra með flóttabakgrunn",
+    "link": "https://www.akureyri.is/namskeid-fyrir-foreldra-med-flottabakgrunn",
+    "summary": "MindSpring er jafningjafræðsla að danskri fyrirmynd fyrir foreldra og miðar að því að veita þeim fræðslu og stuðning við að ala upp börn í nýju landi.",
+    "date": "2026-11-16T10:56:47+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/mindspring-2000x1500.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Dagur íslenskrar tungu Jónasarljóð í Jónasarlaug á Þelamörk",
     "link": "https://www.vikubladid.is/is/moya/news/dagur-islenskrar-tungu-jonasarljod-i-jonasarlaug-a-thelamork-1",
     "summary": "Á degi íslenskrar tungu í dag mánudaginn 16. nóvember kl. 18:00, flytur Kór Möðruvallaklaustursprestakalls valin lög við ljóð Jónasar Hallgrímssonar og færir þannig ljóðskáldið okkar góða inn í sundlaugina sem ber nafn hans. Stjórnandi kórsins er Sigrún Magna Þórsteinsdóttir.",
@@ -5041,18 +5053,6 @@
     "image": "https://www.listak.is/static/news/thumb_845881247_2132676030952492_5696109457064978134_n.png.jpeg",
     "source": "Listasafnið á Akureyri",
     "category": "Menning",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Akureyrarbær hlýtur viðurkenningu Jafnvægisvogarinnar 2026",
-    "link": "https://www.akureyri.is/akureyrarbaer-hlytur-vidurkenningu-jafnvaegisvogarinnar-2026",
-    "summary": "Akureyrarbær hefur hlotið viðurkenningu Jafnvægisvogarinnar 2026 fyrir að hafa náð markmiði um kynjajafnvægi í efsta stjórnendalagi.",
-    "date": "2026-10-16T09:30:00+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/jafnvaegisvogin-700x360.jpg",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
     "cats": [
       "Bærinn"
     ]
