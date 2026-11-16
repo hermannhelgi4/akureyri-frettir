@@ -1,5 +1,17 @@
 [
   {
+    "title": "Söngurinn er stóra áhugamálið",
+    "link": "https://www.vma.is/is/skolinn/frettir/songurinn-er-stora-ahugamalid",
+    "summary": "Ólafur Árni",
+    "date": "2026-11-16T07:00:00+00:00",
+    "image": "https://www.vma.is/static/news/sm/olafur-arni-haraldsson.jpg",
+    "source": "VMA",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Sjö frá 600 MMA tóku þátt í RVK Open 4",
     "link": "https://www.akureyri.net/is/moya/news/sjo-fra-600-mma-toku-thatt-i-rvk-open-4",
     "summary": "Nýr bardagaíþróttaklúbbur á Akureyri, 600 MMA, tók þátt í RVK Open 4 sem fram fór í Reykjavík nýlega, þar sem keppt var í brasilísku jiu jitsu. Alls tóku um 60 keppendur þátt í mótinu og sendi 600 MMA sjö keppendur til leiks. Sex af keppendunum sjö ...",
@@ -5340,18 +5352,6 @@
     "date": "2026-10-09T10:00:00+00:00",
     "image": "https://www.unak.is/static/news/sm/unak_-uplift-verkefni-rmf.png",
     "source": "Háskólinn á Akureyri",
-    "category": "Menntun",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Í námi í VMA og spilar með KA og þremur yngri landsliðum í blaki",
-    "link": "https://www.vma.is/is/skolinn/frettir/i-nami-i-vma-og-spilar-med-ka-og-thremur-yngri-landslidum-i-blaki",
-    "summary": "Inga Björg",
-    "date": "2026-10-09T07:00:00+00:00",
-    "image": "https://www.vma.is/static/news/sm/836221671_1672089607803210_4138726047253338545_n.jpg",
-    "source": "VMA",
     "category": "Menntun",
     "cats": [
       "Bærinn"
