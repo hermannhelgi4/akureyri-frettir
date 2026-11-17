@@ -1,5 +1,17 @@
 [
   {
+    "title": "Jólin koma á Ráðhústorg",
+    "link": "https://www.akureyri.is/jolin-koma-a-radhustorg",
+    "summary": "Laugardaginn 21. nóvember verða ljósin tendruð á jólatrénu á Ráðhústorgi. Jólasveinar stíga á stokk, Barnakórar Akureyrarkirkju syngja og ævintýrapersónur úr veröld leikhússins bregða á leik.",
+    "date": "2026-11-17T14:50:29+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/jolatred-a-radhustorgi-1536x1588.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Draga erlent flutningaskip til Akureyrarhafnar",
     "link": "https://www.visir.is/g/20262964458d/draga-erlent-flutningaskip-til-akureyrarhafnar",
     "summary": "Áhöfn varðskipsins Freyju vinnur nú að því að draga erlent flutningaskip til hafnar á Akureyri eftir að stýrisbilun kom upp í skipinu um 210 sjómílur austnorðaustur af Langanesi.",
@@ -4876,18 +4888,6 @@
     "image": "https://www.listak.is/static/news/thumb_dst_6746.jpg",
     "source": "Listasafnið á Akureyri",
     "category": "Menning",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Velferðarráð auglýsir styrki til úthlutunar",
-    "link": "https://www.akureyri.is/velferdarrad-auglysir-styrki-til-uthlutunar-1",
-    "summary": "Velferðarráð Akureyrarbæjar úthlutar styrkjum til starfsemi og þjónustu, sem fellur að hlutverkum þess, einu sinni á ári.",
-    "date": "2026-10-20T11:04:25+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/akureyri-9-2000x1333.jpg",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
     "cats": [
       "Bærinn"
     ]
