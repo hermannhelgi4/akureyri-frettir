@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T03:47:32+00:00",
+ "updated": "2026-11-17T07:43:11+00:00",
  "trips": [
   {
    "kind": "trip",
@@ -196,8 +196,7 @@
  ],
  "skipped": [
   "Aventura · Portó 30.9.2027: er þegar handskráð í flug.json",
-  "Aventura · Portó 28.10.2027: er þegar handskráð í flug.json",
-  "Tripical · Gdansk 20.11.2026: er þegar handskráð í flug.json"
+  "Aventura · Portó 28.10.2027: er þegar handskráð í flug.json"
  ],
  "notes": [
   "Manchester → easyJet Manchester: brottför utan dagatals 24.12.2026"
