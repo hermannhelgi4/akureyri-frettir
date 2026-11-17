@@ -1,5 +1,54 @@
 [
   {
+    "title": "Hlýlegar skáldsögur um mannleg samskipti",
+    "link": "https://www.akureyri.net/is/moya/news/hlylegar-skaldsogur-um-mannleg-samskipti",
+    "summary": "",
+    "date": "2026-11-17T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/97-dagny.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Þór tekur á móti B-liði Keflavíkur í kvöld",
+    "link": "https://www.akureyri.net/is/moya/news/i-vinnslu-ithrottir-1711",
+    "summary": "Í næstefstu deild Íslandsmóts kvenna í körfubolta, Bæjarins beztu deildinni eins og hún nefnist, tefla tvö Suðurnesjafélög fram b-liðum sínum. Kvennalið Þórs tekur á móti öðru þeirra, B-liði Keflvíkinga, í kvöld. Þór hefur unnið fjóra af fimm fyrstu...",
+    "date": "2026-11-17T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/kv-heima-kvk-3249.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Gott jafnvægi mikilvægur hluti af líkamlegri getu",
+    "link": "https://www.akureyri.net/is/moya/news/gott-jafnvaegi-mikilvaegur-hluti-af-likamlegri-getu",
+    "summary": "„Hvenær prófaðir þú síðast að standa á öðrum fæti? Eða ganga eftir ójöfnu undirlagi án þess að þurfa að horfa stöðugt niður fyrir þig?“ Þannig hefst heilsupistill Guðrúnar Arngrímsdóttur sem akureyri.net birtir í dag. Hún heldur áfram: „Við h...",
+    "date": "2026-11-17T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1794823296_tilvisun-gudrun.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Hvernig er jafnvægið?",
+    "link": "https://www.akureyri.net/is/moya/news/hvernig-er-jafnvaegid",
+    "summary": "Guðrún Arngrímsdóttir",
+    "date": "2026-11-17T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1794823102_1-pistill-gudrun.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Sýnir lífið í Grímsey á veggjum Hérna",
     "link": "https://www.mbl.is/frettir/innlent/2026/11/16/synir_lifid_i_grimsey_a_veggjum_herna/",
     "summary": "Ljósmyndir frá Grímsey eftir Ítalann Leonardo Piccione prýða nú veggi kaffihússins Hérna á Húsavík.",
@@ -1167,18 +1216,6 @@
     ]
   },
   {
-    "title": "Jólahlaðborð að hefjast – verð frá 4900 krónum",
-    "link": "https://www.akureyri.net/is/moya/news/jolahladbord-ad-hefjast-verd-fra-10990-kronum",
-    "summary": "Jólahlaðborðstímabilið er að ganga í garð á Akureyri og á næstu vikum munu veitingastaðir bæjarins bjóða gestum upp á hefðbundnar jólakræsingar. Verðið er nokkuð mismunandi milli staða og hefur bæði hækkað og lækkað frá síðustu jólum. Jólahlaðborðin...",
-    "date": "2026-11-13T16:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/57-dc8a4294-1.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Fundur í bæjarstjórn 17. nóvember 2026",
     "link": "https://www.akureyri.is/fundur-i-baejarstjorn-17-november-2026",
     "summary": "Bæjarstjórn Akureyrar kemur saman til fundar þriðjudaginn 17. nóvember næstkomandi klukkan 16:00.",
@@ -1252,19 +1289,6 @@
     "cats": [
       "Fréttir",
       "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Túfa þjálfar KA og samið við Hansen",
-    "link": "https://www.akureyri.net/is/moya/news/tufa-thjalfar-ka-og-samid-vid-hansen",
-    "summary": "Srdjan Tufegdzic hefur verið ráðinn þjálfari karlaliðs KA í knattspyrnu á ný. Ráðning hans var tilkynnt í hádeginu og þá var einnig greint frá því að KA hefur samið við danska framherjann Nikolaj Hansen, sigursælasta erlenda leikmann sem spilað hefur...",
-    "date": "2026-11-13T12:20:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/tufa-niko.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
     ]
   },
   {
@@ -1534,18 +1558,6 @@
     ]
   },
   {
-    "title": "Heimsóknir rúmlega tvöfaldast á einu ári",
-    "link": "https://www.akureyri.net/is/moya/news/heimsoknir-rumlega-tvofaldast-a-einu-ari",
-    "summary": "Í dag eru sex ár síðan frétta- og mannlífsvefurinn akureyri.net var endurreistur af núverandi eigendum. Vefurinn hefur vaxið og dafnað síðan, síðasta árið hefur lesendum fjölgað gríðarlega og aðsókn á þessu ári verið með hreinum ólíkindum. „Ein...",
-    "date": "2026-11-13T06:45:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/ak-net-met-2.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Grunnskóli Fjallabyggðar innleiðir Heillaspor",
     "link": "https://trolli.is/grunnskoli-fjallabyggdar-innleidir-heillaspor/",
     "summary": "Grunnskóli Fjallabyggðar hefur hafið innleiðingu á Heillasporum, sem miða að því að efla vellíðan nemenda, styrkja tengsl og skapa öruggt og hlýlegt skólaumhverfi þar sem allir fá tækifæri til að njóta sín. Fram kemur á vef Fjallabyggðar að Heillaspor byggist á hugmyndafræði sem leggur áherslu á öry",
@@ -1556,18 +1568,6 @@
     "cats": [
       "Fréttir",
       "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Veðurviðvörun vegna norðanstórhríðar",
-    "link": "https://www.akureyri.net/is/moya/news/vedurvidvorun-vegna-nordanstorhridar-1",
-    "summary": "Veðurstofa Íslands hefur gefið út gular og appelsínugular veðurviðvaranir fyrir norðanvert landið og hálendið, vegna mikillar snjókomu og skafrennings. Gul viðvörun tekur gildi fyrir Norðurland eystra kl. 12 á hádegi í dag, föstudag, breytist síðan í...",
-    "date": "2026-11-13T06:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/1794550974_vedur2.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
