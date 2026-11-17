@@ -1527,6 +1527,19 @@
     "kind": "Tónlist"
   },
   {
+    "title": "Drag Show Akureyri",
+    "source": "Miðasala",
+    "site": "Midix",
+    "link": "https://www.midix.is/is/drag-show-akureyri-19-dec-2026/eid/1299",
+    "start": "2026-12-19",
+    "end": "2026-12-19",
+    "time": "21:00",
+    "image": "https://www.midix.is/storage/event/poster/main/7i4nW2m4qDrbXEfPEsmZixjLAapqRz-metaRHJhZyBTaG93X0FrdXJleXJpX1htYXNfNDY2WDU0NS5qcGc=-.jpg",
+    "note": "Nýtt · 3.900 kr.",
+    "venue": "Múlaberg",
+    "kind": "Tónlist"
+  },
+  {
     "title": "Killer Queen",
     "source": "Græni hatturinn",
     "link": "https://www.graenihatturinn.is/is/killer-queen-26-dec-2026/eid/297",
@@ -1856,7 +1869,7 @@
     "start": "2027-01-15",
     "end": "2027-01-15",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/x8VqBvTnR1mBb4wv1S6Qn6D1qBuTk4-metaw5psZnVyIMO6bGZ1ciAyNy5qcGc=-.jpg",
+    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/x8VqBvTnR1mBb4wv1S6Qn6D1qBuTk4-metaw5psZnVyIMO6bGZ1ciAyNy5qcGc=-.webp",
     "note": "Nýtt · Frá 7.900 kr.",
     "kind": "Tónlist"
   },
@@ -1867,7 +1880,7 @@
     "start": "2027-01-16",
     "end": "2027-01-16",
     "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/Y0rQutJCqm0qjm2KbNiwQxqHBRyDAT-metaw5psZnVyIMO6bGZ1ciAyNy5qcGc=-.jpg",
+    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/Y0rQutJCqm0qjm2KbNiwQxqHBRyDAT-metaw5psZnVyIMO6bGZ1ciAyNy5qcGc=-.webp",
     "note": "Nýtt · Frá 7.900 kr.",
     "kind": "Tónlist"
   },
