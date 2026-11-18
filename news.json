@@ -1,5 +1,17 @@
 [
   {
+    "title": "Neyðarstjórn í viðbragðsstöðu vegna hitaveitu",
+    "link": "https://www.akureyri.is/neydarstjorn-i-vidbragdsstodu-vegna-hitaveitu",
+    "summary": "Unnið hefur verið að því að bæta stöðuna og heldur sú vinna áfram eins lengi og þarf. Staðan er viðkvæm og lítið má út af bregða.",
+    "date": "2026-11-18T13:21:42+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/kalt-1920x1440.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Seiglusigur Þórs á B-liði Keflvíkinga",
     "link": "https://www.akureyri.net/is/moya/news/seiglusigur-thors-a-b-lidi-keflvikinga",
     "summary": "Kvennalið Þórs í körfuknattleik vann nauman seiglusigur á B-liði Keflvíkinga í næstefstu deild kvenna, Bæjarins beztu deildinni, í gærkvöld. Lokatölur urðu 82-75 og fimmti sigur Þórs í sex leikjum í höfn. Villuvandræði Keflvíkinga ásamt seiglu og bar...",
@@ -15,7 +27,7 @@
   {
     "title": "Alþjóðaforseti Lions heimsótti Akureyri",
     "link": "https://www.akureyri.net/is/moya/news/althjodaforseti-lions-heimsotti-akureyri",
-    "summary": "Bandaríkjamaðurinn Mark S. Lyon, alþjóðaforseti Lionshreyfingarinnar, sótti Akureyri heim á dögunum ásamt eiginkonu sinni Lyn Lyon. Þau stöldruðu við á Íslandi á leið sinni frá París vestur um haf, og vörðu nær öllum tímanum, tveimur dögum, á Akureyr...",
+    "summary": "Bandaríkjamaðurinn Mark S. Lyon, alþjóðaforseti Lionshreyfingarinnar, sótti Akureyri heim á dögunum ásamt eiginkonu sinni Lyn Lyon. Þau stöldruðu við á Íslandi á leið sinni frá París vestur um haf, og vörðu nær öllum tímanum á Akureyri; dvöldu þar í ...",
     "date": "2026-11-18T13:00:00+00:00",
     "image": "https://www.akureyri.net/static/news/sm/lions-forseti_0g7a2684.jpg",
     "source": "Akureyri.net",
@@ -4848,18 +4860,6 @@
     "image": "https://www.unak.is/static/news/sm/ashani-doktorsvorn.jpg",
     "source": "Háskólinn á Akureyri",
     "category": "Menntun",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Góð staða í leikskólamálum á Akureyri",
-    "link": "https://www.akureyri.is/god-stada-i-leikskolamalum-a-akureyri",
-    "summary": "Vel gengur að útvega börnum leikskólapláss hjá Akureyrarbæ en aðeins eitt barn sem náð hefur innritunaraldri er nú á biðlista.",
-    "date": "2026-10-20T15:29:45+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/leikskoli-851x315.png",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
     "cats": [
       "Bærinn"
     ]
