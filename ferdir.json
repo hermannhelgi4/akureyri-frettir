@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T22:16:11+00:00",
+ "updated": "2026-11-18T02:13:40+00:00",
  "trips": [
   {
    "kind": "trip",
@@ -130,12 +130,24 @@
   },
   {
    "operator": "easyJet",
+   "to": "Manchester",
+   "agency": "Aventura",
+   "title": "Manchester – flug og hótel",
+   "dest": "Manchester",
+   "dates": "Allir flugdagar 20.11.2026 – 22.3.2027",
+   "first": "2026-11-20",
+   "last": "2027-03-22",
+   "link": "https://aventura.is/is/manchesteraey",
+   "soldout": false
+  },
+  {
+   "operator": "easyJet",
    "to": "London",
    "agency": "Aventura",
    "title": "London – flug og hótel",
    "dest": "London",
-   "dates": "Allir flugdagar 17.11.2026 – 20.4.2027",
-   "first": "2026-11-17",
+   "dates": "Allir flugdagar 21.11.2026 – 20.4.2027",
+   "first": "2026-11-21",
    "last": "2027-04-20",
    "link": "https://aventura.is/is/londonaey",
    "soldout": false
@@ -146,22 +158,10 @@
    "agency": "Aventura",
    "title": "Brighton – flug og hótel",
    "dest": "Brighton",
-   "dates": "Flogið til London · Allir flugdagar 17.11.2026 – 20.4.2027",
-   "first": "2026-11-17",
+   "dates": "Flogið til London · Allir flugdagar 21.11.2026 – 20.4.2027",
+   "first": "2026-11-21",
    "last": "2027-04-20",
    "link": "https://aventura.is/is/brightonaey",
-   "soldout": false
-  },
-  {
-   "operator": "easyJet",
-   "to": "Manchester",
-   "agency": "Aventura",
-   "title": "Manchester – flug og hótel",
-   "dest": "Manchester",
-   "dates": "Allir flugdagar 20.11.2026 – 22.3.2027",
-   "first": "2026-11-20",
-   "last": "2027-03-22",
-   "link": "https://aventura.is/is/manchesteraey",
    "soldout": false
   },
   {
