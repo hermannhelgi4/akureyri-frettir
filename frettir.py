@@ -1085,7 +1085,9 @@ def graeni_detail(page, e, today):
 # Staðir á Akureyri (hluti af nafni staðar eða titli). Bættu við hér ef staður vantar.
 AK_PLACE = re.compile(
     r"akureyri|akureyrar|leyni bar|sjallinn|glerárkirkja|ketilkaffi|hlíðarfjall|ka-heimil|ka heimil|boginn\b|múlaberg|"
-    r"pósthúsbar|kaffi ilmur|greifinn|skjaldborg|verkmenntaskól", re.I)
+    r"pósthúsbar|kaffi ilmur|greifinn|skjaldborg|verkmenntaskól|"
+    # Eyjafjarðarsveit. „eyjafjörð/eyjafirð/eyjafjarð“ ná ekki Eyjafjöllum (Eyjafjöll/-fjöllum/-fjalla) á Suðurlandi
+    r"freyvang|laugaborg|hrafnagil|sólgarð|eyjafjarðarsveit|eyjafjörð|eyjafirð|eyjafjarð", re.I)
 # Þessir viðburðir eru þegar inni frá opinberu síðunum (MAK/Hof, Samkomuhúsið) eða Græna hattinum – ekki tekið aftur
 AK_SKIP = re.compile(
     r"\bhof\b|hamraborg|samkomuhús|menningarhúsið|menningarfélag|\bmak\b|\bhamrar\b|\bnaust(?:i)?\b|\bkaldi\b|setberg|black box|"
@@ -1172,6 +1174,7 @@ TIX_CACHE = "tix_cache.json"
 TIX_LOW = 20000        # elstu auðkenni sem eru skoðuð (eldri viðburðir eru liðnir eða langtímaviðburðir á forsíðu)
 TIX_BUDGET = 800       # mest svo mörg auðkenni sótt í hverri keyrslu (restin kemur í næstu keyrslum)
 TIX_AHEAD = 60         # leita svona langt fyrir ofan hæsta þekkta auðkenni (nýir viðburðir)
+TIX_VER = 2            # hækka þegar staðasían (AK_PLACE) breytist, svo áður hafnaðir viðburðir séu skoðaðir aftur
 
 
 def tix_fetch(eid):
@@ -1223,7 +1226,11 @@ def tix_events(eid, slug, data):
                 fmt = lambda n: "{:,}".format(int(n)).replace(",", ".")
                 notes.append((fmt(lo) + (" – " + fmt(hi) if hi and hi != lo else "")) + " kr.")
             img = g.get("EventImagePath") if g.get("HasEventImage") else (g.get("PosterImagePath") if g.get("HasPosterImage") else None)
-            ev.append({"title": name[:140], "source": MIDASALA, "site": "Tix", "link": link, "start": sd[:10], "end": sd[:10],
+            src = MIDASALA
+            # Leiksýning í Freyvangi = Freyvangsleikhúsið (aðrir viðburðir þar, t.d. tónleikar, haldast undir Miðasölu)
+            if re.search(r"freyvang", venue + " " + (x.get("Hall") or ""), re.I) and "leikhús" in (x.get("Categories") or "").lower():
+                src, venue = FREYVANGUR, "Freyvangur, Eyjafjarðarsveit"
+            ev.append({"title": name[:140], "source": src, "site": "Tix", "link": link, "start": sd[:10], "end": sd[:10],
                        "time": sd[11:16] if len(sd) >= 16 and sd[11:16] != "00:00" else "", "image": img,
                        "note": " · ".join(notes), "venue": venue, "cat0": x.get("Categories") or "", "detail": False,
                        "txt": clean(re.sub(r"<[^>]+>", " ", g.get("Description") or ""))[:400]})
@@ -1254,6 +1261,8 @@ def read_tix(today):
         c = cache.get(str(i))
         if not c:
             return True
+        if not c.get("miss") and c.get("v") != TIX_VER:
+            return True                            # skoðaður með eldri staðasíu
         age = now - c.get("ts", 0)
         if c.get("ev"):
             return age > 12 * 3600                 # Akureyrarviðburður: sótt aftur tvisvar á dag
@@ -1275,7 +1284,7 @@ def read_tix(today):
             return eid, "err"
         if data is None:
             return eid, {"ts": now, "miss": 1, "ev": []}
-        return eid, {"ts": now, "ev": tix_events(eid, slugs.get(eid), data)}
+        return eid, {"ts": now, "v": TIX_VER, "ev": tix_events(eid, slugs.get(eid), data)}
 
     res = pmap(one, todo, workers=6)
     errs = 0
@@ -1359,7 +1368,7 @@ def read_stubb(today):
 
     def stale(c):
         v = cache.get(c)
-        if not v:
+        if not v or v.get("v") != TIX_VER:  # skoðuð með eldri staðasíu (sama útgáfunúmer og Tix)
             return True
         return bool(v.get("ev")) and now - v.get("ts", 0) > 12 * 3600  # Akureyrarviðburður: skoðaður aftur tvisvar á dag
 
@@ -1371,7 +1380,7 @@ def read_stubb(today):
             m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', page, re.S)
             x = json.loads(m.group(1))["props"]["pageProps"]["serverData"] if m else None
             ev = stubb_event(x, c, today) if isinstance(x, dict) else None
-            cache[c] = {"ts": now, "ev": [ev] if ev else []}
+            cache[c] = {"ts": now, "v": TIX_VER, "ev": [ev] if ev else []}
         except Exception as e:
             errs += 1
             if errs <= 3:
@@ -1383,8 +1392,8 @@ def read_stubb(today):
     out, seen = [], set()
     for v in cache.values():
         for e in v.get("ev", []):
-            if e["start"] >= today.isoformat() and (e["link"], e["start"]) not in seen:
-                seen.add((e["link"], e["start"]))
+            if e["start"] >= today.isoformat() and (e["link"], e["start"], e.get("time", "")) not in seen:
+                seen.add((e["link"], e["start"], e.get("time", "")))  # tími með: tvær sýningar sama dag haldast
                 out.append(e)
     left = len([c for c in codes if c not in cache])
     print("   Stubb: %d af %d viðburðasíðum skoðaðar núna (%d villur, %d eftir), %d viðburðir á Akureyri" % (
@@ -1395,7 +1404,9 @@ def read_stubb(today):
 def read_midasala(today):
     """Tix, Midix og Stubb saman. Ef ein síða bilar helst það sem hún átti fyrir í fyrri lista."""
     old = _load("events.json", [])
-    res, seen = [], set()
+    # Sami viðburður frá tveimur ólíkum miðasölum er tekinn einu sinni (sú fyrsta vinnur),
+    # en tvær sýningar frá SÖMU síðu sama dag með ólíkum tíma haldast báðar (t.d. kl. 19:30 og aukatónleikar 21:30)
+    res, first, kept = [], {}, set()
     for site, fn in (("Tix", read_tix), ("Midix", read_midix), ("Stubb", read_stubb)):
         try:
             found = fn(today)
@@ -1409,9 +1420,13 @@ def read_midasala(today):
             found = held
         for e in found:
             key = (_mid_norm(e["title"]), e["start"])
-            if key in seen:
+            if key in first and first[key] != site:
+                continue  # sama sýning frá annarri miðasölusíðu
+            first.setdefault(key, site)
+            k2 = (site, key, e.get("time", ""))
+            if k2 in kept:
                 continue
-            seen.add(key)
+            kept.add(k2)
             res.append(e)
     return res
 
@@ -1466,8 +1481,59 @@ def read_lyst(today):
     return events
 
 
+FREYVANGUR = "Freyvangsleikhúsið"
+FREYVANGUR_PAGES = ["https://freyvangur.is/", "https://freyvangur.is/panta-mida/", "https://freyvangur.is/feed/"]
+
+
+def read_freyvangur(today):
+    """Freyvangsleikhúsið (Eyjafjarðarsveit) selur miða á Tix. Tix-tenglar eru sóttir af freyvangur.is
+    (forsíða, „Panta miða“ og fréttaveita) og sýningarnar lesnar úr gögnum Tix: dagur, tími, verð og miðatengill."""
+    ids = []
+    for u in FREYVANGUR_PAGES:
+        try:
+            page = fetch_page(u)
+        except Exception as e:
+            print("   Freyvangur %s: %s" % (u, str(e)[:100]))
+            continue
+        for m in TIX_EVENT.finditer(page):
+            if "tix.is" in page[max(0, m.start() - 30):m.start()] and m.group(1) not in ids:
+                ids.append(m.group(1))
+    if not allowed("https://tix.is/api/proxy?id=1"):
+        print("VIÐVÖRUN Freyvangur: robots.txt hjá Tix bannar aðgang")
+        return []
+    out = []
+    for eid in ids:
+        try:
+            data = tix_fetch(eid)
+        except Exception as e:
+            print("   Freyvangur Tix %s: %s" % (eid, str(e)[:100]))
+            continue
+        for g in (data if isinstance(data, list) else [data]) if data else []:
+            if not isinstance(g, dict):
+                continue
+            name = clean(g.get("Name") or "")
+            link = "https://tix.is/event/%s/%s" % (eid, tix_slug(name))
+            img = g.get("EventImagePath") if g.get("HasEventImage") else (g.get("PosterImagePath") if g.get("HasPosterImage") else None)
+            for x in g.get("Dates") or []:
+                sd = x.get("StartDate") or ""
+                if len(sd) < 10 or sd[:10] < today.isoformat():
+                    continue
+                notes = ["Uppselt"] if x.get("SoldOut") else []
+                lo, hi = x.get("MinPrice"), x.get("MaxPrice")
+                if lo:
+                    fmt = lambda n: "{:,}".format(int(n)).replace(",", ".")
+                    notes.append((fmt(lo) + (" – " + fmt(hi) if hi and hi != lo else "")) + " kr.")
+                out.append({"title": name[:140], "source": FREYVANGUR, "link": link, "start": sd[:10], "end": sd[:10],
+                            "time": sd[11:16] if len(sd) >= 16 and sd[11:16] != "00:00" else "", "image": img,
+                            "note": " · ".join(notes), "venue": "Freyvangur, Eyjafjarðarsveit",
+                            "txt": clean(re.sub(r"<[^>]+>", " ", g.get("Description") or ""))[:400]})
+    print("   Freyvangur: %d Tix-tenglar á freyvangur.is, %d sýningar framundan" % (len(ids), len(out)))
+    return out
+
+
 EVENT_SOURCES = [
     ("Lyst", read_lyst, None, 1, 0),  # lyst.is – JSON-viðmót, engin síða hvers viðburðar sótt
+    (FREYVANGUR, read_freyvangur, None, 1, 0),  # freyvangur.is → Tix (Eyjafjarðarsveit, alltaf Leiklist)
     ("MAK / Hof", read_mak, mak_detail, 5, 15),  # MAK biður um 5 sek. bil (Crawl-delay)
     ("Græni hatturinn", read_graeni, graeni_detail, 1, 25),
     (MIDASALA, read_midasala, graeni_detail, 1, 20),  # Tix, Midix og Stubb (síður sóttar aðeins fyrir Midix; sama kerfi og Græni hatturinn)
@@ -3051,6 +3117,10 @@ def collect_events():
             print("   dæmi: %s – %s %s" % (e["start"], e["title"][:60], e["time"]))
         result += expanded
     result = [e for e in result if e["end"] >= today.isoformat()]
+    # Sýning Freyvangsleikhússins sem kemur líka frá Tix (Miðasala) er aðeins birt undir Freyvangsleikhúsinu
+    fv = {(e["link"].split("/event/")[-1].split("/")[0], e["start"], e.get("time", "")) for e in result if e["source"] == FREYVANGUR}
+    result = [e for e in result if not (e["source"] == MIDASALA and "tix.is/event/" in e["link"]
+                                         and (e["link"].split("/event/")[-1].split("/")[0], e["start"], e.get("time", "")) in fv)]
     seen, uniq = set(), []
     for e in result:
         key = (e["source"], re.sub(r"\W+", "", e["title"].lower()), e["start"], e["end"], e.get("time", ""))
@@ -3421,6 +3491,8 @@ def event_kind(e):
     Annars er skilað None og viðburðurinn sést bara undir „Allt“."""
     if e.get("source") == "Íþróttir" or e.get("sport"):
         return "Íþróttir"
+    if e.get("source") == FREYVANGUR:
+        return "Leiklist"
     c = (e.get("cat0") or "").strip().lower()
     for k, v in TIX_KIND.items():
         if c.startswith(k):
