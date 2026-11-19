@@ -320,7 +320,7 @@ return'<svg class="wxi" viewBox="0 0 32 32" aria-hidden="true">'+g+'</svg>'}
 const WXD={N:0,NNA:22,NA:45,ANA:67,A:90,ASA:112,SA:135,SSA:157,S:180,SSV:202,SV:225,VSV:247,V:270,VNV:292,NV:315,NNV:337};
 function wxWind(f,d){if(f===null||f===undefined)return"";const g=WXD[(d||"").toUpperCase()];const a=g===undefined?"":'<span class="wxa" style="transform:rotate('+(g+180)+'deg)">↑</span>';return a+Math.round(f)+" m/s"}
 function wxT(v){return'<span class="'+(v>=0?"hot":"cold")+'">'+Math.round(v)+"°</span>"}
-function wxLink(d){return"https://www.vedur.is/vedur/spar/stadaspar/nordurland_eystra/#group=15&station=3471"}
+function wxLink(d){return"https://www.gottvedur.is/vedur/spar/3471/"}
 function renderWx(){const b=document.getElementById("wx");if(!WEATHER||!WEATHER.now){b.hidden=true;return}const n=WEATHER.now,DN=["Sun","Mán","Þri","Mið","Fim","Fös","Lau"];
 let h='<a class="wxc now" target="_blank" rel="noopener" href="'+wxLink("")+'" title="Veðrið núna á Akureyri (mælt kl. '+WEATHER.upd+')"><div class="wxd">Núna</div><div class="wxt">'+wxIcon(n.W,n.night)+" "+(n.T===null?"–":wxT(n.T))+'</div><div class="wxw">'+wxWind(n.F,n.D)+"</div></a>";
 WEATHER.days.forEach(d=>{const dt=new Date(d.date+"T12:00:00Z");h+='<a class="wxc" target="_blank" rel="noopener" href="'+wxLink(d.date)+'" title="Spá kl. 12:00"><div class="wxd">'+DN[dt.getUTCDay()]+" "+dt.getUTCDate()+"."+(dt.getUTCMonth()+1)+'</div><div class="wxt">'+wxIcon(d.W,false)+" "+wxT(d.T)+'</div><div class="wxw">'+wxWind(d.F,d.D)+"</div></a>"});
@@ -3095,10 +3095,27 @@ _TEAM_THOR = re.compile(
     r"(?<![\w/])Þór(?:s(?:ar(?:ar|ana|a|i|inn)?|liðið|liðinu|liði|vell(?:i|inum|ir|ina)?|heimil\w*|stúlk\w*|kon\w*|menn\w*|íþrótt\w*|félag\w*)?)?(?![\w/])")
 _NAME_BEFORE = re.compile(r"[A-ZÁÐÉÍÓÚÝÞÆÖ][a-záðéíóúýþæö]+ $")
 _NAME_AFTER = re.compile(r"^ (?!Ak\b|Akureyri)[A-ZÁÐÉÍÓÚÝÞÆÖ][a-záðéíóúýþæö]")
+# Einstakt „Þór“ telst félagið aðeins ef textinn hefur skýrt Akureyrarmerki, eða setningin fjallar um leik
+# (annars getur það verið mannsnafn, t.d. „Þór þekkir vel til hjá félaginu“)
+_AK_SIGNAL = re.compile(r"Akureyri|(?<![\w/])KA(?![\w/])|Þórsar|Þór Ak|Þór ?/ ?KA|KA ?/ ?Þór|Þórsvöll|Þórsheimil|KA-heimil|Boginn|Höllin")
+# Orðstofnar (öll beygingarform: sigur/sigri/sigraði, deild/deildarinnar, umferð/lokaumferð …)
+_GAME_WORDS = re.compile(
+    r"(?<!\w)(?:vann|unnu|vinn|tapa|tapað|töpuð|tap\b|sigr|sigur|jafntefl|leik|mörk|mark(?!viss|mið|að)|stig|gegn|mæt|"
+    r"tekur á móti|tók á móti|heimsæk|heimsótt|deild|\w*umferð|úrslit|bikar|tryggði sér|féll|fall)\w*")
 
 
-def team_mentions(text):
-    """Telur hversu oft Þór, KA eða Þór/KA er nefnt sem lið (ekki mannsnafn)."""
+def _thor_is_team(text, m):
+    """Fjallar setningin sem „Þór“ stendur í um leik?"""
+    s = max(text.rfind(". ", 0, m.start()), text.rfind("\n", 0, m.start()), text.rfind("? ", 0, m.start()), text.rfind("! ", 0, m.start()))
+    e_candidates = [i for i in (text.find(". ", m.end()), text.find("\n", m.end())) if i != -1]
+    e = min(e_candidates) if e_candidates else len(text)
+    return bool(_GAME_WORDS.search(text[s + 1:e]))
+
+
+def team_mentions(text, ctx=""):
+    """Telur hversu oft Þór, KA eða Þór/KA er nefnt sem lið (ekki mannsnafn).
+    ctx = öll greinin (þegar ein málsgrein er metin), svo Akureyrarmerki annars staðar í greininni gildi líka."""
+    strong = bool(_AK_SIGNAL.search(text) or (ctx and _AK_SIGNAL.search(ctx)))
     n = len(_TEAM_COMBO.findall(text))
     text = _TEAM_COMBO.sub(" ", text)
     n += len(_TEAM_KA.findall(text))
@@ -3108,6 +3125,8 @@ def team_mentions(text):
             if _NAME_BEFORE.search(text[max(0, m.start() - 25):m.start()]):
                 continue
             if _NAME_AFTER.match(text[m.end():m.end() + 20]):
+                continue
+            if not strong and not _thor_is_team(text, m):
                 continue
         elif _NAME_BEFORE.search(text[max(0, m.start() - 25):m.start()]) and re.search(r"[a-záðéíóúýþæö]s $", text[max(0, m.start() - 25):m.start()]):
             continue  # „Ragnars Þórs“: eignarfall mannsnafns, ekki félagið
@@ -3138,13 +3157,14 @@ def _lead_order(lead):
 def judge_article(title, lead, paras, gated):
     """Strangt mat: fjallar greinin um Þór, KA eða Þór/KA (eða Akureyri)? Skilar (já/nei, ástæða).
     Viðtöl bera oft nafn viðmælanda í fyrirsögn, svo liðið er oft aðeins nefnt í inngangi."""
-    if ak_count(title):
+    ctx = " ".join([title, lead] + list(paras or []))  # öll greinin, fyrir Akureyrarmerki
+    if ak_count(title, ctx):
         return True, "í fyrirsögn"
-    l = ak_count(lead)
-    b = ak_count(" ".join(paras))
+    l = ak_count(lead, ctx)
+    b = ak_count(" ".join(paras), ctx)
     if gated or not paras:  # áskriftargrein: aðeins útdrátturinn sést
         return (True, "í útdrætti (áskriftargrein)") if l else (False, "ekki í fyrirsögn né útdrætti")
-    first = ak_count(" ".join(paras[:2]))
+    first = ak_count(" ".join(paras[:2]), ctx)
     n = l + b
     if n == 0:
         return False, "Þór/KA/KA/Akureyri ekki nefnt"
@@ -3296,9 +3316,9 @@ _OTHER_PLACES = re.compile(
     r"þorlákshöfn|sandgerð|reykjanesb|borgarfj|skagafj|mývatn|kirkjubæjark|vík í)\w*", re.I)
 
 
-def ak_count(text):
+def ak_count(text, ctx=""):
     """Staðarheiti á Akureyri/Eyjafirði, auk Þór, KA og Þór/KA sem lið."""
-    return len(_AK_RE.findall(text)) + team_mentions(text)
+    return len(_AK_RE.findall(text)) + team_mentions(text, ctx)
 
 
 def read_article_paras(url):
@@ -3317,16 +3337,17 @@ def read_article_paras(url):
 def judge_regional(title, paras):
     """Fjallar frétt landsmiðils um Akureyri og nágrenni? Ekki nóg að það sé nefnt.
     Skilar (já/nei, ástæða)."""
-    if ak_count(title):
+    ctx = " ".join([title] + list(paras or []))  # öll greinin, fyrir Akureyrarmerki
+    if ak_count(title, ctx):
         return True, "í fyrirsögn"
     if not paras:
         return False, "ólesanleg og ekki í fyrirsögn"
-    lead = ak_count(" ".join(paras[:2]))
-    body = ak_count(" ".join(paras))
+    lead = ak_count(" ".join(paras[:2]), ctx)
+    body = ak_count(" ".join(paras), ctx)
     others = len(_OTHER_PLACES.findall(" ".join(paras)))
-    hit_par = sum(1 for p in paras if ak_count(p))
+    hit_par = sum(1 for p in paras if ak_count(p, ctx))
     share = hit_par / len(paras)
-    if ak_count(paras[0]) >= 1 and others == 0 and len(paras) <= 5:
+    if ak_count(paras[0], ctx) >= 1 and others == 0 and len(paras) <= 5:
         return True, "stutt frétt sem gerist á Akureyri"
     if lead >= 1 and body >= 3 and share >= 0.4 and body >= others:
         return True, "%d nefningar í %d af %d málsgreinum" % (body, hit_par, len(paras))
