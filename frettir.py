@@ -1174,7 +1174,7 @@ TIX_CACHE = "tix_cache.json"
 TIX_LOW = 20000        # elstu auðkenni sem eru skoðuð (eldri viðburðir eru liðnir eða langtímaviðburðir á forsíðu)
 TIX_BUDGET = 800       # mest svo mörg auðkenni sótt í hverri keyrslu (restin kemur í næstu keyrslum)
 TIX_AHEAD = 60         # leita svona langt fyrir ofan hæsta þekkta auðkenni (nýir viðburðir)
-TIX_VER = 2            # hækka þegar staðasían (AK_PLACE) breytist, svo áður hafnaðir viðburðir séu skoðaðir aftur
+TIX_VER = 3            # hækka þegar staðasían (AK_PLACE) breytist, svo áður hafnaðir viðburðir séu skoðaðir aftur
 
 
 def tix_fetch(eid):
@@ -1203,6 +1203,40 @@ def tix_slug(name):
     return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
 
 
+FEW_TICKETS = "Fáir miðar"  # sama orðalag og Græni hatturinn notar
+TIX_STATUS = {}  # (dagur, tími) -> [(nafn staðlað, „Uppselt“/„Fáir miðar eftir“)] – fyllt í read_tix
+
+
+def tix_status(data):
+    """Staða sýninga á Akureyri sem eru inni frá öðrum síðum (MAK/Hof, Samkomuhúsið o.fl.), svo hægt sé að merkja þær.
+    Tix gefur aðeins upp „uppselt“ eða „fáir miðar eftir“, ekki fjölda lausra sæta (sætakortið er bannað í robots.txt)."""
+    out = []
+    for g in data if isinstance(data, list) else [data]:
+        if not isinstance(g, dict):
+            continue
+        name = _mid_norm(g.get("Name") or "")
+        for x in g.get("Dates") or []:
+            place = (x.get("Venue") or "") + " " + (x.get("Hall") or "")
+            if not (AK_SKIP.search(place) or AK_PLACE.search(place)):  # Hof, Samkomuhúsið, Græni hatturinn … og aðrir staðir á Akureyri
+                continue
+            sd = x.get("StartDate") or ""
+            st = "Uppselt" if x.get("SoldOut") else (FEW_TICKETS if x.get("SaleStatusText") == "FewTickets" else "")
+            if st and len(sd) >= 16:
+                out.append([name, sd[:10], sd[11:16], st])
+    return out
+
+
+def tix_match_status(e):
+    """Staða frá Tix fyrir viðburð af annarri síðu: sami dagur og tími og nafnið passar (annað inniheldur hitt, eða sama upphaf)."""
+    if e.get("site") == "Tix" or not e.get("time"):
+        return ""
+    n = _mid_norm(e.get("title") or "")
+    for t, st in TIX_STATUS.get((e["start"], e["time"]), []):
+        if n and t and (n in t or t in n or n[:12] == t[:12]):
+            return st
+    return ""
+
+
 def tix_events(eid, slug, data):
     ev = []
     for g in data if isinstance(data, list) else [data]:
@@ -1221,6 +1255,8 @@ def tix_events(eid, slug, data):
             notes = []
             if x.get("SoldOut"):
                 notes.append("Uppselt")
+            elif x.get("SaleStatusText") == "FewTickets":
+                notes.append(FEW_TICKETS)
             lo, hi = x.get("MinPrice"), x.get("MaxPrice")
             if lo:
                 fmt = lambda n: "{:,}".format(int(n)).replace(",", ".")
@@ -1264,8 +1300,8 @@ def read_tix(today):
         if not c.get("miss") and c.get("v") != TIX_VER:
             return True                            # skoðaður með eldri staðasíu
         age = now - c.get("ts", 0)
-        if c.get("ev"):
-            return age > 12 * 3600                 # Akureyrarviðburður: sótt aftur tvisvar á dag
+        if c.get("ev") or c.get("st"):
+            return age > 3 * 3600                  # Akureyrarviðburður (eða staða MAK-sýningar): sótt aftur á 3 klst. fresti
         if c.get("miss"):
             return age > (2 * 86400 if i > hi - 150 else 30 * 86400)  # ný númer gætu orðið til síðar
         return age > 7 * 86400                     # viðburður ekki á Akureyri: skoðaður aftur á viku fresti
@@ -1284,7 +1320,11 @@ def read_tix(today):
             return eid, "err"
         if data is None:
             return eid, {"ts": now, "miss": 1, "ev": []}
-        return eid, {"ts": now, "v": TIX_VER, "ev": tix_events(eid, slugs.get(eid), data)}
+        st = tix_status(data)
+        c = {"ts": now, "v": TIX_VER, "ev": tix_events(eid, slugs.get(eid), data)}
+        if st:
+            c["st"] = st
+        return eid, c
 
     res = pmap(one, todo, workers=6)
     errs = 0
@@ -1294,9 +1334,12 @@ def read_tix(today):
         else:
             cache[eid] = c
     out = []
+    TIX_STATUS.clear()
     for eid, c in cache.items():
         for e in c.get("ev", []):
             out.append(e)
+        for t, d, tm, st in c.get("st", []):
+            TIX_STATUS.setdefault((d, tm), []).append((t, st))
     # geymi aðeins það sem er nýlegt
     keep = {k: v for k, v in cache.items() if now - v.get("ts", 0) < 60 * 86400}
     with open(TIX_CACHE, "w", encoding="utf-8") as f:
@@ -3117,6 +3160,14 @@ def collect_events():
             print("   dæmi: %s – %s %s" % (e["start"], e["title"][:60], e["time"]))
         result += expanded
     result = [e for e in result if e["end"] >= today.isoformat()]
+    # Uppselt / Fáir miðar eftir frá Tix á sýningar annarra síðna (MAK/Hof o.fl.); tengillinn helst óbreyttur (t.d. á mak.is)
+    marked = 0
+    for e in result:
+        st = tix_match_status(e)
+        if st and st not in (e.get("note") or "") and "Uppselt" not in (e.get("note") or ""):
+            e["note"] = " · ".join([st] + ([e["note"]] if e.get("note") else []))
+            marked += 1
+    print("Staða frá Tix: %d sýningar merktar (Uppselt / Fáir miðar eftir)" % marked)
     # Sýning Freyvangsleikhússins sem kemur líka frá Tix (Miðasala) er aðeins birt undir Freyvangsleikhúsinu
     fv = {(e["link"].split("/event/")[-1].split("/")[0], e["start"], e.get("time", "")) for e in result if e["source"] == FREYVANGUR}
     result = [e for e in result if not (e["source"] == MIDASALA and "tix.is/event/" in e["link"]
