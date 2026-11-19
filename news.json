@@ -1,11 +1,48 @@
 [
   {
     "title": "Góð staða í birgðageymum hitaveitunnar",
+    "link": "https://www.akureyri.is/god-stada-i-birgdageymum-hitaveitunnar",
+    "summary": "Staðan í birgðageymum hitaveitunnar á Akureyri er nú orðin góð og komin vel upp fyrir öryggismörk.",
+    "date": "2026-11-19T11:49:42+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/mynd-fra-nordurorku-2000x1500.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Hraðhleðslustöðvum ON lokað tímabundið í dag",
+    "link": "https://kaffid.is/hradhledslustodvum-on-lokad-timabundid-i-dag/",
+    "summary": "Hraðhleðslustöðvum Orku náttúrunnar í Víðigerði verður lokað tímabundið vegna endurnýjunar á heimtaug svæðisins. Rafmagn verður tekið af hleðslustöðvunum og þeim […]",
+    "date": "2026-11-19T11:43:25+00:00",
+    "image": "https://kaffid.is/wp-content/uploads/2026/11/vidigerdi.jpg",
+    "source": "Kaffið",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Góð staða í birgðageymum hitaveitunnar",
     "link": "https://kaffid.is/god-stada-i-birgdageymum-hitaveitunnar/",
     "summary": "Staðan í birgðageymum hitaveitunnar á Akureyri er nú orðin góð og komin vel upp fyrir öryggismörk. Samstillt átak starfsfólks Norðurorku, […]",
     "date": "2026-11-19T11:40:30+00:00",
     "image": "https://kaffid.is/wp-content/uploads/2026/11/IMG_2683.jpg",
     "source": "Kaffið",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Góð staða í birgðageymum hitaveitunnar",
+    "link": "https://www.vikubladid.is/is/moya/news/god-stada-i-birgdageymum-hitaveitunnar",
+    "summary": "Staðan í birgðageymum hitaveitunnar á Akureyri er nú orðin góð og komin vel upp fyrir öryggismörk. Samstillt átak starfsfólks Norðurorku, stórnotenda og almennings skilaði góðum árangri.",
+    "date": "2026-11-19T11:37:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/tankur.jpg",
+    "source": "Vikudagur",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir",
@@ -1749,18 +1786,6 @@
     ]
   },
   {
-    "title": "Sögur úr Samkomuhúsinu – Kvaddi á leið til Lykla Péturs",
-    "link": "https://kaffid.is/sogur-ur-samkomuhusinu-kvaddi-a-leid-til-lykla-peturs/",
-    "summary": "Flest leikhús geyma sögur af draugagangi. Oftar en ekki eru það látnir leikarar eða leikstjórar sem ráfa um húsakynnin löngu, […]",
-    "date": "2026-11-15T11:26:00+00:00",
-    "image": "https://kaffid.is/wp-content/uploads/2026/11/Untitled-design-1.png",
-    "source": "Kaffið",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Harpa Karen á skotskónum í fyrsta landsliðsverkefninu",
     "link": "https://www.thorsport.is/is/frettir-greinar/harpa-karen-a-skotskonum-i-fyrsta-landslidsverkefninu",
     "summary": "Harpa Karen Karlsdóttir skoraði eitt marka Íslands á UEFA Development móti sem fram fór á Spáni.",
@@ -1903,18 +1928,6 @@
     "summary": "Framkvæmdum við nýjar sjósundströppur við Sæborgarfjöru í Hrísey er nú lokið. Aðeins merkingar eru eftir áður en aðstaðan er að fullu tilbúin.",
     "date": "2026-11-14T14:00:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/1794665004_hrisey.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Mikilvægt að tryggja Brekkukoti aðstöðu til framtíðar",
-    "link": "https://www.vikubladid.is/is/moya/news/mikilvaegt-ad-tryggja-brekkukoti-adstodu-til-framtidar",
-    "summary": "„Það er mikilvægt er að huga að framtíð Brekkukots og tryggja að starfsemin hafi til framtíðar aðstöðu sem hentar bæði þeim sem nýta þjónustuna og starfsfólkinu,“ segir Guðbjörg Anna Björnsdóttir formaður velferðarráðs Akureyrarbæjar.",
-    "date": "2026-11-14T13:44:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/brekkukot.jpg",
     "source": "Vikudagur",
     "category": "Fréttamiðlar",
     "cats": [
@@ -4785,18 +4798,6 @@
     "image": "https://www.unak.is/static/news/sm/unak-frett-22.10.26-graenlands-rektor-i-heimsokn.png",
     "source": "Háskólinn á Akureyri",
     "category": "Menntun",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Viðtalstími bæjarfulltrúa þriðjudaginn 27. október",
-    "link": "https://www.akureyri.is/vidtalstimi-baejarfulltrua-thridjudaginn-27-oktober",
-    "summary": "Boðið er upp á þrjú 30 mínútna viðtöl og þarf að bóka tíma fyrirfram á akureyri.is",
-    "date": "2026-10-22T10:45:55+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/baejarfulltruar-1800x1044.png",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
     "cats": [
       "Bærinn"
     ]
