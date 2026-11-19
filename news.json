@@ -1,5 +1,29 @@
 [
   {
+    "title": "Viðtalstími bæjarfulltrúa þriðjudaginn 24. nóvember",
+    "link": "https://www.akureyri.is/vidtalstimi-baejarfulltrua-thridjudaginn-24-november",
+    "summary": "Boðið er upp á þrjú 30 mínútna viðtöl og þarf að bóka tíma fyrirfram á akureyri.is",
+    "date": "2026-11-19T09:17:30+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/hanna-dora-og-odinn-svan-1200x630.png",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
+    "title": "Rúnar Eff og Magni í stuði",
+    "link": "https://www.vma.is/is/skolinn/frettir/runar-eff-og-magni",
+    "summary": "tónlist",
+    "date": "2026-11-19T09:11:00+00:00",
+    "image": "https://www.vma.is/static/news/sm/1795079801_for2.jpg",
+    "source": "VMA",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Marísól og leitin að gleðinni í Freyvangi",
     "link": "https://www.akureyri.net/is/moya/news/marisol-og-leitin-ad-gledinni-i-freyvangi",
     "summary": "Nýtt frumsamið jólaverk, Marísól og leitin að gleðinni, verður frumsýnt hjá Freyvangsleikhúsinu á morgun, föstudaginn 20. nóvember. Verkið er eftir Jóhönnu S. Ingólfsdóttur, sem jafnframt leikstýrir, og tónlistin er eftir Eirík Bóasson. Þetta er í f...",
@@ -4816,18 +4840,6 @@
     ]
   },
   {
-    "title": "Þjónustu- og fundagátt liggja niðri vegna uppfærslu",
-    "link": "https://www.akureyri.is/thjonustu-og-fundagatt-liggja-nidri-vegna-uppfaerslu",
-    "summary": "Vonast er til að þær verði aftur aðgengilegar síðar í dag, en mögulega ekki fyrr en á morgun.",
-    "date": "2026-10-21T11:43:59+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/R%C3%A1%C3%B0h%C3%BAsi%C3%B0%20-%20Bjarki%20Brynj%C3%B3lfs-11-2000x1333.jpg",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
     "title": "Raunfærnimat í brennidepli í alþjóðlegri heimsókn",
     "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/raunfaernimat-i-brennidepli-i-althjodlegri-heimsokn",
     "summary": "Starfsfólk háskólans tók á móti gestum í alþjóðlegu Erasmus+ verkfni",
@@ -5338,18 +5350,6 @@
     "category": "Íþróttir",
     "cats": [
       "Íþróttir"
-    ]
-  },
-  {
-    "title": "RARIK gaf VMA Scania-vél",
-    "link": "https://www.vma.is/is/skolinn/frettir/rarik-gefur-vma-scania-vel",
-    "summary": "Scania-vél",
-    "date": "2026-10-14T07:00:00+00:00",
-    "image": "https://www.vma.is/static/news/sm/20261007_100906.jpg",
-    "source": "VMA",
-    "category": "Menntun",
-    "cats": [
-      "Bærinn"
     ]
   },
   {
