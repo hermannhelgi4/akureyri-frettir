@@ -102,23 +102,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "Njardvik b – Þór Ak.",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156202",
-    "start": "2026-11-07",
-    "end": "2026-11-07",
-    "time": "16:00",
-    "image": null,
-    "note": "Útileikur · Bæjarins Beztu deild kvenna · IceMar-höllin",
-    "teams": [
-      "Þór Ak."
-    ],
-    "res": "68–83",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "SA – Fjölnir",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -235,23 +218,6 @@
       "SA"
     ],
     "res": "4–3",
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Þór Ak. – Keflavík b",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156209",
-    "start": "2026-11-17",
-    "end": "2026-11-17",
-    "time": "19:30",
-    "image": null,
-    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
-    "teams": [
-      "Þór Ak."
-    ],
-    "res": "82–75",
     "kind": "Íþróttir"
   },
   {
@@ -385,23 +351,6 @@
     "teams": [
       "SA"
     ],
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Þór Ak. – Selfoss",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156214",
-    "start": "2026-11-21",
-    "end": "2026-11-21",
-    "time": "18:00",
-    "image": null,
-    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
-    "teams": [
-      "Þór Ak."
-    ],
-    "live": "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/2859137/",
     "kind": "Íþróttir"
   },
   {
@@ -629,22 +578,6 @@
     "kind": "Leiklist"
   },
   {
-    "title": "Haukar u – Þór Ak.",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156216",
-    "start": "2026-11-28",
-    "end": "2026-11-28",
-    "time": "13:00",
-    "image": null,
-    "note": "Útileikur · Bæjarins Beztu deild kvenna · Ásvellir",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Fjölnir – SA",
     "source": "Íþróttir",
     "sport": "Íshokkí",
@@ -762,22 +695,6 @@
     "cat0": "",
     "venue": "Hamraborg, Hof",
     "kind": "Fjölskylda"
-  },
-  {
-    "title": "Breiðablik – Þór Ak.",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156229",
-    "start": "2026-11-29",
-    "end": "2026-11-29",
-    "time": "16:30",
-    "image": null,
-    "note": "Útileikur · Bæjarins Beztu deild kvenna · Smárinn",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
   },
   {
     "title": "Á rauðu ljósi",
@@ -987,22 +904,6 @@
     "venue": "Akureyrarkirkja",
     "cat0": "Jól, Jólatónleikar, Kór",
     "kind": "Tónlist"
-  },
-  {
-    "title": "Þór Ak. – Aþena",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156225",
-    "start": "2026-12-05",
-    "end": "2026-12-05",
-    "time": "18:00",
-    "image": null,
-    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
   },
   {
     "title": "Á rauðu ljósi",
@@ -1728,22 +1629,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "Þór Þ. – Þór Ak.",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156236",
-    "start": "2027-01-06",
-    "end": "2027-01-06",
-    "time": "19:15",
-    "image": null,
-    "note": "Útileikur · Bæjarins Beztu deild kvenna · Icelandic Glacial höllin",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Þór Ak. – Hamar",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -1974,22 +1859,6 @@
     "kind": "Tónlist"
   },
   {
-    "title": "Þór Ak. – Skallagrímur",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156242",
-    "start": "2027-01-17",
-    "end": "2027-01-17",
-    "time": "16:00",
-    "image": null,
-    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "KA – Völsungur",
     "source": "Íþróttir",
     "sport": "Blak",
@@ -2046,22 +1915,6 @@
     "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
     "kind": "Leiklist"
-  },
-  {
-    "title": "KV – Þór Ak.",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156247",
-    "start": "2027-01-23",
-    "end": "2027-01-23",
-    "time": "18:00",
-    "image": null,
-    "note": "Útileikur · Bæjarins Beztu deild kvenna · Meistaravellir",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
   },
   {
     "title": "SA – Fjölnir",
@@ -2152,22 +2005,6 @@
     "cat0": "Leiksýningar",
     "venue": "Samkomuhúsið",
     "kind": "Leiklist"
-  },
-  {
-    "title": "Þór Ak. – ÍR",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156255",
-    "start": "2027-01-30",
-    "end": "2027-01-30",
-    "time": "18:00",
-    "image": null,
-    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
   },
   {
     "title": "120 ára afmæli Samkomuhússins",
@@ -2512,22 +2349,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "Þór Ak. – Njardvik b",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156268",
-    "start": "2027-02-17",
-    "end": "2027-02-17",
-    "time": "19:15",
-    "image": null,
-    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Stjarnan – Þór",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -2740,22 +2561,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "Keflavík b – Þór Ak.",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156275",
-    "start": "2027-02-27",
-    "end": "2027-02-27",
-    "time": "16:00",
-    "image": null,
-    "note": "Útileikur · Bæjarins Beztu deild kvenna · Blue-höllin",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Þróttur Fjarðabyggð – KA",
     "source": "Íþróttir",
     "sport": "Blak",
@@ -2950,22 +2755,6 @@
     "kind": "Íþróttir"
   },
   {
-    "title": "Selfoss – Þór Ak.",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156280",
-    "start": "2027-03-06",
-    "end": "2027-03-06",
-    "time": "18:00",
-    "image": null,
-    "note": "Útileikur · Bæjarins Beztu deild kvenna · Vallaskóli",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
@@ -3069,22 +2858,6 @@
     "kind": "Tónlist"
   },
   {
-    "title": "Þór Ak. – Haukar u",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156282",
-    "start": "2027-03-13",
-    "end": "2027-03-13",
-    "time": "18:00",
-    "image": null,
-    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Skilaboðaskjóðan",
     "source": "MAK / Hof",
     "link": "https://www.mak.is/is/vidburdir/skilabodaskjodan",
@@ -3156,22 +2929,6 @@
     "time": "19:15",
     "image": null,
     "note": "Heimaleikur · Bæjarins Beztu deild karla · Höllin Ak",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "Aþena – Þór Ak.",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156291",
-    "start": "2027-03-20",
-    "end": "2027-03-20",
-    "time": "16:00",
-    "image": null,
-    "note": "Útileikur · Bæjarins Beztu deild kvenna · Unbroken Höllin",
     "teams": [
       "Þór Ak."
     ],
@@ -3263,22 +3020,6 @@
     "cat0": "",
     "venue": "Samkomuhúsið",
     "kind": "Fjölskylda"
-  },
-  {
-    "title": "Þór Ak. – Breiðablik",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156295",
-    "start": "2027-03-30",
-    "end": "2027-03-30",
-    "time": "19:15",
-    "image": null,
-    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
   },
   {
     "title": "Draumahliðið",
