@@ -24,6 +24,18 @@
     ]
   },
   {
+    "title": "Verður opnað í Hlíðarfjalli 10. desember eða fyrr?",
+    "link": "https://www.akureyri.is/verdur-opnad-i-hlidarfjalli-10-desember",
+    "summary": "Forsala vetrarkorta í Hlíðarfjall er hafin og stendur til 10. desember. Stefnt er að því að opna skíðasvæðið þann dag en fyrr ef aðstæður leyfa.",
+    "date": "2026-11-20T11:00:00+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/forsala-vetrarkorta-1200x1500.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Rauðu hjartaljósin á Akureyri á útleið?",
     "link": "https://www.vikubladid.is/is/moya/news/raudu-hjartaljosin-a-akureyri-a-utleid",
     "summary": "Höfundar greinarinnar eru nemendur í áfanganum Fjölmiðlafræði við Verkmenntaskólann á Akureyri.",
@@ -239,18 +251,6 @@
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
-    ]
-  },
-  {
-    "title": "Verður opnað í Hlíðarfjalli 10. desember eða fyrr?",
-    "link": "https://www.akureyri.is/verdur-opnad-i-hlidarfjalli-10-desember",
-    "summary": "Forsala vetrarkorta í Hlíðarfjall er hafin og stendur til 10. desember. Stefnt er að því að opna skíðasvæðið þann dag en fyrr ef aðstæður leyfa.",
-    "date": "2026-11-19T14:17:34+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/forsala-vetrarkorta-1200x1500.jpg",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
-    "cats": [
-      "Bærinn"
     ]
   },
   {
