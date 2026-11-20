@@ -1,5 +1,17 @@
 [
   {
+    "title": "Uppfærsla á bókhaldskerfi hefur áhrif á þjónustugátt",
+    "link": "https://www.akureyri.is/uppfaersla-a-bokhaldskerfi-hefur-ahrif-a-thjonustugatt",
+    "summary": "Vegna uppfærslu á bókhaldskerfi Akureyrarbæjar verður ekki hægt að fletta upp viðskiptastöðu og reikningum eða skoða stöðu á Frístundastyrkjum í þjónustugátt Akureyrarbæjar.",
+    "date": "2026-11-20T09:36:38+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/radhus-akureyrar-2000x1333.jpg",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Viðtalstími hjá sveitarstjórnarfulltrúum",
     "link": "https://www.svalbardsstrond.is/is/mannlifid/frettir/vidtalstimi-hja-sveitarstjornarfulltruum-2",
     "summary": "Viðtalstími sveitarstjórnarfulltrúa þriðjudaginn 1. desember.",
@@ -1470,7 +1482,7 @@
   {
     "title": "Skjót viðbrögð skiptu öllu máli: „Mikill léttir að ekki fór verr“",
     "link": "https://www.samherji.is/is/frettir/skjot-vidbrogd-skiptu-ollu-mali-mikill-lettir-ad-ekki-for-verr",
-    "summary": "Óþægileg sjón blasti við Guðmundi Þ. Jónssyni, skipstjóra á Vilhelm Þorsteinssyni EA-11, þegar hann kom niður á bryggju við Krossanes á föstudagskvöldið. Bryggjupollar höfðu gefið sig með þeim afleiðingum að skipið hafði losnað frá og hékk á einni taug að framan.",
+    "summary": "Óþægileg sjón blasti við Guðmundi Þ. Jónssyni, skipstjóra á Vilhelm Þorsteinssyni EA-11, þegar hann kom niður á bryggju við Krossanes á föstudagskvöldið. Bryggjupollar höfðu gefið sig með þeim afleiðingum að skipið hafði losnað frá og hékk á tveimur taugum að framan.",
     "date": "2026-11-17T09:00:00+00:00",
     "image": "https://www.samherji.is/static/news/sm/vilhelm-og-lods-sulur.jpg",
     "source": "Samherji",
@@ -4611,18 +4623,6 @@
     "image": "https://www.unak.is/static/news/sm/unak-ac-cover-photo-26.png",
     "source": "Háskólinn á Akureyri",
     "category": "Menntun",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Aðeins eitt barn á biðlista eftir leikskólaplássi",
-    "link": "https://www.akureyri.is/adeins-eitt-barn-a-bidlista-eftir-leikskolaplassi",
-    "summary": "Á Akureyri eru 1040 leikskólabörn. Starfið fer fram í tíu leikskólum á 13 starfstöðum auk eins sjálfstætt starfandi leikskóla.",
-    "date": "2026-10-27T13:02:54+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/erna-ros-ingvarsdottir-1271x1280.jpg",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
     "cats": [
       "Bærinn"
     ]
