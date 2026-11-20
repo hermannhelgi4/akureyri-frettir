@@ -1,5 +1,17 @@
 [
   {
+    "title": "Hjartaljósin á borði innviðaráðuneytsins",
+    "link": "https://www.vma.is/is/skolinn/frettir/hjartaljosin-a-bordi-innvidaraduneytsins",
+    "summary": "Hjartalaga ljós",
+    "date": "2026-11-20T07:00:00+00:00",
+    "image": "https://www.vma.is/static/news/sm/heart-signals-in-snowy-akureyri.png",
+    "source": "VMA",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Gamla myndin: veistu hvar þetta er?",
     "link": "https://www.akureyri.net/is/moya/news/gamla-myndin-veistu-hvar-thetta-er-283",
     "summary": "Vikulega birtist gömul ljósmynd á akureyri.net í samstarfi við Minjasafnið á Akureyri. Þetta er 315. gamla myndin frá safninu sem birtist hér, ekki er ofsagt að þær njóti gríðarlegra vinsælda á meðal lesenda víða um land; nýjustu tölur frá Minjasafni...",
@@ -5195,18 +5207,6 @@
     "cats": [
       "Fréttir",
       "Nærsveitir"
-    ]
-  },
-  {
-    "title": "Kennarar fræðast í Gryfjunni",
-    "link": "https://www.vma.is/is/skolinn/frettir/kennarar-fraedast-i-gryfjunni",
-    "summary": "Starfsþróun",
-    "date": "2026-10-16T15:11:00+00:00",
-    "image": "https://www.vma.is/static/news/sm/1792163861_for.jpg",
-    "source": "VMA",
-    "category": "Menntun",
-    "cats": [
-      "Bærinn"
     ]
   },
   {
