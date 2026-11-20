@@ -261,6 +261,48 @@
  },
  {
   "sport": "Íshokkí",
+  "gender": "Konur",
+  "comp": "Toppdeild kvenna",
+  "link": "https://stats.iihf.com/ihi/100/index.html",
+  "rows": [
+   {
+    "n": 1,
+    "t": "SA",
+    "p": 5,
+    "w": 4,
+    "d": 0,
+    "l": 1,
+    "g": "26-3",
+    "pts": 13,
+    "me": true
+   },
+   {
+    "n": 2,
+    "t": "SR",
+    "p": 5,
+    "w": 1,
+    "d": 0,
+    "l": 4,
+    "g": "6-13",
+    "pts": 4,
+    "me": false
+   },
+   {
+    "n": 3,
+    "t": "Fjölnir",
+    "p": 4,
+    "w": 2,
+    "d": 0,
+    "l": 2,
+    "g": "9-25",
+    "pts": 4,
+    "me": false
+   }
+  ],
+  "ts": "2026-11-20"
+ },
+ {
+  "sport": "Íshokkí",
   "gender": "Karlar",
   "comp": "Toppdeild karla",
   "link": "https://stats.iihf.com/ihi/99/index.html",
@@ -307,48 +349,6 @@
     "l": 6,
     "g": "6-56",
     "pts": 0,
-    "me": false
-   }
-  ],
-  "ts": "2026-11-20"
- },
- {
-  "sport": "Íshokkí",
-  "gender": "Konur",
-  "comp": "Toppdeild kvenna",
-  "link": "https://stats.iihf.com/ihi/100/index.html",
-  "rows": [
-   {
-    "n": 1,
-    "t": "SA",
-    "p": 5,
-    "w": 4,
-    "d": 0,
-    "l": 1,
-    "g": "26-3",
-    "pts": 13,
-    "me": true
-   },
-   {
-    "n": 2,
-    "t": "SR",
-    "p": 5,
-    "w": 1,
-    "d": 0,
-    "l": 4,
-    "g": "6-13",
-    "pts": 4,
-    "me": false
-   },
-   {
-    "n": 3,
-    "t": "Fjölnir",
-    "p": 4,
-    "w": 2,
-    "d": 0,
-    "l": 2,
-    "g": "9-25",
-    "pts": 4,
     "me": false
    }
   ],
