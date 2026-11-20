@@ -1412,6 +1412,20 @@
     "kind": "Íþróttir"
   },
   {
+    "title": "Stjörnublik Jólatónleikar",
+    "source": "Miðasala",
+    "site": "Tix",
+    "link": "https://tix.is/event/22688/stjornublik-jolatonleikar",
+    "start": "2026-12-17",
+    "end": "2026-12-17",
+    "time": "20:00",
+    "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22688.jpg",
+    "note": "6.000 kr.",
+    "venue": "Glerárkirkja",
+    "cat0": "Jól, Jólatónleikar",
+    "kind": "Tónlist"
+  },
+  {
     "title": "Þór Þ. – Þór Ak.",
     "source": "Íþróttir",
     "sport": "Körfubolti",
@@ -1654,6 +1668,20 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/y2zzrCFaP7CT2VVoprobjXDjGze0iA-metaSGVycmEgYcyBIGdyw6ZuYSAtIElJSS5wbmc=-.webp",
     "note": "Uppselt · Frá 7.900 kr.",
+    "kind": "Tónlist"
+  },
+  {
+    "title": "ÁRAMÓTIN MEÐ HERRA HNETUSMJÖR Í SJALLANUM",
+    "source": "Miðasala",
+    "site": "Tix",
+    "link": "https://tix.is/event/22690/aramotin-med-herra-hnetusmjor-i-sjallanum",
+    "start": "2026-12-31",
+    "end": "2026-12-31",
+    "time": "23:59",
+    "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22690.jpg",
+    "note": "6.990 – 7.690 kr.",
+    "venue": "Sjallinn",
+    "cat0": "Tónleikar, Tónlist",
     "kind": "Tónlist"
   },
   {
@@ -2299,7 +2327,7 @@
     "start": "2027-02-12",
     "end": "2027-02-12",
     "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1793699145.png?v=1794963917",
+    "image": "https://www.mak.is/static/calendar/images/submit_1793699145.png?v=1795130065",
     "note": "Frá 8.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
@@ -3301,7 +3329,7 @@
     "start": "2027-04-03",
     "end": "2027-04-03",
     "time": "20:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1794411799.png?v=1794963917",
+    "image": "https://www.mak.is/static/calendar/images/submit_1794411799.png?v=1795130065",
     "note": "Frá 9.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
@@ -3466,7 +3494,7 @@
     "start": "2027-09-18",
     "end": "2027-09-18",
     "time": "21:00",
-    "image": "https://www.mak.is/static/calendar/images/submit_1793871607.png?v=1794963917",
+    "image": "https://www.mak.is/static/calendar/images/submit_1793871607.png?v=1795130065",
     "note": "Frá 11.990 kr.",
     "cat0": "Tónleikar",
     "venue": "Hamraborg, Hof",
