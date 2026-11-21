@@ -1,5 +1,54 @@
 [
   {
+    "title": "Gómsæti hjá Dísu í óvenjulegu umhverfi",
+    "link": "https://www.akureyri.net/is/moya/news/gomsaeti-hja-disu-i-ovenjulegu-umhverfi",
+    "summary": "Það er ekki á hverjum degi sem fólki býðst að fara á matargerðarnámskeið í gamalli hlöðu sem breytt hefur verið í glæsilegt heimili. Bryndís Óskarsdóttir, matartæknir, markþjálfi og grafískur hönnuður, býður einmitt upp á slíka upplifun á heimili sín...",
+    "date": "2026-11-21T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/20261111_121623.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Töfrandi hátíð en dökk saga liggur að baki",
+    "link": "https://www.akureyri.net/is/moya/news/tofrandi-hatid-en-dokk-saga-liggur-ad-baki",
+    "summary": "„Fjórða fimmtudag í nóvember ár hvert safnast fjölskyldur í Bandaríkjunum saman við veisluborð og halda þakkargjörð. Hátíð sem á meðal annars rætur í þeim sið að fagna uppskerulokum og þakka fyrir gjafir jarðar. Flest okkar tengja þessa hátíð við fyl...",
+    "date": "2026-11-21T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/thrainn-thakkargjord.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Kvennalið Akureyrar áberandi í dag",
+    "link": "https://www.akureyri.net/is/moya/news/kvennalid-akureyrar-aberandi-i-dag",
+    "summary": "Fimm leikir eru á dagskrá Akureyrarliða í dag, tveir útileikir í blaki, heimaleikur KA/Þórs í handbolta, heimaleikur hjá íshokkíkonum í SA og körfuboltakonum í Þór. Blak – Blaklið KA í efstu deildum karla og kvenna, Unbroken-deildunum, far...",
+    "date": "2026-11-21T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/ithrottir-21.11..png",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir",
+      "Íþróttir"
+    ]
+  },
+  {
+    "title": "Þakklæti í skugga dökkrar fortíðar",
+    "link": "https://www.akureyri.net/is/moya/news/thakklaeti-i-skugga-dokkrar-fortidar",
+    "summary": "",
+    "date": "2026-11-21T06:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/thakkargjord-inni.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Bikarinn: Þór-ÍBV og Fram-KA/Þór",
     "link": "https://www.akureyri.net/is/moya/news/bikarinn-thor-ibv-og-fram-kathor",
     "summary": "Þórsarar taka á móti Vestmannaeyingum í átta liða úrslitum bikarkeppni karla í handbolta, Powerade bikarsins, og KA/Þór mætir Fram á útivelli í bikarkeppni kvenna. Dregið var í dag. Leikirnir fjórir í bikarkeppni karla fara allir fram föstudagskvöld...",
@@ -1403,18 +1452,6 @@
     ]
   },
   {
-    "title": "Eyrún Lilja Aradóttir er Ungskáld 2026",
-    "link": "https://www.akureyri.net/is/moya/news/eyrun-lilja-aradottir-er-ungskald-2026",
-    "summary": "Eyrún Lilja Aradóttir varð hlutskörpust í ritlistakeppni Ungskálda árið 2026 en verðlaunin voru afhent við hátíðlega athöfn á Amtsbókasafninu á Akureyri mánudaginn 16. nóvember, á degi íslenskrar tungu. Verðlaunin fékk hún fyrir smásögu sína sem ber ...",
-    "date": "2026-11-17T16:15:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/ungskaldin.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Ljósin tendruð á Ráðhústorgi á laugardaginn",
     "link": "https://kaffid.is/ljosin-tendrud-a-radhustorgi-a-laugardaginn/",
     "summary": "Laugardaginn 21. nóvember verða ljósin tendruð á jólatrénu á Ráðhústorgi. Jólasveinar stíga á stokk, Barnakórar Akureyrarkirkju syngja og ævintýrapersónur úr […]",
@@ -1499,48 +1536,12 @@
     ]
   },
   {
-    "title": "Hrikaleg tilfinning fyrst en mikill léttir",
-    "link": "https://www.akureyri.net/is/moya/news/hrikaleg-tilfinning-fyrst-en-mikill-lettir",
-    "summary": "„Tilfinningin var hrikaleg þegar maður sá þetta fyrst,“ segir Guðmundur Þ. Jónsson, skipstjóri á Vilhelm Þorsteinssyni EA-11, um það þegar skipið losnaði frá bryggju í Krossanesi á föstudagskvöldið; bryggjupollar höfðu gefið sig og skipið hékk á einn...",
-    "date": "2026-11-17T14:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/wkpi936d0ah3kaguvrfxx9.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
     "title": "Er þetta í þínu boði, kæri þingmaður?",
     "link": "https://www.vikubladid.is/is/moya/news/er-thetta-i-thinu-bodi-kaeri-thingmadur",
     "summary": "Þann 16. október boðaði innviðaráðherra til fundar með sólarhrings fyrirvara. Þar kynnti hann grundvallarbreytingu á Loftbrúnni. Í stað 40% afsláttar af verði flugmiða á stuðningurinn að vera föst krónutala.",
     "date": "2026-11-17T13:34:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/greinnota.jpg",
     "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Engar skemmdir urðu á Baldvin EA",
-    "link": "https://www.akureyri.net/is/moya/news/engar-skemmdir-urdu-a-baldvin-ea",
-    "summary": "Baldvin Þorsteinsson EA-11, uppsjávarskip Samherja, skemmdist ekkert þegar það slitnaði frá bryggju í Krossanesi á föstudagskvöldið. Þrátt fyrir erfiðar aðstæður tókst að koma áhöfn um borð, ná stjórn á skipinu og koma því örugglega að Oddeyrarb...",
-    "date": "2026-11-17T13:30:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/vilhelm-ea-11_0g7a5841.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Engar skemmdir urðu á Vilhelm EA",
-    "link": "https://www.akureyri.net/is/moya/news/engar-skemmdir-urdu-a-vilhelm-ea",
-    "summary": "Vilhelm Þorsteinsson EA-11, uppsjávarskip Samherja, skemmdist ekkert þegar það slitnaði frá bryggju í Krossanesi á föstudagskvöldið. Þrátt fyrir erfiðar aðstæður tókst að koma áhöfn um borð, ná stjórn á skipinu og koma því örugglega að Oddeyrarbryggj...",
-    "date": "2026-11-17T13:30:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/vilhelm-ea-11_0g7a5841.jpg",
-    "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
