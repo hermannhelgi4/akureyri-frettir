@@ -871,58 +871,5 @@
    }
   ],
   "ts": "2026-11-22"
- },
- {
-  "sport": "Fótbolti",
-  "gender": "Konur",
-  "comp": "Besta deild kvenna - Neðri hluti",
-  "link": "https://www.ksi.is/oll-mot/mot/?id=7025661&banner-tab=overview",
-  "rows": [
-   {
-    "n": 1,
-    "t": "Fram",
-    "p": 21,
-    "w": 8,
-    "d": 2,
-    "l": 11,
-    "g": "33-48",
-    "pts": 26,
-    "me": false
-   },
-   {
-    "n": 2,
-    "t": "Þór/KA",
-    "p": 21,
-    "w": 7,
-    "d": 4,
-    "l": 10,
-    "g": "28-30",
-    "pts": 25,
-    "me": true
-   },
-   {
-    "n": 3,
-    "t": "Valur",
-    "p": 21,
-    "w": 6,
-    "d": 6,
-    "l": 9,
-    "g": "25-34",
-    "pts": 24,
-    "me": false
-   },
-   {
-    "n": 4,
-    "t": "Víkingur R.",
-    "p": 21,
-    "w": 6,
-    "d": 4,
-    "l": 11,
-    "g": "30-43",
-    "pts": 22,
-    "me": false
-   }
-  ],
-  "ts": "2026-11-22"
  }
 ]
