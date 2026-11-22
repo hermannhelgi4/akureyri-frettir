@@ -390,7 +390,7 @@ const FLAGIS="data:image/svg+xml,"+encodeURIComponent("<svg xmlns='http://www.w3
 const LAL={"Þór Þorlákshöfn":["Þór Þ.","Þór Þorl."],"Þór Þ.":["Þór Þorlákshöfn"],"Þór Ak.":["Þór","Þór Akureyri"],"Þór Akureyri":["Þór"],"Þór":["Þór Ak.","Þór Akureyri"]};
 function logoUrl(n){n=(n||"").trim();if(!n)return"";if(/(^| )U-?20( |$)/i.test(n))return FLAGIS;const base=n.replace(/ (B|U|U[0-9]+|ungmenni)$/,"");const c=[n,base].concat(LAL[n]||[],LAL[base]||[]);for(const k of c)if(LOGOS[k])return LOGOS[k];for(const k of c){const k2=k.replace(/[.]/g,"");if(LOGOS[k2])return LOGOS[k2]}return""}
 function lg(n){const u=logoUrl(n);if(!u)return null;const im=document.createElement("img");im.className="lgm";im.src=u;im.alt="";im.referrerPolicy="no-referrer";im.onerror=function(){im.remove()};return im}
-function renderTab(box){const G=STAND.filter(g=>(!spSport||g.sport===spSport)&&(!spGen||g.gender===spGen)&&(!spTeam||g.rows.some(r=>r.me&&(r.t==="Þór Ak."?"Þór":r.t)===spTeam)));
+function renderTab(box){const G=STAND.filter(g=>(!spSport||g.sport===spSport)&&(!spGen||g.gender===spGen)&&(!spTeam||stT(g).indexOf(spTeam)>=0));
 if(!G.length){box.appendChild(el("div","sub","Engar töflur fundust."));return}
 const SO=["Handbolti","Fótbolti","Körfubolti","Blak","Íshokkí"];G.sort((a,b)=>SO.indexOf(a.sport)-SO.indexOf(b.sport)||(a.gender<b.gender?-1:a.gender>b.gender?1:0));
 G.forEach(g=>{const h=el("div","sph"),t=el("h3","evh",g.sport+" · "+g.gender+" · "+g.comp);t.style.margin="0";const a=el("a","","Nánar ›");a.href=g.link;a.target="_blank";a.rel="noopener";h.append(t,a);box.appendChild(h);
@@ -444,13 +444,16 @@ if(!blocks.length){box.appendChild(el("div","sub","Engin flug skráð."));return
 blocks.sort((a,b)=>a.d-b.d);blocks.forEach(b=>box.appendChild(b.n));
 box.appendChild(el("div","fnote","Upplýsingar eru skráðar eftir heimasíðum flugfélaga og ferðaskrifstofa og geta breyst. Staðfestu alltaf tíma og verð við bókun."))}
 const nk=x=>(x==="Þór Ak."?"Þór":x||"").toLowerCase().replace(/[ .]/g,"");let HBL={},hbT=0;
+const WF={"Þór kvenna (fótbolti)":"Þór","KA kvenna (fótbolti)":"KA"},OLDT=["Þór/KA"];
+const PK=(t,s,g)=>{t=t==="Þór Ak."?"Þór":t;return s==="Fótbolti"&&g==="Konur"&&(t==="Þór"||t==="KA")?t+" kvenna (fótbolti)":t};
+const evT=e=>(e.teams||[]).map(x=>PK(x,e.sport,e.gender)),stT=g=>g.rows.filter(r=>r.me).map(r=>PK(r.t,g.sport,g.gender));
 function hbPoll(){if(!API||Date.now()-hbT<25000)return;hbT=Date.now();fetch(API+"/hb").then(r=>r.json()).then(d=>{const m={};["upcoming","finished","live"].forEach(k=>(d[k]||[]).forEach(g=>{m[nk(g.home.name)+"|"+nk(g.away.name)]={h:g.home.score,a:g.away.score,clock:g.clock,st:g.status,url:"https://www.hbstatz.is/"+(g.reportUrl||"").replace(/^[/]/,"")}}));HBL=m;const v=document.getElementById("viewSp");if(v&&!v.hidden)renderSp()}).catch(function(){})}
 function renderSp(){const n0=new Date(),t=new Date(n0.getUTCFullYear(),n0.getUTCMonth(),n0.getUTCDate()),box=document.getElementById("splist"),dd=document.getElementById("spdd");
 const TN=x=>x==="Þór Ak."?"Þór":x;const all=EVENTS.filter(e=>e.source==="Íþróttir");dd.innerHTML="";
-const tb=document.getElementById("spteams");tb.innerHTML="";const TO=["Þór","KA","KA/Þór","Þór/KA","SA"];const tms=[...new Set(all.flatMap(e=>(e.teams||[]).map(TN)).concat(STAND.flatMap(g=>g.rows.filter(r=>r.me).map(r=>TN(r.t)))))].sort((a,b)=>(TO.indexOf(a)<0?9:TO.indexOf(a))-(TO.indexOf(b)<0?9:TO.indexOf(b)));
+const tb=document.getElementById("spteams");tb.innerHTML="";const TO=["Þór","KA","Þór kvenna (fótbolti)","KA kvenna (fótbolti)","KA/Þór","SA"];const tms=[...new Set(all.flatMap(evT).concat(STAND.flatMap(stT)).concat(Object.keys(WF)))].filter(x=>OLDT.indexOf(x)<0).sort((a,b)=>(TO.indexOf(a)<0?9:TO.indexOf(a))-(TO.indexOf(b)<0?9:TO.indexOf(b)));
 if(spTeam&&tms.indexOf(spTeam)<0)spTeam="";
 if(tms.length>1)["Öll lið",...tms].forEach(x=>{const v=x==="Öll lið"?"":x,b=el("button","chip"+(v===spTeam?" on":""),x);b.onclick=()=>{spTeam=v;renderSp()};tb.appendChild(b)});
-const sOrd=["Handbolti","Fótbolti","Körfubolti","Blak","Íshokkí"];const sps=new Set(all.filter(e=>!spTeam||(e.teams||[]).map(TN).indexOf(spTeam)>=0).map(e=>e.sport));STAND.filter(g=>!spTeam||g.rows.some(r=>r.me&&TN(r.t)===spTeam)).forEach(g=>sps.add(g.sport));const sp=["Allt",...[...sps].sort((x,y)=>(sOrd.indexOf(x)<0?9:sOrd.indexOf(x))-(sOrd.indexOf(y)<0?9:sOrd.indexOf(y)))];if(spSport&&sp.indexOf(spSport)<0)spSport="";
+const sOrd=["Handbolti","Fótbolti","Körfubolti","Blak","Íshokkí"];const sps=new Set(all.filter(e=>!spTeam||evT(e).indexOf(spTeam)>=0).map(e=>e.sport));STAND.filter(g=>!spTeam||stT(g).indexOf(spTeam)>=0).forEach(g=>sps.add(g.sport));const sp=["Allt",...[...sps].sort((x,y)=>(sOrd.indexOf(x)<0?9:sOrd.indexOf(x))-(sOrd.indexOf(y)<0?9:sOrd.indexOf(y)))];if(spSport&&sp.indexOf(spSport)<0)spSport="";
 const sg=document.getElementById("spseg");sg.innerHTML="";[["Næstu leikir","fix"],["Úrslit","res"],["Tafla","tab"]].forEach(a=>{const b=el("button",spMode===a[1]?"on":"",a[0]);b.onclick=()=>{spMode=a[1];renderSp()};sg.appendChild(b)});
 const mkdd=(key,lab,def,opts,cur,set)=>{const w=el("div","ddw"),b=el("button","ddb"+(cur?" act":""));b.appendChild(el("span","",lab));b.appendChild(el("b","",cur||def));b.appendChild(el("i","","▾"));
 b.onclick=e=>{e.stopPropagation();spOpen=(spOpen===key?"":key);renderSp()};w.appendChild(b);
@@ -459,7 +462,7 @@ dd.appendChild(mkdd("sport","Íþrótt","Allt",sp,spSport,v=>{spSport=v}));dd.ap
 if(spSport||spGen){const c=el("button","ddc","Hreinsa");c.onclick=()=>{spSport="";spGen="";spOpen="";renderSp()};dd.appendChild(c)}
 const cmp=(a,b)=>a.start<b.start?-1:a.start>b.start?1:((a.time||"")<(b.time||"")?-1:1);
 const spRes=(spMode==="res");box.innerHTML="";if(spMode==="tab"){renderTab(box);return}
-const L=all.filter(e=>(!spSport||e.sport===spSport)&&(!spGen||e.gender===spGen)&&(!spTeam||(e.teams||[]).map(TN).indexOf(spTeam)>=0)&&(spRes?!!e.res:!e.res)).sort(spRes?(a,b)=>cmp(b,a):cmp);
+const L=all.filter(e=>(!spSport||e.sport===spSport)&&(!spGen||e.gender===spGen)&&(!spTeam||evT(e).indexOf(spTeam)>=0)&&(spRes?!!e.res:!e.res)).sort(spRes?(a,b)=>cmp(b,a):cmp);
 if(!L.length){box.appendChild(el("div","sub",spRes?"Engin úrslit síðustu daga.":(spTeam?"Engir leikir framundan hjá "+spTeam+" í bili – sjáðu Töflu eða Úrslit.":"Engir leikir fundust.")));return}
 const SPI={"Fótbolti":"⚽","Handbolti":"🤾","Körfubolti":"🏀","Blak":"🏐","Íshokkí":"🏒"};
 function spLab(e){const d=el("div","lb");d.appendChild(el("span","sp",(SPI[e.sport]||"🏅")+" "+e.sport));if(e.gender)d.appendChild(el("span","gd"+(e.gender==="Konur"?" k":""),e.gender));return d}
@@ -627,6 +630,8 @@ def write_html(items, events=None, offers=None, stand=None, flights=None, weathe
         logos.update(_load("logos_manual.json", {}) or {})  # merki sem þú setur sjálf(ur) ganga fyrir
     except Exception:
         pass
+    for t in OLD_TEAMS:  # hætt lið eru ekki lengur sýnd neins staðar
+        logos.pop(t, None)
     try:  # sama merkjaskrá fyrir appið
         with open("logos.json", "w", encoding="utf-8") as lf:
             json.dump(logos, lf, ensure_ascii=False)
@@ -1630,7 +1635,10 @@ def load_offers(today):
 
 # ---------- Íþróttaleikir ----------
 # Félögin á Akureyri sem við fylgjumst með (nöfn eins og sambandið skrifar þau)
-SPORT_TEAMS = {"KA", "Þór", "KA/Þór", "SA", "Þór Ak.", "Þór/KA"}
+# Þór/KA (fótbolti kvenna) var lagt niður 2026: kvennaliðin spila nú sem „Þór“ og „KA“ (gender = „Konur“ greinir þau frá körlunum).
+# Fréttasíurnar (_TEAM_COMBO, _AK_SIGNAL, FOTBOLTI_SEARCHES) halda Þór/KA – fréttir um liðið teljast enn frá Akureyri.
+SPORT_TEAMS = {"KA", "Þór", "KA/Þór", "SA", "Þór Ak."}
+OLD_TEAMS = {"Þór/KA"}  # hætt lið: tekið úr leikjum, töflum og merkjum
 SPORT_RESULT_DAYS = 21  # úrslit eru geymd svona marga daga (sjást í Úrslit-hnappnum; leikir dagsins sjást á aðallistanum)
 
 # HSÍ (handbolti): (mót-númer, kyn). Nafn mótsins kemur úr gögnunum sjálfum.
@@ -2047,7 +2055,7 @@ def read_ksi(today):
             time.sleep(0.2)
         mine = [r for r in rows if r["home"] in SPORT_TEAMS or r["away"] in SPORT_TEAMS]
         if mine:
-            print("   KSÍ %s: %d leikir alls, %d hjá KA/Þór/Þór/KA" % (label, len(rows), len(mine)))
+            print("   KSÍ %s: %d leikir alls, %d hjá Akureyrarliðum" % (label, len(rows), len(mine)))
         for r in mine:
             low = (r["comp"] or label).lower()
             out.append({"sport": "Fótbolti", "gender": "Konur" if "kvenna" in low else "Karlar",
@@ -2221,7 +2229,9 @@ def collect_sports(old, today):
     # ef heilt mót (íþrótt + kyn) skilaði engu núna (t.d. tímabundin villa) held ég í síðustu þekktu leiki þess
     fresh_groups = {(m["sport"], m["gender"]) for m in fresh}
     for e in old:
-        if e.get("sport") and (e["sport"], e.get("gender")) not in fresh_groups and e.get("end", "") >= cutoff:
+        # (aðeins leikir liða sem við fylgjumst enn með – t.d. ekki gamlir Þór/KA-leikir)
+        if (e.get("sport") and (e["sport"], e.get("gender")) not in fresh_groups and e.get("end", "") >= cutoff
+                and any(t in SPORT_TEAMS for t in e.get("teams") or [])):
             events.append(e)
     # sami leikur tveggja Akureyrarliða kemur úr báðum hópum – fjarlægi tvítekningar
     seen, uniq = set(), []
@@ -3055,6 +3065,11 @@ def collect_standings(today):
     old = _load("standings.json", [])
     if not isinstance(old, list):
         old = []
+    # Fyrri töflur metnar upp á nýtt eftir núverandi SPORT_TEAMS (tafla þar sem hætt lið, t.d. Þór/KA, var eina „okkar“ lið fer)
+    for g in old:
+        for r in g.get("rows") or []:
+            r["me"] = r.get("t") in SPORT_TEAMS
+    old = [g for g in old if has_mine(g.get("rows") or [])]
     res = []
     for name, fn in STAND_SOURCES:
         try:
