@@ -1,22 +1,5 @@
 [
   {
-    "title": "KA – Haukar",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/111484",
-    "start": "2026-10-31",
-    "end": "2026-10-31",
-    "time": "18:30",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið",
-    "teams": [
-      "KA"
-    ],
-    "res": "27–36",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "Þór – FH",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -285,7 +268,6 @@
     "teams": [
       "KA/Þór"
     ],
-    "live": "https://www.hbstatz.is/?live=13085",
     "res": "32–35",
     "kind": "Íþróttir"
   },
@@ -340,17 +322,6 @@
     "live": "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/2859137/",
     "res": "107–79",
     "kind": "Íþróttir"
-  },
-  {
-    "title": "Skálmöld",
-    "source": "Græni hatturinn",
-    "link": "https://www.graenihatturinn.is/is/skalmold-21-nov-2026/eid/289",
-    "start": "2026-11-21",
-    "end": "2026-11-21",
-    "time": "21:00",
-    "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/b3CTzkvZ56UTJWaO2IfgGRh5yJgMkO-metac2vDoWxtw7ZsZCBiYWxkdXIuanBn-.webp",
-    "note": "Uppselt · Frá 8.900 kr.",
-    "kind": "Tónlist"
   },
   {
     "title": "Marísól og leitin að gleðinni",
