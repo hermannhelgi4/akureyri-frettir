@@ -390,7 +390,7 @@ const FLAGIS="data:image/svg+xml,"+encodeURIComponent("<svg xmlns='http://www.w3
 const LAL={"Þór Þorlákshöfn":["Þór Þ.","Þór Þorl."],"Þór Þ.":["Þór Þorlákshöfn"],"Þór Ak.":["Þór","Þór Akureyri"],"Þór Akureyri":["Þór"],"Þór":["Þór Ak.","Þór Akureyri"]};
 function logoUrl(n){n=(n||"").trim();if(!n)return"";if(/(^| )U-?20( |$)/i.test(n))return FLAGIS;const base=n.replace(/ (B|U|U[0-9]+|ungmenni)$/,"");const c=[n,base].concat(LAL[n]||[],LAL[base]||[]);for(const k of c)if(LOGOS[k])return LOGOS[k];for(const k of c){const k2=k.replace(/[.]/g,"");if(LOGOS[k2])return LOGOS[k2]}return""}
 function lg(n){const u=logoUrl(n);if(!u)return null;const im=document.createElement("img");im.className="lgm";im.src=u;im.alt="";im.referrerPolicy="no-referrer";im.onerror=function(){im.remove()};return im}
-function renderTab(box){const G=STAND.filter(g=>(!spSport||g.sport===spSport)&&(!spGen||g.gender===spGen)&&(!spTeam||stT(g).indexOf(spTeam)>=0));
+function renderTab(box){const G=STAND.filter(g=>(!spSport||g.sport===spSport)&&(!spGen||g.gender===spGen)&&(!spTeam||g.rows.some(r=>r.me&&(r.t==="Þór Ak."?"Þór":r.t)===spTeam)));
 if(!G.length){box.appendChild(el("div","sub","Engar töflur fundust."));return}
 const SO=["Handbolti","Fótbolti","Körfubolti","Blak","Íshokkí"];G.sort((a,b)=>SO.indexOf(a.sport)-SO.indexOf(b.sport)||(a.gender<b.gender?-1:a.gender>b.gender?1:0));
 G.forEach(g=>{const h=el("div","sph"),t=el("h3","evh",g.sport+" · "+g.gender+" · "+g.comp);t.style.margin="0";const a=el("a","","Nánar ›");a.href=g.link;a.target="_blank";a.rel="noopener";h.append(t,a);box.appendChild(h);
@@ -444,16 +444,14 @@ if(!blocks.length){box.appendChild(el("div","sub","Engin flug skráð."));return
 blocks.sort((a,b)=>a.d-b.d);blocks.forEach(b=>box.appendChild(b.n));
 box.appendChild(el("div","fnote","Upplýsingar eru skráðar eftir heimasíðum flugfélaga og ferðaskrifstofa og geta breyst. Staðfestu alltaf tíma og verð við bókun."))}
 const nk=x=>(x==="Þór Ak."?"Þór":x||"").toLowerCase().replace(/[ .]/g,"");let HBL={},hbT=0;
-const WF={"Þór kvenna (fótbolti)":"Þór","KA kvenna (fótbolti)":"KA"},OLDT=["Þór/KA"];
-const PK=(t,s,g)=>{t=t==="Þór Ak."?"Þór":t;return s==="Fótbolti"&&g==="Konur"&&(t==="Þór"||t==="KA")?t+" kvenna (fótbolti)":t};
-const evT=e=>(e.teams||[]).map(x=>PK(x,e.sport,e.gender)),stT=g=>g.rows.filter(r=>r.me).map(r=>PK(r.t,g.sport,g.gender));
+const OLDT=["Þór/KA"];
 function hbPoll(){if(!API||Date.now()-hbT<25000)return;hbT=Date.now();fetch(API+"/hb").then(r=>r.json()).then(d=>{const m={};["upcoming","finished","live"].forEach(k=>(d[k]||[]).forEach(g=>{m[nk(g.home.name)+"|"+nk(g.away.name)]={h:g.home.score,a:g.away.score,clock:g.clock,st:g.status,url:"https://www.hbstatz.is/"+(g.reportUrl||"").replace(/^[/]/,"")}}));HBL=m;const v=document.getElementById("viewSp");if(v&&!v.hidden)renderSp()}).catch(function(){})}
 function renderSp(){const n0=new Date(),t=new Date(n0.getUTCFullYear(),n0.getUTCMonth(),n0.getUTCDate()),box=document.getElementById("splist"),dd=document.getElementById("spdd");
 const TN=x=>x==="Þór Ak."?"Þór":x;const all=EVENTS.filter(e=>e.source==="Íþróttir");dd.innerHTML="";
-const tb=document.getElementById("spteams");tb.innerHTML="";const TO=["Þór","KA","Þór kvenna (fótbolti)","KA kvenna (fótbolti)","KA/Þór","SA"];const tms=[...new Set(all.flatMap(evT).concat(STAND.flatMap(stT)).concat(Object.keys(WF)))].filter(x=>OLDT.indexOf(x)<0).sort((a,b)=>(TO.indexOf(a)<0?9:TO.indexOf(a))-(TO.indexOf(b)<0?9:TO.indexOf(b)));
+const tb=document.getElementById("spteams");tb.innerHTML="";const TO=["Þór","KA","KA/Þór","SA"];const tms=[...new Set(all.flatMap(e=>(e.teams||[]).map(TN)).concat(STAND.flatMap(g=>g.rows.filter(r=>r.me).map(r=>TN(r.t)))))].filter(x=>OLDT.indexOf(x)<0).sort((a,b)=>(TO.indexOf(a)<0?9:TO.indexOf(a))-(TO.indexOf(b)<0?9:TO.indexOf(b)));
 if(spTeam&&tms.indexOf(spTeam)<0)spTeam="";
 if(tms.length>1)["Öll lið",...tms].forEach(x=>{const v=x==="Öll lið"?"":x,b=el("button","chip"+(v===spTeam?" on":""),x);b.onclick=()=>{spTeam=v;renderSp()};tb.appendChild(b)});
-const sOrd=["Handbolti","Fótbolti","Körfubolti","Blak","Íshokkí"];const sps=new Set(all.filter(e=>!spTeam||evT(e).indexOf(spTeam)>=0).map(e=>e.sport));STAND.filter(g=>!spTeam||stT(g).indexOf(spTeam)>=0).forEach(g=>sps.add(g.sport));const sp=["Allt",...[...sps].sort((x,y)=>(sOrd.indexOf(x)<0?9:sOrd.indexOf(x))-(sOrd.indexOf(y)<0?9:sOrd.indexOf(y)))];if(spSport&&sp.indexOf(spSport)<0)spSport="";
+const sOrd=["Handbolti","Fótbolti","Körfubolti","Blak","Íshokkí"];const sps=new Set(["Fótbolti"].concat(all.filter(e=>!spTeam||(e.teams||[]).map(TN).indexOf(spTeam)>=0).map(e=>e.sport)));STAND.filter(g=>!spTeam||g.rows.some(r=>r.me&&TN(r.t)===spTeam)).forEach(g=>sps.add(g.sport));const sp=["Allt",...[...sps].sort((x,y)=>(sOrd.indexOf(x)<0?9:sOrd.indexOf(x))-(sOrd.indexOf(y)<0?9:sOrd.indexOf(y)))];if(spSport&&sp.indexOf(spSport)<0)spSport="";
 const sg=document.getElementById("spseg");sg.innerHTML="";[["Næstu leikir","fix"],["Úrslit","res"],["Tafla","tab"]].forEach(a=>{const b=el("button",spMode===a[1]?"on":"",a[0]);b.onclick=()=>{spMode=a[1];renderSp()};sg.appendChild(b)});
 const mkdd=(key,lab,def,opts,cur,set)=>{const w=el("div","ddw"),b=el("button","ddb"+(cur?" act":""));b.appendChild(el("span","",lab));b.appendChild(el("b","",cur||def));b.appendChild(el("i","","▾"));
 b.onclick=e=>{e.stopPropagation();spOpen=(spOpen===key?"":key);renderSp()};w.appendChild(b);
@@ -462,8 +460,8 @@ dd.appendChild(mkdd("sport","Íþrótt","Allt",sp,spSport,v=>{spSport=v}));dd.ap
 if(spSport||spGen){const c=el("button","ddc","Hreinsa");c.onclick=()=>{spSport="";spGen="";spOpen="";renderSp()};dd.appendChild(c)}
 const cmp=(a,b)=>a.start<b.start?-1:a.start>b.start?1:((a.time||"")<(b.time||"")?-1:1);
 const spRes=(spMode==="res");box.innerHTML="";if(spMode==="tab"){renderTab(box);return}
-const L=all.filter(e=>(!spSport||e.sport===spSport)&&(!spGen||e.gender===spGen)&&(!spTeam||evT(e).indexOf(spTeam)>=0)&&(spRes?!!e.res:!e.res)).sort(spRes?(a,b)=>cmp(b,a):cmp);
-if(!L.length){box.appendChild(el("div","sub",spRes?"Engin úrslit síðustu daga.":(spTeam?"Engir leikir framundan hjá "+spTeam+" í bili – sjáðu Töflu eða Úrslit.":"Engir leikir fundust.")));return}
+const L=all.filter(e=>(!spSport||e.sport===spSport)&&(!spGen||e.gender===spGen)&&(!spTeam||(e.teams||[]).map(TN).indexOf(spTeam)>=0)&&(spRes?!!e.res:!e.res)).sort(spRes?(a,b)=>cmp(b,a):cmp);
+if(!L.length){box.appendChild(el("div","sub",spRes?"Engin úrslit síðustu daga.":(spTeam?"Engir leikir framundan hjá "+spTeam+" í bili – sjáðu Töflu eða Úrslit.":"Engir leikir framundan.")));return}
 const SPI={"Fótbolti":"⚽","Handbolti":"🤾","Körfubolti":"🏀","Blak":"🏐","Íshokkí":"🏒"};
 function spLab(e){const d=el("div","lb");d.appendChild(el("span","sp",(SPI[e.sport]||"🏅")+" "+e.sport));if(e.gender)d.appendChild(el("span","gd"+(e.gender==="Konur"?" k":""),e.gender));return d}
 function crest(n,cls){const w=(n||"").replace(/[^A-Za-zÀ-ÿÞþÐðÆæÖö ]/g,"").trim().split(" ").filter(Boolean);const c=(w.length>1?w.map(x=>x[0]).join("").slice(0,3):(w[0]||"?").slice(0,3)).toUpperCase();const d=el("div","cr"+(cls?" "+cls:""),c);const u=logoUrl(n);if(u){const im=document.createElement("img");im.src=u;im.alt="";im.referrerPolicy="no-referrer";im.onload=function(){d.textContent="";d.classList.add("lg");d.appendChild(im)};}return d}
