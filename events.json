@@ -338,6 +338,7 @@
       "Þór",
       "KA"
     ],
+    "live": "https://www.hbstatz.is/?game=7031",
     "kind": "Íþróttir"
   },
   {
@@ -411,7 +412,7 @@
     "time": "20:30",
     "image": "https://www.midix.is/storage/event/poster/main/t0QYJ4XjGDZCGSCLXaQIFMzB6n7Vrl-metaYWRhbC5wbmc=-.png",
     "note": "5.900 kr.",
-    "venue": "Glerárkirkja | | 0",
+    "venue": "Glerárkirkja",
     "kind": "Tónlist"
   },
   {
@@ -507,6 +508,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/v5FSlygO8Tq2R4W0dCc589bbKeFZY0-metaU2vDrW3DsyAyNiBJSUlJLmpwZw==-.webp",
     "note": "Frá 8.500 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -614,6 +616,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/jUE5s7DubAehsFBvn2pNxcU7Exyrxp-metaaXNzaS5qcGc=-.webp",
     "note": "Frá 5.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -808,6 +811,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/Q1nJsUeACcLErMUQHPVVaB8gmg0qxL-metaTMOzbiBJLmpwZw==-.webp",
     "note": "Fáir miðar · Frá 6.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -944,6 +948,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/65xmvcUUihVzsCxqKsyPRUdYCN6L4B-metaSsOzbGFzw7psdXIgMjYgSUkuanBn-.webp",
     "note": "Frá 4.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -1038,6 +1043,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/7IrMe5Ujq6xYaVJaNfzzYKxQFdgokg-metaQnJvdGhlciBncmFzcy5qcGc=-.webp",
     "note": "Uppselt · Frá 6.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -1078,6 +1084,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/ILJkuYVKbhzWteKlJBdWUluBWPOhNj-metaQnJvdGhlciBncmFzcy5qcGc=-.webp",
     "note": "Fáir miðar · Frá 6.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -1192,6 +1199,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/LtCalN6ewik4zUeLiQWp712Me87flq-metaNVdGcUtZS3cuanBn-.webp",
     "note": "Uppselt · Frá 8.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -1371,6 +1379,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/PsRdyVRag0xrOvkjp8GO2oRnpZlbl5-metaS3Jpc3NtYXNzMTAwMHgxMDAwLnBuZw==-.webp",
     "note": "Frá 7.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -1477,6 +1486,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/219mmrQXoGXaT8wOa22rBYyvAympt4-metaS3Jpc3NtYXNzMTAwMHgxMDAwLnBuZw==-.webp",
     "note": "Frá 7.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -1529,6 +1539,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/rs4evmwi8KnWKi1Tdtr3mWwKhBHks3-metaS2lsbGVyIHF1ZWVuIDI2LnBuZw==-.webp",
     "note": "Frá 7.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -1540,6 +1551,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/RHuF0FeDbTrH7aFWKtCsG5NJcuwKOa-metaQnLDrWV0IGRlcyAyNi5qcGc=-.webp",
     "note": "Frá 8.500 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -1551,6 +1563,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/IOqAxGEAlWLtEqKXASWNGFrXygTC2Y-metadW5hIHRvcmZhIGrDs2wgMjYuanBn-.webp",
     "note": "Fáir miðar · Frá 6.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -1562,6 +1575,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/d2f1e1btF077mtLAo8McKQX43YJLmx-metaSGVycmEgYcyBIGdyw6ZuYSAtIElJSS5wbmc=-.webp",
     "note": "Uppselt · Frá 7.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -1587,6 +1601,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/y2zzrCFaP7CT2VVoprobjXDjGze0iA-metaSGVycmEgYcyBIGdyw6ZuYSAtIElJSS5wbmc=-.webp",
     "note": "Uppselt · Frá 7.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -1628,6 +1643,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/OQPgovBPLG1ApZ0GLl7Nbqom8yWuDX-metaaCAmIEggMjAyNy5qcGc=-.webp",
     "note": "Frá 5.900 kr.",
+    "venue": "",
     "kind": "Leiklist"
   },
   {
@@ -1687,6 +1703,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/8yrS48LwEsViqWajXk3sZ2H8gPBrzr-metabGrDs3R1IDIwMjcgc3TDs3IuanBn-.webp",
     "note": "Fáir miðar · Frá 9.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -1762,6 +1779,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/mKC8HBnTqQsbCFq4L4vkKZyMRDXfLy-metabGrDs3R1IDIwMjcgc3TDs3IuanBn-.webp",
     "note": "Uppselt · Frá 9.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -1866,6 +1884,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/x8VqBvTnR1mBb4wv1S6Qn6D1qBuTk4-metaw5psZnVyIMO6bGZ1ciAyNy5qcGc=-.webp",
     "note": "Nýtt · Frá 7.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -1877,6 +1896,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/Y0rQutJCqm0qjm2KbNiwQxqHBRyDAT-metaw5psZnVyIMO6bGZ1ciAyNy5qcGc=-.webp",
     "note": "Nýtt · Frá 7.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -2277,6 +2297,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/VK8aVaGFtU5KJY6s3bgDMTpTQUqo8K-metaYWdlbnQgZnJlc2NvIDIwMjcuanBn-.webp",
     "note": "Nýtt · Frá 8.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
@@ -2805,6 +2826,7 @@
     "time": "21:00",
     "image": "https://www.graenihatturinn.is/storage/event/poster/main/368x430/zMDST537GInu78Zbyy4W4SSTR9TBIL-metacGluayBmbG95LnBuZw==-.webp",
     "note": "Frá 8.900 kr.",
+    "venue": "",
     "kind": "Tónlist"
   },
   {
