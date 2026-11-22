@@ -326,6 +326,7 @@
   {
     "title": "Marísól og leitin að gleðinni",
     "source": "Freyvangsleikhúsið",
+    "site": "Tix",
     "link": "https://tix.is/event/22590/marisol-og-leitin-ad-gledinni",
     "start": "2026-11-22",
     "end": "2026-11-22",
@@ -333,6 +334,7 @@
     "image": "https://cdn.tixly.com/is/tix/EventImages/Event_22590.jpg",
     "note": "2.500 kr.",
     "venue": "Freyvangur, Eyjafjarðarsveit",
+    "cat0": "Fjölskyldan, Jól, Leikhús",
     "kind": "Leiklist"
   },
   {
