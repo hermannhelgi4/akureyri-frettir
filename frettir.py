@@ -3092,6 +3092,13 @@ def collect_standings(today):
     return res
 
 
+def clean_venue(v):
+    """Hreinsar staðarheiti: „Glerárkirkja | | 0“ → „Glerárkirkja“ (tómir hlutar og stakar tölur fjarlægðir)."""
+    parts = [p.strip() for p in re.split(r"\s*\|\s*", v or "")]
+    parts = [p for p in parts if p and not re.fullmatch(r"[\d\s.,-]+", p)]
+    return ", ".join(dict.fromkeys(parts))
+
+
 def collect_events():
     today = datetime.now(timezone.utc).date()
     old = _load("events.json", [])
@@ -3152,6 +3159,7 @@ def collect_events():
             v = det.get(e["link"], {}).get("venue")
             if v:
                 e["venue"] = v
+            e["venue"] = clean_venue(e.get("venue"))
             if det.get(e["link"], {}).get("txt"):
                 e["txt"] = det[e["link"]]["txt"]
         print("OK Viðburðir %s: %d viðburðir á lista, %d skiptast í sýningar, %d síður sóttar núna (%d spjöld)" % (
