@@ -443,7 +443,10 @@ FLIGHTS.filter(f=>f.kind!=="weekly").forEach(f=>{const s=pd(f.start);if(s<t0)ret
 if(!blocks.length){box.appendChild(el("div","sub","Engin flug skráð."));return}
 blocks.sort((a,b)=>a.d-b.d);blocks.forEach(b=>box.appendChild(b.n));
 box.appendChild(el("div","fnote","Upplýsingar eru skráðar eftir heimasíðum flugfélaga og ferðaskrifstofa og geta breyst. Staðfestu alltaf tíma og verð við bókun."))}
-const nk=x=>(x==="Þór Ak."?"Þór":x||"").toLowerCase().replace(/[ .]/g,"");let HBL={},hbT=0;
+const nk=x=>(x==="Þór Ak."?"Þór":x||"").toLowerCase().replace(/[ .]/g,"");let HBL={},hbT=0,BBL={},bbT={};
+const fid=e=>e.fiba||((e.live||"").match(/\/u\/KKI\/(\d+)/)||[])[1]||"";
+function bbPoll(id){if(!API||!id||Date.now()-(bbT[id]||0)<25000)return;bbT[id]=Date.now();fetch(API+"/kki?id="+id).then(r=>r.json()).then(d=>{if(!d||!d.home)return;BBL[id]={h:d.home.score,a:d.away.score,st:d.state,period:d.period,pt:d.periodType,clock:d.clock||""};const v=document.getElementById("viewSp");if(v&&!v.hidden)renderSp()}).catch(function(){})}
+const bbTxt=b=>b.pt==="OVERTIME"?"Framlenging "+b.clock:b.st==="break"?(b.period===2?"Hálfleikur":"Eftir "+b.period+". leikhluta"):b.period+". leikhluti "+b.clock;
 const OLDT=["Þór/KA"];
 function hbPoll(){if(!API||Date.now()-hbT<25000)return;hbT=Date.now();fetch(API+"/hb").then(r=>r.json()).then(d=>{const m={};["upcoming","finished","live"].forEach(k=>(d[k]||[]).forEach(g=>{m[nk(g.home.name)+"|"+nk(g.away.name)]={h:g.home.score,a:g.away.score,clock:g.clock,st:g.status,url:"https://www.hbstatz.is/"+(g.reportUrl||"").replace(/^[/]/,"")}}));HBL=m;const v=document.getElementById("viewSp");if(v&&!v.hidden)renderSp()}).catch(function(){})}
 function renderSp(){const n0=new Date(),t=new Date(n0.getUTCFullYear(),n0.getUTCMonth(),n0.getUTCDate()),box=document.getElementById("splist"),dd=document.getElementById("spdd");
@@ -474,11 +477,11 @@ const h=el("div","h2");h.appendChild(spLab(e));let bd="",bc="";if((I.home||I.awa
 c.appendChild(el("div","meta",DAYS[s.getDay()]+". "+fd(s)+(I.rest.length?" · "+I.rest.join(" · "):"")));
 [[I.t1,a1,a1<a2,I.home],[I.t2,a2,a2<a1,I.away]].forEach(x=>{const r=el("div","tm"+(x[2]?" lose":""));r.appendChild(crest(x[0],x[3]?"":"o"));r.appendChild(el("div","n",x[0]));r.appendChild(el("div","s",isNaN(x[1])?"":String(x[1])));c.appendChild(r)});
 box.appendChild(c);return}
-if(!spRes&&I.t2&&e.start===firstDay){const c=el("a","next");c.href=e.link;c.target="_blank";c.rel="noopener";const hb=HBL[nk(I.t1)+"|"+nk(I.t2)];c.appendChild(el("div","lab",diff===0?"Leikur dagsins":"Næsti leikur"));c.appendChild(spLab(e));
+if(!spRes&&I.t2&&e.start===firstDay){const c=el("a","next");c.href=e.link;c.target="_blank";c.rel="noopener";const hb=HBL[nk(I.t1)+"|"+nk(I.t2)],bb=e.sport==="Körfubolti"?BBL[fid(e)]:null,bon=bb&&bb.st!=="upcoming";c.appendChild(el("div","lab",diff===0?"Leikur dagsins":"Næsti leikur"));c.appendChild(spLab(e));
 const v=el("div","vs"),L1=el("div",""),R1=el("div","");L1.appendChild(crest(I.t1,I.away?"o":""));L1.appendChild(el("div","n",I.t1));R1.appendChild(crest(I.t2,I.home?"o":""));R1.appendChild(el("div","n",I.t2));
-const m=el("div","m",(diff===0?"Í dag":diff===1?"Á morgun":DAYS[s.getDay()]+". "+fd(s)));m.appendChild(el("b","",hb&&hb.st!=="upcoming"?hb.h+" – "+hb.a:(e.time||"–")));if(I.rest[0])m.appendChild(document.createTextNode(I.rest[0]));v.append(L1,m,R1);c.appendChild(v);
+const m=el("div","m",(diff===0?"Í dag":diff===1?"Á morgun":DAYS[s.getDay()]+". "+fd(s)));m.appendChild(el("b","",hb&&hb.st!=="upcoming"?hb.h+" – "+hb.a:bon?bb.h+" – "+bb.a:(e.time||"–")));if(I.rest[0])m.appendChild(document.createTextNode(I.rest[0]));v.append(L1,m,R1);c.appendChild(v);
 const tp=(e.time||"").split(":"),ts=new Date(Date.UTC(s.getFullYear(),s.getMonth(),s.getDate(),+tp[0]||0,+tp[1]||0)),ms=ts-new Date();
-if(API&&e.sport==="Handbolti"&&ms<=9e5&&ms>-108e5)hbPoll();const hl=hb&&(hb.st==="live"||hb.st==="halftime"),fin=hb&&hb.st==="finished";if(fin||hl||(ms<=0&&ms>-108e5&&e.time)){const lv=el("div","live"+(fin?" fin":""));if(!fin)lv.appendChild(el("span","dot"));lv.appendChild(document.createTextNode(fin?"Leik lokið – sjá tölfræði ›":hl?"Í beinni · "+hb.clock+" – sjá beina tölfræði ›":"Leikur í gangi – sjá beina tölfræði ›"));c.appendChild(lv);const u=(hb&&hb.url)||e.live;if(u)c.href=u}if(hb&&hb.st!=="upcoming")c.appendChild(el("div","hbc","Staða og tölfræði frá hbstatz.is"));
+if(API&&e.sport==="Handbolti"&&ms<=9e5&&ms>-108e5)hbPoll();if(API&&e.sport==="Körfubolti"&&fid(e)&&ms<=9e5&&ms>-108e5)bbPoll(fid(e));const bl=bon&&bb.st!=="finished",hl=(hb&&(hb.st==="live"||hb.st==="halftime"))||bl,fin=(hb&&hb.st==="finished")||(bon&&bb.st==="finished");if(fin||hl||(ms<=0&&ms>-108e5&&e.time)){const lv=el("div","live"+(fin?" fin":""));if(!fin)lv.appendChild(el("span","dot"));lv.appendChild(document.createTextNode(fin?"Leik lokið – sjá tölfræði ›":hl?"Í beinni · "+(bl?bbTxt(bb):hb.clock)+" – sjá beina tölfræði ›":"Leikur í gangi – sjá beina tölfræði ›"));c.appendChild(lv);const u=(hb&&hb.url)||e.live;if(u)c.href=u}if(hb&&hb.st!=="upcoming")c.appendChild(el("div","hbc","Staða og tölfræði frá hbstatz.is"));if(bon)c.appendChild(el("div","hbc","Staða frá FIBA LiveStats"));
 if(ms>0){const cd=el("div","cd"),dd=Math.floor(ms/864e5),hh=Math.floor(ms%864e5/36e5),mm=Math.floor(ms%36e5/6e4);[[dd,"dagar"],[hh,"klst."],[mm,"mín."]].forEach(x=>{const d=el("div","");d.appendChild(el("b","",String(x[0])));d.appendChild(document.createTextNode(x[1]));cd.appendChild(d)});c.appendChild(cd)}
 box.appendChild(c);return}
 const c=el("a","row2");c.href=e.link;c.target="_blank";c.rel="noopener";const r1=el("div","r1");r1.appendChild(spLab(e));if(I.home||I.away)r1.appendChild(el("span","hu"+(I.home?" h":""),I.home?"Heima":"Úti"));c.appendChild(r1);
@@ -2215,6 +2218,9 @@ def collect_sports(old, today):
                 fu = fiba_url(fiba, m["home"], m["away"], m["date"], t0)
                 if fu:
                     e["live"] = fu
+                    fid = re.search(r"/(\d{5,9})/?$", fu)
+                    if fid:
+                        e["fiba"] = fid.group(1)  # leikjanúmer FIBA: vefur og app sækja beina stöðu með Worker /kki?id=
             if played(m):
                 if m["date"] < cutoff:
                     continue
