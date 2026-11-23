@@ -353,6 +353,22 @@
     "kind": "Tónlist"
   },
   {
+    "title": "KA – HK",
+    "source": "Íþróttir",
+    "sport": "Handbolti",
+    "gender": "Karlar",
+    "link": "https://www.hsi.is/match/111505",
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "time": "18:30",
+    "image": null,
+    "note": "Heimaleikur · Olís deild karla · KA heimilið",
+    "teams": [
+      "KA"
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Þór – Fram",
     "source": "Íþróttir",
     "sport": "Handbolti",
@@ -365,22 +381,6 @@
     "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
     "teams": [
       "Þór"
-    ],
-    "kind": "Íþróttir"
-  },
-  {
-    "title": "KA – HK",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/111505",
-    "start": "2026-11-26",
-    "end": "2026-11-26",
-    "time": "19:30",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · KA heimilið",
-    "teams": [
-      "KA"
     ],
     "kind": "Íþróttir"
   },
