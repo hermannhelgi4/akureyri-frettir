@@ -338,6 +338,8 @@
       "Þór Ak."
     ],
     "live": "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/2856666/",
+    "fiba": "2856666",
+    "res": "87–101",
     "kind": "Íþróttir"
   },
   {
@@ -425,6 +427,7 @@
       "Þór Ak."
     ],
     "live": "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/2856727/",
+    "fiba": "2856727",
     "kind": "Íþróttir"
   },
   {
@@ -521,6 +524,7 @@
       "Þór Ak."
     ],
     "live": "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/2859140/",
+    "fiba": "2859140",
     "kind": "Íþróttir"
   },
   {
@@ -2758,6 +2762,18 @@
       "KA"
     ],
     "kind": "Íþróttir"
+  },
+  {
+    "title": "Brain Police ásamt Volcanova",
+    "source": "Græni hatturinn",
+    "link": "https://www.graenihatturinn.is/is/brain-police-asamt-volcanova-27-feb-2027/eid/310",
+    "start": "2027-02-27",
+    "end": "2027-02-27",
+    "time": "21:00",
+    "image": "https://www.graenihatturinn.is/storage/event/poster/main/l9iMYTeeLpiFb8upLAEVeCd0b11TYu-metaYnJhaW4gcG9saWNlIDMuanBn-.jpg",
+    "note": "Frá 6.900 kr.",
+    "venue": "",
+    "kind": "Tónlist"
   },
   {
     "title": "Skilaboðaskjóðan",
