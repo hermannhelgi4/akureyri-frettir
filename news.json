@@ -1,5 +1,29 @@
 [
   {
+    "title": "Ný haugsuga eykur öryggi í Kjarnaskógi",
+    "link": "https://www.vikubladid.is/is/moya/news/ny-haugsuga-eykur-oryggi-i-kjarnaskogi",
+    "summary": "Skógræktarfélag Eyfirðinga hefur fengið afhenta nýja haugsugu sem er sérútbúin til slökkvistarfa í skógi.",
+    "date": "2026-11-23T17:55:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/taeki.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Sköpunargleði á efri árum",
+    "link": "https://www.vikubladid.is/is/moya/news/skopunargledi-a-efri-arum",
+    "summary": "Hinn árlegi handverksmarkaður íbúa Hvamms, Miðhvamms og Litlahvamms á Húsavík opnar þriðjudaginn 24. nóvember",
+    "date": "2026-11-23T17:53:00+00:00",
+    "image": "https://www.vikubladid.is/static/themes/2015/images/og.png?v=1795451063",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Þingeysk lög á þremur afmælistónleikum",
     "link": "https://www.vikubladid.is/is/moya/news/thingeysk-log-a-thremur-afmaelistonleikum",
     "summary": "Norðurþing fagnar 20 ára afmæli sínu með þrennum ókeypis fjölskyldutónleikum á Kópaskeri, Raufarhöfn og Húsavík dagana 24.–26. nóvember. Hljómsveit með Ágúst Þór Brynjarsson í broddi fylkingar flytur lög og texta eftir þingeyskt tónlistarfólk. Meðal laga sem stefnt er að því að flytja eru „Eina nótt",
@@ -1294,19 +1318,6 @@
   },
   {
     "title": "Góð staða í birgðageymum hitaveitunnar",
-    "link": "https://www.vikubladid.is/is/moya/news/god-stada-i-birgdageymum-hitaveitunnar",
-    "summary": "Staðan í birgðageymum hitaveitunnar á Akureyri er nú orðin góð og komin vel upp fyrir öryggismörk. Samstillt átak starfsfólks Norðurorku, stórnotenda og almennings skilaði góðum árangri.",
-    "date": "2026-11-19T11:37:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/tankur.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Góð staða í birgðageymum hitaveitunnar",
     "link": "https://www.no.is/is/um-no/frettir/god-stada-i-birgdageymum-hitaveitunnar",
     "summary": "Staðan í birgðageymum hitaveitunnar á Akureyri er nú orðin góð og komin vel upp fyrir öryggismörk. Samstillt átak starfsfólks Norðurorku, stórnotenda og almennings skilaði góðum árangri.",
     "date": "2026-11-19T11:21:00+00:00",
@@ -1439,18 +1450,6 @@
     "category": "Menntun",
     "cats": [
       "Bærinn"
-    ]
-  },
-  {
-    "title": "Jól í skókassa hjá Álfasteini",
-    "link": "https://www.vikubladid.is/is/moya/news/jol-i-skokassa-hja-alfasteini",
-    "summary": "Það ríkti sannkölluð jólagleði í Heilsuleikskólanum Álfasteini í byrjun nóvember þegar starfsfólkið tók höndum saman og útbjó 33 gjafakassa fyrir verkefnið Jól í skókassa.",
-    "date": "2026-11-18T20:19:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/adalynd.jpeg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
