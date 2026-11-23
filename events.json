@@ -1,22 +1,5 @@
 [
   {
-    "title": "Þór – FH",
-    "source": "Íþróttir",
-    "sport": "Handbolti",
-    "gender": "Karlar",
-    "link": "https://www.hsi.is/match/111485",
-    "start": "2026-11-01",
-    "end": "2026-11-01",
-    "time": "15:00",
-    "image": null,
-    "note": "Heimaleikur · Olís deild karla · Höllin Akureyri",
-    "teams": [
-      "Þór"
-    ],
-    "res": "30–37",
-    "kind": "Íþróttir"
-  },
-  {
     "title": "KA – HK",
     "source": "Íþróttir",
     "sport": "Blak",
@@ -319,7 +302,6 @@
     "teams": [
       "Þór Ak."
     ],
-    "live": "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/2859137/",
     "res": "107–79",
     "kind": "Íþróttir"
   },
@@ -338,7 +320,6 @@
       "Þór",
       "KA"
     ],
-    "live": "https://www.hbstatz.is/?live=13088",
     "res": "30–35",
     "kind": "Íþróttir"
   },
@@ -443,6 +424,7 @@
     "teams": [
       "Þór Ak."
     ],
+    "live": "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/2856727/",
     "kind": "Íþróttir"
   },
   {
@@ -538,6 +520,7 @@
     "teams": [
       "Þór Ak."
     ],
+    "live": "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/2859140/",
     "kind": "Íþróttir"
   },
   {
