@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T19:53:15+00:00",
+ "updated": "2026-11-23T23:03:20+00:00",
  "trips": [
   {
    "kind": "trip",
@@ -199,6 +199,7 @@
   "Aventura · Portó 28.10.2027: er þegar handskráð í flug.json"
  ],
  "notes": [
+  "Aventura London: IncompleteRead(36544 bytes read)",
   "Manchester → easyJet Manchester: brottför utan dagatals 24.12.2026"
  ],
  "status": {
