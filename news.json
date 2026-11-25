@@ -1,5 +1,17 @@
 [
   {
+    "title": "Virk efri ár leitar eftir áliti þátttakenda",
+    "link": "https://www.akureyri.is/virk-efri-ar-leitar-eftir-aliti-thatttakenda",
+    "summary": "Markmiðið er að heyra hvað vel gengur og hvað má betur fara svo hægt sé að þróa og bæta verkefnið.",
+    "date": "2026-11-25T12:56:00+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/virk-efri-ar-4-1800x1044.png",
+    "source": "Akureyrarbær",
+    "category": "Bærinn",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Kristinn Soð : Rauðvínssósa",
     "link": "https://www.kn.is/kristinn-sod-raudvinssosa",
     "summary": "Bragðmikil rauðvínssósa sem passar einstaklega vel með góðu Heiðarlambi. Sósan fær sitt góða bragð úr rauðvíni, ferskum kryddjurtum og smjöri sem gefur henni silkimjúka áferð. Hér finnur þú uppskriftina og getur prófað hana heima!",
@@ -4512,18 +4524,6 @@
     "cats": [
       "Fréttir",
       "Íþróttir"
-    ]
-  },
-  {
-    "title": "Góður fundur með Kennarasambandi Íslands",
-    "link": "https://www.akureyri.is/godur-fundur-med-kennarasambandi-islands",
-    "summary": "Bæjarstjórn Akureyrar og fulltrúar úr stjórn Kennarasambands Íslands áttu fyrr í dag góðan og gagnlegan fund um íslenska skólakerfið og stöðu fræðslumála í landinu.",
-    "date": "2026-10-30T18:00:00+00:00",
-    "image": "https://akureyri.payload.is/api/media/file/baejarfulltruar-og-baejarstjori-asamt-fulltruum-ksi-fyrir-framan-radhus-akureyrarbaejar-fyrr-i-dag-2000x1374.jpg",
-    "source": "Akureyrarbær",
-    "category": "Bærinn",
-    "cats": [
-      "Bærinn"
     ]
   },
   {
