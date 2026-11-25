@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T10:13:29+00:00",
+ "updated": "2026-11-25T13:34:15+00:00",
  "trips": [
   {
    "kind": "trip",
@@ -109,8 +109,8 @@
    "dests": [
     "Liverpool"
    ],
-   "last": "2027-01-01",
-   "soldout": true,
+   "last": "2027-03-12",
+   "soldout": false,
    "link": "https://www.verditravel.is/is/ferdir",
    "linkOk": true
   }
@@ -168,6 +168,18 @@
    "operator": "easyJet",
    "to": "Manchester",
    "agency": "Verdi Travel",
+   "title": "Liverpool - Ipswich",
+   "dest": "Liverpool",
+   "dates": "Flogið til Manchester · 12.–15.3.2027",
+   "first": "2027-03-12",
+   "last": "2027-03-12",
+   "link": "https://www.verditravel.is/is/ferdir/liverpool-ipswich-aey",
+   "soldout": false
+  },
+  {
+   "operator": "easyJet",
+   "to": "Manchester",
+   "agency": "Verdi Travel",
    "title": "Liverpool - Tottenham",
    "dest": "Liverpool",
    "dates": "Flogið til Manchester · 18.–21.12.2026",
@@ -190,6 +202,7 @@
   }
  ],
  "unclear": [
+  "Verdi Travel · Liverpool 9.4.2027: nefnir easyJet en passar ekki við dagatal",
   "Verdi Travel · Manchester frá Akureyri: engar dagsetningar á síðunni",
   "Verdi Travel · London frá Akureyri: engar dagsetningar á síðunni",
   "Verdi Travel · Brighton frá Akureyri: engar dagsetningar á síðunni"
