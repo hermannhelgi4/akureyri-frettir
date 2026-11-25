@@ -1,5 +1,29 @@
 [
   {
+    "title": "Þegar hækkanir eru auglýstar sem lækkanir",
+    "link": "https://www.akureyri.net/is/moya/news/thegar-haekkanir-eru-auglystar-sem-laekkanir",
+    "summary": "Páll Kristjánsson",
+    "date": "2026-11-25T10:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/pall-kristjansson-slippurinn.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Erlend verkefni eru Slippnum mikilvæg",
+    "link": "https://www.akureyri.net/is/moya/news/erlend-verkefni-eru-slippnum-mikilvaeg",
+    "summary": "Karl Eskil Pálsson",
+    "date": "2026-11-25T09:30:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/dji_20261109084436_0623_d.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Kraftmikill íbúafundur um framtíð gamla Þinghússins",
     "link": "https://www.esveit.is/eyjafjardarsveit/frettir/kraftmikill-ibuafundur-um-framtid-gamla-thinghussins",
     "summary": "Í gærkvöldi fór fram íbúafundur í Laugarborg um framtíðarnotkun gamla Þinghússins í Hrafnagilshverfi og skipulagssvæðisins þar í kring. Rúmlega 30 manns sóttu fundinn og eftir hópavinnu á borðum komu fram fjömargar hugmyndir sem unnið verður úr næstu vikur og mánuði.",
@@ -1140,31 +1164,6 @@
     "date": "2026-11-20T17:35:00+00:00",
     "image": "https://c.arvakur.is/frimg/1/43/86/1438686A.jpg",
     "source": "mbl.is",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Harpa Jóhannsdóttir fyrsti leikmaður KA",
-    "link": "https://www.akureyri.net/is/moya/news/harpa-johannsdottir-fyrsti-leikmadur-ka",
-    "summary": "Markvörðurinn Harpa Jóhannsdóttir hefur skrifað undir tveggja ára samning við KA og verður þar með fyrsti leikmaðurinn til að ganga til liðs við nýtt meistaraflokkslið félagsins í knattspyrnu. KA mun leika í 2. deild næsta sumar, eftir að félagið ákv...",
-    "date": "2026-11-20T16:15:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/harpa-sida.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
-    ]
-  },
-  {
-    "title": "Soldið flatur stóll og fleiri fletir Árna Vil",
-    "link": "https://www.akureyri.net/is/moya/news/soldid-flatur-stoll-og-fleiri-fletir-arna-vil",
-    "summary": "Myndlistarmaðurinn Árni Vilhjálmsson, sem starfar undir listamannsnafninu Árni Vil, opnar sýninguna Soldið flatur stóll og fleiri fletir á Leyni við Hafnarstræti á morgun, laugardaginn 21. nóvember klukkan 20. Á sýningunni kannar Árni möguleika málv...",
-    "date": "2026-11-20T16:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/arni-vilhjalmsson-leyni.jpg",
-    "source": "Akureyri.net",
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
