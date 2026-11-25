@@ -12,6 +12,18 @@
     ]
   },
   {
+    "title": "Deildir og hlyntegundir heimsins",
+    "link": "https://www.akureyri.net/is/moya/news/deildir-og-hlyntegundir-heimsins",
+    "summary": "Sigurður Arnarson",
+    "date": "2026-11-25T10:00:00+00:00",
+    "image": "https://www.akureyri.net/static/news/sm/1795601177_1-sigurdur-nota.jpg",
+    "source": "Akureyri.net",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Erlend verkefni eru Slippnum mikilvæg",
     "link": "https://www.akureyri.net/is/moya/news/erlend-verkefni-eru-slippnum-mikilvaeg",
     "summary": "Karl Eskil Pálsson",
@@ -21,6 +33,18 @@
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
+    ]
+  },
+  {
+    "title": "„Gleði, eftirvænting og árangur alltumlykjandi. Það er ekki annað hægt en að hrífast með“",
+    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/gledi-eftirvaenting-og-arangur-alltumlykjandi-thad-er-ekki-annad-haegt-en-ad-hrifast-med",
+    "summary": "María Jónsdóttir, forstöðumaður nemendaráðgjafar, er næsti viðmælandi í samstarfi Kaffið.is og HA þar sem við fáum að kynnast mannlífinu í skólanum",
+    "date": "2026-11-25T08:42:00+00:00",
+    "image": "https://www.unak.is/static/news/sm/maria-jonsdottir-hin-hlidin.png",
+    "source": "Háskólinn á Akureyri",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
     ]
   },
   {
@@ -1116,19 +1140,6 @@
     "category": "Fréttamiðlar",
     "cats": [
       "Fréttir"
-    ]
-  },
-  {
-    "title": "Bikarinn: Þór-ÍBV og Fram-KA/Þór",
-    "link": "https://www.akureyri.net/is/moya/news/bikarinn-thor-ibv-og-fram-kathor",
-    "summary": "Þórsarar taka á móti Vestmannaeyingum í átta liða úrslitum bikarkeppni karla í handbolta, Powerade bikarsins, og KA/Þór mætir Fram á útivelli í bikarkeppni kvenna. Dregið var í dag. Leikirnir fjórir í bikarkeppni karla fara allir fram föstudagskvöld...",
-    "date": "2026-11-20T20:00:00+00:00",
-    "image": "https://www.akureyri.net/static/news/sm/handbolti-bikar-kk-kvk.jpg",
-    "source": "Akureyri.net",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir",
-      "Íþróttir"
     ]
   },
   {
@@ -5504,18 +5515,6 @@
     "image": "https://www.samherji.is/static/news/sm/bjarni-olafsson-ak-70.jpg",
     "source": "Samherji",
     "category": "Fyrirtæki & félög",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "„Það er miklu meira við háskólalífið en bara fyrirlestrar og verkefni“",
-    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/thad-er-miklu-meira-vid-haskolalifid-en-bara-fyrirlestrar-og-verkefni",
-    "summary": "Jósep Snorri og Hanna Klara, stúdentar í Háskólanum á Akureyri, eru næstu viðmælendur í samstarfi Kaffið.is og Háskólans á Akureyri þar sem við fáum að kynnast mannlífinu í háskólanum",
-    "date": "2026-10-13T13:25:00+00:00",
-    "image": "https://www.unak.is/static/news/sm/josep-og-hanna-kruttpar.png",
-    "source": "Háskólinn á Akureyri",
-    "category": "Menntun",
     "cats": [
       "Bærinn"
     ]
