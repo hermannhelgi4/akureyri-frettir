@@ -1,5 +1,29 @@
 [
   {
+    "title": "Kveðja frá Norðurþingi",
+    "link": "https://www.vikubladid.is/is/moya/news/kvedja-fra-nordurthingi",
+    "summary": "Sveitarstjórn og starfsfólk Norðurþings vottar fjölskyldum og ástvinum þeirra þriggja skipverja Jökuls ÞH sem fórust sína innilegustu samúð. Hugur okkar allra er hjá áhöfninni, fjölskyldum hennar, ástvinum, starfsfólki og eigendum GPG Seafood ehf. í kjölfar hins hörmulega sjóslyss sem varð í gær.",
+    "date": "2026-11-26T13:34:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/1795700282_kerti.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
+    "title": "Gervigreind: Frá samtali til aðgerða",
+    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/gervigreind-fra-samtali-til-adgerda",
+    "summary": "Mikil þátttaka, lifandi umræður og nýtt samstarf um framtíð svæðisins á tímum gervigreindar",
+    "date": "2026-11-26T13:31:00+00:00",
+    "image": "https://www.unak.is/static/news/sm/sesselja-aslaug-berglind-halmar-svava.png",
+    "source": "Háskólinn á Akureyri",
+    "category": "Menntun",
+    "cats": [
+      "Bærinn"
+    ]
+  },
+  {
     "title": "Endurnýjaðir samningar við íþróttafélögin",
     "link": "https://www.akureyri.is/endurnyjadir-samningar-vid-ithrottafelogin",
     "summary": "Á þriðjudag var undirritaður endurnýjaður samstarfssamningur milli Akureyrarbæjar og Íþróttabandalags Akureyrar (ÍBA) um rekstur og starfsemi ÍBA út árið 2029.",
@@ -1419,18 +1443,6 @@
     "cats": [
       "Fréttir",
       "Íþróttir"
-    ]
-  },
-  {
-    "title": "Leitað að varanlegri lausn",
-    "link": "https://www.vikubladid.is/is/moya/news/leitad-ad-varanlegri-lausn",
-    "summary": "Skipulagsráð Akureyrarbæjar hefur falið skipulagssviði að leggja fram allt að fjórar tillögur að framtíðarstaðsetningu biðsvæðis fyrir leigubíla í miðbænum.",
-    "date": "2026-11-21T14:13:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/taxu.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
     ]
   },
   {
@@ -5549,18 +5561,6 @@
     "image": "https://www.no.is/static/news/sm/1q8b2103.jpg",
     "source": "Norðurorka",
     "category": "Bærinn",
-    "cats": [
-      "Bærinn"
-    ]
-  },
-  {
-    "title": "Til hamingju með brautskráninguna, kæru kandídatar!",
-    "link": "https://www.unak.is/is/samfelagid/frettasafn/frettir/27-kandidatar-brautskrast-i-oktober-2026",
-    "summary": "27 kandídatar ljúka námi við Háskólann á Akureyri í dag",
-    "date": "2026-10-15T14:18:00+00:00",
-    "image": "https://www.unak.is/static/news/sm/unak-frett_-okt-brautskraning-2026.png",
-    "source": "Háskólinn á Akureyri",
-    "category": "Menntun",
     "cats": [
       "Bærinn"
     ]
