@@ -846,6 +846,22 @@
     "kind": "Tónlist"
   },
   {
+    "title": "Þór Ak. – Aþena",
+    "source": "Íþróttir",
+    "sport": "Körfubolti",
+    "gender": "Konur",
+    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156225",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "time": "15:00",
+    "image": null,
+    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
+    "teams": [
+      "Þór Ak."
+    ],
+    "kind": "Íþróttir"
+  },
+  {
     "title": "Jólatónleikar Karlakórs Akureyrar Geysis",
     "source": "Miðasala",
     "site": "Tix",
@@ -858,22 +874,6 @@
     "venue": "Akureyrarkirkja",
     "cat0": "Jól, Jólatónleikar, Kór",
     "kind": "Tónlist"
-  },
-  {
-    "title": "Þór Ak. – Aþena",
-    "source": "Íþróttir",
-    "sport": "Körfubolti",
-    "gender": "Konur",
-    "link": "https://www.kki.is/motamal/leikir-og-urslit/motayfirlit/Leikur?league_id=231&season_id=132570&game_id=6156225",
-    "start": "2026-12-05",
-    "end": "2026-12-05",
-    "time": "18:00",
-    "image": null,
-    "note": "Heimaleikur · Bæjarins Beztu deild kvenna · Höllin Ak",
-    "teams": [
-      "Þór Ak."
-    ],
-    "kind": "Íþróttir"
   },
   {
     "title": "Á rauðu ljósi",
