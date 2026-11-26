@@ -1,10 +1,22 @@
 [
   {
+    "title": "GPG Seafood: Atburðirnir snerta okkur öll djúpt",
+    "link": "https://www.vikubladid.is/is/moya/news/gpg-seafood-atburdirnir-snerta-okkur-oll-djupt",
+    "summary": "Stjórnendur GPG Seafood á Húsavík, sem gerðu Jökul ÞH út, segja atburði gærkvöldsins snerta starfsfólk fyrirtækisins djúpt. Í yfirlýsingu sem birt er á Facebook-síðu fyrirtækisins er harmi lýst vegna atburðarins og samúðkveðjur sendar til skipverja, fjölskyldna þeirra og annarra aðstandenda. Jafnfra",
+    "date": "2026-11-26T12:12:00+00:00",
+    "image": "https://www.vikubladid.is/static/news/sm/jokull.jpg",
+    "source": "Vikudagur",
+    "category": "Fréttamiðlar",
+    "cats": [
+      "Fréttir"
+    ]
+  },
+  {
     "title": "Jólamarkaður í Skógarlundi",
-    "link": "https://www.akureyri.is/",
+    "link": "https://www.akureyri.is/jolamarkadur-i-skogarlundi-1-1",
     "summary": "Hátíðleg stemning og handverk af bestu gerð verða í fyrirrúmi þegar árlegi jólamarkaðurinn í Skógarlundi fer fram dagana 2. og 3. desember.",
-    "date": "2026-11-26T11:52:32+00:00",
-    "image": null,
+    "date": "2026-11-26T11:52:52+00:00",
+    "image": "https://akureyri.payload.is/api/media/file/skogarlundur-1-2000x1500.jpg",
     "source": "Akureyrarbær",
     "category": "Bærinn",
     "cats": [
@@ -1391,18 +1403,6 @@
     "summary": "„Það fer mjög vel um okkur hér,“ segir Hanna Vigdís Jóhannesdóttir hjá Blóðbankanum á Akureyri en hann hefur flutt starfsemi sína í nýtt og rúmbetra húsnæði innan Glerártorgs. Er nú staðdettur á annarri hæð við norðurinngang verslunarmiðstöðvarinnar og er gengið inn á milli verslana Blush og Skor. M",
     "date": "2026-11-21T14:03:00+00:00",
     "image": "https://www.vikubladid.is/static/news/sm/blod1.jpg",
-    "source": "Vikudagur",
-    "category": "Fréttamiðlar",
-    "cats": [
-      "Fréttir"
-    ]
-  },
-  {
-    "title": "Jólin koma á Ráðhústorg á Akureyri í dag",
-    "link": "https://www.vikubladid.is/is/moya/news/jolin-koma-a-radhustorg-a-akureyri-i-dag",
-    "summary": "Það verður sannkölluð jólastemning á Ráðhústorgi á Akureyri í dag þegar ljósin verða tendruð á jólatrénu og Jólatorgið opnar. Fjölbreytt dagskrá verður í boði fyrir gesti og gangandi, þar sem jólasveinar, söngur og ævintýrapersónur úr leikhúsheiminum koma við sögu",
-    "date": "2026-11-21T13:39:00+00:00",
-    "image": "https://www.vikubladid.is/static/news/sm/jolaeatorgid.jpg",
     "source": "Vikudagur",
     "category": "Fréttamiðlar",
     "cats": [
