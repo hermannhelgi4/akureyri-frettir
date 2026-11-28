@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T23:54:22+00:00",
+ "updated": "2026-11-28T03:53:36+00:00",
  "trips": [
   {
    "kind": "trip",
@@ -130,18 +130,6 @@
   },
   {
    "operator": "easyJet",
-   "to": "Manchester",
-   "agency": "Aventura",
-   "title": "Manchester – flug og hótel",
-   "dest": "Manchester",
-   "dates": "Allir flugdagar 27.11.2026 – 22.3.2027",
-   "first": "2026-11-27",
-   "last": "2027-03-22",
-   "link": "https://aventura.is/is/manchesteraey",
-   "soldout": false
-  },
-  {
-   "operator": "easyJet",
    "to": "London",
    "agency": "Aventura",
    "title": "London – flug og hótel",
@@ -162,6 +150,18 @@
    "first": "2026-11-28",
    "last": "2027-04-20",
    "link": "https://aventura.is/is/brightonaey",
+   "soldout": false
+  },
+  {
+   "operator": "easyJet",
+   "to": "Manchester",
+   "agency": "Aventura",
+   "title": "Manchester – flug og hótel",
+   "dest": "Manchester",
+   "dates": "Allir flugdagar 30.11.2026 – 22.3.2027",
+   "first": "2026-11-30",
+   "last": "2027-03-22",
+   "link": "https://aventura.is/is/manchesteraey",
    "soldout": false
   },
   {
@@ -220,7 +220,7 @@
   "Heimsferðir": "ok",
   "Úrval Útsýn": "ok",
   "Kompaníferðir": "ok",
-  "Tripical": "villa",
+  "Tripical": "ok",
   "Atlantis Travel": "ok"
  }
 }
